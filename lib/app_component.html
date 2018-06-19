@@ -1,5 +1,14 @@
 <d-navbar backgroundColor="#00A0C8" [alwaysShow]="false">
-    <div id="logo"><img src="/pics/logotype.png" alt="logo"></div>
+    <div id="navbar_items">
+        <material-menu [menu]="menuModel">
+            <section menu-button>
+                <material-icon [style.color]="menuIconColor" icon="menu" class="custom-size"></material-icon>
+            </section>
+        </material-menu>
+        <img id="logo" src="/pics/logotype.png" alt="logo">
+    </div>
     <!--<h2>{{companyName()}}</h2>-->
 </d-navbar>
-<d-fullscreen><p>This will take up entire screen</p></d-fullscreen>
+<iframe id="youtube" src="https://www.youtube.com/embed/tBrTyy02Jhc?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
