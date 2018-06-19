@@ -1,12 +1,32 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import '../web/colors.scss';
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_icon/mixins';
 
-div#logo
+div#navbar_items
 {
     display: flex;
     align-items: center;
+    height: 100px;
 }
 
 :host {
     display: block;
 }
 
+iframe#youtube
+{
+    margin-top:6em;
+    min-height: 89.6vh;
+    min-width: 100vw;
+}
+/*
+img#logo
+{
+    margin-left:3em;
+}
+*/
+
+.custom-size {
+    @include material-icon-size($mat-grid * 5);
+  }
