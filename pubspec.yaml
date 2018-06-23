@@ -7,6 +7,8 @@ environment:
 dependencies:
   angular: ^5.0.0-alpha+15
   angular_components: ^0.9.0-alpha+15
+  animation:
+    git: https://github.com/afpatmin/Animation.git
   d_components:
     git: https://github.com/afpatmin/d_components.git
   grid:
