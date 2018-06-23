@@ -2,31 +2,47 @@
 @import '../web/colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
-
-div#navbar_items
-{
+@import 'package:grid/grid.scss';
+div#navbar_items {
     display: flex;
     align-items: center;
     height: 100px;
+    .last-item {
+        margin-left: auto;
+        padding-right: 2em;
+    }
 }
 
 :host {
     display: block;
 }
 
-iframe#youtube
-{
-    margin-top:6em;
-    min-height: 89.6vh;
-    min-width: 100vw;
-}
-/*
-img#logo
-{
-    margin-left:3em;
-}
-*/
-
-.custom-size {
+.custom-icon-size-medium {
     @include material-icon-size($mat-grid * 5);
-  }
+}
+.custom-icon-size-large {
+    @include material-icon-size($mat-grid * 15);
+}
+
+
+
+material-auto-suggest-input {
+    width: $mat-grid * 25;
+    color: white;
+}
+
+material-button#arrow{
+    color: $cerulean;
+}
+
+div#appContent {
+    height: 100vh;
+    border-top: 100px;
+    box-sizing: border-box;
+}
+
+iframe#intro_video {
+    height: 100vh;
+    width: 100vw;
+}
+
