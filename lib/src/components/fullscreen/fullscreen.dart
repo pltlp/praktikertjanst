@@ -1,4 +1,3 @@
-
 import 'dart:html';
 import 'package:angular/angular.dart';
 @Component(
@@ -6,12 +5,13 @@ import 'package:angular/angular.dart';
   templateUrl: 'fullscreen.html',
   styleUrls: const['fullscreen.css'],
 )
-class FullscreenComponent  
+class FullscreenComponent 
 {
 
   FullscreenComponent(this.host);
   
+  void activate(){}
+
   final Element host;
-  String screenHeight;
   
 }
