@@ -1,0 +1,12 @@
+:host {
+    div.flex_container {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    iframe {
+        height: 20vh;
+        width: 21vw;
+    }
+}

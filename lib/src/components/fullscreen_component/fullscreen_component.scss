@@ -1,0 +1,10 @@
+:host {
+    div {
+        min-height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

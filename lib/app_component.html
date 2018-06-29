@@ -1,76 +1,46 @@
 <d-navbar backgroundColor="#00A0C8"
-          [alwaysShow]="false">
+          [alwaysShow]="true">
     <div id="navbar_items">
         <material-menu [menu]="menuModel">
             <section menu-button>
-                <material-icon [style.color]="menuIconColor"
-                               icon="menu"
-                               class="custom-icon-size-medium"></material-icon>
+                <material-icon icon="menu"
+                               class="menu-icon"></material-icon>
             </section>
         </material-menu>
         <img id="logo"
              src="/pics/logotype.png"
              alt="logo">
-        <material-auto-suggest-input class="custom-size last-item"
-                                     label="Type here"
-                                     [suggestions]="suggestions"
-                                     [limit]="5"
-                                     [leadingGlyph]="leadingGlyph"
-                                     [showClearIcon]="true"
-                                     [label]="searchLabel">
-        </material-auto-suggest-input>
     </div>
-    <!--<h2>{{companyName()}}</h2>-->
 </d-navbar>
-<div id="appContent"
-     (mousewheel)="onMouseWheelScroll($event)"
-     #appContent>
-    <d-fullscreen>
-        <iframe id="intro_video"
-                src="https://www.youtube.com/embed/zJ7hUvU-d2Q?rel=0"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-        </iframe>
+<div>
+    <d-fullscreen [offsetTop]="100">
+        <div id="youtube-player-wrapper">
+            <iframe id="ytplayer"
+                    type="text/html"
+                    src="https://www.youtube.com/embed/xfOfFNb1kzI?autoplay=1&controls=0&fs=0&modestbranding=1&rel=0&showinfo=0"
+        
+                    frameborder="0"
+                    allowfullscreen
+                    scrolling="no"></iframe>
+        </div>
     </d-fullscreen>
     <d-fullscreen>
-        <div class="row margin-top-large margin-bottom-large">
-            <div class="col m1 l1 hide-for-small">
-                <!-- <img height="200px" width="100px" scr="/pics/triangle.png">-->
-                <material-button id="arrow">
-                    <material-icon class="custom-icon-size-large"
-                                   icon="arrow_left"></material-icon>
-                </material-button>
+        <div class="row expand">
+            <div class="col">
+                <d-carousel></d-carousel>
             </div>
-            <div class="col s12 m3 l3">
-                <fo-youtube-player videoId="ZFknCdx3BPI">
-
-                </fo-youtube-player>
-            </div>
-            <div class="col s12 m3 l3">
-                <fo-youtube-player videoId="17moksI28Vo">
-
-                </fo-youtube-player>
-            </div>
-            <div class="col s12 m3 l3">
-                <fo-youtube-player videoId="-6Cnld1DjDU">
-
-                </fo-youtube-player>
-            </div>
-            <div class="col m1 l1 hide-for-small">
-                <!-- <img height="200px" width="100px" scr="/pics/triangle.png">-->
-                <material-button id="arrow">
-                    <material-icon class="custom-icon-size-large margin-left-4"
-                                   icon="arrow_right"></material-icon>
-                </material-button>
+        </div>
+        <div class="row">
+            <div class="l4 col">
+                <d-learning-content *ngIf="learningContents.isNotEmpty"
+                                    [model]="learningContents.first"></d-learning-content>
             </div>
         </div>
     </d-fullscreen>
     <d-fullscreen>
-        <p>Hej det här ska ta upp</p>
+        <p>Hej det här ska ta upp..</p>
     </d-fullscreen>
     <d-fullscreen>
-        <p>Hej det här ska ta upp</p>
-
+        <p>Hej det här ska ta upp..</p>
     </d-fullscreen>
 </div>

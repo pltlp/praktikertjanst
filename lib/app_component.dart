@@ -1,13 +1,14 @@
-import 'dart:async';
-import 'dart:html' as html;
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:animation/animation.dart';
 import 'package:d_components/d_components.dart';
-import 'package:fo_components/components/fo_youtube_player/fo_youtube_player_component.dart';
-import 'package:praktikertjanst/src/components/fullscreen/fullscreen.dart';
-import 'package:intl/intl.dart';
 import 'package:angular_components/model/menu/menu.dart';
+import 'package:fo_components/fo_components.dart';
+import 'package:intl/intl.dart';
+import 'src/components/carousel_component/carousel_component.dart';
+import 'src/components/fullscreen_component/fullscreen_component.dart';
+import 'src/components/learning_content_component/learning_content_component.dart';
+import 'src/models/learning_content.dart';
+import 'src/services/learning_content_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -21,79 +22,35 @@ import 'package:angular_components/model/menu/menu.dart';
       NavbarComponent,
       FullscreenComponent,
       materialDirectives,
-      FoYouTubePlayerComponent
+      CarouselComponent,
+      LearningContentComponent
     ],
     providers: [
-      materialProviders
-    ])
-class AppComponent {
-  AppComponent();
+      materialProviders,
+      LearningContentService
+    ],
+    pipes: [NamePipe])
+class AppComponent implements OnInit {
+  AppComponent(this._learningContentService);
 
-  void onMouseWheelScroll(html.WheelEvent event) {
-    if (html.window.innerHeight > heightThreshold &&
-        html.window.innerWidth > widthThreshold) {
-      event
-        ..preventDefault()
-        ..stopPropagation();
-      try {
-        scroll((event.deltaY > 0) ? 1 : -1);
-      } on Exception catch (e) {
-        print(e.toString());
-      }
-    }
-  }
-
-  void scroll(int delta) {
-    if (animatingTimer == null) {
-      final currentOffset = html.window.scrollY;
-      FullscreenComponent target;
-      if (delta > 0) {
-        target = sections.firstWhere(
-            (section) => section.host.offsetTop > currentOffset,
-            orElse: () => null);
-      } else {
-           target = sections.lastWhere(
-            (section) => section.host.offsetTop < currentOffset,
-            orElse: () => null);
-      }
-    
-      if (target != null) {
-        animatingTimer = new Timer(
-            new Duration(milliseconds: scrollMilliseconds),
-            () => animatingTimer = null);
-        animate(html.document.body.parent,
-            duration: scrollMilliseconds,
-            easing: Easing.SINUSOIDAL_EASY_IN_OUT,
-            properties: {'scrollTop': target.host.offsetTop});
-        target.activate();
-      }
-    }
+  @override
+  void ngOnInit() async {
+   learningContents = await _learningContentService.getAll();
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
       one: 'praktikertjänst',
       other: 'praktikertjänst',
       desc: 'name of the company');
+
   final MenuModel menuModel = new MenuModel<MenuItem>([
     new MenuItemGroup<MenuItem>([
-      new MenuItem('Översikt'),
-      new MenuItem('Instalation'),
-      new MenuItem('Skötsel'),
-      new MenuItem('Avveckling')
+      new MenuItem(Intl.message('Overview', name: 'overview')),
+      new MenuItem(Intl.message('Installation', name: 'installation')),
+      new MenuItem(Intl.message('Management', name: 'management')),
+      new MenuItem(Intl.message('Decommissioning', name: 'decommissioning')),
     ])
   ]);
-  String menuIconColor = 'white';
-  List<String> suggestions = ['Skötsel', 'Sanering'];
-  String leadingGlyph = 'search';
-  String searchLabel = 'Search..';
-  final int widthThreshold = 749;
-  final int heightThreshold = 800;
-  Timer animatingTimer;
-  final int scrollMilliseconds = 400;
-
-  @ViewChildren(FullscreenComponent)
-  List<FullscreenComponent> sections;
-
-  @ViewChild('appContent')
-  html.Element appContent;
+  final LearningContentService _learningContentService;
+  List<LearningContent> learningContents = [];
 }
