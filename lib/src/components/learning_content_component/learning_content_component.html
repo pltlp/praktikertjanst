@@ -1,1 +1,13 @@
-<p>{{model.description}}</p>
+<div class="row flex-for-large flex-for-medium flex-for-small">
+    <div class="m9 col">
+        <h3>{{model.name | name}}</h3>
+        <p>{{model.description}}</p>
+    </div>
+    <div class="m3 col bottom">
+        <material-button raised
+                         class="blue"
+                         clear-size>
+            {{learningContentButtonName()}}
+        </material-button>
+    </div>
+</div>
