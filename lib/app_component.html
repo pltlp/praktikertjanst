@@ -25,16 +25,20 @@
         </div>
     </d-fullscreen>
     <d-fullscreen>
-        <div class="row expand">
+        <div class="row">
             <div class="col">
                 <d-carousel></d-carousel>
             </div>
         </div>
-        <div class="row">
-            <div class="l4 col">
+        <div class="row margin-top-large">
+            <div class="l6 col">
                 <d-learning-content *ngIf="learningContents.isNotEmpty"
                                     [model]="learningContents.first"></d-learning-content>
             </div>
+            <div class="l6 col">
+                    <d-learning-content *ngIf="learningContents.isNotEmpty"
+                                        [model]="learningContents.last"></d-learning-content>
+                </div>
         </div>
     </d-fullscreen>
     <d-fullscreen>
