@@ -2,7 +2,10 @@
 @import 'package:angular_components/material_icon/mixins';
 
 
+
 :host {
+
+
     display: block;
     material-icon.menu-icon{
         @include material-icon-size($mat-grid * 5);
@@ -34,7 +37,7 @@
         }
     }
 
-    div#navbar_items {
+    div#navbar-items {
         display: flex;
         align-items: center;
         height: 100px;

@@ -1,15 +1,18 @@
 <d-navbar backgroundColor="#00A0C8"
           [alwaysShow]="true">
-    <div id="navbar_items">
-        <material-menu [menu]="menuModel">
+    <div id="navbar-items">
+        <img id="logo"
+             src="/pics/logotype.png"
+             alt="logo">
+
+        <material-menu [menu]="menuModel"
+                       class="last-item">
             <section menu-button>
                 <material-icon icon="menu"
                                class="menu-icon"></material-icon>
             </section>
         </material-menu>
-        <img id="logo"
-             src="/pics/logotype.png"
-             alt="logo">
+
     </div>
 </d-navbar>
 <div>
@@ -24,23 +27,42 @@
                     scrolling="no"></iframe>
         </div>
     </d-fullscreen>
-    <d-fullscreen>
-        <div class="row">
-            <div class="col">
-                <d-carousel></d-carousel>
-            </div>
+
+    <div class="row">
+        <div class="col">
+            <d-carousel></d-carousel>
         </div>
-        <div class="row margin-top-large">
-            <div class="l6 col">
-                <d-learning-content *ngIf="learningContents.isNotEmpty"
-                                    [model]="learningContents.first"></d-learning-content>
-            </div>
-            <div class="l6 col">
-                    <d-learning-content *ngIf="learningContents.isNotEmpty"
-                                        [model]="learningContents.last"></d-learning-content>
-                </div>
+    </div>
+    <div class="row margin-top-large">
+        <div class="l6 col">
+            <d-learning-content *ngIf="learningContents.isNotEmpty"
+                                [model]="learningContents.first"></d-learning-content>
         </div>
-    </d-fullscreen>
+        <div class="l6 col">
+            <d-learning-content *ngIf="learningContents.isNotEmpty"
+                                [model]="learningContents.last"></d-learning-content>
+        </div>
+    </div>
+
+    <div class="row margin-top-large">
+        <div class="l3 col">
+            <d-action-content *ngIf="actionContents.isNotEmpty"
+                              [model]="actionContents.first"></d-action-content>
+        </div>
+        <div class="l3 col">
+            <d-action-content *ngIf="actionContents.isNotEmpty"
+                              [model]="actionContents.last"></d-action-content>
+        </div>
+        <div class="l3 col">
+                <d-action-content *ngIf="actionContents.isNotEmpty"
+                                  [model]="actionContents.first"></d-action-content>
+            </div>
+            <div class="l3 col">
+                <d-action-content *ngIf="actionContents.isNotEmpty"
+                                  [model]="actionContents.last"></d-action-content>
+            </div>
+    </div>
+
     <d-fullscreen>
         <p>Hej det här ska ta upp..</p>
     </d-fullscreen>

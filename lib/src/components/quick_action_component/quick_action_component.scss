@@ -1,0 +1,26 @@
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_icon/mixins';
+@import '../../../../web/colors.scss';
+:host {
+    .row {
+        .col {
+            height: 10rem;
+            overflow-y:auto;    
+            material-icon {
+                color: white;
+                background-color: $cerulean;
+                @include material-icon-size($mat-grid * 15);
+            }
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            h2 {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

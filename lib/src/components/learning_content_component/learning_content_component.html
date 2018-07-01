@@ -1,13 +1,30 @@
+<!---->
+
 <div class="row flex-for-large flex-for-medium flex-for-small">
     <div class="m9 col">
         <h3>{{model.name | name}}</h3>
         <p>{{model.description}}</p>
     </div>
-    <div class="m3 col bottom">
+    <div class="m3 col text-center bottom">
         <material-button raised
                          class="blue"
-                         clear-size>
-            {{learningContentButtonName()}}
+                         clear-size
+                         (trigger)="showModal=true">
+            {{learnMore}}
         </material-button>
     </div>
 </div>
+<fo-modal [title]="model.name"
+          [(visible)]="showModal"
+          [showCloseButton]="true"
+          [fixedWidth]="true"
+          >
+    <div class="row">
+        <div class="col">
+            <iframe src="{{sanitizer.bypassSecurityTrustResourceUrl(model.url)}}"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+    <div footer>
+    </div>
+</fo-modal>
