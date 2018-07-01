@@ -28,45 +28,24 @@
         </div>
     </d-fullscreen>
 
-    <div class="row">
-        <div class="col">
-            <d-carousel></d-carousel>
-        </div>
-    </div>
-    <div class="row margin-top-large">
-        <div class="l6 col">
-            <d-learning-content *ngIf="learningContents.isNotEmpty"
-                                [model]="learningContents.first"></d-learning-content>
-        </div>
-        <div class="l6 col">
-            <d-learning-content *ngIf="learningContents.isNotEmpty"
-                                [model]="learningContents.last"></d-learning-content>
-        </div>
-    </div>
-
-    <div class="row margin-top-large">
-        <div class="l3 col">
-            <d-action-content *ngIf="actionContents.isNotEmpty"
-                              [model]="actionContents.first"></d-action-content>
-        </div>
-        <div class="l3 col">
-            <d-action-content *ngIf="actionContents.isNotEmpty"
-                              [model]="actionContents.last"></d-action-content>
-        </div>
-        <div class="l3 col">
-                <d-action-content *ngIf="actionContents.isNotEmpty"
-                                  [model]="actionContents.first"></d-action-content>
-            </div>
-            <div class="l3 col">
-                <d-action-content *ngIf="actionContents.isNotEmpty"
-                                  [model]="actionContents.last"></d-action-content>
-            </div>
-    </div>
-
     <d-fullscreen>
-        <p>Hej det här ska ta upp..</p>
+        <div class="row">
+            <div class="col">
+                <d-carousel></d-carousel>
+            </div>
+        </div>
+        <div class="row margin-top-medium">
+            <div class="l6 col"
+                 *ngFor="let learningContent of learningContents">
+                <d-learning-content [model]="learningContent"></d-learning-content>
+            </div>
+        </div>
+        <div class="row margin-top-x-large">
+            <div class="l3 col"
+                 *ngFor="let quickAction of quickActions">
+                <d-quick-action [model]="quickAction"></d-quick-action>
+            </div>
+        </div>
     </d-fullscreen>
-    <d-fullscreen>
-        <p>Hej det här ska ta upp..</p>
-    </d-fullscreen>
+
 </div>

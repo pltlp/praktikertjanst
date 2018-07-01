@@ -13,8 +13,6 @@ import 'src/models/quick_action.dart';
 import 'src/services/learning_content_service.dart';
 import 'src/services/quick_action_service.dart';
 
-
-
 @Component(
     selector: 'p-app',
     templateUrl: 'app_component.html',
@@ -43,7 +41,7 @@ class AppComponent implements OnInit {
   @override
   void ngOnInit() async {
    learningContents = await _learningContentService.getAll();
-   actionContents = await _actionContentService.getAll();
+   quickActions = await _actionContentService.getAll();
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
@@ -62,5 +60,5 @@ class AppComponent implements OnInit {
   final LearningContentService _learningContentService;
   final QuckActionService _actionContentService;
   List<LearningContent> learningContents = [];
-  List<QuickAction> actionContents = [];
+  List<QuickAction> quickActions = [];
 }

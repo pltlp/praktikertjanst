@@ -1,11 +1,11 @@
 <!---->
 
-<div class="row flex-for-large flex-for-medium flex-for-small">
-    <div class="m9 col">
+<div class="row flex-for-large">
+    <div class="l9 col">
         <h3>{{model.name | name}}</h3>
-        <p>{{model.description}}</p>
+        <p class="text-justify margin-bottom-none">{{model.description}}</p>
     </div>
-    <div class="m3 col text-center bottom">
+    <div class="l3 col bottom">
         <material-button raised
                          class="blue"
                          clear-size
@@ -16,7 +16,7 @@
 </div>
 <fo-modal [title]="model.name"
           [(visible)]="showModal"
-          [showCloseButton]="true"
+          [showCloseButton]="true" 
           [fixedWidth]="true"
           >
     <div class="row">
@@ -27,4 +27,4 @@
     </div>
     <div footer>
     </div>
-</fo-modal>
+</fo-modal> 
