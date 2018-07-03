@@ -16,15 +16,12 @@
 </div>
 <fo-modal [title]="model.name"
           [(visible)]="showModal"
-          [showCloseButton]="true" 
-          [fixedWidth]="true"
-          >
+          [showCloseButton]="true"
+          [fixedWidth]="true">
     <div class="row">
         <div class="col">
-            <iframe src="{{sanitizer.bypassSecurityTrustResourceUrl(model.url)}}"
+            <iframe src="{url}"
                     allowfullscreen></iframe>
         </div>
     </div>
-    <div footer>
-    </div>
-</fo-modal> 
+</fo-modal>

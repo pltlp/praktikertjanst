@@ -11,15 +11,22 @@ import '../../models/learning_content.dart';
   styleUrls: const ['learning_content_component.css'],
   directives: const [MaterialButtonComponent, MaterialIconComponent, FoModalComponent],
   pipes: [NamePipe])
-class LearningContentComponent{
+class LearningContentComponent implements OnInit
   
   LearningContentComponent(this.sanitizer);
+
+ @override
+ void ngOnInit()
+  {
+    url = sanitizer.bypassSecurityTrustResourceUrl(model.url); 
+  }
   
 
    String get learnMore => Intl.message('Learn more', name:'learn_more');
   
   bool showModal = false;
   final DomSanitizationService sanitizer;
+  SafeResourceUrl url; 
 
   @Input('model')
   LearningContent model;
