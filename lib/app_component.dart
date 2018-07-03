@@ -5,6 +5,7 @@ import 'package:angular_components/model/menu/menu.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 import 'src/components/carousel_component/carousel_component.dart';
+import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/learning_content_component/learning_content_component.dart';
 import 'src/components/quick_action_component/quick_action_component.dart';
@@ -23,6 +24,7 @@ import 'src/services/quick_action_service.dart';
       NgFor,
       NgIf,
       NavbarComponent,
+      FooterComponent,
       FullscreenComponent,
       materialDirectives,
       CarouselComponent,
