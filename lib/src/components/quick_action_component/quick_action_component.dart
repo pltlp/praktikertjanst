@@ -10,11 +10,17 @@ import '../../models/quick_action.dart';
   styleUrls: const ['quick_action_component.css'],
   directives: const [MaterialButtonComponent, MaterialIconComponent, FoModalComponent],
   pipes: [NamePipe])
-class QuickActionComponent{
+class QuickActionComponent implements OnInit{
   
   QuickActionComponent(this.sanitizer);
+
+  void ngOnInit()
+  {
+    url = sanitizer.bypassSecurityTrustResourceUrl(model.url);
+  }
     
   bool showModal = false;
+  SafeResourceUrl url;
   final DomSanitizationService sanitizer;
 
   @Input('model') 
