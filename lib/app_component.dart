@@ -34,14 +34,16 @@ import 'src/services/quick_action_service.dart';
       LearningContentService,
       QuckActionService
     ],
-    pipes: [NamePipe])
+    pipes: [
+      NamePipe
+    ])
 class AppComponent implements OnInit {
   AppComponent(this._learningContentService, this._actionContentService);
 
   @override
   void ngOnInit() async {
-   learningContents = await _learningContentService.getAll();
-   quickActions = await _actionContentService.getAll();
+    learningContents = await _learningContentService.getAll();
+    quickActions = await _actionContentService.getAll();
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
@@ -49,12 +51,12 @@ class AppComponent implements OnInit {
       other: 'praktikertjänst',
       desc: 'name of the company');
 
-  final MenuModel menuModel = new MenuModel<MenuItem>([
-    new MenuItemGroup<MenuItem>([
-      new MenuItem(Intl.message('Overview', name: 'overview')),
-      new MenuItem(Intl.message('Installation', name: 'installation')), 
-      new MenuItem(Intl.message('Management', name: 'management')),
-      new MenuItem(Intl.message('Decommissioning', name: 'decommissioning')),
+  final MenuModel menuModel = MenuModel<MenuItem>([
+    MenuItemGroup<MenuItem>([
+      MenuItem(Intl.message('Overview', name: 'overview')),
+      MenuItem(Intl.message('Installation', name: 'installation')),
+      MenuItem(Intl.message('Management', name: 'management')),
+      MenuItem(Intl.message('Decommissioning', name: 'decommissioning')),
     ])
   ]);
   final LearningContentService _learningContentService;

@@ -22,20 +22,20 @@ List<QuickAction> mockContent = [
     ..icon = 'ondemand_video'
     ..name = 'Dokument-bibliotek'
     ..url =
-        'https://echa.europa.eu/documents/10162/23036412/guidance_pic_sv.pdf'
+        'http://samla.raa.se/xmlui/bitstream/handle/raa/10709/Varia2017_2.pdf?sequence=1&isAllowed=y'
     ..description = 'Vägledning för hantering av kvicksilver',
 
       new QuickAction()
     ..icon = 'perm_media'
     ..name = 'Dokument-bibliotek'
     ..url =
-        'https://echa.europa.eu/documents/10162/23036412/guidance_pic_sv.pdf'
+        'rise_example/content/index.html'
     ..description = 'Vägledning för hantering av kvicksilver',
 
        new QuickAction()
     ..icon = 'perm_contact_calendar'
     ..name = 'Dokument-bibliotek'
     ..url =
-        'https://echa.europa.eu/documents/10162/23036412/guidance_pic_sv.pdf'
+        'http://samla.raa.se/xmlui/bitstream/handle/raa/10709/Varia2017_2.pdf?sequence=1&isAllowed=y'
     ..description = 'Vägledning för hantering av kvicksilver',
 ];

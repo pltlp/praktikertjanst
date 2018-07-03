@@ -1,13 +1,5 @@
-:host {
-        transform: translate3d(0, 0, 0);
-    div.flex_container {
-        justify-content: space-around;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-    iframe {
-        height: 20vh;
-        width: 21vw;
-    }
-}
+iframe
+{
+    width: 100%;
+    height: 70vh;
+} 

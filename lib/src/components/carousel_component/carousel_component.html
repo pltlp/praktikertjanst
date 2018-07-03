@@ -1,50 +1,26 @@
-<fo-carousel>
-  <fo-carousel-slide>
-    <div class="flex_container">
-      <iframe src="https://www.youtube.com/embed/17moksI28Vo?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/ZFknCdx3BPI?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-    </div>
-  </fo-carousel-slide>
-  <fo-carousel-slide>
-    <div class="flex_container">
-      <iframe src="https://www.youtube.com/embed/17moksI28Vo?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/ZFknCdx3BPI?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-    </div>
-  </fo-carousel-slide>
-  <fo-carousel-slide>
-    <div class="flex_container">
-      <iframe src="https://www.youtube.com/embed/17moksI28Vo?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/ZFknCdx3BPI?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen></iframe>
-    </div>
-  </fo-carousel-slide>
+<fo-carousel *ngIf="loaded">
+        <fo-carousel-slide *ngFor="let videoList of videoTable">
+                <div class="row">
+                        <div class="s4 col"
+                             *ngFor="let video of videoList"
+                             (click)="selectedModel = video">
+                                <img src="{{video.imgSrc}}"
+                                     alt="{{video.name}}">
+                        </div>
+                </div>
+        </fo-carousel-slide>
 </fo-carousel>
+
+<fo-modal *ngIf="selectedModel != null"
+          [title]="selectedModel.name"
+          [visible]="true"
+          (visibleChange)="selectedModel = null"
+          [showCloseButton]="true"
+          [fixedWidth]="true">
+        <div class="row">
+                <div class="col">
+                        <iframe src="{{sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url)}}"
+                                allowfullscreen></iframe>
+                </div>
+        </div>
+</fo-modal>
