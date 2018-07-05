@@ -1,29 +1,25 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
-
-
-
 :host {
-
-
     display: block;
-    material-icon.menu-icon{
-        @include material-icon-size($mat-grid * 5);
-        color:white;
-    }
     
+
+    material-icon.menu-icon {
+        @include material-icon-size($mat-grid * 5);
+        color: white;
+    }
     material-auto-suggest-input {
         width: $mat-grid * 25;
         color: white;
     }
-    
     div#youtube-player-wrapper {
         position: relative;
         overflow: hidden;
         font-size: 0;
         flex: 1;
         align-self: stretch;
-        iframe,div {
+        iframe,
+        div {
             position: absolute;
             top: 0;
             left: 0;
@@ -36,7 +32,6 @@
             overflow: hidden;
         }
     }
-
     div#navbar-items {
         display: flex;
         align-items: center;
@@ -46,8 +41,4 @@
             padding-right: 2em;
         }
     }
-
-
 }
-
-

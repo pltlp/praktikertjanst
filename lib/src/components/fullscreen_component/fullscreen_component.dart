@@ -16,4 +16,6 @@ class FullscreenComponent {
   
   @Input()
   int offsetTop = 0;
+  @Input()
+  String backgroundImage;
 }

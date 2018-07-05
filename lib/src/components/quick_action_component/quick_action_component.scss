@@ -2,7 +2,10 @@
 @import 'package:angular_components/material_icon/mixins';
 @import '../../../../web/colors.scss';
 :host {
+    font-size:0;
     cursor: pointer;
+    display: block;
+    transition: box-shadow 300ms ease;
     .row {
         .col {
             height: 9rem;
@@ -28,10 +31,14 @@
                 padding: 0;
                 text-decoration: none;
             }
-
         }
     }
 }
+
+:host:hover {
+    box-shadow: 1px 1px 5px #aaa;
+}
+
 
 iframe {
     width: 100%;
