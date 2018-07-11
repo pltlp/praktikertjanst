@@ -9,10 +9,13 @@ import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/learning_content_component/learning_content_component.dart';
 import 'src/components/quick_action_component/quick_action_component.dart';
+import 'src/components/rise_component/rise_component.dart';
 import 'src/models/learning_content.dart';
 import 'src/models/quick_action.dart';
+import 'src/models/rise.dart';
 import 'src/services/learning_content_service.dart';
 import 'src/services/quick_action_service.dart';
+import 'src/services/rise_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -29,23 +32,28 @@ import 'src/services/quick_action_service.dart';
       materialDirectives,
       CarouselComponent,
       LearningContentComponent,
-      QuickActionComponent
+      QuickActionComponent,
+      RiseComponent
+      
     ],
     providers: [
       materialProviders,
       LearningContentService,
-      QuckActionService
+      QuckActionService,
+      RiseService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent implements OnInit {
-  AppComponent(this._learningContentService, this._actionContentService);
+  AppComponent(this._learningContentService, this._actionContentService, this._riseService);
 
   @override
   void ngOnInit() async {
     learningContents = await _learningContentService.getAll();
     quickActions = await _actionContentService.getAll();
+    riseContents = await _riseService.getAll();
+
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
@@ -62,7 +70,9 @@ class AppComponent implements OnInit {
     ])
   ]);
   final LearningContentService _learningContentService;
+  final RiseService _riseService;
   final QuckActionService _actionContentService;
   List<LearningContent> learningContents = [];
   List<QuickAction> quickActions = [];
+  List<Rise> riseContents = [];
 }
