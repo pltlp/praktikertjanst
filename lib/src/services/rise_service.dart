@@ -13,8 +13,15 @@ class RiseService {
 
 List<Rise> mockContent = [
   new Rise()
-    ..name = 'Test model'
+    ..name = 'Kvicksilver i naturen'
     ..url = 'rise_example/content/index.html'
-    ..description =
-        'Rise innehåll test',
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Begreppsförklaringar'
+    ..url = 'rise_example/content/index.html'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Lagar och regler'
+    ..url = 'rise_example/content/index.html'
+    ..description = 'Rise innehåll test'
 ];

@@ -16,24 +16,24 @@
     </div>
 </d-navbar>
 
-<div>
+<d-fullscreen backgroundImage="url(pics/a_fines_de_octubre.jpeg)"
+              [offsetTop]="100">
+    <!--<h1 class="color-white">Vet du hur man hanterar kvicksilver?</h1>-->
 
-    <d-fullscreen backgroundImage="url(pics/a_fines_de_octubre.jpeg)"
-                  [offsetTop]="100">
-        <!--<h1 class="color-white">Vet du hur man hanterar kvicksilver?</h1>-->
+    <div id="youtube-player-wrapper">
+        <iframe id="ytplayer"
+                type="text/html"
+                src="https://www.youtube.com/embed/xfOfFNb1kzI?autoplay=1&controls=0&fs=0&modestbranding=1&rel=0&showinfo=0"
+                frameborder="0"
+                allowfullscreen
+                scrolling="no"></iframe>
+    </div>
 
-        <div id="youtube-player-wrapper">
-            <iframe id="ytplayer"
-                    type="text/html"
-                    src="https://www.youtube.com/embed/xfOfFNb1kzI?autoplay=1&controls=0&fs=0&modestbranding=1&rel=0&showinfo=0"
-        
-                    frameborder="0"
-                    allowfullscreen
-                    scrolling="no"></iframe>
-        </div>
-
-    </d-fullscreen>
-
+</d-fullscreen>
+<d-fullscreen>
+    <p-main class="background-color-deep-cerulean"></p-main>
+</d-fullscreen>
+<!--
     <d-fullscreen>
         <div class="row">
             <div class="col">
@@ -57,6 +57,5 @@
         <p-rise *ngIf="riseContents.isNotEmpty"
                 [model]="riseContents.first"></p-rise>
     </d-fullscreen>
-
-    <p-footer class="margin-top-large"></p-footer>
-</div>
+-->
+<p-footer class="margin-top-large"></p-footer>

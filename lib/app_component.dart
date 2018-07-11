@@ -8,6 +8,7 @@ import 'src/components/carousel_component/carousel_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/learning_content_component/learning_content_component.dart';
+import 'src/components/main_component/main_component.dart';
 import 'src/components/quick_action_component/quick_action_component.dart';
 import 'src/components/rise_component/rise_component.dart';
 import 'src/models/learning_content.dart';
@@ -24,17 +25,18 @@ import 'src/services/rise_service.dart';
       'app_component.css'
     ],
     directives: [
-      NgFor,
-      NgIf,
       NavbarComponent,
       FooterComponent,
       FullscreenComponent,
       materialDirectives,
       CarouselComponent,
       LearningContentComponent,
+      MainComponent,
       QuickActionComponent,
-      RiseComponent
-      
+      RiseComponent,
+      NgFor,
+      NgIf
+
     ],
     providers: [
       materialProviders,

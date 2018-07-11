@@ -5,7 +5,7 @@ import 'package:angular/security.dart';
 import '../../models/quick_action.dart';
 
 @Component(
-  selector: 'd-quick-action',
+  selector: 'p-quick-action',
   templateUrl: 'quick_action_component.html',
   styleUrls: const ['quick_action_component.css'],
   directives: const [MaterialButtonComponent, MaterialIconComponent, FoModalComponent],

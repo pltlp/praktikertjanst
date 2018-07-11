@@ -1,23 +1,21 @@
 $cerulean:#00A0C8;
+$deepCerulean:#0075B0;
+.background-color-deep-cerulean {
+    background-color: $deepCerulean;
+}
 
-
-
-.background-color-cerulean
-{
+.background-color-cerulean {
     background-color: $cerulean;
 }
 
-.background-color-gray
-{
+.background-color-gray {
     background-color: #eee;
 }
 
-.color-white
-{
-    color:white;
+.color-white {
+    color: white;
 }
 
-.color-cerulean
-{
+.color-cerulean {
     color: $cerulean;
 }

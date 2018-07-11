@@ -13,6 +13,11 @@ class VideoService {
 
 List<Video> mockContent = [
   new Video()
+    ..name = 'Insipirational video3'
+    ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
+    ..imgSrc =
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg',
+  new Video()
     ..name = 'placeholder model'
     ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
     ..imgSrc =
@@ -22,11 +27,7 @@ List<Video> mockContent = [
     ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg',
-  new Video()
-    ..name = 'Insipirational video3'
-    ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
-    ..imgSrc =
-        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg',
+  /*
   new Video()
     ..name = 'placeholder model'
     ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
@@ -57,4 +58,5 @@ List<Video> mockContent = [
     ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+        */
 ];
