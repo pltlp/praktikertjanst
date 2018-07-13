@@ -15,9 +15,9 @@ List<QuickAction> mockContent = [
   new QuickAction()
     ..icon = 'question_answer'
     ..name = 'What have you learned?'
-    ..url = 'Test your knowledge here!'
+    ..url = ''
     ..description =
-        '',
+        'Test your knowledge here!',
   new QuickAction()
     ..icon = 'question_answer'
     ..name = 'Self estimation'

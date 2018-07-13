@@ -15,10 +15,16 @@
 </div>
 
 <h2 class="color-white">{{good_examples}}</h2>
-<div class="row">
-    <div class="m4 col"
-         *ngFor="let video of videos">
-        <p-video [model]="video"></p-video>
+<div class="row"
+     *ngIf="videos.isNotEmpty">
+    <div class="m4 col">
+        <p-video [model]="videos[0]"></p-video>
+    </div>
+    <div class="m4 col">
+        <p-video [model]="videos[1]"></p-video>
+    </div>
+    <div class="m4 col">
+        <p-video [model]="videos[2]"></p-video>
     </div>
 </div>
 <div class="row">

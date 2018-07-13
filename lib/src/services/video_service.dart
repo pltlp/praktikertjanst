@@ -13,50 +13,38 @@ class VideoService {
 
 List<Video> mockContent = [
   new Video()
-    ..name = 'Insipirational video3'
+    ..name = 'Good example'
     ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg',
   new Video()
-    ..name = 'placeholder model'
+    ..name = 'Good example'
     ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
     ..imgSrc =
         'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg',
   new Video()
-    ..name = 'Insipirational video1'
+    ..name = 'Good example'
     ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg',
-  /*
   new Video()
-    ..name = 'placeholder model'
+    ..name = 'Routines for patient treatment'
     ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
     ..imgSrc =
         'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg',
   new Video()
-    ..name = 'Insipirational video1'
+    ..name = 'Maintenance of amalgam separators for one week'
     ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg',
   new Video()
-    ..name = 'Insipirational video3'
+    ..name = 'Care of amalgam separators on more irregular basis'
     ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg',
   new Video()
-    ..name = 'placeholder model'
-    ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
-    ..imgSrc =
-        'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg',
-  new Video()
-    ..name = 'Insipirational video1'
-    ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-    ..imgSrc =
-        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg',
-  new Video()
-    ..name = 'Insipirational video3'
+    ..name = 'Five quick checks!'
     ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
     ..imgSrc =
-        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
-        */
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg',
 ];

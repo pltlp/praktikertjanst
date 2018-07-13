@@ -43,6 +43,43 @@
 </material-tab-panel>
 
 
+<div class="row expand margin-bottom-none margin-top-none"
+     *ngIf="videos.isNotEmpty">
+    <div class="m3 col">
+        <h3 class="color-white">{{videos[3].name}}</h3>
+    </div>
+    <div class="m3 col">
+        <h3 class="color-white">{{videos[4].name}}</h3>
+    </div>
+    <div class="m3 col">
+        <h3 class="color-white">{{videos[5].name}}</h3>
+    </div>
+    <div class="m3 col">
+        <h3 class="color-white">{{videos[6].name}}</h3>
+    </div>
+</div>
+
+<div class="row expand margin-bottom-none margin-top-none padding-bottom-none padding-top-none"
+     *ngIf="videos.isNotEmpty">
+    <h3 class="color-white">{{videos[3].name}}</h3>
+    <div class="m3 col">
+        <p-video [model]="videos[3]"></p-video>
+    </div>
+    <h3 class="color-white">{{videos[4].name}}</h3>
+    <div class="m3 col">
+        <p-video [model]="videos[4]"></p-video>
+    </div>
+    <h3 class="color-white">{{videos[5].name}}</h3>
+    <div class="m3 col">
+        <p-video [model]="videos[5]"></p-video>
+    </div>
+    <h3 class="color-white">{{videos[6].name}}</h3>
+    <div class="m3 col">
+        <p-video [model]="videos[6]"></p-video>
+    </div>
+</div>
+
+
 <!--
 <h2 class="color-white">{{good_examples}}</h2>
 <div class="row">
