@@ -19,6 +19,8 @@ class VideoComponent implements OnInit {
 
   @Input()
   Video model;
+  @Input()
+  int height = 35;
   
   final DomSanitizationService sanitizer;
   SafeResourceUrl url;

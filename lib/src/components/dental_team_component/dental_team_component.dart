@@ -1,4 +1,5 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 import '../../models/quick_action.dart';
@@ -13,10 +14,10 @@ import '../rise_component/rise_component.dart';
 import '../video_component/video_component.dart';
 
 @Component(
-    selector: 'p-main',
-    templateUrl: 'main_component.html',
+    selector: 'p-dental-team',
+    templateUrl: 'dental_team_component.html',
     styleUrls: const [
-      'main_component.css'
+      'dental_team_component.css'
     ],
     directives: const [
       FoModalComponent,
@@ -25,22 +26,23 @@ import '../video_component/video_component.dart';
       CarouselComponent,
       QuickActionComponent,
       NgIf,
-      NgFor
+      NgFor,
+      materialDirectives
     ],
     providers: [
       VideoService,
       RiseService,
-      QuckActionService
+      QuckActionService,
+      materialProviders
     ],
     pipes: [
       NamePipe
     ])
-class MainComponent implements OnInit {
-  MainComponent(this.videoService, this.riseService, this.quickActionService);
+class DentalTeamComponent implements OnInit {
+  DentalTeamComponent(this.videoService, this.riseService, this.quickActionService);
 
   void ngOnInit() async {
-    component_title = Intl.message('Main content', name: 'main_content');
-    good_examples = Intl.message('Good examples', name: 'good_examples');
+    component_title = Intl.message('Dental team', name: 'dental_team');
 
     videos = await videoService.getAll();
     riseContents = await riseService.getAll();

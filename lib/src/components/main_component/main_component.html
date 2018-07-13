@@ -1,12 +1,17 @@
 <h1 class="color-white">{{component_title}}</h1>
 
 <p-video *ngIf="videos.isNotEmpty"
+         [height]="70"
          [model]="videos.first">
 </p-video>
 
-<div *ngFor="let rise of riseContents">
-    <h2 class="color-white">{{rise.name}}</h2>
-    <p-rise [model]="rise"></p-rise>
+<div *ngIf="riseContents.isNotEmpty">
+    <h2 class="color-white">{{riseContents[0].name}}</h2>
+    <p-rise [model]="riseContents[0]"></p-rise>
+    <h2 class="color-white">{{riseContents[1].name}}</h2>
+    <p-rise [model]="riseContents[1]"></p-rise>
+    <h2 class="color-white">{{riseContents[2].name}}</h2>
+    <p-rise [model]="riseContents[2]"></p-rise>
 </div>
 
 <h2 class="color-white">{{good_examples}}</h2>

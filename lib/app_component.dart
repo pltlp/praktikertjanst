@@ -5,6 +5,7 @@ import 'package:angular_components/model/menu/menu.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 import 'src/components/carousel_component/carousel_component.dart';
+import 'src/components/dental_team_component/dental_team_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/learning_content_component/learning_content_component.dart';
@@ -32,6 +33,7 @@ import 'src/services/rise_service.dart';
       CarouselComponent,
       LearningContentComponent,
       MainComponent,
+      DentalTeamComponent,
       QuickActionComponent,
       RiseComponent,
       NgFor,

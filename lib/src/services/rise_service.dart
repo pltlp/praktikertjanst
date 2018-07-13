@@ -13,15 +13,35 @@ class RiseService {
 
 List<Rise> mockContent = [
   new Rise()
-    ..name = 'Kvicksilver i naturen'
+    ..name = 'Mercury in nature'
     ..url = 'rise_example/content/index.html'
     ..description = 'Rise innehåll test',
   new Rise()
-    ..name = 'Begreppsförklaringar'
+    ..name = 'Glossary'
     ..url = 'rise_example/content/index.html'
     ..description = 'Rise innehåll test',
   new Rise()
-    ..name = 'Lagar och regler'
+    ..name = 'Laws and regulations'
+    ..url = 'rise_example_2/content/index.html'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Overview of the reception'
+    ..url = 'rise_example_2/content/index.html'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Proper management overview'
+    ..url = 'rise_example_2/content/index.html'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Make your own evaluation!'
     ..url = 'rise_example/content/index.html'
-    ..description = 'Rise innehåll test'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Handling of amalgam waste'
+    ..url = 'rise_example_2/content/index.html'
+    ..description = 'Rise innehåll test',
+  new Rise()
+    ..name = 'Pipework and renovation'
+    ..url = 'rise_example/content/index.html'
+    ..description = 'Rise innehåll test',
 ];

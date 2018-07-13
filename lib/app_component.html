@@ -19,7 +19,6 @@
 <d-fullscreen backgroundImage="url(pics/a_fines_de_octubre.jpeg)"
               [offsetTop]="100">
     <!--<h1 class="color-white">Vet du hur man hanterar kvicksilver?</h1>-->
-
     <div id="youtube-player-wrapper">
         <iframe id="ytplayer"
                 type="text/html"
@@ -28,34 +27,14 @@
                 allowfullscreen
                 scrolling="no"></iframe>
     </div>
-
 </d-fullscreen>
+
 <d-fullscreen>
     <p-main class="background-color-deep-cerulean"></p-main>
 </d-fullscreen>
-<!--
-    <d-fullscreen>
-        <div class="row">
-            <div class="col">
-                <d-carousel></d-carousel>
-            </div>
-        </div>
-        <div class="row margin-top-medium">
-            <div class="l6 col"
-                 *ngFor="let learningContent of learningContents">
-                <d-learning-content [model]="learningContent"></d-learning-content>
-            </div>
-        </div>
-        <div class="row margin-top-x-large">
-            <div class="l3 col"
-                 *ngFor="let quickAction of quickActions">
-                <d-quick-action [model]="quickAction"></d-quick-action>
-            </div>
-        </div>
-    </d-fullscreen>
-    <d-fullscreen>
-        <p-rise *ngIf="riseContents.isNotEmpty"
-                [model]="riseContents.first"></p-rise>
-    </d-fullscreen>
--->
+
+<d-fullscreen>
+    <p-dental-team class="background-color-carnation"></p-dental-team>
+</d-fullscreen>
+
 <p-footer class="margin-top-large"></p-footer>

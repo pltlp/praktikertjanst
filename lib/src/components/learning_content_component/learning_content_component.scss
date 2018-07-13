@@ -1,17 +1,17 @@
-@import '../../../../web/colors.scss'; 
+@import '../../../../web/colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
-
-
-material-button
-{
-    color:white;
-    background: $cerulean;
-    width:100%;
+:host {
+    material-button {
+        color: white;
+        background: $cerulean;
+        width: 100%;
+    }
+    margin:0;
+    padding:0;
 }
 
-iframe
-{
+iframe {
     width: 100%;
     height: 70vh;
-} 
+}

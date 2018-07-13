@@ -15,14 +15,14 @@ List<QuickAction> mockContent = [
   new QuickAction()
     ..icon = 'question_answer'
     ..name = 'What have you learned?'
-    ..url = ''
+    ..url = 'Test your knowledge here!'
     ..description =
         '',
   new QuickAction()
     ..icon = 'question_answer'
     ..name = 'Self estimation'
+    ..description = 'How long will it take to mange your quicksilver amalgam?'
     ..url =
-        ''
-    ..description = 'How long will it take to mange your Quicksilver?',
-
+        '',
+    
 ];
