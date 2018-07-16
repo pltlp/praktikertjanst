@@ -1,0 +1,30 @@
+@import '../../../../web/colors.scss';
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_icon/mixins';
+:host
+{
+    background-color: whte;
+    h1{
+        color: #424242;
+        font-size: 5em;
+        font-weight: bolder;
+    }
+    button {
+        color: white;
+        background: $cerulean;
+        font-size: 2.5em;
+        font-weight: lighter;
+        text-align: center;
+        border-radius: 60px;
+        padding-left:0.9em;
+        padding-right:0.9em;
+        padding-top:0.6em;
+        padding-bottom:0.6em;
+    }
+
+    button:hover
+    {
+        opacity: 0.7;
+    }
+       
+}
