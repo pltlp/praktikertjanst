@@ -2,8 +2,6 @@
 @import 'package:angular_components/material_icon/mixins';
 :host {
     display: block;
-    
-
     material-icon.menu-icon {
         @include material-icon-size($mat-grid * 5);
         color: white;
@@ -11,6 +9,18 @@
     material-auto-suggest-input {
         width: $mat-grid * 25;
         color: white;
+    }
+    d-navbar {
+        .row {
+            .col {
+                a {
+                    color: white;
+                    padding-right: 1.5em;
+                    font-weight: bolder;
+                    font-size: 1.2em;
+                }
+            }
+        }
     }
     div#youtube-player-wrapper {
         position: relative;
@@ -30,15 +40,6 @@
             padding: 0;
             display: block;
             overflow: hidden;
-        }
-    }
-    div#navbar-items {
-        display: flex;
-        align-items: center;
-        height: 100px;
-        .last-item {
-            margin-left: auto;
-            padding-right: 2em;
         }
     }
 }

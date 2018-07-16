@@ -57,6 +57,10 @@ class AppComponent implements OnInit {
     learningContents = await _learningContentService.getAll();
     quickActions = await _actionContentService.getAll();
     riseContents = await _riseService.getAll();
+    link = Intl.message('link', name: 'link');
+    link1 = Intl.message('link1', name: 'link1');
+    link2 = Intl.message('link2', name: 'link2');
+    link3 = Intl.message('link3', name: 'link3');
 
   }
 
@@ -79,4 +83,8 @@ class AppComponent implements OnInit {
   List<LearningContent> learningContents = [];
   List<QuickAction> quickActions = [];
   List<Rise> riseContents = [];
+  String link;
+  String link1;
+  String link2;
+  String link3;
 }
