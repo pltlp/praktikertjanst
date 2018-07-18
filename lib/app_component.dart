@@ -8,6 +8,7 @@ import 'src/components/carousel_component/carousel_component.dart';
 import 'src/components/dental_team_component/dental_team_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
+import 'src/components/good_exampels_component/good_examples_component.dart';
 import 'src/components/learning_content_component/learning_content_component.dart';
 import 'src/components/main_component/main_component.dart';
 import 'src/components/main_header_component/main_header_component.dart';
@@ -30,6 +31,7 @@ import 'src/services/rise_service.dart';
       NavbarComponent,
       FooterComponent,
       FullscreenComponent,
+      GoodExamplesComponent,
       materialDirectives,
       CarouselComponent,
       LearningContentComponent,

@@ -4,4 +4,5 @@ class Video {
   String url;
   String name;
   String imgSrc;
+  String desc;
 }
