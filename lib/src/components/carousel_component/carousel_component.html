@@ -2,13 +2,13 @@
 <fo-carousel *ngIf="loaded">
         <fo-carousel-slide *ngFor="let videoList of videoTable">
                 <div class="row margin-bottom-large expand">
-                        <div class="s4 col padding-large"
+                        <div class="s4 col"
                              *ngFor="let video of videoList">
                                 <img class="hover-effect"
                                         (click)="onVideoClick(video)"
                                         src="{{video.imgSrc}}"
                                         alt="{{video.name}}">
-                                <div class="limit">
+                                <div>
                                         <h2>{{video.name}}</h2>
                                         <p>{{video.desc}}</p>
                                 </div>

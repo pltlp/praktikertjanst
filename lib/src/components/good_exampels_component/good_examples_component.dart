@@ -13,9 +13,9 @@ import '../carousel_component/carousel_component.dart';
     pipes: [NamePipe])
 class GoodExamplesComponent implements OnInit {
   void ngOnInit() {
-    good_exampels = Intl.message('good exampels',
-        name: 'good_exampels');
+   good_examples = Intl.message('good examples',
+        name: 'good_examples');
   }
 
-  String good_exampels;
+  String good_examples;
 }

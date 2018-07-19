@@ -3,7 +3,7 @@
 @import 'package:angular_components/material_icon/mixins';
 :host
 {
-    background-color: whte;
+    background-color: white;
     h1{
         color: #424242;
         font-size: 5em;
@@ -20,12 +20,14 @@
         padding-right:0.9em;
         padding-top:0.6em;
         padding-bottom:0.6em;
+        border:none;
     }
 
     button:hover
     {
         background:$astronautBlue;
         cursor:pointer;
+        border:none;
     }
        
     material-icon
