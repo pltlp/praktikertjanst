@@ -1,9 +1,7 @@
-:host {
-    h1 {
-        color: black;
-        font-size: 4em;
-        font-weight: bolder;
-        margin-bottom: 0;
-        margin-top: .5em;
-    }
+@import '../../../../web/colors.scss';
+
+:host
+{
+    display: block;
+    background-color: $alto;  
 }

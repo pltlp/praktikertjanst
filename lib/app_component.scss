@@ -1,5 +1,7 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
+@import '../web/colors.scss';
+
 :host {
     display: block;
     material-icon.menu-icon {
@@ -8,7 +10,7 @@
     }
     material-auto-suggest-input {
         width: $mat-grid * 25;
-        color: white;
+        color: white;  
     }
     d-navbar {
         .row {
@@ -19,11 +21,10 @@
                     font-weight: bolder;
                     font-size: 1.2em;
                     text-decoration: none;
-                  
                 }
                 a:hover
                 {
-                    color:#93e2e2;
+                    color: $astronautBlue;
                 }
             }
         }

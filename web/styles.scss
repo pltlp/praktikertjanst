@@ -1,12 +1,23 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import 'package:grid/grid';
-@import 'colors';
+@import 'colors.scss';
 * {
     font-family: 'Ubuntu', sans-serif;
 }
 
 html, body {
+
+    h1 {
+        color: black;
+        font-size: 4em;
+        font-weight: bolder;
+    }
+
+    h2 {
+        text-decoration: none;
+    }
+
     margin: 0;
 }
 /*

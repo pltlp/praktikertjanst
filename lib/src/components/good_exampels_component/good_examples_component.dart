@@ -5,17 +5,14 @@ import 'package:fo_components/fo_components.dart';
 import '../carousel_component/carousel_component.dart';
 
 @Component(
-    directives: const [materialDirectives,CarouselComponent],
-    providers: const [materialProviders],
+    directives: const [CarouselComponent],
+    providers: const [MaterialIconComponent],
     selector: 'p-good-examples',
     styleUrls: const ['good_examples_component.css'],
     templateUrl: 'good_examples_component.html',
     pipes: [NamePipe])
-class GoodExamplesComponent implements OnInit {
-  void ngOnInit() {
-   good_examples = Intl.message('good examples',
-        name: 'good_examples');
-  }
+class GoodExamplesComponent {
 
-  String good_examples;
+  String get good_examples => Intl.message('good examples',
+        name: 'good_examples');
 }

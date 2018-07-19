@@ -1,20 +1,21 @@
 :host {
-
-    .hover-effect {
+    .slide-element:hover {
+        opacity: 1;
+    }
+    .slide-element {
         opacity: 0.7;
         transition: opacity 500ms ease;
         cursor: pointer;
+        box-shadow: 2px 2px 4px #555;
+        display: block;
+        .block {
+            display: block;
+            p {
+                white-space: initial;
+                text-align: justify;
+            }
+        }
     }
-    .hover-effect:hover {
-        opacity: 1;
-    }
-    
-    .limit{
-        word-wrap: break-word;
-        width:200px;
-        text-align: justify;
-    }
-    
 }
 
 iframe {

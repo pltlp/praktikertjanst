@@ -10,14 +10,9 @@ import 'package:fo_components/fo_components.dart';
     styleUrls: const ['main_header_component.css'],
     templateUrl: 'main_header_component.html',
     pipes: [NamePipe])
-class MainHeaderComponent implements OnInit {
-  void ngOnInit() {
-    main_header = Intl.message('small efforts make a huge difference!',
+class MainHeaderComponent {
+   String get main_header => Intl.message('small efforts make a huge difference!',
         name: 'small_efforts_make_a_huge_difference');
-   learn_more = Intl.message('learn more!',
+   String get learn_more => Intl.message('learn more!',
         name: 'learn_more');
-  }
-
-  String main_header;
-  String learn_more;
 }
