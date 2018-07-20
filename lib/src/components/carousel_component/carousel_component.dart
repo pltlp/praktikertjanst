@@ -7,6 +7,7 @@ import 'package:fo_components/fo_components.dart';
 
 import '../../models/video.dart';
 import '../../services/video_service.dart';
+import '../carousel_slide_section_component/carousel_slide_section_component.dart';
 
 @Component(
     selector: 'p-carousel',
@@ -18,6 +19,7 @@ import '../../services/video_service.dart';
       VideoService
     ],
     directives: const [
+      CarouselSlideSectionComponent,
       FoCarouselComponent,
       FoCarouselSlideComponent,
       FoModalComponent,
@@ -40,11 +42,11 @@ class CarouselComponent implements OnInit {
     loaded = true;
   }
 
+
   void onVideoClick(Video video) {
     selectedModel = video;
     url = sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url);
   }
-
 
   bool loaded = false;
   Video selectedModel;

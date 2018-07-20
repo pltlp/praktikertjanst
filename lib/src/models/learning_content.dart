@@ -1,4 +1,6 @@
-class LearningContent {
+import 'model.dart';
+
+class LearningContent extends Model {
   LearningContent();
 
   String url;

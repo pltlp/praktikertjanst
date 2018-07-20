@@ -1,4 +1,6 @@
-class QuickAction {
+import 'model.dart';
+
+class QuickAction extends Model {
   QuickAction();
 
   String url;

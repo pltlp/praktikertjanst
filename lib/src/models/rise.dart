@@ -1,4 +1,6 @@
-class Rise {
+import 'model.dart';
+
+class Rise extends Model{
   Rise();
 
   String url;

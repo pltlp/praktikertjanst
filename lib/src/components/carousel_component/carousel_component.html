@@ -3,17 +3,9 @@
                 <div class="row margin-bottom-large expand">
                         <div class="s4 col"
                              *ngFor="let video of videoList">
-                                <div class="slide-element">
-                                        <img (click)="onVideoClick(video)"
-                                             src="{{video.imgSrc}}"
-                                             alt="{{video.name}}">
-                                        <div class="row block">
-                                                <div class="col">
-                                                        <h3>{{video.name}}</h3>
-                                                        <p>{{video.desc}}</p>
-                                                </div>
-                                        </div>
-                                </div>
+                                <p-carousel-slide-section [model]="video" (click)="onVideoClick(video)">
+
+                                </p-carousel-slide-section>
                         </div>
                 </div>
         </fo-carousel-slide>
