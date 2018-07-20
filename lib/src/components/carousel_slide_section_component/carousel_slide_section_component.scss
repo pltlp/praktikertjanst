@@ -1,6 +1,6 @@
 :host {
     display: block;
-    box-shadow: 2px 2px 4px #555;
+    box-shadow: 2px 2px 4px #888;
     img:hover {
         opacity: 1;
     }
@@ -10,7 +10,9 @@
         cursor: pointer;
     }
     .padding {
-        padding: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
         p {
             white-space: initial;
             word-wrap: break-word;
