@@ -8,6 +8,8 @@
 
 html, body {
 
+    margin:0;
+
     h1 {
         color: black;
         font-size: 4em;
@@ -18,7 +20,10 @@ html, body {
         text-decoration: none;
     }
 
-    margin: 0;
+    .width-100
+    {
+        width:100%;
+    }
 }
 /*
 .row {

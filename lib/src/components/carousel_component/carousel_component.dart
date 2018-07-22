@@ -1,5 +1,4 @@
 import 'dart:core';
-
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:angular_components/angular_components.dart';

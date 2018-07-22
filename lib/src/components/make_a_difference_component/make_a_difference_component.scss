@@ -1,0 +1,53 @@
+@import '../../../../web/colors.scss';
+:host {
+    div {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .row {
+        .col {
+            button {
+                color: white;
+                background: $cerulean;
+                font-size: 2.5em;
+                font-weight: lighter;
+                text-align: center;
+                border-radius: 60px;
+                padding-left: 0.9 em;
+                padding-right: 0.9em;
+                padding-top: 0.6em;
+                padding-bottom: 0.6em;
+                border: none;
+                text-align: center;
+                z-index: 2;
+            }
+            button:hover {
+                background: $astronautBlue;
+                cursor: pointer;
+                border: none;
+                text-align: center;
+                z-index: 2;
+            }
+            .show-on-hover-content {
+                background-color: white;
+                min-height: 7em;
+                z-index: -1;
+                border-radius: 30px 30px 30px 30px;
+                transition-property: opacity;
+                transition-duration: 0.7s;
+                p{
+                    margin:0;
+                    padding:1em;
+                    font-weight: lighter;
+                    font-size: 1.5em;
+                }   
+            }
+        }
+    }
+}
