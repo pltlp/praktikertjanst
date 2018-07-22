@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
@@ -17,7 +16,7 @@ class MakeaADifferenceComponent {
   String backgroundImage;
 
   String get you_can_make_a_differance =>
-      Intl.message('you can make a differance',
+      Intl.message('you really can make a difference!',
           name: 'you_can_make_a_differance');
 
   String get find_out_what_is_allowed => Intl.message(

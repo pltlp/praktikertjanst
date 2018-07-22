@@ -8,55 +8,44 @@
     </div>
 
     <div class="row expand margin-top-x-large margin-bottom-large">
-        <div class="col m1">
+        <div class="row expand">
+            <div class="col m1">
 
-        </div>
-        <div class="col m4 text-center">
-            <div class="row margin-none">
-                <div class="col">
-                    <div class="row margin-none">
-                        <div class="col">
-                            <div class="show-on-hover-content"
-                                 [style.opacity]="opacity">
-                                <p>
-                                    {{find_out_what_is_allowed}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row margin-none">
-                        <div class="col">
-                            <button style="width:100%;"
-                                    (mouseover)="setOpacity()"
-                                    (mouseleave)="setOpacityZero()">
-                                {{what_do_you_already_know | name}}
-                            </button>
-                        </div>
-                    </div>
+            </div>
+            <div class="col m4 text-center">
+                <div class="show-on-hover-content"
+                     [style.opacity]="opacity">
+                    <p>
+                        {{find_out_what_is_allowed}}
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="col m2">
-        </div>
-        <div class="col m4">
-            <div class="row margin-none">
-                <div class="col">
-                    <div style="opacity:0; min-height:6.5em;">
-                        <p>
-                            {{find_out_what_is_allowed}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button style="width:100%;">
-                        {{learn_more | name}}
-                    </button>
-                </div>
+            <div class="col m7">
+
             </div>
         </div>
-        <div class="col m1">
+        <div class="row expand">
+            <div class="col m1">
+
+            </div>
+            <div class="col m4">
+                <button style="width:100%;"
+                        (mouseover)="setOpacity()"
+                        (mouseleave)="setOpacityZero()">
+                    {{what_do_you_already_know | name}}
+                </button>
+            </div>
+            <div class="col m2">
+
+            </div>
+            <div class="col m4">
+                <button style="width:100%;">
+                    {{learn_more | name}}
+                </button>
+            </div>
+            <div class="col m1">
+
+            </div>
         </div>
     </div>
 </div>

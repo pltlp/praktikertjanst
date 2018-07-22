@@ -9,7 +9,6 @@
         -o-background-size: cover;
         background-size: cover;
     }
-
     .row {
         .col {
             button {
@@ -37,16 +36,15 @@
             .show-on-hover-content {
                 background-color: white;
                 min-height: 7em;
-                z-index: -1;
                 border-radius: 30px 30px 30px 30px;
                 transition-property: opacity;
                 transition-duration: 0.7s;
-                p{
-                    margin:0;
-                    padding:1em;
+                p {
+                    margin: 0;
+                    padding: 1em;
                     font-weight: lighter;
                     font-size: 1.5em;
-                }   
+                }
             }
         }
     }
