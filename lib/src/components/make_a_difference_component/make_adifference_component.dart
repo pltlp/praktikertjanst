@@ -20,12 +20,12 @@ class MakeaADifferenceComponent {
           name: 'you_can_make_a_differance');
 
   String get find_out_what_is_allowed => Intl.message(
-      'Find out what you are allowed to do! Answer these five simple questions and find the information relevant to you.',
+      "Find out what you didn't know you could do! Answer these five simple questions and find the information relevant to you.",
       name: 'find_out_what_is_allowed');
   String get learn_more => Intl.message('learn more!', name: 'learn_more');
   String get what_do_you_already_know =>
       Intl.message('what do you already know?',
-          name: 'what_do_you_already know');
+          name: 'what_do_you_already know'); 
 
   void setOpacity() {
     opacity = '0.5';
