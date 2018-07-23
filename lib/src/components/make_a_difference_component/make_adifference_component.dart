@@ -2,10 +2,9 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../directives/show_element.dart';
 
 @Component(
-    directives: const [ShowElementDirective, NgIf],
+    directives: const [NgIf],
     providers: const [MaterialIconComponent],
     selector: 'p-make-a-differance',
     styleUrls: const ['make_a_difference_component.css'],

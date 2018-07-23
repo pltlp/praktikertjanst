@@ -3,10 +3,10 @@ description: Portal for praktikertjänst
 version: 0.0.1
 author: dmarl <dmarlovic83@gmail.com>
 environment:
-  sdk: '>=2.0.0-dev.65.0 <2.0.0'
+  sdk: '>=2.0.0-dev.65.0 <3.0.0'
 dependencies:
-  angular: ^5.0.0-alpha+15
-  angular_components: ^0.9.0-alpha+15
+  angular: ^5.0.0-beta+2
+  angular_components: ^0.9.0-beta+1
   #animation:
     #git: https://github.com/afpatmin/Animation.git
   d_components:
@@ -17,9 +17,9 @@ dependencies:
     git: https://github.com/afpatmin/fo_components.git
   intl: any
 dev_dependencies:
-  build_runner: ^0.9.1
-  build_web_compilers: ^0.4.0+4
-  sass_builder: ^2.1.0
+  build_runner: ^0.9.2
+  build_web_compilers: ^0.4.1
+  sass_builder: ^2.1.1
 
 
 
