@@ -64,7 +64,7 @@ class AppComponent implements OnInit {
     link1 = Intl.message('link1', name: 'link1');
     link2 = Intl.message('link2', name: 'link2');
     link3 = Intl.message('link3', name: 'link3');
-
+    essential_information = Intl.message('essential information', name: 'essential_information');
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
@@ -90,4 +90,5 @@ class AppComponent implements OnInit {
   String link1;
   String link2;
   String link3;
+  String essential_information;
 }

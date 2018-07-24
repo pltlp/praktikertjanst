@@ -1,19 +1,20 @@
 @import 'colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
-
-
 :host {
     display: block;
     material-icon.menu-icon {
         @include material-icon-size($mat-grid * 5);
         color: white;
     }
-    material-auto-suggest-input {
-        width: $mat-grid * 25;
-        color: white;  
+
+    material-icon.home-icon {
+        @include material-icon-size($mat-grid * 3);
+        color: white;
     }
+  
     d-navbar {
+        
         .row {
             .col {
                 a {
@@ -23,10 +24,12 @@
                     font-size: 1.2em;
                     text-decoration: none;
                 }
-                a:hover
-                {
-                    color: $astronautBlue;
-                }
+            }
+        }
+
+        div.col#right-menu {
+            a:hover {
+                color: $astronautBlue;
             }
         }
     }

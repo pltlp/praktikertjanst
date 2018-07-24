@@ -39,11 +39,4 @@ class CarouselSlideSectionComponent implements OnChanges {
   Video selectedModel;
   SafeResourceUrl safeUrl;
   final DomSanitizationService sanitizer;
-
-  /*
-   String get main_header => Intl.message('small efforts make a huge difference!',
-        name: 'small_efforts_make_a_huge_difference');
-   String get learn_more => Intl.message('learn more!',
-        name: 'learn_more');
-        */
 }

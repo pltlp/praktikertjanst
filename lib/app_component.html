@@ -1,5 +1,5 @@
 <d-navbar backgroundColor="#00A0C8"
-          [height]="130">
+          [height]="165">
     <!--ändra storlek på logo bild-->
     <div class="row expand margin-top-small">
         <div class="col m1 l1 hide-for-small"></div>
@@ -9,7 +9,8 @@
                  alt="logo">
         </div>
         <div class="col m4 l4 hide-for-small"></div>
-        <div class="col m6 l6 hide-for-small text-right">
+        <div id="right-menu"
+             class="col m6 l6 hide-for-small text-right">
             <a href="http://">{{link}}</a>
             <a href="http://">{{link1}}</a>
             <a href="http://">{{link2}}</a>
@@ -23,6 +24,17 @@
                                    class="menu-icon"></material-icon>
                 </section>
             </material-menu>
+        </div>
+    </div>
+    <div class="row expand background-color-astronautblue">
+        <div class="col color-white">
+            <div class="col m1">
+                <material-icon class="background-color-white home-icon"
+                               icon="home"></material-icon>
+            </div>
+            <div class="col m11">
+                <a href="http://">{{essential_information | name}}</a>
+            </div>
         </div>
     </div>
 </d-navbar>
