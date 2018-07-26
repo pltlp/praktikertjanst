@@ -1,6 +1,7 @@
-<div [style.background-image]="backgroundImage" class="row margin-none padding-none expand">
-    <div class="col text-center">
-        <div id="on-hover-show-hidden">
+<div class="row margin-none padding-none expand">
+    <div class="col text-center padding-none">
+        <div id="on-hover-show-hidden"
+             [style.background-image]="backgroundImage">
             <h2 class="color-white">
                 {{model.name | name}}
             </h2>
@@ -14,4 +15,4 @@
         <h2>{{model.name}}</h2>
         <p>{{model.description}}</p>
     </div>
-</div>
+</div> 
