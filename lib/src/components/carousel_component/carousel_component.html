@@ -1,6 +1,6 @@
 <fo-carousel *ngIf="loaded">
         <fo-carousel-slide *ngFor="let videoList of videoTable">
-                <div class="row margin-bottom-large expand">
+                <div class="row margin-bottom-x-large expand">
                         <div class="s4 col"
                              *ngFor="let video of videoList">
                                 <p-carousel-slide-section [model]="video" (click)="onVideoClick(video)">

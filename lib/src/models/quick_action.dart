@@ -7,4 +7,5 @@ class QuickAction extends Model {
   String name;
   String description;
   String icon;
+  String imgSrc;
 }

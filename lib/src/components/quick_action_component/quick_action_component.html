@@ -1,26 +1,17 @@
-<div class="row background-color-cerulean" (click)="showModal=true">
-    <div class="col s6 text-center">
-        <div class="flex-container">
-            <material-icon icon="{{model.icon}}"
-                           ></material-icon>
+<div [style.background-image]="backgroundImage" class="row margin-none padding-none expand">
+    <div class="col text-center">
+        <div id="on-hover-show-hidden">
+            <h2 class="color-white">
+                {{model.name | name}}
+            </h2>
         </div>
-    </div>
-    <div class="col s6 background-color-gray">
-        <h2 class="color-cerulean">{{model.name}}</h2>
-        <p class="color-cerulean">{{model.description}}</p>
     </div>
 </div>
-<fo-modal [title]="model.name"
-          [(visible)]="showModal"
-          [showCloseButton]="true" 
-          [fixedWidth]="true"
-          >
-    <div class="row">
-        <div class="col">
-            <iframe src="{{url}}"
-                    allowfullscreen></iframe>
-        </div>
+<div class="row margin-none padding-none">
+    <div class="col background-color-cerulean text-center color-white">
+        <material-icon class="action-icon background-color-cerulean"
+                       icon="{{model.icon}}"></material-icon>
+        <h2>{{model.name}}</h2>
+        <p>{{model.description}}</p>
     </div>
-    <div footer>
-    </div>
-</fo-modal> 
+</div>

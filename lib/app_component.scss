@@ -4,17 +4,16 @@
 :host {
     display: block;
     material-icon.menu-icon {
-        @include material-icon-size($mat-grid * 5);
+        @include material-icon-size($mat-grid * 7);
         color: white;
     }
-
     material-icon.home-icon {
         @include material-icon-size($mat-grid * 3);
         color: white;
+        display: inline;
+        text-overflow: inherit !important;
     }
-  
     d-navbar {
-        
         .row {
             .col {
                 a {
@@ -25,11 +24,10 @@
                     text-decoration: none;
                 }
             }
-        }
-
-        div.col#right-menu {
-            a:hover {
-                color: $astronautBlue;
+            div#right-menu {
+                a:hover {
+                    color: $astronautBlue;
+                }
             }
         }
     }

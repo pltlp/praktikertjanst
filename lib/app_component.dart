@@ -12,9 +12,9 @@ import 'src/components/learning_content_component/learning_content_component.dar
 import 'src/components/main_header_component/main_header_component.dart';
 import 'src/components/make_a_difference_component/make_adifference_component.dart';
 import 'src/components/quick_action_component/quick_action_component.dart';
+import 'src/components/quick_actions_component/quick_actions_component.dart';
 import 'src/components/rise_component/rise_component.dart';
 import 'src/models/learning_content.dart';
-import 'src/models/quick_action.dart';
 import 'src/models/rise.dart';
 import 'src/services/learning_content_service.dart';
 import 'src/services/quick_action_service.dart';
@@ -38,27 +38,25 @@ import 'src/services/rise_service.dart';
       MainHeaderComponent,
       MakeaADifferenceComponent,
       QuickActionComponent,
+      QuickActionsComponent,
       RiseComponent,
       NgFor,
       NgIf
-
     ],
     providers: [
       materialProviders,
       LearningContentService,
-      QuckActionService,
       RiseService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent implements OnInit {
-  AppComponent(this._learningContentService, this._actionContentService, this._riseService);
+  AppComponent(this._learningContentService, this._riseService);
 
   @override
   void ngOnInit() async {
     learningContents = await _learningContentService.getAll();
-    quickActions = await _actionContentService.getAll();
     riseContents = await _riseService.getAll();
     link = Intl.message('link', name: 'link');
     link1 = Intl.message('link1', name: 'link1');
@@ -74,21 +72,19 @@ class AppComponent implements OnInit {
 
   final MenuModel menuModel = MenuModel<MenuItem>([
     MenuItemGroup<MenuItem>([
-      MenuItem(Intl.message('Overview', name: 'overview')),
-      MenuItem(Intl.message('Installation', name: 'installation')),
-      MenuItem(Intl.message('Management', name: 'management')),
-      MenuItem(Intl.message('Decommissioning', name: 'decommissioning')),
+      MenuItem(Intl.message(link, name: 'link')),
+      MenuItem(Intl.message(link1, name: 'link1')),
+      MenuItem(Intl.message(link2, name: 'link2')),
+      MenuItem(Intl.message(link3, name: 'link3')),
     ])
   ]);
   final LearningContentService _learningContentService;
   final RiseService _riseService;
-  final QuckActionService _actionContentService;
   List<LearningContent> learningContents = [];
-  List<QuickAction> quickActions = [];
   List<Rise> riseContents = [];
-  String link;
-  String link1;
-  String link2;
-  String link3;
-  String essential_information;
+  static  String link;
+  static  String link1;
+  static String link2;
+  static String link3;
+  static String essential_information;
 }

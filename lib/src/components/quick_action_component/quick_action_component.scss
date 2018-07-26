@@ -2,42 +2,33 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 :host {
-    font-size:0;
     cursor: pointer;
+}
+
+#hidden {
+    display: none;
+}
+
+#on-hover-show-hidden:hover+#hidden {
     display: block;
-    transition: box-shadow 300ms ease;
-    margin:0;
-    padding:0;
-    .row {
-        .col {
-            height: 9rem;
-            overflow-y: auto;
-            div.flex-container {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                justify-content: center;
-                material-icon {
-                    color: white;
-                    background-color: $cerulean;
-                    @include material-icon-size($mat-grid * 10);
-                }
-            }
-            p {
-                margin: 0;
-                padding: 0;
-                text-align: left;
-            }
-        }
-    }
 }
 
-:host:hover {
-    box-shadow: 1px 1px 5px #aaa;
+#on-hover-show-hidden {
+    height: 12rem;
 }
 
+h2 {
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
 
 iframe {
     width: 100%;
     height: 70vh;
+}
+
+material-icon.action-icon {
+    @include material-icon-size($mat-grid * 7);
+    color: white;
 }
