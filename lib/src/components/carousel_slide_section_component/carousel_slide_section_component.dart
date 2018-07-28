@@ -7,7 +7,7 @@ import '../../models/video.dart';
 
 @Component(
     directives: const [
-      materialDirectives, NgIf
+      NgIf
     ],
     providers: const [materialProviders],
     selector: 'p-carousel-slide-section',

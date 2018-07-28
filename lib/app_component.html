@@ -31,11 +31,15 @@
     <div class="row expand background-color-astronautblue margin-none padding-none">
         <div class="col">
             <div class="col m1 s6 background-color-white">
-                <material-icon class="background-color-white home-icon"
-                               icon="home"></material-icon>
+                <a href="index.html">
+                    <material-icon class="background-color-white home-icon"
+                                   icon="home">
+                    </material-icon>
+                </a>
             </div>
             <div class="col m11 s6">
-                <a href="http://">
+                <a [routerLink]="routes.all[0].toUrl()"
+                   routerLinkActive="active">
                     {{essential_information | name}}
                 </a>
             </div>
@@ -52,6 +56,11 @@
                 scrolling="no"></iframe>
     </div>
 </d-fullscreen>
+<div class="row margin-top-x-large">
+        <div class="col">
+            <router-outlet [routes]="routes.all"></router-outlet>
+        </div>
+</div>
 <d-fullscreen>
     <p-main-header></p-main-header>
 </d-fullscreen>

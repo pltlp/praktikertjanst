@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:fo_components/fo_components.dart';
 
 @Component(
-    directives: const [materialDirectives],
+    directives: const [MaterialIconComponent, MaterialButtonComponent],
     providers: const [materialProviders],
     selector: 'p-main-header',
     styleUrls: const ['main_header_component.css'],

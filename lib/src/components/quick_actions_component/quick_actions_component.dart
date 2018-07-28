@@ -1,6 +1,5 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:intl/intl.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/quick_action.dart';
 import '../../services/quick_action_service.dart';

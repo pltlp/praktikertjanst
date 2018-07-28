@@ -3,6 +3,7 @@ import 'package:angular_components/angular_components.dart';
 import 'package:d_components/d_components.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:fo_components/fo_components.dart';
+import 'package:angular_router/angular_router.dart';
 import 'package:intl/intl.dart';
 import 'src/components/carousel_component/carousel_component.dart';
 import 'src/components/footer_component/footer_component.dart';
@@ -16,8 +17,8 @@ import 'src/components/quick_actions_component/quick_actions_component.dart';
 import 'src/components/rise_component/rise_component.dart';
 import 'src/models/learning_content.dart';
 import 'src/models/rise.dart';
+import 'src/routes/routs.dart';
 import 'src/services/learning_content_service.dart';
-import 'src/services/quick_action_service.dart';
 import 'src/services/rise_service.dart';
 
 @Component(
@@ -40,19 +41,22 @@ import 'src/services/rise_service.dart';
       QuickActionComponent,
       QuickActionsComponent,
       RiseComponent,
+      routerDirectives,
       NgFor,
       NgIf
     ],
     providers: [
       materialProviders,
       LearningContentService,
-      RiseService
+      RiseService,
+      routerProvidersHash,
+      ClassProvider(Routes),
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent implements OnInit {
-  AppComponent(this._learningContentService, this._riseService);
+  AppComponent(this._learningContentService, this._riseService, this.routes);
 
   @override
   void ngOnInit() async {
@@ -63,6 +67,7 @@ class AppComponent implements OnInit {
     link2 = Intl.message('link2', name: 'link2');
     link3 = Intl.message('link3', name: 'link3');
     essential_information = Intl.message('essential information', name: 'essential_information');
+    
   }
 
   String companyName([int howMany = 1]) => Intl.plural(howMany,
@@ -80,6 +85,7 @@ class AppComponent implements OnInit {
   ]);
   final LearningContentService _learningContentService;
   final RiseService _riseService;
+  final  Routes routes;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
   static  String link;
