@@ -46,25 +46,6 @@
         </div>
     </div>
 </d-navbar>
-<d-fullscreen [offsetTop]="165">
-    <div id="youtube-player-wrapper">
-        <iframe id="ytplayer"
-                type="text/html"
-                src="https://www.youtube.com/embed/xfOfFNb1kzI?autoplay=1&controls=0&fs=0&modestbranding=1&rel=0&showinfo=0"
-                frameborder="0"
-                allowfullscreen
-                scrolling="no"></iframe>
-    </div>
-</d-fullscreen>
-<div class="row margin-top-x-large">
-        <div class="col">
-            <router-outlet [routes]="routes.all"></router-outlet>
-        </div>
-</div>
-<d-fullscreen>
-    <p-main-header></p-main-header>
-</d-fullscreen>
-<p-carousel></p-carousel>
-<p-make-difference backgroundImage="url('pics/clean_future.jpg')"></p-make-difference>
-<p-quick-actions></p-quick-actions>
-<p-footer></p-footer>
+
+<p-home></p-home>
+<p-footer></p-footer> 

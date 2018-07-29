@@ -5,20 +5,11 @@ import 'package:angular_components/model/menu/menu.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:intl/intl.dart';
-import 'src/components/carousel_component/carousel_component.dart';
 import 'src/components/footer_component/footer_component.dart';
-import 'src/components/fullscreen_component/fullscreen_component.dart';
-import 'src/components/learning_content_component/learning_content_component.dart';
-import 'src/components/main_header_component/main_header_component.dart';
-import 'src/components/make_difference_component/make_difference_component.dart';
-import 'src/components/quick_action_component/quick_action_component.dart';
-import 'src/components/quick_actions_component/quick_actions_component.dart';
-import 'src/components/rise_component/rise_component.dart';
+import 'src/components/home_component/home_component.dart';
 import 'src/models/learning_content.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
-import 'src/services/learning_content_service.dart';
-import 'src/services/rise_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -27,28 +18,18 @@ import 'src/services/rise_service.dart';
       'app_component.css'
     ],
     directives: [
+      HomeComponent,
       NavbarComponent,
       FooterComponent,
-      FullscreenComponent,
-      MaterialMenuComponent,
-      MaterialIconComponent,
-      CarouselComponent,
-      LearningContentComponent,
-      MainHeaderComponent,
-      MakeDifferenceComponent,
-      QuickActionComponent,
-      QuickActionsComponent,
-      RiseComponent,
       routerDirectives,
       NgFor,
-      NgIf
+      NgIf,
+      MaterialIconComponent
     ],
     providers: [
-      materialProviders,
-      LearningContentService,
-      RiseService,
       routerProvidersHash,
       Routes,
+      materialProviders,
     ],
     pipes: [
       NamePipe

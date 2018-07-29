@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 :host {
@@ -11,7 +11,7 @@
         @include material-icon-size($mat-grid * 3);
         color: white;
         display: inline;
-        text-overflow: inherit !important;
+        text-overflow: inherit !important; 
     }
     d-navbar {
         .row {
@@ -27,7 +27,6 @@
             div#right-menu {
                 a:hover {
                     color: $astronautBlue;
-                    height: 10em;
                 }
             }
         }
