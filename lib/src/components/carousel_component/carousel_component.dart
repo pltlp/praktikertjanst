@@ -1,7 +1,6 @@
 import 'dart:core';
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
-import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 import '../../models/video.dart';
@@ -22,8 +21,6 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       FoCarouselComponent,
       FoCarouselSlideComponent,
       FoModalComponent,
-      MaterialButtonComponent,
-      MaterialIconComponent,
       NgFor,
       NgIf
     ],
@@ -34,7 +31,8 @@ class CarouselComponent implements OnInit {
 
   @override
   void ngOnInit() async {
-    final videos = await videoService.getAll();
+    loaded = false;
+    final videos = new List<Video>.from(await videoService.getAll());
 
     while (videos.isNotEmpty) {
       videoTable.add(videos.take(3).toList(growable: false));

@@ -31,14 +31,14 @@
     <div class="row expand background-color-astronautblue margin-none padding-none">
         <div class="col">
             <div class="col m1 s6 background-color-white">
-                <a href="index.html">
+                <a [routerLink]="routes.all[0].toUrl()">
                     <material-icon class="background-color-white home-icon"
                                    icon="home">
                     </material-icon>
                 </a>
             </div>
             <div class="col m11 s6">
-                <a [routerLink]="routes.all[0].toUrl()"
+                <a [routerLink]="routes.all[2].toUrl()"
                    routerLinkActive="active">
                     {{essential_information | name}}
                 </a>
@@ -46,6 +46,8 @@
         </div>
     </div>
 </d-navbar>
-
-<p-home></p-home>
+<div style="height: 165px"></div>
+<d-fullscreen>
+    <router-outlet [routes]="routes.all"></router-outlet>
+</d-fullscreen>
 <p-footer></p-footer> 
