@@ -1,9 +1,14 @@
+<h1>
+        {{good_examples | name}}
+</h1>
+
 <fo-carousel *ngIf="loaded">
         <fo-carousel-slide *ngFor="let videoList of videoTable">
                 <div class="row margin-bottom-x-large expand">
-                        <div class="s4 col"
+                        <div class="m4 col"
                              *ngFor="let video of videoList">
-                                <p-carousel-slide-section [model]="video" (click)="onVideoClick(video)">
+                                <p-carousel-slide-section [model]="video"
+                                                          (click)="onVideoClick(video)">
 
                                 </p-carousel-slide-section>
                         </div>

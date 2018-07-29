@@ -12,6 +12,7 @@ class RiseComponent implements OnInit{
   
   RiseComponent(this.sanitizer);
 
+  @override
   void ngOnInit()
   {
     url = sanitizer.bypassSecurityTrustResourceUrl(model.url);

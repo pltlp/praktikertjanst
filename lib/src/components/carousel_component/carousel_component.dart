@@ -3,7 +3,7 @@ import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
-
+import 'package:intl/intl.dart';
 import '../../models/video.dart';
 import '../../services/video_service.dart';
 import '../carousel_slide_section_component/carousel_slide_section_component.dart';
@@ -26,7 +26,9 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       MaterialIconComponent,
       NgFor,
       NgIf
-    ])
+    ],
+    pipes: const[NamePipe] 
+    )
 class CarouselComponent implements OnInit {
   CarouselComponent(this.sanitizer, this.videoService);
 
@@ -50,6 +52,7 @@ class CarouselComponent implements OnInit {
   bool loaded = false;
   Video selectedModel;
 
+  String get good_examples => Intl.message('good examples', name: 'good_examples');
   SafeResourceUrl url;
   final List<List<Video>> videoTable = [];
   final VideoService videoService;

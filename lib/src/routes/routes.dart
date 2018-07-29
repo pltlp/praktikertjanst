@@ -7,13 +7,13 @@ import '../components/quick_actions_component/quick_actions_component.template.d
 @Injectable()
 class Routes {
  
-
   final List<RouteDefinition> all = [
     RouteDefinition(
       path: quickActions.path,
       component: qac.QuickActionsComponentNgFactory,
+      useAsDefault: false
     ),
   ];
 
-  static final quickActions = RoutePath(path: Intl.message('quick_actions', name:'quick_actions'));
+  static final RoutePath quickActions = RoutePath(path: Intl.message('quick_actions', name:'quick_actions'));
 }

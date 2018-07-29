@@ -6,17 +6,17 @@ import 'package:fo_components/fo_components.dart';
 @Component(
     directives: const [NgIf],
     providers: const [MaterialIconComponent],
-    selector: 'p-make-a-differance',
-    styleUrls: const ['make_a_difference_component.css'],
-    templateUrl: 'make_a_difference_component.html',
+    selector: 'p-make-difference',
+    styleUrls: const ['make_difference_component.css'],
+    templateUrl: 'make_difference_component.html',
     pipes: [NamePipe])
-class MakeaADifferenceComponent {
+class MakeDifferenceComponent {
   @Input()
   String backgroundImage;
 
-  String get you_can_make_a_differance =>
+  String get you_can_make_a_difference =>
       Intl.message('you really can make a difference!',
-          name: 'you_can_make_a_differance');
+          name: 'you_can_make_a_difference');
 
   String get find_out_what_is_allowed => Intl.message(
       "Find out what you didn't know you could do! Answer these five simple questions and find the information relevant to you.",

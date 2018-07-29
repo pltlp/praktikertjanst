@@ -3,36 +3,24 @@
 @import 'package:angular_components/material_icon/mixins';
 :host {
     cursor: pointer;
-    div{
+    div#top{
+        height:14em;
         background-size:cover;
-        padding: 0;
+        h2{
+            background-color: rgba(0,0,0,0.3);
+        }
+    }
+    div#bottom{
+        height: 11em;
+        material-icon.action-icon {
+            @include material-icon-size($mat-grid * 7);
+            color: white;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 70vh;
     }
 }
 
-#hidden {
-    display: none;
-}
-
-#on-hover-show-hidden:hover+#hidden {
-    display: block;
-}
-
-#on-hover-show-hidden {
-    height: 12rem;
-}
-
-h2 {
-    text-align: center;
-    display: block;
-    margin-bottom: 0;
-}
-
-iframe {
-    width: 100%;
-    height: 70vh;
-}
-
-material-icon.action-icon {
-    @include material-icon-size($mat-grid * 7);
-    color: white;
-}

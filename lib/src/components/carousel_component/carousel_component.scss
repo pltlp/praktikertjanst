@@ -1,4 +1,9 @@
+@import '../../colors.scss';
 
+:host{
+    display: block;
+    background-color: $alto;
+}
 
 iframe {
     width: 100%;

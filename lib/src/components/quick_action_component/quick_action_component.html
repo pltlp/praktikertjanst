@@ -1,18 +1,22 @@
-<div class="row padding-none expand margin-none">
-    <div class="col text-center padding-none">
-        <div id="on-hover-show-hidden"
-             [style.background-image]="backgroundImage">
-            <h2 style="padding-top:2em; margin-top:0;" class="color-white">
+<div class="row">
+    <div class="col text-center padding-top-none padding-bottom-none">
+        <div id="top"
+             [style.background-image]="backgroundImage"
+             class="padding-top-medium">
+            <h2 class="color-white padding-small">
                 {{model.name | name}}
             </h2>
         </div>
     </div>
-</div>  
-<div class="row padding-none">
-    <div class="col background-color-cerulean text-center color-white padding-medium">
-        <material-icon class="action-icon background-color-cerulean"
-                       icon="{{model.icon}}"></material-icon>
-        <h2 style="margin-top:0;">{{model.name}}</h2>
-        <p style="margin-top:0;">{{model.description}}</p>
+</div>
+<div class="row">
+    <div class="col text-center color-white padding-top-none padding-bottom-none">
+        <div id="bottom"
+             class="background-color-cerulean padding-medium">
+            <material-icon class="action-icon"
+                           icon="{{model.icon}}"></material-icon>
+            <h2 class="margin-none">{{model.name}}</h2>
+            <p class="margin-none">{{model.description}}</p>
+        </div>
     </div>
-</div> 
+</div>

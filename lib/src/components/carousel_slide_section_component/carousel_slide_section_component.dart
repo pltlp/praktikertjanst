@@ -17,6 +17,7 @@ import '../../models/video.dart';
 class CarouselSlideSectionComponent implements OnChanges {
   CarouselSlideSectionComponent(this.sanitizer);
 
+  @override
   void ngOnChanges(Map<String, SimpleChange> changes) {
     if (model is Video) {
       dataSrc = (model as Video).imgSrc;
