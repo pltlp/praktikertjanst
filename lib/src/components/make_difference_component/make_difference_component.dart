@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:fo_components/fo_components.dart';
 
 @Component(
-    directives: const [NgIf],
+    directives: const [NgIf, MaterialTooltipDirective],
     providers: const [MaterialIconComponent],
     selector: 'p-make-difference',
     styleUrls: const ['make_difference_component.css'],
@@ -26,13 +26,4 @@ class MakeDifferenceComponent {
       Intl.message('what do you already know?',
           name: 'what_do_you_already know'); 
 
-  void setOpacity() {
-    opacity = '0.5';
-  }
-
-  void setOpacityZero() {
-    opacity = '0';
-  }
-
-  String opacity = '0';
 }

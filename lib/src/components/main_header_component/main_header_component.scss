@@ -1,39 +1,46 @@
 @import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
-:host
-{
+:host {
     background-color: white;
-    h1{
+    h1 {
         color: #424242;
         font-size: 5em;
         font-weight: bolder;
     }
-    button {
-        color: white;
-        background: $cerulean;
-        font-size: 2.5em;
-        font-weight: lighter;
-        text-align: center;
-        border-radius: 60px;
-        padding-left:0.9 em;
-        padding-right:0.9em;
-        padding-top:0.6em;
-        padding-bottom:0.6em;
-        border:none;
+    div#on-hover-blue {
+        button {
+            color: white;
+            background: $cerulean;
+            font-size: 2.5em;
+            font-weight: lighter;
+            text-align: center;
+            border-radius: 60px;
+            padding-left: 0.9 em;
+            padding-right: 0.9em;
+            padding-top: 0.6em;
+            padding-bottom: 0.6em;
+            border: none;
+        }
+        material-icon {
+            @include material-icon-size($mat-grid * 20);
+            color: $cerulean;
+            margin-top: -4em;
+        }
     }
-
-    button:hover
-    {
-        background:$astronautBlue;
-        cursor:pointer;
-        border:none;
-    }
-       
-    material-icon
-    {
-        @include material-icon-size($mat-grid * 20);
-        color:$cerulean;
-        margin-top:-4em;
+    div#on-hover-blue:hover {
+        material-icon {
+            @include material-icon-size($mat-grid * 20);
+            color: $astronautBlue;
+            transition-property: background;
+            transition-duration: 0.5s;
+        }
+        button {
+            background: $astronautBlue;
+            cursor: pointer;
+            border: none;
+            transition-property: background;
+            transition-duration: 0.5s;
+        }
     }
 }

@@ -1,59 +1,27 @@
 <div [style.background-image]="backgroundImage">
-    <div class="row margin-top-x-large margin-bottom-x-large expand padding-none">
-        <div class="col padding-none">
-            <div>
-                <div class="row expand margin-none padding-none">
-                    <div class="col text-center margin-none padding-none">
-                        <div id="header">
-                            <h1 class="color-white">
-                                {{you_can_make_a_difference | name}}
-                            </h1>
-                        </div>
-                    </div>
+    <div class="row expand margin-top-x-large margin-bottom-x-large">
+        <div class="col padding-none text-center">
+            <div id="header">
+                <h1 class="color-white">
+                    {{you_can_make_a_difference | name}}
+                </h1>
+            </div>
+            <div class="row expand">
+                <div class="col m1"></div>
+                <div class="col m4">
+                    <button class="mat-tooltip" style="width:100%;"
+                            materialTooltip="{{find_out_what_is_allowed}}">
+                        {{what_do_you_already_know | name}}
+                    </button>
                 </div>
-                <div class="row expand">
-                    <div class="row expand">
-                        <div class="col m1">
-
-                        </div>
-                        <div class="col m4 text-center">
-                            <div class="show-on-hover-content"
-                                 [style.opacity]="opacity">
-                                <p>
-                                    {{find_out_what_is_allowed}}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col m7">
-
-                        </div>
-                    </div>
-                    <div class="row expand margin-bottom-x-large">
-                        <div class="col m1">
-
-                        </div>
-                        <div class="col m4">
-                            <button style="width:100%;"
-                                    (mouseover)="setOpacity()"
-                                    (mouseleave)="setOpacityZero()">
-                                {{what_do_you_already_know | name}}
-                            </button>
-                        </div>
-                        <div class="col m2">
-
-                        </div>
-                        <div class="col m4">
-                            <button style="width:100%;">
-                                {{learn_more | name}}
-                            </button>
-                        </div>
-                        <div class="col m1">
-
-                        </div>
-                    </div>
+                <div class="col m2"></div>
+                <div class="col m4">
+                    <button style="width:100%;">
+                        {{learn_more | name}}
+                    </button>
                 </div>
+                <div class="col m1"></div>
             </div>
         </div>
     </div>
-
 </div>
