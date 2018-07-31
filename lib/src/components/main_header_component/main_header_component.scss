@@ -10,6 +10,7 @@
     }
     div#on-hover-blue {
         button {
+            display: inline-block;
             color: white;
             background: $cerulean;
             font-size: 2.5em;
@@ -25,7 +26,8 @@
         material-icon {
             @include material-icon-size($mat-grid * 20);
             color: $cerulean;
-            margin-top: -4em;
+            margin-top: -3em;
+            display:block;
         }
     }
     div#on-hover-blue:hover {
@@ -34,6 +36,8 @@
             color: $astronautBlue;
             transition-property: background;
             transition-duration: 0.5s;
+            display: block;
+            margin-top: -3em;
         }
         button {
             background: $astronautBlue;

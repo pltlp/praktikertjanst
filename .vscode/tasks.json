@@ -34,7 +34,7 @@
         {
             "label": "deploy",
             "type": "shell",
-            "command": "scp -i ~/.ssh/praktikertjanst build/web.zip hgridhem@dosojin.oderland.com:public_html/test",
+            "command": "scp -i ~/.ssh/praktikertjanst build/web.zip hgridhem@dosojin.oderland.com:public_html",
             "dependsOn": [
                 "zip"
             ],
