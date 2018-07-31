@@ -1,6 +1,11 @@
-<div class="row">
+<div class="row expand background-color-alto">
     <div class="col m4"
          *ngFor="let quickAction of quickActions">
         <p-quick-action [model]="quickAction"></p-quick-action>
+    </div>
+    <div class="row expand">
+        <div class="col text-center">
+            <p-carousel [noOfVideosShown]="4"></p-carousel>
+        </div>
     </div>
 </div>

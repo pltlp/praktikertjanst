@@ -9,25 +9,37 @@ class VideoService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent;
   }
+
+  Future<List<Video>> getSublist(int index) async {
+    await new Future.delayed(const Duration(milliseconds: 2000));
+    return mockContent.sublist(0, index);
+  }
 }
 
 List<Video> mockContent = [
   new Video()
-    ..name = 'Good example'
+    ..name = 'Good example - Decontamination'
     ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
     ..desc =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   new Video()
-    ..name = 'Good example'
+    ..name = 'Good example - Management'
     ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
     ..imgSrc =
         'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
     ..desc =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   new Video()
-    ..name = 'Good example'
+    ..name = 'Good example - Installation'
+    ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+    ..imgSrc =
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+    ..desc =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  new Video()
+    ..name = 'Good example - 	Administrative body'
     ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
     ..imgSrc =
         'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'

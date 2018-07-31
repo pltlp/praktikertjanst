@@ -9,6 +9,10 @@ class QuickActionService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent;
   }
+    Future<List<QuickAction>> getSublist(int index) async {
+    await new Future.delayed(const Duration(milliseconds: 2000));
+    return mockContent.sublist(0, index);
+  }
 }
 
 List<QuickAction> mockContent = [
@@ -17,11 +21,11 @@ List<QuickAction> mockContent = [
     ..name = 'Quicksilver in nature'
     ..description = 'What are the consequences of quicksilver in nature'
     ..url = ''
-    ..imgSrc = 'pics/header_silver_service_us.jpg',
+    ..imgSrc = 'pics/quicksilver_management.jpg',
   new QuickAction()
     ..icon = 'format_list_numbered'
     ..name = 'Important concepts'
-    ..description = 'What are the consequences of quicksilver in nature'
+    ..description = 'Here are some important concepts you may want to remember!'
     ..url = ''
     ..imgSrc = 'pics/header_silver_service_us.jpg',
   new QuickAction()
@@ -30,7 +34,7 @@ List<QuickAction> mockContent = [
     ..url = ''
     ..description =
         'Answer five quick questions to find information relevant to you'
-    ..imgSrc = 'pics/header_silver_service_us.jpg',
+    ..imgSrc = 'pics/clean_future.jpg',
   new QuickAction()
     ..icon = 'timelapse'
     ..name = 'Self estimation'
