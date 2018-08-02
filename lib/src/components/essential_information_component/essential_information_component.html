@@ -1,11 +1,28 @@
-<div class="row expand background-color-alto">
-    <div class="col m4"
-         *ngFor="let quickAction of quickActions">
-        <p-quick-action [model]="quickAction"></p-quick-action>
+<div class="row expand background-color-alto"
+     *ngIf="quickActions.isNotEmpty">
+    <div class="col m4">
+        <p-quick-action [model]="quickActions[0]"></p-quick-action>
+    </div>
+    <div class="col m4">
+        <p-quick-action [model]="quickActions[1]"></p-quick-action>
+    </div>
+    <div class="col m4">
+        <p-quick-action [model]="quickActions[2]"></p-quick-action>
     </div>
     <div class="row expand">
         <div class="col text-center">
-            <p-carousel [noOfVideosShown]="4"></p-carousel>
+            <p-carousel></p-carousel>
         </div>
+    </div>
+    <div class="row expand padding-none"
+         *ngIf="quickActions.isNotEmpty">
+        <div class="col m6">
+            <p-quick-action [model]="quickActions[7]"
+                            backgroundColor="#003C5A"></p-quick-action>
+        </div>
+        <div class="col m6">
+            <p-quick-action [model]="quickActions[8]"
+                            backgroundColor="#003C5A"></p-quick-action>
+        </div> 
     </div>
 </div>

@@ -24,18 +24,16 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       NgFor,
       NgIf
     ],
-    pipes: const[NamePipe] 
-    )
+    pipes: const [
+      NamePipe
+    ])
 class CarouselComponent implements OnInit {
   CarouselComponent(this.sanitizer, this.videoService);
 
   @override
   void ngOnInit() async {
     loaded = false;
-      videos = new List<Video>.from(await videoService.getAll());
-    if(noOfVideosShown != null)
-      videos = new List<Video>.from(await videoService.getSublist(noOfVideosShown));
-
+    videos = new List<Video>.from(await videoService.getAll());
 
     while (videos.isNotEmpty) {
       videoTable.add(videos.take(3).toList(growable: false));
@@ -44,22 +42,22 @@ class CarouselComponent implements OnInit {
     loaded = true;
   }
 
-
   void onVideoClick(Video video) {
     selectedModel = video;
     url = sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url);
   }
 
   @Input()
-  int noOfVideosShown;
-  
+  int noOfVideosShown = 0;
+
   bool loaded = false;
   Video selectedModel;
 
-  String get good_examples => Intl.message('good examples', name: 'good_examples');
+  String get good_examples =>
+      Intl.message('good examples', name: 'good_examples');
   SafeResourceUrl url;
   final List<List<Video>> videoTable = [];
   final VideoService videoService;
-  final DomSanitizationService sanitizer; 
-  List<Video> videos = []; 
+  final DomSanitizationService sanitizer;
+  List<Video> videos = [];
 }

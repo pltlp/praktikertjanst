@@ -1,11 +1,9 @@
+@import '../../../colors.scss';
 :host {
     display: block;
-    div.row {
-        div.col {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 150px;
+    background-color: $astronautBlue;
+    .row {
+        .col {
             img {
                 max-height: 100px;
                 max-width: 100%;

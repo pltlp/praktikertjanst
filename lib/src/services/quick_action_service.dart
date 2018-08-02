@@ -9,7 +9,8 @@ class QuickActionService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent;
   }
-    Future<List<QuickAction>> getSublist(int index) async {
+
+  Future<List<QuickAction>> getSublist(int index) async {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent.sublist(0, index);
   }
@@ -61,4 +62,18 @@ List<QuickAction> mockContent = [
     ..description = 'How long will it take to manage your quicksilver amalgam?'
     ..url = ''
     ..imgSrc = 'pics/clean_future.jpg',
+  new QuickAction()
+    ..icon = 'question_answer'
+    ..name = 'Self evaluation'
+    ..url = ''
+    ..description =
+        'Find out if you know everything you need to!'
+    ..imgSrc = 'pics/clean_future.jpg',
+  new QuickAction()
+    ..icon = 'question_answer'
+    ..name = 'What have you learned?'
+    ..url = ''
+    ..description =
+        'Test your newly acquired knowledge here!'
+    ..imgSrc = 'pics/quicksilver_management.jpg',
 ];

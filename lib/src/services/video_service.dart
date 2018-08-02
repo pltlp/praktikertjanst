@@ -12,7 +12,8 @@ class VideoService {
 
   Future<List<Video>> getSublist(int index) async {
     await new Future.delayed(const Duration(milliseconds: 2000));
-    return mockContent.sublist(0, index);
+    final sublist = List<Video>.from(mockContent.sublist(0, index));
+    return sublist;
   }
 }
 

@@ -6,4 +6,5 @@ class Rise extends Model{
   String url;
   String name;
   String description;
+  String id;
 }

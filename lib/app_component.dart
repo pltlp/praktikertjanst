@@ -6,6 +6,7 @@ import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:intl/intl.dart';
 import 'src/components/footer_component/footer_component.dart';
+import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/models/learning_content.dart';
 import 'src/models/rise.dart';
@@ -24,7 +25,8 @@ import 'src/routes/routes.dart';
       routerDirectives,
       NgFor,
       NgIf,
-      MaterialIconComponent
+      MaterialIconComponent,
+      FullscreenComponent
     ],
     providers: [
       routerProvidersHash,

@@ -11,28 +11,35 @@ import '../quick_action_component/quick_action_component.dart';
 import '../video_component/video_component.dart';
 
 @Component(
-    directives: const [NgFor, QuickActionComponent, MaterialIconComponent, VideoComponent, CarouselComponent, CarouselSlideSectionComponent],
+    directives: const [
+      NgFor,
+      QuickActionComponent,
+      MaterialIconComponent,
+      VideoComponent,
+      CarouselComponent,
+      CarouselSlideSectionComponent,
+      NgIf
+    ],
     providers: const [QuickActionService, VideoService],
     selector: 'p-essential-information',
     styleUrls: const ['essential_information_component.css'],
     templateUrl: 'essential_information_component.html',
     pipes: [NamePipe])
-class EssentialInformationComponent implements OnInit{
-
+class EssentialInformationComponent implements OnInit {
   EssentialInformationComponent(this.quickActionService, this.videoService);
 
   @override
-  void ngOnInit() async
-  {
-    quickActions = await quickActionService.getSublist(3);
-    videos = await videoService.getSublist(4);
+  void ngOnInit() async {
+    quickActions = await quickActionService.getAll();
   }
 
   @Input()
   String backgroundImage;
+  @Input()
+  int noOfVideosShown;
+
   final QuickActionService quickActionService;
   final VideoService videoService;
   List<QuickAction> quickActions = [];
   List<Video> videos = [];
-  
 }

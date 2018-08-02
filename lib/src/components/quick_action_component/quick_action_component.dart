@@ -31,8 +31,12 @@ class QuickActionComponent implements OnInit {
   SafeResourceUrl url;
   final DomSanitizationService sanitizer;
   String  backgroundImage;
+  
 
   @Input('model')
   QuickAction model;
+
+  @Input('backgroundColor')
+  String  backgroundColor;
 
 }

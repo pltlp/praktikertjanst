@@ -26,8 +26,9 @@
             }
             div#right-menu {
                 a:hover {
-                    color: $astronautBlue;
-                    height: 10em;
+                    color: $astronautBlue;  
+                    transition-duration: 0.5s;
+                    transition-property: color;  
                 }
             }
         }
