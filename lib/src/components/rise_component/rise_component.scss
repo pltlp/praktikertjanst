@@ -1,8 +1,13 @@
-iframe {
-    min-height: 2000px;
-    width: 100%;
-    margin:0;
-    padding:0;
-    overflow: hidden;
+:host{
+    height: 6000px;
 
+    iframe {
+    
+        width: 100%;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        height: 5000px;
+        box-sizing: inherit;
+    }
 }

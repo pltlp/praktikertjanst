@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
-
 import '../models/quick_action.dart';
 
 @Injectable()
 class QuickActionService {
+
   Future<List<QuickAction>> getAll() async {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent;
@@ -14,14 +14,15 @@ class QuickActionService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent.sublist(0, index);
   }
+
 }
 
 List<QuickAction> mockContent = [
   new QuickAction()
     ..icon = 'pool'
-    ..name = 'Quicksilver in nature'
+    ..name = 'Mercury in nature'
     ..description = 'What are the consequences of quicksilver in nature'
-    ..url = ''
+    ..url = 'http://localhost:8080/#mercury_in_nature'
     ..imgSrc = 'pics/quicksilver_management.jpg',
   new QuickAction()
     ..icon = 'format_list_numbered'

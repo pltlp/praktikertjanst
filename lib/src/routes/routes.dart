@@ -6,9 +6,10 @@ import '../components/essential_information_component/essential_information_comp
 import '../components/home_component/home_component.template.dart' as hc;
 import '../components/quick_actions_component/quick_actions_component.template.dart'
     as qac;
-import '../components/rise_articles_component/rise_articles_component.template.dart'
+import '../components/rise_article_component_important_concepts/rise_article_component_important_concepts.template.dart'
+    as raic;
+import '../components/rise_article_component_mercury_in_nature/rise_article_component_mercury_in_nature.template.dart'
     as rac;
-import '../components/rise_component/rise_component.template.dart' as rc;
 
 @Injectable()
 class Routes {
@@ -26,20 +27,19 @@ class Routes {
         component: eic.EssentialInformationComponentNgFactory,
         useAsDefault: false),
     RouteDefinition(
-        path: riseArticle.path,
-        component: rc.RiseComponentNgFactory,
+        path: riseArticleMurceryInNature.path,
+        component: rac.RiseArticleComponentMercuryInNatureNgFactory,
         useAsDefault: false),
     RouteDefinition(
-        path: riseArticles.path,
-        component: rac.RiseArticlesComponentNgFactory,
-        useAsDefault: false)
+        path: riseArticleImportantConcepts.path,
+        component: raic.RiseArticleComponentImportantConceptsNgFactory, 
+        useAsDefault: false),
   ];
 
-  static final RoutePath riseArticles =
-      RoutePath(path: Intl.message('rise_articles', name: 'rise_articles'));
-  static const String idParam = 'id';
-  static final RoutePath riseArticle =
-      RoutePath(path: '${riseArticles.path}/:$idParam');
+  static final RoutePath riseArticleMurceryInNature = RoutePath(
+      path: Intl.message('mercury_in_nature', name: 'mercury_in_nature'));
+  static final RoutePath riseArticleImportantConcepts = RoutePath(
+      path: Intl.message('important_concepts', name: 'important_concepts'));
   static final RoutePath quickActions =
       RoutePath(path: Intl.message('quick_actions', name: 'quick_actions'));
   static final RoutePath home =
@@ -47,4 +47,4 @@ class Routes {
   static final RoutePath essentialInformation = RoutePath(
       path:
           Intl.message('essential_information', name: 'essential_information'));
-}
+} 

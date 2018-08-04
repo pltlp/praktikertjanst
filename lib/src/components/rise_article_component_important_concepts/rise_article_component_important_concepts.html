@@ -1,5 +1,5 @@
 <div class="row expand"> 
-    <div class="col" *ngFor="let riseArticle of riseArticles">
+    <div class="col" *ngIf="riseArticle != null">
         <p-rise [model]="riseArticle"></p-rise>
     </div>
 </div>

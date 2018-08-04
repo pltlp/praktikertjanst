@@ -9,6 +9,11 @@ class RiseService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return riseArticles;
   }
+
+  Future<Rise> get(int index) async {
+    await new Future.delayed(const Duration(milliseconds: 2000));
+    return  riseArticles[index];
+  }
 }
 
 List<Rise> riseArticles = [
@@ -19,9 +24,9 @@ List<Rise> riseArticles = [
     ..description = 'Rise content test',
   new Rise()
     ..id = '2'
-    ..name = 'Glossary'
-    ..url = 'rise_example/content/index.html'
-    ..description = 'Rise content test',
+    ..name = 'Important cocepts'
+    ..url = 'rise_example_2/content/index.html'
+    ..description = 'Important cocepts',
   new Rise()
     ..id = '3'
     ..name = 'Laws and regulations'
