@@ -10,9 +10,10 @@ class RiseService {
     return riseArticles;
   }
 
-  Future<Rise> get(int index) async {
+  Future<Rise> get(String id) async {
     await new Future.delayed(const Duration(milliseconds: 2000));
-    return  riseArticles[index];
+    return riseArticles.firstWhere((article) => article.id == id,
+        orElse: () => null);
   }
 }
 

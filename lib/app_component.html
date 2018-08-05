@@ -19,7 +19,7 @@
                 <a href="http://">{{link4}}</a>
             </div>
         </div>
-        <div class="col s3 hide-for-large hide-for-medium padding-none margin-none">
+        <div class="col s3 hide-for-large hide-for-medium padding-none margin-none"> 
             <material-menu [menu]="menuModel">
                 <section menu-button>
                     <material-icon icon="menu"
@@ -31,14 +31,14 @@
     <div class="row expand background-color-astronautblue margin-none padding-small">
         <div class="col">
             <div class="col m1 s6 background-color-white margin-none padding-none">
-                <a [routerLink]="routes.all[0].toUrl()">
+                <a [routerLink]="msg.home_url">
                     <material-icon class="background-color-white home-icon"
                                    icon="home">
                     </material-icon>
                 </a>
             </div>
             <div class="col m11 s6">
-                <a [routerLink]="routes.all[2].toUrl()"
+                <a [routerLink]="msg.essential_information_url"
                    routerLinkActive="active">
                     {{essential_information | name}}
                 </a>

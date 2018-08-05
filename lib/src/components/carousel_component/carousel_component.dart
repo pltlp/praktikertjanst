@@ -32,6 +32,7 @@ class CarouselComponent implements OnInit {
 
   @override
   void ngOnInit() async {
+  
     loaded = false;
     videos = new List<Video>.from(await videoService.getAll());
 
@@ -44,18 +45,14 @@ class CarouselComponent implements OnInit {
 
   void onVideoClick(Video video) {
     selectedModel = video;
-    url = sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url);
   }
-
-  @Input()
-  int noOfVideosShown = 0;
 
   bool loaded = false;
   Video selectedModel;
 
   String get good_examples =>
       Intl.message('good examples', name: 'good_examples');
-  SafeResourceUrl url;
+
   final List<List<Video>> videoTable = [];
   final VideoService videoService;
   final DomSanitizationService sanitizer;

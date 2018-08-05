@@ -11,6 +11,7 @@ import 'src/components/home_component/home_component.dart';
 import 'src/models/learning_content.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
+import 'src/services/messages_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -26,18 +27,20 @@ import 'src/routes/routes.dart';
       NgFor,
       NgIf,
       MaterialIconComponent,
-      FullscreenComponent
+      FullscreenComponent,
+      MaterialMenuComponent
     ],
     providers: [
       routerProvidersHash,
       Routes,
       materialProviders,
+      MessagesService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent {
-  AppComponent(this.routes) {
+  AppComponent(this.routes, this.msg) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(link1),
@@ -51,6 +54,7 @@ class AppComponent {
   MenuModel menuModel;
 
   final Routes routes;
+  final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
   String get link1 => Intl.message('link', name: 'link');

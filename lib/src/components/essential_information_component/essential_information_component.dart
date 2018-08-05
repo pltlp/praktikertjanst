@@ -35,8 +35,6 @@ class EssentialInformationComponent implements OnInit {
 
   @Input()
   String backgroundImage;
-  @Input()
-  int noOfVideosShown;
 
   final QuickActionService quickActionService;
   final VideoService videoService;

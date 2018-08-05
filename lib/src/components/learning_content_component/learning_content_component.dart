@@ -24,14 +24,14 @@ class LearningContentComponent implements OnInit {
 
   @override
   void ngOnInit() {
-    url = sanitizer.bypassSecurityTrustResourceUrl(model.url);
+    url = sanitizer.bypassSecurityTrustUrl(model.url);
   }
 
   String get learnMore => Intl.message('Learn more', name: 'learn_more');
 
   bool showModal = false;
   final DomSanitizationService sanitizer;
-  SafeResourceUrl url;
+  SafeUrl url;
 
   @Input('model')
   LearningContent model;

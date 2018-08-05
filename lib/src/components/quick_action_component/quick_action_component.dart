@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
-import 'package:angular/security.dart';
+import 'package:angular_router/angular_router.dart';
 import '../../models/quick_action.dart';
 
 @Component(
@@ -11,32 +11,25 @@ import '../../models/quick_action.dart';
       'quick_action_component.css'
     ],
     directives: const [
-      MaterialButtonComponent,
       MaterialIconComponent,
-      FoModalComponent
+      routerDirectives
     ],
     pipes: [
       NamePipe
     ])
 class QuickActionComponent implements OnInit {
-  QuickActionComponent(this.sanitizer);
+  QuickActionComponent();
 
   @override
   void ngOnInit() {
-    url = sanitizer.bypassSecurityTrustResourceUrl(model.url);
     backgroundImage = 'url(${model.imgSrc})';
   }
 
-  bool showModal = false;
-  SafeResourceUrl url;
-  final DomSanitizationService sanitizer;
-  String  backgroundImage;
-  
+  String backgroundImage;
 
   @Input('model')
   QuickAction model;
 
   @Input('backgroundColor')
-  String  backgroundColor;
-
+  String backgroundColor;
 }
