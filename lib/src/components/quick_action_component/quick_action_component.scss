@@ -3,6 +3,7 @@
 @import 'package:angular_components/material_icon/mixins';
 :host {
     cursor: pointer;
+    text-overflow: ellipsis;
     div#top{
         height:14em;
         background-size:cover;
