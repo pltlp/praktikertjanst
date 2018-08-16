@@ -18,7 +18,7 @@
                                 </div>
                                 -->
         <div>
-            <a [routerLink]="">{{link1}}</a>
+            <a [routerLink]="msg.essential_information_url">{{essential_information | name}}</a>
             <a [routerLink]="">{{link2}}</a>
             <a [routerLink]="">{{link3}}</a>
             <a [routerLink]="">{{link4}}</a>
@@ -31,9 +31,23 @@
                            icon="home">
             </material-icon>
         </a>
+        <!--
         <a [routerLink]="msg.essential_information_url"
            routerLinkActive="active">
             {{essential_information | name}}
+        </a>
+        -->
+        <a *ngIf="previousUrl != null"
+           [routerLink]="previousUrl"
+           routerLinkActive="active">
+            {{(previousUrl != null) ? previousUrl : ''}} {{(previousUrl !=null) ? 
+            ' / ' : ''}}
+        </a>
+        <a *ngIf="currentUrl != null"
+           [routerLink]="currentUrl"
+           routerLinkActive="active">
+            {{(currentUrl != null) ? ' / ' : ''}} {{(currentUrl != null) ? currentUrl
+            : ''}}
         </a>
     </div>
 </d-navbar>

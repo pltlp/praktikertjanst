@@ -12,6 +12,7 @@ import 'src/models/learning_content.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/messages_service.dart';
+import 'src/services/routerstate_sevice.dart';
 
 @Component(
     selector: 'p-app',
@@ -34,13 +35,14 @@ import 'src/services/messages_service.dart';
       routerProvidersHash,
       Routes,
       materialProviders,
-      MessagesService
+      MessagesService,
+      RouterStateService
     ],
     pipes: [
       NamePipe
     ])
-class AppComponent {
-  AppComponent(this.routes, this.msg) {
+class AppComponent implements OnActivate {
+  AppComponent(this.routes, this.msg, this.routerStateService) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(link1),
@@ -51,16 +53,27 @@ class AppComponent {
     ]);
   }
 
+  @override
+  void onActivate(RouterState previous, RouterState current) async {
+
+  }
+
+  String get link1 => Intl.message('link', name: 'link');
+  String get link2 => Intl.message('link', name: 'link');
+  String get link3 => Intl.message('link', name: 'link');
+  String get link4 => Intl.message('link', name: 'link');
+
   MenuModel menuModel;
 
   final Routes routes;
   final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
-  String get link1 => Intl.message('link', name: 'link');
-  String get link2 => Intl.message('link', name: 'link');
-  String get link3 => Intl.message('link', name: 'link');
-  String get link4 => Intl.message('link', name: 'link');
+  String _currentUrl, _previousUrl;
+
+  String get currentUrl => _currentUrl;
+  String get previousUrl => _previousUrl;
+  RouterStateService routerStateService;
 
   String get essential_information =>
       Intl.message('essential information', name: 'essential_information');

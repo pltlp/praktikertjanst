@@ -1,6 +1,7 @@
 @import 'colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
+
 :host {
     display: block;
     material-icon.menu-icon {
@@ -34,7 +35,7 @@
         }
         div#flex-content-2 {
             display: flex;
-            align-self: flex-end;
+            align-self: flex-end;   
             a {
                 margin-left: 2em;
                 text-decoration: none;

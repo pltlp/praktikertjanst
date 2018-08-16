@@ -14,15 +14,19 @@
             <p-carousel></p-carousel>
         </div>
     </div>
-    <div class="row expand padding-none"
+    <div class="row expand padding-large"
          *ngIf="quickActions.isNotEmpty">
-        <div class="col m6">
+        <div class="col m1 padding-right-x-large">
+        </div>
+        <div class="col m5 padding-right-x-large">
             <p-quick-action [model]="quickActions[7]"
                             backgroundColor="#003C5A"></p-quick-action>
         </div>
-        <div class="col m6">
+        <div class="col m5 padding-left-x-large">
             <p-quick-action [model]="quickActions[8]"
                             backgroundColor="#003C5A"></p-quick-action>
-        </div> 
+        </div>
+        <div class="col m1 padding-right-x-large">
+        </div>
     </div>
 </div>

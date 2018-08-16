@@ -2,30 +2,30 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import 'package:grid/grid';
 @import '../lib/colors.scss';
-
-
-
 * {
     font-family: 'Ubuntu', sans-serif;
 }
 
-html, body {
-    margin:0;
+html,
+body {
+    height: 100%;
+    margin: 0;
     h1 {
         color: black;
         font-size: 4em;
         font-weight: bolder;
     }
-
     h2 {
         text-decoration: none;
     }
-
-    .width-100
-    {
-        width:100%;
+    .width-100 {
+        width: 100%;
     }
 }
+
+
+
+
 /*
 .row {
     .col {

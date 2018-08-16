@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
@@ -23,6 +24,11 @@ class QuickActionComponent implements OnInit {
   @override
   void ngOnInit() {
     backgroundImage = 'url(${model.imgSrc})';
+  }
+
+  void scrollTop()
+  {
+    window.scrollTo(0,0);
   }
 
   String backgroundImage;

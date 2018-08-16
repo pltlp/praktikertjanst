@@ -23,7 +23,7 @@ List<QuickAction> mockContent = [
     ..icon = 'format_list_numbered'
     ..name = 'Important concepts'
     ..description = 'Here are some important concepts you may want to remember!'
-    ..url = ''
+    ..url = 'articles/rise/2'
     ..imgSrc = 'pics/header_silver_service_us.jpg',
   new QuickAction()
     ..icon = 'question_answer'
