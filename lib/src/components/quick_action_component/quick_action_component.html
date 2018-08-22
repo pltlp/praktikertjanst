@@ -1,12 +1,16 @@
-<div [routerLink]="model.url" (click)="scrollTop()">
+<div [routerLink]="model.url"
+     (click)="scrollTop()">
     <div class="row">
         <div class="col text-center padding-top-none padding-bottom-none">
             <div id="top"
-                 [style.background-image]="backgroundImage"
-                 class="padding-top-medium">
-                <h2 class="color-white padding-small">
-                    {{model.name | name}}
-                </h2>
+                 [style.background-image]="backgroundImage">
+                <div id="gradiant"
+                     class="color-white padding-small">
+                    <h2>{{model.name | name}}</h2>
+                    <material-icon class="action-icon"
+                                   icon="{{model.icon}}"></material-icon>
+                </div>
+
             </div>
         </div>
     </div>
@@ -15,9 +19,6 @@
             <div id="bottom"
                  class="background-color-cerulean padding-medium"
                  [style.background-color]="backgroundColor">
-                <material-icon class="action-icon"
-                               icon="{{model.icon}}"></material-icon>
-                <h2 class="margin-none">{{model.name}}</h2>
                 <p class="margin-none">{{model.description}}</p>
             </div>
         </div>
