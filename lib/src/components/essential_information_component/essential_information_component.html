@@ -1,32 +1,28 @@
-<div class="row expand background-color-alto"
+<div class="row expand background-color-alto margin-none padding-none"
      *ngIf="quickActions.isNotEmpty">
-    <div class="col m4">
+    <div class="col m4 padding-none">
         <p-quick-action [model]="quickActions[0]"></p-quick-action>
     </div>
-    <div class="col m4">
+    <div class="col m4 padding-none">
         <p-quick-action [model]="quickActions[1]"></p-quick-action>
     </div>
-    <div class="col m4">
+    <div class="col m4 padding-none">
         <p-quick-action [model]="quickActions[2]"></p-quick-action>
     </div>
-    <div class="row expand">
-        <div class="col text-center">
+    <div class="row expand padding-none">
+        <div class="col padding-none text-center">
             <p-carousel></p-carousel>
         </div>
     </div>
-    <div class="row expand padding-large"
+    <div class="row expand padding-none"
          *ngIf="quickActions.isNotEmpty">
-        <div class="col m1 padding-right-x-large">
-        </div>
-        <div class="col m5 padding-right-x-large">
+        <div class="col m6 padding-none">
             <p-quick-action [model]="quickActions[7]"
                             backgroundColor="#003C5A"></p-quick-action>
         </div>
-        <div class="col m5 padding-left-x-large">
+        <div class="col m6 padding-none">
             <p-quick-action [model]="quickActions[8]"
                             backgroundColor="#003C5A"></p-quick-action>
-        </div>
-        <div class="col m1 padding-right-x-large">
         </div>
     </div>
 </div>
