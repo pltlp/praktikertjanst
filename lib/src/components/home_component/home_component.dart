@@ -1,7 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
-import '../../services/routerstate_sevice.dart';
 import '../carousel_component/carousel_component.dart';
 import '../essential_information_component/essential_information_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
@@ -25,18 +24,19 @@ import '../quick_actions_component/quick_actions_component.dart';
       NgFor,
       NgIf
     ],
-    providers: [
-    ],
+    providers: [],
     pipes: [
       NamePipe
     ])
-class HomeComponent  implements OnActivate{
-  HomeComponent(this.routerStateService);
+class HomeComponent implements OnActivate {
+  HomeComponent(this.router);
 
- @override
+  @override
   void onActivate(RouterState previous, RouterState current) async {
-
+    (router.current != null && router.current.path != null)
+        ? print(router.current.toUrl())
+        : print('');
   }
 
-  RouterStateService routerStateService;
+  Router router;
 }

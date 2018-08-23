@@ -19,12 +19,12 @@ class RiseService {
 
 List<Rise> riseArticles = [
   new Rise()
-    ..id = '1'
+    ..id = 'mercury-in-nature'
     ..name = 'Mercury in nature'
     ..url = 'rise_example/content/index.html'
     ..description = 'Rise content test',
   new Rise()
-    ..id = '2'
+    ..id = 'important-concepts'
     ..name = 'Important cocepts'
     ..url = 'rise_example_2/content/index.html'
     ..description = 'Important cocepts',

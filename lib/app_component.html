@@ -1,6 +1,6 @@
 <d-navbar id="flex-content-main"
           backgroundColor="#00A0C8"
-          [height]="158">
+          [height]="150">
     <div id="flex-content-1"
          class="margin-top-small">
         <div>
@@ -29,30 +29,19 @@
     </div>
     <div id="flex-content-2"
          class="background-color-astronautblue">
-        <a [routerLink]="msg.home_url">
+        <a [routerLink]="msg.home_url"
+           style="padding:0em !important; margin:0 !important;">
             <material-icon class="background-color-white home-icon"
                            icon="home">
             </material-icon>
         </a>
-        <!--
-        <a [routerLink]="msg.essential_information_url"
-           routerLinkActive="active">
-            {{essential_information | name}}
-        </a>
-        -->
-        <a *ngIf="previousUrl != null"
-           [routerLink]="previousUrl"
-           routerLinkActive="active">
-            {{(previousUrl != null) ? previousUrl : ''}} {{(previousUrl !=null) ? ' / ' : ''}}
-        </a>
-        <a *ngIf="currentUrl != null"
-           [routerLink]="currentUrl"
-           routerLinkActive="active">
-            {{(currentUrl != null) ? ' / ' : ''}} {{(currentUrl != null) ? currentUrl : ''}}
+        <a [routerLink]="(router.current != null && router.current.path != null) ? router.current.path :''"
+           style="padding:0.3em !important; margin:0 !important;">
+            {{(router.current != null && router.current.path != null) ? '/' : ''}} {{(router.current != null && router.current.path != null) ? router.current.path : '' | name}}
         </a>
     </div>
 </d-navbar>
-<div style="height: 158px"></div>
+<div style="height: 150px"></div>
 <d-fullscreen>
     <router-outlet [routes]="routes.all"></router-outlet>
 </d-fullscreen>

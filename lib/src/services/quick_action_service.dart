@@ -17,13 +17,13 @@ List<QuickAction> mockContent = [
     ..icon = 'pool'
     ..name = 'Mercury in nature'
     ..description = 'What are the consequences of quicksilver in nature'
-    ..url = 'articles/rise/1'
+    ..url = 'articles/rise/mercury-in-nature'
     ..imgSrc = 'pics/quicksilver_management.jpg',
   new QuickAction()
     ..icon = 'format_list_numbered'
     ..name = 'Important concepts'
     ..description = 'Here are some important concepts you may want to remember!'
-    ..url = 'articles/rise/2'
+    ..url = 'articles/rise/important-concepts'
     ..imgSrc = 'pics/header_silver_service_us.jpg',
   new QuickAction()
     ..icon = 'question_answer'

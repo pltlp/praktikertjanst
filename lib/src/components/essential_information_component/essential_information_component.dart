@@ -5,7 +5,6 @@ import 'package:angular_router/angular_router.dart';
 import '../../models/quick_action.dart';
 import '../../models/video.dart';
 import '../../services/quick_action_service.dart';
-import '../../services/routerstate_sevice.dart';
 import '../../services/video_service.dart';
 import '../carousel_component/carousel_component.dart';
 import '../carousel_slide_section_component/carousel_slide_section_component.dart';
@@ -28,7 +27,7 @@ import '../video_component/video_component.dart';
     templateUrl: 'essential_information_component.html',
     pipes: [NamePipe])
 class EssentialInformationComponent implements OnInit, OnActivate {
-  EssentialInformationComponent(this.quickActionService, this.videoService,  this.routerStateService);
+  EssentialInformationComponent(this.quickActionService, this.videoService);
 
   @override
   void ngOnInit() async {
@@ -42,7 +41,6 @@ class EssentialInformationComponent implements OnInit, OnActivate {
   @Input()
   String backgroundImage;
 
-  RouterStateService routerStateService;
   final QuickActionService quickActionService;
   final VideoService videoService;
   List<QuickAction> quickActions = [];
