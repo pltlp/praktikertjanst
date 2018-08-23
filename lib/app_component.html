@@ -1,11 +1,14 @@
 <d-navbar id="flex-content-main"
           backgroundColor="#00A0C8"
           [height]="158">
-    <div id="flex-content-1" class="margin-top-small">
+    <div id="flex-content-1"
+         class="margin-top-small">
         <div>
-            <img id="logo"
-                 src="pics/hg-rid_logo_white.png"
-                 alt="logo">
+            <a [routerLink]="msg.home_url">
+                <img id="logo"
+                     src="pics/hg-rid_logo_white.png"
+                     alt="logo">
+            </a>
         </div>
         <!--
                                 <div>
@@ -40,14 +43,12 @@
         <a *ngIf="previousUrl != null"
            [routerLink]="previousUrl"
            routerLinkActive="active">
-            {{(previousUrl != null) ? previousUrl : ''}} {{(previousUrl !=null) ? 
-            ' / ' : ''}}
+            {{(previousUrl != null) ? previousUrl : ''}} {{(previousUrl !=null) ? ' / ' : ''}}
         </a>
         <a *ngIf="currentUrl != null"
            [routerLink]="currentUrl"
            routerLinkActive="active">
-            {{(currentUrl != null) ? ' / ' : ''}} {{(currentUrl != null) ? currentUrl
-            : ''}}
+            {{(currentUrl != null) ? ' / ' : ''}} {{(currentUrl != null) ? currentUrl : ''}}
         </a>
     </div>
 </d-navbar>
