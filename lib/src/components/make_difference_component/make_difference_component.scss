@@ -33,15 +33,15 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 font-size: 2.5em;
-                cursor: pointer;
+                
             }
             button:hover {
                 background: $astronautBlue;
-                cursor: pointer;
                 border: none;
                 text-align: center;
                 transition-property: background;
                 transition-duration: 0.5s;
+                cursor: pointer;
             }
             button[materialTooltip] {
                 font-size: 5em !important;
@@ -52,3 +52,5 @@
         }
     }
 }
+
+
