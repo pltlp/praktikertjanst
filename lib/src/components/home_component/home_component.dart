@@ -22,7 +22,8 @@ import '../quick_actions_component/quick_actions_component.dart';
       MakeDifferenceComponent,
       QuickActionsComponent,
       NgFor,
-      NgIf
+      NgIf,
+      FoYouTubePlayerComponent,
     ],
     providers: [],
     pipes: [

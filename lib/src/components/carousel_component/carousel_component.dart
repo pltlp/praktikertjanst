@@ -45,6 +45,8 @@ class CarouselComponent implements OnInit {
 
   void onVideoClick(Video video) {
     selectedModel = video;
+    print("hej");
+    print(selectedModel);
   }
 
   bool loaded = false;

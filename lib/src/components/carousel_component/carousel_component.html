@@ -27,7 +27,7 @@
           [fixedWidth]="true">
         <div class="row">
                 <div class="col">
-                        <iframe [src]="sanitizer.bypassSecurityTrustUrl(selectedModel.url)"
+                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url)"
                                 allowfullscreen></iframe>
                 </div>
         </div>
