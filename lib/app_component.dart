@@ -5,6 +5,7 @@ import 'package:angular_components/model/menu/menu.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:intl/intl.dart';
+import 'src/components/breadcrumbs_component/breadcrumbs_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
@@ -20,6 +21,7 @@ import 'src/services/messages_service.dart';
       'app_component.css'
     ],
     directives: [
+      BreadcrumbsComponent,
       HomeComponent,
       NavbarComponent,
       FooterComponent,
@@ -39,7 +41,7 @@ import 'src/services/messages_service.dart';
     pipes: [
       NamePipe
     ])
-class AppComponent implements OnActivate, OnInit {
+class AppComponent  {
   AppComponent(this.routes, this.msg, this._router) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
@@ -51,39 +53,19 @@ class AppComponent implements OnActivate, OnInit {
     ]);
   }
 
-  @override
-  void ngOnInit() async {
-    _routeArray.add(msg.home_url);
-  }
-
-  @override
-  void onActivate(RouterState previous, RouterState current) async {
-    if (_router.current != null && _router.current.path != null) {
-      _routeArray = _router.current.path.split('/');
-      print(_routeArray);
-    }
-  }
-
-  void updateBreadCrumbs() {
-    if (_router.current != null && _router.current.path != null) {
-      _routeArray = _router.current.path.split('/');
-      print(_routeArray);
-    }
-  }
 
   String get link1 => Intl.message('link', name: 'link');
   String get link2 => Intl.message('link', name: 'link');
   String get link3 => Intl.message('link', name: 'link');
   String get link4 => Intl.message('link', name: 'link');
   Router get router => _router;
-  List<String> get routeArray => _routeArray;
+  
   MenuModel menuModel;
 
   final Routes routes;
   final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
-  List<String> _routeArray = [];
   Router _router;
 
   String get essential_information =>

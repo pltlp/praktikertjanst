@@ -46,7 +46,7 @@ class Routes {
               component: rc.RiseComponentNgFactory,
               useAsDefault: false),
           RouteDefinition(
-              path: '${msg.articles_url}/rise/:id',
+              path: '${msg.home_url}/${msg.articles_url}/rise/:id',
               component: rc.RiseComponentNgFactory,
               useAsDefault: false),
         ];
