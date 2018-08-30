@@ -21,24 +21,18 @@
                                 </div>
                                 -->
         <div>
-            <a [routerLink]="msg.essential_information_url">{{essential_information | name}}</a>
+            <a [routerLink]="msg.home_url + '/' + msg.essential_information_url" (click)="updateBreadCrumbs()"> {{essential_information | name}}</a>
             <a [routerLink]="">{{link2}}</a>
             <a [routerLink]="">{{link3}}</a>
             <a [routerLink]="">{{link4}}</a>
         </div>
     </div>
     <div id="flex-content-2"
-         class="background-color-astronautblue">
-        <a [routerLink]="msg.home_url"
-           style="padding:0em !important; margin:0 !important;">
-            <material-icon class="background-color-white home-icon"
-                           icon="home">
-            </material-icon>
-        </a>
-        <a [routerLink]="(router.current != null && router.current.path != null) ? router.current.path :''"
-           style="padding:0.3em !important; margin:0 !important;">
-            {{(router.current != null && router.current.path != null) ? '/' : ''}} {{(router.current != null && router.current.path != null) ? router.current.path : '' | name}}
-        </a>
+         class="background-color-astronautblue" *ngFor="let routerLink of routeArray">
+        <a [routerLink]="routerLink"
+        style="padding:0.3em !important; margin:0 !important;">
+         {{routerLink | name}}
+     </a>
     </div>
 </d-navbar>
 <div style="height: 150px"></div>

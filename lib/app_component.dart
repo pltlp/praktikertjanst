@@ -39,7 +39,7 @@ import 'src/services/messages_service.dart';
     pipes: [
       NamePipe
     ])
-class AppComponent implements OnActivate {
+class AppComponent implements OnActivate, OnInit {
   AppComponent(this.routes, this.msg, this._router) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
@@ -52,8 +52,23 @@ class AppComponent implements OnActivate {
   }
 
   @override
+  void ngOnInit() async {
+    _routeArray.add(msg.home_url);
+  }
+
+  @override
   void onActivate(RouterState previous, RouterState current) async {
-    (router.current != null && router.current.path != null) ? print(router.current.toUrl()) : print('');
+    if (_router.current != null && _router.current.path != null) {
+      _routeArray = _router.current.path.split('/');
+      print(_routeArray);
+    }
+  }
+
+  void updateBreadCrumbs() {
+    if (_router.current != null && _router.current.path != null) {
+      _routeArray = _router.current.path.split('/');
+      print(_routeArray);
+    }
   }
 
   String get link1 => Intl.message('link', name: 'link');
@@ -61,14 +76,14 @@ class AppComponent implements OnActivate {
   String get link3 => Intl.message('link', name: 'link');
   String get link4 => Intl.message('link', name: 'link');
   Router get router => _router;
-  
+  List<String> get routeArray => _routeArray;
   MenuModel menuModel;
 
   final Routes routes;
   final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
-
+  List<String> _routeArray = [];
   Router _router;
 
   String get essential_information =>

@@ -45,15 +45,13 @@ class CarouselComponent implements OnInit {
 
   void onVideoClick(Video video) {
     selectedModel = video;
-    print("hej");
-    print(selectedModel);
   }
 
   bool loaded = false;
   Video selectedModel;
 
   String get good_examples =>
-      Intl.message('good examples', name: 'good_examples');
+      Intl.message('Goda exempel', name: 'good_examples');
 
   final List<List<Video>> videoTable = [];
   final VideoService videoService;

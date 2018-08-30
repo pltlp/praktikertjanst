@@ -29,15 +29,10 @@ import '../quick_actions_component/quick_actions_component.dart';
     pipes: [
       NamePipe
     ])
-class HomeComponent implements OnActivate {
-  HomeComponent(this.router);
+class HomeComponent {
+  HomeComponent();
 
-  @override
-  void onActivate(RouterState previous, RouterState current) async {
-    (router.current != null && router.current.path != null)
-        ? print(router.current.toUrl())
-        : print('');
-  }
 
-  Router router;
+
+
 }

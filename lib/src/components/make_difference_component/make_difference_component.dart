@@ -2,28 +2,37 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
 import 'package:fo_components/fo_components.dart';
+import 'package:angular/security.dart';
 
 @Component(
-    directives: const [NgIf, MaterialTooltipDirective],
+    directives: const [NgIf, MaterialTooltipDirective, FoModalComponent],
     providers: const [MaterialIconComponent],
     selector: 'p-make-difference',
     styleUrls: const ['make_difference_component.css'],
     templateUrl: 'make_difference_component.html',
     pipes: [NamePipe])
 class MakeDifferenceComponent {
+  MakeDifferenceComponent(this.sanitizer);
+
   @Input()
   String backgroundImage;
 
-  String get you_can_make_a_difference =>
-      Intl.message('you really can make a difference!',
-          name: 'you_can_make_a_difference');
+  String get mercury_in_nature =>
+      Intl.message('Kvicksilver i naturen!', name: 'mercury_in_nature');
 
-  String get find_out_what_is_allowed => Intl.message(
-      "Find out what you didn't know you could do! Answer these five simple questions and find the information relevant to you.",
-      name: 'find_out_what_is_allowed');
-  String get learn_more => Intl.message('learn more!', name: 'learn_more');
-  String get what_do_you_already_know =>
-      Intl.message('what do you already know?',
-          name: 'what_do_you_already know'); 
+  String get mercury_in_nature_button_tooltip => Intl.message(
+      'Vad är de långvariga effekterna av kvicksilver i nauren? Ta reda på det här!',
+      name: 'mercury_in_nature_tooltip');
+
+  String get library_button_tooltip => Intl.message(
+      'Här finns alla våra kursmoment samlade på ett och samma ställe!',
+      name: 'library_button_tooltip');
+
+  String get library => Intl.message('Bibliotek', name: 'library');
+
+  final DomSanitizationService sanitizer;
+
+  bool showModal = false;
+  String articleUrl = 'rise_example/content/index.html';
 
 }

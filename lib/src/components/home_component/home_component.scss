@@ -33,12 +33,12 @@
     }
     div#youtube-player-wrapper {
         position: relative;
+        padding-bottom: 56.25%; // 16:9
+        padding-top: 0;
+        height: 0;
         overflow: hidden;
         font-size: 0;
-        flex: 1;
-        align-self: stretch;
-        iframe,
-        div {
+        iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -48,7 +48,6 @@
             margin: 0;
             padding: 0;
             display: block;
-            overflow: hidden;
         }
     }
 }

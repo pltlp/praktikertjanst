@@ -34,15 +34,15 @@ class Routes {
               component: hc.HomeComponentNgFactory,
               useAsDefault: true),
           RouteDefinition(
-              path: msg.quick_actions_url,
+              path: '${msg.home_url}/${msg.quick_actions_url}',
               component: qac.QuickActionsComponentNgFactory,
               useAsDefault: false),
           RouteDefinition(
-              path: msg.essential_information_url,
+              path: '${msg.home_url}/${msg.essential_information_url}',
               component: eic.EssentialInformationComponentNgFactory,
               useAsDefault: false),
           RouteDefinition(
-              path: '${msg.articles_url}/rise',
+              path: '${msg.home_url}/${msg.articles_url}/rise',
               component: rc.RiseComponentNgFactory,
               useAsDefault: false),
           RouteDefinition(
