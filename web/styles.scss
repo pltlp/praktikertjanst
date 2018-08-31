@@ -12,19 +12,23 @@ body {
     margin: 0;
     h1 {
         color: black;
-        font-size: 4em;
         font-weight: bolder;
-    }
-    h2 {
-        text-decoration: none;
     }
     .width-100 {
         width: 100%;
     }
+    
 }
 
+html
+{
+    font-size:16px;
+}
 
-
+h1.large
+{
+    font-size: 4rem;
+}
 
 /*
 .row {

@@ -19,14 +19,15 @@ import '../video_component/video_component.dart';
       VideoComponent,
       CarouselComponent,
       CarouselSlideSectionComponent,
-      NgIf
+      NgIf,
+      RouterLink
     ],
     providers: const [QuickActionService, VideoService],
     selector: 'p-essential-information',
     styleUrls: const ['essential_information_component.css'],
     templateUrl: 'essential_information_component.html',
     pipes: [NamePipe])
-class EssentialInformationComponent implements OnInit, OnActivate {
+class EssentialInformationComponent implements OnInit {
   EssentialInformationComponent(this.quickActionService, this.videoService);
 
   @override
@@ -34,10 +35,6 @@ class EssentialInformationComponent implements OnInit, OnActivate {
     quickActions = await quickActionService.getAll();
   }
 
- @override
-  void onActivate(RouterState previous, RouterState current) async {
-
-  }
   @Input()
   String backgroundImage;
 

@@ -13,6 +13,6 @@ import 'package:fo_components/fo_components.dart';
 class MainHeaderComponent {
    String get main_header => Intl.message('en liten insats kan göra stor skillnad!',
         name: 'small_efforts_make_a_huge_difference');
-   String get learn_more => Intl.message('lär dig mig!',
+   String get learn_more => Intl.message('lär dig mer!',
         name: 'learn_more');
 }

@@ -1,13 +1,13 @@
-<div class="row margin-none padding-none expand">
-        <div class="col margin-none padding-none text-center">
-                <h1 class="text-center margin-bottom-medium margin-top-large">
+<div class="row">
+        <div class="col text-center">
+                <h1 class="margin-bottom-medium margin-top-large">
                         {{good_examples | name}}
                 </h1>
         </div>
 </div>
 <fo-carousel *ngIf="loaded">
         <fo-carousel-slide *ngFor="let videoList of videoTable">
-                <div class="row margin-bottom-x-large expand">
+                <div class="row margin-bottom-x-large">
                         <div class="m4 col"
                              *ngFor="let video of videoList">
                                 <p-carousel-slide-section [model]="video"

@@ -9,24 +9,32 @@ import '../../services/messages_service.dart';
     pipes: [NamePipe],
     selector: 'p-breadcrumbs',
     styleUrls: const ['breadcrumbs_component.css'],
-    templateUrl: 'bradcrumbs_component.html')
-class BreadcrumbsComponent implements OnInit {
-  BreadcrumbsComponent(this._router, this.msg);
-
-  @override
-  void ngOnInit() async {
-    _routeArray.add(msg.home_url);
-    _router.onRouteActivated.listen((newState) {
-      print('Navigating from ${_router.current} to $newState');
-    });
+    templateUrl: 'breadcrumbs_component.html')
+class BreadcrumbsComponent {
+  BreadcrumbsComponent(this._router, this.msg) {
+    _router.onRouteActivated.listen(_onNavigationStart);
   }
 
-  List<String> get routeArray =>
-      (_router.current != null && _router.current.path != null)
-          ? _routeArray = _router.current.path.split('/')
-          : null;
+  void _onNavigationStart(RouterState state) {
+    routePaths.clear();
+    routeLabels.clear();
 
-  List<String> _routeArray = [];
+    if (state.path != null) {
+      routeLabels = state.path.split('/');
+
+      for (var i = 0; i < routeLabels.length; i++) {
+        final inner = <String>[];
+
+        for (var j = 0; j <= i; j++) {
+          inner.add(routeLabels[j]);
+        }
+        routePaths.add(inner.join('/'));
+      }
+    }
+  }
+
   final Router _router;
   final MessagesService msg;
+  final List<String> routePaths = [];
+  List<String> routeLabels = [];
 }

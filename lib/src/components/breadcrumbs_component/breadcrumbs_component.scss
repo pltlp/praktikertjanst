@@ -1,11 +1,12 @@
-a::before
-{
-    content: '/';
-} 
-
-a { 
-    text-decoration: none;
-    color: white;
-    padding:0;
-    margin:0;
+:host {
+    .row {
+        height: 25px;
+        a::before {
+            content: '/';
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }

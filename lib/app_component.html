@@ -1,37 +1,33 @@
-<d-navbar id="flex-content-main"
-          backgroundColor="#00A0C8"
+<d-navbar backgroundColor="#00A0C8"
           [height]="150">
-    <div id="flex-content-1"
-         class="margin-top-small">
-        <div>
-            <a [routerLink]="msg.home_url">
-                <img id="logo"
-                     src="pics/hg-rid_logo_white.png"
-                     alt="logo">
-            </a>
+
+    <div id="upper-row"
+         class="row">
+        <div class="m2 s6 col align-middle">
+            <img src="pics/hg-rid_logo_white.png"
+                 alt="logo"
+                 [routerLink]="msg.home_url">
         </div>
         <!--
-                                <div>
-                                    <material-menu [menu]="menuModel">
-                                        <section menu-button>
-                                            <material-icon icon="menu"
-                                                           class="menu-icon"></material-icon>
-                                        </section>
-                                    </material-menu>
-                                </div>
-                                -->
-        <div>
+                                                <div>
+                                                    <material-menu [menu]="menuModel">
+                                                        <section menu-button>
+                                                            <material-icon icon="menu"
+                                                                           class="menu-icon"></material-icon>
+                                                        </section>
+                                                    </material-menu>
+                                                </div>
+                                                -->
+        <div class="m10 s6 col text-right align-bottom">
             <a [routerLink]="msg.home_url + '/' + msg.essential_information_url"> {{essential_information | name}}</a>
-            <a [routerLink]="">{{link2}}</a>
-            <a [routerLink]="">{{link3}}</a>
-            <a [routerLink]="">{{link4}}</a>
+            <a [routerLink]="msg.home_url">Språk</a>
+            <a [routerLink]="msg.home_url">Om</a>
+            <a [routerLink]="msg.home_url">Bibliotek</a>
         </div>
     </div>
-    <div id="flex-content-2">
-        <div class="row expand background-color-astronautblue text-left">
-            <div class="col">
-                <p-breadcrumbs></p-breadcrumbs>
-            </div>
+    <div class="row expand background-color-astronautblue text-left">
+        <div class="col align-middle padding-top-none">
+            <p-breadcrumbs></p-breadcrumbs>
         </div>
     </div>
 </d-navbar>

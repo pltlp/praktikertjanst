@@ -2,7 +2,6 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
-import 'package:angular_router/angular_router.dart';
 import '../../models/quick_action.dart';
 
 @Component(
@@ -13,7 +12,6 @@ import '../../models/quick_action.dart';
     ],
     directives: const [
       MaterialIconComponent,
-      routerDirectives
     ],
     pipes: [
       NamePipe

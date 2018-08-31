@@ -3,9 +3,14 @@ import 'model.dart';
 class QuickAction extends Model {
   QuickAction();
 
-  String url;
-  String name;
-  String description;
+  Map<String, QuickActionPhrases> phrases = {};
   String icon;
   String imgSrc;
+}
+
+class QuickActionPhrases{
+  QuickActionPhrases();
+  String name;
+  String url;
+  String description;
 }
