@@ -2,7 +2,7 @@
     <div class="col padding-top-none align-middle">
         <span *ngFor="let path of routePaths; let i = index">
             <a [routerLink]="path">
-                {{routeLabels[i]}}
+                {{(routeLabels.length != 1) ? " / " : ""}} {{routeLabels[i]}}
             </a>
         </span>
     </div>

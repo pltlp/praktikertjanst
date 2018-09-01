@@ -29,8 +29,10 @@ class BreadcrumbsComponent {
           inner.add(routeLabels[j]);
         }
         routePaths.add(inner.join('/'));
+        print(routeLabels);
       }
     }
+    
   }
 
   final Router _router;

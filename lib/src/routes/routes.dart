@@ -19,10 +19,10 @@ class Routes {
   final RoutePath riseArticle;
   Routes(MessagesService msg)
       : essentialInformation = RoutePath(path: msg.essential_information_url),
-        riseArticles = RoutePath(path: '${msg.articles_url}/rise'),
+        riseArticles = RoutePath(path: '/rise'),
         quickActions = RoutePath(path: msg.quick_actions_url),
         home = RoutePath(path: msg.home_url),
-        riseArticle = RoutePath(path: '${msg.articles_url}/rise/:id'),
+        riseArticle = RoutePath(path: '/rise/:id'),
         all = [
           RouteDefinition(
               path: msg.home_url,
@@ -33,16 +33,16 @@ class Routes {
             component: eic.EssentialInformationComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.articles_url}',
+            path: '${msg.home_url}/rise',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.articles_url}/:id',
+            path: '${msg.home_url}/rise/:id',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.essential_information_url}/${msg.articles_url}/:id',
+                '${msg.home_url}/${msg.essential_information_url}/rise/:id',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(

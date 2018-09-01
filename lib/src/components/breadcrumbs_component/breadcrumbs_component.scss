@@ -1,9 +1,6 @@
 :host {
     .row {
         height: 25px;
-        a::before {
-            content: '/';
-        }
         a {
             text-decoration: none;
             color: white;
