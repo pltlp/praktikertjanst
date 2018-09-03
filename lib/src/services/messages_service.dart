@@ -12,4 +12,6 @@ class MessagesService {
 
   String get quick_actions_url =>
       Intl.message('quick-actions', name: 'quick_actions_url');
+
+  String get library_url => Intl.message('library', name: 'library_url');
 }

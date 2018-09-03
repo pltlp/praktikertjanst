@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:d_components/d_components.dart';
@@ -33,7 +34,6 @@ import 'src/services/messages_service.dart';
       MaterialMenuComponent,
       MaterialDropdownSelectComponent,
       MaterialSelectItemComponent
-
     ],
     providers: [
       routerProvidersHash,
@@ -44,51 +44,33 @@ import 'src/services/messages_service.dart';
     pipes: [
       NamePipe
     ])
-class AppComponent  {
+class AppComponent {
   AppComponent(this.routes, this.msg, this._router) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(link1),
         MenuItem(link2),
-        MenuItem(link3),
-        MenuItem(link4),
+        MenuItem(about),
+        MenuItem(language),
       ])
     ]);
   }
 
-
   String get link1 => Intl.message('link', name: 'link');
   String get link2 => Intl.message('link', name: 'link');
   String get link3 => Intl.message('link', name: 'link');
-  String get link4 => Intl.message('link', name: 'link');
+  String get language => Intl.message('språk', name: 'language');
+  String get about => Intl.message('om', name: 'about');
+  String get library => Intl.message('bibliotek', name: 'library');
   Router get router => _router;
-  
+  Window get htmlWindow => window;
   MenuModel menuModel;
-
   final Routes routes;
   final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
-  List<String> languages = ['Svenska', 'Engelska', 'Spanska'];
-    
-  String proto;
-  static const languagesList = [
-    Language('en-US', 'US English'),
-    Language('sv-SV', 'Svenska'),
-    Language('fr-CA', 'Canadian French')
-  ];
-
   Router _router;
-  
-
   String get essential_information =>
       Intl.message('essential information', name: 'essential_information');
-}
-
-class Language implements HasUIDisplayName {
-  final String code;
-  final String label;
-  const Language(this.code, this.label);
-  @override
-  String get uiDisplayName => label;
+  
 }
