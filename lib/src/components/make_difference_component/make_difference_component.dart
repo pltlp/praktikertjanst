@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
@@ -29,6 +30,12 @@ class MakeDifferenceComponent {
       name: 'library_button_tooltip');
 
   String get library => Intl.message('Bibliotek', name: 'library');
+
+  void scrollTop()
+  {
+    window.scrollTo(0,0);
+  }
+
 
   bool showModal = false;
   Router router;

@@ -32,7 +32,7 @@ List<QuickAction> quickActionsHome = [
   new QuickAction()
     ..icon = 'speaker_notes'
     ..phrases['sv'] = (new QuickActionPhrases()
-      ..name = 'Instruktioner för dentaltekniker'
+      ..name = 'För dig som är dentaltekniker'
       ..description =
           'Ett par enkla regler, instruktioner och koncept för dentaltekniker!'
       ..url = 'good-examples-installation')
@@ -57,7 +57,7 @@ List<QuickAction> quickActionsHome = [
   new QuickAction()
     ..icon = 'speaker_notes'
     ..phrases['sv'] = (new QuickActionPhrases()
-      ..name = 'Instruktioner för servicetekniker'
+      ..name = 'För dig som är servicetekniker'
       ..description =
           'Ett par enkla regler, instruktioner och koncept för servicetekniker!'
       ..url = 'instructions-for-service-technicians')

@@ -5,17 +5,16 @@
                 <div class="row expand">
                     <div class="col m1"></div>
                     <div class="col m4">
-                        <a [routerLink]="'home/mercury-in-nature'">
-                            <button style="width:100%;"
-                                    materialTooltip="{{mercury_in_nature_button_tooltip}}">
+                        <a [routerLink]="'home/mercury-in-nature'"
+                           (click)="scrollTop()">
+                            <button materialTooltip="{{mercury_in_nature_button_tooltip}}">
                                 {{mercury_in_nature | name}}
                             </button>
                         </a>
                     </div>
                     <div class="col m2"></div>
                     <div class="col m4">
-                        <button style="width:100%;"
-                                materialTooltip="{{library_button_tooltip}}">
+                        <button materialTooltip="{{library_button_tooltip}}">
                             {{library | name}}
                         </button>
                     </div>
