@@ -15,4 +15,9 @@
 
 <p-make-difference backgroundImage="url('pics/clean_future.jpg')"></p-make-difference>
 
-<p-quick-actions></p-quick-actions>
+<div class="row expand margin-top-small margin-bottom-small">
+    <div class="col m4 margin-none padding-none" *ngFor="let quickAction of quickActions">
+        <p-quick-action [model]="quickAction">
+        </p-quick-action>
+    </div>
+</div>

@@ -1,18 +1,18 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
+import  'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
-import 'package:angular/security.dart';
 
 @Component(
-    directives: const [NgIf, MaterialTooltipDirective, FoModalComponent],
+    directives: const [NgIf, MaterialTooltipDirective, FoModalComponent, routerDirectives],
     providers: const [MaterialIconComponent],
     selector: 'p-make-difference',
     styleUrls: const ['make_difference_component.css'],
     templateUrl: 'make_difference_component.html',
     pipes: [NamePipe])
 class MakeDifferenceComponent {
-  MakeDifferenceComponent(this.sanitizer);
+  MakeDifferenceComponent(this.router);
 
   @Input()
   String backgroundImage;
@@ -30,9 +30,6 @@ class MakeDifferenceComponent {
 
   String get library => Intl.message('Bibliotek', name: 'library');
 
-  final DomSanitizationService sanitizer;
-
   bool showModal = false;
-  String articleUrl = 'rise_example/content/index.html';
-
+  Router router;
 }

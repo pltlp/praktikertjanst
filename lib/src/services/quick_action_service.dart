@@ -8,7 +8,90 @@ class QuickActionService {
     await new Future.delayed(const Duration(milliseconds: 2000));
     return mockContent;
   }
+
+  Future<List<QuickAction>> getFrontPageQuickActions() async {
+    await new Future.delayed(const Duration(milliseconds: 2000));
+    return quickActionsHome;
+  }
 }
+
+List<QuickAction> quickActionsHome = [
+  new QuickAction()
+    ..icon = 'favorite_border'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'För dig på tandläkarmottagning'
+      ..description =
+          'Här hittar du all information som är intressant för dig som jobbar på tandläkarmottagning'
+      ..url = '')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'For you who works at the dental practice'
+      ..description =
+          'Here you will find all the information useful for those who work at the dental practice'
+      ..url = '')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'speaker_notes'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Instruktioner för dentaltekniker'
+      ..description =
+          'Ett par enkla regler, instruktioner och koncept för dentaltekniker!'
+      ..url = 'good-examples-installation')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Instructions for dental technicians'
+      ..description =
+          'A few simple rules, instructions and concepts for dental technicians!'
+      ..url = 'instructions-for-dental-care-technicians')
+    ..imgSrc = 'pics/quicksilver_management.jpg',
+  new QuickAction()
+    ..icon = 'gavel'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Lagar och regler'
+      ..description = 'Här kan du ta reda på vilka lagar och regler som gäller'
+      ..url = 'laws-and-regulations')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Laws and regulations'
+      ..description =
+          'Here you can find out what laws and regulations are in force'
+      ..url = 'laws-and-regulations')
+    ..imgSrc = 'pics/clean_future.jpg',
+  new QuickAction()
+    ..icon = 'speaker_notes'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Instruktioner för servicetekniker'
+      ..description =
+          'Ett par enkla regler, instruktioner och koncept för servicetekniker!'
+      ..url = 'instructions-for-service-technicians')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Instructions for service technicians'
+      ..description =
+          'A few simple rules, instructions and concepts for service technicians!'
+      ..url = 'instructions-for-service-care-technicians')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'speaker_notes'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'För dig som bara är nyfiken'
+      ..description =
+          'Här hittar du lite allmän information om alla våra verksamhetsområden'
+      ..url = 'for-you-who-is-curious')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'For you who is just curious'
+      ..description =
+          'Here you will find some general information about all our areas of activity!'
+      ..url = 'for-you-who-is-curious')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'question_answer'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Quiz vad har du lärt dig? '
+      ..description = 'En kort quiz testa dina kunskaper här!'
+      ..url = 'quiz-for-all')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Quiz what have you learned? - dental teams'
+      ..description = 'Quiz for dental teams, test your knowledge here!'
+      ..url = 'quiz-for-all')
+    ..imgSrc = 'pics/quicksilver_management.jpg',
+];
 
 List<QuickAction> mockContent = [
   new QuickAction()
@@ -120,7 +203,7 @@ List<QuickAction> mockContent = [
       ..name = 'Instructions for service technicians'
       ..description =
           'A few simple rules, instructions and concepts for service technicians!'
-      ..url = 'instructions-for-dental-care-technicians')
+      ..url = 'instructions-for-service-care-technicians')
     ..imgSrc = 'pics/header_silver_service_us.jpg',
   new QuickAction()
     ..icon = 'question_answer'
@@ -304,49 +387,17 @@ List<QuickAction> mockContent = [
           'Here you will find instructions for decontamination of mercury waste'
       ..url = 'decontamination')
     ..imgSrc = 'pics/clean_future.jpg',
-
-  /*
-    ..name = 'Important concepts'
-    ..description = 'Here are some important concepts you may want to remember!'
-    ..url = 'important-concepts'
+  new QuickAction()
+    ..icon = 'speaker_notes'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'För dig som bara är nyfiken'
+      ..description =
+          'Här hittar du lite allmän information om alla våra verksamhetsområden'
+      ..url = 'for-you-who-is-curious')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'For you who is just curious'
+      ..description =
+          'Here you will find some general information about all our areas of activity!'
+      ..url = 'for-you-who-is-curious')
     ..imgSrc = 'pics/header_silver_service_us.jpg',
-  new QuickAction()
-    ..icon = 'question_answer'
-    ..name = 'Five quick ones!'
-    ..url = ''
-    ..description =
-        'Answer five quick questions to find information relevant to you'
-    ..imgSrc = 'pics/clean_future.jpg',
-  new QuickAction()
-    ..icon = 'timelapse'
-    ..name = 'Self estimation'
-    ..description =
-        'How long will it take for you to manage your quicksilver amalgam?'
-    ..url = ''
-    ..imgSrc = 'pics/quicksilver_management.jpg',
-  new QuickAction()
-    ..icon = 'autorenew'
-    ..name = 'Quicksilver amalgam'
-    ..description = 'What does quicksilver amalgam consist of?'
-    ..url = ''
-    ..imgSrc = 'pics/quicksilver_management.jpg',
-  new QuickAction()
-    ..icon = 'done_all'
-    ..name = 'Self estimation'
-    ..description = 'How long will it take to manage your quicksilver amalgam?'
-    ..url = ''
-    ..imgSrc = 'pics/clean_future.jpg',
-  new QuickAction()
-    ..icon = 'question_answer'
-    ..name = 'Self evaluation'
-    ..url = ''
-    ..description = 'Find out if you know everything you need to!'
-    ..imgSrc = 'pics/clean_future.jpg',
-  new QuickAction()
-    ..icon = 'question_answer'
-    ..name = 'What have you learned?'
-    ..url = ''
-    ..description = 'Test your newly acquired knowledge here!'
-    ..imgSrc = 'pics/quicksilver_management.jpg',
-    */
 ];

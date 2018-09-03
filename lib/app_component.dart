@@ -31,6 +31,9 @@ import 'src/services/messages_service.dart';
       MaterialIconComponent,
       FullscreenComponent,
       MaterialMenuComponent,
+      MaterialDropdownSelectComponent,
+      MaterialSelectItemComponent
+
     ],
     providers: [
       routerProvidersHash,
@@ -66,8 +69,26 @@ class AppComponent  {
   final MessagesService msg;
   List<LearningContent> learningContents = [];
   List<Rise> riseContents = [];
+  List<String> languages = ['Svenska', 'Engelska', 'Spanska'];
+    
+  String proto;
+  static const languagesList = [
+    Language('en-US', 'US English'),
+    Language('sv-SV', 'Svenska'),
+    Language('fr-CA', 'Canadian French')
+  ];
+
   Router _router;
+  
 
   String get essential_information =>
       Intl.message('essential information', name: 'essential_information');
+}
+
+class Language implements HasUIDisplayName {
+  final String code;
+  final String label;
+  const Language(this.code, this.label);
+  @override
+  String get uiDisplayName => label;
 }

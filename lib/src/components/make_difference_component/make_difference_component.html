@@ -5,14 +5,17 @@
                 <div class="row expand">
                     <div class="col m1"></div>
                     <div class="col m4">
-                        <button style="width:100%;"
-                                materialTooltip="{{mercury_in_nature_button_tooltip}}" (click)="showModal=true">
-                            {{mercury_in_nature | name}}
-                        </button>
+                        <a [routerLink]="'home/mercury-in-nature'">
+                            <button style="width:100%;"
+                                    materialTooltip="{{mercury_in_nature_button_tooltip}}">
+                                {{mercury_in_nature | name}}
+                            </button>
+                        </a>
                     </div>
                     <div class="col m2"></div>
                     <div class="col m4">
-                        <button style="width:100%;" materialTooltip="{{library_button_tooltip}}">
+                        <button style="width:100%;"
+                                materialTooltip="{{library_button_tooltip}}">
                             {{library | name}}
                         </button>
                     </div>
@@ -22,17 +25,3 @@
         </div>
     </div>
 </div>
-
-<fo-modal *ngIf="showModal"
-          [title]="mercury_in_nature"
-          [visible]="true"
-          (visibleChange)="showModal = false"
-          [showCloseButton]="true"
-          [fixedWidth]="true">
-        <div class="row">
-                <div class="col">
-                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(articleUrl)"
-                                allowfullscreen></iframe>
-                </div>
-        </div>
-</fo-modal>
