@@ -215,8 +215,94 @@ List<QuickAction> mockContent = [
     ..phrases['en'] = (new QuickActionPhrases()
       ..name = 'Installation of amalgam separator'
       ..description =
-          'Here you can see which routines should be followed to install amalgam separator'
+          'Here you can see which routines should be followed to install an amalgam separator'
       ..url = 'installation-of-amalgam-separator')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'done_all'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Rätt installerat?'
+      ..description =
+          'En kort checklista för att se om installationen av amalgam avskiljare har gått rätt till!'
+      ..url = 'check-installation-of-amalgam-separator')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Has everything been installed properly?'
+      ..description =
+          'Here you will find short checklist to make sure your installation has been performed correctly!'
+      ..url = 'check-installation-of-amalgam-separator')
+    ..imgSrc = 'pics/quicksilver_management.jpg',
+  new QuickAction()
+    ..icon = 'done_all'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Byte av amalgamavskiljare (vått och torrt sugsystem)'
+      ..description = 'Hur går byten av amalgamavskiljare till?'
+      ..url = 'replacement-of-amalgam-separator')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Replacement of amalgam separator (wet and dry suction system)'
+      ..description = 'Hur går byten av amalgamavskiljare till?'
+      ..url = 'replacement-of-amalgam-separator')
+    ..imgSrc = 'pics/clean_future.jpg',
+  new QuickAction()
+    ..icon = 'done_all'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Funktionskontroll'
+      ..description = 'Dubbelkolla att allting fungerar!'
+      ..url = 'all-functions-check')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'All functions check!'
+      ..description = 'Double-check that everything is working properly!'
+      ..url = 'all-functions-check')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'done_all'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Rengöring av utjämningskärl'
+      ..description =
+          'Här hittar du instruktioner för hur man rengör utjämningskärl'
+      ..url = 'cleaning-of-the-leveling vessel')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Cleaning of the leveling vessel'
+      ..description =
+          'Here you will find instructions for cleaning the leveling vessel'
+      ..url = 'cleaning-of-the-leveling vessel')
+    ..imgSrc = 'pics/header_silver_service_us.jpg',
+  new QuickAction()
+    ..icon = 'invert_colors'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Rengöring och tömning av vattenlås'
+      ..description = 'Här hittar du instruktioner för hur man rengör vattenlås'
+      ..url = 'cleaning-and-emptying-of-water-taps')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Cleaning of the leveling vessel'
+      ..description =
+          'Here you will find instructions for cleaning and emptying of water trap'
+      ..url = 'cleaning-and-emptying-of-water-traps')
+    ..imgSrc = 'pics/quicksilver_management.jpg',
+  new QuickAction()
+    ..icon = 'storage'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Slutförvaring'
+      ..description =
+          'Här hittar du instruktioner för slutförvring av kvicksilver avfall'
+      ..url = 'storeage')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Storage'
+      ..description =
+          'Here you will find instructions for  storage of mercury waste'
+      ..url = 'storeage')
+    ..imgSrc = 'pics/clean_future.jpg',
+  new QuickAction()
+    ..icon = 'autorenew'
+    ..phrases['sv'] = (new QuickActionPhrases()
+      ..name = 'Sanering'
+      ..description =
+          'Här hittar du instruktioner för sanering av kvicksilver avfall'
+      ..url = 'sanering')
+    ..phrases['en'] = (new QuickActionPhrases()
+      ..name = 'Decontamination'
+      ..description =
+          'Here you will find instructions for decontamination of mercury waste'
+      ..url = 'decontamination')
     ..imgSrc = 'pics/clean_future.jpg',
 
   /*
