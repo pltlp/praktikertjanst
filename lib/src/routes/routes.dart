@@ -11,14 +11,12 @@ import '../services/messages_service.dart';
 @Injectable()
 class Routes {
   final List<RouteDefinition> all;
-  final RoutePath essentialInformation;
   final RoutePath home;
   final RoutePath quickActions;
   final RoutePath riseArticle;
   final RoutePath library;
   Routes(MessagesService msg)
-      : essentialInformation = RoutePath(path: msg.essential_information_url),
-        quickActions = RoutePath(path: msg.quick_actions_url),
+      : quickActions = RoutePath(path: msg.quick_actions_url),
         home = RoutePath(path: msg.home_url),
         riseArticle = RoutePath(path: '${msg.home_url}/:id'),
         library = RoutePath(path: msg.library_url),
@@ -28,19 +26,11 @@ class Routes {
               component: hc.HomeComponentNgFactory,
               useAsDefault: true),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.essential_information_url}',
-            component: eic.EssentialInformationComponentNgFactory,
-          ),
-          RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}',
             component: lc.LibraryComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.home_url}/:id',
-            component: rc.RiseComponentNgFactory,
-          ),
-          RouteDefinition(
-            path: '${msg.home_url}/${msg.essential_information_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
