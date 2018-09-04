@@ -9,6 +9,8 @@
     }
     div#on-hover-blue {
         button {
+            transition-property: background;
+            transition-duration: 0.2s;
             display: inline-block;
             color: white;
             background: $cerulean;
@@ -16,35 +18,30 @@
             font-weight: lighter;
             text-align: center;
             border-radius: 60px;
-            padding-left: 0.9 em;
+            padding-left: 0.9em;
             padding-right: 0.9em;
             padding-top: 0.6em;
             padding-bottom: 0.6em;
             border: none;
+            //cursor: pointer;
+            outline: 0;
         }
         material-icon {
-            @include material-icon-size($mat-grid * 20);
+            @include material-icon-size($mat-grid * 15);
+            transition-property: color;
+            transition-duration: 0.2s;
             color: $cerulean;
             margin-top: -3em;
-            display:block;
+            display: block;
+            //cursor: pointer;
         }
     }
     div#on-hover-blue:hover {
         material-icon {
-            @include material-icon-size($mat-grid * 20);
             color: $astronautBlue;
-            transition-property: background;
-            transition-duration: 0.2s;
-            display: block;
-            margin-top: -3em;
-            cursor: pointer;
         }
         button {
             background: $astronautBlue;
-            cursor: pointer;
-            border: none;
-            transition-property: background;
-            transition-duration: 0.2s;
         }
     }
 }

@@ -1,9 +1,7 @@
-<div id="self">
-    <div class="row expand margin-none padding-none">
-        <div class="col m3 margin-none padding-none"
-             *ngFor="let quickAction of quickActions">
-            <p-quick-action [model]="quickAction"
-                            [routerLink]="'home/library/'+ quickAction.phrases['sv'].url"></p-quick-action>
-        </div>
+<div class="row collapse">
+    <div class="col padding-top-none padding-bottom-none l3 m4"
+         *ngFor="let quickAction of quickActions">
+        <p-quick-action [model]="quickAction"
+                        [routerLink]="'home/library/'+ quickAction.phrases['sv'].url"></p-quick-action>
     </div>
 </div>
