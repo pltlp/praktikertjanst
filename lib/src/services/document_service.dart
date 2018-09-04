@@ -27,7 +27,7 @@ List<Document> mockContent = [
   new Document()
     ..type = 'spreadsheet'
     ..name = 'Fördelning av kvicksilver avfall'
-    ..url = 'http://hg-rid.hemsida.eu/spridning_av_kvicksilver/Data.html'
+    ..url = 'http://hg-rid.hemsida.eu/web_documnets/spridning_av_kvicksilver/Data.html'
     ..description =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 ];
