@@ -1,4 +1,5 @@
-<d-fullscreen [offsetTop]="150" maxHeight="100vh">
+<d-fullscreen [offsetTop]="150"
+              maxHeight="100vh">
     <div id="youtube-player-wrapper">
         <iframe id="ytplayer"
                 type="text/html"
@@ -9,15 +10,17 @@
     </div>
 </d-fullscreen>
 
-<d-fullscreen>
-    <p-main-header></p-main-header>
-</d-fullscreen>
+<div class="row margin-top-x-large margin-bottom-x-large">
+    <div class="col">
+        <p-main-header></p-main-header>
+    </div>
+</div>
 
 <p-carousel></p-carousel>
 
 <p-make-difference backgroundImage="url('pics/clean_future.jpg')"></p-make-difference>
 
-<div class="row expand margin-top-small margin-bottom-small">
+<div class="row margin-top-small margin-bottom-small">
     <div class="col m4 margin-none padding-none"
          *ngFor="let quickAction of quickActions">
         <p-quick-action [model]="quickAction">
