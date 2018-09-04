@@ -5,12 +5,12 @@ import '../models/quick_action.dart';
 @Injectable()
 class QuickActionService {
   Future<List<QuickAction>> getAll() async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return mockContent;
   }
 
   Future<List<QuickAction>> getFrontPageQuickActions() async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return quickActionsHome;
   }
 }

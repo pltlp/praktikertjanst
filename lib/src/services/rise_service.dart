@@ -6,12 +6,12 @@ import '../models/rise.dart';
 @Injectable()
 class RiseService {
   Future<List<Rise>> getAll() async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return riseArticles;
   }
 
   Future<Rise> get(String id) async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return riseArticles.firstWhere((article) => article.id == id,
         orElse: () => null);
   }
@@ -19,7 +19,7 @@ class RiseService {
 
 List<Rise> riseArticles = [
   new Rise()
-    ..id = 'mercury-in-nature'
+    ..id = 'kvicksilver-i-naturen'
     ..name = 'Mercury in nature'
     ..url = 'http://hg-rid.hemsida.eu/rise_example/content/index.html'
     ..description = 'Rise content test',

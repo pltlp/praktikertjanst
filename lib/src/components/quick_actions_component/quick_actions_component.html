@@ -2,6 +2,6 @@
     <div class="col padding-top-none padding-bottom-none l3 m4"
          *ngFor="let quickAction of quickActions">
         <p-quick-action [model]="quickAction"
-                        [routerLink]="'home/library/'+ quickAction.phrases['sv'].url"></p-quick-action>
+                        [routerLink]="msg.home_url + '/' + msg.library_url + '/'+ quickAction.phrases['sv'].url"></p-quick-action>
     </div>
 </div>

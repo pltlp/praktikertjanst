@@ -3,6 +3,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/quick_action.dart';
+import '../../services/messages_service.dart';
 
 @Component(
     selector: 'p-quick-action',
@@ -17,7 +18,7 @@ import '../../models/quick_action.dart';
       NamePipe
     ])
 class QuickActionComponent implements OnInit {
-  QuickActionComponent();
+  QuickActionComponent(this.msg);
 
   @override
   void ngOnInit() {
@@ -30,6 +31,7 @@ class QuickActionComponent implements OnInit {
   }
 
   String backgroundImage;
+  final MessagesService msg;
 
   @Input('model')
   QuickAction model;

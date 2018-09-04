@@ -6,7 +6,7 @@ import '../models/document.dart';
 @Injectable()
 class DocumentService {
   Future<List<Document>> getAll() async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return mockContent;
   }
 }

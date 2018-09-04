@@ -6,12 +6,12 @@ import '../models/video.dart';
 @Injectable()
 class VideoService {
   Future<List<Video>> getAll() async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     return mockContent;
   }
 
   Future<List<Video>> getSublist(int index) async {
-    await new Future.delayed(const Duration(milliseconds: 2000));
+    await new Future.delayed(const Duration(milliseconds: 1));
     final sublist = List<Video>.from(mockContent.sublist(0, index));
     return sublist;
   }
