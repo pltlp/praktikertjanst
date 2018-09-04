@@ -17,9 +17,10 @@ class VideoComponent implements OnInit {
     url = sanitizer.bypassSecurityTrustResourceUrl(model.url);
   }
 
-  @Input()
+  @Input('model')
   Video model;
-  @Input()
+  
+  @Input('height')
   int height = 35;
   
   final DomSanitizationService sanitizer;

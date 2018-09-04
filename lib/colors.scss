@@ -3,8 +3,7 @@ $deepCerulean:#0075B0;
 $carnation: #F54359;
 $astronautBlue: #003C5A;
 $alto: #DDDDDD;
-
-
+$dark-gray : #505050;
 .background-color-alto {
     background-color: $alto;
 }
@@ -39,4 +38,12 @@ $alto: #DDDDDD;
 
 .color-astronautblue {
     color: $astronautBlue;
+}
+
+.color-alto {
+    color: $alto;
+}
+
+.color-dark-gray {
+    color: $dark-gray;
 }

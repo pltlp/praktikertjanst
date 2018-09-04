@@ -1,0 +1,9 @@
+<div id="self">
+    <h2 class="color-astronautblue">Documents</h2>
+    <div class="row expand margin-none padding-none">
+        <div class="col margin-none padding-none"
+             *ngFor="let document of documents">
+            <p-document [model]="document"></p-document>
+        </div>
+    </div>
+</div>

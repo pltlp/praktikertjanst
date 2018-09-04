@@ -4,6 +4,7 @@ import 'package:angular_components/angular_components.dart';
 import 'package:intl/intl.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../components/documents_component/documents_component.dart';
 import '../../components/quick_actions_component/quick_actions_component.dart';
 
 @Component(
@@ -13,7 +14,8 @@ import '../../components/quick_actions_component/quick_actions_component.dart';
       FoModalComponent,
       routerDirectives,
       QuickActionsComponent,
-      MaterialAutoSuggestInputComponent
+      MaterialAutoSuggestInputComponent,
+      DocumnetsComponent
     ],
     providers: const [MaterialIconComponent],
     selector: 'p-library',

@@ -1,5 +1,6 @@
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../models/quick_action.dart';
 import '../../services/quick_action_service.dart';
 import '../carousel_component/carousel_component.dart';
 import '../essential_information_component/essential_information_component.dart';
@@ -8,7 +9,6 @@ import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
 import '../quick_action_component/quick_action_component.dart';
 import '../quick_actions_component/quick_actions_component.dart';
-import '../../models/quick_action.dart';
 
 @Component(
     selector: 'p-home',

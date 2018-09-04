@@ -1,9 +1,10 @@
 import 'model.dart';
 
-class LearningContent extends Model {
-  LearningContent();
+class Document extends Model{
+  Document();
 
   String url;
   String name;
   String description;
+  String type;
 }
