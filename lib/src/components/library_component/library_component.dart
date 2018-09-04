@@ -32,7 +32,7 @@ class LibraryComponent {
       Intl.message('Här finns all material samlat!',
           name: 'here_you_can_find_all_content');
 
-  String searchLabel =
+  String get searchLabel =>
       Intl.message('Skriv in här för att söka..', name: 'type_here_to_search');
 
   String get library => Intl.message('Bibliotek', name: 'library');

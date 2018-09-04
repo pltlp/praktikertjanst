@@ -52,9 +52,9 @@ class AppComponent {
       ])
     ]);
   }
-  String get language => Intl.message('språk', name: 'language');
-  String get about => Intl.message('om', name: 'about');
-  String get library => Intl.message('bibliotek', name: 'library');
+  String get language => Intl.message('Språk', name: 'language');
+  String get about => Intl.message('Om', name: 'about');
+  String get library => Intl.message('Bibliotek', name: 'library');
   Router get router => _router;
   Window get htmlWindow => window;
   MenuModel menuModel;

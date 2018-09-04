@@ -33,6 +33,7 @@ class CarouselSlideSectionComponent implements OnChanges {
 
   @Input()
   Model model;
+  
   String dataSrc;
   String name;
   String url;

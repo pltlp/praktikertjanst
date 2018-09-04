@@ -19,17 +19,16 @@
                                                 </div>
                                                 -->
         <div class="m10 s6 col text-right align-bottom">
-            <!--<a [routerLink]="msg.home_url + '/' + msg.essential_information_url"> {{essential_information | name}}</a>-->
             <material-dropdown-select style="margin-left:2em; color:white"
-                                      buttonText="{{language | name}}">
+                                      buttonText="{{language}}">
                 <material-select-item>Svenska</material-select-item>
                 <material-select-item>Engelska</material-select-item>
                 <material-select-item>Spanska</material-select-item>
             </material-dropdown-select>
             <a [routerLink]="msg.home_url"
-               (click)="htmlWindow.scrollTo(0, 0)">{{about | name}}</a>
+               (click)="htmlWindow.scrollTo(0, 0)">{{about}}</a>
             <a [routerLink]="msg.home_url + '/' + msg.library_url"
-               (click)="htmlWindow.scrollTo(0, 0)">{{library | name}}</a>
+               (click)="htmlWindow.scrollTo(0, 0)">{{library}}</a>
         </div>
     </div>
     <div class="row expand background-color-astronautblue text-left">
