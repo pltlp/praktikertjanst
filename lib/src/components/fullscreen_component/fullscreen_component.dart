@@ -13,9 +13,12 @@ class FullscreenComponent {
   String get borderTop => '${offsetTop}px solid transparent';
 
   final Element host;
-  
+
   @Input()
   int offsetTop = 0;
   @Input()
   String backgroundImage;
+
+  @Input()
+  String maxHeight;
 }
