@@ -1,4 +1,4 @@
-:host {
+:host {    
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -7,7 +7,9 @@
     -o-background-size: cover;
     background-size: cover;
     div {
-        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;        
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
