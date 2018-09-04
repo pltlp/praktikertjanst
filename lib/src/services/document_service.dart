@@ -21,13 +21,13 @@ List<Document> mockContent = [
   new Document()
     ..type = 'spreadsheet'
     ..name = 'Hur farlig är kvicksilver amlgam egentligen?'
-    ..url = 'web_documents/text_doc_example/text_doc_example.html'
+    ..url = 'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html'
     ..description =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   new Document()
     ..type = 'spreadsheet'
     ..name = 'Fördelning av kvicksilver avfall'
-    ..url = 'web_documents/spridning_av_kvicksilver/Data.html'
+    ..url = 'http://hg-rid.hemsida.eu/spridning_av_kvicksilver/Data.html'
     ..description =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 ];

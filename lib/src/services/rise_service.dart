@@ -51,11 +51,11 @@ List<Rise> riseArticles = [
   new Rise()
     ..id = '7'
     ..name = 'Handling of amalgam waste'
-    ..url = 'rise_example_2/content/index.html'
+    ..url = 'http://hg-rid.hemsida.eu/rise_example_2/content/index.html'
     ..description = 'Rise content test',
   new Rise()
     ..id = '8'
     ..name = 'Pipework and renovation'
-    ..url = 'rise_example/content/index.html'
+    ..url = 'http://hg-rid.hemsida.eu/rise_example/content/index.html'
     ..description = 'Rise content test',
 ];
