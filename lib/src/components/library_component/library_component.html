@@ -1,17 +1,24 @@
-<h2 class="color-astronautblue"
-    style="margin-left:0.8em">{{here_you_can_find_all_content}}</h2>
-<material-auto-suggest-input [leadingGlyph]="'search'"
-                             style="margin-left:0.8em"
-                             [showClearIcon]="true"
-                             class="glyph-size-medium"
-                             [label]="searchLabel">
+<div class="row" style="margin-top: 150px;">
+    <div class="col">
+        <h2 class="color-astronautblue">{{here_you_can_find_all_content}}</h2>
+        <material-auto-suggest-input [leadingGlyph]="'search'"
+                                     style="margin-left:0.8em"
+                                     [showClearIcon]="true"
+                                     class="glyph-size-medium"
+                                     [label]="searchLabel">
 
-</material-auto-suggest-input>
-<h2 class="color-astronautblue"
-    style="margin-left:0.8em">{{course_modules}}</h2>
+        </material-auto-suggest-input>
+
+        <h2 class="color-astronautblue">{{course_modules}}</h2>
+    </div>
+</div>
+
 <p-quick-actions></p-quick-actions>
-<div class="row expand background-color-alto padding-none margin-none">
-    <div class="col padding-none margin-none">
-        <p-documents></p-documents>
+
+<div class="background-color-alto">
+    <div class="row margin-top-large">
+        <div class="col">
+            <p-documents></p-documents>
+        </div>
     </div>
 </div>
