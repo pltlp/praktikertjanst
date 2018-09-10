@@ -10,4 +10,5 @@ class MessagesService {
       Intl.message('snabba-aktiviteter', name: 'quick_actions_url');
 
   String get library_url => Intl.message('bibliotek', name: 'library_url');
+  String get course_room_for_curious_url => Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
 }

@@ -12,10 +12,33 @@ class VideoService {
 
   Future<List<Video>> getSublist(int index) async {
     await new Future.delayed(const Duration(milliseconds: 1));
-    final sublist = List<Video>.from(mockContent.sublist(0, index));
-    return sublist;
+    return mockContent;
   }
 }
+
+List<Video> getCuriousCourseRoomVideos = [
+  new Video()
+    ..name = 'Rutiner vid patientbehandling'
+    ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
+    ..imgSrc =
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+    ..desc =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  new Video()
+    ..name = 'Skötsel av amalgam avskiljare under en vecka'
+    ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+    ..imgSrc =
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+    ..desc =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  new Video()
+    ..name = 'Skötsel av amalgam avskiljare mer sällan'
+    ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
+    ..imgSrc =
+        'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+    ..desc =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+];
 
 List<Video> mockContent = [
   new Video()

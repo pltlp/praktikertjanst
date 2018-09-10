@@ -73,7 +73,7 @@ List<QuickAction> quickActionsHome = [
       ..name = 'För dig som bara är nyfiken'
       ..description =
           'Här hittar du lite allmän information om alla våra verksamhetsområden'
-      ..url = 'for-you-who-is-curious')
+      ..url = 'kursrum-for-nyfikna')
     ..phrases['en'] = (new QuickActionPhrases()
       ..name = 'For you who is just curious'
       ..description =
@@ -178,7 +178,6 @@ List<QuickAction> mockContent = [
       ..url = 'instructions-for-dental-care-teams')
     ..imgSrc = 'pics/clean_future.jpg',
 
-  /*nästa*/
   new QuickAction()
     ..icon = 'speaker_notes'
     ..phrases['sv'] = (new QuickActionPhrases()
@@ -393,7 +392,7 @@ List<QuickAction> mockContent = [
       ..name = 'För dig som bara är nyfiken'
       ..description =
           'Här hittar du lite allmän information om alla våra verksamhetsområden'
-      ..url = 'for-you-who-is-curious')
+      ..url = 'kursrum-for-nyfikna')
     ..phrases['en'] = (new QuickActionPhrases()
       ..name = 'For you who is just curious'
       ..description =

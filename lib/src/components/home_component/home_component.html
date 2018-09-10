@@ -23,7 +23,7 @@
 <div class="row margin-top-small margin-bottom-small">
     <div class="col m4 margin-none padding-none"
          *ngFor="let quickAction of quickActions">
-        <p-quick-action [model]="quickAction">
+        <p-quick-action [model]="quickAction" [routerLink]="msg.home_url +'/'+ quickAction.phrases['sv'].url">
         </p-quick-action>
     </div>
 </div>
