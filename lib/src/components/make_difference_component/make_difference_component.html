@@ -1,28 +1,19 @@
 <div [style.background-image]="backgroundImage">
     <div id="gradiant">
-        <div class="row expand margin-none padding-top-large padding-bottom-large">
-            <div class="col padding-top-x-large padding-bottom-x-large margin-top-x-large margin-bottom-x-large text-center">
-                <div class="row expand">
-                    <div class="col m1"></div>
-                    <div class="col m4">
-                        <a [routerLink]="'hem/kvicksilver-i-naturen'"
-                           (click)="scrollTop()">
-                            <button materialTooltip="{{mercury_in_nature_button_tooltip}}">
-                                {{mercury_in_nature | name}}
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col m2"></div>
-                    <div class="col m4">
-                        <a [routerLink]="'hem/bibliotek'"
-                           (click)="scrollTop()">
-                            <button materialTooltip="{{library_button_tooltip}}">
-                                {{library | name}}
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col m1"></div>
-                </div>
+        <div class="row padding-top-x-large padding-bottom-x-large">
+            <div class="col m6 padding-top-x-large padding-bottom-x-large">
+                <p-button button_label="{{mercury_in_nature | name}}"
+                          [tooltip]="msg.library"
+                          [routerLink]="msg.home_url + '/' + msg.mercury_in_nature_url"
+                          (click)="scrollTop()">
+                </p-button>
+            </div>
+            <div class="col m6 padding-top-x-large padding-bottom-x-large">
+                <p-button button_label="{{library  | name}}"
+                          [tooltip]="msg.library"
+                          [routerLink]="msg.home_url + '/' + msg.library_url"
+                          (click)="scrollTop()">
+                </p-button>
             </div>
         </div>
     </div>
