@@ -12,9 +12,11 @@ class MessagesService {
       Intl.message('kvicksilver-i-naturen', name: 'mercury_in_nature_url');
 
   String get library_url => Intl.message('bibliotek', name: 'library_url');
+
   String get course_room_for_curious_url =>
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
 
+  String get library => Intl.message('bibliotek', name: 'library');
 
-      String get library => Intl.message('bibliotek', name: 'library');
+  String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
 }

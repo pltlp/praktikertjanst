@@ -16,14 +16,14 @@
     </div>
 </div>
 
-<p-carousel></p-carousel>
+<p-carousel [header]="'Goda exempel'" [videos]="videos"></p-carousel>
 
 <p-make-difference backgroundImage="url('pics/clean_future.jpg')"></p-make-difference>
 
-<div class="row margin-top-small margin-bottom-small">
+<div class="row margin-top-x-large margin-bottom-x-large">
     <div class="col m4 margin-none padding-none"
          *ngFor="let quickAction of quickActions">
-        <p-quick-action [model]="quickAction" [routerLink]="msg.home_url +'/'+ quickAction.phrases['sv'].url">
+        <p-quick-action [model]="quickAction" [routerLink]="msg.home_url +'/'+ quickAction.phrases[msg.currentLanguage].url">
         </p-quick-action>
     </div>
 </div>

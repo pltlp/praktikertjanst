@@ -39,8 +39,8 @@
     </div>
 </div>
 
-<div class="row margin-top-none margin-bottom-x-large">
-    <div class="col padding-top-none padding-bottom-x-large">
+<div class="row margin-top-none margin-bottom-x-large padding-bottom-x-large">
+    <div class="col">
         <p-button button_label="Quiz - vad har du lärt dig?"
                   [tooltip]="'Översikt på mottagningen'"
                   [routerLink]="''"
@@ -50,8 +50,8 @@
 </div>
 
 <div class="margin-none row expand">
-    <div class="col padding-none">
-        <p-carousel></p-carousel>
+    <div class="col">
+        <p-carousel [videos]="models" [header]="'Instruktionsfilmer'"></p-carousel>
     </div>
 </div>
 
@@ -61,24 +61,18 @@
     </div>
 </div>
 <div class="row margin-bottom-x-large">
-    <div class="col m5">
+    <div class="col m6">
         <p-button button_label="Begreppsförklaringar"
                   [tooltip]="'Begreppsförklaringar'"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
     </div>
-    <div class="col m2">
-
-    </div>
-    <div class="col m4">
+    <div class="col m6">
         <p-button button_label="Dokument"
                   [tooltip]="'Dokument'"
                   [routerLink]="msg.home_url+'/'+'dokument'"
                   (click)="scrollTop()">
         </p-button>
-    </div>
-    <div class="col m1">
-
     </div>
 </div>

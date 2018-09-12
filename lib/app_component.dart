@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
@@ -13,6 +14,8 @@ import 'src/components/home_component/home_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/messages_service.dart';
+import 'src/services/quick_action_service.dart';
+import 'src/services/video_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -39,19 +42,31 @@ import 'src/services/messages_service.dart';
       Routes,
       materialProviders,
       MessagesService,
+      VideoService,
+      QuickActionService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent {
-  AppComponent(this.routes, this.msg, this._router) {
+  AppComponent(this.routes, this.msg, this._router, this.videoService, this.quickActionService) {
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(about),
         MenuItem(language),
       ])
     ]);
+  _loadResources();
+  Intl.defaultLocale = 'sv_SE';
   }
+  Future<void> _loadResources() async
+  {
+    loaded = false;
+    await videoService.fetchAll();
+    await quickActionService.fetchAll();
+    loaded = true;
+  }
+
   String get language => Intl.message('Språk', name: 'language');
   String get about => Intl.message('Om', name: 'about');
   String get library => Intl.message('Bibliotek', name: 'library');
@@ -64,5 +79,8 @@ class AppComponent {
   Router _router;
   String get essential_information =>
       Intl.message('essential information', name: 'essential_information');
+  final VideoService videoService;
+  final QuickActionService quickActionService;
+  bool loaded = false;
   
 }

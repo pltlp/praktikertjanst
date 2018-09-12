@@ -37,5 +37,5 @@
         </div>
     </div>
 </d-navbar>
-<router-outlet [routes]="routes.all"></router-outlet>
+<router-outlet *ngIf="loaded" [routes]="routes.all"></router-outlet>
 <p-footer></p-footer>

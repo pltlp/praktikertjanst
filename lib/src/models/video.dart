@@ -7,5 +7,6 @@ class Video extends Model {
   String name;
   String imgSrc;
   String desc;
+  String id;
 
 }

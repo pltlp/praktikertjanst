@@ -18,7 +18,7 @@ dependencies:
     git: https://github.com/afpatmin/fo_components.git
   intl: ^0.15.7
 dev_dependencies:
-  build_runner: ^0.10.1+1
+  build_runner: ^0.10.2
   build_web_compilers: ^0.4.3
   sass_builder: ^2.1.1
 

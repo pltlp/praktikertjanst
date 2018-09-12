@@ -14,21 +14,14 @@ import '../quick_action_component/quick_action_component.dart';
     styleUrls: const ['quick_actions_component.css'],
     templateUrl: 'quick_actions_component.html',
     pipes: [NamePipe])
-class QuickActionsComponent implements OnInit{
+class QuickActionsComponent{
 
   QuickActionsComponent(this.quickActionService, this.msg);
-
-  @override
-  void ngOnInit() async
-  {
-    quickActions = await quickActionService.getAll();
-  }
 
   @Input()
   String backgroundImage;
   
   final QuickActionService quickActionService;
   final MessagesService msg;
-  List<QuickAction> quickActions = [];
   
 }

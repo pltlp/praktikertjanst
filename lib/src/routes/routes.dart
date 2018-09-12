@@ -10,22 +10,12 @@ import '../services/messages_service.dart';
 @Injectable()
 class Routes {
   final List<RouteDefinition> all;
-  final RoutePath home;
-  final RoutePath quickActions;
-  final RoutePath riseArticle;
-  final RoutePath library;
-  final RoutePath courseRoomForCurious;
+
   Routes(MessagesService msg)
-      : quickActions = RoutePath(path: msg.quick_actions_url),
-        home = RoutePath(path: msg.home_url),
-        riseArticle = RoutePath(path: '${msg.home_url}/:id'),
-        library = RoutePath(path: msg.library_url),
-        courseRoomForCurious = RoutePath(path: msg.course_room_for_curious_url),
+      : 
         all = [
           RouteDefinition(
-              path: msg.home_url,
-              component: hc.HomeComponentNgFactory,
-              useAsDefault: true),
+              path: msg.home_url, component: hc.HomeComponentNgFactory),
           RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}',
             component: lc.LibraryComponentNgFactory,
@@ -38,13 +28,21 @@ class Routes {
             path: '${msg.home_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),
+           RouteDefinition(
+            path: '${msg.home_url}/${msg.library_url}/${msg.course_room_for_curious_url}',
+            component: crfcc.CourseRoomForCuriousComponentNgFactory,
+          ),
           RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),
-          RouteDefinition(
+          RouteDefinition.redirect(
             path: '.+',
-            component: hc.HomeComponentNgFactory,
+            redirectTo: msg.home_url,
           ),
+          RouteDefinition.redirect(
+            path: '',
+            redirectTo: msg.home_url,
+          )
         ];
 }
