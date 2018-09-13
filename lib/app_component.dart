@@ -49,38 +49,43 @@ import 'src/services/video_service.dart';
       NamePipe
     ])
 class AppComponent {
-  AppComponent(this.routes, this.msg, this._router, this.videoService, this.quickActionService) {
-    menuModel = MenuModel<MenuItem>([
+  AppComponent(this.routes, this.msg, this._router, this.videoService,
+      this.quickActionService) {
+    subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(about),
-        MenuItem(language),
+        MenuItem('Svenska'),
+        MenuItem('Engelska'),
+        MenuItem('Spanska'),
       ])
     ]);
-  _loadResources();
-  Intl.defaultLocale = 'sv_SE';
+
+    menuModel = MenuModel<MenuItem>([
+      MenuItemGroup<MenuItem>([
+        MenuItem(msg.about),
+        MenuItem(msg.language, subMenu: subMenu),
+        MenuItem(msg.library),
+      ])
+    ]);
+    _loadResources();
+    Intl.defaultLocale = 'sv_SE';
   }
-  Future<void> _loadResources() async
-  {
+  Future<void> _loadResources() async {
     loaded = false;
     await videoService.fetchAll();
     await quickActionService.fetchAll();
     loaded = true;
   }
 
-  String get language => Intl.message('Språk', name: 'language');
-  String get about => Intl.message('Om', name: 'about');
-  String get library => Intl.message('Bibliotek', name: 'library');
   Router get router => _router;
   Window get htmlWindow => window;
   MenuModel menuModel;
+  MenuModel subMenu;
   final Routes routes;
   final MessagesService msg;
   List<Rise> riseContents = [];
   Router _router;
-  String get essential_information =>
-      Intl.message('essential information', name: 'essential_information');
+
   final VideoService videoService;
   final QuickActionService quickActionService;
   bool loaded = false;
-  
 }
