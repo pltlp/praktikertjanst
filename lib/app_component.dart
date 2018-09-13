@@ -53,9 +53,9 @@ class AppComponent {
       this.quickActionService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem('Svenska'),
-        MenuItem('Engelska'),
-        MenuItem('Spanska'),
+        MenuItem(msg.swedish),
+        MenuItem(msg.english),
+        MenuItem(msg.spanish),
       ])
     ]);
 

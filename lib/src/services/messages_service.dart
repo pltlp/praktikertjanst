@@ -17,6 +17,9 @@ class MessagesService {
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
 
   String get library => Intl.message('Bibliotek', name: 'library');
+  String get swedish => Intl.message('Svenska', name: 'swedish');
+  String get english => Intl.message('Egelska', name: 'english');
+  String get spanish => Intl.message('Spanska', name: 'spanish');
 
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
 

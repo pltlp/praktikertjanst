@@ -26,7 +26,7 @@ class QuickActionService {
     'För dig som är dentaltekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new QuickActionPhrases()
-        ..name = 'För dig på tandläkarmottagning'
+        ..name = 'För dig som är dentaltekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
         ..url = 'for-dig-som-ar-dentaltekniker')
       ..phrases['en'] = (new QuickActionPhrases()
@@ -37,7 +37,7 @@ class QuickActionService {
     'För dig som är servicetekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new QuickActionPhrases()
-        ..name = 'För dig på tandläkarmottagning'
+        ..name = 'För dig som är servicetekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
         ..url = 'for-dig-som-ar-dentaltekniker')
       ..phrases['en'] = (new QuickActionPhrases()

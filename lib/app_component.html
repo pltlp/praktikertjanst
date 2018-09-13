@@ -1,6 +1,5 @@
 <d-navbar backgroundColor="#00A0C8"
           [height]="150">
-
     <div id="upper-row"
          class="row">
         <div class="m2 s4 col align-middle">
@@ -21,9 +20,9 @@
         <div class="m10 col text-right align-bottom hide-for-small">
             <material-dropdown-select style="margin-left:2em; color:white"
                                       buttonText="{{msg.language}}">
-                <material-select-item>Svenska</material-select-item>
-                <material-select-item>Engelska</material-select-item>
-                <material-select-item>Spanska</material-select-item>
+                <material-select-item>{{msg.swedish}}</material-select-item>
+                <material-select-item>{{msg.english}}</material-select-item>
+                <material-select-item>{{msg.spanish}}</material-select-item>
             </material-dropdown-select>
             <a [routerLink]="msg.home_url"
                (click)="htmlWindow.scrollTo(0, 0)">{{msg.about}}</a>
