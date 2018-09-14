@@ -13,8 +13,10 @@ import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
+import 'src/services/document_service.dart';
 import 'src/services/messages_service.dart';
 import 'src/services/quick_action_service.dart';
+import 'src/services/rise_service.dart';
 import 'src/services/video_service.dart';
 
 @Component(
@@ -43,14 +45,16 @@ import 'src/services/video_service.dart';
       materialProviders,
       MessagesService,
       VideoService,
-      QuickActionService
+      QuickActionService,
+      DocumentService,
+      RiseService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent {
   AppComponent(this.routes, this.msg, this._router, this.videoService,
-      this.quickActionService) {
+      this.quickActionService, this.documentService, this.riseService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -73,6 +77,8 @@ class AppComponent {
     loaded = false;
     await videoService.fetchAll();
     await quickActionService.fetchAll();
+    await documentService.fetchAll();
+    await riseService.fetchAll();
     loaded = true;
   }
 
@@ -87,5 +93,7 @@ class AppComponent {
 
   final VideoService videoService;
   final QuickActionService quickActionService;
+  final DocumentService documentService;
+  final RiseService riseService;
   bool loaded = false;
 }

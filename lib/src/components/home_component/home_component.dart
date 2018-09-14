@@ -1,8 +1,8 @@
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../models/model.dart';
 import '../../models/quick_action.dart';
-import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
 import '../../services/video_service.dart';
@@ -13,7 +13,6 @@ import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
 import '../quick_action_component/quick_action_component.dart';
 import '../quick_actions_component/quick_actions_component.dart';
-import 'package:intl/intl.dart';
 
 @Component(
     selector: 'p-home',
@@ -63,6 +62,6 @@ class HomeComponent {
   List<QuickAction> quickActions;
   Router router;
   MessagesService msg;
-  List<Video> videos;
+  List<Model> videos;
   VideoService videoService;
 }

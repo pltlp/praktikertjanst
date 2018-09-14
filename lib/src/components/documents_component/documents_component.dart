@@ -19,7 +19,12 @@ class DocumnetsComponent implements OnInit{
   @override
   void ngOnInit() async
   {
-    documents = await documentService.getAll();
+      documents = [
+      documentService.data['Hur farlig är kvicksilver amalgam?'],
+      documentService.data['Hur farlig är kvicksilver amlgam egentligen?'],
+      documentService.data['Fördelning av kvicksilver avfall'],
+    ];
+
   }
 
   final DocumentService documentService;
