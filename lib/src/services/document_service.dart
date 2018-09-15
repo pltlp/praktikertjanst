@@ -18,7 +18,9 @@ class DocumentService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'Hur farlig är kvicksilver amalgam?'
         ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        ..url =
+            'http://www.tandlakartidningen.se/media/915/Berglund_2_1999.pdf')
       ..phrases['en'] = (new Phrases()
         ..name = 'How dangerous is mercury amalgam?'
         ..url = 'http://www.tandlakartidningen.se/media/915/Berglund_2_1999.pdf'
@@ -27,13 +29,13 @@ class DocumentService {
     'Hur farlig är kvicksilver amlgam egentligen?': new Document()
       ..type = 'text document'
       ..phrases['sv'] = (new Phrases()
-        ..name = 'Hur farlig är kvicksilver amlgam egentligen?'
+        ..name = 'Hur farlig är kvicksilver amalgam egentligen?'
         ..url =
             'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
       ..phrases['en'] = (new Phrases()
-        ..name = 'Hur farlig är kvicksilver amlgam really?'
+        ..name = 'Hur farlig är kvicksilver amalgam really?'
         ..url =
             'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html'
         ..description =

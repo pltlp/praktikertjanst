@@ -134,5 +134,44 @@ class VideoService {
         ..url = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Skötsel av amalgamavskiljare under en vecka': new Video()
+      ..imgSrc =
+          'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Skötsel av amalgamavskiljare under en vecka'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Weekly managment of amalgam separators'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Skötsel av amalgamavskiljare mer sällan': new Video()
+      ..imgSrc =
+          'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Skötsel av amalgamavskiljare mer sällan'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'More seldom managment of amalgam separators'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Rutiner vid patientbehandling': new Video()
+      ..imgSrc =
+          'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Rutiner vid patientbehandling'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Routins to follow when treating patients'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
   };
 }

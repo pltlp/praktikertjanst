@@ -7,7 +7,7 @@ import '../document_component/document_component.dart';
 
 @Component(
     directives: const [NgFor, DocumentComponent, MaterialIconComponent],
-    providers: const [DocumentService],
+    providers: const [],
     selector: 'p-documents',
     styleUrls: const ['documents_component.css'],
     templateUrl: 'documents_component.html',
@@ -24,7 +24,6 @@ class DocumnetsComponent implements OnInit{
       documentService.data['Hur farlig är kvicksilver amlgam egentligen?'],
       documentService.data['Fördelning av kvicksilver avfall'],
     ];
-
   }
 
   final DocumentService documentService;

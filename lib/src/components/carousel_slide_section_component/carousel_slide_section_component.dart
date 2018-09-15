@@ -2,6 +2,7 @@ import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
+import 'package:intl/intl.dart';
 import '../../models/model.dart';
 import '../../models/quick_action.dart';
 import '../../models/video.dart';
@@ -20,22 +21,36 @@ class CarouselSlideSectionComponent implements OnChanges {
   @override
   void ngOnChanges(Map<String, SimpleChange> changes) {
     if (model is Video && model != null) {
-      dataSrc = (model as Video).imgSrc;
-      name = (model as Video).phrases[msg.currentLanguage].name;
-      url = (model as Video).phrases[msg.currentLanguage].url;
-      text = (model as Video).phrases[msg.currentLanguage].description;
+      dataSrc =
+          Intl.message((model as Video).imgSrc, name: (model as Video).imgSrc);
+      name = Intl.message((model as Video).phrases[msg.currentLanguage].name,
+          name: (model as Video).phrases[msg.currentLanguage].name);
+      url = Intl.message((model as Video).phrases[msg.currentLanguage].url,
+          name: (model as Video).phrases[msg.currentLanguage].url);
+      text = Intl.message(
+          (model as Video).phrases[msg.currentLanguage].description,
+          name: (model as Video).phrases[msg.currentLanguage].description);
     }
 
     if (model is QuickAction && model != null) {
-      dataSrc = (model as QuickAction).imgSrc;
-      name = (model as QuickAction).phrases[msg.currentLanguage].name;
-      url = (model as QuickAction).phrases[msg.currentLanguage].url;
-      text = (model as QuickAction).phrases[msg.currentLanguage].description;
+      dataSrc = Intl.message((model as QuickAction).imgSrc,
+          name: (model as Video).imgSrc);
+      name = Intl.message(
+          (model as QuickAction).phrases[msg.currentLanguage].name,
+          name: (model as QuickAction).phrases[msg.currentLanguage].name);
+      url = Intl.message(
+          (model as QuickAction).phrases[msg.currentLanguage].url,
+          name: (model as QuickAction).phrases[msg.currentLanguage].url);
+      text = Intl.message(
+          (model as QuickAction).phrases[msg.currentLanguage].description,
+          name:
+              (model as QuickAction).phrases[msg.currentLanguage].description);
     }
   }
 
   void onModelClick(Model model) {
-    safeUrl = sanitizer.bypassSecurityTrustResourceUrl((model.getPhrases()[msg.currentLanguage].url));
+    safeUrl = sanitizer.bypassSecurityTrustResourceUrl(
+        (model.getPhrases()[msg.currentLanguage].url));
   }
 
   @Input()

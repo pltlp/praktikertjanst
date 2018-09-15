@@ -1,63 +1,76 @@
 <div class="row margin-bottom-x-large"
      style="margin-top:170px;">
     <div class="col">
-        <h1 class="color-astronautblue">{{course_room_title}}</h1>
-        <p>{{course_room_description}}</p>
+        <h1 class="color-astronautblue">{{msg.course_room_for_curious_title}}</h1>
+        <p>{{msg.course_room_for_curious_description}}</p>
     </div>
 </div>
-<div class="row margin-none padding-none expand">
+
+
+<div class="row margin-none padding-none expand" style="height: 598px;">
     <div class="col margin-none padding-none">
         <img src="/pics/CURIOSITY.jpg"
              alt="curious">
     </div>
 </div>
+
 <div class="row margin-top-x-large margin-bottom-small">
-    <div class="col padding-top-x-large padding-bottom-small">
+    <div class="col m3"></div>
+    <div class="col m6 padding-top-x-large padding-bottom-small">
         <p-button button_label="Kvivksilver i naturen"
                   [tooltip]="'Kvivksilver i naturen'"
                   [routerLink]="msg.home_url +'/' + 'kvicksilver-i-naturen'"
                   (click)="scrollTop()">
         </p-button>
     </div>
+    <div class="col m3"></div>
 </div>
 <div class="row margin-top-small margin-bottom-small">
-    <div class="col padding-top-none padding-bottom-small">
+    <div class="col m3"></div>
+    <div class="col m6 padding-top-none padding-bottom-small">
         <p-button button_label="Lagar och regler"
                   [tooltip]="'Lagar och regler'"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
     </div>
+    <div class="col m3"></div>
 </div>
 <div class="row margin-top-none margin-bottom-small">
-    <div class="col padding-top-none padding-bottom-small">
+    <div class="col m3"></div>
+    <div class="col m6 padding-top-none padding-bottom-small">
         <p-button button_label="Översikt på mottagningen"
                   [tooltip]="'Översikt på mottagningen'"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
     </div>
+    <div class="col m3"></div>
 </div>
 
 <div class="row margin-top-none margin-bottom-x-large padding-bottom-x-large">
-    <div class="col">
+    <div class="col m3"></div>
+    <div class="col m6">
         <p-button button_label="Quiz - vad har du lärt dig?"
                   [tooltip]="'Översikt på mottagningen'"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
     </div>
+    <div class="col m3"></div>
 </div>
 
 <div class="margin-none row expand">
-    <div class="col">
-        <p-carousel [models]="models" [header]="'Instruktionsfilmer'"></p-carousel>
+    <div class="col padding-none">
+        <p-carousel [models]="models"
+                    [header]="'Instruktionsfilmer'"></p-carousel>
     </div>
 </div>
 
 <div class="row">
-    <div class="col">
-        <h1 [routerLink]="''" class="color-astronautblue">{{archive}}</h1>
+    <div class="col m4">
+        <h1 [routerLink]="''"
+            class="color-white">{{msg.archive}}</h1>
     </div>
 </div>
 <div class="row margin-bottom-x-large">

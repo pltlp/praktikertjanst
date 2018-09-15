@@ -18,7 +18,17 @@ class MessagesService {
   String get swedish => Intl.message('Svenska', name: 'svenska');
   String get quick_actions_url =>
       Intl.message('snabba-aktiviteter', name: 'snabba-aktiviteter-url');
-
-   String get mercury_in_nature =>
+String get mercury_in_nature =>
       Intl.message('Kvicksilver i natruen', name: 'kvicksilver-i-naturen-fras');
+
+  /*course room for curious*/
+  
+  String get course_room_for_curious_title =>
+      Intl.message('Kursrum för dig som bara är nyfiken',
+          name: 'kursrum-for-nyfikna-titel');
+  String get archive => Intl.message('Arkiv', name: 'arkiv');
+
+  String get course_room_for_curious_description => Intl.message(
+      'Här kan du gå en kurs som kort beskriver alla våra verksamhetsområden...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'kursrum-for-nyfikna-beskrivning');
 }
