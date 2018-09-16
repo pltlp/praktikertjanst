@@ -5,6 +5,8 @@ import 'package:intl/intl.dart';
 class MessagesService {
   String get about => Intl.message('om', name: 'about');
 
+  String get about_url => Intl.message('om', name: 'about_url');
+
   String get archive => Intl.message('arkiv', name: 'archive');
 
   String get archive_url => Intl.message('arkiv', name: 'archive_url');
