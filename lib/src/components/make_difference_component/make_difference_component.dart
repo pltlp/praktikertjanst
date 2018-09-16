@@ -1,7 +1,6 @@
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:intl/intl.dart';
 import  'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../services/messages_service.dart';

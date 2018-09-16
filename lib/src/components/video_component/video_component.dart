@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/model.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 
 @Component(
@@ -16,11 +16,11 @@ class VideoComponent implements OnInit {
 
   @override
   void ngOnInit() {
-    url = sanitizer.bypassSecurityTrustResourceUrl(model.getPhrases()[msg.language].url);
+    url = sanitizer.bypassSecurityTrustResourceUrl(model.phrases[msg.language].url);
   }
 
   @Input('model')
-  Model model;
+  Video model;
   
   @Input('height')
   int height = 35;

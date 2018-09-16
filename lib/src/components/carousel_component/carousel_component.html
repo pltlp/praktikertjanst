@@ -20,14 +20,14 @@
 </fo-carousel>
 
 <fo-modal *ngIf="selectedModel != null"
-          [title]="selectedModel.getPhrases()[msg.currentLanguage].name"
+          [title]="selectedModel.phrases[msg.currentLanguage].name"
           [visible]="true"
           (visibleChange)="selectedModel = null"
           [showCloseButton]="true"
           [fixedWidth]="true">
         <div class="row">
                 <div class="col">
-                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.getPhrases()[msg.currentLanguage].url)"
+                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.phrases[msg.currentLanguage].url)"
                                 allowfullscreen></iframe>
                 </div>
         </div>

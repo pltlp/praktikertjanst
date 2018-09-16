@@ -1,8 +1,8 @@
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/model.dart';
 import '../../models/quick_action.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
 import '../../services/video_service.dart';
@@ -62,6 +62,6 @@ class HomeComponent {
   List<QuickAction> quickActions;
   Router router;
   MessagesService msg;
-  List<Model> videos;
+  List<Video> videos;
   VideoService videoService;
 }

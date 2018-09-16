@@ -2,7 +2,7 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/model.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/video_service.dart';
 import '../button_component/button_component.dart';
@@ -37,5 +37,5 @@ class CourseRoomForCuriousComponent {
   Router router;
   MessagesService msg;
   VideoService videoService;
-  List<Model> models;
+  List<Video> models;
 }

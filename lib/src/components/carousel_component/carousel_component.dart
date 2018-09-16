@@ -3,7 +3,7 @@ import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
-import '../../models/model.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/video_service.dart';
 import '../carousel_slide_section_component/carousel_slide_section_component.dart';
@@ -45,7 +45,7 @@ class CarouselComponent implements OnInit {
    headerTranslation =  Intl.message(header, name: header);
   }
 
-  void onModelClick(Model model) {
+  void onModelClick(Video model) {
     selectedModel = model;
   }
 
@@ -53,12 +53,12 @@ class CarouselComponent implements OnInit {
   String header;
   
   @Input('models')
-  List<Model> models = [];
+  List<Video> models = [];
 
   bool loaded = false;
-  Model selectedModel;
+  Video selectedModel;
 
-  final List<List<Model>> modelTable = [];
+  final List<List<Video>> modelTable = [];
   final VideoService videoService;
   final MessagesService msg;
   final DomSanitizationService sanitizer;

@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
-import '../models/model.dart';
 import '../models/quick_action.dart';
 
 @Injectable()
