@@ -18,22 +18,22 @@ class QuickActionService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig på tandläkarmottagning'
         ..description = 'Vad är följderna av kvicksilver i naturen'
-        ..url = 'for-dig-pa-tandlakarmottagning')
+        ..url = 'kursrum-for-tandvardsteam')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
-        ..url = 'for-you-at-the-dentist-practice')
+        ..url = 'course-room-for-dental-teams')
       ..imgSrc = 'pics/header_silver_service_us.jpg',
     'För dig som är dentaltekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig som är dentaltekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
-        ..url = 'for-dig-som-ar-dentaltekniker')
+        ..url = '')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
-        ..url = 'for-you-at-the-dentist-practice')
+        ..url = 'course-room-for-dental-technicians')
       ..imgSrc = 'pics/header_silver_service_us.jpg',
     'För dig som är servicetekniker': new QuickAction()
       ..icon = 'speaker_notes'

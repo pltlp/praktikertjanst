@@ -87,8 +87,21 @@ class MessagesService {
   String get documents_component_header =>
       Intl.message('Dokument', name: 'documents_component_header');
 
- String get rules_and_reagulations =>
+  String get rules_and_reagulations =>
       Intl.message('Lagar och regler', name: 'rules_and_reagulations');
 
-}
+  String get course_room_for_for_dental_teams =>
+      Intl.message('Kursrum för tandvårdsteam',
+          name: 'course_room_for_for_dental_teams');
 
+  String get course_room_for_for_dental_teams_description => Intl.message(
+      'Här kan du gå en kurs insriktad till dig som är del av ett tandvårdsteam...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      name: 'course_room_for_for_dental_teams_description');
+
+  String get course_room_for_dental_teams_url =>
+      Intl.message('kursrum-for-tandvardsteam',
+          name: 'kursrum-for-tandvardsteam');
+
+  String get document_phrase =>
+      Intl.message('Dokument', name: 'document_phrase');
+}

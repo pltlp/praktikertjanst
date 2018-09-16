@@ -45,7 +45,7 @@ class DocumentService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'Fördelning av kvicksilver avfall'
         ..url =
-            'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html'
+            'http://hg-rid.hemsida.eu/web_documents/spridning_av_kvicksilver/Data.html'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
       ..phrases['en'] = (new Phrases()

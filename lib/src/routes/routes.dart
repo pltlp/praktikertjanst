@@ -2,6 +2,8 @@ import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import '../components/course_room_for_curious_component/course_room_for_curious_component.template.dart'
     as crfcc;
+import '../components/course_room_for_dental_teams/course_room_for_dental_teams.template.dart'
+    as cfdtc;
 import '../components/documents_component/documents_component.template.dart'
     as dc;
 import '../components/home_component/home_component.template.dart' as hc;
@@ -32,8 +34,22 @@ class Routes {
           ),
           RouteDefinition(
             path:
+                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.documents_component_url}',
+            component: dc.DocumentsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
                 '${msg.home_url}/${msg.library_url}/${msg.course_room_for_curious_url}',
             component: crfcc.CourseRoomForCuriousComponentNgFactory,
+          ),
+          RouteDefinition(
+            path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}',
+            component: cfdtc.CourseRoomForDentalTeamsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_dental_teams_url}',
+            component: cfdtc.CourseRoomForDentalTeamsComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.home_url}/:id',
