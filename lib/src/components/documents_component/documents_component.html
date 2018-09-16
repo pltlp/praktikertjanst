@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col">
         <h2 class="color-astronautblue">{{msg.document(1) | name}}</h2>
-        <div class="row expand margin-none padding-none">
-            <div class="col margin-none padding-none"
+        <div class="row expand">
+            <div class="col"
                  *ngFor="let document of documents">
                 <p-document [model]="document"></p-document>
             </div>

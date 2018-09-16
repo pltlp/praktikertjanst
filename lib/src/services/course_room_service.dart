@@ -49,7 +49,7 @@ class CourseRoomService {
         'Kvicksilver i naturen',
         'Lagar och regler',
         'Översikt på mottagningen',
-        'Instruktioner',
+        'Instruktioner för tanvårdsteam',
         'Quiz vad har du lärt dig?'
       ]
       ..documentIds = [

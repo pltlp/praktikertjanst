@@ -21,6 +21,10 @@ class MessagesService {
   String get course_room_for_curious_url =>
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
 
+  String get course_room_for_dental_teams_url =>
+      Intl.message('kursrum-for-tandvardsteam',
+          name: 'course_room_for_dental_teams');
+
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
 
   String document(int howMany) => Intl.plural(howMany,
@@ -42,7 +46,7 @@ class MessagesService {
       Intl.message('goda exempel', name: 'good_examples');
 
   String get home_url => Intl.message('hem', name: 'home_url');
-  
+
   String get language => Intl.message('språk', name: 'language');
 
   String get learn_more => Intl.message('lär dig mer!', name: 'learn_more');
