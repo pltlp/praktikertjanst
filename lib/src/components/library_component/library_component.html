@@ -1,12 +1,16 @@
 <div class="row">
     <div class="col">
         <h1 class="color-astronautblue">{{msg.library_header}}</h1>
-        <material-auto-suggest-input [selection]="searchModel"
-                                     [selectionOptions]="searchOptions"
-                                     [leadingGlyph]="'msg.search'"
+        <material-auto-suggest-input leadingGlyph="search"
                                      [showClearIcon]="true"
-                                     class="glyph-size-medium"
-                                     [label]="'msg.type_here_to_search'">
+                                     class="color-astronautblue"
+                                     [label]="msg.type_here_to_search"
+                                     [shouldClearOnSelection]="false"
+                                     [popupMatchInputWidth]="true"
+                                     [highlightOptions]="true"
+                                     [selection]="searchModel"
+                                     [selectionOptions]="searchOptions"
+                                     [filterSuggestions]="true">
         </material-auto-suggest-input>
         <h1 class="color-astronautblue">{{msg.course_modules}}</h1>
     </div>
