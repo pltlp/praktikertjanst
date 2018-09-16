@@ -31,10 +31,6 @@ class Routes {
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}',
-            component: crc.CourseRoomComponentNgFactory,
-          ),
-          RouteDefinition(
             path:
                 '${msg.home_url}/${msg.library_url}/${msg.course_room_for_curious_url}',
             component: crc.CourseRoomComponentNgFactory,
@@ -51,6 +47,10 @@ class Routes {
           RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}/:id',
             component: rc.RiseComponentNgFactory,
+          ),
+           RouteDefinition(
+            path: '${msg.home_url}/${msg.about}',
+            component: ac.AboutComponentNgFactory,
           ),
           RouteDefinition.redirect(
             path: '.+',
