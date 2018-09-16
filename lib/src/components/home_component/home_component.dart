@@ -1,3 +1,4 @@
+import 'dart:html' as html;
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
@@ -33,8 +34,7 @@ import '../quick_actions_component/quick_actions_component.dart';
       CourseRoomComponent,
       routerDirectives
     ],
-    providers: [
-    ],
+    providers: [],
     pipes: [
       NamePipe
     ])
@@ -54,8 +54,17 @@ class HomeComponent {
       quickActionService.data['För dig som är servicetekniker'],
       quickActionService.data['För dig som bara är nyfiken'],
       quickActionService.data['Quiz vad har du lärt dig?'],
-
     ];
+  }
+  void scrollTo(String comp) {
+    switch (comp) {
+      case 'carousel':
+        html.window.scrollTo(0, carousel.offsetTop);
+        break;
+
+      default:
+        break;
+    }
   }
 
   QuickActionService quickActionService;
@@ -64,4 +73,7 @@ class HomeComponent {
   MessagesService msg;
   List<Video> videos;
   VideoService videoService;
+
+  @ViewChild('carousel')
+  html.Element carousel;
 }
