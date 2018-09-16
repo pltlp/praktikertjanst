@@ -16,7 +16,7 @@
 <p-make-difference backgroundImage="url('pics/clean_future.jpg')"
                    [model]="quickActionService.data['Kvicksilver i naturen']"></p-make-difference>
 <div class="row margin-top-x-large margin-bottom-x-large">
-    <div class="col m4 margin-none padding-none"
+    <div class="col m4"
          *ngFor="let quickAction of quickActions">
         <p-quick-action [model]="quickAction"
                         [routerLink]="msg.home_url +'/'+ quickAction.phrases[msg.currentLanguage].url">
