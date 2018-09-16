@@ -40,7 +40,7 @@ class QuickActionService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig som är servicetekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
-        ..url = 'for-dig-som-ar-dentaltekniker')
+        ..url = '')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
