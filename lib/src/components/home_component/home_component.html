@@ -15,10 +15,10 @@
     </div>
 </div>
 
-<p-carousel [header]="'Goda exempel'"
+<p-carousel [header]="msg.good_examples"
             [models]="videos"></p-carousel>
 
-<p-make-difference backgroundImage="url('pics/clean_future.jpg')"></p-make-difference>
+<p-make-difference backgroundImage="url('pics/clean_future.jpg')" [model]="quickActionService.data['Kvicksilver i naturen']"></p-make-difference>
 
 <div class="row margin-top-x-large margin-bottom-x-large">
     <div class="col m4 margin-none padding-none"
