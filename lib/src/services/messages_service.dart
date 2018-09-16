@@ -53,4 +53,42 @@ class MessagesService {
   String get library_button_tooltip => Intl.message(
       'Här finns alla våra kursmoment samlade på ett och samma ställe!',
       name: 'library_button_tooltip');
+
+  String get quiz_button_label =>
+      Intl.message('Quiz - vad har du lärt dig?', name: 'quiz_button_label');
+
+  String get quiz_button_tooltip =>
+      Intl.message('Vad har du lärt dig? Testa dina kunskaper här!',
+          name: 'quiz_button_tooltip');
+
+  String get quiz_url => Intl.message('quiz', name: 'quiz');
+
+  String get overview_over_the_practice =>
+      Intl.message('Översikt på mottagningen',
+          name: 'overview_over_the_practice');
+
+  String get overview_over_the_practice_url =>
+      Intl.message('oversikt-pa-mottagningen',
+          name: 'oversikt-pa-mottagningen');
+
+  String get course_room_for_curious_carousel_header =>
+      Intl.message('Instruktionsfilmer',
+          name: 'course_room_for_curious_carousel_header');
+
+  String get archive_url => Intl.message('arkiv', name: 'arkiv');
+  String get glossery => Intl.message('Begrepsförklarningar', name: 'glossery');
+  String get glossery_url =>
+      Intl.message('begrepsforklarningar', name: 'begrepsforklarningar');
+
+  String get document_url => Intl.message('dokument', name: 'dokument');
+  String get documents_component_url =>
+      Intl.message('dokument-lista', name: 'dokument-lista');
+
+  String get documents_component_header =>
+      Intl.message('Dokument', name: 'documents_component_header');
+
+ String get rules_and_reagulations =>
+      Intl.message('Lagar och regler', name: 'rules_and_reagulations');
+
 }
+

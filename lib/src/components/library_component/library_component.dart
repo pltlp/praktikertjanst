@@ -3,9 +3,9 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../services/messages_service.dart';
 import '../../components/documents_component/documents_component.dart';
 import '../../components/quick_actions_component/quick_actions_component.dart';
+import '../../services/messages_service.dart';
 
 @Component(
     directives: const [
@@ -15,9 +15,9 @@ import '../../components/quick_actions_component/quick_actions_component.dart';
       routerDirectives,
       QuickActionsComponent,
       MaterialAutoSuggestInputComponent,
-      DocumnetsComponent
+      DocumentsComponent
     ],
-    providers: const [MaterialIconComponent],
+    providers: const [MaterialIconComponent], 
     selector: 'p-library',
     styleUrls: const ['library_component.css'],
     templateUrl: 'library_component.html',

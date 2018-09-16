@@ -1,25 +1,22 @@
-<div class="row margin-bottom-x-large"
-     style="margin-top:170px;">
+<div class="row margin-bottom-x-large">
     <div class="col">
         <h1 class="color-astronautblue">{{msg.course_room_for_curious_title}}</h1>
         <p>{{msg.course_room_for_curious_description}}</p>
     </div>
 </div>
-
-
-<div class="row margin-none padding-none expand" style="height: 598px;">
+<div class="row margin-none padding-none expand"
+     style="height: 598px;">
     <div class="col margin-none padding-none">
         <img src="/pics/CURIOSITY.jpg"
              alt="curious">
     </div>
 </div>
-
 <div class="row margin-top-x-large margin-bottom-small">
     <div class="col m3"></div>
     <div class="col m6 padding-top-x-large padding-bottom-small">
-        <p-button button_label="Kvivksilver i naturen"
-                  [tooltip]="'Kvivksilver i naturen'"
-                  [routerLink]="msg.home_url +'/' + 'kvicksilver-i-naturen'"
+        <p-button [button_label]="msg.mercury_in_nature"
+                  [tooltip]="msg.mercury_in_nature"
+                  [routerLink]="msg.home_url +'/' + 'msg.mercury_in_nature_url'"
                   (click)="scrollTop()">
         </p-button>
     </div>
@@ -28,8 +25,8 @@
 <div class="row margin-top-small margin-bottom-small">
     <div class="col m3"></div>
     <div class="col m6 padding-top-none padding-bottom-small">
-        <p-button button_label="Lagar och regler"
-                  [tooltip]="'Lagar och regler'"
+        <p-button [button_label]="msg.rules_and_reagulations"
+                  [tooltip]="msg.rules_and_reagulations"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
@@ -39,44 +36,41 @@
 <div class="row margin-top-none margin-bottom-small">
     <div class="col m3"></div>
     <div class="col m6 padding-top-none padding-bottom-small">
-        <p-button button_label="Översikt på mottagningen"
-                  [tooltip]="'Översikt på mottagningen'"
-                  [routerLink]="''"
+        <p-button [button_label]="msg.overview_over_the_practice"
+                  [tooltip]="msg.overview_over_the_practice"
+                  [routerLink]="msg.home_url + '/' + msg.course_room_for_curious_url + '/'+ msg.overview_over_the_practice_url"
                   (click)="scrollTop()">
         </p-button>
     </div>
     <div class="col m3"></div>
 </div>
-
 <div class="row margin-top-none margin-bottom-x-large padding-bottom-x-large">
     <div class="col m3"></div>
     <div class="col m6">
-        <p-button button_label="Quiz - vad har du lärt dig?"
-                  [tooltip]="'Översikt på mottagningen'"
-                  [routerLink]="''"
+        <p-button [button_label]="msg.quiz_button_label"
+                  [tooltip]="msg.quiz_button_tooltip"
+                  [routerLink]="msg.home_url + '/' + msg.course_room_for_curious_url + '/'+ msg.quiz_url"
                   (click)="scrollTop()">
         </p-button>
     </div>
     <div class="col m3"></div>
 </div>
-
 <div class="margin-none row expand">
     <div class="col padding-none">
         <p-carousel [models]="models"
-                    [header]="'Instruktionsfilmer'"></p-carousel>
+                    [header]="msg.course_room_for_curious_carousel_header"></p-carousel>
     </div>
 </div>
-
 <div class="row">
     <div class="col m4">
-        <h1 [routerLink]="''"
+        <h1 [routerLink]="msg.home_url + '/' + msg.course_room_for_curious_url + '/'+ msg.archive_url"
             class="color-white">{{msg.archive}}</h1>
     </div>
 </div>
 <div class="row margin-bottom-x-large">
     <div class="col m6">
-        <p-button button_label="Begreppsförklaringar"
-                  [tooltip]="'Begreppsförklaringar'"
+        <p-button [button_label]="msg.glossery"
+                  [tooltip]="msg.glossery"
                   [routerLink]="''"
                   (click)="scrollTop()">
         </p-button>
@@ -84,7 +78,7 @@
     <div class="col m6">
         <p-button button_label="Dokument"
                   [tooltip]="'Dokument'"
-                  [routerLink]="msg.home_url+'/'+'dokument'"
+                  [routerLink]="msg.home_url + '/' + msg.course_room_for_curious_url + '/'+ msg.documents_component_url"
                   (click)="scrollTop()">
         </p-button>
     </div>
