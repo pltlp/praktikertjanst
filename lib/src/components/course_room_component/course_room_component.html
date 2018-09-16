@@ -12,10 +12,10 @@
                  [alt]="model.phrases[msg.currentLanguage].title">
         </div>
     </div>
-    <div class="row"
+    <div class="row margin-top-medium"
          *ngFor="let quickAction of quickActions">
         <div class="col m3"></div>
-        <div class="col m6 padding-top-x-large padding-bottom-small">
+        <div class="col m6">
             <p-button [button_label]="quickAction.phrases[msg.currentLanguage].name"
                       [tooltip]="quickAction.phrases[msg.currentLanguage].description"
                       [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url">
@@ -23,7 +23,11 @@
         </div>
         <div class="col m3"></div>
     </div>
-    <div class="row margin-bottom-large"><div class="col"></div></div>
+    <div class="row margin-bottom-x-large">
+        <div class="col">
+
+        </div>
+    </div>
     <div class="margin-none row expand">
         <div class="col padding-none">
             <p-carousel [models]="videos"
@@ -33,12 +37,12 @@
     <div class="row">
         <div class="col m4">
             <h1 [routerLink]="msg.home_url + '/' + msg.course_room_for_curious_url + '/'+ msg.archive_url"
-                class="color-white">{{msg.archive}}</h1>
+                class="color-white">{{msg.archive | name}}</h1>
         </div>
     </div>
     <div class="row margin-bottom-x-large">
         <div class="col m6">
-            <p-button [button_label]="'Begreppsförklaringar'"
+            <p-button [button_label]="msg.glossary"
                       [tooltip]="''"
                       [routerLink]="''">
             </p-button>
