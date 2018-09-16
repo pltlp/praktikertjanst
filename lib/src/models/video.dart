@@ -1,13 +1,14 @@
-import 'model.dart';
-
-class Video extends Model {
+class Video {
   Video();
 
   String imgSrc;
   String id;
 
   Map<String, Phrases> phrases = {};
+}
 
-  @override
-  Map<String, Phrases> getPhrases() => phrases;
+class Phrases {
+  String name;
+  String url;
+  String description;
 }

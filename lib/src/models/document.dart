@@ -1,15 +1,12 @@
-import 'model.dart';
-
-class Document extends Model {
+class Document {
   Document();
 
-  String url;
-  String name;
-  String description;
-  String type;
-
   Map<String, Phrases> phrases = {};
+  String type;
+}
 
-  @override
-  Map<String, Phrases> getPhrases() => phrases;
+class Phrases {
+  String name;
+  String url;
+  String description;
 }

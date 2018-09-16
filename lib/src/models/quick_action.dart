@@ -1,13 +1,13 @@
-import 'model.dart';
-
-class QuickAction extends Model {
+class QuickAction {
   QuickAction();
 
   Map<String, Phrases> phrases = {};
-
-  @override
-  Map<String, Phrases> getPhrases() => phrases;
-
   String icon;
   String imgSrc;
+}
+
+class Phrases {
+  String name;
+  String url;
+  String description;
 }

@@ -1,13 +1,13 @@
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/model.dart';
 import '../../models/quick_action.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
 import '../../services/video_service.dart';
 import '../carousel_component/carousel_component.dart';
-import '../course_room_for_curious_component/course_room_for_curious_component.dart';
+import '../course_room_component/course_room_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
 import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
@@ -30,7 +30,7 @@ import '../quick_actions_component/quick_actions_component.dart';
       NgIf,
       FoYouTubePlayerComponent,
       QuickActionComponent,
-      CourseRoomForCuriousComponent,
+      CourseRoomComponent,
       routerDirectives
     ],
     providers: [
@@ -62,6 +62,6 @@ class HomeComponent {
   List<QuickAction> quickActions;
   Router router;
   MessagesService msg;
-  List<Model> videos;
+  List<Video> videos;
   VideoService videoService;
 }

@@ -2,7 +2,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
-import '../../models/model.dart';
+import '../../models/document.dart';
 import '../../services/messages_service.dart';
 
 @Component(
@@ -15,7 +15,7 @@ class DocumentComponent {
   DocumentComponent(this.msg);
 
   @Input('model')
-  Model model;
+  Document model;
   MessagesService msg;
   
 }

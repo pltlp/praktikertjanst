@@ -1,14 +1,19 @@
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:intl/intl.dart';
-import  'package:angular_router/angular_router.dart';
+import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../models/quick_action.dart';
 import '../../services/messages_service.dart';
 import '../button_component/button_component.dart';
 
 @Component(
-    directives: const [NgIf, FoModalComponent, routerDirectives, ButtonComponent],
+    directives: const [
+      NgIf,
+      FoModalComponent,
+      routerDirectives,
+      ButtonComponent
+    ],
     providers: const [MaterialIconComponent],
     selector: 'p-make-difference',
     styleUrls: const ['make_difference_component.css'],
@@ -19,14 +24,12 @@ class MakeDifferenceComponent {
 
   @Input()
   String backgroundImage;
+  @Input()
+  QuickAction model;
 
-
-
-  void scrollTop()
-  {
-    window.scrollTo(0,0);
+  void scrollTop() {
+    window.scrollTo(0, 0);
   }
-
 
   bool showModal = false;
   Router router;
