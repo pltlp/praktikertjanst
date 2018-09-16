@@ -1,27 +1,17 @@
 <div class="row expand">
     <div class="col text-center">
-        <h1 class="large">
-            {{msg.main_header | name}}
-        </h1>
+        <h1 class="large">{{msg.main_header | name}}</h1>
     </div>
 </div>
-<div class="on-hover-blue">
-    <div class="row margin-top-medium">
-        <div class="col m4">
-
-        </div>
-        <div class="col m4">
-            <p-button button_label="{{msg.learn_more | name}}"
-                      [tooltip]="'Lär dig mer'">
-            </p-button>
-        </div>
-        <div class="col m4">
-
-        </div>
+<div class="row margin-top-medium">
+    <div class="col m4"></div>
+    <div class="col m4">
+        <p-button button_label="{{msg.learn_more | name}}"></p-button>
     </div>
-    <div class="row text-center">
-        <div class="col">
-            <material-icon icon="arrow_drop_down"></material-icon>
-        </div>
+    <div class="col m4"></div>
+</div>
+<div class="row text-center">
+    <div class="col">
+        <material-icon icon="arrow_drop_down"></material-icon>
     </div>
 </div>

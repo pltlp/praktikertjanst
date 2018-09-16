@@ -3,28 +3,30 @@
 @import 'package:angular_components/material_icon/mixins';
 :host {
     background-color: white;
+    display: block;
     h1 {
         color: #424242;
         font-weight: bolder;
     }
-    .on-hover-blue {
-        material-icon {
-            @include material-icon-size($mat-grid * 15);
+    material-icon {
+        @include material-icon-size($mat-grid * 15);
+        /*
             transition-property: color;
             transition-duration: 0.2s;
-            color: $cerulean;
-            margin-top: -3em;
-            display: block;
-            cursor: pointer;
-        }
+            */
+        color: $cerulean;
+        margin-top: -3em;
+        display: block;
+        cursor: pointer;
     }
+    /*
     .on-hover-blue:hover {
         material-icon {
-            color: $astronautBlue;
+           // color: $astronautBlue;
         }
         p-button {
-            color: $astronautBlue;
+            //color: $astronautBlue;
         }
     }
+    */
 }
-

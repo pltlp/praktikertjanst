@@ -27,10 +27,6 @@ class MakeDifferenceComponent {
   @Input()
   QuickAction model;
 
-  void scrollTop() {
-    window.scrollTo(0, 0);
-  }
-
   bool showModal = false;
   Router router;
   MessagesService msg;

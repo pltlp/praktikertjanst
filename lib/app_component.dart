@@ -55,8 +55,15 @@ import 'src/services/video_service.dart';
       NamePipe
     ])
 class AppComponent {
-  AppComponent(this.routes, this.msg, this._router, this.videoService,
-      this.quickActionService, this.documentService, this.riseService, this.courseRoomService) {
+  AppComponent(
+      this.routes,
+      this.msg,
+      this._router,
+      this.videoService,
+      this.quickActionService,
+      this.documentService,
+      this.riseService,
+      this.courseRoomService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -72,8 +79,12 @@ class AppComponent {
         MenuItem(msg.library),
       ])
     ]);
-    _loadResources();
     Intl.defaultLocale = 'sv_SE';
+    _loadResources();
+
+    _router.onNavigationStart.listen((state) {      
+      window.scrollTo(0, 0);      
+    });
   }
   Future<void> _loadResources() async {
     loaded = false;

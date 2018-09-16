@@ -18,9 +18,8 @@ class RiseComponent implements OnInit, OnActivate {
   void onActivate(RouterState previous, RouterState current) async {
     final id = current.path.split('/').last;
 
-    if (id != null) {
-      model = riseService.data[id];
-
+    model = riseService.data[id];
+    if (model != null) {
       url = sanitizer.bypassSecurityTrustResourceUrl(
           model.phrases[msg.currentLanguage].url);
     }
