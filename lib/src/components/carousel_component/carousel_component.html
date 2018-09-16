@@ -1,17 +1,17 @@
 <div class="row">
         <div class="col text-center">
                 <h1 class="margin-bottom-medium margin-top-large">
-                        {{good_examples | name}}
+                        {{headerTranslation | name}} 
                 </h1>
         </div>
 </div>
 <fo-carousel *ngIf="loaded">
-        <fo-carousel-slide *ngFor="let videoList of videoTable">
+        <fo-carousel-slide *ngFor="let modelList of modelTable">
                 <div class="row margin-bottom-x-large">
                         <div class="m4 col"
-                             *ngFor="let video of videoList">
-                                <p-carousel-slide-section [model]="video"
-                                                          (click)="onVideoClick(video)">
+                             *ngFor="let model of modelList">
+                                <p-carousel-slide-section [model]="model"
+                                                          (click)="onModelClick(model)">
 
                                 </p-carousel-slide-section>
                         </div>
@@ -20,14 +20,14 @@
 </fo-carousel>
 
 <fo-modal *ngIf="selectedModel != null"
-          [title]="selectedModel.name"
+          [title]="selectedModel.getPhrases()[msg.currentLanguage].name"
           [visible]="true"
           (visibleChange)="selectedModel = null"
           [showCloseButton]="true"
           [fixedWidth]="true">
         <div class="row">
                 <div class="col">
-                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url)"
+                        <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.getPhrases()[msg.currentLanguage].url)"
                                 allowfullscreen></iframe>
                 </div>
         </div>

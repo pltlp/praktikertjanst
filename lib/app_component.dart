@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
@@ -12,7 +13,11 @@ import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
+import 'src/services/document_service.dart';
 import 'src/services/messages_service.dart';
+import 'src/services/quick_action_service.dart';
+import 'src/services/rise_service.dart';
+import 'src/services/video_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -39,30 +44,56 @@ import 'src/services/messages_service.dart';
       Routes,
       materialProviders,
       MessagesService,
+      VideoService,
+      QuickActionService,
+      DocumentService,
+      RiseService
     ],
     pipes: [
       NamePipe
     ])
 class AppComponent {
-  AppComponent(this.routes, this.msg, this._router) {
-    menuModel = MenuModel<MenuItem>([
+  AppComponent(this.routes, this.msg, this._router, this.videoService,
+      this.quickActionService, this.documentService, this.riseService) {
+    subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(about),
-        MenuItem(language),
+        MenuItem(msg.swedish),
+        MenuItem(msg.english),
+        MenuItem(msg.spanish),
       ])
     ]);
+
+    menuModel = MenuModel<MenuItem>([
+      MenuItemGroup<MenuItem>([
+        MenuItem(msg.about),
+        MenuItem(msg.language, subMenu: subMenu),
+        MenuItem(msg.library),
+      ])
+    ]);
+    _loadResources();
+    Intl.defaultLocale = 'sv_SE';
   }
-  String get language => Intl.message('Språk', name: 'language');
-  String get about => Intl.message('Om', name: 'about');
-  String get library => Intl.message('Bibliotek', name: 'library');
+  Future<void> _loadResources() async {
+    loaded = false;
+    await videoService.fetchAll();
+    await quickActionService.fetchAll();
+    await documentService.fetchAll();
+    await riseService.fetchAll();
+    loaded = true;
+  }
+
   Router get router => _router;
   Window get htmlWindow => window;
   MenuModel menuModel;
+  MenuModel subMenu;
   final Routes routes;
   final MessagesService msg;
   List<Rise> riseContents = [];
   Router _router;
-  String get essential_information =>
-      Intl.message('essential information', name: 'essential_information');
-  
+
+  final VideoService videoService;
+  final QuickActionService quickActionService;
+  final DocumentService documentService;
+  final RiseService riseService;
+  bool loaded = false;
 }

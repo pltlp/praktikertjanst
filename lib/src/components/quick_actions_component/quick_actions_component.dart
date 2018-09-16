@@ -2,7 +2,6 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
-import '../../models/quick_action.dart';
 import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
 import '../quick_action_component/quick_action_component.dart';
@@ -14,21 +13,14 @@ import '../quick_action_component/quick_action_component.dart';
     styleUrls: const ['quick_actions_component.css'],
     templateUrl: 'quick_actions_component.html',
     pipes: [NamePipe])
-class QuickActionsComponent implements OnInit{
+class QuickActionsComponent{
 
   QuickActionsComponent(this.quickActionService, this.msg);
-
-  @override
-  void ngOnInit() async
-  {
-    quickActions = await quickActionService.getAll();
-  }
 
   @Input()
   String backgroundImage;
   
   final QuickActionService quickActionService;
   final MessagesService msg;
-  List<QuickAction> quickActions = [];
   
 }

@@ -19,7 +19,7 @@ class BreadcrumbsComponent {
     routePaths.clear();
     routeLabels.clear();
 
-    if (state.path != null) {
+    if (state.path != null && state.path.isNotEmpty) {
       routeLabels = state.path.split('/');
 
       for (var i = 0; i < routeLabels.length; i++) {
@@ -29,7 +29,6 @@ class BreadcrumbsComponent {
           inner.add(routeLabels[j]);
         }
         routePaths.add(inner.join('/'));
-        print(routeLabels);
       }
     }
     

@@ -7,7 +7,7 @@
                  [style.background-image]="backgroundImage">
                 <div id="gradiant"
                      class="color-white padding-small">
-                    <h2>{{model.phrases['sv'].name | name}}</h2>
+                    <h2>{{model.phrases[msg.currentLanguage].name | name}}</h2>
                     <material-icon class="action-icon"
                                    icon="{{model.icon}}"></material-icon>
                 </div>
@@ -20,7 +20,7 @@
             <div id="bottom"
                  class="background-color-cerulean padding-medium"
                  [style.background-color]="backgroundColor">
-                <p class="margin-none">{{model.phrases['sv'].description}}</p>
+                <p class="margin-none">{{model.phrases[msg.currentLanguage].description}}</p>
             </div>
         </div>
     </div>

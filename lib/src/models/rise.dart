@@ -1,10 +1,11 @@
 import 'model.dart';
 
-class Rise extends Model{
+class Rise extends Model {
+  
   Rise();
 
-  String url;
-  String name;
-  String description;
-  String id;
+  Map<String, Phrases> phrases = {};
+
+  @override
+  Map<String, Phrases> getPhrases() => phrases;
 }

@@ -1,0 +1,33 @@
+@import '../../../colors.scss';
+:host {
+    display: block;
+    button {
+        color: white;
+        background: $cerulean;
+        font-weight: lighter;
+        text-align: center;
+        border-radius: 60px;
+        padding-left: 0.7 em;
+        padding-right: 0.7em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        border: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+    }
+    button:hover {
+        background: $astronautBlue;
+        border: none;
+        text-align: center;
+        transition-property: background;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    .mat-tooltip {
+        font-size: 14px !important;
+    }
+}

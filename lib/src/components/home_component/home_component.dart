@@ -1,9 +1,13 @@
+import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../models/model.dart';
 import '../../models/quick_action.dart';
+import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
+import '../../services/video_service.dart';
 import '../carousel_component/carousel_component.dart';
-import '../essential_information_component/essential_information_component.dart';
+import '../course_room_for_curious_component/course_room_for_curious_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
 import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
@@ -17,7 +21,6 @@ import '../quick_actions_component/quick_actions_component.dart';
       'home_component.css'
     ],
     directives: [
-      EssentialInformationComponent,
       FullscreenComponent,
       CarouselComponent,
       MainHeaderComponent,
@@ -26,22 +29,39 @@ import '../quick_actions_component/quick_actions_component.dart';
       NgFor,
       NgIf,
       FoYouTubePlayerComponent,
-      QuickActionComponent
+      QuickActionComponent,
+      CourseRoomForCuriousComponent,
+      routerDirectives
     ],
     providers: [
-      QuickActionService
     ],
     pipes: [
       NamePipe
     ])
-class HomeComponent implements OnInit {
-  HomeComponent(this.quickActionService);
+class HomeComponent {
+  HomeComponent(
+      this.quickActionService, this.router, this.msg, this.videoService) {
+    videos = [
+      videoService.data['Goda exempel - sanering'],
+      videoService.data['Goda exempel - skötsel'],
+      videoService.data['Goda exempel - installation'],
+    ];
 
-  @override
-  void ngOnInit() async {
-    quickActions = await quickActionService.getFrontPageQuickActions();
+    quickActions = [
+      quickActionService.data['För dig på tandläkarmottagning'],
+      quickActionService.data['För dig som är dentaltekniker'],
+      quickActionService.data['Lagar och regler'],
+      quickActionService.data['För dig som är servicetekniker'],
+      quickActionService.data['För dig som bara är nyfiken'],
+      quickActionService.data['Quiz vad har du lärt dig?'],
+
+    ];
   }
 
   QuickActionService quickActionService;
   List<QuickAction> quickActions;
+  Router router;
+  MessagesService msg;
+  List<Model> videos;
+  VideoService videoService;
 }

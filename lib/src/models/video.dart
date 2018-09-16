@@ -3,9 +3,11 @@ import 'model.dart';
 class Video extends Model {
   Video();
 
-  String url;
-  String name;
   String imgSrc;
-  String desc;
+  String id;
 
+  Map<String, Phrases> phrases = {};
+
+  @override
+  Map<String, Phrases> getPhrases() => phrases;
 }
