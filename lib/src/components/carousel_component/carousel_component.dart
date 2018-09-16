@@ -33,14 +33,12 @@ class CarouselComponent implements OnInit {
   CarouselComponent(this.sanitizer, this.videoService, this.msg);
 
   @override
-  void ngOnInit() async {
+  void ngOnInit() {
   
-    loaded = false;
     while (models.isNotEmpty) {
       modelTable.add(models.take(3).toList(growable: false));
       modelTable.last.forEach(models.remove);
     }
-    loaded = true;
 
    headerTranslation =  Intl.message(header, name: header);
   }
@@ -55,7 +53,6 @@ class CarouselComponent implements OnInit {
   @Input('models')
   List<Video> models = [];
 
-  bool loaded = false;
   Video selectedModel;
 
   final List<List<Video>> modelTable = [];

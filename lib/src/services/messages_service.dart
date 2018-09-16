@@ -3,23 +3,24 @@ import 'package:intl/intl.dart';
 
 @Injectable()
 class MessagesService {
-  String get about => Intl.message('Om', name: 'about');
-  String get archive => Intl.message('Arkiv', name: 'archive');
+  String get about => Intl.message('om', name: 'about');
+
+  String get archive => Intl.message('arkiv', name: 'archive');
+
   String get archive_url => Intl.message('arkiv', name: 'archive_url');
+
   String get course_modules =>
-      Intl.message('Kursmoduler', name: 'course_modules');
+      Intl.message('kursmoduler', name: 'course_modules');
+
   String get course_room_for_curious_carousel_header =>
-      Intl.message('Instruktionsfilmer',
+      Intl.message('instruktionsfilmer',
           name: 'course_room_for_curious_carousel_header');
-  String get course_room_for_curious_description => Intl.message(
-      'Här kan du gå en kurs som kort beskriver alla våra verksamhetsområden...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      name: 'course_room_for_curious_description');
-  String get course_room_for_curious_title =>
-      Intl.message('Kursrum för dig som bara är nyfiken',
-          name: 'course_room_for_curious_title');
+
   String get course_room_for_curious_url =>
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
+
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
+
   String document(int howMany) => Intl.plural(howMany,
       one: 'dokument', other: 'dokument', name: 'document', args: [howMany]);
 
@@ -35,9 +36,11 @@ class MessagesService {
   String get glossary_url =>
       Intl.message('begreppsforklaringar', name: 'glossary_url');
 
-  String get good_examples => Intl.message('goda exempel', name: 'good_examples');
+  String get good_examples =>
+      Intl.message('goda exempel', name: 'good_examples');
 
   String get home_url => Intl.message('hem', name: 'home_url');
+  
   String get language => Intl.message('språk', name: 'language');
 
   String get learn_more => Intl.message('lär dig mer!', name: 'learn_more');

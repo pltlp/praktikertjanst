@@ -5,9 +5,9 @@
         <div class="m2 s4 col align-middle">
             <img src="pics/hg-rid_logo_white.png"
                  alt="logo"
+                 class="clickable"
                  [routerLink]="msg.home_url">
         </div>
-
         <div class="s8 hide-for-large hide-for-medium">
             <material-menu [menu]="menuModel">
                 <section menu-button>
@@ -16,18 +16,15 @@
                 </section>
             </material-menu>
         </div>
-
         <div class="m10 col text-right align-bottom hide-for-small">
             <material-dropdown-select style="margin-left:2em; color:white"
-                                      buttonText="{{msg.language}}">
-                <material-select-item>{{msg.swedish}}</material-select-item>
-                <material-select-item>{{msg.english}}</material-select-item>
-                <material-select-item>{{msg.spanish}}</material-select-item>
+                                      [buttonText]="msg.language | name">
+                <material-select-item>{{msg.swedish | name}}</material-select-item>
+                <material-select-item>{{msg.english | name}}</material-select-item>
+                <material-select-item>{{msg.spanish | name}}</material-select-item>
             </material-dropdown-select>
-            <a [routerLink]="msg.home_url"
-               (click)="htmlWindow.scrollTo(0, 0)">{{msg.about}}</a>
-            <a [routerLink]="msg.home_url + '/' + msg.library_url"
-               (click)="htmlWindow.scrollTo(0, 0)">{{msg.library}}</a>
+            <a [routerLink]="msg.home_url">{{msg.about | name}}</a>
+            <a [routerLink]="msg.home_url + '/' + msg.library_url">{{msg.library | name}}</a>
         </div>
     </div>
     <div class="row expand background-color-astronautblue text-left">

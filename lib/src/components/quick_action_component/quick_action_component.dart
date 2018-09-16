@@ -25,11 +25,6 @@ class QuickActionComponent implements OnInit {
     backgroundImage = 'url(${model.imgSrc})';
   }
 
-  void scrollTop()
-  {
-    window.scrollTo(0,0);
-  }
-
   String backgroundImage;
   final MessagesService msg;
 

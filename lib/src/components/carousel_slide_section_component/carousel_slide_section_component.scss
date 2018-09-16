@@ -1,24 +1,29 @@
 :host {
     display: block;
-    /*box-shadow: 2px 2px 4px #888;*/
+        
+    img {
+        // Force hardware accelleration
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        
+        opacity: 0.8;
+        transition: opacity 300ms ease;
+        cursor: pointer;
+        width: 100%;
+    }
     img:hover {
         opacity: 1;
-    }
-    img {
-        opacity: 0.7;
-        transition: opacity 500ms ease;
-        cursor: pointer;
     }
     .padding {
         padding-left: 0.5em;
         padding-right: 0.5em;
         padding-bottom: 0.5em;
-
         p {
             white-space: initial;
             word-wrap: break-word;
         }
-        h2{
+        h2 {
             white-space: initial;
             word-wrap: break-word;
         }
