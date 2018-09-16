@@ -1,7 +1,9 @@
 <div id="page">
     <header>
         <d-navbar backgroundColor="#00A0C8"
-                  [height]="150">
+                  [height]="150"
+                  [alwaysShow]="false"
+                  [trackDocument]="true">
             <div id="upper-row"
                  class="row">
                 <div class="m2 s4 col align-middle">
@@ -36,12 +38,12 @@
             </div>
         </d-navbar>
     </header>
-    <div style="height: 150px;"></div>
+    <!--<div style="height: 150px;"></div>-->
     <main>
         <router-outlet *ngIf="loaded"
                        [routes]="routes.all"></router-outlet>
     </main>
-    <footer class="margin-top-medium">
+    <footer class="margin-top-large">
         <p-footer></p-footer>
     </footer>
 </div>

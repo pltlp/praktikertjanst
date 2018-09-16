@@ -5,9 +5,13 @@
     div#page {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 100vh;        
         main {
             flex: 1 0 auto;
+
+            router-outlet {
+                margin-top: 150px;
+            }
         }
         header,
         footer {

@@ -82,8 +82,8 @@ class AppComponent {
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
 
-    _router.onNavigationStart.listen((state) {
-      window.scrollTo(0, 0);
+    _router.onNavigationStart.listen((state) {      
+      window.scrollTo(0, 0);      
     });
   }
   Future<void> _loadResources() async {
