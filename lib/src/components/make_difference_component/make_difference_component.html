@@ -4,7 +4,7 @@
             <div class="col m6 align-middle">
                 <p-button button_label="{{model.phrases[msg.currentLanguage].name| name}}"
                           [tooltip]="model.phrases[msg.currentLanguage].name"
-                          [routerLink]="msg.home_url + '/' + model.phrases[msg.currentLanguage].url">
+                          [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url">
                 </p-button>
             </div>
             <div class="col m6 align-middle">
