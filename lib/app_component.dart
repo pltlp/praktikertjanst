@@ -31,6 +31,7 @@ import 'src/services/glossery_service.dart';
       BreadcrumbsComponent,
       HomeComponent,
       NavbarComponent,
+      FoModalComponent,
       FooterComponent,
       routerDirectives,
       NgFor,
@@ -116,4 +117,5 @@ class AppComponent {
   final CourseRoomService courseRoomService;
   final GlosseryService glosseryService;
   bool loaded = false;
+  bool wordListModalVisible = false;
 }

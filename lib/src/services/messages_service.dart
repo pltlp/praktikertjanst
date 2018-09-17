@@ -90,4 +90,6 @@ class MessagesService {
 
   String get type_here_to_search =>
       Intl.message('Skriv in här för att söka...', name: 'type_here_to_search');
+
+    String word_list() => Intl.message('ordlista', name: 'word_list');
 }

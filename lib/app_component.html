@@ -29,6 +29,7 @@
                     </material-dropdown-select>
                     <a [routerLink]="msg.home_url + '/' + msg.about_url">{{msg.about | name}}</a>
                     <a [routerLink]="msg.home_url + '/' + msg.library_url">{{msg.library | name}}</a>
+                    <a class="clickable" (click)="wordListModalVisible = true">{{msg.word_list() | name}}</a>
                 </div>
             </div>
             <div class="row expand background-color-astronautblue text-left">
@@ -46,3 +47,12 @@
         <p-footer></p-footer>
     </footer>
 </div>
+
+<fo-modal [(visible)]="wordListModalVisible" [title]="msg.word_list() | name">
+    <div class="row">
+        <div class="col">
+            <p>hej</p>
+        </div>
+    </div>
+
+</fo-modal>
