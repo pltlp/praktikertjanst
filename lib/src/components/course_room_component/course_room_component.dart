@@ -1,4 +1,6 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/angular_components.dart';
+import 'package:angular_components/utils/angular/scroll_host/angular_2.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/course_room.dart';
@@ -15,13 +17,15 @@ import '../carousel_component/carousel_component.dart';
 
 @Component(
     directives: const [
+      ButtonComponent,
+      CarouselComponent,
+      MaterialStepperComponent,
       NgIf,
       NgFor,
       routerDirectives,
-      ButtonComponent,
-      CarouselComponent,
+      StepDirective
     ],
-    providers: const [MessagesService],
+    providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
     styleUrls: const ['course_room_component.css'],
     templateUrl: 'course_room_component.html',

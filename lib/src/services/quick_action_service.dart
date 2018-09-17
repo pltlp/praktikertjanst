@@ -16,22 +16,22 @@ class QuickActionService {
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig på tandläkarmottagning'
-        ..description = 'Vad är följderna av kvicksilver i naturen'
+        ..description = 'Vad är följderna av kvicksilver i naturen?'
         ..url = 'kursrum-for-tandvardsteam')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
-        ..description = 'What are the consequences of quicksilver in nature'
+        ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'course-room-for-dental-teams')
       ..imgSrc = 'pics/header_silver_service_us.jpg',
     'För dig som är dentaltekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig som är dentaltekniker'
-        ..description = 'Vad är följderna av kvicksilver i naturen'
+        ..description = 'Vad är följderna av kvicksilver i naturen?'
         ..url = 'kursrum-for-dentaltekniker')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
-        ..description = 'What are the consequences of quicksilver in nature'
+        ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'course-room-for-dental-technicians')
       ..imgSrc = 'pics/header_silver_service_us.jpg',
     'För dig som är servicetekniker': new QuickAction()
@@ -62,11 +62,11 @@ class QuickActionService {
       ..icon = 'pool'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Kvicksilver i naturen'
-        ..description = 'Vad är följderna av kvicksilver i naturen'
+        ..description = 'Vad är följderna av kvicksilver i naturen?'
         ..url = 'kvicksilver-i-naturen')
       ..phrases['en'] = (new Phrases()
         ..name = 'Quicksilver in nature'
-        ..description = 'What are the consequences of quicksilver in nature'
+        ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'mercury-in-nature')
       ..imgSrc = 'pics/quicksilver_management.jpg',
     'Goda exempel - sanering': new QuickAction()

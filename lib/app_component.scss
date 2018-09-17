@@ -1,6 +1,10 @@
 @import 'colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
+@import 'package:fo_components/mixins';
+
+@include fo-colors($cerulean, $astronautBlue, carnation);
+
 :host {
     div#page {
         display: flex;
