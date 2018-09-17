@@ -56,12 +56,12 @@ class VideoService {
       ..imgSrc =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
-        ..name = 'Goda exempel - installation'
+        ..name = 'Installation av amalgam avskiljare'
         ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
       ..phrases['en'] = (new Phrases()
-        ..name = 'Good examples-installtaion'
+        ..name = 'Installation av amalgam avskiljare'
         ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
@@ -170,6 +170,84 @@ class VideoService {
       ..phrases['en'] = (new Phrases()
         ..name = 'Routins to follow when treating patients'
         ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Rätt installerat?': new Video()
+      ..imgSrc =
+          'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Rätt installerat?'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Routins to follow when treating patients'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Byte av amalgamavskiljare (vått och torrt sugsystem)': new Video()
+      ..imgSrc =
+          'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Byte av amalgamavskiljare (vått och torrt sugsystem)'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Replacement of amalgam separator (wet and dry suction system)'
+        ..url = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Funktionskontroll': new Video()
+      ..imgSrc =
+          'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Funktionskontroll'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Functions check'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Rengöring och tömmning av vattenlås': new Video()
+      ..imgSrc =
+          'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Rengöring och tömning av vattenlås'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Cleaning and emptying of water trap'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Slutförvaring': new Video()
+      ..imgSrc =
+          'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name =  'Slutförvaring'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Storage'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+    'Sanering': new Video()
+      ..imgSrc =
+          'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+      ..phrases['sv'] = (new Phrases()
+        ..name = 'Sanering'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..description =
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+      ..phrases['en'] = (new Phrases()
+        ..name = 'Decontamination'
+        ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
   };

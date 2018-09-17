@@ -72,6 +72,56 @@ class Routes {
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
+            component: dc.DocumentsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_dental_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:id',
+            component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
+            component: dc.DocumentsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_service_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/:id',
+            component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),

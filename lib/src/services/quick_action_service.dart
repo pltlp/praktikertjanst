@@ -28,7 +28,7 @@ class QuickActionService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig som är dentaltekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
-        ..url = '')
+        ..url = 'kursrum-for-dentaltekniker')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
@@ -39,7 +39,7 @@ class QuickActionService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'För dig som är servicetekniker'
         ..description = 'Vad är följderna av kvicksilver i naturen'
-        ..url = '')
+        ..url = 'kursrum-for-servicetekniker')
       ..phrases['en'] = (new Phrases()
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
@@ -116,10 +116,10 @@ class QuickActionService {
             'What do your patient reception facilities need for installing mercury amalgam handling equipment?'
         ..url = 'overview-of-the-reception')
       ..imgSrc = 'pics/clean_future.jpg',
-    'Instruktioner för tanvårdsteam': new QuickAction()
+    'Instruktioner för tandvårdsteam': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
-        ..name = 'Instruktioner för tanvårdsteam'
+        ..name = 'Instruktioner för tandvårdsteam'
         ..description =
             'Ett par enkla regler, instruktioner och koncept för tandvårdsteam!'
         ..url = 'instruktioner-for-tanvardsteam')
@@ -180,9 +180,9 @@ class QuickActionService {
     'Quiz vad har du lärt dig?': new QuickAction()
       ..icon = 'question_answer'
       ..phrases['sv'] = (new Phrases()
-        ..name = 'Quiz vad har du lärt dig? - dentaltekniker'
-        ..description = 'En quiz för dentaltekniker, testa dina kunskaper här!'
-        ..url = 'quiz-dentaltekniker')
+        ..name = 'Quiz vad har du lärt dig?'
+        ..description = 'En quiz, testa dina kunskaper här!'
+        ..url = 'quiz-for-allmenhet')
       ..phrases['en'] = (new Phrases()
         ..name = 'Quiz what have you learned? - dental technicians'
         ..description = 'Quiz for dental technicians, test your knowledge here!'
