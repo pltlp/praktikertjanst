@@ -5,6 +5,8 @@ import '../components/course_room_component/course_room_component.template.dart'
     as crc;
 import '../components/documents_component/documents_component.template.dart'
     as dc;
+import '../components/glossery_component/glossery_component.template.dart'
+    as gc;
 import '../components/home_component/home_component.template.dart' as hc;
 import '../components/library_component/library_component.template.dart' as lc;
 import '../components/rise_component/rise_component.template.dart' as rc;
@@ -38,6 +40,16 @@ class Routes {
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_curious_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
             path: '${msg.home_url}/${msg.course_room_for_curious_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),
@@ -57,6 +69,56 @@ class Routes {
           ),
           RouteDefinition(
             path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}/:id',
+            component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
+            component: dc.DocumentsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_dental_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:id',
+            component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.glossary_url}',
+            component: gc.GlosseryComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
+            component: dc.DocumentsComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_service_technicians_url}',
+            component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path:
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/:id',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
