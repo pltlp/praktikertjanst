@@ -1,4 +1,5 @@
-<div *ngIf="model != null" style="margin-top:150px">
+<div *ngIf="model != null"
+     style="margin-top:150px">
     <div class="row margin-bottom-large">
         <div class="col">
             <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].title}}</h1>
@@ -38,7 +39,8 @@
     </div>
     <div class="row margin-bottom-x-large">
         <div class="col m6">
-            <p-button [button_label]="msg.glossary"></p-button>
+            <p-button [button_label]="msg.glossary"
+                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.glossary_url"></p-button>
         </div>
         <div class="col m6">
             <p-button [button_label]="msg.document(1)"
