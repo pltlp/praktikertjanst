@@ -2,10 +2,10 @@ class CourseRoom {
   CourseRoom();
 
   String img_url;
-  List<String> videosIds = [];
-  List<String> quickActionIds = [];
-  List<String> documentIds = [];
-  List<String> glossIds = [];
+  List<String> video_ids = [];
+  List<String> quick_action_ids = [];
+  List<String> document_ids = [];
+  List<String> word_ids = [];
   Map<String, Phrases> phrases = {};
 }
 

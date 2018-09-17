@@ -1,0 +1,14 @@
+<div *ngFor="let word of wordService.data.values"
+     style="margin-top:150px;">
+    <div class="row">
+        <div class="col m4">
+            <img [src]="word.img_urls.first"
+                 [alt]="word.phrases[msg.currentLanguage].name">
+            <h3 class="color-astronautblue">
+                {{word.phrases[msg.currentLanguage].name}}
+            </h3>
+            <p>{{word.phrases[msg.currentLanguage].description}}</p>
+        </div>
+        <div class="col m8"></div>
+    </div>
+</div>

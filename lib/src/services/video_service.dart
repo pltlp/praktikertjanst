@@ -14,7 +14,7 @@ class VideoService {
 
   Map<String, Video> mockContent = {
     'Goda exempel - sanering': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - sanering'
@@ -27,7 +27,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - skötsel': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - skötsel'
@@ -40,7 +40,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - installation': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - installation'
@@ -53,7 +53,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Installation av amalgam avskiljare': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Installation av amalgam avskiljare'
@@ -66,7 +66,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - 	förvaltningsorgan': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - förvaltningsorgan'
@@ -79,7 +79,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel- rutiner': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel- rutiner'
@@ -92,7 +92,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - veckovis hantering av amalgamavskiljare': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - veckovis hantering av amalgamavskiljare'
@@ -106,7 +106,7 @@ class VideoService {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - mer oregelbunden hantering av amalgam avskiljare':
         new Video()
-          ..imgSrc =
+          ..img_url =
               'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
           ..phrases['sv'] = (new Phrases()
             ..name =
@@ -121,7 +121,7 @@ class VideoService {
             ..description =
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Goda exempel - fem snabba!': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Goda exempel - fem snabba!'
@@ -134,7 +134,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Skötsel av amalgamavskiljare under en vecka': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Skötsel av amalgamavskiljare under en vecka'
@@ -147,7 +147,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Skötsel av amalgamavskiljare mer sällan': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Skötsel av amalgamavskiljare mer sällan'
@@ -160,7 +160,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Rutiner vid patientbehandling': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Rutiner vid patientbehandling'
@@ -173,7 +173,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Rätt installerat?': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Rätt installerat?'
@@ -186,7 +186,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Byte av amalgamavskiljare (vått och torrt sugsystem)': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Byte av amalgamavskiljare (vått och torrt sugsystem)'
@@ -199,7 +199,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Funktionskontroll': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Funktionskontroll'
@@ -212,7 +212,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Rengöring och tömmning av vattenlås': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Rengöring och tömning av vattenlås'
@@ -225,7 +225,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Slutförvaring': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name =  'Slutförvaring'
@@ -238,7 +238,7 @@ class VideoService {
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
     'Sanering': new Video()
-      ..imgSrc =
+      ..img_url =
           'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
       ..phrases['sv'] = (new Phrases()
         ..name = 'Sanering'

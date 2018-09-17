@@ -22,7 +22,7 @@ class QuickActionService {
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'course-room-for-dental-teams')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'För dig som är dentaltekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -33,7 +33,7 @@ class QuickActionService {
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'course-room-for-dental-technicians')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'För dig som är servicetekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -44,7 +44,7 @@ class QuickActionService {
         ..name = 'For you at the dentist practice'
         ..description = 'What are the consequences of quicksilver in nature'
         ..url = 'for-you-at-the-dentist-practice')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Lagar och regler': new QuickAction()
       ..icon = 'gavel'
       ..phrases['sv'] = (new Phrases()
@@ -57,7 +57,7 @@ class QuickActionService {
         ..description =
             'Here you can find out what laws and regulations are in force'
         ..url = 'laws-and-regulations')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Kvicksilver i naturen': new QuickAction()
       ..icon = 'pool'
       ..phrases['sv'] = (new Phrases()
@@ -68,7 +68,7 @@ class QuickActionService {
         ..name = 'Quicksilver in nature'
         ..description = 'What are the consequences of quicksilver in nature?'
         ..url = 'mercury-in-nature')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Goda exempel - sanering': new QuickAction()
       ..icon = 'favorite_border'
       ..phrases['sv'] = (new Phrases()
@@ -80,7 +80,7 @@ class QuickActionService {
         ..description =
             'What is needed for effective quicksilver amalgam remediation?'
         ..url = 'good-examples-remediation')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Goda exempel - skötsel': new QuickAction()
       ..icon = 'timelapse'
       ..phrases['sv'] = (new Phrases()
@@ -91,7 +91,7 @@ class QuickActionService {
         ..name = 'Good examples-maintenance'
         ..description = 'How best to handle mercury amalgam?'
         ..url = 'good-examples-management')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Goda exempel - installation': new QuickAction()
       ..icon = 'timelapse'
       ..phrases['sv'] = (new Phrases()
@@ -102,7 +102,7 @@ class QuickActionService {
         ..name = 'Good examples - installation'
         ..description = 'How do I install an amalgam separator?'
         ..url = 'good-examples-installation')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Översikt på mottagningen': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -115,7 +115,7 @@ class QuickActionService {
         ..description =
             'What do your patient reception facilities need for installing mercury amalgam handling equipment?'
         ..url = 'overview-of-the-reception')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Instruktioner för tandvårdsteam': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -128,7 +128,7 @@ class QuickActionService {
         ..description =
             'A few simple rules, instructions and concepts for dental care teams!'
         ..url = 'instructions-for-dental-care-teams')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Instruktioner för dentaltekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -141,7 +141,7 @@ class QuickActionService {
         ..description =
             'A few simple rules, instructions and concepts fordental technicians!'
         ..url = 'instructions-for-dental-care-technicians')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Instruktioner för servicetekniker': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -154,7 +154,7 @@ class QuickActionService {
         ..description =
             'A few simple rules, instructions and concepts for service technicians!'
         ..url = 'instructions-for-service-care-technicians')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Quiz vad har du lärt dig? - tandvårdsteam': new QuickAction()
       ..icon = 'question_answer'
       ..phrases['sv'] = (new Phrases()
@@ -165,7 +165,7 @@ class QuickActionService {
         ..name = 'Quiz what have you learned? - dental teams'
         ..description = 'Quiz for dental teams, test your knowledge here!'
         ..url = 'quiz-for-dental-teams')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Quiz vad har du lärt dig? - dentaltekniker': new QuickAction()
       ..icon = 'question_answer'
       ..phrases['sv'] = (new Phrases()
@@ -176,7 +176,7 @@ class QuickActionService {
         ..name = 'Quiz what have you learned? - dental technicians'
         ..description = 'Quiz for dental technicians, test your knowledge here!'
         ..url = 'quiz-for-dental-technicians')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Quiz vad har du lärt dig?': new QuickAction()
       ..icon = 'question_answer'
       ..phrases['sv'] = (new Phrases()
@@ -187,7 +187,7 @@ class QuickActionService {
         ..name = 'Quiz what have you learned? - dental technicians'
         ..description = 'Quiz for dental technicians, test your knowledge here!'
         ..url = 'quiz-for-dental-technicians')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Quiz vad har du lärt dig? - servicetekniker': new QuickAction()
       ..icon = 'question_answer'
       ..phrases['sv'] = (new Phrases()
@@ -199,18 +199,7 @@ class QuickActionService {
         ..description =
             'Quiz for service technicians, test your knowledge here!'
         ..url = 'quiz-for-service-technicians')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
-    'Begreppsförklaringar': new QuickAction()
-      ..icon = 'format_list_numbered'
-      ..phrases['sv'] = (new Phrases()
-        ..name = 'Begreppsförklaringar'
-        ..description = 'Här hittar du en lista på alla viktiga begrepp!'
-        ..url = 'begreppsforklaringar')
-      ..phrases['en'] = (new Phrases()
-        ..name = 'Glossary'
-        ..description = 'Here you will find a list of all important concepts!'
-        ..url = 'glossary')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',    
     'Rutiner vid patientbehandling': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -223,7 +212,7 @@ class QuickActionService {
         ..description =
             'Here you can check that you have followed the procedures for amalgam handling in during patient treatment!'
         ..url = 'routines-during-patient-treatment')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Skötsel av amalgamavskiljare under en vecka': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -236,7 +225,7 @@ class QuickActionService {
         ..description =
             'Here you can see which routines should be followed each week'
         ..url = 'maintenance-of-amalgam-separators-for-one-week')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Skötsel av amalgamavskiljare mer sällan': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -249,7 +238,7 @@ class QuickActionService {
         ..description =
             'Here you can see which routines should be followed if amalgam is managed more seldom'
         ..url = 'maintenance-of-amalgam-separators-more-seldom')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Installation av amalgamavskiljare': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -262,7 +251,7 @@ class QuickActionService {
         ..description =
             'Here you can see which routines should be followed to install an amalgam separator'
         ..url = 'installation-of-amalgam-separator')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Installation of amalgam separator': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -275,7 +264,7 @@ class QuickActionService {
         ..description =
             'Here you will find short checklist to make sure your installation has been performed correctly!'
         ..url = 'check-installation-of-amalgam-separator')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Byte av amalgamavskiljare (vått och torrt sugsystem)': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -286,7 +275,7 @@ class QuickActionService {
         ..name = 'Replacement of amalgam separator (wet and dry suction system)'
         ..description = 'Hur går byten av amalgamavskiljare till?'
         ..url = 'replacement-of-amalgam-separator')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Dubbelkolla att allting fungerar!': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -297,7 +286,7 @@ class QuickActionService {
         ..name = 'All functions check!'
         ..description = 'Double-check that everything is working properly!'
         ..url = 'all-functions-check')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Rengöring av utjämningskärl': new QuickAction()
       ..icon = 'done_all'
       ..phrases['sv'] = (new Phrases()
@@ -310,7 +299,7 @@ class QuickActionService {
         ..description =
             'Here you will find instructions for cleaning the leveling vessel'
         ..url = 'cleaning-of-the-leveling vessel')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
     'Rengöring och tömning av vattenlås': new QuickAction()
       ..icon = 'invert_colors'
       ..phrases['sv'] = (new Phrases()
@@ -323,7 +312,7 @@ class QuickActionService {
         ..description =
             'Here you will find instructions for cleaning and emptying of water trap'
         ..url = 'cleaning-and-emptying-of-water-traps')
-      ..imgSrc = 'pics/quicksilver_management.jpg',
+      ..img_url = 'pics/quicksilver_management.jpg',
     'Slutförvaring': new QuickAction()
       ..icon = 'storage'
       ..phrases['sv'] = (new Phrases()
@@ -336,7 +325,7 @@ class QuickActionService {
         ..description =
             'Here you will find instructions for  storage of mercury waste'
         ..url = 'storeage')
-      ..imgSrc = 'pics/clean_future.jpg',
+      ..img_url = 'pics/clean_future.jpg',
     'Här hittar du instruktioner för sanering av kvicksilver avfall':
         new QuickAction()
           ..icon = 'autorenew'
@@ -350,7 +339,7 @@ class QuickActionService {
             ..description =
                 'Here you will find instructions for decontamination of mercury waste'
             ..url = 'decontamination')
-          ..imgSrc = 'pics/clean_future.jpg',
+          ..img_url = 'pics/clean_future.jpg',
     'För dig som bara är nyfiken': new QuickAction()
       ..icon = 'speaker_notes'
       ..phrases['sv'] = (new Phrases()
@@ -363,6 +352,6 @@ class QuickActionService {
         ..description =
             'Here you will find some general information about all our areas of activity!'
         ..url = 'for-you-who-is-curious')
-      ..imgSrc = 'pics/header_silver_service_us.jpg',
+      ..img_url = 'pics/header_silver_service_us.jpg',
   };
 }

@@ -19,7 +19,7 @@ import 'src/services/messages_service.dart';
 import 'src/services/quick_action_service.dart';
 import 'src/services/rise_service.dart';
 import 'src/services/video_service.dart';
-import 'src/services/glossery_service.dart';
+import 'src/services/word_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -52,7 +52,7 @@ import 'src/services/glossery_service.dart';
       DocumentService,
       RiseService,
       CourseRoomService,
-      GlosseryService
+      WordService
     ],
     pipes: [
       NamePipe
@@ -67,7 +67,7 @@ class AppComponent {
       this.documentService,
       this.riseService,
       this.courseRoomService,
-      this.glosseryService) {
+      this.wordService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -97,7 +97,7 @@ class AppComponent {
     await documentService.fetchAll();
     await riseService.fetchAll();
     await courseRoomService.fetchAll();
-    await glosseryService.fetchAll();
+    await wordService.fetchAll();
     loaded = true;
   }
 
@@ -115,7 +115,7 @@ class AppComponent {
   final DocumentService documentService;
   final RiseService riseService;
   final CourseRoomService courseRoomService;
-  final GlosseryService glosseryService;
+  final WordService wordService;
   bool loaded = false;
   bool wordListModalVisible = false;
 }

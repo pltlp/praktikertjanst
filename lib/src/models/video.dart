@@ -1,7 +1,7 @@
 class Video {
   Video();
 
-  String imgSrc;
+  String img_url;
   String id;
 
   Map<String, Phrases> phrases = {};

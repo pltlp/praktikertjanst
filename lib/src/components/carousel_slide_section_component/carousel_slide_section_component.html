@@ -1,7 +1,9 @@
-<img src="{{dataSrc}}"
-     alt="{{name}}">
-     
-<div class="padding">
-    <h2>{{name | name}}</h2>
-    <p>{{text}}</p>
+<div *ngIf="model != null">
+    <img [src]="model.img_url"
+         [alt]="model.phrases[msg.currentLanguage].name">
+         
+    <div class="padding">
+        <h2>{{model.phrases[msg.currentLanguage].name | name}}</h2>
+        <p>{{model.phrases[msg.currentLanguage].description}}</p>
+    </div>
 </div>
