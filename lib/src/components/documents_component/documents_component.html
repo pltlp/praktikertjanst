@@ -1,12 +1,12 @@
-<div class="row" style="margin-top:150px;">
+<div class="row"
+     style="margin-top:150px;">
     <div class="col">
         <h2 class="color-astronautblue">{{msg.document(1) | name}}</h2>
-        <div class="row expand">
-            <div class="col"
-                 *ngFor="let document of documents">
-                <p-document [model]="document"></p-document>
-            </div>
-        </div>
     </div>
-
+</div>
+<div class="row collapse">
+    <div class="col"
+         *ngFor="let document of documents">
+        <p-document [model]="document"></p-document>
+    </div>
 </div>

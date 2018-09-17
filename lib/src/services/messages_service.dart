@@ -25,6 +25,17 @@ class MessagesService {
       Intl.message('kursrum-for-tandvardsteam',
           name: 'course_room_for_dental_teams');
 
+          String get course_room_for_dental_technicians_url =>
+      Intl.message('kursrum-for-dentaltekniker',
+          name: 'course_room_for_dental_technicians_url');
+
+
+          String get course_room_for_service_technicians_url =>
+      Intl.message('kursrum-for-servicetekniker',
+          name: 'course_room_for_service_technicians_url');
+
+          
+
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
 
   String document(int howMany) => Intl.plural(howMany,

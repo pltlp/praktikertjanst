@@ -19,6 +19,7 @@ import 'src/services/messages_service.dart';
 import 'src/services/quick_action_service.dart';
 import 'src/services/rise_service.dart';
 import 'src/services/video_service.dart';
+import 'src/services/glossery_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -49,7 +50,8 @@ import 'src/services/video_service.dart';
       QuickActionService,
       DocumentService,
       RiseService,
-      CourseRoomService
+      CourseRoomService,
+      GlosseryService
     ],
     pipes: [
       NamePipe
@@ -63,7 +65,8 @@ class AppComponent {
       this.quickActionService,
       this.documentService,
       this.riseService,
-      this.courseRoomService) {
+      this.courseRoomService,
+      this.glosseryService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -82,8 +85,8 @@ class AppComponent {
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
 
-    _router.onNavigationStart.listen((state) {      
-      window.scrollTo(0, 0);      
+    _router.onNavigationStart.listen((state) {
+      window.scrollTo(0, 0);
     });
   }
   Future<void> _loadResources() async {
@@ -93,6 +96,7 @@ class AppComponent {
     await documentService.fetchAll();
     await riseService.fetchAll();
     await courseRoomService.fetchAll();
+    await glosseryService.fetchAll();
     loaded = true;
   }
 
@@ -110,5 +114,6 @@ class AppComponent {
   final DocumentService documentService;
   final RiseService riseService;
   final CourseRoomService courseRoomService;
+  final GlosseryService glosseryService;
   bool loaded = false;
 }
