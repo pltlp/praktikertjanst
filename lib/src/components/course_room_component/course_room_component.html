@@ -3,7 +3,7 @@
     <div class="row margin-bottom-large">
         <div class="col">
             <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].title}}</h1>
-            <p>{{model.phrases[msg.currentLanguage].description}}</p>
+            <p class="justified">{{model.phrases[msg.currentLanguage].description}}</p>
         </div>
     </div>
     <div class="row">
@@ -14,6 +14,32 @@
         </div>
         <div class="col m3"></div>
     </div>
+    <div class="row margin-top-large">
+        <div class="col">
+            <material-stepper legalJumps="backwards"
+                              orientation="vertical"
+                              size="default">
+                <div *ngFor="let quickAction of quickActions">
+                    <template step
+                              cancelHidden                              
+                              [complete]="quickAction.complete"
+                              [hideButtons]="!quickAction.complete"
+                              [name]="quickAction.phrases[msg.currentLanguage].name">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="margin-bottom-x-small">
+                                    <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
+                                    <span (click)="quickAction.complete = true" [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
+                                          class="clickable color-cerulean">[{{msg.open}}]</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </material-stepper>
+        </div>
+    </div>
+    <!--
     <div class="row margin-top-medium"
          *ngFor="let quickAction of quickActions">
         <div class="col m3"></div>
@@ -25,6 +51,7 @@
         </div>
         <div class="col m3"></div>
     </div>
+    -->
     <div class="row expand margin-top-x-large">
         <div class="col">
             <p-carousel [models]="videos"
@@ -33,8 +60,7 @@
     </div>
     <div class="row">
         <div class="col m4">
-            <h1 class="color-astronautblue">{{msg.archive | name}}
-            </h1>
+            <h1 class="color-astronautblue">{{msg.archive | name}} </h1>
         </div>
     </div>
     <div class="row margin-bottom-x-large">

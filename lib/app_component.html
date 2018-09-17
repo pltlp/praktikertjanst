@@ -37,13 +37,12 @@
                 </div>
             </div>
         </d-navbar>
-    </header>
-    <!--<div style="height: 150px;"></div>-->
+    </header>    
     <main>
         <router-outlet *ngIf="loaded"
                        [routes]="routes.all"></router-outlet>
     </main>
-    <footer class="margin-top-large">
+    <footer>
         <p-footer></p-footer>
     </footer>
 </div>

@@ -4,6 +4,8 @@ class QuickAction {
   Map<String, Phrases> phrases = {};
   String icon;
   String imgSrc;
+
+  bool complete = false;
 }
 
 class Phrases {

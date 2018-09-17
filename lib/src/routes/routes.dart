@@ -43,7 +43,7 @@ class Routes {
             path:
                 '${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.glossary_url}',
             component: gc.GlosseryComponentNgFactory,
-          ),
+          ), 
           RouteDefinition(
             path:
                 '${msg.home_url}/${msg.course_room_for_curious_url}/${msg.glossary_url}',

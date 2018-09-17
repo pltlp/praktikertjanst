@@ -5,14 +5,16 @@ import '../../models/document.dart';
 import '../../services/document_service.dart';
 import '../../services/messages_service.dart';
 import '../document_component/document_component.dart';
+import '../fullscreen_component/fullscreen_component.dart';
 
 @Component(
-    directives: const [NgFor, DocumentComponent, MaterialIconComponent],
+    directives: const [NgFor, DocumentComponent, FullscreenComponent, MaterialIconComponent],
     providers: const [],
     selector: 'p-documents',
     styleUrls: const ['documents_component.css'],
     templateUrl: 'documents_component.html',
-    pipes: [NamePipe])
+    pipes: [NamePipe],
+    changeDetection: ChangeDetectionStrategy.OnPush)
 class DocumentsComponent implements OnInit {
   DocumentsComponent(this.documentService, this.msg);
 
@@ -24,6 +26,9 @@ class DocumentsComponent implements OnInit {
       documentService.data['Fördelning av kvicksilver avfall'],
     ];
   }
+
+  @Input()
+  int offsetTop = 150;
 
   final DocumentService documentService;
   final MessagesService msg;
