@@ -1,7 +1,7 @@
-class Gloss {
-  Gloss();
+class Word {
+  Word();
 
-  String img_url;
+  List<String> img_urls = [];
   Map<String, Phrases> phrases = {};
 }
 

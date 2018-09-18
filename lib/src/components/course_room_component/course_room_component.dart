@@ -43,14 +43,14 @@ class CourseRoomComponent implements OnActivate {
 
     if (model != null) {
 
-      videos = model.videosIds
+      videos = model.video_ids
           .map((v) => videoService.data[v])
           .toList(growable: true);
-      quickActions = model.quickActionIds
+      quickActions = model.quick_action_ids
           .map((id) => quickActionService.data[id])
           .toList(growable: false);
 
-      documents = model.documentIds
+      documents = model.document_ids
           .map((id) => documentService.data[id])
           .toList(growable: false);
 

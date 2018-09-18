@@ -3,7 +3,7 @@ class QuickAction {
 
   Map<String, Phrases> phrases = {};
   String icon;
-  String imgSrc;
+  String img_url;
 
   bool complete = false;
 }

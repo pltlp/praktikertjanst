@@ -10,15 +10,10 @@ import '../../services/quick_action_service.dart';
 
 @Component(
     directives: const [
-      NgIf,
-      MaterialTooltipDirective,
-      FoModalComponent,
-      routerDirectives,
       QuickActionsComponent,
       MaterialAutoSuggestInputComponent,
       DocumentsComponent
-    ],
-    providers: const [MaterialIconComponent],
+    ],    
     selector: 'p-library',
     styleUrls: const ['library_component.css'],
     templateUrl: 'library_component.html',

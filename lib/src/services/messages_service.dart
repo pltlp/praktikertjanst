@@ -50,10 +50,9 @@ class MessagesService {
 
   String get english => Intl.message('engelska', name: 'english');
 
-  String get glossary => Intl.message('begreppsförklaringar', name: 'glossary');
+  String word(int howMany) => Intl.plural(howMany, one:'ord', other:'ord', name: 'word', args: [howMany]);
 
-  String get glossary_url =>
-      Intl.message('begreppsforklaringar', name: 'glossary_url');
+  String get word_list => Intl.message('ordlista', name: 'word_list');
 
   String get good_examples =>
       Intl.message('goda exempel', name: 'good_examples');
@@ -89,5 +88,5 @@ class MessagesService {
   String get swedish => Intl.message('svenska', name: 'swedish');
 
   String get type_here_to_search =>
-      Intl.message('Skriv in här för att söka...', name: 'type_here_to_search');
+      Intl.message('Skriv in här för att söka...', name: 'type_here_to_search');    
 }

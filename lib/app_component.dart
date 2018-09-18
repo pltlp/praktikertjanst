@@ -11,6 +11,7 @@ import 'src/components/breadcrumbs_component/breadcrumbs_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
+import 'src/components/word_list_component/word_list_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
@@ -19,7 +20,7 @@ import 'src/services/messages_service.dart';
 import 'src/services/quick_action_service.dart';
 import 'src/services/rise_service.dart';
 import 'src/services/video_service.dart';
-import 'src/services/glossery_service.dart';
+import 'src/services/word_service.dart';
 
 @Component(
     selector: 'p-app',
@@ -31,6 +32,7 @@ import 'src/services/glossery_service.dart';
       BreadcrumbsComponent,
       HomeComponent,
       NavbarComponent,
+      FoModalComponent,
       FooterComponent,
       routerDirectives,
       NgFor,
@@ -39,7 +41,8 @@ import 'src/services/glossery_service.dart';
       FullscreenComponent,
       MaterialMenuComponent,
       MaterialDropdownSelectComponent,
-      MaterialSelectItemComponent
+      MaterialSelectItemComponent,
+      WordListComponent
     ],
     providers: [
       routerProvidersHash,
@@ -51,7 +54,7 @@ import 'src/services/glossery_service.dart';
       DocumentService,
       RiseService,
       CourseRoomService,
-      GlosseryService
+      WordService
     ],
     pipes: [
       NamePipe
@@ -66,7 +69,7 @@ class AppComponent {
       this.documentService,
       this.riseService,
       this.courseRoomService,
-      this.glosseryService) {
+      this.wordService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -96,7 +99,7 @@ class AppComponent {
     await documentService.fetchAll();
     await riseService.fetchAll();
     await courseRoomService.fetchAll();
-    await glosseryService.fetchAll();
+    await wordService.fetchAll();
     loaded = true;
   }
 
@@ -114,6 +117,7 @@ class AppComponent {
   final DocumentService documentService;
   final RiseService riseService;
   final CourseRoomService courseRoomService;
-  final GlosseryService glosseryService;
+  final WordService wordService;
   bool loaded = false;
+  bool wordListModalVisible = false;
 }
