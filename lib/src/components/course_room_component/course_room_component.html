@@ -1,6 +1,6 @@
 <div *ngIf="model != null"
      style="margin-top:150px">
-    <div class="row margin-bottom-large">
+    <div class="row">
         <div class="col">
             <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].title}}</h1>
             <p class="justified">{{model.phrases[msg.currentLanguage].description}}</p>
@@ -10,52 +10,54 @@
         <div id="img"
              class="col"
              [style.background-image]="'url(' + model.img_url + ')'">
-            <div class="row">
-                <div class="col">
+
+            <!--
                     <material-stepper legalJumps="backwards"
                                       orientation="vertical"
                                       size="default">
-                        <div *ngFor="let quickAction of quickActions">
+                        
                             <template step
                                       cancelHidden
                                       [complete]="quickAction.complete"
                                       [name]="quickAction.phrases[msg.currentLanguage].name">
                                 <div class="row">
                                     <div class="col m4">
-
-
-                                        <p-button [label]="quickAction.phrases[msg.currentLanguage].name"
-                                                  [trailingIcon]="quickAction.complete ? 'check': null"
-                                                  (click)="quickAction.complete = true">
-
-
-                                        </p-button>
-                                        <!--
-    <h4 class="margin-bottom-x-small">
+        
+                                   <h4 class="margin-bottom-x-small">
                                             <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
                                             <span (click)="quickAction.complete = true"
                                                   [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
                                                   class="clickable color-cerulean">[{{msg.open}}]</span>
                                         </h4>
-                                        -->
-
                                     </div>
                                 </div>
                             </template>
                         </div>
-                    </material-stepper>
-                </div>
+                    </material-stepper
+                    -->
+            <div class="row margin-top-x-large">
+                <div class="col"></div>
             </div>
-
+            <div class="row padding-medium"
+                 *ngFor="let quickAction of quickActions; let i = index">
+                <div class="col m3"></div>
+                <div class="col m6">
+                    <p-button [label]="(i + 1).toString() + '.' + ' ' + quickAction.phrases[msg.currentLanguage].name"
+                              [trailingIcon]="quickAction.complete ? 'check': null"
+                              (click)="quickAction.complete = true"
+                              [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
+                              [materialTooltip]="quickAction.phrases[msg.currentLanguage].description">
+                    </p-button>
+                </div>
+                <div class="col m3"></div>
+            </div>
+            <div class="row margin-bottom-x-large">
+                <div class="col"></div>
+            </div>
         </div>
     </div>
-    <div class="row margin-top-large">
-        <div class="col">
-
-        </div>
-    </div>
-    <div class="row expand margin-top-x-large">
-        <div class="col">
+    <div class="row expand">
+        <div class="col padding-none">
             <p-carousel [models]="videos"
                         [header]="msg.course_room_for_curious_carousel_header"></p-carousel>
         </div>

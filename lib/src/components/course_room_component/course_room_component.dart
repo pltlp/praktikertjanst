@@ -39,11 +39,8 @@ class CourseRoomComponent implements OnActivate {
   void onActivate(RouterState previous, RouterState current) {
     url = current.path.split('/').last;
     model = courseRoomService.data[url];
-    
-    
 
     if (model != null) {
-
       videos = model.video_ids
           .map((v) => videoService.data[v])
           .toList(growable: true);
@@ -54,7 +51,6 @@ class CourseRoomComponent implements OnActivate {
       documents = model.document_ids
           .map((id) => documentService.data[id])
           .toList(growable: false);
-
     }
   }
 
