@@ -1,12 +1,17 @@
 @import 'package:angular_components/material_stepper/mixins';
 @import 'package:angular_components/material_yes_no_buttons/mixins';
 @import '../../../colors';
-
 p.justified {
     text-align: justify;
 }
 
-@include material-stepper-theme(
-    $step-color: $astronautBlue,
-    $button-color: $cerulean
-); 
+@include material-stepper-theme( $step-color: $astronautBlue, $button-color: $cerulean);
+div#img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

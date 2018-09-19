@@ -23,7 +23,8 @@ import '../carousel_component/carousel_component.dart';
       NgIf,
       NgFor,
       routerDirectives,
-      StepDirective
+      StepDirective,
+      MaterialTooltipDirective
     ],
     providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',

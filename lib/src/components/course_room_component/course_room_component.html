@@ -6,36 +6,52 @@
             <p class="justified">{{model.phrases[msg.currentLanguage].description}}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col m3"></div>
-        <div class="col m6">
-            <img [src]="model.img_url"
-                 [alt]="model.phrases[msg.currentLanguage].title">
+    <div class="row expand collapse">
+        <div id="img"
+             class="col"
+             [style.background-image]="'url(' + model.img_url + ')'">
+            <div class="row">
+                <div class="col">
+                    <material-stepper legalJumps="backwards"
+                                      orientation="vertical"
+                                      size="default">
+                        <div *ngFor="let quickAction of quickActions">
+                            <template step
+                                      cancelHidden
+                                      [complete]="quickAction.complete"
+                                      [name]="quickAction.phrases[msg.currentLanguage].name">
+                                <div class="row">
+                                    <div class="col m4">
+
+
+                                        <p-button [label]="quickAction.phrases[msg.currentLanguage].name"
+                                                  [trailingIcon]="quickAction.complete ? 'check': null"
+                                                  (click)="quickAction.complete = true">
+
+
+                                        </p-button>
+                                        <!--
+    <h4 class="margin-bottom-x-small">
+                                            <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
+                                            <span (click)="quickAction.complete = true"
+                                                  [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
+                                                  class="clickable color-cerulean">[{{msg.open}}]</span>
+                                        </h4>
+                                        -->
+
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </material-stepper>
+                </div>
+            </div>
+
         </div>
-        <div class="col m3"></div>
     </div>
     <div class="row margin-top-large">
         <div class="col">
-            <material-stepper legalJumps="backwards"
-                              orientation="vertical"
-                              size="default">
-                <div *ngFor="let quickAction of quickActions">
-                    <template step
-                              cancelHidden
-                              [complete]="quickAction.complete"                              
-                              [name]="quickAction.phrases[msg.currentLanguage].name">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="margin-bottom-x-small">
-                                    <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
-                                    <span (click)="quickAction.complete = true" [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
-                                          class="clickable color-cerulean">[{{msg.open}}]</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-            </material-stepper>
+
         </div>
     </div>
     <div class="row expand margin-top-x-large">
@@ -52,13 +68,13 @@
     <div class="row margin-bottom-x-large">
         <div class="col m6">
             <!--
-            <p-button [button_label]="msg.word_list"
+            <p-button [label]="msg.word_list"
                       [routerLink]="msg.home_url + '/' + url + '/'+ msg.word_list_url"></p-button>
         -->
         </div>
         <div class="col m6">
-            <p-button [button_label]="msg.document(1)"
-                      [tooltip]="msg.document(1)"
+            <p-button [label]="msg.document(1)"
+                      [materialTooltip]="msg.document(1)"
                       [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url">
             </p-button>
         </div>
