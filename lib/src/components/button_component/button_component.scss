@@ -1,4 +1,6 @@
 @import '../../../colors.scss';
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_icon/mixins';
 :host {
     display: block;
     button {
@@ -30,5 +32,9 @@
     }
     .mat-tooltip {
         font-size: 14px !important;
+    }
+    material-icon.check-icon {
+        @include material-icon-size($mat-grid * 5);
+        color: lightgreen;
     }
 }
