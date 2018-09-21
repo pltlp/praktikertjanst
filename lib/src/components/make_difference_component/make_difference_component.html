@@ -4,7 +4,10 @@
             <div class="col m6 align-middle">
                 <p-button label="{{model.phrases[msg.currentLanguage].name| name}}"
                           [tooltip]="model.phrases[msg.currentLanguage].name"
-                          [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url">
+                          [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url"
+                          [trailingIcon]="model.complete ? 'check': null"
+                          trailingIconBackgroundColor="#003C5A"
+                          (click)="model.complete = true">
                 </p-button>
             </div>
             <div class="col m6 align-middle">

@@ -8,51 +8,22 @@
     </div>
     <div class="row expand collapse">
         <div id="img"
-             class="col"
+             class="col padding-top-x-large padding-bottom-x-large"
              [style.background-image]="'url(' + model.img_url + ')'">
-
-            <!--
-                    <material-stepper legalJumps="backwards"
-                                      orientation="vertical"
-                                      size="default">
-                        
-                            <template step
-                                      cancelHidden
-                                      [complete]="quickAction.complete"
-                                      [name]="quickAction.phrases[msg.currentLanguage].name">
-                                <div class="row">
-                                    <div class="col m4">
-        
-                                   <h4 class="margin-bottom-x-small">
-                                            <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
-                                            <span (click)="quickAction.complete = true"
-                                                  [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
-                                                  class="clickable color-cerulean">[{{msg.open}}]</span>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </template>
-                        </div>
-                    </material-stepper
-                    -->
-            <div class="row margin-top-x-large">
-                <div class="col"></div>
-            </div>
-            <div class="row padding-medium"
+            <div class="row"
                  *ngFor="let quickAction of quickActions; let i = index">
                 <div class="col m3"></div>
                 <div class="col m6">
-                    <p-button [label]="(i + 1).toString() + '.' + ' ' + quickAction.phrases[msg.currentLanguage].name"
+                    <p-button [leadingContent]="(i + 1).toString()+'.'"
+                              [label]="quickAction.phrases[msg.currentLanguage].name"
                               [trailingIcon]="quickAction.complete ? 'check': null"
                               (click)="quickAction.complete = true"
                               [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
-                              [materialTooltip]="quickAction.phrases[msg.currentLanguage].description">
+                              [materialTooltip]="quickAction.phrases[msg.currentLanguage].description"
+                              trailingIconBackgroundColor="#003C5A">
                     </p-button>
                 </div>
                 <div class="col m3"></div>
-            </div>
-            <div class="row margin-bottom-x-large">
-                <div class="col"></div>
             </div>
         </div>
     </div>

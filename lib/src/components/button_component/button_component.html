@@ -1,4 +1,15 @@
 <button>
-        {{label | name}} {{' '}}
-        <material-icon class="check-icon" *ngIf="trailingIcon != null" [icon]="trailingIcon" baseline></material-icon>
+        <div id="flex">
+                <div id="leading" [style.background-color]="currentLeadingContentBackgroundColor">
+                        {{leadingContent}}
+                </div>
+                <div id="middle" [style.background-color]="currentLabelBackgroundColor" [class.shadow]="trailingIconBackgroundColor != labelBackgroundColor">
+                        {{label | name}}
+                </div>
+                <div id="trailing" [style.background-color]="trailingIconBackgroundColor">
+                        <material-icon *ngIf="trailingIcon != null"
+                                       [icon]="trailingIcon"
+                                       baseline></material-icon>
+                </div>
+        </div>
 </button>
