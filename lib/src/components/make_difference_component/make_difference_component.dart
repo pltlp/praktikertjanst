@@ -12,9 +12,11 @@ import '../button_component/button_component.dart';
       NgIf,
       FoModalComponent,
       routerDirectives,
-      ButtonComponent
+      ButtonComponent,
+      MaterialTooltipDirective,
+      MaterialIconComponent
     ],
-    providers: const [MaterialIconComponent],
+    providers: const [],
     selector: 'p-make-difference',
     styleUrls: const ['make_difference_component.css'],
     templateUrl: 'make_difference_component.html',

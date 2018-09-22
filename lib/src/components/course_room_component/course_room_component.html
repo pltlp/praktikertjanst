@@ -14,13 +14,13 @@
                  *ngFor="let quickAction of quickActions; let i = index">
                 <div class="col m3"></div>
                 <div class="col m6">
-                    <p-button [leadingContent]="(i + 1).toString()+'.'"
-                              [label]="quickAction.phrases[msg.currentLanguage].name"
-                              [trailingIcon]="quickAction.complete ? 'check': null"
+                    <p-button [left]="(i + 1).toString()+'.'"
+                              [middle]="quickAction.phrases[msg.currentLanguage].name"
+                              [right]="quickAction.complete ? 'check': null"
                               (click)="quickAction.complete = true"
                               [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
                               [materialTooltip]="quickAction.phrases[msg.currentLanguage].description"
-                              trailingIconBackgroundColor="#003C5A">
+                              rightBackgroundColor="#003C5A">
                     </p-button>
                 </div>
                 <div class="col m3"></div>
@@ -46,9 +46,10 @@
         -->
         </div>
         <div class="col m6">
-            <p-button [label]="msg.document(1)"
+            <p-button [middle]="msg.document(1)"
                       [materialTooltip]="msg.document(1)"
-                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url">
+                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url"
+                      rightBackgroundColor="#00A0C8">
             </p-button>
         </div>
     </div>

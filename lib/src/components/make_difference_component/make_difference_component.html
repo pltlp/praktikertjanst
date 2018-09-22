@@ -1,19 +1,21 @@
 <div [style.background-image]="backgroundImage">
     <div id="gradiant">
-        <div class="row padding-top-x-large padding-bottom-x-large align-middle" style="min-height:300px">
+        <div class="row padding-top-x-large padding-bottom-x-large align-middle"
+             style="min-height:300px">
             <div class="col m6 align-middle">
-                <p-button label="{{model.phrases[msg.currentLanguage].name| name}}"
-                          [tooltip]="model.phrases[msg.currentLanguage].name"
+                <p-button middle="{{model.phrases[msg.currentLanguage].name| name}}"
+                          [materialTooltip]="model.phrases[msg.currentLanguage].name"
                           [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url"
-                          [trailingIcon]="model.complete ? 'check': null"
-                          trailingIconBackgroundColor="#003C5A"
+                          [right]="model.complete ? 'check': null"
+                          rightBackgroundColor="#003C5A"
                           (click)="model.complete = true">
                 </p-button>
             </div>
             <div class="col m6 align-middle">
-                <p-button label="{{msg.library  | name}}"
+                <p-button middle="{{msg.library | name}}"
                           [materialTooltip]="msg.library"
-                          [routerLink]="msg.home_url + '/' + msg.library_url">
+                          [routerLink]="msg.home_url + '/' + msg.library_url"
+                          rightBackgroundColor="#00A0C8">
                 </p-button>
             </div>
         </div>

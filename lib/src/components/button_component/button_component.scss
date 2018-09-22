@@ -56,6 +56,8 @@
                 width: 4rem;
                 min-width: 4rem;
                 line-height: 4rem;
+                transition-property: background-color;
+                transition-duration: 0.2s;
                 material-icon {
                     @include material-icon-size($mat-grid * 6);
                     color: white;

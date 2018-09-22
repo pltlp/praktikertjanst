@@ -3,7 +3,12 @@ import 'package:fo_components/fo_components.dart';
 import 'package:angular_components/angular_components.dart';
 
 @Component(
-    directives: const [MaterialTooltipDirective, MaterialIconComponent, NgIf, NgClass],
+    directives: const [
+      MaterialTooltipDirective,
+      MaterialIconComponent,
+      NgIf,
+      NgClass
+    ],
     providers: const [],
     pipes: [NamePipe],
     selector: 'p-button',
@@ -12,38 +17,47 @@ import 'package:angular_components/angular_components.dart';
     changeDetection: ChangeDetectionStrategy.OnPush)
 class ButtonComponent implements OnInit {
   @Input()
-  String label;
+  String left;
   @Input()
-  String labelBackgroundColor = '#00A0C8';
-  @Input()
-  String trailingIcon;
-  @Input()
-  String trailingIconBackgroundColor = '#00A0C8';
-  @Input()
-  String leadingContent;
-  @Input()
-  String leadingContentBackgrondColor = '#00A0C8';
-  @Input()
-  String labelHoverBackgroundColor = '#003C5A';
+  String middle;
 
-  String currentLabelBackgroundColor;
-  String currentLeadingContentBackgroundColor;
+  @Input()
+  String right;
+
+  @Input()
+  String middleBackgroundColor = '#00A0C8';
+
+  @Input()
+  String leftBackgrondColor = '#00A0C8';
+
+  @Input()
+  String rightBackgroundColor = '#003C5A';
+
+  @Input()
+  String middleHoverBackgroundColor = '#003C5A';
+
+  String currentMiddleBackgroundColor;
+  String currentLeftBackgroundColor;
+  String currentRightBackgroundColor;
 
   @override
   void ngOnInit() {
-    currentLabelBackgroundColor = labelBackgroundColor;
-    currentLeadingContentBackgroundColor = leadingContentBackgrondColor;
+    currentMiddleBackgroundColor = middleBackgroundColor;
+    currentLeftBackgroundColor = leftBackgrondColor;
+    currentRightBackgroundColor = rightBackgroundColor;
   }
 
   @HostListener('mouseenter')
   void onMouseEnter() {
-    currentLabelBackgroundColor = labelHoverBackgroundColor;
-    currentLeadingContentBackgroundColor = labelHoverBackgroundColor;
+    currentMiddleBackgroundColor = middleHoverBackgroundColor;
+    currentLeftBackgroundColor = middleHoverBackgroundColor;
+    currentRightBackgroundColor = middleHoverBackgroundColor;
   }
 
   @HostListener('mouseleave')
   void onMouseLeave() {
-    currentLabelBackgroundColor = labelBackgroundColor;
-    currentLeadingContentBackgroundColor = leadingContentBackgrondColor;
+    currentMiddleBackgroundColor = middleBackgroundColor;
+    currentLeftBackgroundColor = leftBackgrondColor;
+    currentRightBackgroundColor = rightBackgroundColor;
   }
 }
