@@ -14,6 +14,7 @@ import '../../services/quick_action_service.dart';
 import '../../services/video_service.dart';
 import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
+import '../word_list_component/word_list_component.dart';
 
 @Component(
     directives: const [
@@ -24,7 +25,9 @@ import '../carousel_component/carousel_component.dart';
       NgFor,
       routerDirectives,
       StepDirective,
-      MaterialTooltipDirective
+      MaterialTooltipDirective,
+      FoModalComponent,
+      WordListComponent
     ],
     providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
@@ -65,4 +68,5 @@ class CourseRoomComponent implements OnActivate {
   final QuickActionService quickActionService;
   final DocumentService documentService;
   String url;
+  bool wordListModalVisible = false;
 }

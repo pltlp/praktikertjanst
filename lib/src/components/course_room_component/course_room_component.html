@@ -40,10 +40,11 @@
     </div>
     <div class="row margin-bottom-x-large">
         <div class="col m6">
-            <!--
-            <p-button [label]="msg.word_list"
-                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.word_list_url"></p-button>
-        -->
+            <p-button 
+                      [middle]="msg.word_list | name"
+                      (click)="wordListModalVisible = true"
+                      rightBackgroundColor="#00A0C8">
+            </p-button>
         </div>
         <div class="col m6">
             <p-button [middle]="msg.document(1)"
@@ -54,3 +55,12 @@
         </div>
     </div>
 </div>
+
+<fo-modal [(visible)]="wordListModalVisible" [title]="msg.word_list | name">
+    <div class="row">
+        <div class="col">
+            <p-word-list></p-word-list>
+        </div>
+    </div>
+
+</fo-modal>
