@@ -42,7 +42,12 @@ import 'src/services/word_service.dart';
       MaterialMenuComponent,
       MaterialDropdownSelectComponent,
       MaterialSelectItemComponent,
-      WordListComponent
+      WordListComponent,
+      FoIconComponent,
+      MaterialPopupComponent,
+      PopupSourceDirective,
+      MaterialListComponent,
+      MaterialListItemComponent
     ],
     providers: [
       routerProvidersHash,
@@ -120,4 +125,7 @@ class AppComponent {
   final WordService wordService;
   bool loaded = false;
   bool wordListModalVisible = false;
+  bool languageSelectorVisible = false;
+  List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
+  String iconSize = '1.5em';
 }
