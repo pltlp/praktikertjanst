@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
@@ -16,26 +17,36 @@ class BreadcrumbsComponent {
   }
 
   void _onNavigationStart(RouterState state) {
-    routePaths.clear();
-    routeLabels.clear();
+    routerState = state;
+    final segments = routerState.path.split('/');
 
-    if (state.path != null && state.path.isNotEmpty) {
-      routeLabels = state.path.split('/');
+    crumbLinks = new List(segments.length);
 
-      for (var i = 0; i < routeLabels.length; i++) {
-        final inner = <String>[];
 
-        for (var j = 0; j <= i; j++) {
-          inner.add(routeLabels[j]);
-        }
-        routePaths.add(inner.join('/'));
-      }
+    for (var i = 0; i < segments.length; i++) {
+      final s = segments.take(i+1);
+      crumbLinks[i] = s.join('/');
     }
-    
+  }
+
+  List<String> get path =>
+      routerState == null ? [] : routerState.path.split('/');
+
+  List<String> evaluateBreadcrumbs(List<String> path) {
+    var breadcrumbs = path;
+
+    if (window.innerWidth < maxScreenWidth &&
+        breadcrumbs.join('').length > nrOfCharacters) {
+      breadcrumbs[(breadcrumbs.indexWhere((part) => part != '..'))] = '..';
+      breadcrumbs = evaluateBreadcrumbs(breadcrumbs);
+    }
+    return breadcrumbs;
   }
 
   final Router _router;
   final MessagesService msg;
-  final List<String> routePaths = [];
-  List<String> routeLabels = [];
+  final int nrOfCharacters = 35;
+  final int maxScreenWidth = 400;
+  List<String> crumbLinks = [];
+  RouterState routerState;
 }
