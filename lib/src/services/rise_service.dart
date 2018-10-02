@@ -16,21 +16,21 @@ class RiseService {
       ..phrases['sv'] = (new Phrases()
         ..name = 'Kvicksilver i naturen'
         ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            'Artikel om vad kvicksilver är och hur det påverkar naturen. '
         ..url = 'http://hg-rid.hemsida.eu/rise/kvicksilver_i_naturen/content/index.html')
       ..phrases['en'] = (new Phrases()
         ..name = 'Mercury in nature'
         ..url = 'http://hg-rid.hemsida.eu/rise/kvicksilver_i_naturen/content/index.html'
-        ..description = 'Rise content test'),
+        ..description = 'Article about what mercury is and how it affects nature.'),
     'important-concepts': new Rise()
       ..phrases['sv'] = (new Phrases()
-        ..name = 'Viktiga koncept'
+        ..name = 'Lagar och regler'
         ..url = 'http://hg-rid.hemsida.eu/rise/lagar_och_regler/content/index.html'
         ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+            'Artikel om de lagar och regler som styr hanteringen av amalgam.')
       ..phrases['en'] = (new Phrases()
-        ..name = 'Important cocepts'
+        ..name = 'Laws and regulations'
         ..url = 'http://hg-rid.hemsida.eu/rise/lagar_och_regler/content/index.html'
-        ..description = 'Important cocepts'),
+        ..description = 'Article on the laws and regulations governing the management of amalgam.'),
   };
 }
