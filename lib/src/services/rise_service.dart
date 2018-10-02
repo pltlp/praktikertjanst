@@ -17,20 +17,20 @@ class RiseService {
         ..name = 'Kvicksilver i naturen'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-        ..url = 'http://hg-rid.hemsida.eu/kvicksilver_i_naturen/content/index.html')
+        ..url = 'http://hg-rid.hemsida.eu/rise/kvicksilver_i_naturen/content/index.html')
       ..phrases['en'] = (new Phrases()
         ..name = 'Mercury in nature'
-        ..url = 'http://hg-rid.hemsida.eu/kvicksilver_i_naturen/content/index.html'
+        ..url = 'http://hg-rid.hemsida.eu/rise/kvicksilver_i_naturen/content/index.html'
         ..description = 'Rise content test'),
     'important-concepts': new Rise()
       ..phrases['sv'] = (new Phrases()
         ..name = 'Viktiga koncept'
-        ..url = 'http://hg-rid.hemsida.eu/lagar_och_regler/content/index.html'
+        ..url = 'http://hg-rid.hemsida.eu/rise/lagar_och_regler/content/index.html'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
       ..phrases['en'] = (new Phrases()
         ..name = 'Important cocepts'
-        ..url = 'http://hg-rid.hemsida.eu/lagar_och_regler/content/index.html'
+        ..url = 'http://hg-rid.hemsida.eu/rise/lagar_och_regler/content/index.html'
         ..description = 'Important cocepts'),
   };
 }
