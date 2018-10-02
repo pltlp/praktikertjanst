@@ -4,7 +4,7 @@
              style="min-height:300px">
             <div class="col m6 align-middle">
                 <p-button middle="{{model.phrases[msg.currentLanguage].name| name}}"
-                          [materialTooltip]="model.phrases[msg.currentLanguage].name"
+                          [materialTooltip]="model.phrases[msg.currentLanguage].description"
                           [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url"
                           [right]="model.complete ? 'check': null"
                           rightBackgroundColor="#003C5A"
