@@ -5,7 +5,7 @@ class CourseRoom extends Resource{
 
   String backgroud_image;
   List<String> video_ids = [];
-  List<String> quick_action_ids = [];
+  List<String> resources_ids = [];
   List<String> document_ids = [];
   List<String> word_ids = [];
 }

@@ -6,19 +6,20 @@ import '../models/video.dart';
 import 'resource_service.dart';
 
 @Injectable()
-class VideoService extends ResourceService {
+class VideoService extends ResourceService<Video> {
+  
   @override
   Future<Map<String, Video>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
 
-    final data = {
+     data = {
       'Så upplevde vi saneringen': new Video()
         ..icon = 'pool'
         ..id = 'Så upplevde vi saneringen'
         ..img_url =
             'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'This is how experienced remidiation process'
+          ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
           ..description =
               'Susann Balzar reflekterar kring saneringen på hennes mottagning.')
@@ -293,8 +294,8 @@ class VideoService extends ResourceService {
               'This is how environmental service company cleans a leveling vessel.')
         ..type = ResourceType.video
         ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
-    };
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+     };
 
     return data;
   }

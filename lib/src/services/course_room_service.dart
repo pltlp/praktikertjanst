@@ -2,123 +2,146 @@ import 'dart:async';
 import 'package:angular/angular.dart';
 import '../models/course_room.dart';
 import '../models/resource.dart';
+import '../models/resource_types.dart';
+import '../services/resource_service.dart';
 
 @Injectable()
-class CourseRoomService {
+class CourseRoomService extends ResourceService<CourseRoom> {
+  @override
   Future<Map<String, CourseRoom>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
-    return _data;
+
+    data = {
+      'kursrum-for-nyfikna': new CourseRoom()
+        ..backgroud_image = '/pics/CURIOSITY.jpg'
+        ..document_ids = [
+          'Hur farlig är kvicksilver amalgam?',
+          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Fördelning av kvicksilver avfall'
+        ]
+        ..icon = 'pool'
+        ..id = 'kursrum-for-nyfikna'
+        ..img_url = 'pics/quicksilver_management.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Kursrum för nyfikna'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'kursrum-for-nyfikna')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Course room for curious'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'courseroom-for-curious')
+        ..resources_ids = [
+          'Kvicksilver i naturen',
+          'Lagar och regler',
+          'Vad är vad på mottagningen?',
+          'Quiz för allmänheten'
+        ]
+        ..type = ResourceType.courseRoom
+        ..video_ids = [
+          'Rutiner vid patientbehandling',
+          'Skötsel av amalgamavskiljare under en vecka',
+          'Skötsel av amalgamavskiljare mer sällan'
+        ],
+      'kursrum-for-tandvardsteam': new CourseRoom()
+        ..backgroud_image = '/pics/child.jpg'
+        ..document_ids = [
+          'Hur farlig är kvicksilver amalgam?',
+          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Fördelning av kvicksilver avfall'
+        ]
+        ..icon = 'pool'
+        ..id = 'kursrum-for-tandvardsteam'
+        ..img_url = 'pics/quicksilver_management.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Kursrum för tandvårdsteam'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'kursrum-for-tandvardsteam')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Course room for dental teams'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'course-room-for-dental-teams')
+        ..resources_ids = [
+          'Kvicksilver i naturen',
+          'Lagar och regler',
+          'Vad är vad på mottagningen?',
+          'Tandvårdsteamets ansvar',
+          'Quiz för dig i tandvårdsteam'
+        ]
+        ..video_ids = [
+          'Rutiner vid patientbehandling',
+          'Skötsel av amalgamavskiljare',
+        ],
+      'kursrum-for-dentaltekniker': new CourseRoom()
+        ..backgroud_image =
+            'https://www.vaasa.fi/sites/default/files/styles/landscape/public/images/shutterstock_358661990_syda_productions_netti.jpg?itok=p9n_NZrf'
+        ..document_ids = [
+          'Hur farlig är kvicksilver amalgam?',
+          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Fördelning av kvicksilver avfall'
+        ]
+        ..icon = 'pool'
+        ..id = 'kursrum-for-dentaltekniker'
+        ..img_url = 'pics/quicksilver_management.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Kursrum för dentaltekniker'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'kursrum-for-dentaltekniker')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Course room for dental technicians'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'course-room-for-dental-technicians')
+        ..resources_ids = [
+          'Kvicksilver i naturen',
+          'Lagar och regler',
+          'Vad är vad på mottagningen?',
+          'Dentalteknikerns ansvar',
+          'Quiz för dig som dentaltekniker'
+        ]
+        ..type = ResourceType.courseRoom
+        ..video_ids = ['Att tänka på vid installation'],
+      'kursrum-for-servicetekniker': new CourseRoom()
+        ..backgroud_image =
+            'https://www.skane.se/siteassets/halsa_vard/ftv_skane_30_740x340.jpg'
+        ..document_ids = [
+          'Hur farlig är kvicksilver amalgam?',
+          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Fördelning av kvicksilver avfall'
+        ]
+        ..icon = 'pool'
+        ..id = 'kursrum-for-servicetekniker'
+        ..img_url = 'pics/quicksilver_management.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Kursrum för servicetekniker'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'kursrum-for-servicetekniker')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Course room for service technicians'
+          ..description =
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          ..url = 'courseroom-for-service-technicians')
+        ..resources_ids = [
+          'Kvicksilver i naturen',
+          'Lagar och regler',
+          'Vad är vad på mottagningen?',
+          'Instruktioner för miljöserviceföretag ',
+          'Quiz för dig på miljöserviceföretag'
+        ]
+        ..type = ResourceType.courseRoom
+        ..video_ids = [
+          'Byte av amalgamavskiljare',
+          'Funktionskontroll',
+          'Tömning av vattenlås',
+          'Slutförvaring',
+          'Sanaring'
+        ]
+    };
+    return data;
   }
-
-  Map<String, CourseRoom> get data => _data;
-
-  final Map<String, CourseRoom> _data = {
-    'kursrum-for-nyfikna': new CourseRoom()
-      ..backgroud_image = '/pics/CURIOSITY.jpg'
-      ..video_ids = [
-        'Rutiner vid patientbehandling',
-        'Skötsel av amalgamavskiljare under en vecka',
-        'Skötsel av amalgamavskiljare mer sällan'
-      ]
-      ..quick_action_ids = [
-        'Kvicksilver i naturen',
-        'Lagar och regler',
-        'Översikt på mottagningen',
-        'Quiz vad har du lärt dig?'
-      ]
-      ..document_ids = [
-        'Hur farlig är kvicksilver amalgam?',
-        'Hur farlig är kvicksilver amlgam egentligen?',
-        'Fördelning av kvicksilver avfall'
-      ]
-      ..phrases['sv'] = (new Phrases()
-        ..name = 'Kursrum för nyfikna'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
-      ..phrases['en'] = (new Phrases()
-        ..name = 'Course room for curious'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
-    'kursrum-for-tandvardsteam': new CourseRoom()
-      ..backgroud_image = '/pics/child.jpg'
-      ..video_ids = [
-        'Rutiner vid patientbehandling',
-        'Skötsel av amalgamavskiljare under en vecka',
-        'Skötsel av amalgamavskiljare mer sällan'
-      ]
-      ..quick_action_ids = [
-        'Kvicksilver i naturen',
-        'Lagar och regler',
-        'Översikt på mottagningen',
-        'Instruktioner för tandvårdsteam',
-        'Quiz vad har du lärt dig? - tandvårdsteam'
-      ]
-      ..document_ids = [
-        'Hur farlig är kvicksilver amalgam?',
-        'Hur farlig är kvicksilver amlgam egentligen?',
-        'Fördelning av kvicksilver avfall'
-      ]
-      ..phrases['sv'] = (new Phrases()
-        ..name = 'Kursrum för tandvårdsteam'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
-      ..phrases['en'] = (new Phrases()
-        ..name = 'Course room for dental teams'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
-    'kursrum-for-dentaltekniker': new CourseRoom()
-      ..backgroud_image =
-          'https://www.vaasa.fi/sites/default/files/styles/landscape/public/images/shutterstock_358661990_syda_productions_netti.jpg?itok=p9n_NZrf'
-      ..video_ids = ['Installation av amalgam avskiljare', 'Rätt installerat?']
-      ..quick_action_ids = [
-        'Kvicksilver i naturen',
-        'Lagar och regler',
-        'Översikt på mottagningen',
-        'Instruktioner för dentaltekniker',
-        'Quiz vad har du lärt dig? - dentaltekniker'
-      ]
-      ..document_ids = [
-        'Hur farlig är kvicksilver amalgam?',
-        'Hur farlig är kvicksilver amlgam egentligen?',
-        'Fördelning av kvicksilver avfall'
-      ]
-      ..phrases['sv'] = (new Phrases()
-        ..name = 'Kursrum för dentaltekniker'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
-      ..phrases['en'] = (new Phrases()
-        ..name = 'Course room for dental technicians'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
-    'kursrum-for-servicetekniker': new CourseRoom()
-      ..backgroud_image =
-          'https://www.skane.se/siteassets/halsa_vard/ftv_skane_30_740x340.jpg'
-      ..video_ids = [
-        'Byte av amalgamavskiljare (vått och torrt sugsystem)',
-        'Funktionskontroll',
-        'Rengöring och tömmning av vattenlås',
-        'Slutförvaring',
-        'Sanaring'
-      ]
-      ..quick_action_ids = [
-        'Kvicksilver i naturen',
-        'Lagar och regler',
-        'Översikt på mottagningen',
-        'Instruktioner för servicetekniker',
-        'Quiz vad har du lärt dig? - servicetekniker'
-      ]
-      ..document_ids = [
-        'Hur farlig är kvicksilver amalgam?',
-        'Hur farlig är kvicksilver amlgam egentligen?',
-        'Fördelning av kvicksilver avfall'
-      ]
-      ..phrases['sv'] = (new Phrases()
-        ..name = 'Kursrum för servicetekniker'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
-      ..phrases['en'] = (new Phrases()
-        ..name = 'Course room for service technicians'
-        ..description =
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
-  };
 }

@@ -21,7 +21,7 @@ class RiseComponent implements OnInit, OnActivate {
 
     try {
       model = riseService.data.values.firstWhere((resource) =>
-          resource.id == resourceUrl);
+          resource.phrases[msg.currentLanguage].url == resourceUrl);
     } on StateError {
       print('resourse not found');
     }

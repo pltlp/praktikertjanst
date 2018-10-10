@@ -25,7 +25,7 @@ class WordListComponent implements OnDestroy {
 
   @override
   void ngOnDestroy() {
-    _onSearchSubscription.cancel();
+    _onSearchSubscription?.cancel();
   }
 
   void _onSearchChange(List<SelectionChangeRecord> changes) {

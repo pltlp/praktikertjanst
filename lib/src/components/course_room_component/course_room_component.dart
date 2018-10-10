@@ -10,7 +10,7 @@ import '../../models/video.dart';
 import '../../services/course_room_service.dart';
 import '../../services/document_service.dart';
 import '../../services/messages_service.dart';
-import '../../services/quick_action_service.dart';
+import '../../services/quiz_service.dart';
 import '../../services/video_service.dart';
 import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
@@ -36,21 +36,26 @@ import '../word_list_component/word_list_component.dart';
     pipes: [NamePipe])
 class CourseRoomComponent implements OnActivate {
   CourseRoomComponent(this.router, this.msg, this.videoService,
-      this.courseRoomService, this.quickActionService, this.documentService);
+      this.courseRoomService, this.documentService,this.quizService);
 
   @override
   void onActivate(RouterState previous, RouterState current) {
     url = current.parameters['url'];
-    final qa = quickActionService.data.keys.firstWhere((q)=> quickActionService.data[q].phrases[msg.currentLanguage].url == url);
+
+    final qa = courseRoomService.data.keys.firstWhere((q)=> courseRoomService.data[q].phrases[msg.currentLanguage].url == url);
+   
     model =  courseRoomService.data[qa];
+
 
     if (model != null) {
       videos = model.video_ids
           .map((v) => videoService.data[v])
           .toList(growable: true);
-      resources = model.quick_action_ids
-          .map((id) => quickActionService.data[id])
+  
+      resources = model.resources_ids
+          .map((id) => courseRoomService.data[id])
           .toList(growable: false);
+   
 
       documents = model.document_ids
           .map((id) => documentService.data[id])
@@ -61,12 +66,12 @@ class CourseRoomComponent implements OnActivate {
   final Router router;
   final MessagesService msg;
   final VideoService videoService;
+  final QuizService quizService;
   List<Video> videos;
   List<Resource> resources;
   List<Document> documents;
   CourseRoom model;
   final CourseRoomService courseRoomService;
-  final QuickActionService quickActionService;
   final DocumentService documentService;
   String url;
   bool wordListModalVisible = false;

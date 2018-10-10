@@ -5,19 +5,26 @@
             allowfullscreen
             scrolling="no"></iframe>
 </div>
+
 <p-main-header class="margin-top-x-large margin-bottom-x-large"
                (buttonClick)="scrollTo($event)"></p-main-header>
+
 <div #carousel>
     <p-carousel [header]="msg.good_examples"
                 [models]="videos"></p-carousel>
 </div>
+
+
+
 <p-make-difference backgroundImage="url('pics/clean_future.jpg')"
-                   [model]="quickActionService.data['kvicksilver-i-naturen']"></p-make-difference>
+                   [model]="riseService.data['Kvicksilver i naturen']"></p-make-difference>
+
+
 <div class="row margin-top-x-large margin-bottom-x-large collapse">
     <div class="col m4"
          *ngFor="let resource of resources">
-        <p-quick-action [model]="resource"
-                        [routerLink]="msg.home_url +'/'+ resource.phrases[msg.currentLanguage].url">
-        </p-quick-action>
+        <p-resource [model]="resource"
+                    [routerLink]="msg.home_url + '/' + resource.phrases[msg.currentLanguage].url">
+        </p-resource>
     </div>
 </div>

@@ -1,4 +1,5 @@
-<div class="row" style="margin-top:150px">
+<div class="row"
+     style="margin-top:150px">
     <div class="col">
         <h1 class="color-astronautblue">{{msg.library_header}}</h1>
         <material-auto-suggest-input leadingGlyph="search"
@@ -15,7 +16,31 @@
         <h1 class="color-astronautblue">{{msg.course_modules | name}}</h1>
     </div>
 </div>
-<p-quick-actions></p-quick-actions>
+<div class="row">
+    <div class="col m4"
+         *ngFor="let rise of riseService.data.values">
+        <p-resource [model]="rise"
+                    [routerLink]="msg.home_url + '/' + msg.library + '/' + rise.phrases[msg.currentLanguage].url">
+
+        </p-resource>
+    </div>
+</div>
+<div class="row">
+    <div class="col m4"
+         *ngFor="let quiz of quizService.data.values">
+        <p-resource [model]="quiz">
+
+        </p-resource>
+    </div>
+</div>
+<div class="row">
+    <div class="col m4"
+         *ngFor="let video of videoService.data.values">
+        <p-resource [model]="video">
+
+        </p-resource>
+    </div>
+</div>
 <div class="background-color-alto margin-top-large">
     <p-documents [offsetTop]="0"></p-documents>
 </div>

@@ -12,7 +12,7 @@ class DocumentService extends ResourceService<Document> {
   Future<Map<String, Document>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
 
-    final data = {
+     data = {
       'Hur farlig är kvicksilver amalgam?': new Document()
         ..icon = 'pool'
         ..id = 'Hur farlig är kvicksilver amalgam?'

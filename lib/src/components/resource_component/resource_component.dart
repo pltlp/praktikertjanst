@@ -5,10 +5,10 @@ import '../../models/resource.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-    selector: 'p-quick-action',
-    templateUrl: 'quick_action_component.html',
+    selector: 'p-resource',
+    templateUrl: 'resource_component.html',
     styleUrls: const [
-      'quick_action_component.css'
+      'resource_component.css'
     ],
     directives: const [
       MaterialIconComponent,
@@ -16,8 +16,8 @@ import '../../services/messages_service.dart';
     pipes: [
       NamePipe
     ])
-class QuickActionComponent implements OnInit {
-  QuickActionComponent(this.msg);
+class ResourceComponent implements OnInit {
+  ResourceComponent(this.msg);
 
   @override
   void ngOnInit() {

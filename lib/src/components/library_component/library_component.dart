@@ -4,15 +4,19 @@ import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../components/documents_component/documents_component.dart';
-import '../../components/quick_actions_component/quick_actions_component.dart';
+import '../../components/resource_component/resource_component.dart';
 import '../../services/messages_service.dart';
-import '../../services/quick_action_service.dart';
+import '../../services/quiz_service.dart';
+import '../../services/rise_service.dart';
+import '../../services/video_service.dart';
 
 @Component(
     directives: const [
-      QuickActionsComponent,
       MaterialAutoSuggestInputComponent,
-      DocumentsComponent
+      DocumentsComponent,
+      NgFor,
+      ResourceComponent,
+      routerDirectives 
     ],    
     selector: 'p-library',
     styleUrls: const ['library_component.css'],
@@ -20,29 +24,34 @@ import '../../services/quick_action_service.dart';
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class LibraryComponent implements OnDestroy {
-  LibraryComponent(this.quickActionService, this.router, this.msg) {
+  LibraryComponent(this.router, this.msg, this.riseService, this.quizService, this.videoService) {
     
     // TODO: call whenever the language is changed
-    _initSearchOptions();
     
+    /*
+    _initSearchOptions();
+   
     _onSearchSubscription =
         searchModel.selectionChanges.listen(_onSearchChange);
+         */
   }
 
   @override
   void ngOnDestroy() {
-    _onSearchSubscription.cancel();
+    _onSearchSubscription?.cancel();
   }
-
+   /*
   void _initSearchOptions() {
     final optionGroups = <OptionGroup<SearchOption>>[
       new OptionGroup.withLabel(
+     
           quickActionService.data.values
               .map((action) => new SearchOption()
                 ..url = action.phrases[msg.currentLanguage].url
                 ..label = action.phrases[msg.currentLanguage].name)
               .toList(growable: false),
           msg.course_modules)
+    
     ];
 
     searchOptions =
@@ -58,6 +67,7 @@ class LibraryComponent implements OnDestroy {
       }
     }
   }
+  */
 
   @Input()
   String backgroundImage;
@@ -68,7 +78,10 @@ class LibraryComponent implements OnDestroy {
   bool showModal = false;
   Router router;
   MessagesService msg;
-  final QuickActionService quickActionService;
+  RiseService riseService;
+  QuizService quizService;
+  VideoService videoService;
+
   StreamSubscription<List<SelectionChangeRecord>> _onSearchSubscription;
 }
 
