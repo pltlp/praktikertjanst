@@ -24,7 +24,8 @@
                         <material-popup [source]="soruce"
                                         [enforceSpaceConstraints]="true"
                                         [(visible)]="languageSelectorVisible"
-                                        [preferredPositions]="position" class="clickable">
+                                        [preferredPositions]="position"
+                                        class="clickable">
                             <material-list>
                                 <material-list-item>{{msg.swedish | name}}</material-list-item>
                                 <material-list-item>{{msg.spanish | name}}</material-list-item>
@@ -88,10 +89,11 @@
 
 <fo-modal [(visible)]="wordListModalVisible"
           [title]="msg.word_list | name">
-    <div class="row">
-        <div class="col">
-            <p-word-list></p-word-list>
+    <div id="modal">
+        <div class="row">
+            <div class="col">
+                <p-word-list></p-word-list>
+            </div>
         </div>
     </div>
-
 </fo-modal>

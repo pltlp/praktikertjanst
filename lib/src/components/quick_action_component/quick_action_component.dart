@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/quick_action.dart';
+import '../../models/resource.dart';
 import '../../services/messages_service.dart';
 
 @Component(
@@ -28,7 +28,7 @@ class QuickActionComponent implements OnInit {
   final MessagesService msg;
 
   @Input('model')
-  QuickAction model;
+  Resource model;
 
   @Input('backgroundColor')
   String backgroundColor;

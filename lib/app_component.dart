@@ -12,6 +12,7 @@ import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/components/word_list_component/word_list_component.dart';
+import 'src/components/word_preview_component/word_preview_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
@@ -21,6 +22,7 @@ import 'src/services/quick_action_service.dart';
 import 'src/services/rise_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
+
 
 @Component(
     selector: 'p-app',
@@ -47,7 +49,8 @@ import 'src/services/word_service.dart';
       MaterialPopupComponent,
       PopupSourceDirective,
       MaterialListComponent,
-      MaterialListItemComponent
+      MaterialListItemComponent,
+      WordPreviewComponent
     ],
     providers: [
       routerProvidersHash,

@@ -13,8 +13,30 @@
         </material-auto-suggest-input>
     </div>
 </div>
-<div class="row">
-    <div class="col">
+<div class="row"
+     *ngIf="selectedWord != null">
+    <div class="col text-center">
         <p-word [model]="selectedWord"></p-word>
+        <material-button class="close-button"  (trigger)="selectedWord = null" raised> 
+            {{msg.close}}
+        </material-button>
     </div>
 </div>
+<ng-container *ngIf="selectedWord == null">
+    <div id="preview"
+         *ngFor="let wordPreviewModel of wordService.data.values">
+        <div (click)="selectedWord = wordPreviewModel">
+            <div class="row">
+                <div class="col m10 align-middle">
+                    <h3 class="color-astronautblue"> {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
+                    <p>{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
+                </div>
+                <div class="col m2 align-middle">
+                    <img class="image"
+                         [src]="wordPreviewModel.img_urls[0]"
+                         [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

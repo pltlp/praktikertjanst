@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
+import '../models/resource.dart';
 import '../models/word.dart';
 
 @Injectable()

@@ -2,14 +2,12 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 @import 'package:fo_components/mixins';
-
 @include fo-colors($cerulean, $astronautBlue, carnation);
-
 :host {
     div#page {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;        
+        min-height: 100vh;
         main {
             flex: 1 0 auto;
         }
@@ -41,15 +39,19 @@
                     margin-left: 2em;
                 }
                 a:hover {
-                    color: $astronautBlue; 
+                    color: $astronautBlue;
                     transition-duration: 0.2s;
                     transition-property: color;
                 }
-                .clickable
-                {
+                .clickable {
                     cursor: pointer;
                 }
             }
         }
     }
+}
+
+div#modal
+{
+    max-width: 600px;
 }

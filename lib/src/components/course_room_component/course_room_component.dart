@@ -5,7 +5,7 @@ import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/course_room.dart';
 import '../../models/document.dart';
-import '../../models/quick_action.dart';
+import '../../models/resource.dart';
 import '../../models/video.dart';
 import '../../services/course_room_service.dart';
 import '../../services/document_service.dart';
@@ -40,14 +40,15 @@ class CourseRoomComponent implements OnActivate {
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    url = current.path.split('/').last;
-    model = courseRoomService.data[url];
+    url = current.parameters['url'];
+    final qa = quickActionService.data.keys.firstWhere((q)=> quickActionService.data[q].phrases[msg.currentLanguage].url == url);
+    model =  courseRoomService.data[qa];
 
     if (model != null) {
       videos = model.video_ids
           .map((v) => videoService.data[v])
           .toList(growable: true);
-      quickActions = model.quick_action_ids
+      resources = model.quick_action_ids
           .map((id) => quickActionService.data[id])
           .toList(growable: false);
 
@@ -61,7 +62,7 @@ class CourseRoomComponent implements OnActivate {
   final MessagesService msg;
   final VideoService videoService;
   List<Video> videos;
-  List<QuickAction> quickActions;
+  List<Resource> resources;
   List<Document> documents;
   CourseRoom model;
   final CourseRoomService courseRoomService;

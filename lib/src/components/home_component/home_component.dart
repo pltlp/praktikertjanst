@@ -2,7 +2,7 @@ import 'dart:html' as html;
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/quick_action.dart';
+import '../../models/resource.dart';
 import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/quick_action_service.dart';
@@ -47,12 +47,12 @@ class HomeComponent {
       videoService.data['Goda exempel - installation'],
     ];
 
-    quickActions = [
-      quickActionService.data['För dig på tandläkarmottagning'],
-      quickActionService.data['För dig som är dentaltekniker'],
-      quickActionService.data['Lagar och regler'],
-      quickActionService.data['För dig som är servicetekniker'],
-      quickActionService.data['För dig som bara är nyfiken'],
+    resources = [
+      quickActionService.data['kursrum-for-tandvardsteam'],
+      quickActionService.data['kursrum-for-dentaltekniker'],
+      quickActionService.data['lagar-och-regler'],
+      quickActionService.data['kursrum-for-servicetekniker'],
+      quickActionService.data['for-dig-som-ar-nyfiken'],
       quickActionService.data['Quiz vad har du lärt dig?'],
     ];
   }
@@ -68,7 +68,7 @@ class HomeComponent {
   }
 
   QuickActionService quickActionService;
-  List<QuickAction> quickActions;
+  List<Resource> resources;
   Router router;
   MessagesService msg;
   List<Video> videos;

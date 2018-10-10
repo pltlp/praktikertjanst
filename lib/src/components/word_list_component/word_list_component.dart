@@ -11,7 +11,7 @@ import 'word_component/word_component.dart';
     selector: 'p-word-list',
     templateUrl: 'word_list_component.html',
     styleUrls: const ['word_list_component.css'],
-    directives: const [MaterialAutoSuggestInputComponent, WordComponent],
+    directives: const [MaterialAutoSuggestInputComponent, WordComponent, NgIf, NgFor, MaterialButtonComponent],
     pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class WordListComponent implements OnDestroy {
@@ -32,8 +32,8 @@ class WordListComponent implements OnDestroy {
     if (changes.isNotEmpty && changes.first.added.isNotEmpty) {
       final SearchOption model = changes.first.added.first;
       selectedWord = wordService.data[model.id];
-    }
-    else selectedWord = null;
+    } else
+      selectedWord = null;
   }
 
   void _initSearchOptions() {
@@ -49,6 +49,8 @@ class WordListComponent implements OnDestroy {
         new StringSelectionOptions<SearchOption>.withOptionGroups(optionGroups);
   }
 
+  @Input()
+  Word model;
   final MessagesService msg;
   final WordService wordService;
   Word selectedWord;

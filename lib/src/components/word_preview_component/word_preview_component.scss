@@ -1,0 +1,21 @@
+:host {
+    div {
+        .row {
+            .col {
+                img.image {
+                    height: 7em;
+                    width: auto;
+                }
+            }
+        }
+    }
+ 
+}
+
+:host:hover {
+    .row{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+}

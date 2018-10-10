@@ -1,11 +1,6 @@
-class Word {
+import '../models/resource.dart';
+
+class Word extends Resource {
   Word();
-
   List<String> img_urls = [];
-  Map<String, Phrases> phrases = {};
-}
-
-class Phrases {
-  String name;
-  String description;
 }

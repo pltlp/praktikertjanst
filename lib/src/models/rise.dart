@@ -1,11 +1,6 @@
-class Rise {
+import 'resource.dart';
+
+class Rise extends Resource{
   Rise();
-
-  Map<String, Phrases> phrases = {};
-}
-
-class Phrases {
-  String name;
-  String url;
-  String description;
+  Map<String,String> url = {};
 }

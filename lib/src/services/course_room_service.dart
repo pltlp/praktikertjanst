@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
 import '../models/course_room.dart';
+import '../models/resource.dart';
 
 @Injectable()
 class CourseRoomService {
@@ -13,7 +14,7 @@ class CourseRoomService {
 
   final Map<String, CourseRoom> _data = {
     'kursrum-for-nyfikna': new CourseRoom()
-      ..img_url = '/pics/CURIOSITY.jpg'
+      ..backgroud_image = '/pics/CURIOSITY.jpg'
       ..video_ids = [
         'Rutiner vid patientbehandling',
         'Skötsel av amalgamavskiljare under en vecka',
@@ -31,15 +32,15 @@ class CourseRoomService {
         'Fördelning av kvicksilver avfall'
       ]
       ..phrases['sv'] = (new Phrases()
-        ..title = 'Kursrum för nyfikna'
+        ..name = 'Kursrum för nyfikna'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
       ..phrases['en'] = (new Phrases()
-        ..title = 'Course room for curious'
+        ..name = 'Course room for curious'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
     'kursrum-for-tandvardsteam': new CourseRoom()
-      ..img_url = '/pics/child.jpg'
+      ..backgroud_image = '/pics/child.jpg'
       ..video_ids = [
         'Rutiner vid patientbehandling',
         'Skötsel av amalgamavskiljare under en vecka',
@@ -58,15 +59,15 @@ class CourseRoomService {
         'Fördelning av kvicksilver avfall'
       ]
       ..phrases['sv'] = (new Phrases()
-        ..title = 'Kursrum för tandvårdsteam'
+        ..name = 'Kursrum för tandvårdsteam'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
       ..phrases['en'] = (new Phrases()
-        ..title = 'Course room for dental teams'
+        ..name = 'Course room for dental teams'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
     'kursrum-for-dentaltekniker': new CourseRoom()
-      ..img_url =
+      ..backgroud_image =
           'https://www.vaasa.fi/sites/default/files/styles/landscape/public/images/shutterstock_358661990_syda_productions_netti.jpg?itok=p9n_NZrf'
       ..video_ids = ['Installation av amalgam avskiljare', 'Rätt installerat?']
       ..quick_action_ids = [
@@ -82,15 +83,15 @@ class CourseRoomService {
         'Fördelning av kvicksilver avfall'
       ]
       ..phrases['sv'] = (new Phrases()
-        ..title = 'Kursrum för dentaltekniker'
+        ..name = 'Kursrum för dentaltekniker'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
       ..phrases['en'] = (new Phrases()
-        ..title = 'Course room for dental technicians'
+        ..name = 'Course room for dental technicians'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud '),
     'kursrum-for-servicetekniker': new CourseRoom()
-      ..img_url =
+      ..backgroud_image =
           'https://www.skane.se/siteassets/halsa_vard/ftv_skane_30_740x340.jpg'
       ..video_ids = [
         'Byte av amalgamavskiljare (vått och torrt sugsystem)',
@@ -112,11 +113,11 @@ class CourseRoomService {
         'Fördelning av kvicksilver avfall'
       ]
       ..phrases['sv'] = (new Phrases()
-        ..title = 'Kursrum för servicetekniker'
+        ..name = 'Kursrum för servicetekniker'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
       ..phrases['en'] = (new Phrases()
-        ..title = 'Course room for service technicians'
+        ..name = 'Course room for service technicians'
         ..description =
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ')
   };

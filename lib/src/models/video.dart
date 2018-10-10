@@ -1,14 +1,6 @@
-class Video {
+import 'resource.dart';
+
+class Video extends Resource{
   Video();
-
-  String img_url;
-  String id;
-
-  Map<String, Phrases> phrases = {};
-}
-
-class Phrases {
-  String name;
-  String url;
-  String description;
+  Map<String,String> url = {};
 }

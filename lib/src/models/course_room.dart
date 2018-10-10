@@ -1,15 +1,12 @@
-class CourseRoom {
+import '../models/resource.dart';
+
+class CourseRoom extends Resource{
   CourseRoom();
 
-  String img_url;
+  String backgroud_image;
   List<String> video_ids = [];
   List<String> quick_action_ids = [];
   List<String> document_ids = [];
   List<String> word_ids = [];
-  Map<String, Phrases> phrases = {};
 }
 
-class Phrases {
-  String title;
-  String description;
-}
