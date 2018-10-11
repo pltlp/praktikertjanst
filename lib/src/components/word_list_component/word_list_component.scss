@@ -11,29 +11,16 @@
 
 :host {
     @include colorize("material-button.close-button", #00A0C8);
-    div#previw {
-        .row {
-            .col {
-                p {
-                    text-align: justify;
-                }
-                img.image {
-                    height: 7em;
-                    width: auto;
-                }
+    div#preview {
+        cursor: pointer;
+        .col {
+            p {
+                text-align: justify;
             }
+            img.image {}
         }
     }
     div#preview:hover {
-        .row {
-            opacity: 0.8;
-            cursor: pointer;
-        }
+        opacity: 0.8;
     }
-}
-
-div#modal
-{
-    width: 600px;
-    height: 500px;
 }

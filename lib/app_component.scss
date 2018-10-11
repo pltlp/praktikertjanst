@@ -4,6 +4,7 @@
 @import 'package:fo_components/mixins';
 @include fo-colors($cerulean, $astronautBlue, carnation);
 :host {
+    display: block;
     div#page {
         display: flex;
         flex-direction: column;
@@ -49,10 +50,4 @@
             }
         }
     }
-}
-
-div#modal
-{
-    width: 600px;
-    height: 500px;
 }

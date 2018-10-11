@@ -87,8 +87,11 @@
     </footer>
 </div>
 
+
 <fo-modal [(visible)]="wordListModalVisible"
-          [title]="msg.word_list | name">
+          [title]="msg.word_list | name"
+          [fixedWidth]="true"
+          [fixedHeight]="true"> 
     <div id="modal">
         <div class="row">
             <div class="col">

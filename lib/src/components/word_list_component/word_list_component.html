@@ -1,46 +1,47 @@
-<div id="modal">
-    <div class="row">
-        <div class="col">
-            <material-auto-suggest-input leadingGlyph="search"
-                                         [showClearIcon]="true"
-                                         class="color-astronautblue"
-                                         [label]="msg.type_here_to_search"
-                                         [shouldClearOnSelection]="false"
-                                         [popupMatchInputWidth]="true"
-                                         [highlightOptions]="true"
-                                         [selection]="searchModel"
-                                         [selectionOptions]="searchOptions"
-                                         [filterSuggestions]="true">
-            </material-auto-suggest-input>
-        </div>
+<div class="row">
+    <div class="col text-center">
+        <material-auto-suggest-input leadingGlyph="search"
+                                     [showClearIcon]="true"
+                                     class="color-astronautblue text-left"
+                                     [label]="msg.type_here_to_search"
+                                     [shouldClearOnSelection]="false"
+                                     [popupMatchInputWidth]="true"
+                                     [highlightOptions]="true"
+                                     [selection]="searchModel"
+                                     [selectionOptions]="searchOptions"
+                                     [filterSuggestions]="true">
+        </material-auto-suggest-input>
     </div>
-    <div class="row"
-         *ngIf="selectedWord != null">
-        <div class="col">
-            <p-word [model]="selectedWord"></p-word>
-            <material-button class="close-button"
-                             (trigger)="selectedWord = null"
-                             raised>
-                <material-icon icon="keyboard_arrow_left"></material-icon>
-            </material-button>
-        </div>
-    </div>
-    <ng-container *ngIf="selectedWord == null">
-        <div id="preview"
-             *ngFor="let wordPreviewModel of wordService.data.values">
-            <div (click)="selectedWord = wordPreviewModel">
-                <div class="row">
-                    <div class="col m10 align-middle">
-                        <h3 class="color-astronautblue"> {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
-                        <p>{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
-                    </div>
-                    <div class="col m2 align-middle">
-                        <img class="image"
-                             [src]="wordPreviewModel.img_urls[0]"
-                             [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </ng-container>
 </div>
+
+
+<div class="row"
+     *ngIf="selectedWord != null">
+    <div class="col text-center">
+        <p-word [model]="selectedWord"></p-word>
+        <material-button class="close-button"
+                         (trigger)="selectedWord = null"
+                         raised>
+            {{msg.close}}
+        </material-button>
+    </div>
+</div>
+<ng-container *ngIf="selectedWord == null">
+
+    <div class="row margin-top-medium"
+         id="preview"
+         (click)="selectedWord = wordPreviewModel"
+         *ngFor="let wordPreviewModel of wordService.data.values">
+        <div class="col m10 align-middle">
+            <h3 class="color-astronautblue margin-top-none margin-bottom-none">
+                {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
+            <p class="margin-top-x-small margin-bottom-none">{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
+        </div>
+        <div class="col m2 align-middle">
+            <img class="image"
+                 [src]="wordPreviewModel.img_urls[0]"
+                 [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
+        </div>
+    </div>
+
+</ng-container>
