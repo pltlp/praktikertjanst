@@ -37,15 +37,41 @@ h1.large {
     font-size: 4rem;
 }
 
+iframe {
+    overflow: hidden;
+}
 
-iframe
-{
- overflow: hidden;   
+.icon-quiz:before {
+    content: "\e900";
+    color: #fff;
 }
-/*
-.row {
-    .col {
-        border: 1px solid black;
-    }
+
+.icon-language:before {
+    content: "\e901";
+    color: #fff;
 }
-*/
+
+.icon-video:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-article:before {
+    content: "\e903";
+    color: #fff;
+}
+
+.icon-library:before {
+    content: "\e904";
+    color: #fff;
+}
+
+.icon-about:before {
+    content: "\e905";
+    color: #fff;
+}
+
+.icon-wordlist:before {
+    content: "\e906";
+    color: #fff;
+}

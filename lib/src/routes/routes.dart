@@ -105,12 +105,12 @@ class Routes {
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/:url',
-            component: rc.RiseComponentNgFactory,
-          ),
-          RouteDefinition(
             path: '${msg.home_url}/${msg.about}',
             component: ac.AboutComponentNgFactory,
+          ),
+          RouteDefinition(
+            path: '${msg.home_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition.redirect(
             path: '.+',

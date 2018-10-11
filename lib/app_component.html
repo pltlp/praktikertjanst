@@ -32,31 +32,22 @@
                                 <material-list-item>{{msg.english | name}}</material-list-item>
                             </material-list>
                         </material-popup>
-                        <fo-icon icon="information"
+                        <fo-icon icon="about"
                                  class="color-white clickable"
                                  style="margin-right:0.5em"
                                  [routerLink]="msg.home_url + '/' + msg.about_url"
                                  [size]="iconSize"></fo-icon>
-                        <fo-icon icon="category-bundle"
+                        <fo-icon icon="library"
                                  class="color-white clickable"
                                  style="margin-right:0.5em"
                                  [routerLink]="msg.home_url + '/' + msg.library_url"
                                  [size]="iconSize"></fo-icon>
-                        <fo-icon icon="faq"
+                        <fo-icon icon="wordlist"
                                  class="color-white clickable"
                                  style="margin-right:0.5em"
                                  (click)="wordListModalVisible = true"
                                  [size]="iconSize"></fo-icon>
                     </p>
-
-                    <!--
-                    <material-menu [menu]="menuModel">
-                        <section menu-button>
-                            <material-icon icon="menu"
-                                           class="menu-icon"></material-icon>
-                        </section>
-                    </material-menu>
-                -->
                 </div>
                 <div class="m10 col text-right align-bottom hide-for-small">
                     <material-dropdown-select style="margin-left:2em; color:white"
@@ -91,7 +82,7 @@
 <fo-modal [(visible)]="wordListModalVisible"
           [title]="msg.word_list | name"
           [fixedWidth]="true"
-          [fixedHeight]="true"> 
+          [fixedHeight]="true">
     <div id="modal">
         <div class="row">
             <div class="col">
