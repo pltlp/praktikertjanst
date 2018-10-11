@@ -53,8 +53,7 @@ class CourseRoomComponent implements OnActivate {
       for (var i = 0; i < model.resources_ids.length; i++) {
         Resource resource;
         resource = quizService.data[model.resources_ids[i]];
-        if (resource == null)
-          resource = riseService.data[model.resources_ids[i]];
+        resource ??= riseService.data[model.resources_ids[i]];
         resources.add(resource);
       }
 
