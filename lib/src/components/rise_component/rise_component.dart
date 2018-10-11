@@ -17,8 +17,7 @@ class RiseComponent implements OnInit, OnActivate {
   @override
   void onActivate(RouterState previous, RouterState current) async {
     final resourceUrl = current.parameters['url'];
-    print(resourceUrl);
-
+    
     try {
       model = riseService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl);

@@ -38,12 +38,12 @@ class Routes {
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
-            component: rc.RiseComponentNgFactory,
-          ),
-          RouteDefinition(
             path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}',
             component: crc.CourseRoomComponentNgFactory,
+          ),
+          RouteDefinition(
+            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:

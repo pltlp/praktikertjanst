@@ -130,7 +130,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Kvicksilver i naturen',
           'Lagar och regler',
           'Vad är vad på mottagningen?',
-          'Instruktioner för miljöserviceföretag ',
+          'Instruktioner för miljöserviceföretag',
           'Quiz för dig på miljöserviceföretag'
         ]
         ..type = ResourceType.courseRoom

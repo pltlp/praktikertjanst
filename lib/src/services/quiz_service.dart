@@ -32,8 +32,8 @@ class QuizService extends ResourceService<Quiz> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för dig i tandvårdsteam '
-          ..url = 'quiz-for-dig-i-tandvårdsteam '
+          ..name = 'Quiz för dig i tandvårdsteam'
+          ..url = 'quiz-for-dig-i-tandvardsteam'
           ..description =
               'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.')
         ..phrases['en'] = (new Phrases()
@@ -42,7 +42,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz,
-      'Quiz för dig som dentaltekniker ': new Quiz()
+      'Quiz för dig som dentaltekniker': new Quiz()
         ..icon = 'gavel'
         ..id = 'Quiz för dig som dentaltekniker'
         ..img_url = 'pics/quicksilver_management.jpg'
