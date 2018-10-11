@@ -11,7 +11,7 @@ import 'word_component/word_component.dart';
     selector: 'p-word-list',
     templateUrl: 'word_list_component.html',
     styleUrls: const ['word_list_component.css'],
-    directives: const [MaterialAutoSuggestInputComponent, WordComponent, NgIf, NgFor, MaterialButtonComponent],
+    directives: const [MaterialAutoSuggestInputComponent, WordComponent, NgIf, NgFor, MaterialButtonComponent, MaterialIconComponent],
     pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class WordListComponent implements OnDestroy {

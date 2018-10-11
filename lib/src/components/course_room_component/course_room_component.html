@@ -2,7 +2,7 @@
      style="margin-top:150px">
     <div class="row">
         <div class="col">
-            <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].name}}</h1> 
+            <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].name}}</h1>
             <p class="justified">{{model.phrases[msg.currentLanguage].description}}</p>
         </div>
     </div>
@@ -39,13 +39,15 @@
         </div>
     </div>
     <div class="row margin-bottom-x-large">
-        <div class="col">
+        <div class="col m3"></div>
+        <div class="col m6">
             <p-button [middle]="msg.document(1)"
                       [materialTooltip]="msg.document(1)"
                       [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url"
                       rightBackgroundColor="#00A0C8">
             </p-button>
         </div>
+        <div class="col m3"></div>
     </div>
 </div>
 <!--

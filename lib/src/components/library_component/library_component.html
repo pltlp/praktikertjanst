@@ -17,24 +17,20 @@
     </div>
 </div>
 <div class="row">
-    <div class="col m4"
+    <div class="col m4 s6"
          *ngFor="let rise of riseService.data.values">
         <p-resource [model]="rise"
                     [routerLink]="msg.home_url + '/' + msg.library + '/' + rise.phrases[msg.currentLanguage].url">
 
         </p-resource>
     </div>
-</div>
-<div class="row">
-    <div class="col m4"
+    <div class="col m4 s6"
          *ngFor="let quiz of quizService.data.values">
         <p-resource [model]="quiz">
 
         </p-resource>
     </div>
-</div>
-<div class="row">
-    <div class="col m4"
+    <div class="col m4 s6"
          *ngFor="let video of videoService.data.values">
         <p-resource [model]="video">
 
