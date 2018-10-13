@@ -3,9 +3,9 @@ description: Portal for praktikertjänst
 version: 0.0.1
 author: dmarl <dmarlovic83@gmail.com>
 environment:
-  sdk: '>=2.0.0 <3.0.0'
+  sdk: ">=2.0.0 <3.0.0"
 dependencies:
-  angular: ^5.0.0
+  angular: ^5.1.0
   angular_components: ^0.9.1
   angular_router: ^2.0.0-alpha+19
   d_components:
@@ -21,7 +21,7 @@ dev_dependencies:
   sass_builder: ^2.1.1
 
 dependency_overrides:
-  build: 1.0.0
+  build: ^1.0.1
 
 
 

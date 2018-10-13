@@ -30,10 +30,13 @@
                     }
                 }
                 display: block;
-                material-icon.main-icon {
-                    @include material-icon-size($mat-grid * 4);
-                    color: white;
+                section {
+                    material-icon.menu-icon{
+                        @include material-icon-size($mat-grid * 7);
+                        color: white;
+                    }
                 }
+               
                 a {
                     text-decoration: none;
                     color: white;

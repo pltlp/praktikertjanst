@@ -13,41 +13,12 @@
                          [routerLink]="msg.home_url">
                 </div>
                 <div class="col s8 hide-for-large hide-for-medium text-right align-bottom">
-                    <p>
-                        <fo-icon icon="day"
-                                 class="color-white"
-                                 style="margin-right:0.5em"
-                                 popupSource
-                                 #soruce="popupSource"
-                                 (click)="languageSelectorVisible = true"
-                                 [size]="iconSize"></fo-icon>
-                        <material-popup [source]="soruce"
-                                        [enforceSpaceConstraints]="true"
-                                        [(visible)]="languageSelectorVisible"
-                                        [preferredPositions]="position"
-                                        class="clickable">
-                            <material-list>
-                                <material-list-item>{{msg.swedish | name}}</material-list-item>
-                                <material-list-item>{{msg.spanish | name}}</material-list-item>
-                                <material-list-item>{{msg.english | name}}</material-list-item>
-                            </material-list>
-                        </material-popup>
-                        <fo-icon icon="about"
-                                 class="color-white clickable"
-                                 style="margin-right:0.5em"
-                                 [routerLink]="msg.home_url + '/' + msg.about_url"
-                                 [size]="iconSize"></fo-icon>
-                        <fo-icon icon="library"
-                                 class="color-white clickable"
-                                 style="margin-right:0.5em"
-                                 [routerLink]="msg.home_url + '/' + msg.library_url"
-                                 [size]="iconSize"></fo-icon>
-                        <fo-icon icon="wordlist"
-                                 class="color-white clickable"
-                                 style="margin-right:0.5em"
-                                 (click)="wordListModalVisible = true"
-                                 [size]="iconSize"></fo-icon>
-                    </p>
+                    <material-menu [menu]="menuModel">
+                        <section menu-button>
+                            <material-icon icon="arrow_drop_down"
+                                           class="menu-icon"></material-icon>
+                        </section>
+                    </material-menu>
                 </div>
                 <div class="m10 col text-right align-bottom hide-for-small">
                     <material-dropdown-select style="margin-left:2em; color:white"
