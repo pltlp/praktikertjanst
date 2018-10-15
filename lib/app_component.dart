@@ -132,4 +132,5 @@ class AppComponent {
   bool languageSelectorVisible = false;
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
   String iconSize = '1.5em';
+  
 }

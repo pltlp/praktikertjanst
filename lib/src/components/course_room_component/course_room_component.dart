@@ -84,4 +84,6 @@ class CourseRoomComponent implements OnActivate {
   List<RelativePosition> preferredTooltipPositions = const [
     RelativePosition.AdjacentBottom
   ];
+
+  
 }

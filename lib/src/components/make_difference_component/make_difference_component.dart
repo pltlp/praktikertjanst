@@ -13,7 +13,14 @@ import '../button_component/button_component.dart';
       routerDirectives,
       ButtonComponent,
       MaterialTooltipDirective,
-      MaterialIconComponent
+      MaterialIconComponent,
+      MaterialTooltipDirective,
+      MaterialPaperTooltipComponent,
+      MaterialTooltipTargetDirective,
+      ClickableTooltipTargetDirective,
+      MaterialInkTooltipComponent,
+      MaterialIconTooltipComponent,
+      MaterialPopupComponent
     ],
     providers: const [],
     selector: 'p-make-difference',
@@ -31,4 +38,7 @@ class MakeDifferenceComponent {
   bool showModal = false;
   Router router;
   MessagesService msg;
+  List<RelativePosition> preferredTooltipPositions = const [
+    RelativePosition.AdjacentBottom
+  ];
 }
