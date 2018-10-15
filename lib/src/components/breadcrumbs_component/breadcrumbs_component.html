@@ -2,7 +2,7 @@
     <div class="col padding-top-none align-middle">
         <span *ngFor="let crumb of evaluateBreadcrumbs(path); let i = index">
             <a [routerLink]="crumbLinks[i]">
-                {{crumb}}&nbsp;/&nbsp;
+                {{crumb | name}} {{i != crumbLinks.length-2 ? '&nbsp;/&nbsp;' : ''}} 
             </a>
         </span>
     </div>
