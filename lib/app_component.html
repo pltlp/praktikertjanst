@@ -1,11 +1,11 @@
 <div id="page">
     <header>
         <d-navbar backgroundColor="#00A0C8"
-                  [height]="150"
+                  [height]="126"
                   [alwaysShow]="false"
                   [trackDocument]="true">
             <div id="upper-row"
-                 class="row">
+                 class="row margin-top-small">
                 <div class="m2 s4 col align-middle">
                     <img src="pics/hg-rid_logo_white.png"
                          alt="logo"
@@ -13,15 +13,14 @@
                          [routerLink]="msg.home_url">
                 </div>
                 <div class="col s8 hide-for-large hide-for-medium text-right align-bottom">
-                    <material-menu [menu]="menuModel">
-                        <section menu-button>
-                            <material-icon icon="arrow_drop_down"
-                                           class="menu-icon"></material-icon>
-                        </section>
-                    </material-menu>
+                    <dropdown-menu [menu]="menuModel"
+                                   [buttonText]="msg.menu | name"
+                                   class="nounderline"
+                                   [preferredPositions]="position" style="margin-right:2em">
+                    </dropdown-menu>
                 </div>
                 <div class="m10 col text-right align-bottom hide-for-small">
-                    <material-dropdown-select style="margin-left:2em; color:white"
+                    <material-dropdown-select class="color-white"
                                               [buttonText]="msg.language | name">
                         <material-select-item>{{msg.swedish | name}}</material-select-item>
                         <material-select-item>{{msg.english | name}}</material-select-item>

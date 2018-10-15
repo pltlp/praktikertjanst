@@ -22,15 +22,14 @@ class BreadcrumbsComponent {
 
     crumbLinks = new List(segments.length);
 
-
     for (var i = 0; i < segments.length; i++) {
-      final s = segments.take(i+1);
+      final s = segments.take(i + 1);
       crumbLinks[i] = s.join('/');
     }
   }
 
   List<String> get path =>
-      routerState == null ? [] : routerState.path.split('/');
+      routerState == null ? [] : routerState.path.substring(1).split('/');
 
   List<String> evaluateBreadcrumbs(List<String> path) {
     var breadcrumbs = path;
@@ -40,7 +39,8 @@ class BreadcrumbsComponent {
       breadcrumbs[(breadcrumbs.indexWhere((part) => part != '..'))] = '..';
       breadcrumbs = evaluateBreadcrumbs(breadcrumbs);
     }
-    return breadcrumbs;
+
+    return breadcrumbs.map((c) => c.replaceAll('-', ' ')).toList();
   }
 
   final Router _router;

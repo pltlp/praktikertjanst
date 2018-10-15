@@ -14,13 +14,21 @@
                  *ngFor="let resource of resources; let i = index">
                 <div class="col m3"></div>
                 <div class="col m6">
+                    <material-tooltip-card [for]="ref"
+                                           [preferredPositions]="preferredTooltipPositions">
+                        <h3 class="color-astronautblue">
+                            {{resource.phrases[msg.currentLanguage].description}}
+
+                        </h3>
+                    </material-tooltip-card>
                     <p-button [left]="(i + 1).toString()+'.'"
                               [middle]="resource.phrases[msg.currentLanguage].name"
                               [right]="resource.complete ? 'check': null"
                               (click)="resource.complete = true"
                               [routerLink]="msg.home_url +'/' + url + '/' + resource.phrases[msg.currentLanguage].url"
-                              [materialTooltip]="resource.phrases[msg.currentLanguage].description"
-                              rightBackgroundColor="#003C5A">
+                              rightBackgroundColor="#003C5A"
+                              tooltipTarget
+                              #ref="tooltipTarget">
                     </p-button>
                 </div>
                 <div class="col m3"></div>

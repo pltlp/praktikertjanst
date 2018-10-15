@@ -28,7 +28,7 @@ class DocumentsComponent implements OnInit {
   }
 
   @Input()
-  int offsetTop = 150;
+  int offsetTop = 140;
 
   final DocumentService documentService;
   final MessagesService msg;

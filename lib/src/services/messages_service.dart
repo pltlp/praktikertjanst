@@ -91,5 +91,6 @@ class MessagesService {
       Intl.message('Skriv in här för att söka...', name: 'type_here_to_search');    
 
   String get close => Intl.message('stäng', name: 'close');    
+  String get menu => Intl.message('meny', name: 'menu');    
 
 }

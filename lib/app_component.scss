@@ -2,6 +2,8 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 @import 'package:fo_components/mixins';
+@import 'package:angular_components/material_menu/mixins';
+
 @include fo-colors($cerulean, $astronautBlue, carnation);
 :host {
     display: block;
@@ -19,24 +21,18 @@
         header {
             d-navbar {
                 div#upper-row {
-                    height: 125px;
+                    height: 90px;
                     img {
-                        max-height: 100px;
+                        max-height: 90px;
                         width: auto;
                         max-width: 100%;
-                        min-height: 50px;
-                        min-width: auto;
-                        cursor: pointer;
                     }
                 }
                 display: block;
-                section {
-                    material-icon.menu-icon{
-                        @include material-icon-size($mat-grid * 7);
-                        color: white;
-                    }
+                dropdown-menu {
+                    @include dropdown-menu-nounderline;
+                    color: white;
                 }
-               
                 a {
                     text-decoration: none;
                     color: white;

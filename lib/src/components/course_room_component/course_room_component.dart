@@ -25,10 +25,16 @@ import '../word_list_component/word_list_component.dart';
       NgIf,
       NgFor,
       StepDirective,
-      MaterialTooltipDirective,
       FoModalComponent,
       WordListComponent,
-      RouterLink
+      RouterLink,
+      MaterialTooltipDirective,
+      MaterialPaperTooltipComponent,
+      MaterialTooltipTargetDirective,
+      ClickableTooltipTargetDirective,
+      MaterialInkTooltipComponent,
+      MaterialIconTooltipComponent,
+      MaterialPopupComponent
     ],
     providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
@@ -75,4 +81,7 @@ class CourseRoomComponent implements OnActivate {
   final DocumentService documentService;
   bool wordListModalVisible = false;
   String url;
+  List<RelativePosition> preferredTooltipPositions = const [
+    RelativePosition.AdjacentBottom
+  ];
 }

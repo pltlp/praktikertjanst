@@ -50,7 +50,8 @@ import 'src/services/word_service.dart';
       PopupSourceDirective,
       MaterialListComponent,
       MaterialListItemComponent,
-      WordPreviewComponent
+      WordPreviewComponent,
+      DropdownMenuComponent
     ],
     providers: [
       routerProvidersHash,

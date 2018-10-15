@@ -7,7 +7,7 @@ import 'package:angular_components/angular_components.dart';
       MaterialTooltipDirective,
       MaterialIconComponent,
       NgIf,
-      NgClass
+      NgClass,
     ],
     providers: const [],
     pipes: [NamePipe],
