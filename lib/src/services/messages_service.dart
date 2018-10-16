@@ -46,7 +46,7 @@ class MessagesService {
   String get document_url => Intl.message('dokument', name: 'document_url');
 
   String get documents_component_url =>
-      Intl.message('dokument-lista', name: 'documents_component_url');
+      Intl.message('dokumentlista', name: 'documents_component_url');
 
   String get english => Intl.message('engelska', name: 'english');
 
