@@ -10,23 +10,9 @@
     }
     material-icon {
         @include material-icon-size($mat-grid * 15);
-        /*
-            transition-property: color;
-            transition-duration: 0.2s;
-            */
         color: $cerulean;
         margin-top: -3em;
         display: block;
         cursor: pointer;
     }
-    /*
-    .on-hover-blue:hover {
-        material-icon {
-           // color: $astronautBlue;
-        }
-        p-button {
-            //color: $astronautBlue;
-        }
-    }
-    */
 }

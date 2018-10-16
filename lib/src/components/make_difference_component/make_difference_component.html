@@ -1,30 +1,21 @@
-<div [style.background-image]="backgroundImage">
-    <div id="gradiant">
-        <div class="row padding-top-x-large padding-bottom-x-large align-middle"
-             style="min-height:300px">
-            <div class="col m6 align-middle">
-                <material-tooltip-card [for]="ref"
-                                       [preferredPositions]="preferredTooltipPositions">
-                    <h3 class="color-astronautblue">
-                        {{model.phrases[msg.currentLanguage].description}}
 
-                    </h3>
-                </material-tooltip-card>
-                <p-button middle="{{model.phrases[msg.currentLanguage].name| name}}"
-                          [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url"
-                          [right]="model.complete ? 'check': null"
-                          rightBackgroundColor="#003C5A"
-                          (click)="model.complete = true"
-                          tooltipTarget
-                          #ref="tooltipTarget">
-                </p-button>
+<fo-carousel [showRadioButtons]="true"
+             [duration]="7000">
+    <fo-carousel-slide *ngFor="let slide of slideService.data">
+        <div class="row  expand center"
+             [style.background-image]="background(slide)">
+            <div class="overlay">
             </div>
-            <div class="col m6 align-middle">
-                <p-button middle="{{msg.library | name}}"
-                          [routerLink]="msg.home_url + '/' + msg.library_url"
+            <div class="col m4 align-middle text-center">
+                <h1>
+                    {{slide.phrases[msg.currentLanguage].paragraph}}
+                </h1>
+            </div>
+            <div class="col m3 align-middle text-center">
+                <p-button middle=   "{{slide.phrases[msg.currentLanguage].button_label}}" 
                           rightBackgroundColor="#00A0C8">
                 </p-button>
             </div>
         </div>
-    </div>
-</div>
+    </fo-carousel-slide>
+</fo-carousel>

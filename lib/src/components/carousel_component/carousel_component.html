@@ -5,9 +5,10 @@
                 </h1>
         </div>
 </div>
+
 <fo-carousel [showRadioButtons] = "true">
         <fo-carousel-slide *ngFor="let modelList of modelTable">
-                <div class="row margin-bottom-x-large">
+                <div class="row">
                         <div class="m4 col"
                              *ngFor="let model of modelList">
                                 <p-carousel-slide-section [model]="model"

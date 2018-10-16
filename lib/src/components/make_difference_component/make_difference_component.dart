@@ -2,13 +2,16 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/resource.dart';
+import '../../models/slide.dart';
 import '../../services/messages_service.dart';
+import '../../services/slide_service.dart';
 import '../button_component/button_component.dart';
 
 @Component(
     directives: const [
+      NgStyle,
       NgIf,
+      NgFor,
       FoModalComponent,
       routerDirectives,
       ButtonComponent,
@@ -20,7 +23,12 @@ import '../button_component/button_component.dart';
       ClickableTooltipTargetDirective,
       MaterialInkTooltipComponent,
       MaterialIconTooltipComponent,
-      MaterialPopupComponent
+      MaterialPopupComponent,
+      FoCarouselComponent,
+      MaterialYesNoButtonsComponent,
+      FoCarouselSlideComponent, 
+      MaterialButtonComponent,
+      ButtonComponent
     ],
     providers: const [],
     selector: 'p-make-difference',
@@ -28,17 +36,19 @@ import '../button_component/button_component.dart';
     templateUrl: 'make_difference_component.html',
     pipes: [NamePipe])
 class MakeDifferenceComponent {
-  MakeDifferenceComponent(this.router, this.msg);
+  MakeDifferenceComponent(this.router, this.msg, this.slideService);
 
-  @Input()
-  String backgroundImage;
-  @Input()
-  Resource model;
-
+  String background(Slide slide)
+  {
+    return "url('${slide.background_image}')";
+  }
+  
+  SlideService slideService;
   bool showModal = false;
   Router router;
   MessagesService msg;
   List<RelativePosition> preferredTooltipPositions = const [
     RelativePosition.AdjacentBottom
   ];
+  
 }
