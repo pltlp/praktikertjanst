@@ -9,15 +9,12 @@
 <p-main-header class="margin-top-x-large margin-bottom-x-large"
                (buttonClick)="scrollTo($event)"></p-main-header>
 
-<div #carousel>
-    <p-carousel [header]="msg.good_examples"
-                [models]="videos"></p-carousel>
-</div>
 
-
+<p-carousel class="padding-bottom-large"
+            [header]="msg.good_examples"
+            [models]="videos"></p-carousel>
 
 <p-make-difference></p-make-difference>
-
 
 <div class="row margin-top-x-large margin-bottom-x-large collapse">
     <div class="col m4"

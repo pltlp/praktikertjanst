@@ -18,7 +18,7 @@ class BreadcrumbsComponent {
 
   void _onNavigationStart(RouterState state) {
     routerState = state;
-    final segments = routerState.path.split('/');
+    final segments = pathSegments;
 
     crumbLinks = new List(segments.length);
 
@@ -28,8 +28,8 @@ class BreadcrumbsComponent {
     }
   }
 
-  List<String> get path =>
-      routerState == null ? [] : routerState.path.substring(1).split('/');
+  List<String> get pathSegments =>
+      routerState == null ? [] : routerState.path.split('/');
 
   List<String> evaluateBreadcrumbs(List<String> path) {
     var breadcrumbs = path;

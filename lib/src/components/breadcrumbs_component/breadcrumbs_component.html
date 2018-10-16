@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col padding-top-none align-middle">
-        <span *ngFor="let crumb of evaluateBreadcrumbs(path); let i = index">
+        <span *ngFor="let crumb of evaluateBreadcrumbs(pathSegments); let i = index">
             <a [routerLink]="crumbLinks[i]">
-                {{crumb | name}} {{i != crumbLinks.length-2 ? '&nbsp;/&nbsp;' : ''}} 
+                <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
             </a>
         </span>
     </div>
