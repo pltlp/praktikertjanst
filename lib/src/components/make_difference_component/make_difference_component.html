@@ -1,4 +1,3 @@
-
 <fo-carousel [showRadioButtons]="true"
              [duration]="7000">
     <fo-carousel-slide *ngFor="let slide of slideService.data">
@@ -12,9 +11,11 @@
                 </h1>
             </div>
             <div class="col m3 align-middle text-center">
-                <p-button middle=   "{{slide.phrases[msg.currentLanguage].button_label}}" 
-                          rightBackgroundColor="#00A0C8">
-                </p-button>
+                <a href="{{slide.phrases[msg.currentLanguage].link}}" target="_blank">
+                    <p-button middle="{{slide.phrases[msg.currentLanguage].button_label}}"
+                              rightBackgroundColor="#00A0C8">
+                    </p-button>
+                </a>
             </div>
         </div>
     </fo-carousel-slide>

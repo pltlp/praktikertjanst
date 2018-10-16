@@ -14,11 +14,11 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Märk upp ledningar och rör som kan innehålla amalgam.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Beställ etiketter',
           'en': new SlidePhrases()
             ..paragraph = 'Label pipes and tubes that may contain amalgam.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Order labels',
         },
       new Slide()
@@ -28,12 +28,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Ställ krav på installatörens kunskap om minimering av amalgamutsläpp.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Make sure that installers have knowledge about minimizing amalgam emissions.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Read more',
         },
       new Slide()
@@ -43,12 +43,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Spola bort amalgamrester från instrument där det finns amalgamavskiljare, före diskdesinficering.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Rinse out amalgam residues from instruments where there are amalgam separators before disinfection.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -58,12 +58,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Rör som kan innehålla amalgamrester ska omhändertas som farligt avfall. Var uppmärksam vid rivning, stambyte och ombyggnad.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Tubes that may contain amalgam residues should be disposed of as hazardous waste. Pay attention during demolition, change of trunk and remodeling.'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -73,12 +73,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Sanera avloppsrören för att undvika driftstörningar och minska riskerna för kvicksilverutsläpp'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Clean the drain pipes to avoid drift disturbances and reduce the risk of mercury emissions'
-            ..link = ''
+            ..link = 'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
             ..button_label = 'Read more'
         }
     ];

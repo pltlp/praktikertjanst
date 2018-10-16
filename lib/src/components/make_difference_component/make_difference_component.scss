@@ -1,7 +1,5 @@
 @import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
-
-
 :host {
     display: block;
     fo-carousel {
@@ -19,8 +17,11 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                p-button{
-                    position: relative;
+                a {
+                    text-decoration: none;
+                    p-button {
+                        position: relative;
+                    }
                 }
                 h1 {
                     text-align: left;
