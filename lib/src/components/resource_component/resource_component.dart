@@ -11,7 +11,7 @@ import '../../services/messages_service.dart';
       'resource_component.css'
     ],
     directives: const [
-      MaterialIconComponent,
+      MaterialIconComponent, NgIf
     ],
     pipes: [
       NamePipe

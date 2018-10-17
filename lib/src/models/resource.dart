@@ -7,12 +7,12 @@ class Phrases {
 }
 
 class Resource {
+  Resource();
   Map<String, Phrases> phrases = {};
-
   String icon;
   String img_url;
   String id;
   ResourceType type;
   bool complete = false;
-  Resource();
+  
 }

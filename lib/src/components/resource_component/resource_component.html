@@ -1,4 +1,4 @@
-<div id="self">
+<div id="self" *ngIf="!model.complete">
     <div id="top"
          [style.background-image]="backgroundImage"
          class="text-center">
@@ -25,3 +25,32 @@
         </div>
     </div>
 </div>
+<div id="self" *ngIf="model.complete" class="complete_gradiant">
+        <div id="top"
+             [style.background-image]="backgroundImage"
+             class="text-center">
+            <div id="gradiant"
+                 class="color-white">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="padding-top-large margin-bottom-none">{{model.phrases[msg.currentLanguage].name | name}}</h2>
+                        <material-icon class="action-icon padding-none"
+                        icon="done"></material-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom"
+             class="background-color-cerulean padding-medium"
+             [style.background-color]="backgroundColor">
+            <div class="row">
+                <div class="col m3">
+                    <material-icon class="action-icon padding-none"
+                                   icon="{{model.icon}}"></material-icon>
+                </div>
+                <div class="col m9 text-center color-white">
+                    <h4 class="margin-none text-left">{{model.phrases[msg.currentLanguage].description}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>

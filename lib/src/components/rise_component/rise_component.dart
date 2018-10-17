@@ -17,12 +17,16 @@ class RiseComponent implements OnInit, OnActivate {
   @override
   void onActivate(RouterState previous, RouterState current) async {
     final resourceUrl = current.parameters['url'];
-    
+
     try {
       model = riseService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl);
     } on StateError {
       print('resourse not found');
+    }
+
+    if (model != null) {
+      model.complete = true;
     }
 
     url = sanitizer
@@ -31,8 +35,10 @@ class RiseComponent implements OnInit, OnActivate {
 
   @override
   void ngOnInit() {
-    if (model != null)
-      url = sanitizer.bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
+    if (model != null) {
+      url = sanitizer
+          .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
+    }
   }
 
   bool showModal = false;

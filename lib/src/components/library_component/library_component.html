@@ -21,7 +21,6 @@
          *ngFor="let rise of riseService.data.values">
         <p-resource [model]="rise"
                     [routerLink]="msg.home_url + '/' + msg.library + '/' + rise.phrases[msg.currentLanguage].url">
-
         </p-resource>
     </div>
     <div class="col m4 s12"
