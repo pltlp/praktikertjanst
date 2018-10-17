@@ -99,6 +99,9 @@ class AppComponent {
     ]);
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
+      _router.onRouteActivated.listen((state) {
+      window.scrollTo(0, 0);
+    });
 
     _router.onNavigationStart.listen((state) {
       window.scrollTo(0, 0);

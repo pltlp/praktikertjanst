@@ -1,18 +1,19 @@
 import 'dart:html';
+import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-    directives: const [routerDirectives, NgFor, NgIf],
+    directives: const [routerDirectives, NgFor, NgIf, MaterialIconComponent],
     providers: const [],
     pipes: [NamePipe],
     selector: 'p-breadcrumbs',
     styleUrls: const ['breadcrumbs_component.css'],
     templateUrl: 'breadcrumbs_component.html')
 class BreadcrumbsComponent {
-  BreadcrumbsComponent(this._router, this.msg) {
+  BreadcrumbsComponent(this._router, this.msg, this.location) {
     _router.onRouteActivated.listen(_onNavigationStart);
   }
 
@@ -39,8 +40,12 @@ class BreadcrumbsComponent {
       breadcrumbs[(breadcrumbs.indexWhere((part) => part != '..'))] = '..';
       breadcrumbs = evaluateBreadcrumbs(breadcrumbs);
     }
-
     return breadcrumbs.map((c) => c.replaceAll('-', ' ')).toList();
+  }
+
+  void back() {
+    print(crumbLinks[crumbLinks.length-1]);
+    _router.navigate(crumbLinks[crumbLinks.length-2]);
   }
 
   final Router _router;
@@ -49,4 +54,5 @@ class BreadcrumbsComponent {
   final int maxScreenWidth = 400;
   List<String> crumbLinks = [];
   RouterState routerState;
+  Location location;
 }

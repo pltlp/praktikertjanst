@@ -12,8 +12,8 @@
              [style.background-image]="'url(' + model.img_url + ')'">
             <div class="row"
                  *ngFor="let resource of resources; let i = index">
-                <div class="col m3"></div>
-                <div class="col m6">
+                <div class="col m3 hide-for-small"></div>
+                <div class="col m6 s12">
                     <material-tooltip-card [for]="ref"
                                            [preferredPositions]="preferredTooltipPositions">
                         <h3 class="color-astronautblue">
@@ -31,7 +31,7 @@
                               #ref="tooltipTarget">
                     </p-button>
                 </div>
-                <div class="col m3"></div>
+                <div class="col m3 hide-for-small"></div>
             </div>
         </div>
     </div>
