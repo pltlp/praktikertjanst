@@ -4,8 +4,14 @@
         span {
             white-space: nowrap;
         }
-        material-icon{
+        material-icon {
             align-items: flex-end;
+            position: absolute;
+        }
+    }
+    ::ng-deep material-icon {
+        i {
+            font-weight: bolder;
         }
     }
 }

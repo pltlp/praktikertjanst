@@ -44,8 +44,15 @@ class BreadcrumbsComponent {
   }
 
   void back() {
-    print(crumbLinks[crumbLinks.length-1]);
     _router.navigate(crumbLinks[crumbLinks.length-2]);
+  }
+
+  bool home()
+  {
+    var home = false;
+    if (crumbLinks.length == 2)
+    home = true;
+    return home;
   }
 
   final Router _router;
