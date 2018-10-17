@@ -9,14 +9,16 @@
 <p-main-header class="margin-top-x-large margin-bottom-x-large"
                (buttonClick)="scrollTo($event)"></p-main-header>
 
+<div #carousel>
+    <p-carousel class="padding-bottom-large"
+                [header]="msg.good_examples"
+                [models]="videos"></p-carousel>
 
-<p-carousel class="padding-bottom-large"
-            [header]="msg.good_examples"
-            [models]="videos"></p-carousel>
+</div>
 
 <p-make-difference></p-make-difference>
 
-<div class="row margin-top-x-large margin-bottom-x-large collapse">
+<div class="row margin-bottom-x-large">
     <div class="col m4"
          *ngFor="let resource of resources">
         <p-resource [model]="resource"
