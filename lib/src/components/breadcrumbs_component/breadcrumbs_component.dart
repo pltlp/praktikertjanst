@@ -57,7 +57,7 @@ class BreadcrumbsComponent {
 
   final Router _router;
   final MessagesService msg;
-  final int nrOfCharacters = 35;
+  final int nrOfCharacters = 30;
   final int maxScreenWidth = 400;
   List<String> crumbLinks = [];
   RouterState routerState;

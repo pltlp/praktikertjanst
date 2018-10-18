@@ -7,6 +7,7 @@
         material-icon {
             align-items: flex-end;
             position: absolute;
+            white-space: nowrap;
         }
     }
     ::ng-deep material-icon {
