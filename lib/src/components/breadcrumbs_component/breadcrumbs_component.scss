@@ -8,6 +8,7 @@
             align-items: flex-end;
             position: absolute;
             white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
     ::ng-deep material-icon {

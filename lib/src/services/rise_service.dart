@@ -28,9 +28,9 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'mercury-in-nature')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/kvicksilver-i-naturen/content/index.html'
+            'https://hg-rid.eu/rise/kvicksilver-i-naturen/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/mercury-in-nature/content/index.html',
+            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
       'Lagar och regler': new Rise()
         ..icon = 'gavel'
         ..id = 'Lagar och regler'
@@ -48,9 +48,9 @@ class RiseService extends ResourceService<Rise> {
               'Article on the laws and regulations governing the management of amalgam.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/lagar-och-regler/content/index.html'
+            'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/rules-and-regulations/content/index.html',
+            'https://hg-rid.eu/rise/rules-and-regulations/content/index.html',
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'gavel'
         ..id = 'Vad är vad på mottagningen? '
@@ -66,9 +66,9 @@ class RiseService extends ResourceService<Rise> {
           ..description = 'Overview of the dentist equipment.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
+            'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/overview-over-equipment/content/index.html',
+            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Tandvårdsteamets ansvar '
@@ -87,9 +87,9 @@ class RiseService extends ResourceService<Rise> {
               's responsibility.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/tandvardsteamets-ansvar/content/index.html'
+            'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/dental-care-teams-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
       'Dentalteknikerns ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Dentalteknikerns ansvar'
@@ -107,9 +107,9 @@ class RiseService extends ResourceService<Rise> {
               'Here you will find instructions on the dental technicians responsibility.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/dentalteknikerns-ansvar/content/index.html'
+            'https://hg-rid.eu/rise/dentalteknikerns-ansvar/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/dental-technicians-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'gavel'
         ..id = 'Instruktioner för miljöserviceföretag'
@@ -127,9 +127,9 @@ class RiseService extends ResourceService<Rise> {
               'Here you will find instructions on environmental service companies responsibility.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
+            'https://hg-rid.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/rise/instructions-for-environmental-services-companies/content/index.html',
+            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html',
     };
 
     return data;
