@@ -26,6 +26,7 @@ class VideoComponent implements OnInit, OnActivate {
   void ngOnInit() {
     url = sanitizer
         .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
+
   }
 
   @Input('model')

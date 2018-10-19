@@ -31,7 +31,7 @@
     </div>
     <div class="col m4 s12"
          *ngFor="let video of videoService.data.values">
-        <p-resource [model]="video">
+        <p-resource [model]="video" (click)="selectedModel = video; video.complete = true">
 
         </p-resource>
     </div>
@@ -39,3 +39,18 @@
 <div class="background-color-alto margin-top-large">
     <p-documents [offsetTop]="0"></p-documents>
 </div>
+
+
+<fo-modal *ngIf="selectedModel != null"
+          [title]="selectedModel.phrases[msg.currentLanguage].name"
+          [visible]="true"
+          (visibleChange)="selectedModel = null"
+          [showCloseButton]="true"
+          [fixedWidth]="true">
+    <div class="row">
+        <div class="col">
+            <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url[msg.currentLanguage])"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</fo-modal>

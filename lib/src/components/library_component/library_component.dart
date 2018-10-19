@@ -1,22 +1,26 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
+import 'package:angular/security.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../components/documents_component/documents_component.dart';
 import '../../components/resource_component/resource_component.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/quiz_service.dart';
 import '../../services/rise_service.dart';
-import '../../services/video_service.dart';
+import '../../services/video_service.dart'; 
 
 @Component(
     directives: const [
       MaterialAutoSuggestInputComponent,
       DocumentsComponent,
       NgFor,
+      NgIf,
       ResourceComponent,
-      routerDirectives 
+      routerDirectives,
+      FoModalComponent 
     ],    
     selector: 'p-library',
     styleUrls: const ['library_component.css'],
@@ -24,7 +28,7 @@ import '../../services/video_service.dart';
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class LibraryComponent implements OnDestroy {
-  LibraryComponent(this.router, this.msg, this.riseService, this.quizService, this.videoService) {
+  LibraryComponent(this.router, this.msg, this.riseService, this.quizService, this.videoService, this.sanitizer) {
     
     // TODO: call whenever the language is changed
     
@@ -81,6 +85,8 @@ class LibraryComponent implements OnDestroy {
   RiseService riseService;
   QuizService quizService;
   VideoService videoService;
+  Video selectedModel;
+  final DomSanitizationService sanitizer;
 
   StreamSubscription<List<SelectionChangeRecord>> _onSearchSubscription;
 }
