@@ -14,34 +14,48 @@
     </div>
 </div>
 
-
-<div class="row"
-     *ngIf="selectedWord != null">
-    <div class="col text-center">
-        <p-word [model]="selectedWord"></p-word>
-        <material-button class="close-button"
-                         (trigger)="selectedWord = null"
-                         raised>
-            {{msg.close}}
-        </material-button>
-    </div>
-</div>
 <ng-container *ngIf="selectedWord == null">
-
     <div class="row margin-top-medium"
          id="preview"
-         (click)="selectedWord = wordPreviewModel"
          *ngFor="let wordPreviewModel of wordService.data.values">
-        <div class="col m10 align-middle">
+        <div class="col m10 align-middle clickable"
+             (click)="selectedWord = wordPreviewModel">
             <h3 class="color-astronautblue margin-top-none margin-bottom-none">
                 {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
             <p class="margin-top-x-small margin-bottom-none">{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
         </div>
         <div class="col m2 align-middle">
-            <img class="image"
-                 [src]="wordPreviewModel.img_urls[0]"
-                 [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
+            <fo-carousel>
+                <fo-carousel-slide *ngFor="let image of wordPreviewModel.img_urls">
+                    <div>
+                        <img class="wordImage"
+                             [src]="image"
+                             [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
+                    </div>
+                </fo-carousel-slide>
+            </fo-carousel>
         </div>
     </div>
 
 </ng-container>
+
+<div class="row"
+     *ngIf="selectedWord != null">
+    <div class="col">
+        <p-word [model]="selectedWord"></p-word>
+        <div class="row margin-top-x-large">
+            <div class="col m4">
+            </div>
+            <div class="col m4">
+                <p-button [middle]="msg.close"
+                          (click)="selectedWord = null"
+                          rightBackgroundColor="#00A0C8">
+
+                </p-button>
+            </div>
+            <div class="col m4">
+            </div>
+        </div>
+
+    </div>
+</div>
