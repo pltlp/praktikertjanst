@@ -29,7 +29,6 @@ import '../resource_component/resource_component.dart';
       MakeDifferenceComponent,
       NgFor,
       NgIf,
-      FoYouTubePlayerComponent,
       ResourceComponent,
       CourseRoomComponent,
       routerDirectives

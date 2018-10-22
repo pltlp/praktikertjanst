@@ -17,7 +17,7 @@ class VideoService extends ResourceService<Video> {
         ..icon = 'pool'
         ..id = 'Så upplevde vi saneringen'
         ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+            'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
@@ -29,13 +29,13 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Susann Balzar reflects on the remediation of her dental practice.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/pONi-1Mxlgo'
+        ..url['en'] = 'https://www.youtube.com/embed/pONi-1Mxlgo',
       'Så arbetar vi på mottagningen': new Video()
         ..icon = 'pool'
         ..id = 'Så arbetar vi på mottagningen'
         ..img_url =
-            'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
+           'https://i.ytimg.com/vi/g8V_NHGcsUE/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så arbetar vi på mottagningen'
           ..url = 'mottagningen'
@@ -47,13 +47,13 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Claes Karlsson talks about the amalgam management at his reception.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/g8V_NHGcsUE'
+        ..url['en'] = 'https://www.youtube.com/embed/g8V_NHGcsUE',
       'Så går en installation till': new Video()
         ..icon = 'pool'
         ..id = 'Så går en installation till'
         ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+               'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så går en installation till'
           ..url = 'installation'
@@ -65,8 +65,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Anders and Patrik talk about the installation of amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/5haH6juVKxA?rel=0'
+        ..url['en'] = 'https://www.youtube.com/embed/5haH6juVKxA?rel=0',
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'pool'
         ..id = 'Att lämna amalgam bakom sig'

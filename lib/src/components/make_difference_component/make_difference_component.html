@@ -1,4 +1,4 @@
-<fo-carousel [showRadioButtons]="true"
+<fo-carousel [showRadioButtons]="slideService.data.length > 1"
              [duration]="7000">
     <fo-carousel-slide *ngFor="let slide of slideService.data">
         <div class="row  expand center"
