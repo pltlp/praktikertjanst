@@ -34,11 +34,12 @@ class CarouselComponent implements OnInit {
 
   @override
   void ngOnInit() {
+    oneModelPerElementList.addAll(models);
+    print(oneModelPerElementList);
     while (models.isNotEmpty) {
       modelTable.add(models.take(3).toList(growable: false));
       modelTable.last.forEach(models.remove);
     }
-
     headerTranslation = Intl.message(header, name: header);
   }
 
@@ -58,6 +59,7 @@ class CarouselComponent implements OnInit {
 
   @Input('models')
   List<Video> models = [];
+  List<Video> oneModelPerElementList = [];
 
   Video selectedModel;
   SafeResourceUrl selectedModelUrl;

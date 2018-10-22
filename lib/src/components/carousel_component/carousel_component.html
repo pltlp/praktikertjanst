@@ -6,7 +6,8 @@
         </div>
 </div>
 
-<fo-carousel [showRadioButtons]="modelTable.length > 1">
+<fo-carousel [showRadioButtons]="modelTable.length > 1"
+             class="hide-for-small">
         <fo-carousel-slide *ngFor="let modelList of modelTable">
                 <div class="row">
                         <div class="m4 col"
@@ -15,6 +16,23 @@
                                                           (click)="onModelClick(model)">
 
                                 </p-carousel-slide-section>
+                        </div>
+                </div>
+        </fo-carousel-slide>
+</fo-carousel>
+
+<fo-carousel [showRadioButtons]="modelTable.length > 1"
+             class="hide-for-medium hide-for-large">
+        <fo-carousel-slide *ngFor="let modelOne of oneModelPerElementList">
+                <div class="row expand center">
+                        <div class="col">
+                                <img [src]="modelOne.img_url"
+                                     [alt]="modelOne.phrases[msg.currentLanguage].name">
+                                <div class="padding">
+                                        <h2>{{modelOne.phrases[msg.currentLanguage].name | name}}</h2>
+                                        <p>{{modelOne.phrases[msg.currentLanguage].description}}</p>
+                                </div>
+
                         </div>
                 </div>
         </fo-carousel-slide>
