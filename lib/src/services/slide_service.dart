@@ -9,7 +9,7 @@ class SlideService {
     return data = [
       new Slide()
         ..background_image =
-            'http://www.southhillpediatricdentistry.com/assets/girl-scared-cavity-600px.jpg'
+            'pics/_DSC0206.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -23,7 +23,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'https://blog.hjtdesign.com/hubfs/child-dentist-hjt.jpg?t=1531161107135'
+            'pics/_DSC0192.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -38,7 +38,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'https://www.wsda.org/images/librariesprovider52/default-album/childrenreferral.jpg?sfvrsn=0'
+            'pics/_DSC0236.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -53,7 +53,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'https://www.medentalcareburwood.com.au/wp-content/uploads/cdbs-clear-1.jpg'
+            'pics/_DSC9869.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -68,7 +68,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'https://www.dentalvibe.com/wp-content/uploads/2016/09/children-with-dental-phobia.jpg'
+            'pics/sanera_avlopp.png'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
