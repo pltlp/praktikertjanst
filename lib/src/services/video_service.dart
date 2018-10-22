@@ -29,8 +29,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Susann Balzar reflects on the remediation of her dental practice.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/pONi-1Mxlgo'
-        ..url['en'] = 'https://www.youtube.com/embed/pONi-1Mxlgo',
+        ..url['sv'] = 'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters',
       'Så arbetar vi på mottagningen': new Video()
         ..icon = 'pool'
         ..id = 'Så arbetar vi på mottagningen'
@@ -47,8 +47,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Claes Karlsson talks about the amalgam management at his reception.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/g8V_NHGcsUE'
-        ..url['en'] = 'https://www.youtube.com/embed/g8V_NHGcsUE',
+        ..url['sv'] = 'https://www.youtube.com/embed/g8V_NHGcsUE$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/g8V_NHGcsUE$youtubeParameters',
       'Så går en installation till': new Video()
         ..icon = 'pool'
         ..id = 'Så går en installation till'
@@ -65,8 +65,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Anders and Patrik talk about the installation of amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/5haH6juVKxA?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/5haH6juVKxA?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters',
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'pool'
         ..id = 'Att lämna amalgam bakom sig'
@@ -83,8 +83,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Rutiner vid patientbehandling': new Video()
         ..icon = 'pool'
         ..id = 'Rutiner vid patientbehandling'
@@ -101,8 +101,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are routines associated with amalgam management.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Skötsel av amalgamavskiljare under en vecka': new Video()
         ..icon = 'pool'
         ..id = 'Skötsel av amalgamavskiljare under en vecka'
@@ -119,8 +119,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are procedures for handling amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/17moksI28Vo?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/17moksI28Vo?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/17moksI28Vo$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/17moksI28Vo$youtubeParameters',
       'Skötsel av amalgamavskiljare mer sällan': new Video()
         ..icon = 'pool'
         ..id = 'Skötsel av amalgamavskiljare mer sällan'
@@ -137,8 +137,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are procedures for handling amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters',
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'pool'
         ..id = 'Skötsel av amalgamavskiljare'
@@ -155,8 +155,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are procedures for handling amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters',
       'Att tänka på vid installation': new Video()
         ..icon = 'pool'
         ..id = 'Att tänka på vid installation'
@@ -173,8 +173,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Tips when installing amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'pool'
         ..id = 'Byte av amalgamavskiljare'
@@ -191,8 +191,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'This is how amalgam separators are replaced in wet and dry suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Funktionskontroll': new Video()
         ..icon = 'pool'
         ..id = 'Funktionskontroll'
@@ -209,8 +209,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'This is how environmental service company performs a function check of amalgam separators.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Tömning av vattenlås': new Video()
         ..icon = 'pool'
         ..id = 'Tömning av vattenlås'
@@ -226,8 +226,8 @@ class VideoService extends ResourceService<Video> {
           ..url = 'drainage-of-water-traps'
           ..description = 'This how you drain water traps')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Slutförvaring ': new Video()
         ..icon = 'pool'
         ..id = 'Slutförvaring'
@@ -242,8 +242,8 @@ class VideoService extends ResourceService<Video> {
           ..url = 'storage'
           ..description = 'This is how amalgam waste is taken care of.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Sanering ': new Video()
         ..icon = 'pool'
         ..id = 'Sanering'
@@ -258,8 +258,8 @@ class VideoService extends ResourceService<Video> {
           ..url = 'sanitation'
           ..description = 'Then a remediation is carried out.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'pool'
         ..id = 'Varför är skötseln så viktig? '
@@ -276,8 +276,8 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Dental technicians emphasize the importance of good care of amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0',
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
       'Rengöring av utjämningskärl': new Video()
         ..icon = 'pool'
         ..id = 'Rengöring av utjämningskärl'
@@ -293,10 +293,12 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'This is how environmental service company cleans a leveling vessel.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
+        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
      };
 
     return data;
   }
+
+  String youtubeParameters= '?showinfo=0&rel=0&modestbranding=1&color=white';
 }
