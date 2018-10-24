@@ -107,6 +107,17 @@ class AppComponent {
       window.scrollTo(0, 0);
     });
   }
+
+
+  bool get showFooter {
+    if (_router.current == null) return true;
+    final urlParam = _router.current.parameters['url'];
+    if (urlParam == null) return true;
+    
+    return riseService.data.values.where((resource) =>
+          urlParam == resource.phrases[msg.currentLanguage].url).isEmpty;  
+  }
+
   Future<void> _loadResources() async {
     loaded = false;
     await videoService.fetchAll();

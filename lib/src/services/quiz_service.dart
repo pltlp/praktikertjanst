@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
+import 'package:fo_components/fo_components.dart';
 import '../models/quiz.dart';
 import '../models/resource.dart';
 import '../models/resource_types.dart';
@@ -17,7 +18,7 @@ class QuizService extends ResourceService<Quiz> {
         ..id = 'Quiz för allmänheten'
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för allmänheten'
+          ..name = 'Quiz för dig som är nyfiken'
           ..description =
               'Test på dina kunskaper utifrån ett allmänt perspektiv.'
           ..url = 'quiz-for-allmanheten')
@@ -25,6 +26,25 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz for the public'
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public')
+        ..data = {
+          'sv': new FoQuizModel([
+            new FoQuestionModel(
+                'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+              new FoOptionModel(
+                  'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+                  'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+                  score: 1),
+              new FoOptionModel(
+                  'Kasta i soporna',
+                  'Kasta i soporna',
+                  score: 0),
+              new FoOptionModel(
+                  'Spola ned i toaletten',
+                  'Spola ned i toaletten',
+                  score: 0)
+            ])
+          ])
+        }
         ..type = ResourceType.quiz,
       'Quiz för dig i tandvårdsteam': new Quiz()
         ..icon = 'gavel'
@@ -58,7 +78,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge based on the dental technicians perspective')
         ..type = ResourceType.quiz,
-      'Quiz för dig på miljöserviceföretag': new Quiz()
+      'Quiz för dig på miljöserviceföretag': new Quiz() /*ta bort */
         ..icon = 'gavel'
         ..id = 'Quiz för dig på miljöserviceföretag'
         ..img_url = 'pics/quicksilver_management.jpg'

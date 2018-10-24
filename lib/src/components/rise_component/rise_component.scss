@@ -1,13 +1,12 @@
-:host{
-    height: 6000px;
-
+:host {
     iframe {
-    
         width: 100%;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
-        height: 5000px;
-        box-sizing: inherit;
+        border: 0;
+        border-top: 126px solid transparent; /* Header height */
+        box-sizing: border-box;
+        height: 99vh;
     }
 }

@@ -1,3 +1,4 @@
+@import 'package:grid/constants';
 @import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
@@ -37,10 +38,9 @@
         padding-top: 0;
         font-size: 0;
         margin-top: 126px;
-        iframe { 
-            pointer-events: none;          
-            border: 0;         
-            position: absolute;            
+        iframe {
+            border: 0;
+            position: absolute;
             left: 0;
             width: 100%;
             height: 100%;
@@ -49,4 +49,18 @@
             display: block;
         }
     }
+    @media screen and (min-width: $large-width-threshold) {
+        iframe {
+            pointer-events: none;
+        }
+    }
+}
+
+::ng-deep material-radio {
+    color: $cerulean;
+    material-icon
+    {
+        color: $cerulean;
+    }
+    
 }

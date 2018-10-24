@@ -7,17 +7,15 @@ import 'resource_service.dart';
 
 @Injectable()
 class VideoService extends ResourceService<Video> {
-  
   @override
   Future<Map<String, Video>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
 
-     data = {
+    data = {
       'Så upplevde vi saneringen': new Video()
         ..icon = 'pool'
         ..id = 'Så upplevde vi saneringen'
-        ..img_url =
-            'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
@@ -29,15 +27,16 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Susann Balzar reflects on the remediation of her dental practice.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters',
       'Så arbetar vi på mottagningen': new Video()
         ..icon = 'pool'
         ..id = 'Så arbetar vi på mottagningen'
-        ..img_url =
-           'https://i.ytimg.com/vi/g8V_NHGcsUE/mqdefault.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Så arbetar vi på mottagningen'
+          ..name = 'Så arbetar vi med rutinerna på mottagningen'
           ..url = 'mottagningen'
           ..description =
               'Claes Karlsson berättar om skötselarbetet på hans mottagning.')
@@ -47,13 +46,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Claes Karlsson talks about the amalgam management at his reception.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/g8V_NHGcsUE$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/g8V_NHGcsUE$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/6jPzETatkUY$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/6jPzETatkUY$youtubeParameters',
       'Så går en installation till': new Video()
         ..icon = 'pool'
         ..id = 'Så går en installation till'
-        ..img_url =
-               'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så går en installation till'
           ..url = 'installation'
@@ -65,13 +65,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Anders and Patrik talk about the installation of amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters',
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'pool'
         ..id = 'Att lämna amalgam bakom sig'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/XFZCVOp56m0/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Att lämna amalgam bakom sig'
           ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
@@ -83,13 +84,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters',
       'Rutiner vid patientbehandling': new Video()
         ..icon = 'pool'
         ..id = 'Rutiner vid patientbehandling'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/pL7jpwbGx80/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Rutiner vid patientbehandling'
           ..url = 'rutiner'
@@ -101,49 +103,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are routines associated with amalgam management.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
-      'Skötsel av amalgamavskiljare under en vecka': new Video()
-        ..icon = 'pool'
-        ..id = 'Skötsel av amalgamavskiljare under en vecka'
-        ..img_url =
-            'https://images.dentalplans.com/2016/dear-doctor/general-dentist/general-dentist.jpg'
-        ..phrases['sv'] = (new Phrases()
-          ..name = 'Skötsel av amalgamavskiljare under en vecka'
-          ..url = 'skotsel-av-amalgamavskiljare-under-en-vecka'
-          ..description =
-              'Så ser rutinerna för skötsel av amalgamavskiljare och sugsystem ut.')
-        ..phrases['en'] = (new Phrases()
-          ..name = 'Maintenance of amalgam separators during one week'
-          ..url = 'maintenance-of-amalgam-separators-during-one-week'
-          ..description =
-              'These are procedures for handling amalgam separators and suction systems.')
-        ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/17moksI28Vo$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/17moksI28Vo$youtubeParameters',
-      'Skötsel av amalgamavskiljare mer sällan': new Video()
-        ..icon = 'pool'
-        ..id = 'Skötsel av amalgamavskiljare mer sällan'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
-        ..phrases['sv'] = (new Phrases()
-          ..name = 'Skötsel av amalgamavskiljare mer sällan'
-          ..url = 'skotsel-av-amalgamavskiljare-mer-sallan'
-          ..description =
-              'Så ser rutinerna för skötsel av amalgamavskiljare och sugsystem ut.')
-        ..phrases['en'] = (new Phrases()
-          ..name = 'More seldom managment of amalgam separators'
-          ..url = 'more-seldom-care-of-amalgam-separators'
-          ..description =
-              'These are procedures for handling amalgam separators and suction systems.')
-        ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters',
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'pool'
         ..id = 'Skötsel av amalgamavskiljare'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/lKjilIKxWCY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Skötsel av amalgamavskiljare'
           ..url = 'skotsel-av-amalgamavskiljare'
@@ -155,13 +122,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'These are procedures for handling amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/tYqsA5Kyqf0$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters',
       'Att tänka på vid installation': new Video()
         ..icon = 'pool'
         ..id = 'Att tänka på vid installation'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/ENCvjNXodVI/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Att tänka på vid installation'
           ..url = 'tips-for-installation'
@@ -173,13 +141,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Tips when installing amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters',
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'pool'
         ..id = 'Byte av amalgamavskiljare'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/YNUCB4ue9LA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Byte av amalgamavskiljare'
           ..url = 'byte-av-amalgamavskiljare'
@@ -191,13 +160,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'This is how amalgam separators are replaced in wet and dry suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters',
       'Funktionskontroll': new Video()
         ..icon = 'pool'
         ..id = 'Funktionskontroll'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-female-dental-33373740.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/aYeb02GKOuw/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Funktionskontroll'
           ..url = 'funktionskontroll'
@@ -209,13 +179,14 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'This is how environmental service company performs a function check of amalgam separators.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters',
       'Tömning av vattenlås': new Video()
         ..icon = 'pool'
         ..id = 'Tömning av vattenlås'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/qV2zNWqhz60/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Tömning av vattenlås'
           ..url = 'tomning-av-vattenlas'
@@ -226,13 +197,14 @@ class VideoService extends ResourceService<Video> {
           ..url = 'drainage-of-water-traps'
           ..description = 'This how you drain water traps')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters',
       'Slutförvaring ': new Video()
         ..icon = 'pool'
         ..id = 'Slutförvaring'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/__P3QoGFMNc/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Slutförvaring '
           ..url = 'slutforvaring'
@@ -242,13 +214,14 @@ class VideoService extends ResourceService<Video> {
           ..url = 'storage'
           ..description = 'This is how amalgam waste is taken care of.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters',
       'Sanering ': new Video()
         ..icon = 'pool'
         ..id = 'Sanering'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/J_hVtkS3hpQ/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Sanering '
           ..url = 'sanering'
@@ -258,13 +231,14 @@ class VideoService extends ResourceService<Video> {
           ..url = 'sanitation'
           ..description = 'Then a remediation is carried out.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
+        ..url['sv'] =
+            'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters',
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'pool'
         ..id = 'Varför är skötseln så viktig? '
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..img_url = 'https://i.ytimg.com/vi/eVa5uaZNK9g/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Varför är skötseln så viktig?'
           ..url = 'varfor-ar-skotseln-sa-viktig'
@@ -276,29 +250,86 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Dental technicians emphasize the importance of good care of amalgam separators and suction systems.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters',
-      'Rengöring av utjämningskärl': new Video()
+        ..url['sv'] =
+            'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters',
+      'Vad är kvicksilver?': new Video()
         ..icon = 'pool'
-        ..id = 'Rengöring av utjämningskärl'
-        ..img_url =
-            'https://thumbs.dreamstime.com/b/dentist-talking-patient-chair-dental-clinic-48986210.jpg'
+        ..id = 'Vad är kvicksilver?'
+        ..img_url = 'https://i.ytimg.com/vi/UL0A6RsC2v8/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Rengöring av utjämningskärl'
+          ..name = 'Vad är kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Så rengör miljöserviceföretaget ett utjämningskärl.')
+          ..description = 'Vad är kvicksilver?')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
           ..description =
               'This is how environmental service company cleans a leveling vessel.')
         ..type = ResourceType.video
-        ..url['sv'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-        ..url['en'] = 'https://www.youtube.com/embed/ZFknCdx3BPI$youtubeParameters'
-     };
+        ..url['sv'] =
+            'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters',
+      'Var finns kvicksilver?': new Video()
+        ..icon = 'pool'
+        ..id = 'Var finns kvicksilver?'
+        ..img_url = 'https://i.ytimg.com/vi/9H2PcBDGffY/mqdefault.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Var finns kvicksilver?'
+          ..url = 'rengoring-av-utjamningskarl'
+          ..description = 'Vad är kvicksilver?')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Cleaning-of-the-leveling vessel'
+          ..url = 'cleaning-of-the-leveling-vessel'
+          ..description =
+              'This is how environmental service company cleans a leveling vessel.')
+        ..type = ResourceType.video
+        ..url['sv'] =
+            'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters',
+      'Vilken roll har tandvården?': new Video()
+        ..icon = 'pool'
+        ..id = 'Vilken roll har tandvården?'
+        ..img_url = 'https://i.ytimg.com/vi/-FFTHF0khLg/mqdefault.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Vilken roll har tandvården?'
+          ..url = 'rengoring-av-utjamningskarl'
+          ..description = 'Vilken roll har tandvården?')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Cleaning-of-the-leveling vessel'
+          ..url = 'cleaning-of-the-leveling-vessel'
+          ..description =
+              'This is how environmental service company cleans a leveling vessel.')
+        ..type = ResourceType.video
+        ..url['sv'] =
+            'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters',
+      'Hur påverkas vi av kvicksilver?': new Video()
+        ..icon = 'pool'
+        ..id = 'Hur påverkas vi av kvicksilver?'
+        ..img_url = 'https://i.ytimg.com/vi/8FHTtQ--Ns0/mqdefault.jpg'
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Hur påverkas vi av kvicksilver?'
+          ..url = 'rengoring-av-utjamningskarl'
+          ..description = 'Hur påverkas vi av kvicksilver?')
+        ..phrases['en'] = (new Phrases()
+          ..name = 'Cleaning-of-the-leveling vessel'
+          ..url = 'cleaning-of-the-leveling-vessel'
+          ..description =
+              'This is how environmental service company cleans a leveling vessel.')
+        ..type = ResourceType.video
+        ..url['sv'] =
+            'https://www.youtube.com/embed/8FHTtQ--Ns0$youtubeParameters'
+        ..url['en'] =
+            'https://www.youtube.com/embed/8FHTtQ--Ns0$youtubeParameters'
+    };
 
     return data;
   }
 
-  String youtubeParameters= '?showinfo=0&rel=0&modestbranding=1&color=white';
+  String youtubeParameters = '?showinfo=0&rel=0&modestbranding=1&color=white';
 }

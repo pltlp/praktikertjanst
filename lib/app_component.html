@@ -43,7 +43,7 @@
         <router-outlet *ngIf="loaded"
                        [routes]="routes.all"></router-outlet>
     </main>
-    <footer>
+    <footer *ngIf="showFooter">
         <p-footer></p-footer>
     </footer>
 </div>

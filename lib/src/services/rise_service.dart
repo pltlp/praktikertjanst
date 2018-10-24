@@ -15,7 +15,7 @@ class RiseService extends ResourceService<Rise> {
       'Kvicksilver i naturen': new Rise()
         ..icon = 'pool'
         ..id = 'Kvicksilver i naturen'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/mercury-2.jpeg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Kvicksilver i naturen'
           ..description =
@@ -34,7 +34,7 @@ class RiseService extends ResourceService<Rise> {
       'Lagar och regler': new Rise()
         ..icon = 'gavel'
         ..id = 'Lagar och regler'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/AdobeStock_187205779.jpeg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Lagar och regler'
@@ -54,7 +54,7 @@ class RiseService extends ResourceService<Rise> {
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'gavel'
         ..id = 'Vad är vad på mottagningen? '
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9800.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vad är vad på mottagningen?'
@@ -72,7 +72,7 @@ class RiseService extends ResourceService<Rise> {
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Tandvårdsteamets ansvar '
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9970.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Tandvårdsteamets ansvar'
@@ -93,7 +93,7 @@ class RiseService extends ResourceService<Rise> {
       'Dentalteknikerns ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Dentalteknikerns ansvar'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC0192.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Dentalteknikerns ansvar'
@@ -113,11 +113,11 @@ class RiseService extends ResourceService<Rise> {
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'gavel'
         ..id = 'Instruktioner för miljöserviceföretag'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9853.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Instruktioner för miljöserviceföretag'
-          ..url = 'instruktioner-for-miljoserviceföretag'
+          ..name = 'Det här gör ett miljöserviceföretag'
+          ..url = 'instruktioner-for-miljoserviceforetag'
           ..description =
               'Här får du instruktioner om miljöserviceföretagens ansvar.')
         ..phrases['en'] = (new Phrases()

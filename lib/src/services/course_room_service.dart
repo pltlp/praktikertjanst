@@ -23,7 +23,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..id = 'kursrum-for-nyfikna'
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Kursrum för nyfikna'
+          ..name = 'För dig som bara är nyfiken'
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
           ..url = 'kursrum-for-nyfikna')
@@ -40,9 +40,11 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ]
         ..type = ResourceType.courseRoom
         ..video_ids = [
-          'Rutiner vid patientbehandling',
-          'Skötsel av amalgamavskiljare under en vecka',
-          'Skötsel av amalgamavskiljare mer sällan'
+          'Att lämna amalgam bakom sig',
+          'Vad är kvicksilver?',
+          'Var finns kvicksilver?',
+          'Vilken roll har tandvården?',
+          'Hur påverkas vi av kvicksilver?'
         ],
       'kursrum-for-tandvardsteam': new CourseRoom()
         ..backgroud_image = '/pics/child.jpg'
@@ -55,7 +57,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..id = 'kursrum-for-tandvardsteam'
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Kursrum för tandvårdsteam'
+          ..name = 'För dig på tandvårdsmottagning'
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
           ..url = 'kursrum-for-tandvardsteam')
@@ -72,8 +74,14 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Quiz för dig i tandvårdsteam'
         ]
         ..video_ids = [
+          'Att lämna amalgam bakom sig',
+          'Vad är kvicksilver?',
+          'Var finns kvicksilver?',
+          'Vilken roll har tandvården?',
+          'Hur påverkas vi av kvicksilver?',
           'Rutiner vid patientbehandling',
           'Skötsel av amalgamavskiljare',
+          'Varför är skötseln så viktig?'
         ],
       'kursrum-for-dentaltekniker': new CourseRoom()
         ..backgroud_image =
@@ -87,7 +95,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..id = 'kursrum-for-dentaltekniker'
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Kursrum för dentaltekniker'
+          ..name = 'För dig som dentaltekniker'
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
           ..url = 'kursrum-for-dentaltekniker')
@@ -104,7 +112,14 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Quiz för dig som dentaltekniker'
         ]
         ..type = ResourceType.courseRoom
-        ..video_ids = ['Att tänka på vid installation'],
+        ..video_ids = [
+          'Att tänka på vid installation',
+          'Att lämna amalgam bakom sig',
+          'Vad är kvicksilver?',
+          'Var finns kvicksilver?',
+          'Vilken roll har tandvården?',
+          'Hur påverkas vi av kvicksilver?'
+        ],
       'kursrum-for-servicetekniker': new CourseRoom()
         ..backgroud_image =
             'https://www.skane.se/siteassets/halsa_vard/ftv_skane_30_740x340.jpg'
@@ -117,7 +132,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..id = 'kursrum-for-servicetekniker'
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Kursrum för servicetekniker'
+          ..name = 'För dig på miljöserviceföretag'
           ..description =
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
           ..url = 'kursrum-for-servicetekniker')
@@ -138,8 +153,13 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Byte av amalgamavskiljare',
           'Funktionskontroll',
           'Tömning av vattenlås',
+          'Sanering',
           'Slutförvaring',
-          'Sanaring'
+          'Att lämna amalgam bakom sig',
+          'Vad är kvicksilver?',
+          'Var finns kvicksilver?',
+          'Vilken roll har tandvården?',
+          'Hur påverkas vi av kvicksilver?'
         ]
     };
     return data;

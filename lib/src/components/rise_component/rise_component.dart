@@ -10,7 +10,7 @@ import '../../services/rise_service.dart';
     templateUrl: 'rise_component.html',
     styleUrls: const ['rise_component.css'],
     directives: const [NgIf],
-    providers: [MessagesService])
+    providers: [])
 class RiseComponent implements OnInit, OnActivate {
   RiseComponent(this.sanitizer, this.riseService, this.msg);
 

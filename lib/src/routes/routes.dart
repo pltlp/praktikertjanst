@@ -7,6 +7,7 @@ import '../components/documents_component/documents_component.template.dart'
     as dc;
 import '../components/home_component/home_component.template.dart' as hc;
 import '../components/library_component/library_component.template.dart' as lc;
+import '../components/quiz_component/quiz_component.template.dart' as qc;
 import '../components/rise_component/rise_component.template.dart' as rc;
 
 import '../services/messages_service.dart';
@@ -33,17 +34,16 @@ class Routes {
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
-            path:
-                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_curious_url}',
-            component: crc.CourseRoomComponentNgFactory,
+            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
+            path: '${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}',
             component: crc.CourseRoomComponentNgFactory,
-          ),
-          RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
-            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
@@ -52,13 +52,13 @@ class Routes {
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_dental_teams_url}',
-            component: crc.CourseRoomComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
-            component: rc.RiseComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path:
@@ -72,13 +72,13 @@ class Routes {
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_dental_technicians_url}',
-            component: crc.CourseRoomComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
-            component: rc.RiseComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path:
@@ -92,13 +92,13 @@ class Routes {
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.library_url}/${msg.course_room_for_service_technicians_url}',
-            component: crc.CourseRoomComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
-            component: rc.RiseComponentNgFactory,
+                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.home_url}/${msg.library_url}/:url',
@@ -111,6 +111,10 @@ class Routes {
           RouteDefinition(
             path: '${msg.home_url}/:url',
             component: rc.RiseComponentNgFactory,
+          ),
+          RouteDefinition(
+            path: '${msg.home_url}/${msg.library_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition.redirect(
             path: '.+',

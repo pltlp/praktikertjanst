@@ -15,8 +15,9 @@
         opacity: 0.7;
         .col {
             img.wordImage {
-                height: 15em;
                 border: $cerulean 3px solid;
+                height: 10em;
+                width:auto;
             }
             p {
                 text-align: justify;

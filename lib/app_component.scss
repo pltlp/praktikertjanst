@@ -1,8 +1,9 @@
-@import 'colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 @import 'package:fo_components/mixins';
 @import 'package:angular_components/material_menu/mixins';
+@import 'package:grid/constants';
+@import 'colors.scss';
 
 @include fo-colors($cerulean, $astronautBlue, carnation);
 :host {
