@@ -16,7 +16,7 @@ class QuizService extends ResourceService<Quiz> {
       'Quiz för allmänheten': new Quiz()
         ..icon = 'pool'
         ..id = 'Quiz för allmänheten'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9941.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig som är nyfiken'
           ..description =
@@ -49,7 +49,7 @@ class QuizService extends ResourceService<Quiz> {
       'Quiz för dig i tandvårdsteam': new Quiz()
         ..icon = 'gavel'
         ..id = 'Quiz för dig i tandvårdsteam'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9970.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig i tandvårdsteam'
@@ -65,7 +65,7 @@ class QuizService extends ResourceService<Quiz> {
       'Quiz för dig som dentaltekniker': new Quiz()
         ..icon = 'gavel'
         ..id = 'Quiz för dig som dentaltekniker'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9970.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig som dentaltekniker'
@@ -77,24 +77,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-you-as-a-dental-technician'
           ..description =
               'Test your knowledge based on the dental technicians perspective')
-        ..type = ResourceType.quiz,
-      'Quiz för dig på miljöserviceföretag': new Quiz() /*ta bort */
-        ..icon = 'gavel'
-        ..id = 'Quiz för dig på miljöserviceföretag'
-        ..img_url = 'pics/quicksilver_management.jpg'
-        ..type = ResourceType.rise
-        ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för dig på miljöserviceföretag'
-          ..url = 'quiz-for-dig-pa-miljoserviceforetag'
-          ..description =
-              'Test på dina kunskaper utifrån miljöserviceföretagets perspektiv.')
-        ..phrases['en'] = (new Phrases()
-          ..name = 'Quiz for you at environmental service companies'
-          ..url = 'quiz-for-you-at-environmental-service-companies'
-          ..description =
-              'Test your knowledge based on the environmental services company'
-              's perspective.')
-        ..type = ResourceType.quiz,
+        ..type = ResourceType.quiz
     };
 
     return data;

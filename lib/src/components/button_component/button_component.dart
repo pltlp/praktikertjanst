@@ -31,7 +31,7 @@ class ButtonComponent implements OnInit {
   String leftBackgrondColor = '#00A0C8';
 
   @Input()
-  String rightBackgroundColor = '#003C5A';
+  String rightBackgroundColor = '#00A0C8';
 
   @Input()
   String middleHoverBackgroundColor = '#003C5A';

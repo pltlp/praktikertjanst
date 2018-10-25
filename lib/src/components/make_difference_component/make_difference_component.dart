@@ -26,9 +26,7 @@ import '../button_component/button_component.dart';
       MaterialPopupComponent,
       FoCarouselComponent,
       MaterialYesNoButtonsComponent,
-      FoCarouselSlideComponent, 
-      MaterialButtonComponent,
-      ButtonComponent
+      FoCarouselSlideComponent
     ],
     providers: const [],
     selector: 'p-make-difference',

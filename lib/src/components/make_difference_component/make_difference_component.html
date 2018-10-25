@@ -11,11 +11,18 @@
                 </h1>
             </div>
             <div class="col m3 align-middle text-center">
-                <a href="{{slide.phrases[msg.currentLanguage].link}}" target="_blank">
+                <a href="{{slide.phrases[msg.currentLanguage].link}}"
+                   target="_blank"
+                   *ngIf="slide.external_link">
                     <p-button middle="{{slide.phrases[msg.currentLanguage].button_label}}"
                               rightBackgroundColor="#00A0C8">
                     </p-button>
                 </a>
+                <p-button *ngIf="!slide.external_link"
+                          middle="{{slide.phrases[msg.currentLanguage].button_label}}"
+                          routerLink="{{slide.phrases[msg.currentLanguage].link}}"
+                          rightBackgroundColor="#00A0C8">
+                </p-button>
             </div>
         </div>
     </fo-carousel-slide>

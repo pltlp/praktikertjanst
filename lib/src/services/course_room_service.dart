@@ -13,7 +13,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
 
     data = {
       'kursrum-for-nyfikna': new CourseRoom()
-        ..backgroud_image = '/pics/CURIOSITY.jpg'
+        ..backgroud_image = 'pics/_DSC9941.jpg'
         ..document_ids = [
           'Hur farlig är kvicksilver amalgam?',
           'Hur farlig är kvicksilver amlgam egentligen?',
@@ -21,7 +21,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ]
         ..icon = 'pool'
         ..id = 'kursrum-for-nyfikna'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9941.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som bara är nyfiken'
           ..description =
@@ -47,7 +47,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Hur påverkas vi av kvicksilver?'
         ],
       'kursrum-for-tandvardsteam': new CourseRoom()
-        ..backgroud_image = '/pics/child.jpg'
+        ..backgroud_image = 'pics/_DSC9970.jpg'
         ..document_ids = [
           'Hur farlig är kvicksilver amalgam?',
           'Hur farlig är kvicksilver amlgam egentligen?',
@@ -55,7 +55,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ]
         ..icon = 'pool'
         ..id = 'kursrum-for-tandvardsteam'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9970.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på tandvårdsmottagning'
           ..description =
@@ -85,7 +85,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ],
       'kursrum-for-dentaltekniker': new CourseRoom()
         ..backgroud_image =
-            'https://www.vaasa.fi/sites/default/files/styles/landscape/public/images/shutterstock_358661990_syda_productions_netti.jpg?itok=p9n_NZrf'
+            'pics/_DSC9970.jpg'
         ..document_ids = [
           'Hur farlig är kvicksilver amalgam?',
           'Hur farlig är kvicksilver amlgam egentligen?',
@@ -93,7 +93,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ]
         ..icon = 'pool'
         ..id = 'kursrum-for-dentaltekniker'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9970.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som dentaltekniker'
           ..description =
@@ -122,7 +122,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ],
       'kursrum-for-servicetekniker': new CourseRoom()
         ..backgroud_image =
-            'https://www.skane.se/siteassets/halsa_vard/ftv_skane_30_740x340.jpg'
+            'pics/_DSC9853.jpg'
         ..document_ids = [
           'Hur farlig är kvicksilver amalgam?',
           'Hur farlig är kvicksilver amlgam egentligen?',
@@ -130,7 +130,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ]
         ..icon = 'pool'
         ..id = 'kursrum-for-servicetekniker'
-        ..img_url = 'pics/quicksilver_management.jpg'
+        ..img_url = 'pics/_DSC9853.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description =
