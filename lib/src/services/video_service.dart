@@ -77,12 +77,12 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Att lämna amalgam bakom sig'
           ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
           ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+              'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbudet som trädde i kraft 2009 i Sverige. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'How to stop using quck silver amalgam'
           ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
           ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+              'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbudet som trädde i kraft 2009 i Sverige.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters'
@@ -261,7 +261,7 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vad är kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Vad är kvicksilver?')
+          ..description = 'Michelle Nerentorp berättar vad grundämnet kvicksilver är.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -279,12 +279,12 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Var finns kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Vad är kvicksilver?')
+          ..description = 'Michelle Nerentorp berättar om var kvicksilver finns i naturen och hur människan har bidragit till att sprida det. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
           ..description =
-              'This is how environmental service company cleans a leveling vessel.')
+              'Michelle Nerentorp berättar om var kvicksilver finns i naturen och hur människan har bidragit till att sprida det.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters'
@@ -297,7 +297,7 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vilken roll har tandvården?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Vilken roll har tandvården?')
+          ..description = 'Michelle Nerentorp berättar om tandvårdens ansvar för problemet med att kvicksilver kommer ut i naturen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -315,12 +315,12 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Hur påverkas vi av kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Hur påverkas vi av kvicksilver?')
+          ..description = 'Michelle Nerentorp berättar om hur människan påverkas av kvicksilver. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
           ..description =
-              'This is how environmental service company cleans a leveling vessel.')
+              'Michelle Nerentorp berättar om hur människan påverkas av kvicksilver.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://www.youtube.com/embed/8FHTtQ--Ns0$youtubeParameters'

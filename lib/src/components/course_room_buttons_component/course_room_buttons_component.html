@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col m6">
+        <h1 class="margin-top-medium color-white">
+            {{msg.find_right_content_for_you}}
+        </h1>
+    </div>
+    <div class="col m6">
+        <div *ngFor="let courseRoom of courseRoomService.data.values">
+            <material-tooltip-card [for]="ref"
+                                   [preferredPositions]="preferredTooltipPositions">
+                <h3 class="color-astronautblue">
+                    {{courseRoom.phrases[msg.currentLanguage].description}}
+                </h3>
+            </material-tooltip-card>
+            <p-button [middle]="courseRoom.phrases[msg.currentLanguage].name"
+                      [routerLink]="msg.home_url + '/' + courseRoom.phrases[msg.currentLanguage].url"
+                      rightBackgroundColor="#00A0C8"
+                      tooltipTarget
+                      #ref="tooltipTarget"
+                      class="margin-top-medium">
+            </p-button>
+        </div>
+    </div>
+</div>

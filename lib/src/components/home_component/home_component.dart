@@ -9,7 +9,9 @@ import '../../services/messages_service.dart';
 import '../../services/quiz_service.dart';
 import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
+import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
+import '../course_room_buttons_component/course_room_buttons_component.dart';
 import '../course_room_component/course_room_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
 import '../main_header_component/main_header_component.dart';
@@ -31,7 +33,9 @@ import '../resource_component/resource_component.dart';
       NgIf,
       ResourceComponent,
       CourseRoomComponent,
-      routerDirectives
+      routerDirectives,
+      ButtonComponent,
+      CourseRoomButtonsComponent
     ],
     providers: [],
     pipes: [
@@ -48,12 +52,10 @@ class HomeComponent {
     ];
 
     resources = [
-      courseRoomService.data['kursrum-for-tandvardsteam'],
-      courseRoomService.data['kursrum-for-dentaltekniker'],
-      courseRoomService.data['kursrum-for-servicetekniker'],
-      courseRoomService.data['kursrum-for-nyfikna'],
+      riseService.data['Kvicksilver i naturen'],
       riseService.data['Lagar och regler'],
-      quizService.data['Quiz för allmänheten'],
+      riseService.data['Vad är vad på mottagningen?'],
+      
     ];
   }
   void scrollTo(String comp) {
@@ -67,6 +69,12 @@ class HomeComponent {
     }
   }
 
+
+  String background(String url)
+  {
+    return "url('$url')";
+  }
+
   List<Resource> resources;
   Router router;
   MessagesService msg;
@@ -78,4 +86,6 @@ class HomeComponent {
 
   @ViewChild('carousel')
   html.Element carousel;
+
+
 }

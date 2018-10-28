@@ -8,11 +8,8 @@
             allowfullscreen
             scrolling="no"
             class="mouse_input_blocker">
-        </iframe>
+    </iframe>
 </div>
-
-
-
 
 <p-main-header class="margin-top-x-large margin-bottom-x-large"
                (buttonClick)="scrollTo($event)"></p-main-header>
@@ -33,4 +30,11 @@
                     [routerLink]="msg.home_url + '/' + resource.phrases[msg.currentLanguage].url">
         </p-resource>
     </div>
+</div>
+
+<div id="img" class="row expand padding-bottom-medium"
+     [style.background-image]="background('pics/CY7lrCpg.jpeg')">
+     <div class="col">
+         <p-course_room_buttons></p-course_room_buttons>
+     </div>
 </div>
