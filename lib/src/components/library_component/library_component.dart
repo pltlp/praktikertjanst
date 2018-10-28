@@ -33,9 +33,9 @@ class LibraryComponent implements OnDestroy {
       this.videoService, this.sanitizer) {
        
         
-    riseService.data.values.forEach((r) => resouces.add(r));
-    quizService.data.values.forEach((r) => resouces.add(r));
-    videoService.data.values.forEach((r) => resouces.add(r));
+    riseService.data.values.forEach(resouces.add);
+    quizService.data.values.forEach(resouces.add);
+    videoService.data.values.forEach(resouces.add);
 
     // TODO: call whenever the language is changed
 

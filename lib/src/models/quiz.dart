@@ -4,23 +4,22 @@ import 'resource.dart';
 class Quiz extends Resource {
 
   Quiz(this._questions);
-  final List<Quistion> _questions;
-  List<Quistion> get questions => _questions;
+  final List<Question> _questions;
+  List<Question> get questions => _questions;
   
 }
 
 
 
 
-class Quistion {
-  Quistion(this.label, this._options, {this.multiSelect = false});
+class Question {
+  Question(this.label, this._options);
 
   final String label;
 
   final List<Option> _options;
   List<Option> get options => _options;
-
-  bool multiSelect;
+  String selectedValue;
 }
 
 class Option {

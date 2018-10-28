@@ -36,11 +36,8 @@ import '../button_component/button_component.dart';
 class MakeDifferenceComponent {
   MakeDifferenceComponent(this.router, this.msg, this.slideService);
 
-  String background(Slide slide)
-  {
-    return "url('${slide.background_image}')";
-  }
-  
+  String background(Slide slide) => "url('${slide.background_image}')";
+
   SlideService slideService;
   bool showModal = false;
   Router router;
@@ -48,5 +45,4 @@ class MakeDifferenceComponent {
   List<RelativePosition> preferredTooltipPositions = const [
     RelativePosition.AdjacentBottom
   ];
-  
 }

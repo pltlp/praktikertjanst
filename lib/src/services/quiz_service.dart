@@ -13,7 +13,17 @@ class QuizService extends ResourceService<Quiz> {
 
     data = {
       'Quiz för allmänheten': new Quiz([
-        new Quistion(
+        new Question(
+            'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+          new Option(
+              'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+              'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+              score: 1),
+          new Option('Kasta i soporna', 'Kasta i soporna', score: 0),
+          new Option('Spola ned i toaletten', 'Spola ned i toaletten',
+              score: 0),
+        ]),
+        new Question(
             'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
           new Option(
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',

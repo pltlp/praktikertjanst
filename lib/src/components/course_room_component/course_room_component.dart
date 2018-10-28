@@ -70,6 +70,14 @@ class CourseRoomComponent implements OnActivate {
     }
   }
 
+  String getLink(Resource resource) {
+    if (resource.type == ResourceType.quiz) {
+      return '${msg.home_url}/$url/quiz/${resource.phrases[msg.currentLanguage].url}';
+    } else {
+      return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
+    }
+  }
+
   final MessagesService msg;
   final VideoService videoService;
   final QuizService quizService;
@@ -85,6 +93,4 @@ class CourseRoomComponent implements OnActivate {
   List<RelativePosition> preferredTooltipPositions = const [
     RelativePosition.AdjacentBottom
   ];
-
-  
 }

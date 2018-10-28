@@ -55,7 +55,6 @@ class HomeComponent {
       riseService.data['Kvicksilver i naturen'],
       riseService.data['Lagar och regler'],
       riseService.data['Vad är vad på mottagningen?'],
-      
     ];
   }
   void scrollTo(String comp) {
@@ -69,11 +68,7 @@ class HomeComponent {
     }
   }
 
-
-  String background(String url)
-  {
-    return "url('$url')";
-  }
+  String background(String url) => "url('$url')";
 
   List<Resource> resources;
   Router router;
@@ -86,6 +81,4 @@ class HomeComponent {
 
   @ViewChild('carousel')
   html.Element carousel;
-
-
 }
