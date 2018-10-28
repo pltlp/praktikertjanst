@@ -1,16 +1,11 @@
-
 import 'resource.dart';
 
 class Quiz extends Resource {
-
-  Quiz(this._questions);
+  Quiz(this._questions, this.minScore);
   final List<Question> _questions;
   List<Question> get questions => _questions;
-  
+  final double minScore;
 }
-
-
-
 
 class Question {
   Question(this.label, this._options);
@@ -23,16 +18,11 @@ class Question {
 }
 
 class Option {
-  Option(this.value, this.label,
-      {this.selected = false, this.score = 0});
+  Option(this.value, this.label, {this.score = 0});
 
   final String value;
 
   final String label;
 
   int score;
-
-  bool selected;
 }
-
-

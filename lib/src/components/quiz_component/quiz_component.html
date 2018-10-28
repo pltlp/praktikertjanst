@@ -1,12 +1,12 @@
 <div class="top-header-offset">
     <div class="row"
-         *ngIf="model != null">
+         *ngIf="model != null && !completed">
         <div class="col">
             <h2>Quiz</h2>
             <material-stepper orientation="vertical"
-                              legalJumps="backwards">
-                <ng-container *ngFor="let question of model.questions">
-                    <template step
+                              legalJumps="backwards" [noText]="msg.cancel">
+                <ng-container *ngFor="let question of model.questions; let i = index">
+                    <template (continue)="onContinue($event, i)" step
                               [optional]="false"
                               [canContinue]="question.selectedValue != null"
                               [name]="question.label">
@@ -17,7 +17,6 @@
                                         <material-radio [value]="option.value">
                                             {{option.label}}
                                         </material-radio>
-
                                     </div>
                                 </div>
                             </div>
@@ -25,6 +24,7 @@
                     </template>
                 </ng-container>
             </material-stepper>
+            <p>{{currentScore}}/{{maxScore}} {{success}}</p>
         </div>
     </div>
 </div>

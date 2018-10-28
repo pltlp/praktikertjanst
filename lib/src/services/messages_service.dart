@@ -93,5 +93,6 @@ class MessagesService {
   String get close => Intl.message('stäng', name: 'close');    
   String get menu => Intl.message('meny', name: 'menu');    
   String get find_right_content_for_you => Intl.message('Hitta rätt innehåll för dig', name: 'find_right_content_for_you');    
+  String get cancel => Intl.message('avbryt', name: 'cancel');    
 
 }

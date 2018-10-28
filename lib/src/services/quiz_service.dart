@@ -33,7 +33,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-      ])
+      ], 0.7)
         ..icon = 'pool'
         ..id = 'Quiz för allmänheten'
         ..img_url = 'pics/_DSC9941.jpg'
@@ -47,7 +47,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public')
         ..type = ResourceType.quiz,
-      'Quiz för dig i tandvårdsteam': new Quiz([])
+      'Quiz för dig i tandvårdsteam': new Quiz([], 0.7)
         ..icon = 'gavel'
         ..id = 'Quiz för dig i tandvårdsteam'
         ..img_url = 'pics/_DSC9970.jpg'
@@ -63,7 +63,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz,
-      'Quiz för dig som dentaltekniker': new Quiz([])
+      'Quiz för dig som dentaltekniker': new Quiz([], 0.7)
         ..icon = 'gavel'
         ..id = 'Quiz för dig som dentaltekniker'
         ..img_url = 'pics/_DSC9970.jpg'
