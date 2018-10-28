@@ -14,5 +14,6 @@ class Resource {
   String id;
   ResourceType type;
   bool complete = false;
+  bool get isQuiz => type == ResourceType.quiz;
   
 }

@@ -34,12 +34,13 @@ class Routes {
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            path:
+                '${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
+            component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}',

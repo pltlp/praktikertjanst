@@ -6,6 +6,7 @@ import 'package:fo_components/fo_components.dart';
 import '../../models/course_room.dart';
 import '../../models/document.dart';
 import '../../models/resource.dart';
+import '../../models/resource_types.dart';
 import '../../models/video.dart';
 import '../../services/course_room_service.dart';
 import '../../services/document_service.dart';

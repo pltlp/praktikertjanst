@@ -1,9 +1,58 @@
 <div class="top-header-offset">
     <div class="row">
         <div class="col">
-            <fo-quiz *ngIf="model != null"
-                     [model]="model.data[msg.currentLanguage]">
-            </fo-quiz>
+            <h2>Quiz</h2>
+            <material-stepper legalJumps="all"
+                              orientation="vertical"
+                              size="default">
+                <template step
+                          [optional]="true">
+
+                    <h2 class="color-astronautblue">{{model.questions[0].label}}</h2>
+
+                    <div *ngFor="let option of model.questions[0].options; let i = index">
+                        <div class="row">
+                            <div class="col m1 align-middle">
+                                <material-radio class="no-left-margin" (checkedChange)="onButtonChange(i, $event)" [checked]="optionNo == i">
+
+                                </material-radio>
+                            </div>
+                            <div class="col m11 align-middle">
+                                <p>
+                                    {{option.label}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <template step
+                          name="Step B Title"
+                          #stepB="step">
+                    <div class="step-b">
+                        <h1>Content B</h1>
+                    </div>
+                </template>
+                <template [summary]="stepB">
+                    <h3>Great job completeing step B!</h3>
+                </template>
+                <template step
+                          name="Step C Title"
+                          #stepC="step"
+                          [optional]="true">
+                    <div class="step-c">
+                        <h1>Content C</h1>
+                    </div>
+                </template>
+                <template [summary]="stepC">
+                    <h3>Summary</h3>
+                </template>
+                <template step
+                          name="Step D Title">
+                    <div class="step-d">
+                        <h1>Content D</h1>
+                    </div>
+                </template>
+            </material-stepper>
         </div>
     </div>
 </div>

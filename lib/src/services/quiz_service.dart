@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:angular/angular.dart';
-import 'package:fo_components/fo_components.dart';
 import '../models/quiz.dart';
 import '../models/resource.dart';
 import '../models/resource_types.dart';
@@ -13,12 +12,23 @@ class QuizService extends ResourceService<Quiz> {
     await new Future.delayed(const Duration(milliseconds: 1));
 
     data = {
-      'Quiz för allmänheten': new Quiz()
+      'Quiz för allmänheten': new Quiz([
+        new Quistion(
+            'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+          new Option(
+              'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+              'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
+              score: 1),
+          new Option('Kasta i soporna', 'Kasta i soporna', score: 0),
+          new Option('Spola ned i toaletten', 'Spola ned i toaletten',
+              score: 0),
+        ]),
+      ])
         ..icon = 'pool'
         ..id = 'Quiz för allmänheten'
         ..img_url = 'pics/_DSC9941.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för dig som är nyfiken'
+          ..name = 'Quiz för allmänheten'
           ..description =
               'Test på dina kunskaper utifrån ett allmänt perspektiv.'
           ..url = 'quiz-for-allmanheten')
@@ -26,27 +36,8 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz for the public'
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public')
-        ..data = {
-          'sv': new FoQuizModel([
-            new FoQuestionModel(
-                'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
-              new FoOptionModel(
-                  'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
-                  'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
-                  score: 1),
-              new FoOptionModel(
-                  'Kasta i soporna',
-                  'Kasta i soporna',
-                  score: 0),
-              new FoOptionModel(
-                  'Spola ned i toaletten',
-                  'Spola ned i toaletten',
-                  score: 0)
-            ])
-          ])
-        }
         ..type = ResourceType.quiz,
-      'Quiz för dig i tandvårdsteam': new Quiz()
+      'Quiz för dig i tandvårdsteam': new Quiz([])
         ..icon = 'gavel'
         ..id = 'Quiz för dig i tandvårdsteam'
         ..img_url = 'pics/_DSC9970.jpg'
@@ -62,7 +53,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz,
-      'Quiz för dig som dentaltekniker': new Quiz()
+      'Quiz för dig som dentaltekniker': new Quiz([])
         ..icon = 'gavel'
         ..id = 'Quiz för dig som dentaltekniker'
         ..img_url = 'pics/_DSC9970.jpg'

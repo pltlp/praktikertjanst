@@ -25,7 +25,7 @@
                               [middle]="resource.phrases[msg.currentLanguage].name"
                               [right]="resource.complete ? 'check': null"
                               (click)="resource.complete = true"
-                              [routerLink]="msg.home_url +'/' + url + '/' + resource.phrases[msg.currentLanguage].url"
+                              [routerLink]="resource.isQuiz ? msg.home_url +'/' + url + '/quiz/' + resource.phrases[msg.currentLanguage].url : msg.home_url +'/' + url + '/' + resource.phrases[msg.currentLanguage].url"
                               rightBackgroundColor="#003C5A"
                               tooltipTarget
                               #ref="tooltipTarget">
