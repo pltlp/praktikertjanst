@@ -10,7 +10,7 @@ class SlideService {
     return data = [
       new Slide()
         ..background_image =
-            'pics/_DSC0206.jpg'
+            'pics/pipe.jpg'
         ..external_link = true
         ..phrases = {
           'sv': new SlidePhrases()
@@ -25,7 +25,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/_DSC0192.jpg'
+            'pics/environmental_service_companies.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -55,7 +55,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/_DSC9869.jpg'
+            'pics/gloves.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -70,7 +70,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/sanera_avlopp.png'
+            'pics/clean_the_sewer.png'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
