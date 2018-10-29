@@ -106,7 +106,7 @@ class Routes {
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.about}',
+            path: '${msg.home_url}/${msg.contact}',
             component: ac.AboutComponentNgFactory,
           ),
           RouteDefinition(

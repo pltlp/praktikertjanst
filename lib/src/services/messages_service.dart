@@ -135,4 +135,6 @@ class MessagesService {
 
   String word(int howMany) => Intl.plural(howMany,
       one: 'ord', other: 'ord', name: 'word', args: [howMany]);
+
+  String get contact => Intl.message('kontakt', name: 'contact');
 }

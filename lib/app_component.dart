@@ -92,7 +92,7 @@ class AppComponent {
 
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.about, action: () => _router.navigateByUrl('${msg.home_url}/${msg.about_url}')),
+        MenuItem(msg.contact, action: () => _router.navigateByUrl('${msg.home_url}/${msg.contact}')),
         MenuItem(msg.language, subMenu: subMenu),
         MenuItem(msg.library,action: () => _router.navigateByUrl('${msg.home_url}/${msg.library_url}')),
       ])
