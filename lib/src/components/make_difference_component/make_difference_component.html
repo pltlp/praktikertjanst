@@ -1,18 +1,29 @@
-<div [style.background-image]="backgroundImage">
-    <div id="gradiant">
-        <div class="row padding-top-x-large padding-bottom-x-large align-middle" style="min-height:300px">
-            <div class="col m6 align-middle">
-                <p-button button_label="{{model.phrases[msg.currentLanguage].name| name}}"
-                          [tooltip]="model.phrases[msg.currentLanguage].name"
-                          [routerLink]="msg.home_url + '/' + msg.library + '/' + model.phrases[msg.currentLanguage].url">
-                </p-button>
+<fo-carousel [showRadioButtons]="slideService.data.length > 1"
+             [duration]="7000">
+    <fo-carousel-slide *ngFor="let slide of slideService.data">
+        <div class="row expand center"
+             [style.background-image]="background(slide)">
+            <div class="overlay">
             </div>
-            <div class="col m6 align-middle">
-                <p-button button_label="{{msg.library  | name}}"
-                          [tooltip]="msg.library"
-                          [routerLink]="msg.home_url + '/' + msg.library_url">
+            <div class="col m4 align-middle text-center">
+                <h1>
+                    {{slide.phrases[msg.currentLanguage].paragraph}}
+                </h1>
+            </div>
+            <div class="col m3 align-middle text-center">
+                <a href="{{slide.phrases[msg.currentLanguage].link}}"
+                   target="_blank"
+                   *ngIf="slide.external_link">
+                    <p-button middle="{{slide.phrases[msg.currentLanguage].button_label}}"
+                              rightBackgroundColor="#00A0C8">
+                    </p-button>
+                </a>
+                <p-button *ngIf="!slide.external_link"
+                          middle="{{slide.phrases[msg.currentLanguage].button_label}}"
+                          routerLink="{{slide.phrases[msg.currentLanguage].link}}"
+                          rightBackgroundColor="#00A0C8">
                 </p-button>
             </div>
         </div>
-    </div>
-</div>
+    </fo-carousel-slide>
+</fo-carousel>

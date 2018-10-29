@@ -1,27 +1,26 @@
 <div id="page">
     <header>
         <d-navbar backgroundColor="#00A0C8"
-                  [height]="150"
+                  [height]="126"
                   [alwaysShow]="false"
                   [trackDocument]="true">
             <div id="upper-row"
-                 class="row">
+                 class="row margin-top-small">
                 <div class="m2 s4 col align-middle">
                     <img src="pics/hg-rid_logo_white.png"
                          alt="logo"
                          class="clickable"
                          [routerLink]="msg.home_url">
                 </div>
-                <div class="s8 hide-for-large hide-for-medium">
-                    <material-menu [menu]="menuModel">
-                        <section menu-button>
-                            <material-icon icon="menu"
-                                           class="menu-icon"></material-icon>
-                        </section>
-                    </material-menu>
+                <div class="col s8 hide-for-large hide-for-medium text-right align-bottom">
+                    <dropdown-menu [menu]="menuModel"
+                                   [buttonText]="msg.menu | name"
+                                   class="nounderline"
+                                   [preferredPositions]="position" style="margin-right:2em">
+                    </dropdown-menu>
                 </div>
                 <div class="m10 col text-right align-bottom hide-for-small">
-                    <material-dropdown-select style="margin-left:2em; color:white"
+                    <material-dropdown-select class="color-white"
                                               [buttonText]="msg.language | name">
                         <material-select-item>{{msg.swedish | name}}</material-select-item>
                         <material-select-item>{{msg.english | name}}</material-select-item>
@@ -29,7 +28,8 @@
                     </material-dropdown-select>
                     <a [routerLink]="msg.home_url + '/' + msg.about_url">{{msg.about | name}}</a>
                     <a [routerLink]="msg.home_url + '/' + msg.library_url">{{msg.library | name}}</a>
-                    <a class="clickable" (click)="wordListModalVisible = true">{{msg.word_list | name}}</a>
+                    <a class="clickable"
+                       (click)="wordListModalVisible = true">{{msg.word_list | name}}</a>
                 </div>
             </div>
             <div class="row expand background-color-astronautblue text-left">
@@ -38,21 +38,26 @@
                 </div>
             </div>
         </d-navbar>
-    </header>    
+    </header>
     <main>
         <router-outlet *ngIf="loaded"
                        [routes]="routes.all"></router-outlet>
     </main>
-    <footer>
+    <footer *ngIf="showFooter">
         <p-footer></p-footer>
     </footer>
 </div>
 
-<fo-modal [(visible)]="wordListModalVisible" [title]="msg.word_list | name">
-    <div class="row">
-        <div class="col">
-            <p-word-list></p-word-list>
+
+<fo-modal [(visible)]="wordListModalVisible"
+          [title]="msg.word_list | name"
+          [fixedWidth]="true"
+          [fixedHeight]="true">
+    <div id="modal">
+        <div class="row">
+            <div class="col">
+                <p-word-list></p-word-list>
+            </div>
         </div>
     </div>
-
 </fo-modal>

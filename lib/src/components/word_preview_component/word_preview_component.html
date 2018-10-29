@@ -1,0 +1,15 @@
+<div *ngIf="model == null">
+</div>
+<div *ngIf="model != null">
+    <div class="row">
+        <div class="col m10 align-bottom">
+            <h3 class="color-astronautblue"> {{model.phrases[msg.currentLanguage].name}}</h3>
+            <p>{{model.phrases[msg.currentLanguage].description}}</p>
+        </div>
+        <div class="col m2 align-bottom">
+            <img class="image"
+                 [src]="model?.img_urls[0]"
+                 [alt]="model.phrases[msg.currentLanguage].name">
+        </div>
+    </div>
+</div>

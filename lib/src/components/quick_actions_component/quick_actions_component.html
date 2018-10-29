@@ -1,7 +1,0 @@
-<div class="row collapse">
-    <div class="col padding-top-none padding-bottom-none l3 m4"
-         *ngFor="let quickAction of quickActionService.data.values"> 
-        <p-quick-action [model]="quickAction"
-                        [routerLink]="msg.home_url + '/' + msg.library_url + '/'+ quickAction.phrases[msg.currentLanguage].url"></p-quick-action> 
-    </div>
-</div>

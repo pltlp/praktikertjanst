@@ -1,15 +1,20 @@
-<div *ngIf="model == null">
-</div>
-<div *ngIf="model != null">
-    <fo-carousel>
-        <fo-carousel-slide *ngFor="let image of model.img_urls">
-            <div>
-                <img class="wordImage"
-                     [src]="image"
-                     [alt]="model.phrases[msg.currentLanguage].name">
-            </div>
-        </fo-carousel-slide>
-    </fo-carousel>
-    <h3 class="color-astronautblue"> {{model.phrases[msg.currentLanguage].name}}</h3>
-    <p>{{model.phrases[msg.currentLanguage].description}}</p>
-</div>
+<ng-container *ngIf="model != null">
+    <div class="row">
+        <div class="col m6 align-middle">
+            <h3 class="color-astronautblue margin-top-none margin-bottom-none">
+                {{model.phrases[msg.currentLanguage].name}}</h3>
+            <p class="margin-top-x-small margin-bottom-none">{{model.phrases[msg.currentLanguage].description}}</p>
+        </div>
+        <div class="col m6 align-middle">
+            <fo-carousel>
+                <fo-carousel-slide *ngFor="let image of model.img_urls">
+                    <div>
+                        <img class="wordImage"
+                             [src]="image"
+                             [alt]="model.phrases[msg.currentLanguage].name">
+                    </div>
+                </fo-carousel-slide>
+            </fo-carousel>
+        </div>
+    </div>
+</ng-container>

@@ -10,26 +10,35 @@ import '../../services/rise_service.dart';
     templateUrl: 'rise_component.html',
     styleUrls: const ['rise_component.css'],
     directives: const [NgIf],
-    providers: [MessagesService])
+    providers: [])
 class RiseComponent implements OnInit, OnActivate {
   RiseComponent(this.sanitizer, this.riseService, this.msg);
 
   @override
   void onActivate(RouterState previous, RouterState current) async {
-    final id = current.path.split('/').last;
+    final resourceUrl = current.parameters['url'];
 
-    model = riseService.data[id];
-    if (model != null) {
-      url = sanitizer.bypassSecurityTrustResourceUrl(
-          model.phrases[msg.currentLanguage].url);
+    try {
+      model = riseService.data.values.firstWhere((resource) =>
+          resource.phrases[msg.currentLanguage].url == resourceUrl);
+    } on StateError {
+      print('resourse not found');
     }
+
+    if (model != null) {
+      model.complete = true;
+    }
+
+    url = sanitizer
+        .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
   }
 
   @override
   void ngOnInit() {
-    if (model != null)
-      url = sanitizer.bypassSecurityTrustResourceUrl(
-          model.phrases[msg.currentLanguage].url);
+    if (model != null) {
+      url = sanitizer
+          .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
+    }
   }
 
   bool showModal = false;

@@ -1,66 +1,59 @@
 <div *ngIf="model != null"
      style="margin-top:150px">
-    <div class="row margin-bottom-large">
+    <div class="row">
         <div class="col">
-            <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].title}}</h1>
+            <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage].name}}</h1>
             <p class="justified">{{model.phrases[msg.currentLanguage].description}}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col m3"></div>
-        <div class="col m6">
-            <img [src]="model.img_url"
-                 [alt]="model.phrases[msg.currentLanguage].title">
-        </div>
-        <div class="col m3"></div>
-    </div>
-    <div class="row margin-top-large">
-        <div class="col">
-            <material-stepper legalJumps="backwards"
-                              orientation="vertical"
-                              size="default">
-                <div *ngFor="let quickAction of quickActions">
-                    <template step
-                              cancelHidden
-                              [complete]="quickAction.complete"                              
-                              [name]="quickAction.phrases[msg.currentLanguage].name">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="margin-bottom-x-small">
-                                    <i>{{quickAction.phrases[msg.currentLanguage].description}}</i><br /><br />
-                                    <span (click)="quickAction.complete = true" [routerLink]="msg.home_url +'/' + url + '/' + quickAction.phrases[msg.currentLanguage].url"
-                                          class="clickable color-cerulean">[{{msg.open}}]</span>
-                                </h4>
-                            </div>
-                        </div>
-                    </template>
+    <div class="row expand collapse">
+        <div id="img"
+             class="col padding-top-x-large padding-bottom-x-large"
+             [style.background-image]="'url(' + model.img_url + ')'">
+            <div class="row"
+                 *ngFor="let resource of resources; let i = index">
+                <div class="col m3 hide-for-small"></div>
+                <div class="col m6 s12">
+                    <material-tooltip-card [for]="ref"
+                                           [preferredPositions]="preferredTooltipPositions">
+                        <h3 class="color-astronautblue">
+                            {{resource.phrases[msg.currentLanguage].description}}
+
+                        </h3>
+                    </material-tooltip-card>
+                    <p-button [left]="(i + 1).toString()+'.'"
+                              [middle]="resource.phrases[msg.currentLanguage].name"
+                              [right]="resource.complete ? 'check': null"
+                              (click)="resource.complete = true"
+                              [routerLink]="getLink(resource)"
+                              rightBackgroundColor="#003C5A"
+                              tooltipTarget
+                              #ref="tooltipTarget">
+                    </p-button>
                 </div>
-            </material-stepper>
+                <div class="col m3 hide-for-small"></div>
+            </div>
         </div>
     </div>
-    <div class="row expand margin-top-x-large">
-        <div class="col">
+    <div class="row expand">
+        <div class="col padding-none">
             <p-carousel [models]="videos"
                         [header]="msg.course_room_for_curious_carousel_header"></p-carousel>
         </div>
     </div>
     <div class="row">
         <div class="col m4">
-            <h1 class="color-astronautblue">{{msg.archive | name}} </h1>
+            <h1 class="color-astronautblue">{{msg.archive | name}}</h1>
         </div>
     </div>
     <div class="row margin-bottom-x-large">
+        <div class="col m3"></div>
         <div class="col m6">
-            <!--
-            <p-button [button_label]="msg.word_list"
-                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.word_list_url"></p-button>
-        -->
-        </div>
-        <div class="col m6">
-            <p-button [button_label]="msg.document(1)"
-                      [tooltip]="msg.document(1)"
-                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url">
+            <p-button [middle]="msg.document(1)"
+                      [routerLink]="msg.home_url + '/' + url + '/'+ msg.documents_component_url"
+                      rightBackgroundColor="#00A0C8">
             </p-button>
         </div>
+        <div class="col m3"></div>
     </div>
 </div>

@@ -5,15 +5,18 @@ import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/course_room.dart';
 import '../../models/document.dart';
-import '../../models/quick_action.dart';
+import '../../models/resource.dart';
+import '../../models/resource_types.dart';
 import '../../models/video.dart';
 import '../../services/course_room_service.dart';
 import '../../services/document_service.dart';
 import '../../services/messages_service.dart';
-import '../../services/quick_action_service.dart';
+import '../../services/quiz_service.dart';
+import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
 import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
+import '../word_list_component/word_list_component.dart';
 
 @Component(
     directives: const [
@@ -22,8 +25,17 @@ import '../carousel_component/carousel_component.dart';
       MaterialStepperComponent,
       NgIf,
       NgFor,
-      routerDirectives,
-      StepDirective
+      StepDirective,
+      FoModalComponent,
+      WordListComponent,
+      RouterLink,
+      MaterialTooltipDirective,
+      MaterialPaperTooltipComponent,
+      MaterialTooltipTargetDirective,
+      ClickableTooltipTargetDirective,
+      MaterialInkTooltipComponent,
+      MaterialIconTooltipComponent,
+      MaterialPopupComponent
     ],
     providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
@@ -31,41 +43,54 @@ import '../carousel_component/carousel_component.dart';
     templateUrl: 'course_room_component.html',
     pipes: [NamePipe])
 class CourseRoomComponent implements OnActivate {
-  CourseRoomComponent(this.router, this.msg, this.videoService,
-      this.courseRoomService, this.quickActionService, this.documentService);
+  CourseRoomComponent(this.msg, this.videoService, this.courseRoomService,
+      this.documentService, this.quizService, this.riseService);
 
   @override
-  void onActivate(RouterState previous, RouterState current) {
+  void onActivate(RouterState previous, RouterState current) async {
     url = current.path.split('/').last;
+
     model = courseRoomService.data[url];
-    
-    
 
     if (model != null) {
-
       videos = model.video_ids
           .map((v) => videoService.data[v])
           .toList(growable: true);
-      quickActions = model.quick_action_ids
-          .map((id) => quickActionService.data[id])
-          .toList(growable: false);
+
+      for (var i = 0; i < model.resources_ids.length; i++) {
+        Resource resource;
+        resource = quizService.data[model.resources_ids[i]];
+        resource ??= riseService.data[model.resources_ids[i]];
+        resources.add(resource);
+      }
 
       documents = model.document_ids
           .map((id) => documentService.data[id])
           .toList(growable: false);
-
     }
   }
 
-  final Router router;
+  String getLink(Resource resource) {
+    if (resource.type == ResourceType.quiz) {
+      return '${msg.home_url}/$url/quiz/${resource.phrases[msg.currentLanguage].url}';
+    } else {
+      return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
+    }
+  }
+
   final MessagesService msg;
   final VideoService videoService;
+  final QuizService quizService;
+  final RiseService riseService;
   List<Video> videos;
-  List<QuickAction> quickActions;
+  List<Resource> resources = [];
   List<Document> documents;
   CourseRoom model;
   final CourseRoomService courseRoomService;
-  final QuickActionService quickActionService;
   final DocumentService documentService;
+  bool wordListModalVisible = false;
   String url;
+  List<RelativePosition> preferredTooltipPositions = const [
+    RelativePosition.AdjacentBottom
+  ];
 }

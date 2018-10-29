@@ -2,18 +2,21 @@ import 'dart:html' as html;
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
 import 'package:fo_components/fo_components.dart';
-import '../../models/quick_action.dart';
+import '../../models/resource.dart';
 import '../../models/video.dart';
+import '../../services/course_room_service.dart';
 import '../../services/messages_service.dart';
-import '../../services/quick_action_service.dart';
+import '../../services/quiz_service.dart';
+import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
+import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
+import '../course_room_buttons_component/course_room_buttons_component.dart';
 import '../course_room_component/course_room_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
 import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
-import '../quick_action_component/quick_action_component.dart';
-import '../quick_actions_component/quick_actions_component.dart';
+import '../resource_component/resource_component.dart';
 
 @Component(
     selector: 'p-home',
@@ -26,34 +29,32 @@ import '../quick_actions_component/quick_actions_component.dart';
       CarouselComponent,
       MainHeaderComponent,
       MakeDifferenceComponent,
-      QuickActionsComponent,
       NgFor,
       NgIf,
-      FoYouTubePlayerComponent,
-      QuickActionComponent,
+      ResourceComponent,
       CourseRoomComponent,
-      routerDirectives
+      routerDirectives,
+      ButtonComponent,
+      CourseRoomButtonsComponent
     ],
     providers: [],
     pipes: [
       NamePipe
     ])
 class HomeComponent {
-  HomeComponent(
-      this.quickActionService, this.router, this.msg, this.videoService) {
+  HomeComponent(this.router, this.msg, this.videoService, this.riseService,
+      this.courseRoomService, this.quizService) {
     videos = [
-      videoService.data['Goda exempel - sanering'],
-      videoService.data['Goda exempel - skötsel'],
-      videoService.data['Goda exempel - installation'],
+      videoService.data['Så upplevde vi saneringen'],
+      videoService.data['Så arbetar vi på mottagningen'],
+      videoService.data['Så går en installation till'],
+      videoService.data['Att lämna amalgam bakom sig']
     ];
 
-    quickActions = [
-      quickActionService.data['För dig på tandläkarmottagning'],
-      quickActionService.data['För dig som är dentaltekniker'],
-      quickActionService.data['Lagar och regler'],
-      quickActionService.data['För dig som är servicetekniker'],
-      quickActionService.data['För dig som bara är nyfiken'],
-      quickActionService.data['Quiz vad har du lärt dig?'],
+    resources = [
+      riseService.data['Kvicksilver i naturen'],
+      riseService.data['Lagar och regler'],
+      riseService.data['Vad är vad på mottagningen?'],
     ];
   }
   void scrollTo(String comp) {
@@ -67,12 +68,16 @@ class HomeComponent {
     }
   }
 
-  QuickActionService quickActionService;
-  List<QuickAction> quickActions;
+  String background(String url) => "url('$url')";
+
+  List<Resource> resources;
   Router router;
   MessagesService msg;
   List<Video> videos;
   VideoService videoService;
+  CourseRoomService courseRoomService;
+  RiseService riseService;
+  QuizService quizService;
 
   @ViewChild('carousel')
   html.Element carousel;

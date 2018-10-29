@@ -12,15 +12,18 @@ import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/components/word_list_component/word_list_component.dart';
+import 'src/components/word_preview_component/word_preview_component.dart';
 import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
 import 'src/services/document_service.dart';
 import 'src/services/messages_service.dart';
-import 'src/services/quick_action_service.dart';
+import 'src/services/quiz_service.dart';
 import 'src/services/rise_service.dart';
+import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
+
 
 @Component(
     selector: 'p-app',
@@ -42,7 +45,14 @@ import 'src/services/word_service.dart';
       MaterialMenuComponent,
       MaterialDropdownSelectComponent,
       MaterialSelectItemComponent,
-      WordListComponent
+      WordListComponent,
+      FoIconComponent,
+      MaterialPopupComponent,
+      PopupSourceDirective,
+      MaterialListComponent,
+      MaterialListItemComponent,
+      WordPreviewComponent,
+      DropdownMenuComponent
     ],
     providers: [
       routerProvidersHash,
@@ -50,11 +60,12 @@ import 'src/services/word_service.dart';
       materialProviders,
       MessagesService,
       VideoService,
-      QuickActionService,
       DocumentService,
       RiseService,
       CourseRoomService,
-      WordService
+      WordService,
+      QuizService,
+      SlideService
     ],
     pipes: [
       NamePipe
@@ -65,11 +76,12 @@ class AppComponent {
       this.msg,
       this._router,
       this.videoService,
-      this.quickActionService,
       this.documentService,
       this.riseService,
       this.courseRoomService,
-      this.wordService) {
+      this.wordService,
+      this.quizService,
+      this.slideService) {
     subMenu = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(msg.swedish),
@@ -80,26 +92,41 @@ class AppComponent {
 
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.about),
+        MenuItem(msg.about, action: () => _router.navigateByUrl('${msg.home_url}/${msg.about_url}')),
         MenuItem(msg.language, subMenu: subMenu),
-        MenuItem(msg.library),
+        MenuItem(msg.library,action: () => _router.navigateByUrl('${msg.home_url}/${msg.library_url}')),
       ])
     ]);
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
+      _router.onRouteActivated.listen((state) {
+      window.scrollTo(0, 0);
+    });
 
     _router.onNavigationStart.listen((state) {
       window.scrollTo(0, 0);
     });
   }
+
+
+  bool get showFooter {
+    if (_router.current == null) return true;
+    final urlParam = _router.current.parameters['url'];
+    if (urlParam == null) return true;
+    
+    return riseService.data.values.where((resource) =>
+          urlParam == resource.phrases[msg.currentLanguage].url).isEmpty;  
+  }
+
   Future<void> _loadResources() async {
     loaded = false;
     await videoService.fetchAll();
-    await quickActionService.fetchAll();
     await documentService.fetchAll();
     await riseService.fetchAll();
     await courseRoomService.fetchAll();
     await wordService.fetchAll();
+    await quizService.fetchAll();
+    await slideService.fetchAll();
     loaded = true;
   }
 
@@ -113,11 +140,16 @@ class AppComponent {
   Router _router;
 
   final VideoService videoService;
-  final QuickActionService quickActionService;
   final DocumentService documentService;
   final RiseService riseService;
   final CourseRoomService courseRoomService;
   final WordService wordService;
+  final QuizService quizService;
+  final SlideService slideService;
   bool loaded = false;
   bool wordListModalVisible = false;
+  bool languageSelectorVisible = false;
+  List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
+  String iconSize = '1.5em';
+  
 }

@@ -1,3 +1,15 @@
-<button *ngIf="tooltip == null"> {{button_label | name}} </button>
-<button *ngIf="tooltip != null"
-        [materialTooltip]="tooltip"> {{button_label | name}} </button>
+<button>
+        <div id="flex">
+                <div id="leading" [style.background-color]="currentLeftBackgroundColor">
+                        {{left}}
+                </div>
+                <div id="middle" [style.background-color]="currentMiddleBackgroundColor" [class.shadow]="rightBackgroundColor != middleBackgroundColor">
+                        {{middle | name}}
+                </div>
+                <div id="trailing" [style.background-color]="currentRightBackgroundColor">
+                        <material-icon *ngIf="right != null"
+                                       [icon]="right"
+                                       baseline></material-icon>
+                </div>
+        </div>
+</button>

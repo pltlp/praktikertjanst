@@ -46,7 +46,7 @@ class MessagesService {
   String get document_url => Intl.message('dokument', name: 'document_url');
 
   String get documents_component_url =>
-      Intl.message('dokument-lista', name: 'documents_component_url');
+      Intl.message('dokumentlista', name: 'documents_component_url');
 
   String get english => Intl.message('engelska', name: 'english');
 
@@ -89,4 +89,10 @@ class MessagesService {
 
   String get type_here_to_search =>
       Intl.message('Skriv in här för att söka...', name: 'type_here_to_search');    
+
+  String get close => Intl.message('stäng', name: 'close');    
+  String get menu => Intl.message('meny', name: 'menu');    
+  String get find_right_content_for_you => Intl.message('Hitta rätt innehåll för dig', name: 'find_right_content_for_you');    
+  String get cancel => Intl.message('avbryt', name: 'cancel');    
+
 }

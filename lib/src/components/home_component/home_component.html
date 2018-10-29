@@ -1,23 +1,40 @@
 <div id="youtube-player-wrapper">
     <iframe id="ytplayer"
-            src="https://www.youtube.com/embed/xfOfFNb1kzI?autoplay=1&controls=1&fs=0&modestbranding=1&rel=0&showinfo=0"
+            type="text/html"
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/HeoPLxIrt_A?autoplay=1&fs=0&loop=1&playlist=HeoPLxIrt_A&modestbranding=1&color=white&rel=0&showinfo=0&mute=1&controls=0"
             frameborder="0"
             allowfullscreen
-            scrolling="no"></iframe>
+            scrolling="no"
+            class="mouse_input_blocker">
+    </iframe>
 </div>
+
 <p-main-header class="margin-top-x-large margin-bottom-x-large"
                (buttonClick)="scrollTo($event)"></p-main-header>
+
 <div #carousel>
-    <p-carousel [header]="msg.good_examples"
+    <p-carousel class="padding-bottom-large"
+                [header]="msg.good_examples"
                 [models]="videos"></p-carousel>
+
 </div>
-<p-make-difference backgroundImage="url('pics/clean_future.jpg')"
-                   [model]="quickActionService.data['Kvicksilver i naturen']"></p-make-difference>
-<div class="row margin-top-x-large margin-bottom-x-large collapse">
+
+<p-make-difference></p-make-difference>
+
+<div class="row margin-bottom-x-large">
     <div class="col m4"
-         *ngFor="let quickAction of quickActions">
-        <p-quick-action [model]="quickAction"
-                        [routerLink]="msg.home_url +'/'+ quickAction.phrases[msg.currentLanguage].url">
-        </p-quick-action>
+         *ngFor="let resource of resources">
+        <p-resource [model]="resource"
+                    [routerLink]="msg.home_url + '/' + resource.phrases[msg.currentLanguage].url">
+        </p-resource>
     </div>
+</div>
+
+<div id="img" class="row expand padding-bottom-medium"
+     [style.background-image]="background('pics/CY7lrCpg.jpeg')">
+     <div class="col">
+         <p-course_room_buttons></p-course_room_buttons>
+     </div>
 </div>

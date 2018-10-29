@@ -1,21 +1,19 @@
-@import 'colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
 @import 'package:fo_components/mixins';
+@import 'package:angular_components/material_menu/mixins';
+@import 'package:grid/constants';
+@import 'colors.scss';
 
 @include fo-colors($cerulean, $astronautBlue, carnation);
-
 :host {
+    display: block;
     div#page {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;        
+        min-height: 100vh;
         main {
             flex: 1 0 auto;
-
-            router-outlet {
-                //margin-top: 150px;
-            }
         }
         header,
         footer {
@@ -24,19 +22,16 @@
         header {
             d-navbar {
                 div#upper-row {
-                    height: 125px;
+                    height: 90px;
                     img {
-                        max-height: 100px;
+                        max-height: 90px;
                         width: auto;
                         max-width: 100%;
-                        min-height: 50px;
-                        min-width: auto;
-                        cursor: pointer;
                     }
                 }
                 display: block;
-                material-icon.menu-icon {
-                    @include material-icon-size($mat-grid * 7);
+                dropdown-menu {
+                    @include dropdown-menu-nounderline;
                     color: white;
                 }
                 a {
@@ -45,9 +40,12 @@
                     margin-left: 2em;
                 }
                 a:hover {
-                    color: $astronautBlue; 
+                    color: $astronautBlue;
                     transition-duration: 0.2s;
                     transition-property: color;
+                }
+                .clickable {
+                    cursor: pointer;
                 }
             }
         }
