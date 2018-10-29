@@ -6,7 +6,7 @@
             <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
         </span>
         <div id="flex">
-            <material-icon *ngIf="!home() || !isCourseRoom()"
+            <material-icon *ngIf="!dontShowCloseButton()"
                            icon="close"
                            class="color-white clickable end"
                            (click)="back()">

@@ -49,24 +49,24 @@ class BreadcrumbsComponent {
     _router.navigate(crumbLinks[crumbLinks.length - 2]);
   }
 
-  bool home() {
-    var home = false;
-    if (crumbLinks.length == 2) home = true;
-    return home;
-  }
-
-  bool isCourseRoom() {    
+  bool dontShowCloseButton() {
+    var isLibrary = false;
+    var isCourseRoom = false;
+    var isHome = false;
+    var isContact = false;
     try {
       if (pathSegments.last != null) {
-        resourceUrl = pathSegments.last;
+        model = courseRoomService.data[pathSegments.last];
+        isCourseRoom = model != null;
+        isLibrary = pathSegments.last == msg.library_url;
+        isContact = pathSegments.last == msg.contact;
       }
-      model = courseRoomService.data[resourceUrl];
-
     } on StateError {
       print('resourse not found');
     }
-
-    return model != null;
+    if (crumbLinks.length == 2) isHome = true;
+    
+    return isLibrary || isHome || isCourseRoom || isContact;
   }
 
   final Router _router;
@@ -78,5 +78,4 @@ class BreadcrumbsComponent {
   Location location;
   Resource model;
   CourseRoomService courseRoomService;
-  String resourceUrl;
 }
