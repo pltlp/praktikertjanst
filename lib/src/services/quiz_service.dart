@@ -73,6 +73,10 @@ class QuizService extends ResourceService<Quiz> {
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public')
         ..type = ResourceType.quiz,
+      
+      
+      
+      
       'Quiz för dig i tandvårdsteam': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
@@ -173,6 +177,8 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz,
+      
+      
       'Quiz för dig som dentaltekniker': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagd med amalgam?', [

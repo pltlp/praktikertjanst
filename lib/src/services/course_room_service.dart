@@ -145,8 +145,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Kvicksilver i naturen',
           'Lagar och regler',
           'Vad är vad på mottagningen?',
-          'Instruktioner för miljöserviceföretag',
-          'Quiz för dig på miljöserviceföretag'
+          'Instruktioner för miljöserviceföretag'
         ]
         ..type = ResourceType.courseRoom
         ..video_ids = [
