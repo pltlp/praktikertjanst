@@ -62,7 +62,7 @@ class QuizService extends ResourceService<Quiz> {
       ], 0.7)
         ..icon = 'pool'
         ..id = 'Quiz för allmänheten'
-        ..img_url = 'pics/_DSC9941.jpg'
+        ..img_url = 'pics/courseroom_for_curious.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för allmänheten'
           ..description =
@@ -164,7 +164,7 @@ class QuizService extends ResourceService<Quiz> {
       ], 0.7)
         ..icon = 'gavel'
         ..id = 'Quiz för dig i tandvårdsteam'
-        ..img_url = 'pics/_DSC9970.jpg'
+        ..img_url = 'pics/responsibility.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig i tandvårdsteam'
@@ -259,7 +259,7 @@ class QuizService extends ResourceService<Quiz> {
       ], 0.7)
         ..icon = 'gavel'
         ..id = 'Quiz för dig som dentaltekniker'
-        ..img_url = 'pics/_DSC9970.jpg'
+        ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig som dentaltekniker'

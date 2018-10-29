@@ -15,7 +15,7 @@ class RiseService extends ResourceService<Rise> {
       'Kvicksilver i naturen': new Rise()
         ..icon = 'pool'
         ..id = 'Kvicksilver i naturen'
-        ..img_url = 'pics/mercury-2.jpeg'
+        ..img_url = 'pics/mercury_in_nature.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Kvicksilver i naturen'
           ..description =
@@ -34,7 +34,7 @@ class RiseService extends ResourceService<Rise> {
       'Lagar och regler': new Rise()
         ..icon = 'gavel'
         ..id = 'Lagar och regler'
-        ..img_url = 'pics/AdobeStock_187205779.jpeg'
+        ..img_url = 'pics/laws_and_regulations.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Lagar och regler'
@@ -54,7 +54,7 @@ class RiseService extends ResourceService<Rise> {
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'gavel'
         ..id = 'Vad är vad på mottagningen? '
-        ..img_url = 'pics/_DSC9800.jpg'
+        ..img_url = 'pics/what_is_what_on_the_reception.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vad är vad på mottagningen?'
@@ -72,7 +72,7 @@ class RiseService extends ResourceService<Rise> {
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Tandvårdsteamets ansvar '
-        ..img_url = 'pics/_DSC9970.jpg'
+        ..img_url = 'pics/responsibility.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Tandvårdsteamets ansvar'
@@ -93,7 +93,7 @@ class RiseService extends ResourceService<Rise> {
       'Dentalteknikerns ansvar': new Rise()
         ..icon = 'gavel'
         ..id = 'Dentalteknikerns ansvar'
-        ..img_url = 'pics/_DSC0192.jpg'
+        ..img_url = 'pics/dentist_responsibility.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Dentalteknikerns ansvar'
@@ -113,7 +113,7 @@ class RiseService extends ResourceService<Rise> {
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'gavel'
         ..id = 'Instruktioner för miljöserviceföretag'
-        ..img_url = 'pics/_DSC9853.jpg'
+        ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Det här gör ett miljöserviceföretag'

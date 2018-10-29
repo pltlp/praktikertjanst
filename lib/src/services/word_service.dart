@@ -14,7 +14,7 @@ class WordService {
 
   final Map<String, Word> _data = {
     'Amalgamavskiljare': new Word()
-      ..img_urls = ['pics/_DSC9795.jpg']
+      ..img_urls = ['pics/amalgam_separator.jpg']
       ..alts = {
         'sv': 'amalgamavskiljare torrt system',
         'en': 'amalgam separator dry system'
@@ -28,7 +28,7 @@ class WordService {
             'A device that captures amalgam particles in the water used for dental treatments before it enters the sewer. By filtration, sedimentation, centrifugation or a combination of these, the amalgam is separated and remains in the container. The amalgam is then disposed of as hazardous waste. Amalgam separators can be built into a unit or placed to connect it to several units.'
         ..name = 'Amalgam Separator'),
     'Backventil': new Word()
-      ..img_urls = ['pics/_DSC9815.jpg']
+      ..img_urls = ['pics/check_valve.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'I våta system måste det finnas en backventil efter amalgamavskiljaren för att undvika baksug.'
@@ -38,7 +38,7 @@ class WordService {
             'In wet systems, there must be a non-return valve after amalgam separator to prevent back suction.'
         ..name = 'Non-return valve'),
     'Dentalt amalgam': new Word()
-      ..img_urls = ['pics/_DSC9924.jpg']
+      ..img_urls = ['pics/dental_amalgam.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Amalgam som fram till år 2009 var tillåtet som tandfyllnadsmaterial i Sverige. Består av kvicksilver (40-50%), silver (20-35%), tenn (12-15%) koppar (5-15%), zink (2%).'
@@ -48,7 +48,7 @@ class WordService {
             'Amalgam, which until 2009 was permitted as dental fillings in Sweden. Consists of mercury (40-50%), silver (20-35%), tin (12-15%) copper (5-15%), zinc (2%).'
         ..name = 'Dental amalgam'),
     'Diskbänksavskiljare': new Word()
-      ..img_urls = ['pics/_DSC9921.jpg']
+      ..img_urls = ['pics/sink_separator.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Amalgamavskiljare som fångar upp amalgampartiklar i det vatten som används vid vask för rengöring av instrument och övrig utrustning som har varit i kontakt med amalgam, innan de diskas/steriliseras i diskdesinfektor och autoklav.'
@@ -58,7 +58,7 @@ class WordService {
             'Amalgam separators that capture amalgam particles in the water used for washing instruments and other equipment that have been in contact with amalgam before washing / sterilization in the disinfector and autoclave.'
         ..name = 'Sink trap'),
     'Föravskiljare': new Word()
-      ..img_urls = ['pics/_DSC9846.jpg']
+      ..img_urls = ['pics/preseparator.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Installeras innan amalgamavskiljare för att fånga upp större partiklar som skulle kunna blockera efterföljande amalgamavskiljare.'
@@ -68,7 +68,7 @@ class WordService {
             'Installed before amalgam separator to capture larger particles that could block subsequent amalgam separators.'
         ..name = 'Pre-separator'),
     'Godkänd avfallsbehållare': new Word()
-      ..img_urls = ['pics/_DSC0183.jpg']
+      ..img_urls = ['pics/approved_waste_container.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Behållare för riskavfall såsom kvicksilver ska vara UN-godkänd och uppfylla kraven för transport av farligt avfall. UN-nummer är ett identifieringsnummer för farligt gods.'
@@ -78,7 +78,7 @@ class WordService {
             'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
         ..name = 'Approved waste bin'),
     'Grovsil / Salivsugfilter / Partikelfälla': new Word()
-      ..img_urls = ['pics/skotsel_av_amalgamavskiljare.png']
+      ..img_urls = ['pics/care_of_amalgam_separators.png']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Behållare för riskavfall såsom kvicksilver ska vara UN-godkänd och uppfylla kraven för transport av farligt avfall. UN-nummer är ett identifieringsnummer för farligt gods.'
@@ -88,7 +88,7 @@ class WordService {
             'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
         ..name = 'Coarse silk / Saliva filter / Particle trap'),
     'Kompressor': new Word()
-      ..img_urls = ['pics/_DSC0213.jpg']
+      ..img_urls = ['pics/compressor.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Kompressor är ett aggregat som tar luft från omgivningen, pressar ihop den med hjälp av en motor och lagrar den komprimerade luften i en tank (tryckkärl/behållare). Den komprimerade luften kan sen användas vid behov genom att dras via luftrör/slangar till den plats där t. ex. tandläkarutrustningen är placerad. Tryckluft används bl. a. för att kunna driva turbiner/hand/vinkelstycket och för att blåsa rent vid behandlingar.'
@@ -108,7 +108,7 @@ class WordService {
             'Installed to move water, from secretion vessel / buffer tank or where flow drops are not enough.'
         ..name = 'Pumpbox'),
     'Sanering': new Word()
-      ..img_urls = ['pics/sanering.png']
+      ..img_urls = ['pics/decontamination.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Vid en sanering högtrycksspolas kvicksilverförorenade avloppsrör och vattenlås och golvbrunnar töms och rengörs. Amalgamslammet och spolvattnet omhändertas som farligt avfall av företag som har tillstånd att transportera detta. Rören blir aldrig helt rena från kvicksilver och måste därför märkas upp så att de omhändertas som farligt avfall vid demontering. Driftsaneringar ska göras regelbundet. I samband med att en mottagning läggs ned görs en så kallad nedläggningssanering, vilket innebär att man demonterar sugledningar och pluggar igen spolpunkter för att inget kvicksilver ska rinna ut i avloppet.'
@@ -118,7 +118,7 @@ class WordService {
             'During a cleanup, mercury contaminated drainage pipes and water locks and floor wells are emptied and cleaned. Amalgam sludge and rinse water are disposed of as hazardous waste by companies authorized to transport this. The pipes are never completely clear from mercury and must therefore be labeled to be disposed of as hazardous waste upon dismantling. Operations must be done on a regular basis. When a reception is laid down, a so-called shutdown sanitation is made, which means that the suction lines and plugs are again discharged so that no mercury will drain into the drain.'
         ..name = 'Decontamination'),
     'Saneringsprotokoll': new Word()
-      ..img_urls = ['pics/sanera_avlopp.png']
+      ..img_urls = ['pics/clean_the_sewer.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Dokumentation från företaget som utfört saneringen där bl.a. metod som använts och mängd insamlat kvicksilver framgår. I dokumentationen syns också hur det farliga avfallet har omhändertagits, d.v.s. att transportören har tillstånd och att det lämnats in på en anläggning som tar emot farligt avfall. '
@@ -139,7 +139,7 @@ class WordService {
             's wastewater system, often to a floor well. The air is sucked from the liquid separator to the suction engine, which serves several units. The suction engine can be located on the wind, the same level as the unit or on the basement level.'
         ..name = 'Dry suction system'),
     'Vattenlås': new Word()
-      ..img_urls = ['pics/_DSC9882.jpg']
+      ..img_urls = ['pics/siphon.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'En sektion av ett vattenrör som är böjt så att en mängd vatten stannar kvar i böjen, tack vare gravitationen, och skiljer luftmassorna på låsets båda sidor. Vattnet i vattenlåset förhindrar på så sätt att dålig lukt, sjukdomar och ohyra från avloppssystemet passerar. På en tandvårdsmottagning finns vattenlås på tvättställ i t ex behandlingsrum, steril och på patienttoalett.'
@@ -159,7 +159,7 @@ class WordService {
             'Analysis of mercury emissions in wastewater. The sample is taken after the amalgam separator.'
         ..name = 'Water sample'),
     'Utjämningskärl': new Word()
-      ..img_urls = ['pics/utjämningskärl.jpg']
+      ..img_urls = ['pics/surge_vessel.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Utjämningskärl på tio liter installeras ofta till diskbänksavskiljare. Det har ingen effekt på amalgamavskiljningen, men medför att man kan spola med ett högre flöde. Genom att använda ett utjämningskärl undviker man att vatten blir stående i vasken.'
@@ -169,7 +169,7 @@ class WordService {
             'Ten-liter equalization vessels are often installed in the sink bin. It has no effect on amalgam separation, but allows you to flush with a higher flow. Using a leveling vessel avoids water standing in the sink.'
         ..name = 'Buffer vessel'),
     'Vått sugsystem': new Word()
-      ..img_urls = ['pics/wet_suction_system.png', 'pics/wet_suction_system_2.png']
+      ..img_urls = ['pics/wet_suction_system.jpg', 'pics/wet_suction_system_2.jpg']
       ..alts = { 'sv':'Exempel på våta sugsystem med sedimenterande amalgamavskiljning.'}
       ..phrases['sv'] = (new Phrases()
         ..description =
