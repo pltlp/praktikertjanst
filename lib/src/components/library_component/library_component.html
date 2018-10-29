@@ -25,7 +25,7 @@
     </div>
     <div class="col m4 s12"
          *ngFor="let quiz of quizService.data.values">
-        <p-resource [model]="quiz">
+        <p-resource [model]="quiz"  [routerLink]="msg.home_url + '/' + msg.library + '/quiz/' +  quiz.phrases[msg.currentLanguage].url">
 
         </p-resource>
     </div>
