@@ -32,22 +32,13 @@ import 'quiz_fail_component.dart';
     providers: [scrollHostProviders, Location],
     pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
-class QuizComponent implements OnActivate {
+class QuizComponent implements OnInit {
   QuizComponent(
       this.quizService, this.changeDetectorRef, this.location, this.msg);
 
   @override
-  void onActivate(RouterState previous, RouterState current) {
-    resourceUrl = current.parameters['url'];
-    init();
-  }
-
-  void init() {
+  void ngOnInit() {
     try {
-      model = new Quiz.from(quizService.data.values.firstWhere((resource) =>
-          resource.phrases[msg.currentLanguage].url == resourceUrl));
-      completed = false;
-
       for (var question in model.questions) {
         shuffle(question.options);
       }
@@ -78,6 +69,8 @@ class QuizComponent implements OnActivate {
     return items;
   }
 
+  @Input('model')
+  Quiz model;
   bool get success =>
       model.currentScore.toDouble() / model.maxScore >= model.minScore;
 
@@ -86,6 +79,6 @@ class QuizComponent implements OnActivate {
   final QuizService quizService;
   final Location location;
   final MessagesService msg;
-  Quiz model;
+
   bool completed = false;
 }
