@@ -1,15 +1,22 @@
 <button>
-        <div id="flex">
-                <div id="leading" [style.background-color]="currentLeftBackgroundColor">
-                        {{left}}
-                </div>
-                <div id="middle" [style.background-color]="currentMiddleBackgroundColor" [class.shadow]="rightBackgroundColor != middleBackgroundColor">
-                        {{middle | name}}
-                </div>
-                <div id="trailing" [style.background-color]="currentRightBackgroundColor">
-                        <material-icon *ngIf="right != null"
-                                       [icon]="right"
-                                       baseline></material-icon>
-                </div>
-        </div>
+  <div id="flex">
+    <div id="leading"
+         [style.color]="textColor"
+         [style.background-color]="currentLeftBackgroundColor">
+      {{left}}
+    </div>
+    <div id="middle"
+         [style.color]="textColor"
+         [style.background-color]="currentMiddleBackgroundColor"
+         [class.shadow]="rightBackgroundColor != middleBackgroundColor">
+      {{middle | name}}
+    </div>
+    <div id="trailing"
+         [style.color]="textColor"
+         [style.background-color]="currentRightBackgroundColor">
+      <material-icon *ngIf="right != null"
+                     [icon]="right"
+                     baseline></material-icon>
+    </div>
+  </div>
 </button>
