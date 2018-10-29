@@ -5,12 +5,11 @@
               [routerLink]="crumbLinks[i]">
             <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
         </span>
-        <div id="flex">
+        <div id="flex" *ngIf="!isCourseRoom()">
             <material-icon *ngIf="!home()"
                            icon="close"
                            class="color-white clickable end"
                            (click)="back()">
-
             </material-icon>
         </div>
 
