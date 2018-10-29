@@ -1,1 +1,62 @@
-<h1>Hello {{name}}</h1>
+<div id="topContainer">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="margin-bottom-none color-cerulean">{{msg.quiz_success_title}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <material-icon icon="check"
+                     class="color-cerulean large"></material-icon>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="margin-top-none color-cerulean">{{model.currentScore}}/{{model.maxScore}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+  <ng-container *ngIf="!emailSent">
+    <form [ngFormModel]="form">
+      <div class="row">
+        <div class="col">
+          <p>{{msg.quiz_success_text_1}}</p>
+          <p>{{msg.quiz_success_text_2}}</p>
+          <p>
+            <material-checkbox [label]="msg.quiz_success_agree_terms"
+                               [(checked)]="termsAccepted">
+            </material-checkbox>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="email"
+                 [disabled]="!termsAccepted"
+                 ngControl="email"
+                 [(ngModel)]="email" />
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="m6 col"></div>
+      <div class="m6 col">
+        <p-button [middle]="msg.send | name"
+                  (click)="onSignupNewsLetter()"></p-button>
+      </div>
+    </div>
+  </ng-container>
+  <div class="row"
+       *ngIf="emailSent">
+    <div class="col text-center">
+      <material-icon icon="email"
+                     class="color-cerulean medium"></material-icon>
+      <h2 class="color-cerulean margin-top-none">{{msg.quiz_success_mail_sent_title}}</h2>
+      <p class="margin-bottom-large">{{msg.quiz_success_mail_sent_text}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+@import 'package:grid/constants';
+@import 'package:angular_components/material_icon/mixins';
+@import '../../../colors.scss';
+:host {
+  display: block;  
+  padding-bottom: $medium;
+    
+  div#topContainer {
+    margin: 0 $small;
+    material-icon {
+      @include material-icon-size($medium * 5);
+    }
+    material-icon.large {
+      @include material-icon-size($medium * 8);
+      font-weight: bolder;
+    }
+    material-checkbox {
+      align-items: flex-start;
+    }
+    input[type=email] {
+      width: 100%;
+      display: block;
+      font-size: 1.2em;
+      line-height: 2em;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      color: #888;
+      padding: 0 0.4em;
+    }
+  }
+}

@@ -8,6 +8,7 @@ import 'package:fo_components/fo_components.dart';
 import '../../models/quiz.dart';
 import '../../services/messages_service.dart';
 import '../../services/quiz_service.dart';
+import '../button_component/button_component.dart';
 import 'quiz_complete_component.dart';
 import 'quiz_fail_component.dart';
 
@@ -16,6 +17,7 @@ import 'quiz_fail_component.dart';
     templateUrl: 'quiz_component.html',
     styleUrls: const ['quiz_component.css'],
     directives: const [
+      ButtonComponent,            
       NgIf,
       MaterialStepperComponent,
       StepDirective,
@@ -26,18 +28,24 @@ import 'quiz_fail_component.dart';
       QuizCompleteComponent,
       QuizFailComponent
     ],
-    providers: [scrollHostProviders],
+    providers: [scrollHostProviders, Location],
+    pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnActivate {
-  QuizComponent(this.quizService, this.changeDetectorRef, this.msg);
+  QuizComponent(
+      this.quizService, this.changeDetectorRef, this.location, this.msg);
 
   @override
   void onActivate(RouterState previous, RouterState current) {
-    final resourceUrl = current.parameters['url'];
+    resourceUrl = current.parameters['url'];
+    init();
+  }
 
+  void init() {
     try {
-      model = quizService.data.values.firstWhere((resource) =>
-          resource.phrases[msg.currentLanguage].url == resourceUrl);
+      model = new Quiz.from(quizService.data.values.firstWhere((resource) =>
+          resource.phrases[msg.currentLanguage].url == resourceUrl));
+      completed = false;
     } on StateError {
       print('resource not found');
     }
@@ -49,32 +57,15 @@ class QuizComponent implements OnActivate {
     }
   }
 
-  int get maxScore {
-    var s = 0;
+  
 
-    for (final q in model.questions) {
-      final sorted = q.options.toList()..sort((o1, o2) => o2.score - o1.score);
-      s += sorted.first.score;
-    }
-    return s;
-  }
+  bool get success => model.currentScore.toDouble() / model.maxScore >= model.minScore;
 
-  int get currentScore {
-    var s = 0;
-
-    for (final q in model.questions) {
-      try {
-        s += q.options.firstWhere((o) => o.value == q.selectedValue).score;
-      } on StateError {}
-    }
-    return s;
-  }
-
-  bool get success => currentScore.toDouble() / maxScore >= model.minScore; 
-
-  ChangeDetectorRef changeDetectorRef;
-  QuizService quizService;
-  MessagesService msg;
+  String resourceUrl;
+  final ChangeDetectorRef changeDetectorRef;
+  final QuizService quizService;
+  final Location location;
+  final MessagesService msg;
   Quiz model;
   bool completed = false;
 }

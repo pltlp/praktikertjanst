@@ -1,0 +1,14 @@
+@import 'package:grid/constants';
+@import 'package:angular_components/material_icon/mixins';
+@import '../../../colors.scss';
+:host {
+  display: block;  
+  padding-bottom: $medium;  
+  div#topContainer {
+    margin: 0 $small;    
+    material-icon.large {
+      @include material-icon-size($medium * 8);
+      font-weight: bolder;
+    }    
+  }  
+}

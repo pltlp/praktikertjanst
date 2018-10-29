@@ -8,16 +8,21 @@ import 'package:angular_components/angular_components.dart';
       MaterialIconComponent,
       NgIf,
       NgClass,
-    ],
-    providers: const [],
+    ],    
     pipes: [NamePipe],
     selector: 'p-button',
     styleUrls: const ['button_component.css'],
     templateUrl: 'button_component.html',
     changeDetection: ChangeDetectionStrategy.OnPush)
 class ButtonComponent implements OnInit {
+  String get textColor =>
+      (currentMiddleBackgroundColor == middleHoverBackgroundColor)
+          ? hoverTextColor
+          : _textColor;
+
   @Input()
   String left;
+
   @Input()
   String middle;
 
@@ -25,10 +30,16 @@ class ButtonComponent implements OnInit {
   String right;
 
   @Input()
+  set textColor(String value) => _textColor = value;
+
+  @Input()
+  String hoverTextColor = '#ffffff';
+
+  @Input()
   String middleBackgroundColor = '#00A0C8';
 
   @Input()
-  String leftBackgrondColor = '#00A0C8';
+  String leftBackgroundColor = '#00A0C8';
 
   @Input()
   String rightBackgroundColor = '#00A0C8';
@@ -43,7 +54,7 @@ class ButtonComponent implements OnInit {
   @override
   void ngOnInit() {
     currentMiddleBackgroundColor = middleBackgroundColor;
-    currentLeftBackgroundColor = leftBackgrondColor;
+    currentLeftBackgroundColor = leftBackgroundColor;
     currentRightBackgroundColor = rightBackgroundColor;
   }
 
@@ -57,7 +68,9 @@ class ButtonComponent implements OnInit {
   @HostListener('mouseleave')
   void onMouseLeave() {
     currentMiddleBackgroundColor = middleBackgroundColor;
-    currentLeftBackgroundColor = leftBackgrondColor;
+    currentLeftBackgroundColor = leftBackgroundColor;
     currentRightBackgroundColor = rightBackgroundColor;
   }
+
+  String _textColor = '#ffffff';
 }

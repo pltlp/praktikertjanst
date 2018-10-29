@@ -1,1 +1,29 @@
-<h1>Hello {{name}}</h1>
+<div id="topContainer">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="margin-bottom-none color-cerulean">{{msg.quiz_fail_title}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <material-icon icon="close"
+                     class="color-cerulean large"></material-icon>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="margin-top-none color-cerulean">{{model.currentScore}}/{{model.maxScore}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>{{msg.quiz_fail_text_1}}</p>
+      <p>{{msg.quiz_fail_text_2}}</p>
+    </div>
+  </div>
+</div>

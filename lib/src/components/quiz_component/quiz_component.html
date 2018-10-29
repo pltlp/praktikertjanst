@@ -1,30 +1,69 @@
-<div class="top-header-offset">
-    <div class="row"
-         *ngIf="model != null && !completed">
-        <div class="col">
-            <h2>Quiz</h2>
-            <material-stepper orientation="vertical"
-                              legalJumps="backwards" [noText]="msg.cancel">
-                <ng-container *ngFor="let question of model.questions; let i = index">
-                    <template (continue)="onContinue($event, i)" step
-                              [optional]="false"
-                              [canContinue]="question.selectedValue != null"
-                              [name]="question.label">
-                        <material-radio-group [(ngModel)]="question.selectedValue">
-                            <div *ngFor="let option of question.options">
-                                <div class="row">
-                                    <div class="col">
-                                        <material-radio [value]="option.value">
-                                            {{option.label}}
-                                        </material-radio>
-                                    </div>
-                                </div>
-                            </div>
-                        </material-radio-group>
-                    </template>
-                </ng-container>
-            </material-stepper>
-            <p>{{currentScore}}/{{maxScore}} {{success}}</p>
-        </div>
+<div class="top-header-offset"
+     *ngIf="model != null">
+  <ng-container *ngIf="!completed">
+    <div class="row">
+      <div class="col">
+        <h2>Quiz</h2>
+        <material-stepper orientation="vertical"
+                          legalJumps="backwards"
+                          [noText]="msg.cancel">
+          <ng-container *ngFor="let question of model.questions; let i = index">
+            <template (continue)="onContinue($event, i)"
+                      step
+                      [optional]="false"
+                      [canContinue]="question.selectedValue != null"
+                      [name]="question.label">
+              <div class="margin-top-medium">
+                <material-radio-group [(ngModel)]="question.selectedValue">
+                  <div *ngFor="let option of question.options">
+                    <div class="row">
+                      <div class="col">
+                        <material-radio [value]="option.value">
+                          {{option.label}}
+                        </material-radio>
+                      </div>
+                    </div>
+                  </div>
+                </material-radio-group>
+              </div>
+            </template>
+          </ng-container>
+        </material-stepper>
+      </div>
     </div>
+  </ng-container>
+  <ng-container *ngIf="completed">
+    <div class="row collapse center">
+      <div class="l6 m8 col shadow padding-bottom-none">
+        <div>
+          <p-quiz-complete *ngIf="success"
+                           [model]="model"></p-quiz-complete>
+          <p-quiz-fail *ngIf="!success"
+                       [model]="model"></p-quiz-fail>
+        </div>
+        <div id="resultFooter">
+          <div class="row padding-top-medium padding-bottom-medium">
+            <div class="m6 col">
+              <p-button [middle]="msg.redo_quiz | name"
+                        textColor="#00a0c8"
+                        leftBackgroundColor="#fff"
+                        middleBackgroundColor="#fff"
+                        middleHoverBackgroundColor="#0075b0"
+                        rightBackgroundColor="#fff"
+                        (click)="init()"></p-button>
+            </div>
+            <div class="m6 col">
+              <p-button [middle]="msg.close | name"
+                        textColor="#00a0c8"
+                        leftBackgroundColor="#fff"
+                        middleBackgroundColor="#fff"
+                        middleHoverBackgroundColor="#0075b0"
+                        rightBackgroundColor="#fff"
+                        (click)="location.back()"></p-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
 </div>
