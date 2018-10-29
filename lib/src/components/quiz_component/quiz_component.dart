@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_components/model/action/async_action.dart';
@@ -17,7 +18,7 @@ import 'quiz_fail_component.dart';
     templateUrl: 'quiz_component.html',
     styleUrls: const ['quiz_component.css'],
     directives: const [
-      ButtonComponent,            
+      ButtonComponent,
       NgIf,
       MaterialStepperComponent,
       StepDirective,
@@ -46,6 +47,10 @@ class QuizComponent implements OnActivate {
       model = new Quiz.from(quizService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl));
       completed = false;
+
+      for (var question in model.questions) {
+        shuffle(question.options);
+      }
     } on StateError {
       print('resource not found');
     }
@@ -57,9 +62,24 @@ class QuizComponent implements OnActivate {
     }
   }
 
-  
+  List shuffle(List items) {
+    final random = new Random();
 
-  bool get success => model.currentScore.toDouble() / model.maxScore >= model.minScore;
+    // Go through all elements.
+    for (var i = items.length - 1; i > 0; i--) {
+      // Pick a pseudorandom number according to the list length
+      final n = random.nextInt(i + 1);
+
+      final temp = items[i];
+      items[i] = items[n];
+      items[n] = temp;
+    }
+
+    return items;
+  }
+
+  bool get success =>
+      model.currentScore.toDouble() / model.maxScore >= model.minScore;
 
   String resourceUrl;
   final ChangeDetectorRef changeDetectorRef;
