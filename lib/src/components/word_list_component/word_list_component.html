@@ -17,9 +17,9 @@
 <ng-container *ngIf="selectedWord == null">
     <div class="row margin-top-medium"
          id="preview"
-         *ngFor="let wordPreviewModel of wordService.data.values">
-        <div class="col m9 align-middle clickable"
-             (click)="selectedWord = wordPreviewModel">
+         *ngFor="let wordPreviewModel of wordService.data.values"
+         (click)="selectedWord = wordPreviewModel">
+        <div class="col m9 align-middle clickable">
             <h3 class="color-astronautblue margin-top-none margin-bottom-none">
                 {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
             <p class="margin-top-x-small margin-bottom-none">{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
