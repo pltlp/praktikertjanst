@@ -1,4 +1,6 @@
 import 'dart:core';
+import 'dart:html';
+import 'package:angular_components/angular_components.dart';
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
 import 'package:fo_components/fo_components.dart';
@@ -24,7 +26,9 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       FoCarouselSlideComponent,
       FoModalComponent,
       NgFor,
-      NgIf
+      NgIf,
+      MaterialButtonComponent,
+      Touch 
     ],
     pipes: const [
       NamePipe
@@ -44,14 +48,18 @@ class CarouselComponent implements OnInit {
 
   void onModelClick(Video model) {
     selectedModel = model;
+    print('click!');
     if (selectedModel != null){
       selectedModelUrl = sanitizer.bypassSecurityTrustResourceUrl(
           selectedModel.url[msg.currentLanguage]);
-
+        
 
     }
     else selectedModelUrl = null;
   }
+
+
+
 
   @Input('header')
   String header;

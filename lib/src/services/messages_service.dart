@@ -104,11 +104,11 @@ class MessagesService {
       Intl.message('Tack!', name: 'quiz_success_mail_sent_title');
 
   String get quiz_success_text_1 => Intl.message(
-      'Som en del av Hg-rid-projektetet vill vi utvärdera värdet av den här portalen.',
+      'Som en del av Hg-rid projektetet vill vi utvärdera värdet av den här portalen.',
       name: 'quiz_success_text_1');
 
   String get quiz_success_text_2 => Intl.message(
-      'Kan du tänka dig att svara på några vrågor via din mejl och några månader? I så fall skriver du in din mejladress här.',
+      'Kan du tänka dig att svara på några frågor via din mejl om några månader? I så fall skriver du in din mejladress här.',
       name: 'quiz_success_text_2');
 
   String get quiz_success_title =>
@@ -137,4 +137,56 @@ class MessagesService {
       one: 'ord', other: 'ord', name: 'word', args: [howMany]);
 
   String get contact => Intl.message('kontakt', name: 'contact');
+  String get contact_pragraph_1 => Intl.message(
+      'Praktikertjänst har, i samarbete med Sweden Recycling och IVL Svenska Miljöinstitutet, startat projektet HG-Rid LIFE som fått ekonomiskt stöd av LIFE – EU:s program för miljö och klimat. Genom projektet tar vi vårt ansvar för ett hållbart samhälle. Projektets huvudsyfte är att minimera utsläppen av kvicksilver från tandvårdsmottagningar i Sverige och på sikt i övriga EU.',
+      name: 'contact_pragraph_1');
+
+
+  String get about_this_project =>
+      Intl.message('Om projektet:', name: 'about_this_project');
+
+  String get project_should =>
+      Intl.message('Projektet ska:', name: 'project_should');
+
+  String get contact_project_goal_1 => Intl.message(
+      'Ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU.',
+      name: 'contact_project_goal_1');
+
+  String get contact_project_goal_2 => Intl.message(
+      'Utveckla nya metoder för sanering som är effektiv, användarvänlig och kostnadseffektiv.:',
+      name: 'contact_project_goal_2');
+
+  String get contact_project_goal_3 => Intl.message(
+      'Öka kunskap och medvetenhet om hur kvicksilver från amalgam påverkan miljön. Denna webbportal är en del av detta arbete.',
+      name: 'contact_project_goal_3');
+
+  String get contact_pragraph_2 => Intl.message(
+      'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl a på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts.',
+      name: 'contact_pragraph_2');
+
+  String get contact_pragraph_3 => Intl.message(
+      'Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvud¬sakliga källorna till användning av kvicksilver inom EU. ',
+      name: 'contact_pragraph_3');
+
+  String get contact_pragraph_4 => Intl.message(
+      'En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl a att:',
+      name: 'contact_pragraph_4');
+
+  String get contact_bullet_1 =>
+      Intl.message('amalgam enbart får användas i fördoserad, inkapslad form.',
+          name: 'contact_bullet_1');
+
+  String get contact_bullet_2 => Intl.message(
+      'barn under 15 år samt gravida eller ammande inte får behandlas med amalgam om det inte ur ett medicinskt perspektiv bedöms som absolut nödvändigt',
+      name: 'contact_bullet_2');
+
+  String get contact_bullet_3 => Intl.message(
+      'amalgamavskiljare med viss verkningsgrad måste finnas vid tandvårdsinrättningar där amalgam används eller amalgamfyllningar avlägsnas EU-kommissionen ska senast i mitten av 2020 rapportera om möjligheten att långsiktigt fasa ut amalgam senast till 2030.',
+      name: 'contact_bullet_3');
+
+  String get read_more_about_this_project_at =>
+      Intl.message('Läs mer om projektet på',
+          name: 'read_more_about_this_project_at');
+
+  String get contact_us => Intl.message('Kontakta oss', name: 'contact_us');
 }
