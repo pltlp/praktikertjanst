@@ -111,12 +111,6 @@ class Routes {
             path: '${msg.home_url}/${msg.library_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
-          /*
-          RouteDefinition(
-            path: '${msg.home_url}/${msg.library_url}/:url',
-            component: rc.RiseComponentNgFactory,
-          ),
-          */
           RouteDefinition.redirect(
             path: '.+',
             redirectTo: msg.home_url,

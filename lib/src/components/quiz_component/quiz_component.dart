@@ -69,6 +69,19 @@ class QuizComponent implements OnInit {
     return items;
   }
 
+    void init() {
+    try {
+      model = new Quiz.from(model);
+      completed = false;
+
+      for (var question in model.questions) {
+        shuffle(question.options);
+      }
+    } on StateError {
+      print('resource not found');
+    }
+  }
+
   @Input('model')
   Quiz model;
   bool get success =>
