@@ -3,8 +3,11 @@ import 'package:angular_components/angular_components.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:fo_components/fo_components.dart' show FoValidators, NamePipe;
 import '../../components/button_component/button_component.dart';
+import '../../models/mail.dart';
 import '../../models/quiz.dart';
+import '../../services/mail_service.dart';
 import '../../services/messages_service.dart';
+
 
 @Component(
     selector: 'p-quiz-complete',
@@ -19,18 +22,24 @@ import '../../services/messages_service.dart';
       MaterialIconComponent,
       NgIf
     ],
+    providers: const[MailService],
     pipes: const [
       NamePipe
     ])
 class QuizCompleteComponent {
-  QuizCompleteComponent(this.msg);
+  QuizCompleteComponent(this.mailService, this.msg);
 
   final MessagesService msg;
 
   Future<void> onSignupNewsLetter() async {
     if (form.valid && termsAccepted) {
 
-     print(email);
+     await mailService.send(new Mail()
+     ..subject = 'New quiz completed'
+     ..message = 'Email: $email'
+     ..sender = 'dmarlovic83@gmail.com'
+     ..receiver = 'dmarlovic83@gmail.com'
+     );
      emailSent = true; 
     }
   }
@@ -38,6 +47,7 @@ class QuizCompleteComponent {
   String email;
   bool termsAccepted = false;
   bool emailSent = false;
+  final MailService mailService;
 
   @Input()
   Quiz model;
