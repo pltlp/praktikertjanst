@@ -17,10 +17,6 @@ class ResourceComponent implements OnInit {
   @override
   void ngOnInit() {
     backgroundImage = 'url(${model?.img_url})';
-    if (model is Video)
-    {
-      _isVideo = true;
-    }
   }
 
 
@@ -32,6 +28,5 @@ class ResourceComponent implements OnInit {
 
   @Input('backgroundColor')
   String backgroundColor;
-  bool _isVideo = false;
-  bool get isVideo => _isVideo;
+  
 }

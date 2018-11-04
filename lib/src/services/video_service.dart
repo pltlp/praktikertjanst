@@ -13,7 +13,7 @@ class VideoService extends ResourceService<Video> {
 
     data = {
       'Så upplevde vi saneringen': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Så upplevde vi saneringen'
         ..img_url = 'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -32,7 +32,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters',
       'Så arbetar vi på mottagningen': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Så arbetar vi på mottagningen'
         ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -51,7 +51,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/6jPzETatkUY$youtubeParameters',
       'Så går en installation till': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Så går en installation till'
         ..img_url = 'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -70,7 +70,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters',
       'Att lämna amalgam bakom sig': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Att lämna amalgam bakom sig'
         ..img_url = 'https://i.ytimg.com/vi/XFZCVOp56m0/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -89,7 +89,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters',
       'Rutiner vid patientbehandling': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Rutiner vid patientbehandling'
         ..img_url = 'https://i.ytimg.com/vi/pL7jpwbGx80/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -108,7 +108,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters',
       'Skötsel av amalgamavskiljare': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Skötsel av amalgamavskiljare'
         ..img_url = 'https://i.ytimg.com/vi/lKjilIKxWCY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -127,7 +127,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters',
       'Att tänka på vid installation': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Att tänka på vid installation'
         ..img_url = 'https://i.ytimg.com/vi/ENCvjNXodVI/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -146,7 +146,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters',
       'Byte av amalgamavskiljare': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Byte av amalgamavskiljare'
         ..img_url = 'https://i.ytimg.com/vi/YNUCB4ue9LA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -165,7 +165,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters',
       'Funktionskontroll': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Funktionskontroll'
         ..img_url = 'https://i.ytimg.com/vi/aYeb02GKOuw/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -184,7 +184,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters',
       'Tömning av vattenlås': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Tömning av vattenlås'
         ..img_url = 'https://i.ytimg.com/vi/qV2zNWqhz60/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -202,7 +202,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters',
       'Slutförvaring ': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Slutförvaring'
         ..img_url = 'https://i.ytimg.com/vi/__P3QoGFMNc/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -219,7 +219,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters',
       'Sanering ': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Sanering'
         ..img_url = 'https://i.ytimg.com/vi/J_hVtkS3hpQ/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -236,7 +236,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters',
       'Varför är skötseln så viktig?': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Varför är skötseln så viktig? '
         ..img_url = 'https://i.ytimg.com/vi/eVa5uaZNK9g/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -255,7 +255,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters',
       'Vad är kvicksilver?': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Vad är kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/UL0A6RsC2v8/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -273,7 +273,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters',
       'Var finns kvicksilver?': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Var finns kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/9H2PcBDGffY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -291,7 +291,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters',
       'Vilken roll har tandvården?': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Vilken roll har tandvården?'
         ..img_url = 'https://i.ytimg.com/vi/-FFTHF0khLg/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -309,7 +309,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters',
       'Hur påverkas vi av kvicksilver?': new Video()
-        ..icon = 'video_library'
+        ..icon = 'file-play'
         ..id = 'Hur påverkas vi av kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/8FHTtQ--Ns0/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()

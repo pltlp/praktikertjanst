@@ -17,14 +17,9 @@
          [style.background-color]="backgroundColor">
         <div class="row">
             <div class="col m3 s3">
-                <material-icon *ngIf="isVideo"
-                               class="action-icon padding-none"
-                               icon="{{model.icon}}"></material-icon>
-
                 <fo-icon class="action-icon padding-none"
                          icon="{{model.icon}}"
-                         size="4em"
-                         *ngIf="!isVideo">
+                         size="4em">
                 </fo-icon>
             </div>
             <div class="col m9 s9 text-center color-white">
@@ -57,14 +52,16 @@
          [style.background-color]="backgroundColor">
         <div class="row">
             <div class="col m3 s3">
-                <material-icon *ngIf="isVideo"
+                <!--
+  <material-icon *ngIf="isVideo"
                                class="action-icon padding-none"
                                icon="{{model.icon}}"></material-icon>
+                -->
+
 
                 <fo-icon class="action-icon padding-none"
                          icon="{{model.icon}}"
-                         size="4em"
-                         *ngIf="!isVideo">
+                         size="4em">
                 </fo-icon>
             </div>
             <div class="col m9 s9 text-center color-white">
