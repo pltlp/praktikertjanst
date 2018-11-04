@@ -31,8 +31,6 @@ import '../../services/video_service.dart';
 class LibraryComponent implements OnDestroy {
   LibraryComponent(this.router, this.msg, this.riseService, this.quizService,
       this.videoService, this.sanitizer) {
-       
-        
     riseService.data.values.forEach(resouces.add);
     quizService.data.values.forEach(resouces.add);
     videoService.data.values.forEach(resouces.add);
@@ -70,7 +68,18 @@ class LibraryComponent implements OnDestroy {
       final SearchOption model = changes.first.added.first;
 
       if (model.url != null && model.url.isNotEmpty) {
-        router.navigate('${msg.home_url}/${msg.library_url}/${model.url}');
+        try {
+          selectedModel = videoService.data.values.firstWhere((resource) =>
+              resource.phrases[msg.currentLanguage].url == model.url);
+        } on StateError {
+          print('resourse not found');
+        }
+        if (selectedModel != null) {
+          selectedModel.complete = true;
+          showModal = true;
+        } else {
+          router.navigate('${msg.home_url}/${msg.library_url}/${model.url}');
+        }
       }
     }
   }

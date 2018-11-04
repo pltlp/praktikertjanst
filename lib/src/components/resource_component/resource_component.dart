@@ -2,7 +2,6 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/resource.dart';
-import '../../models/video.dart';
 import '../../services/messages_service.dart';
 
 @Component(
