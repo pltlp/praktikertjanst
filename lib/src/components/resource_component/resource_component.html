@@ -17,8 +17,15 @@
          [style.background-color]="backgroundColor">
         <div class="row">
             <div class="col m3 s3">
-                <material-icon class="action-icon padding-none"
+                <material-icon *ngIf="isVideo"
+                               class="action-icon padding-none"
                                icon="{{model.icon}}"></material-icon>
+
+                <fo-icon class="action-icon padding-none"
+                         icon="{{model.icon}}"
+                         size="4em"
+                         *ngIf="!isVideo">
+                </fo-icon>
             </div>
             <div class="col m9 s9 text-center color-white">
                 <h4 class="margin-none text-left">{{model.phrases[msg.currentLanguage].description}}</h4>
@@ -50,8 +57,15 @@
          [style.background-color]="backgroundColor">
         <div class="row">
             <div class="col m3 s3">
-                <material-icon class="action-icon padding-none"
+                <material-icon *ngIf="isVideo"
+                               class="action-icon padding-none"
                                icon="{{model.icon}}"></material-icon>
+
+                <fo-icon class="action-icon padding-none"
+                         icon="{{model.icon}}"
+                         size="4em"
+                         *ngIf="!isVideo">
+                </fo-icon>
             </div>
             <div class="col m9 s9 text-center color-white">
                 <h4 class="margin-none text-left">{{model.phrases[msg.currentLanguage].description}}</h4>
@@ -59,5 +73,3 @@
         </div>
     </div>
 </div>
-
-

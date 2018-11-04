@@ -13,7 +13,7 @@ class RiseService extends ResourceService<Rise> {
 
     data = {
       'Kvicksilver i naturen': new Rise()
-        ..icon = 'pool'
+        ..icon = 'article'
         ..id = 'Kvicksilver i naturen'
         ..img_url = 'pics/mercury_in_nature.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -32,7 +32,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
       'Lagar och regler': new Rise()
-        ..icon = 'gavel'
+        ..icon = 'article'
         ..id = 'Lagar och regler'
         ..img_url = 'pics/laws_and_regulations.jpg'
         ..type = ResourceType.rise
@@ -52,7 +52,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/rules-and-regulations/content/index.html',
       'Vad är vad på mottagningen?': new Rise()
-        ..icon = 'gavel'
+        ..icon = 'article'
         ..id = 'Vad är vad på mottagningen? '
         ..img_url = 'pics/what_is_what_on_the_reception.jpg'
         ..type = ResourceType.rise
@@ -70,7 +70,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
       'Tandvårdsteamets ansvar': new Rise()
-        ..icon = 'gavel'
+        ..icon = 'article'
         ..id = 'Tandvårdsteamets ansvar '
         ..img_url = 'pics/responsibility.jpg'
         ..type = ResourceType.rise
@@ -91,7 +91,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
       'Dentalteknikerns ansvar': new Rise()
-        ..icon = 'gavel'
+        ..icon = 'article'
         ..id = 'Dentalteknikerns ansvar'
         ..img_url = 'pics/dentist_responsibility.jpg'
         ..type = ResourceType.rise
@@ -111,7 +111,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
       'Instruktioner för miljöserviceföretag': new Rise()
-        ..icon = 'gavel'
+        ..icon = 'article'
         ..id = 'Instruktioner för miljöserviceföretag'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.rise

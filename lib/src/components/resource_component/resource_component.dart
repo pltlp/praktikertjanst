@@ -2,13 +2,14 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/resource.dart';
+import '../../models/video.dart';
 import '../../services/messages_service.dart';
 
 @Component(
     selector: 'p-resource',
     templateUrl: 'resource_component.html',
     styleUrls: const ['resource_component.css'],
-    directives: const [MaterialIconComponent, NgIf],
+    directives: const [MaterialIconComponent, FoIconComponent, NgIf],
     pipes: [NamePipe])
 class ResourceComponent implements OnInit {
   ResourceComponent(this.msg);
@@ -16,18 +17,21 @@ class ResourceComponent implements OnInit {
   @override
   void ngOnInit() {
     backgroundImage = 'url(${model?.img_url})';
+    if (model is Video)
+    {
+      _isVideo = true;
+    }
   }
 
 
   String backgroundImage;
   final MessagesService msg;
 
-  
-
-
   @Input('model')
   Resource model;
 
   @Input('backgroundColor')
   String backgroundColor;
+  bool _isVideo = false;
+  bool get isVideo => _isVideo;
 }
