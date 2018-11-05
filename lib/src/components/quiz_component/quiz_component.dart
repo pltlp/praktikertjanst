@@ -56,9 +56,7 @@ class QuizComponent implements OnInit {
   List shuffle(List items) {
     final random = new Random();
 
-    // Go through all elements.
     for (var i = items.length - 1; i > 0; i--) {
-      // Pick a pseudorandom number according to the list length
       final n = random.nextInt(i + 1);
 
       final temp = items[i];

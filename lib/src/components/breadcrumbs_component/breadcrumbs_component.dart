@@ -62,7 +62,6 @@ class BreadcrumbsComponent {
         isContact = pathSegments.last == msg.contact;
       }
     } on StateError {
-      print('resourse not found');
     }
     if (crumbLinks.length == 2) isHome = true;
     

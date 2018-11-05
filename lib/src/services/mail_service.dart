@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:angular/di.dart';
 import 'package:http/browser_client.dart';
 import '../models/mail.dart';
@@ -8,9 +9,8 @@ class MailService {
   Future<void> send(Mail mail) async {
     final client = new BrowserClient();
 
-    await client.put('https://api.hg-rid.eu/mail', body : mail.toJson());
+    await client.put('https://api.hg-rid.eu/mail',
+        body: json.encode(mail.toJson()),
+        headers: {'Content-Type': 'application/json'});
   }
-
-  
-  
 }

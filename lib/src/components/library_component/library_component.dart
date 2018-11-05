@@ -72,7 +72,7 @@ class LibraryComponent implements OnDestroy {
           selectedModel = videoService.data.values.firstWhere((resource) =>
               resource.phrases[msg.currentLanguage].url == model.url);
         } on StateError {
-          print('resourse not found');
+        
         }
         if (selectedModel != null) {
           selectedModel.complete = true;
