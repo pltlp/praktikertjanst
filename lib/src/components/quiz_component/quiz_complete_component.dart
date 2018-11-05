@@ -32,6 +32,7 @@ class QuizCompleteComponent {
   final MessagesService msg;
 
   Future<void> onSignupNewsLetter() async {
+    print('tried to send eamil');
     if (form.valid && termsAccepted) {
 
      await mailService.send(new Mail()
@@ -42,6 +43,7 @@ class QuizCompleteComponent {
      );
      emailSent = true; 
     }
+    
   }
 
   String email;
