@@ -6,16 +6,6 @@
                 white-space: nowrap;
             }
         }
-        div#flex {
-            display: flex;
-            justify-content: flex-end;
-            material-icon {
-                position: absolute;
-                bottom: 0;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-        }
     }
     ::ng-deep material-icon {
         i {
