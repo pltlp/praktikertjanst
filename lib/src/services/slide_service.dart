@@ -40,7 +40,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/_DSC0236.jpg'
+            'pics/gloves.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -55,7 +55,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/gloves.jpg'
+            'pics/truck.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =
@@ -70,7 +70,7 @@ class SlideService {
         },
       new Slide()
         ..background_image =
-            'pics/clean_the_sewer.png'
+            'pics/clean_the_sewer.jpg'
         ..phrases = {
           'sv': new SlidePhrases()
             ..paragraph =

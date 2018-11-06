@@ -18,8 +18,7 @@
     <div class="row margin-top-medium"
          id="preview"
          *ngFor="let wordPreviewModel of wordService.data.values">
-        <div class="col m9 align-middle clickable"
-             (click)="selectedWord = wordPreviewModel">
+        <div class="col m9 align-middle clickable" (click)="selectedWord = wordPreviewModel">
             <h3 class="color-astronautblue margin-top-none margin-bottom-none">
                 {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
             <p class="margin-top-x-small margin-bottom-none">{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
@@ -28,7 +27,8 @@
             <fo-carousel>
                 <fo-carousel-slide *ngFor="let image of wordPreviewModel.img_urls">
                     <div>
-                        <img class="wordImage"
+                        <img class="wordImage clickable"
+                             (click)="selectedWord = wordPreviewModel"
                              [src]="image"
                              [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
                     </div>

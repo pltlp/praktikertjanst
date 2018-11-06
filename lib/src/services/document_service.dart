@@ -51,7 +51,7 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'textdocument-example')
         ..type = ResourceType.document
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html'
+            'http://hg-rid.eu/web_documents/text_doc_example/text_doc_example.html'
         ..url['en'] =
             'http://hg-rid.hemsida.eu/web_documents/text_doc_example/text_doc_example.html',
       
@@ -72,9 +72,9 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
         ..url['sv'] =
-            'http://hg-rid.hemsida.eu/web_documents/spridning_av_kvicksilver/Data.html'
+            'http://hg-rid.eu/web_documents/spridning_av_kvicksilver/Data.html'
         ..url['en'] =
-            'http://hg-rid.hemsida.eu/web_documents/spridning_av_kvicksilver/Data.html',
+            'http://hg-rid.eu/web_documents/spridning_av_kvicksilver/Data.html',
     };
     return data;
   }

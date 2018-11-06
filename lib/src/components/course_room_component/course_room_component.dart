@@ -16,6 +16,7 @@ import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
 import '../button_component/button_component.dart';
 import '../carousel_component/carousel_component.dart';
+import '../documents_component/documents_component.dart';
 import '../word_list_component/word_list_component.dart';
 
 @Component(
@@ -35,7 +36,8 @@ import '../word_list_component/word_list_component.dart';
       ClickableTooltipTargetDirective,
       MaterialInkTooltipComponent,
       MaterialIconTooltipComponent,
-      MaterialPopupComponent
+      MaterialPopupComponent,
+      DocumentsComponent
     ],
     providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
@@ -72,7 +74,7 @@ class CourseRoomComponent implements OnActivate {
 
   String getLink(Resource resource) {
     if (resource.type == ResourceType.quiz) {
-      return '${msg.home_url}/$url/quiz/${resource.phrases[msg.currentLanguage].url}';
+      return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
     } else {
       return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
     }
