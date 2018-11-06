@@ -37,7 +37,9 @@
       <div class="l6 m8 col shadow padding-bottom-none">
         <div>
           <p-quiz-complete *ngIf="success"
-                           [model]="model"></p-quiz-complete>
+                           [model]="model"
+                           [logEntry]="logEntry"
+                           [logId]="logId"></p-quiz-complete>
           <p-quiz-fail *ngIf="!success"
                        [model]="model"></p-quiz-fail>
         </div>

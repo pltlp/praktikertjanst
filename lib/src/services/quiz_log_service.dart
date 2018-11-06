@@ -6,12 +6,25 @@ import '../models/quiz_log_entry.dart';
 
 @Injectable()
 class QuizLogService {
-  Future<void> put(QuizLogEntry quizLogEntry) async {
+  Future<int> create(QuizLogEntry quizLogEntry) async {
     final client = new BrowserClient();
-
-   final response = await client.put('https://api.hg-rid.eu/quiz-log',
+    final response = await client.put('https://api.hg-rid.eu/quiz-log',
         body: json.encode(quizLogEntry.toJson()),
         headers: {'Content-Type': 'application/json'});
-        print(response);
+    if (response.statusCode != 201) {
+      throw new Exception(response.body);
+    }
+    return int.parse(response.body);
+  }
+
+  Future<QuizLogEntry> update(QuizLogEntry quizLogEntry, int id) async {
+    final client = new BrowserClient();
+    final response = await client.put('https://api.hg-rid.eu/quiz-log/$id',
+        body: json.encode(quizLogEntry.toJson()),
+        headers: {'Content-Type': 'application/json'});
+    if (response.statusCode != 200) {
+      throw new Exception(response.body);
+    }
+    return quizLogEntry;
   }
 }
