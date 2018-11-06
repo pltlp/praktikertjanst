@@ -1,5 +1,4 @@
 import 'dart:core';
-import 'dart:html';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
@@ -18,7 +17,6 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
     ],
     providers: const [
       VideoService,
-      MessagesService
     ],
     directives: const [
       CarouselSlideSectionComponent,
@@ -27,8 +25,7 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       FoModalComponent,
       NgFor,
       NgIf,
-      MaterialButtonComponent,
-      Touch 
+      MaterialButtonComponent,       
     ],
     pipes: const [
       NamePipe
@@ -42,24 +39,17 @@ class CarouselComponent implements OnInit {
     while (models.isNotEmpty) {      
       modelTable.add(models.take(3).toList(growable: false));
       modelTable.last.forEach(models.remove);
-    }
-    headerTranslation = Intl.message(header, name: header);
+    }    
   }
 
   void onModelClick(Video model) {
-    selectedModel = model;
-    print('click!');
+    selectedModel = model;    
     if (selectedModel != null){
       selectedModelUrl = sanitizer.bypassSecurityTrustResourceUrl(
-          selectedModel.url[msg.currentLanguage]);
-        
-
+          selectedModel.url[msg.currentLanguage]);      
     }
     else selectedModelUrl = null;
   }
-
-
-
 
   @Input('header')
   String header;
@@ -74,6 +64,5 @@ class CarouselComponent implements OnInit {
   final List<List<Video>> modelTable = [];
   final VideoService videoService;
   final MessagesService msg;
-  final DomSanitizationService sanitizer;
-  String headerTranslation;
+  final DomSanitizationService sanitizer;  
 }

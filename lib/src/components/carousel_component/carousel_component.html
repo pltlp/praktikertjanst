@@ -1,40 +1,41 @@
 <div class="row">
-        <div class="col text-center">
-                <h1 class="margin-bottom-medium margin-top-large">
-                        {{headerTranslation | name}}
-                </h1>
-        </div>
+  <div class="col text-center">
+    <h1 class="margin-bottom-medium margin-top-large">
+      {{header | name}}
+    </h1>
+  </div>
 </div>
 
 <fo-carousel [showRadioButtons]="modelTable.length > 1"
              class="hide-for-small">
-        <fo-carousel-slide *ngFor="let modelList of modelTable">
-                <div class="row">
-                        <div class="m4 col"
-                             (click)="onModelClick(model)"
-                             *ngFor="let model of modelList">
-                                <p-carousel-slide-section [model]="model">
+  <fo-carousel-slide *ngFor="let modelList of modelTable">
+    <div class="row">
+      <div class="m4 col"
+           (click)="onModelClick(model)"
+           *ngFor="let model of modelList">
+        <p-carousel-slide-section [model]="model">
 
-                                </p-carousel-slide-section>
-                        </div>
-                </div>
-        </fo-carousel-slide>
+        </p-carousel-slide-section>
+      </div>
+    </div>
+  </fo-carousel-slide>
 </fo-carousel>
 
 <fo-carousel [showRadioButtons]="modelTable.length > 1"
              class="hide-for-medium hide-for-large">
-        <fo-carousel-slide *ngFor="let modelOne of oneModelPerElementList">
-                <div class="row expand">
-                        <div class="col">
-                                <img [src]="modelOne.img_url"
-                                     [alt]="modelOne.phrases[msg.currentLanguage].name" (click)="onModelClick(modelOne)">
-                                <div class="padding">
-                                        <h2>{{modelOne.phrases[msg.currentLanguage].name | name}}</h2>
-                                        <p>{{modelOne.phrases[msg.currentLanguage].description}}</p>
-                                </div>
-                        </div>
-                </div>
-        </fo-carousel-slide>
+  <fo-carousel-slide *ngFor="let modelOne of oneModelPerElementList">
+    <div class="row expand">
+      <div class="col">
+        <img [src]="modelOne.img_url"
+             [alt]="modelOne.phrases[msg.currentLanguage].name"
+             (click)="onModelClick(modelOne)">
+        <div class="padding">
+          <h2>{{modelOne.phrases[msg.currentLanguage].name | name}}</h2>
+          <p>{{modelOne.phrases[msg.currentLanguage].description}}</p>
+        </div>
+      </div>
+    </div>
+  </fo-carousel-slide>
 </fo-carousel>
 
 <fo-modal *ngIf="selectedModel != null"
@@ -43,10 +44,10 @@
           (visibleChange)="selectedModel = null"
           [showCloseButton]="true"
           [fixedWidth]="true">
-        <div class="row">
-                <div class="col">
-                        <iframe [src]="selectedModelUrl"
-                                allowfullscreen></iframe>
-                </div>
-        </div>
+  <div class="row">
+    <div class="col">
+      <iframe [src]="selectedModelUrl"
+              allowfullscreen></iframe>
+    </div>
+  </div>
 </fo-modal>
