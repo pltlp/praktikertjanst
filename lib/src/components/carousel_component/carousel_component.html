@@ -11,9 +11,9 @@
         <fo-carousel-slide *ngFor="let modelList of modelTable">
                 <div class="row">
                         <div class="m4 col"
+                             (click)="onModelClick(model)"
                              *ngFor="let model of modelList">
-                                <p-carousel-slide-section [model]="model"
-                                                          (click)="onModelClick(model)">
+                                <p-carousel-slide-section [model]="model">
 
                                 </p-carousel-slide-section>
                         </div>
@@ -24,20 +24,18 @@
 <fo-carousel [showRadioButtons]="modelTable.length > 1"
              class="hide-for-medium hide-for-large">
         <fo-carousel-slide *ngFor="let modelOne of oneModelPerElementList">
-                <div class="row expand center">
+                <div class="row expand">
                         <div class="col">
                                 <img [src]="modelOne.img_url"
-                                     [alt]="modelOne.phrases[msg.currentLanguage].name">
+                                     [alt]="modelOne.phrases[msg.currentLanguage].name" (click)="onModelClick(modelOne)">
                                 <div class="padding">
                                         <h2>{{modelOne.phrases[msg.currentLanguage].name | name}}</h2>
                                         <p>{{modelOne.phrases[msg.currentLanguage].description}}</p>
                                 </div>
-
                         </div>
                 </div>
         </fo-carousel-slide>
 </fo-carousel>
-
 
 <fo-modal *ngIf="selectedModel != null"
           [title]="selectedModel.phrases[msg.currentLanguage].name"

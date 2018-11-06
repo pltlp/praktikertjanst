@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_components/model/action/async_action.dart';
@@ -17,7 +18,7 @@ import 'quiz_fail_component.dart';
     templateUrl: 'quiz_component.html',
     styleUrls: const ['quiz_component.css'],
     directives: const [
-      ButtonComponent,            
+      ButtonComponent,
       NgIf,
       MaterialStepperComponent,
       StepDirective,
@@ -31,21 +32,16 @@ import 'quiz_fail_component.dart';
     providers: [scrollHostProviders, Location],
     pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
-class QuizComponent implements OnActivate {
+class QuizComponent implements OnInit {
   QuizComponent(
       this.quizService, this.changeDetectorRef, this.location, this.msg);
 
   @override
-  void onActivate(RouterState previous, RouterState current) {
-    resourceUrl = current.parameters['url'];
-    init();
-  }
-
-  void init() {
+  void ngOnInit() {
     try {
-      model = new Quiz.from(quizService.data.values.firstWhere((resource) =>
-          resource.phrases[msg.currentLanguage].url == resourceUrl));
-      completed = false;
+      for (var question in model.questions) {
+        shuffle(question.options);
+      }
     } on StateError {
       print('resource not found');
     }
@@ -57,15 +53,43 @@ class QuizComponent implements OnActivate {
     }
   }
 
-  
+  List shuffle(List items) {
+    final random = new Random();
 
-  bool get success => model.currentScore.toDouble() / model.maxScore >= model.minScore;
+    for (var i = items.length - 1; i > 0; i--) {
+      final n = random.nextInt(i + 1);
+
+      final temp = items[i];
+      items[i] = items[n];
+      items[n] = temp;
+    }
+
+    return items;
+  }
+
+    void init() {
+    try {
+      model = new Quiz.from(model);
+      completed = false;
+
+      for (var question in model.questions) {
+        shuffle(question.options);
+      }
+    } on StateError {
+      print('resource not found');
+    }
+  }
+
+  @Input('model')
+  Quiz model;
+  bool get success =>
+      model.currentScore.toDouble() / model.maxScore >= model.minScore;
 
   String resourceUrl;
   final ChangeDetectorRef changeDetectorRef;
   final QuizService quizService;
   final Location location;
   final MessagesService msg;
-  Quiz model;
+
   bool completed = false;
 }

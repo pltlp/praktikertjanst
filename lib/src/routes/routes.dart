@@ -7,10 +7,9 @@ import '../components/documents_component/documents_component.template.dart'
     as dc;
 import '../components/home_component/home_component.template.dart' as hc;
 import '../components/library_component/library_component.template.dart' as lc;
-import '../components/quiz_component/quiz_component.template.dart' as qc;
-import '../components/rise_component/rise_component.template.dart' as rc;
-
+import  '../components/resource_wraper_component/resource_wraper_component.template.dart' as rwc;
 import '../services/messages_service.dart';
+
 
 @Injectable()
 class Routes {
@@ -34,13 +33,12 @@ class Routes {
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
-            path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}',
@@ -54,12 +52,12 @@ class Routes {
           RouteDefinition(
             path:
                 '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
@@ -74,12 +72,12 @@ class Routes {
           RouteDefinition(
             path:
                 '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
@@ -94,28 +92,24 @@ class Routes {
           RouteDefinition(
             path:
                 '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/:url',
-            component: rc.RiseComponentNgFactory,
-          ),
-          RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.about}',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.contact}',
             component: ac.AboutComponentNgFactory,
           ),
           RouteDefinition(
             path: '${msg.currentLanguage}/${msg.home_url}/:url',
-            component: rc.RiseComponentNgFactory,
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/quiz/:url',
-            component: qc.QuizComponentNgFactory,
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/:url',
+            component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition.redirect(
             path: '.+',

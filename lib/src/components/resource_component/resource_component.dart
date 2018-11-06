@@ -8,7 +8,7 @@ import '../../services/messages_service.dart';
     selector: 'p-resource',
     templateUrl: 'resource_component.html',
     styleUrls: const ['resource_component.css'],
-    directives: const [MaterialIconComponent, NgIf],
+    directives: const [MaterialIconComponent, FoIconComponent, NgIf],
     pipes: [NamePipe])
 class ResourceComponent implements OnInit {
   ResourceComponent(this.msg);
@@ -22,12 +22,10 @@ class ResourceComponent implements OnInit {
   String backgroundImage;
   final MessagesService msg;
 
-  
-
-
   @Input('model')
   Resource model;
 
   @Input('backgroundColor')
   String backgroundColor;
+  
 }

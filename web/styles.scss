@@ -11,36 +11,6 @@
     font-display: block; // Make icons take up space even if they haven't loaded
 }
 
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-html,
-body {
-    //height: 100%;
-    margin: 0;
-    h1 {
-        color: black;
-        font-weight: bolder;
-    }
-    .width-100 {
-        width: 100%;
-    }
-}
-
-html {
-    overflow-y: auto;
-    font-size: 16px;
-}
-
-h1.large {
-    font-size: 4rem;
-}
-
-iframe {
-    overflow: hidden;
-}
-
 .icon-quiz:before {
     content: "\e900";
     color: #fff;
@@ -76,7 +46,43 @@ iframe {
     color: #fff;
 }
 
-.top-header-offset
-{
+.icon-file-play:before {
+    content: "\e929";
+    color: #fff;
+}
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+html,
+body {
+    //height: 100%;
+    margin: 0;
+    h1 {
+        color: black;
+        font-weight: bolder;
+    }
+    .width-100 {
+        width: 100%;
+    }
+}
+
+html {
+    overflow-y: auto;
+    font-size: 16px;
+}
+
+h1.large {
+    font-size: 4rem;
+}
+
+iframe {
+    overflow: hidden;
+}
+
+.top-header-offset {
     margin-top: 126px;
 }

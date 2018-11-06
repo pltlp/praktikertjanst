@@ -5,4 +5,5 @@ enum ResourceType
   courseRoom,
   video,
   quiz
+
 }
