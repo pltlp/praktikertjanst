@@ -7,24 +7,20 @@
              class="color-white">
             <div class="row">
                 <div class="col">
-                    <h2 class="padding-top-large">{{model.phrases[msg.currentLanguage].name | name}}</h2>
+                    <h2 class="margin-top-large">{{model.phrases[msg.currentLanguage].name | name}}</h2>
                 </div>
             </div>
         </div>
     </div>
-    <div id="bottom"
-         class="background-color-cerulean padding-medium"
-         [style.background-color]="backgroundColor">
-        <div class="row">
-            <div class="col m3 s3">
-                <fo-icon class="action-icon padding-none"
-                         icon="{{model.icon}}"
-                         size="3em">
-                </fo-icon>
-            </div>
-            <div class="col m9 s9 text-center color-white">
-                <h4 class="margin-none text-left">{{model.phrases[msg.currentLanguage].description}}</h4>
-            </div>
+    <div class="row background-color-cerulean bottom">
+        <div class="col l2 m4 s3 text-center align-middle">
+            <fo-icon class="color-white"
+                     icon="{{model.icon}}"
+                     size="3em">
+            </fo-icon>
+        </div>
+        <div class="col l10 m8 s9 color-white align-middle">
+            <h4 class="margin-top-none margin-bottom-none">{{model.phrases[msg.currentLanguage].description}}</h4>
         </div>
     </div>
 </div>
@@ -40,26 +36,24 @@
              class="color-white">
             <div class="row">
                 <div class="col">
-                    <h2 class="padding-top-large margin-bottom-none">{{model.phrases[msg.currentLanguage].name | name}}</h2>
-                    <material-icon class="action-icon padding-none"
+                    <h2 class="margin-top-large margin-bottom-none">{{model.phrases[msg.currentLanguage].name | name}}</h2>
+                    <material-icon class="action-icon"
                                    icon="done"></material-icon>
                 </div>
             </div>
         </div>
     </div>
-    <div id="bottom"
-         class="background-color-cerulean padding-medium"
-         [style.background-color]="backgroundColor">
-        <div class="row">
-            <div class="col m3 s3">
-                <fo-icon class="action-icon padding-none"
-                         icon="{{model.icon}}"
-                         size="3em">
-                </fo-icon>
-            </div>
-            <div class="col m9 s9 text-center color-white">
-                <h4 class="margin-none text-left">{{model.phrases[msg.currentLanguage].description}}</h4>
-            </div>
+
+    <div class="row background-color-cerulean bottom">
+        <div class="col l2 m4 s3 align-middle text-center">
+            <fo-icon class="color-white"
+                     icon="{{model.icon}}"
+                     size="3em">
+            </fo-icon>
+        </div>
+        <div class="col l10 m8 s9 color-white align-middle">
+            <h4 class="margin-top-none margin-bottom-none">{{model.phrases[msg.currentLanguage].description}}</h4>
         </div>
     </div>
+
 </div>
