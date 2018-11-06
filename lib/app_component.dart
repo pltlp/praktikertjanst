@@ -80,36 +80,36 @@ class AppComponent {
       this.wordService,
       this.quizService,
       this.slideService) {
-    subMenu = MenuModel<MenuItem>([
+    languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.swedish),
-        MenuItem(msg.english),
-        MenuItem(msg.spanish),
+        MenuItem(_capitalize(msg.swedish),
+            action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
+        MenuItem(_capitalize(msg.english), action: () => window.location.href = '${Uri.base.origin}/en/home'),
+        MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
+        MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
+        MenuItem(_capitalize(msg.german), action: () => window.location.href = '${Uri.base.origin}/de/start')
       ])
     ]);
 
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.about,
+        MenuItem(_capitalize(msg.contact),
             action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.about_url}')),
-        MenuItem(msg.language, subMenu: subMenu),
-        MenuItem(msg.library,
+                '${msg.currentLanguage}/${msg.home_url}/${msg.contact}')),
+        MenuItem(_capitalize(msg.language), subMenu: languageMenuModel),
+        MenuItem(_capitalize(msg.library),
             action: () => _router.navigateByUrl(
                 '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
+        MenuItem(_capitalize(msg.word_list),
+            action: () => wordListModalVisible = true)
       ])
     ]);
-    Intl.defaultLocale = 'sv_SE';
+
     _loadResources();
 
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
-/*
-    _router.onNavigationStart.listen((state) {
-      window.scrollTo(0, 0); 
-    });        
-    */
   }
 
   bool get showFooter {
@@ -123,23 +123,62 @@ class AppComponent {
         .isEmpty;
   }
 
-  Future<void> _loadResources() async {    
+  String _capitalize(String value) =>
+      '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
+
+  Future<void> _loadResources() async {
     loaded = false;
+
+    // Figure out language based on url
+    if (Uri.base.pathSegments.isEmpty) {
+      Intl.defaultLocale = 'sv_SE';
+
+    }
+    else {
+      final lang = Uri.base.pathSegments.first;
+      switch (lang) {
+        case 'en':
+          Intl.defaultLocale = 'en_GB';
+          break;
+
+        case 'sv':
+          Intl.defaultLocale = 'sv_SE';
+          break;
+
+        case 'fr':
+          Intl.defaultLocale = 'fr_FR';
+          break;
+
+        case 'es':
+          Intl.defaultLocale = 'es_ES';
+          break;
+
+        case 'de':
+          Intl.defaultLocale = 'de_DE';
+          break;
+
+        default:
+          Intl.defaultLocale = 'sv_SE';
+      }
+    }
+
+    // TODO load arb language file
+
     await videoService.fetchAll();
     await documentService.fetchAll();
     await riseService.fetchAll();
     await courseRoomService.fetchAll();
     await wordService.fetchAll();
     await quizService.fetchAll();
-    await slideService.fetchAll();    
+    await slideService.fetchAll();
     routes.init(msg);
     loaded = true;
   }
-  
+
   MenuModel menuModel;
-  MenuModel subMenu;
+  MenuModel languageMenuModel;
   final Routes routes;
-  final MessagesService msg;  
+  final MessagesService msg;
   Router _router;
 
   final VideoService videoService;

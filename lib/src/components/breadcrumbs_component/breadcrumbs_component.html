@@ -1,17 +1,18 @@
 <div class="row">
-    <div class="col">
-        <span class="color-white clickable"
-              *ngFor="let crumb of evaluateBreadcrumbs(pathSegments); let i = index"
-              [routerLink]="crumbLinks[i]">
-            <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
-        </span>
-        <div id="flex">
-            <material-icon *ngIf="!dontShowCloseButton()"
-                           icon="close"
-                           class="color-white clickable end"
-                           (click)="back()">
-            </material-icon>
-        </div>
-
-    </div>
+  <div class="m11 s10 col align-middle">
+    <span class="color-white clickable"
+          *ngFor="let crumb of evaluateBreadcrumbs(pathSegments); let i = index"
+          [routerLink]="crumbLinks[i]">
+      <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
+    </span>
+  </div>
+  <div class="m1 s2 col text-right">    
+    <material-icon *ngIf="showCloseButton"
+                   icon="close"
+                   size="large"
+                   baseline
+                   class="color-white clickable end"
+                   (click)="back()">
+    </material-icon>
+  </div>
 </div>
