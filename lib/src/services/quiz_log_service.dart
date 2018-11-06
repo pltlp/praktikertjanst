@@ -12,6 +12,6 @@ class QuizLogService {
    final response = await client.put('https://api.hg-rid.eu/quiz-log',
         body: json.encode(quizLogEntry.toJson()),
         headers: {'Content-Type': 'application/json'});
-        print(response.body);
+        print(response);
   }
 }
