@@ -9,7 +9,8 @@ import '../../services/messages_service.dart';
     templateUrl: 'resource_component.html',
     styleUrls: const ['resource_component.css'],
     directives: const [MaterialIconComponent, FoIconComponent, NgIf],
-    pipes: [NamePipe])
+    pipes: [NamePipe],
+    changeDetection: ChangeDetectionStrategy.OnPush)
 class ResourceComponent implements OnInit {
   ResourceComponent(this.msg);
 
