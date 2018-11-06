@@ -27,7 +27,7 @@
     <div class="col m4"
          *ngFor="let resource of resources">
         <p-resource [model]="resource"
-                    [routerLink]="msg.home_url + '/' + resource.phrases[msg.currentLanguage].url">
+                    routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{resource.phrases[msg.currentLanguage].url}}">
         </p-resource>
     </div>
 </div>

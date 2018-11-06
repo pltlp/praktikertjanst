@@ -30,12 +30,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Ställ krav på installatörens kunskap om minimering av amalgamutsläpp.'
-            ..link = 'hem/kursrum-for-dentaltekniker'
+            ..link = '/sv/hem/kursrum-for-dentaltekniker'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Make sure that installers have knowledge about minimizing amalgam emissions.'
-            ..link = 'hem/kursrum-for-dentaltekniker'
+            ..link = '/en/home/course-room-for-dental-technicians'
             ..button_label = 'Read more',
         },
       new Slide()
@@ -45,12 +45,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Spola bort amalgamrester från instrument där det finns amalgamavskiljare, före diskdesinficering.'
-            ..link = 'hem/kursrum-for-tandvardsteam'
+            ..link = '/sv/hem/kursrum-for-tandvardsteam'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Rinse out amalgam residues from instruments where there are amalgam separators before disinfection.'
-            ..link = 'hem/kursrum-for-tandvardsteam'
+            ..link = '/en/home/course-room-for-dental-teams'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -60,12 +60,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Rör som kan innehålla amalgamrester ska omhändertas som farligt avfall. Var uppmärksam vid rivning, stambyte och ombyggnad.'
-            ..link = '/hem/kursrum-for-servicetekniker'
+            ..link = '/sv/hem/kursrum-for-servicetekniker'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Tubes that may contain amalgam residues should be disposed of as hazardous waste. Pay attention during demolition, change of trunk and remodeling.'
-            ..link = '/hem/kursrum-for-servicetekniker'
+            ..link = '/en/home/course-room-for-service-technicians'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -75,12 +75,12 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Sanera avloppsrören för att undvika driftstörningar och minska riskerna för kvicksilverutsläpp'
-            ..link = 'hem/kursrum-for-tandvardsteam'
+            ..link = '/sv/hem/kursrum-for-tandvardsteam'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
                 'Clean the drain pipes to avoid drift disturbances and reduce the risk of mercury emissions'
-            ..link = 'hem/kursrum-for-tandvardsteam'
+            ..link = '/en/home/course-room-for-dental-technicians'
             ..button_label = 'Read more'
         }
     ];

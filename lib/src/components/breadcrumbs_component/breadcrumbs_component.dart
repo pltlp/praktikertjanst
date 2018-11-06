@@ -36,7 +36,7 @@ class BreadcrumbsComponent {
       routerState == null ? [] : routerState.path.split('/');
 
   List<String> evaluateBreadcrumbs(List<String> path) {
-    var breadcrumbs = path;
+    var breadcrumbs = path;      
     if (window.innerWidth < maxScreenWidth &&
         breadcrumbs.join('').length > nrOfCharacters) {
       breadcrumbs[(breadcrumbs.indexWhere((part) => part != '..'))] = '..';
@@ -54,6 +54,7 @@ class BreadcrumbsComponent {
     var isCourseRoom = false;
     var isHome = false;
     var isContact = false;
+    
     try {
       if (pathSegments.last != null) {
         model = courseRoomService.data[pathSegments.last];

@@ -13,7 +13,6 @@ import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/components/word_list_component/word_list_component.dart';
 import 'src/components/word_preview_component/word_preview_component.dart';
-import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
 import 'src/services/document_service.dart';
@@ -23,7 +22,6 @@ import 'src/services/rise_service.dart';
 import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
-
 
 @Component(
     selector: 'p-app',
@@ -55,7 +53,7 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProvidersHash,
+      routerProviders,
       Routes,
       materialProviders,
       MessagesService,
@@ -92,33 +90,40 @@ class AppComponent {
 
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.contact, action: () => _router.navigateByUrl('${msg.home_url}/${msg.contact}')),
+        MenuItem(msg.about,
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.about_url}')),
         MenuItem(msg.language, subMenu: subMenu),
-        MenuItem(msg.library,action: () => _router.navigateByUrl('${msg.home_url}/${msg.library_url}')),
+        MenuItem(msg.library,
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
       ])
     ]);
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
-      _router.onRouteActivated.listen((state) {
+
+    _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
-
+/*
     _router.onNavigationStart.listen((state) {
-      window.scrollTo(0, 0);
-    });
+      window.scrollTo(0, 0); 
+    });        
+    */
   }
-
 
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
     if (urlParam == null) return true;
-    
-    return riseService.data.values.where((resource) =>
-          urlParam == resource.phrases[msg.currentLanguage].url).isEmpty;  
+
+    return riseService.data.values
+        .where(
+            (resource) => urlParam == resource.phrases[msg.currentLanguage].url)
+        .isEmpty;
   }
 
-  Future<void> _loadResources() async {
+  Future<void> _loadResources() async {    
     loaded = false;
     await videoService.fetchAll();
     await documentService.fetchAll();
@@ -126,17 +131,15 @@ class AppComponent {
     await courseRoomService.fetchAll();
     await wordService.fetchAll();
     await quizService.fetchAll();
-    await slideService.fetchAll();
+    await slideService.fetchAll();    
+    routes.init(msg);
     loaded = true;
   }
-
-  Router get router => _router;
-  Window get htmlWindow => window;
+  
   MenuModel menuModel;
   MenuModel subMenu;
   final Routes routes;
-  final MessagesService msg;
-  List<Rise> riseContents = [];
+  final MessagesService msg;  
   Router _router;
 
   final VideoService videoService;
@@ -151,5 +154,4 @@ class AppComponent {
   bool languageSelectorVisible = false;
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
   String iconSize = '1.5em';
-  
 }

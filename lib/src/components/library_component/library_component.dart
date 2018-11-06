@@ -78,7 +78,7 @@ class LibraryComponent implements OnDestroy {
           selectedModel.complete = true;
           showModal = true;
         } else {
-          router.navigate('${msg.home_url}/${msg.library_url}/${model.url}');
+          router.navigate('${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/${model.url}');
         }
       }
     }

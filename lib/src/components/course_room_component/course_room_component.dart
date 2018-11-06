@@ -72,14 +72,8 @@ class CourseRoomComponent implements OnActivate {
     }
   }
 
-  String getLink(Resource resource) {
-    if (resource.type == ResourceType.quiz) {
-      return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
-    } else {
-      return '${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
-    }
-  }
-
+  String getLink(Resource resource) => '${msg.currentLanguage}/${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';    
+  
   final MessagesService msg;
   final VideoService videoService;
   final QuizService quizService;
