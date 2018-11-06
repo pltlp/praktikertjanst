@@ -39,6 +39,9 @@ class QuizCompleteComponent {
       await quizLogService.put(
         new QuizLogEntry()
         ..email = email
+        ..name = model.phrases[msg.currentLanguage].name
+        ..score = model.currentScore.toDouble()
+        ..language = msg.currentLanguage
       );
      await mailService.send(new Mail()
      ..subject = 'New quiz completed'
