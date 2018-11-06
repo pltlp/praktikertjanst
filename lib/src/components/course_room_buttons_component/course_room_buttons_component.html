@@ -13,7 +13,7 @@
                 </h3>
             </material-tooltip-card>
             <p-button [middle]="courseRoom.phrases[msg.currentLanguage].name"
-                      [routerLink]="msg.home_url + '/' + courseRoom.phrases[msg.currentLanguage].url"
+                      routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{courseRoom.phrases[msg.currentLanguage].url}}"
                       rightBackgroundColor="#00A0C8"
                       tooltipTarget
                       #ref="tooltipTarget"

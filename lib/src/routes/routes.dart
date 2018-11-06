@@ -21,109 +21,109 @@ class Routes {
           RouteDefinition(
               path: msg.home_url, component: hc.HomeComponentNgFactory),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.library_url}',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}',
             component: lc.LibraryComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_curious_url}/${msg.documents_component_url}',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/quiz/:url',
             component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.course_room_for_dental_teams_url}',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.documents_component_url}',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_teams_url}/quiz/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/quiz/:url',
             component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
+                '${msg.currentLanguage}/${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_dental_technicians_url}/quiz/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/quiz/:url',
             component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_service_technicians_url}',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.home_url}/${msg.course_room_for_service_technicians_url}/quiz/:url',
+                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/quiz/:url',
             component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.library_url}/:url',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.about}',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.about}',
             component: ac.AboutComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/:url',
+            path: '${msg.currentLanguage}/${msg.home_url}/:url',
             component: rc.RiseComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.home_url}/${msg.library_url}/quiz/:url',
+            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/quiz/:url',
             component: qc.QuizComponentNgFactory,
           ),
           RouteDefinition.redirect(
             path: '.+',
-            redirectTo: msg.home_url,
+            redirectTo: '${msg.currentLanguage}/${msg.home_url}',
           ),
           RouteDefinition.redirect(
             path: '',
-            redirectTo: msg.home_url,
+            redirectTo: '${msg.currentLanguage}/${msg.home_url}',
           )
         ];
 }
