@@ -13,7 +13,6 @@ import 'src/components/fullscreen_component/fullscreen_component.dart';
 import 'src/components/home_component/home_component.dart';
 import 'src/components/word_list_component/word_list_component.dart';
 import 'src/components/word_preview_component/word_preview_component.dart';
-import 'src/models/rise.dart';
 import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
 import 'src/services/document_service.dart';
@@ -54,7 +53,7 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProvidersHash,
+      routerProviders,
       Routes,
       materialProviders,
       MessagesService,
@@ -106,10 +105,11 @@ class AppComponent {
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
-
+/*
     _router.onNavigationStart.listen((state) {
-      window.scrollTo(0, 0);
-    });    
+      window.scrollTo(0, 0); 
+    });        
+    */
   }
 
   bool get showFooter {
@@ -132,16 +132,14 @@ class AppComponent {
     await wordService.fetchAll();
     await quizService.fetchAll();
     await slideService.fetchAll();    
+    routes.init(msg);
     loaded = true;
   }
-
-  Router get router => _router;
-  Window get htmlWindow => window;
+  
   MenuModel menuModel;
   MenuModel subMenu;
   final Routes routes;
-  final MessagesService msg;
-  List<Rise> riseContents = [];
+  final MessagesService msg;  
   Router _router;
 
   final VideoService videoService;

@@ -78,11 +78,7 @@ class WordService {
             'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
         ..name = 'Approved waste bin'),
     'Grovsil / Salivsugfilter / Partikelfälla': new Word()
-<<<<<<< HEAD
-      ..img_urls = ['pics/care_of_amalgam_separators.jpg']
-=======
       ..img_urls = ['pics/particle_filter.png']
->>>>>>> d17133a75a3b97f41bd1b9644621df7acb8701cf
       ..phrases['sv'] = (new Phrases()
         ..description =
             'För  att  förbättra  amalgamavskiljarens  funktion  och  ta  bort  större  fasta  partiklar  är  unitens  sug  utrustad  med  grovsil/salivsugfilter  eller  partikelfälla.  Den  sistnämnda  är  av  engångstyp.'

@@ -24,17 +24,12 @@
         <div class="m10 col text-right align-bottom hide-for-small">
           <material-dropdown-select class="color-white"
                                     [buttonText]="msg.language | name">
-            <material-select-item>{{msg.swedish | name}}</material-select-item>
+              <material-select-item>{{msg.swedish | name}}</material-select-item>
             <material-select-item>{{msg.english | name}}</material-select-item>
             <material-select-item>{{msg.spanish | name}}</material-select-item>
           </material-dropdown-select>
-<<<<<<< HEAD
-          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.about_url}}">{{msg.about | name}}</a>
+          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.contact}}">{{msg.contact | name}}</a>
           <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}">{{msg.library | name}}</a>
-=======
-          <a [routerLink]="msg.home_url + '/' + msg.contact">{{msg.contact | name}}</a>
-          <a [routerLink]="msg.home_url + '/' + msg.library_url">{{msg.library | name}}</a>
->>>>>>> d17133a75a3b97f41bd1b9644621df7acb8701cf
           <a class="clickable"
              (click)="wordListModalVisible = true">{{msg.word_list | name}}</a>
         </div>
@@ -47,7 +42,7 @@
     </d-navbar>
   </header>
   <main>
-    <!--<router-outlet [routes]="routes.all"></router-outlet>-->
+    <router-outlet [routes]="routes.all"></router-outlet>
   </main>
   <footer *ngIf="showFooter">
     <p-footer></p-footer>

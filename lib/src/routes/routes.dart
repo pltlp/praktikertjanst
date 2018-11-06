@@ -13,12 +13,12 @@ import '../services/messages_service.dart';
 
 @Injectable()
 class Routes {
-  final List<RouteDefinition> all;
+  List<RouteDefinition> all;
 
-  Routes(MessagesService msg)
-      : all = [
+  void init(MessagesService msg) {
+    all = [
           RouteDefinition(
-              path: msg.home_url, component: hc.HomeComponentNgFactory),
+              path: '${msg.currentLanguage}/${msg.home_url}', component: hc.HomeComponentNgFactory, useAsDefault: true),
           RouteDefinition(
             path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}',
             component: lc.LibraryComponentNgFactory,
@@ -110,7 +110,8 @@ class Routes {
           RouteDefinition(
             path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
-          ),
+          ),          
+          
           RouteDefinition.redirect(
             path: '.+',
             redirectTo: '${msg.currentLanguage}/${msg.home_url}',
@@ -120,4 +121,5 @@ class Routes {
             redirectTo: '${msg.currentLanguage}/${msg.home_url}',
           )
         ];
+  }
 }
