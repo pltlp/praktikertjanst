@@ -78,7 +78,7 @@ class WordService {
             'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
         ..name = 'Approved waste bin'),
     'Grovsil / Salivsugfilter / Partikelfälla': new Word()
-      ..img_urls = ['pics/care_of_amalgam_separators.png']
+      ..img_urls = ['pics/care_of_amalgam_separators.jpg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Behållare för riskavfall såsom kvicksilver ska vara UN-godkänd och uppfylla kraven för transport av farligt avfall. UN-nummer är ett identifieringsnummer för farligt gods.'

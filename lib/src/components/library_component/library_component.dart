@@ -70,7 +70,7 @@ class LibraryComponent implements OnDestroy {
       final SearchOption model = changes.first.added.first;
 
       if (model.url != null && model.url.isNotEmpty) {
-        router.navigate('${msg.home_url}/${msg.library_url}/${model.url}');
+        router.navigate('${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/${model.url}');
       }
     }
   }

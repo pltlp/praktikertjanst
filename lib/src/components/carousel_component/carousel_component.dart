@@ -35,7 +35,7 @@ class CarouselComponent implements OnInit {
   @override
   void ngOnInit() {
     oneModelPerElementList.addAll(models);
-    while (models.isNotEmpty) {
+    while (models.isNotEmpty) {      
       modelTable.add(models.take(3).toList(growable: false));
       modelTable.last.forEach(models.remove);
     }

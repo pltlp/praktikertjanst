@@ -24,7 +24,6 @@ import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
 
-
 @Component(
     selector: 'p-app',
     templateUrl: 'app_component.html',
@@ -92,33 +91,39 @@ class AppComponent {
 
     menuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        MenuItem(msg.about, action: () => _router.navigateByUrl('${msg.home_url}/${msg.about_url}')),
+        MenuItem(msg.about,
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.about_url}')),
         MenuItem(msg.language, subMenu: subMenu),
-        MenuItem(msg.library,action: () => _router.navigateByUrl('${msg.home_url}/${msg.library_url}')),
+        MenuItem(msg.library,
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
       ])
     ]);
     Intl.defaultLocale = 'sv_SE';
     _loadResources();
-      _router.onRouteActivated.listen((state) {
+
+    _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
 
     _router.onNavigationStart.listen((state) {
       window.scrollTo(0, 0);
-    });
+    });    
   }
-
 
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
     if (urlParam == null) return true;
-    
-    return riseService.data.values.where((resource) =>
-          urlParam == resource.phrases[msg.currentLanguage].url).isEmpty;  
+
+    return riseService.data.values
+        .where(
+            (resource) => urlParam == resource.phrases[msg.currentLanguage].url)
+        .isEmpty;
   }
 
-  Future<void> _loadResources() async {
+  Future<void> _loadResources() async {    
     loaded = false;
     await videoService.fetchAll();
     await documentService.fetchAll();
@@ -126,7 +131,7 @@ class AppComponent {
     await courseRoomService.fetchAll();
     await wordService.fetchAll();
     await quizService.fetchAll();
-    await slideService.fetchAll();
+    await slideService.fetchAll();    
     loaded = true;
   }
 
@@ -151,5 +156,4 @@ class AppComponent {
   bool languageSelectorVisible = false;
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
   String iconSize = '1.5em';
-  
 }
