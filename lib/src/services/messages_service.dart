@@ -192,4 +192,6 @@ class MessagesService {
 
   String word(int howMany) => Intl.plural(howMany,
       one: 'ord', other: 'ord', name: 'word', args: [howMany]);
+
+  String get back => Intl.message('gå bakåt', name: 'back');
 }

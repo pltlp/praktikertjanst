@@ -43,19 +43,18 @@
      *ngIf="selectedWord != null">
     <div class="col">
         <p-word [model]="selectedWord"></p-word>
-        <div class="row margin-top-x-large">
-            <div class="col m4">
-            </div>
-            <div class="col m4">
-                <p-button [middle]="msg.close"
-                          (click)="selectedWord = null"
-                          rightBackgroundColor="#00A0C8">
+    </div>
+</div>
+<div class="row margin-top-x-large">
+    <div class="col m4">
+    </div>
+    <div class="col m4">
+        <p-button [middle]="msg.back"
+                  (click)="selectedWord = null"
+                  rightBackgroundColor="#00A0C8">
 
-                </p-button>
-            </div>
-            <div class="col m4">
-            </div>
-        </div>
-
+        </p-button>
+    </div>
+    <div class="col m4">
     </div>
 </div>
