@@ -194,4 +194,6 @@ class MessagesService {
       one: 'ord', other: 'ord', name: 'word', args: [howMany]);
 
   String get back => Intl.message('gå bakåt', name: 'back');
+  String get go_back_to_wordlist =>
+      Intl.message('gå tillbaka till ordlistan', name: 'go_back_to_wordlist');
 }
