@@ -1,6 +1,7 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_button/mixins';
 @import '../../../colors';
+@import 'package:grid/constants';
 @mixin colorize($selector, $color) {
     $raised: $selector + '[raised]';
     @include button-background-color($raised, $color);
@@ -17,7 +18,7 @@
             img.wordImage {
                 border: $cerulean 3px solid;
                 height: 10em;
-                width:auto;
+                width: 95%;
             }
             p {
                 text-align: left;
@@ -27,4 +28,6 @@
     div#preview:hover {
         opacity: 1.0;
     }
+
+   
 }

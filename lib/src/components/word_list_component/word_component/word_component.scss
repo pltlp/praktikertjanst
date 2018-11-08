@@ -4,12 +4,7 @@
     display: block;
     img.wordImage {
         border: $cerulean 3px solid;
-        width: 98%;
+        width: 99%;
     }
 }
 
-@media screen and (max-width: $medium-width-threshold - 1px) {
-    img.wordImage {
-        width: 80%;
-    }
-}
