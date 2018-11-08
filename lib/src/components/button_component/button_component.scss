@@ -29,12 +29,12 @@
                 transition-duration: 0.2s;
                 line-height: 2rem;
                 background-color: $cerulean;
-                width: 2rem;
             }
             div#leading {
                 border-top-left-radius: 4rem;
                 border-bottom-left-radius: 4rem;
                 z-index: 3;
+                width: 2rem;
             }
             div#middle {
                 flex: 1 1 auto;
@@ -45,10 +45,11 @@
             div#trailing {
                 border-top-right-radius: 4rem;
                 border-bottom-right-radius: 4rem;
-            
+                width: 2rem;
                 material-icon {
                     @include material-icon-size($mat-grid * 3);
                     color: white;
+                    font-weight: bold;
                 }
             }
             div#middle:hover {
