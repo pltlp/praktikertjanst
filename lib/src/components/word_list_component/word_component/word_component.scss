@@ -1,8 +1,15 @@
 @import '../../../../colors';
+@import 'package:grid/constants';
 :host {
     display: block;
     img.wordImage {
         border: $cerulean 3px solid;
-        width:99%;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: $medium-width-threshold - 1px) {
+    img.wordImage {
+        width: 80%;
     }
 }
