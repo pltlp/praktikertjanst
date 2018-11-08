@@ -6,7 +6,6 @@
     display: block;
     button {
         color: white;
-        font-weight: lighter;
         text-align: center;
         border: none;
         font-size: 1.1em;
@@ -46,10 +45,14 @@
                 border-top-right-radius: 4rem;
                 border-bottom-right-radius: 4rem;
                 width: 2rem;
+                ::ng-deep material-icon {
+                    i {
+                        font-weight: bolder;
+                    }
+                }
                 material-icon {
                     @include material-icon-size($mat-grid * 3);
                     color: white;
-                    font-weight: bold;
                 }
             }
             div#middle:hover {
