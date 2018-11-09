@@ -18,20 +18,19 @@
     <div class="row margin-top-medium"
          id="preview"
          *ngFor="let wordPreviewModel of wordService.data.values">
-        <div class="col m9 align-middle clickable" (click)="selectedWord = wordPreviewModel">
+        <div class="col m9 align-middle clickable"
+             (click)="selectedWord = wordPreviewModel">
             <h3 class="color-astronautblue margin-top-none margin-bottom-none">
                 {{wordPreviewModel.phrases[msg.currentLanguage].name}}</h3>
             <p class="margin-top-x-small margin-bottom-none">{{wordPreviewModel.phrases[msg.currentLanguage].description}}</p>
         </div>
-        <div class="col m3 align-middle">
+        <div class="col m3 align-middle shadow padding-bottom-none">
             <fo-carousel>
                 <fo-carousel-slide *ngFor="let image of wordPreviewModel.img_urls">
-                    <div>
                         <img class="wordImage clickable"
                              (click)="selectedWord = wordPreviewModel"
                              [src]="image"
                              [alt]="wordPreviewModel.phrases[msg.currentLanguage].name">
-                    </div>
                 </fo-carousel-slide>
             </fo-carousel>
         </div>
@@ -39,22 +38,23 @@
 
 </ng-container>
 
-<div class="row"
-     *ngIf="selectedWord != null">
-    <div class="col">
-        <p-word [model]="selectedWord"></p-word>
+<ng-container *ngIf="selectedWord != null">
+    <div class="row"
+         *ngIf="selectedWord != null">
+        <div class="col">
+            <p-word [model]="selectedWord"></p-word>
+        </div>
     </div>
-</div>
-<div class="row margin-top-x-large">
-    <div class="col m4">
+    <div class="row margin-top-x-large">
+        <div class="col m4">
+        </div>
+        <div class="col m4">
+            <p-button [middle]="msg.go_back_to_wordlist"
+                      (click)="selectedWord = null"
+                      rightBackgroundColor="#00A0C8">
+            </p-button>
+        </div>
+        <div class="col m4">
+        </div>
     </div>
-    <div class="col m4">
-        <p-button [middle]="msg.go_back_to_wordlist"
-                  (click)="selectedWord = null"
-                  rightBackgroundColor="#00A0C8">
-
-        </p-button>
-    </div>
-    <div class="col m4">
-    </div>
-</div>
+</ng-container>

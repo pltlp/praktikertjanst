@@ -1,10 +1,11 @@
 @import '../../../../colors';
 @import 'package:grid/constants';
 :host {
-    display: block;
     img.wordImage {
-        border: $cerulean 3px solid;
-        width: 99%;
+        border: white 1rem solid;
+        box-sizing: border-box;
+    }
+    .shadow {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
-
