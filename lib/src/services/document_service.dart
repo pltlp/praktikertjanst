@@ -27,10 +27,12 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'how-dangerous-is-mercury-amalgam')
         ..type = ResourceType.document
+        ..size = '125 kb'
         ..url['sv'] =
             'http://www.tandlakartidningen.se/media/915/Berglund_2_1999.pdf'
         ..url['en'] =
             'http://www.tandlakartidningen.se/media/915/Berglund_2_1999.pdf',
+        
       'Hur farlig är kvicksilver amlgam egentligen?': new Document()
         ..icon = 'pool'
         ..id = 'Hur farlig är kvicksilver amlgam egentligen?'
@@ -46,6 +48,7 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'textdocument-example')
         ..type = ResourceType.document
+        ..size = '509 kb'
         ..url['sv'] =
             'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
         ..url['en'] =
@@ -65,6 +68,7 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
+        ..size = '509 kb'
         ..url['sv'] =
             'https://www.skelleftea.se/Bygg%20och%20miljokontoret/Innehallssidor/Bifogat/Tandvardens_miljoguide1%20(2).pdf'
         ..url['en'] =
