@@ -172,7 +172,7 @@ class MessagesService {
       Intl.message('Läs mer om projektet på',
           name: 'read_more_about_this_project_at');
 
-  String get redo_quiz => Intl.message('gör om testet', name: 'redo_quiz');
+  String get redo_quiz => Intl.message('gör om', name: 'redo_quiz');
 
   String get search => Intl.message('sök', name: 'search');
 
@@ -196,4 +196,8 @@ class MessagesService {
   String get back => Intl.message('gå bakåt', name: 'back');
   String get go_back_to_wordlist =>
       Intl.message('gå tillbaka till ordlistan', name: 'go_back_to_wordlist');
+
+  String get check_your_answers =>  Intl.message('facit', name: 'check_your_answers');
+  String get correct =>  Intl.message('Sant', name: 'correct');
+  String get not_correct =>  Intl.message('Falskt', name: 'not_correct');
 }

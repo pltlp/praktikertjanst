@@ -29,7 +29,8 @@ import 'quiz_fail_component.dart';
       MaterialRadioGroupComponent,
       formDirectives,
       QuizCompleteComponent,
-      QuizFailComponent
+      QuizFailComponent,
+      FoModalComponent
     ],
     providers: [scrollHostProviders, Location, QuizLogService],
     pipes: const [NamePipe],
@@ -101,6 +102,6 @@ class QuizComponent implements OnInit {
   final QuizLogService quizLogService;
   QuizLogEntry logEntry = new QuizLogEntry();
   int logId;
-
+  bool showAnswersModal = false;
   bool completed = false;
 }
