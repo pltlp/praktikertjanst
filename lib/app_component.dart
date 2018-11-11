@@ -55,7 +55,7 @@ import 'src/services/word_service.dart';
     providers: [
       routerProviders,
       Routes,
-      materialProviders, 
+      materialProviders,  
       MessagesService,
       VideoService,
       DocumentService,

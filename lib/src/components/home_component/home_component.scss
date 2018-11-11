@@ -49,7 +49,7 @@
             display: block;
         }
     }
-    @media screen and (min-width: $large-width-threshold) {
+    @media screen and (min-width: 1280px) {
         iframe {
             pointer-events: none;
         }
