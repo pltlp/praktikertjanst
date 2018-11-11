@@ -59,7 +59,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Förstöra det', 'Förstöra det', score: 0),
           new Option('Dumpa det i havet', 'Dumpa det i havet', score: 0),
         ]),
-      ], 0.7)
+      ], 0.8)
         ..icon = 'quiz'
         ..id = 'Quiz för allmänheten'
         ..img_url = 'pics/courseroom_for_curious.jpg'
@@ -161,7 +161,7 @@ class QuizService extends ResourceService<Quiz> {
                   'Dental- och servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.',
                   score: 0),
             ])
-      ], 0.7)
+      ], 0.8)
         ..icon = 'quiz'
         ..id = 'Quiz för dig i tandvårdsteam'
         ..img_url = 'pics/responsibility.jpg'
@@ -256,7 +256,7 @@ class QuizService extends ResourceService<Quiz> {
               new Option('Lungkapaciteten', 'Lungkapaciteten', score: 0),
               new Option('Hjärtat', 'Hjärtat', score: 0),
             ])
-      ], 0.7)
+      ], 0.8)
         ..icon = 'quiz'
         ..id = 'Quiz för dig som dentaltekniker'
         ..img_url = 'pics/environmental_service_companies.jpg'
