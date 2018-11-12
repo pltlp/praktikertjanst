@@ -2,11 +2,6 @@ import 'resource.dart';
 
 class Quiz extends Resource {
   Quiz(this._questions, this.minScore);
-  Quiz.from(Quiz other)
-      : _questions = other.questions
-            .map((q) => new Question.from(q))
-            .toList(growable: false),
-        minScore = other.minScore;
 
   final List<Question> _questions;
   List<Question> get questions => _questions;
@@ -21,7 +16,7 @@ class Quiz extends Resource {
     }
     return s;
   }
-
+ 
   int get currentScore {
     var s = 0;
 
@@ -44,7 +39,6 @@ class Question {
         _options = other.options.toList(growable: false);
 
   final String label;
-
   final List<Option> _options;
   List<Option> get options => _options;
   String selectedValue;
