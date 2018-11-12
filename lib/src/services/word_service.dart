@@ -98,7 +98,7 @@ class WordService {
             'Compressor is a unit that extracts air from the environment, compresses it with the aid of an engine and stores the compressed air in a tank (pressure vessel / container). The compressed air can then be used if necessary by dragging through air ducts / hoses to the place where, for example, The dental equipment is located. Compressed air is used, for example. a. to drive turbines / hand / angle piece and to blow clean during treatments.'
         ..name = 'Compressor'),
     'Pumpbox': new Word()
-      ..img_urls = ['pics/pumpbox.jpg']
+      ..img_urls = ['pics/pumpbox.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Installeras för att förflytta vatten, från sekretkärl/bufferttank eller där flödesfall ej är tillräckligt.'
@@ -118,7 +118,7 @@ class WordService {
             'During a cleanup, mercury contaminated drainage pipes and water locks and floor wells are emptied and cleaned. Amalgam sludge and rinse water are disposed of as hazardous waste by companies authorized to transport this. The pipes are never completely clear from mercury and must therefore be labeled to be disposed of as hazardous waste upon dismantling. Operations must be done on a regular basis. When a reception is laid down, a so-called shutdown sanitation is made, which means that the suction lines and plugs are again discharged so that no mercury will drain into the drain.'
         ..name = 'Decontamination'),
     'Saneringsprotokoll': new Word()
-      ..img_urls = ['pics/clean_the_sewer.jpg']
+      ..img_urls = ['pics/remidiation_protocol.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Dokumentation från företaget som utfört saneringen där bl.a. metod som använts och mängd insamlat kvicksilver framgår. I dokumentationen syns också hur det farliga avfallet har omhändertagits, d.v.s. att transportören har tillstånd och att det lämnats in på en anläggning som tar emot farligt avfall. '
@@ -128,7 +128,7 @@ class WordService {
             'Documentation from the company that carried out the remediation, including method used and amount of mercury collected appears. The documentation also shows how the hazardous waste has been disposed of, that is to say. that the carrier has a permit and that it has been submitted to a hazardous waste facility.'
         ..name = 'Remediation protocols'),
     'Torrt sugsystem': new Word()
-      ..img_urls = ['pics/dry_suction_system.jpg']
+      ..img_urls = ['pics/amalgam_separators_dry_system.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Vid torra sugsystem sker separationen av vätska och luft i en vätskeavskiljare (sekretavskiljare) som finns i uniten. Amalgamavskiljaren finns i eller i anslutning till uniten. Utgående vätska efter amalgamavskiljaren ansluter direkt till fastighetens spillavloppssystem, ofta till en golvbrunn. Luften sugs från vätskeavskiljaren till sugmotorn, som betjänar flera unitar. Sugmotorn kan vara placerad på vinden, samma plan som uniten eller på källarplan.'
