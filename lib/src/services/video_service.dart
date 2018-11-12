@@ -22,7 +22,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
           ..description =
-              'Susann Balzar reflekterar kring saneringen på hennes mottagning.')
+              'Susann Balzar reflekterar kring saneringen på mottagningen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Good examples - remidiation'
           ..url = 'remidiation'
@@ -41,7 +41,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Så minimerar vi ustsläppen'
           ..url = 'mottagningen'
           ..description =
-              'Claes Karlsson berättar om skötselarbetet på hans mottagning.')
+              'Claes Karlsson berättar om skötselarbetet på mottagningen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'How we work at our dentist practice'
           ..url = 'patient-reception'

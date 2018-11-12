@@ -25,7 +25,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som bara är nyfiken'
           ..description =
-              'Kurs med innehåll för dig som bara är nyfiken.'
+              'Innehåll för dig som bara är nyfiken.'
           ..url = 'kursrum-for-nyfikna')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for curious'
@@ -59,7 +59,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på tandvårdsmottagning'
           ..description =
-              'Kurs med innehåll för dig som jobbar i tandvårdsteam.'
+              'Innehåll för dig som jobbar i tandvårdsteam.'
           ..url = 'kursrum-for-tandvardsteam')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for dental teams'
@@ -97,12 +97,12 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som dentaltekniker'
           ..description =
-              'Kurs med innehåll för dig som jobbar som dentaltekniker. '
+              'Innehåll för dig som jobbar som dentaltekniker.'
           ..url = 'kursrum-for-dentaltekniker')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for dental technicians'
           ..description =
-              'Kurs med innehåll för dig som jobbar som dentaltekniker.'
+              'Innehåll för dig som jobbar som dentaltekniker.'
           ..url = 'course-room-for-dental-technicians')
         ..resources_ids = [
           'Kvicksilver i naturen',
@@ -134,7 +134,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description =
-              'Kurs med innehåll för dig som jobbar på miljöserviceföretag. '
+              'Innehåll för dig som jobbar på miljöserviceföretag.'
           ..url = 'kursrum-for-servicetekniker')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for service technicians'

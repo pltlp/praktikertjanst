@@ -29,35 +29,39 @@ class MessagesService {
       name: 'contact_bullet_2');
 
   String get contact_bullet_3 => Intl.message(
-      'amalgamavskiljare med viss verkningsgrad måste finnas vid tandvårdsinrättningar där amalgam används eller amalgamfyllningar avlägsnas EU-kommissionen ska senast i mitten av 2020 rapportera om möjligheten att långsiktigt fasa ut amalgam senast till 2030.',
+      'amalgamavskiljare med viss verkningsgrad måste finnas vid tandvårdsinrättningar där amalgam används eller amalgamfyllningar avlägsnas',
       name: 'contact_bullet_3');
+
+  String get contact_bullet_4 => Intl.message(
+      'EU-kommissionen ska senast i mitten av 2020 rapportera om möjligheten att långsiktigt fasa ut amalgam senast till 2030.',
+      name: 'contact_bullet_4');
 
   String get contact_pragraph_1 => Intl.message(
       'Praktikertjänst har, i samarbete med Sweden Recycling och IVL Svenska Miljöinstitutet, startat projektet HG-Rid LIFE som fått ekonomiskt stöd av LIFE – EU:s program för miljö och klimat. Genom projektet tar vi vårt ansvar för ett hållbart samhälle. Projektets huvudsyfte är att minimera utsläppen av kvicksilver från tandvårdsmottagningar i Sverige och på sikt i övriga EU.',
       name: 'contact_pragraph_1');
 
   String get contact_pragraph_2 => Intl.message(
-      'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl a på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts.',
+      'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl.a. på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts. Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvudsakliga källorna till användning av kvicksilver inom EU. ',
       name: 'contact_pragraph_2');
 
   String get contact_pragraph_3 => Intl.message(
-      'Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvud¬sakliga källorna till användning av kvicksilver inom EU. ',
+      'En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl.a. att:',
       name: 'contact_pragraph_3');
 
   String get contact_pragraph_4 => Intl.message(
-      'En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl a att:',
+      'Projektet är ett bidrag till det nationella miljökvalitetsmålet Giftfri miljö samt till FN:s globala utvecklingsmål, Agenda 2030 (Mål 6 Rent vatten och sanitet).',
       name: 'contact_pragraph_4');
 
   String get contact_project_goal_1 => Intl.message(
-      'Ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU.',
+      'ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU.',
       name: 'contact_project_goal_1');
 
   String get contact_project_goal_2 => Intl.message(
-      'Utveckla nya metoder för sanering som är effektiv, användarvänlig och kostnadseffektiv.:',
+      'utveckla nya metoder för sanering som är effektiv, användarvänlig och kostnadseffektiv',
       name: 'contact_project_goal_2');
 
   String get contact_project_goal_3 => Intl.message(
-      'Öka kunskap och medvetenhet om hur kvicksilver från amalgam påverkan miljön. Denna webbportal är en del av detta arbete.',
+      'öka kunskap och medvetenhet om hur kvicksilver från amalgam påverkar miljön. Denna webbportal är en del av detta arbete.',
       name: 'contact_project_goal_3');
 
   String get contact_us => Intl.message('Kontakta oss', name: 'contact_us');
@@ -67,9 +71,9 @@ class MessagesService {
   String get course_modules =>
       Intl.message('kursmoduler', name: 'course_modules');
 
-  String get course_room_for_curious_carousel_header =>
-      Intl.message('instruktionsfilmer',
-          name: 'course_room_for_curious_carousel_header');
+  String get course_room_carousel_header =>
+      Intl.message('filmer',
+          name: 'course_room_carousel_header');
 
   String get course_room_for_curious_url =>
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
@@ -144,8 +148,9 @@ class MessagesService {
   String get quiz_fail_text_2 =>
       Intl.message('Läs på mer och försök igen.', name: 'quiz_fail_text_2');
 
-        String get quiz_fail_text_3 =>
-      Intl.message('Du behöver svara rätt på 80% av frågorna.', name: 'quiz_fail_text_3');
+  String get quiz_fail_text_3 =>
+      Intl.message('Du behöver svara rätt på 80% av frågorna.',
+          name: 'quiz_fail_text_3');
 
   String get quiz_fail_title =>
       Intl.message('Tyvärr!', name: 'quiz_fail_title');
