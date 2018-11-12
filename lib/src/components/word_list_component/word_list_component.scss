@@ -1,30 +1,17 @@
-@import 'package:angular_components/css/material/material';
-@import 'package:angular_components/material_button/mixins';
 @import '../../../colors';
-@mixin colorize($selector, $color) {
-    $raised: $selector + '[raised]';
-    @include button-background-color($raised, $color);
-    @include button-color($raised, $mat-white);
-    $not-raised: $selector + ':not([raised])';
-    @include button-color($not-raised, $color);
-}
-
+@import 'package:grid/constants';
 :host {
-    @include colorize("material-button.close-button", #00A0C8);
     div#preview {
         opacity: 0.7;
-        .col {
-            img.wordImage {
-                border: $cerulean 3px solid;
-                height: 10em;
-                width:auto;
-            }
-            p {
-                text-align: left;
-            }
-        }
     }
     div#preview:hover {
         opacity: 1.0;
+    }
+    img.wordImage {
+        border: white 1rem solid;
+        box-sizing: border-box;
+    }
+    .shadow {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }

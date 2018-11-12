@@ -2,7 +2,7 @@
   <div class="m11 s10 col align-middle">
     <span class="color-white clickable"
           *ngFor="let crumb of evaluateBreadcrumbs(pathSegments); let i = index"
-          [routerLink]="crumbLinks[i]">
+          routerLink="{{msg.currentLanguage}}/{{crumbLinks[i]}}">
       <ng-container *ngIf="i>0">&nbsp;/&nbsp;</ng-container>{{crumb | name}}
     </span>
   </div>

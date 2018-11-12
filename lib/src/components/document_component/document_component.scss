@@ -1,8 +1,29 @@
 div#self {
-    opacity: 0.8;
-    cursor: pointer;
+    opacity: 0.9;
+    .row {
+        .col {
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                p {
+                    font-size: 1rem;
+                    border: 1px solid #E0E0E0;
+                    padding: 1.5em;
+                    span{
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
 }
 
 div#self:hover {
     opacity: 1;
+}
+
+p:hover {
+    background-color: #F5F5F5;
+    transition-duration: 0.5s;
+    transition-property: background-color;
 }

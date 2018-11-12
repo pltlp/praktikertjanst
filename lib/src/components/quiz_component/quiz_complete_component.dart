@@ -10,7 +10,6 @@ import '../../services/mail_service.dart';
 import '../../services/messages_service.dart';
 import '../../services/quiz_log_service.dart';
 
-
 @Component(
     selector: 'p-quiz-complete',
     templateUrl: 'quiz_complete_component.html',
@@ -24,7 +23,9 @@ import '../../services/quiz_log_service.dart';
       MaterialIconComponent,
       NgIf
     ],
-    providers: const[MailService, QuizLogService],
+    providers: const [
+      MailService,
+    ],
     pipes: const [
       NamePipe
     ])
@@ -34,27 +35,20 @@ class QuizCompleteComponent {
   final MessagesService msg;
 
   Future<void> onSignupNewsLetter() async {
+   
     if (form.valid && termsAccepted) {
+      await quizLogService.update(logEntry, logId);
 
-      await quizLogService.put(
-        new QuizLogEntry()
-        ..email = email
-        ..name = model.phrases[msg.currentLanguage].name
-        ..score = model.currentScore.toDouble()
-        ..language = msg.currentLanguage
-      );
-     await mailService.send(new Mail()
-     ..subject = 'New quiz completed'
-     ..message = 'Email: $email'
-     ..sender = 'info@hg-rid.eu'
-     ..receiver = 'dmarlovic83@gmail.com'
-     );
-     emailSent = true; 
+      await mailService.send(new Mail()
+        ..subject = 'New quiz completed'
+        ..message = 'Email: ${logEntry.email}'
+        ..sender = 'info@hg-rid.eu'
+        ..receiver = 'stefan.sjo@digicy.se');
+
+      emailSent = true;
     }
-    
   }
 
-  String email;
   bool termsAccepted = false;
   bool emailSent = false;
   final MailService mailService;
@@ -62,6 +56,12 @@ class QuizCompleteComponent {
 
   @Input()
   Quiz model;
+
+  @Input()
+  QuizLogEntry logEntry;
+
+  @Input()
+  int logId;
 
   final ControlGroup form = new ControlGroup({
     'email': new Control(

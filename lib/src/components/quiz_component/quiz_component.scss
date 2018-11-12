@@ -1,17 +1,31 @@
 @import 'package:grid/constants';
 @import '../../../colors';
+@import 'package:angular_components/material_stepper/mixins';
+@import 'package:angular_components/material_yes_no_buttons/mixins';
 :host {
-  display: block;  
-  div.shadow {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    div#resultFooter {
-      background-color: $astronautBlue;
+    display: block;
+    div.shadow {
+        div#resultFooter {
+            background-color: $astronautBlue;
+        }
     }
-  }  
 }
 
 @media screen and (min-width: $medium-width-threshold) {
-  :host {
-    padding: $large 0;
-  }
+    :host {
+        padding: $large 0;
+    }
 }
+
+@include material-stepper-theme (
+  $selector: '.cerulean-themed',
+  $step-color: $cerulean,
+  $button-color: $cerulean
+);
+
+.cerulean-themed {
+  @include material-yes-button-color($cerulean);
+  @include material-no-button-color($cerulean);
+  @include material-no-button-text-color(white);
+}
+

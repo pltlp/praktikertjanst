@@ -12,26 +12,10 @@
         }
         height: 14em;
         background-size: cover;
-        .row {
-            .col {
-                material-icon.action-icon {
-                    @include material-icon-size($mat-grid * 15);
-                    color: white;
-                    font-weight: bolder;
-                }
-            }
-        }
+      
     }
-    div#bottom {
-        height: 5em;
-        .row {
-            .col {
-                material-icon.action-icon {
-                    @include material-icon-size($mat-grid * 7);
-                    color: white;
-                }
-            }
-        }
+    .row.bottom{
+        height: 8rem;
     }
     iframe {
         width: 100%;
@@ -43,7 +27,7 @@
         transition-property: background;
     }
     div#self:hover {
-        div#bottom {
+        div.row.bottom {
             background: $astronautBlue;
         }
     }

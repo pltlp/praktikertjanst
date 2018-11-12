@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col text-center">
       <h1 class="margin-bottom-none color-cerulean">{{msg.quiz_success_title}}</h1>
+      <p>{{msg.pass_limt}}{{model.minScore * 100}}%</p>
     </div>
   </div>
   <div class="row">
@@ -38,7 +39,7 @@
           <input type="email"
                  [disabled]="!termsAccepted"
                  ngControl="email"
-                 [(ngModel)]="email" />
+                 [(ngModel)]="logEntry.email" />
         </div>
       </div>
     </form>

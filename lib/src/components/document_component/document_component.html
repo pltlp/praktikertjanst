@@ -1,21 +1,16 @@
 <div id="self">
     <div class="row">
-        <div class="col">
-            <a href="{{model.url[msg.currentLanguage]}}" target="_blank">
-                <h3>{{model.phrases[msg.currentLanguage].name}}</h3>
+        <div class="col m7">
+            <a href="{{model.url[msg.currentLanguage]}}"
+               target="_blank">
+                <p class="color-astronautblue">
+                    <fo-icon class="color-astronautblue"
+                             icon="file-pdf"
+                             size="2em">
+                    </fo-icon>&nbsp;
+                    {{model.phrases[msg.currentLanguage].name}}<span>&nbsp;&nbsp;&nbsp;{{model.size}}</span>
+                </p>
             </a>
-
         </div>
     </div>
-    <!--
-   <div class="row margin-bottom-medium">
-        <div class="col m6">
-            <p class="color-dark-gray margin-top-none">
-                {{model.phrases[msg.currentLanguage].description}}
-            </p>
-        </div>
-        <div class="col m6">
-        </div>
-    </div>
-    -->
 </div>

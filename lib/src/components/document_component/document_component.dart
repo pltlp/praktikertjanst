@@ -6,7 +6,7 @@ import '../../models/document.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-    directives: const [NgFor, MaterialIconComponent, RouterLink],
+    directives: const [NgFor, MaterialIconComponent, RouterLink, FoIconComponent],
     selector: 'p-document',
     styleUrls: const ['document_component.css'],
     templateUrl: 'document_component.html',

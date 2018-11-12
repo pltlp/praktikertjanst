@@ -47,7 +47,8 @@ class BreadcrumbsComponent {
   }
 
   void back() {
-    _router.navigate(crumbLinks[crumbLinks.length - 2]);
+   _router.navigate('${msg.currentLanguage}/${crumbLinks[crumbLinks.length - 2]}');
+
   }
 
   bool get showCloseButton {
@@ -84,5 +85,6 @@ class BreadcrumbsComponent {
       final s = segments.take(i + 1);
       crumbLinks[i] = s.join('/');
     }
+
   }
 }

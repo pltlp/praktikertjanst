@@ -38,28 +38,9 @@
     <div class="row expand">
         <div class="col padding-none">
             <p-carousel [models]="videos"
-                        [header]="msg.course_room_for_curious_carousel_header"></p-carousel>
+                        [header]="msg.course_room_carousel_header"></p-carousel>
         </div>
     </div>
-    <div class="row">
-        <div class="col m4">
-            <h1 class="color-astronautblue">{{msg.archive | name}}</h1>
-        </div>
-    </div>
-
-    <!--
-   <div class="row margin-bottom-x-large">
-        <div class="col m3"></div>
-        <div class="col m6">
-            <p-button [middle]="msg.document(1)"
-                      routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{url}}/{{msg.documents_component_url}}"
-                      rightBackgroundColor="#00A0C8">
-            </p-button>
-        </div>
-        <div class="col m3"></div>
-    </div>
-    -->
 
     <p-documents></p-documents>
-
 </div>

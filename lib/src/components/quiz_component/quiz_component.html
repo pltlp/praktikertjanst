@@ -2,11 +2,12 @@
      *ngIf="model != null">
   <ng-container *ngIf="!completed">
     <div class="row">
-      <div class="col">
-        <h1 class="color-astronautblue">Quiz</h1>
+      <div class="col cerulean-themed">
+        <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage]?.name}}</h1>
         <material-stepper orientation="vertical"
-                          legalJumps="backwards"
-                          [noText]="msg.cancel">
+                          legalJumps="all"
+                          [noText]="msg.cancel"
+                          class="stepper-step-index">
           <ng-container *ngFor="let question of model.questions; let i = index">
             <template (continue)="onContinue($event, i)"
                       step
@@ -37,29 +38,40 @@
       <div class="l6 m8 col shadow padding-bottom-none">
         <div>
           <p-quiz-complete *ngIf="success"
-                           [model]="model"></p-quiz-complete>
+                           [model]="model"
+                           [logEntry]="logEntry"
+                           [logId]="logId"></p-quiz-complete>
           <p-quiz-fail *ngIf="!success"
                        [model]="model"></p-quiz-fail>
         </div>
         <div id="resultFooter">
-          <div class="row padding-top-medium padding-bottom-medium">
-            <div class="m6 col">
+          <div class="row padding-top-medium padding-bottom-medium margin-bottom-medium">
+            <div class="m4 col">
               <p-button [middle]="msg.redo_quiz | name"
                         textColor="#00a0c8"
                         leftBackgroundColor="#fff"
                         middleBackgroundColor="#fff"
-                        middleHoverBackgroundColor="#0075b0"
+                        middleHoverBackgroundColor="#00A0C8"
                         rightBackgroundColor="#fff"
                         (click)="init()"></p-button>
             </div>
-            <div class="m6 col">
+            <div class="m4 col">
               <p-button [middle]="msg.close | name"
                         textColor="#00a0c8"
                         leftBackgroundColor="#fff"
                         middleBackgroundColor="#fff"
-                        middleHoverBackgroundColor="#0075b0"
+                        middleHoverBackgroundColor="#00A0C8"
                         rightBackgroundColor="#fff"
                         (click)="location.back()"></p-button>
+            </div>
+            <div class="m4 col">
+              <p-button [middle]="msg.check_your_answers | name"
+                        textColor="#00a0c8"
+                        leftBackgroundColor="#fff"
+                        middleBackgroundColor="#fff"
+                        middleHoverBackgroundColor="#00A0C8"
+                        rightBackgroundColor="#fff"
+                        (click)="showAnswersModal = true"></p-button>
             </div>
           </div>
         </div>
@@ -67,3 +79,22 @@
     </div>
   </ng-container>
 </div>
+
+<fo-modal *ngIf="showAnswersModal"
+          [title]="model.phrases[msg.currentLanguage].name + ' ' + msg.check_your_answers"
+          [visible]="true"
+          (visibleChange)="showAnswersModal = false"
+          [showCloseButton]="true"
+          >
+  <div class="row">
+    <div class="col"
+         *ngFor="let question of model.questions">
+      <h3 class="color-astronautblue">{{question.label}}</h3>
+      <ul *ngFor="let option of question.options">
+        <li class="color-cerulean">{{option.label + ' '}}<span style="font-weight: bolder">
+            {{option.score == 1 ? msg.correct : msg.not_correct}}
+          </span></li>
+      </ul>
+    </div>
+  </div>
+</fo-modal>

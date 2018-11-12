@@ -7,7 +7,9 @@ import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/quiz.dart';
+import '../../models/quiz_log_entry.dart';
 import '../../services/messages_service.dart';
+import '../../services/quiz_log_service.dart';
 import '../../services/quiz_service.dart';
 import '../button_component/button_component.dart';
 import 'quiz_complete_component.dart';
@@ -27,14 +29,15 @@ import 'quiz_fail_component.dart';
       MaterialRadioGroupComponent,
       formDirectives,
       QuizCompleteComponent,
-      QuizFailComponent
+      QuizFailComponent,
+      FoModalComponent
     ],
-    providers: [scrollHostProviders, Location],
+    providers: [scrollHostProviders, Location, QuizLogService],
     pipes: const [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnInit {
-  QuizComponent(
-      this.quizService, this.changeDetectorRef, this.location, this.msg);
+  QuizComponent(this.quizService, this.changeDetectorRef, this.location,
+      this.quizLogService, this.msg);
 
   @override
   void ngOnInit() {
@@ -47,9 +50,15 @@ class QuizComponent implements OnInit {
     }
   }
 
-  void onContinue(AsyncAction<bool> event, int i) {
+  void onContinue(AsyncAction<bool> event, int i) async {
     if (i == model.questions.length - 1) {
       completed = true;
+      logEntry
+        ..name = model.id
+        ..score = model.currentScore.toDouble() / model.maxScore
+        ..language = msg.currentLanguage;
+
+     logId = await quizLogService.create(logEntry);
     }
   }
 
@@ -67,7 +76,7 @@ class QuizComponent implements OnInit {
     return items;
   }
 
-    void init() {
+  void init() {
     try {
       model = new Quiz.from(model);
       completed = false;
@@ -90,6 +99,9 @@ class QuizComponent implements OnInit {
   final QuizService quizService;
   final Location location;
   final MessagesService msg;
-
+  final QuizLogService quizLogService;
+  QuizLogEntry logEntry = new QuizLogEntry();
+  int logId;
+  bool showAnswersModal = false;
   bool completed = false;
 }

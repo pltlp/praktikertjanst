@@ -11,16 +11,18 @@ class VideoService extends ResourceService<Video> {
   Future<Map<String, Video>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
 
+  
+  
     data = {
       'Så upplevde vi saneringen': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Så upplevde vi saneringen'
         ..img_url = 'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
           ..description =
-              'Susann Balzar reflekterar kring saneringen på hennes mottagning.')
+              'Susann Balzar reflekterar kring saneringen på mottagningen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Good examples - remidiation'
           ..url = 'remidiation'
@@ -28,18 +30,18 @@ class VideoService extends ResourceService<Video> {
               'Susann Balzar reflects on the remediation of her dental practice.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters'
+            'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/pONi-1Mxlgo$youtubeParameters',
+            'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0',
       'Så arbetar vi på mottagningen': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Så arbetar vi på mottagningen'
         ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Så arbetar vi med rutinerna på mottagningen'
+          ..name = 'Så minimerar vi utsläppen'
           ..url = 'mottagningen'
           ..description =
-              'Claes Karlsson berättar om skötselarbetet på hans mottagning.')
+              'Claes Karlsson berättar om skötselarbetet på mottagningen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'How we work at our dentist practice'
           ..url = 'patient-reception'
@@ -47,11 +49,11 @@ class VideoService extends ResourceService<Video> {
               'Claes Karlsson talks about the amalgam management at his reception.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/6jPzETatkUY$youtubeParameters'
+            'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/6jPzETatkUY$youtubeParameters',
+            'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0',
       'Så går en installation till': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Så går en installation till'
         ..img_url = 'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -66,30 +68,30 @@ class VideoService extends ResourceService<Video> {
               'Anders and Patrik talk about the installation of amalgam separators and suction systems.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters'
+            'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/5haH6juVKxA$youtubeParameters',
+            'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0',
       'Att lämna amalgam bakom sig': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Att lämna amalgam bakom sig'
         ..img_url = 'https://i.ytimg.com/vi/XFZCVOp56m0/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Att lämna amalgam bakom sig'
-          ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+          ..url = 'lamna-amalgam'
           ..description =
               'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbudet som trädde i kraft 2009 i Sverige. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'How to stop using quck silver amalgam'
-          ..url = 'https://www.youtube.com/embed/ZFknCdx3BPI?rel=0'
+          ..url = 'leave-amalgam'
           ..description =
               'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbudet som trädde i kraft 2009 i Sverige.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters'
+            'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/XFZCVOp56m0$youtubeParameters',
+            'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0',
       'Rutiner vid patientbehandling': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Rutiner vid patientbehandling'
         ..img_url = 'https://i.ytimg.com/vi/pL7jpwbGx80/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -108,7 +110,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters',
       'Skötsel av amalgamavskiljare': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Skötsel av amalgamavskiljare'
         ..img_url = 'https://i.ytimg.com/vi/lKjilIKxWCY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -127,7 +129,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters',
       'Att tänka på vid installation': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Att tänka på vid installation'
         ..img_url = 'https://i.ytimg.com/vi/ENCvjNXodVI/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -146,7 +148,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters',
       'Byte av amalgamavskiljare': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Byte av amalgamavskiljare'
         ..img_url = 'https://i.ytimg.com/vi/YNUCB4ue9LA/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -165,7 +167,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters',
       'Funktionskontroll': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Funktionskontroll'
         ..img_url = 'https://i.ytimg.com/vi/aYeb02GKOuw/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -184,7 +186,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters',
       'Tömning av vattenlås': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Tömning av vattenlås'
         ..img_url = 'https://i.ytimg.com/vi/qV2zNWqhz60/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -202,7 +204,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters',
       'Slutförvaring ': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Slutförvaring'
         ..img_url = 'https://i.ytimg.com/vi/__P3QoGFMNc/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -219,7 +221,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters',
       'Sanering ': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Sanering'
         ..img_url = 'https://i.ytimg.com/vi/J_hVtkS3hpQ/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -236,7 +238,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters',
       'Varför är skötseln så viktig?': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Varför är skötseln så viktig? '
         ..img_url = 'https://i.ytimg.com/vi/eVa5uaZNK9g/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -255,7 +257,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters',
       'Vad är kvicksilver?': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Vad är kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/UL0A6RsC2v8/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -273,7 +275,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters',
       'Var finns kvicksilver?': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Var finns kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/9H2PcBDGffY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -291,7 +293,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters',
       'Vilken roll har tandvården?': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
         ..img_url = 'https://i.ytimg.com/vi/-FFTHF0khLg/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
@@ -309,7 +311,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters',
       'Hur påverkas vi av kvicksilver?': new Video()
-        ..icon = 'file-play'
+        ..icon = 'video'
         ..id = 'Hur påverkas vi av kvicksilver?'
         ..img_url = 'https://i.ytimg.com/vi/8FHTtQ--Ns0/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()

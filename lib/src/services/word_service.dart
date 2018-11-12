@@ -14,14 +14,14 @@ class WordService {
 
   final Map<String, Word> _data = {
     'Amalgamavskiljare': new Word()
-      ..img_urls = ['pics/amalgam_separator.jpg']
+      ..img_urls = ['pics/amalgam_separator.jpg', 'pics/amalgam_separators_dry_system.jpeg']
       ..alts = {
         'sv': 'amalgamavskiljare torrt system',
         'en': 'amalgam separator dry system'
       }
       ..phrases['sv'] = (new Phrases()
         ..description =
-            'En anordning som fångar upp amalgampartiklar i det vatten som används vid tandvårdsbehandlingar, innan det går ut i avloppet. Genom filtrering, sedimentation, centrifugering eller en kombination av dessa skiljs amalgamet ut och blir kvar i behållaren. Amalgamet omhändertas sedan som miljöfarligt avfall. Amalgamavskiljare kan vara inbyggda i en unit eller placeras så att den kan kopplas till flera unitar. '
+            'En anordning som fångar upp amalgampartiklar i det vatten som används vid tandvårdsbehandlingar, innan det går ut i avloppet. Genom filtrering, sedimentation, centrifugering eller en kombination av dessa skiljs amalgamet ut och blir kvar i behållaren. Amalgamet omhändertas sedan som miljöfarligt avfall. Amalgamavskiljare kan vara inbyggda i en unit eller placeras så att den kan kopplas till flera unitar.'
         ..name = 'Amalgamavskiljare')
       ..phrases['en'] = (new Phrases()
         ..description =
@@ -58,10 +58,10 @@ class WordService {
             'Amalgam separators that capture amalgam particles in the water used for washing instruments and other equipment that have been in contact with amalgam before washing / sterilization in the disinfector and autoclave.'
         ..name = 'Sink trap'),
     'Föravskiljare': new Word()
-      ..img_urls = ['pics/preseparator.jpg']
+      ..img_urls = ['pics/amalgam_pre_separators.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
-            'Installeras innan amalgamavskiljare för att fånga upp större partiklar som skulle kunna blockera efterföljande amalgamavskiljare.'
+            'Föravskiljare Installeras innan amalgamavskiljare för att fånga upp större partiklar som skulle kunna blockera efterföljande amalgamavskiljare.'
         ..name = 'Föravskiljare')
       ..phrases['en'] = (new Phrases()
         ..description =
