@@ -109,7 +109,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Lagar och regler',
           'Vad är vad på mottagningen?',
           'Dentalteknikerns ansvar',
-          'Quiz för dig som dentaltekniker'
+          'Quiz för dig som är dentaltekniker'
         ]
         ..type = ResourceType.courseRoom
         ..video_ids = [

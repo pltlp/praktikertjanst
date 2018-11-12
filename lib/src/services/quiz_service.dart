@@ -23,7 +23,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar kvicksilver oss människor?', [
+        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
               score: 1),
           new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
@@ -84,7 +84,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar kvicksilver oss människor?', [
+        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
               score: 1),
           new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
@@ -127,11 +127,11 @@ class QuizService extends ResourceService<Quiz> {
           new Option('En gång per kvartal', 'En gång per kvartal', score: 0),
         ]),
         new Question(
-            'Personalen på tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet? ',
+            'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?',
             [
               new Option(
-                  'Tömning och sköjlning av grovsil, salivsug och partikelfälla.',
-                  'Tömning och sköjlning av grovsil, salivsug och partikelfälla.',
+                  'Tömning och sköljning av grovsil/salivsug eller partikelfälla.',
+                  'Tömning och sköljning av grovsil/salivsug eller partikelfälla.',
                   score: 1),
               new Option(
                   'Kontroll av fyllnadsgraden i amalgamavskiljarens behållare',
@@ -173,7 +173,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz,
-      'Quiz för dig som dentaltekniker': new Quiz([
+      'Quiz för dig som är dentaltekniker': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
           new Option(
@@ -184,7 +184,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar kvicksilver oss människor?', [
+        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
               score: 1),
           new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
@@ -221,8 +221,8 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Dumpa det i havet', 'Dumpa det i havet', score: 0),
         ]),
         new Question('Vad stämmer om installationen av sugslangar?', [
-          new Option('Slangarnas vinklar bör högst vara 45 grader',
-              'Slangarnas vinklar bör högst vara 45 grader',
+          new Option('Slangarnas vinklar bör vara högst 45 grader.',
+              'Slangarnas vinklar bör vara högst 45 grader',
               score: 1),
           new Option('Sugslangarna från uniten till golven bör limmas noga',
               'Sugslangarna från uniten till golven bör limmas noga',
@@ -252,11 +252,11 @@ class QuizService extends ResourceService<Quiz> {
             ])
       ], 0.8)
         ..icon = 'quiz'
-        ..id = 'Quiz för dig som dentaltekniker'
+        ..id = 'Quiz för dig som är dentaltekniker'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för dig som dentaltekniker'
+          ..name = 'Quiz för dig som är dentaltekniker'
           ..url = 'quiz-for-dig-som-dentaltekniker'
           ..description =
               'Test på dina kunskaper utifrån dentalteknikerns perspektiv.')

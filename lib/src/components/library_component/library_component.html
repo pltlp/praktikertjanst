@@ -52,6 +52,8 @@
     <div class="row">
         <div class="col">
             <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url[msg.currentLanguage])"
+                    webkitallowfullscreen
+                    mozallowfullscreen
                     allowfullscreen></iframe>
         </div>
     </div>

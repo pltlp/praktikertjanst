@@ -144,6 +144,9 @@ class MessagesService {
   String get quiz_fail_text_2 =>
       Intl.message('Läs på mer och försök igen.', name: 'quiz_fail_text_2');
 
+        String get quiz_fail_text_3 =>
+      Intl.message('Du behöver svara rätt på 80% av frågorna.', name: 'quiz_fail_text_3');
+
   String get quiz_fail_title =>
       Intl.message('Tyvärr!', name: 'quiz_fail_title');
 
@@ -167,6 +170,9 @@ class MessagesService {
   String get quiz_success_title =>
       Intl.message('Grattis, du har klarat testet!',
           name: 'quiz_success_title');
+
+  String get pass_limt =>
+      Intl.message('Gräns för godkänt: 80%', name: 'pass_limt');
 
   String get read_more_about_this_project_at =>
       Intl.message('Läs mer om projektet på',
@@ -197,7 +203,8 @@ class MessagesService {
   String get go_back_to_wordlist =>
       Intl.message('gå tillbaka till ordlistan', name: 'go_back_to_wordlist');
 
-  String get check_your_answers =>  Intl.message('facit', name: 'check_your_answers');
-  String get correct =>  Intl.message('Sant', name: 'correct');
-  String get not_correct =>  Intl.message('Falskt', name: 'not_correct');
+  String get check_your_answers =>
+      Intl.message('facit', name: 'check_your_answers');
+  String get correct => Intl.message('Sant', name: 'correct');
+  String get not_correct => Intl.message('Falskt', name: 'not_correct');
 }
