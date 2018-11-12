@@ -5,12 +5,12 @@
              [style.background-image]="background(slide)">
             <div class="overlay">
             </div>
-            <div class="col m4 align-middle text-center">
+            <div class="col l5 align-middle text-center">
                 <h1>
                     {{slide.phrases[msg.currentLanguage].paragraph}}
                 </h1>
             </div>
-            <div class="col m3 align-middle text-center">
+            <div class="col l5 align-middle text-center">
                 <a href="{{slide.phrases[msg.currentLanguage].link}}"
                    *ngIf="slide.external_link">
                     <p-button middle="{{slide.phrases[msg.currentLanguage].button_label}}"

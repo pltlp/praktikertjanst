@@ -84,8 +84,7 @@
           [title]="model.phrases[msg.currentLanguage].name + ' ' + msg.check_your_answers"
           [visible]="true"
           (visibleChange)="showAnswersModal = false"
-          [showCloseButton]="true"
-          >
+          [showCloseButton]="true">
   <div class="row">
     <div class="col"
          *ngFor="let question of model.questions">

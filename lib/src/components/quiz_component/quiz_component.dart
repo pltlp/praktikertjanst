@@ -53,12 +53,13 @@ class QuizComponent implements OnInit {
   void onContinue(AsyncAction<bool> event, int i) async {
     if (i == model.questions.length - 1) {
       completed = true;
+      print('modelId: ${model.id}');
       logEntry
         ..name = model.id
         ..score = model.currentScore.toDouble() / model.maxScore
         ..language = msg.currentLanguage;
 
-     logId = await quizLogService.create(logEntry);
+      logId = await quizLogService.create(logEntry);
     }
   }
 
@@ -77,8 +78,11 @@ class QuizComponent implements OnInit {
   }
 
   void init() {
-    try {
-      model = new Quiz.from(model);
+    try {      
+      for (final question in model.questions) {
+        question.selectedValue = null;
+      }
+
       completed = false;
 
       for (var question in model.questions) {
@@ -91,6 +95,7 @@ class QuizComponent implements OnInit {
 
   @Input('model')
   Quiz model;
+
   bool get success =>
       model.currentScore.toDouble() / model.maxScore >= model.minScore;
 
