@@ -5,14 +5,15 @@ import '../models/resource_types.dart';
 import '../models/video.dart';
 import 'resource_service.dart';
 
+
+
 @Injectable()
 class VideoService extends ResourceService<Video> {
   @override
   Future<Map<String, Video>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
 
-  
-  
+
     data = {
       'Så upplevde vi saneringen': new Video()
         ..icon = 'video'
@@ -33,9 +34,9 @@ class VideoService extends ResourceService<Video> {
             'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
             'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0',
-      'Så arbetar vi på mottagningen': new Video()
+      'Så minimerar vi utsläppen': new Video()
         ..icon = 'video'
-        ..id = 'Så arbetar vi på mottagningen'
+        ..id = 'Så minimerar vi utsläppen'
         ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så minimerar vi utsläppen'
@@ -106,9 +107,9 @@ class VideoService extends ResourceService<Video> {
               'These are routines associated with amalgam management.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters'
+            'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/pL7jpwbGx80$youtubeParameters',
+            'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0',
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Skötsel av amalgamavskiljare'
@@ -125,9 +126,9 @@ class VideoService extends ResourceService<Video> {
               'These are procedures for handling amalgam separators and suction systems.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters'
+            'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/lKjilIKxWCY$youtubeParameters',
+            'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0',
       'Att tänka på vid installation': new Video()
         ..icon = 'video'
         ..id = 'Att tänka på vid installation'
@@ -144,9 +145,9 @@ class VideoService extends ResourceService<Video> {
               'Tips when installing amalgam separators and suction systems.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters'
+            'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/ENCvjNXodVI$youtubeParameters',
+            'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0',
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Byte av amalgamavskiljare'
@@ -163,9 +164,9 @@ class VideoService extends ResourceService<Video> {
               'This is how amalgam separators are replaced in wet and dry suction systems.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters'
+            'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/YNUCB4ue9LA$youtubeParameters',
+            'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0',
       'Funktionskontroll': new Video()
         ..icon = 'video'
         ..id = 'Funktionskontroll'
@@ -182,9 +183,9 @@ class VideoService extends ResourceService<Video> {
               'This is how environmental service company performs a function check of amalgam separators.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters'
+            'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/aYeb02GKOuw$youtubeParameters',
+            'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0',
       'Tömning av vattenlås': new Video()
         ..icon = 'video'
         ..id = 'Tömning av vattenlås'
@@ -200,10 +201,10 @@ class VideoService extends ResourceService<Video> {
           ..description = 'This how you drain water traps')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters'
+            'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/qV2zNWqhz60$youtubeParameters',
-      'Slutförvaring ': new Video()
+            'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0',
+      'Slutförvaring': new Video()
         ..icon = 'video'
         ..id = 'Slutförvaring'
         ..img_url = 'https://i.ytimg.com/vi/__P3QoGFMNc/mqdefault.jpg'
@@ -217,9 +218,9 @@ class VideoService extends ResourceService<Video> {
           ..description = 'This is how amalgam waste is taken care of.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters'
+            'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/__P3QoGFMNc$youtubeParameters',
+            'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0',
       'Sanering ': new Video()
         ..icon = 'video'
         ..id = 'Sanering'
@@ -234,9 +235,9 @@ class VideoService extends ResourceService<Video> {
           ..description = 'Then a remediation is carried out.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters'
+            'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/J_hVtkS3hpQ$youtubeParameters',
+            'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0',
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'video'
         ..id = 'Varför är skötseln så viktig? '
@@ -253,9 +254,9 @@ class VideoService extends ResourceService<Video> {
               'Dental technicians emphasize the importance of good care of amalgam separators and suction systems.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters'
+            'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/eVa5uaZNK9g$youtubeParameters',
+            'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0',
       'Vad är kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Vad är kvicksilver?'
@@ -271,9 +272,9 @@ class VideoService extends ResourceService<Video> {
               'This is how environmental service company cleans a leveling vessel.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters'
+            'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/UL0A6RsC2v8$youtubeParameters',
+            'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0',
       'Var finns kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Var finns kvicksilver?'
@@ -289,9 +290,9 @@ class VideoService extends ResourceService<Video> {
               'Michelle Nerentorp berättar om var kvicksilver finns i naturen och hur människan har bidragit till att sprida det.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters'
+            'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/9H2PcBDGffY$youtubeParameters',
+            'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0',
       'Vilken roll har tandvården?': new Video()
         ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
@@ -307,9 +308,9 @@ class VideoService extends ResourceService<Video> {
               'This is how environmental service company cleans a leveling vessel.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters'
+            'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/-FFTHF0khLg$youtubeParameters',
+            'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0',
       'Hur påverkas vi av kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Hur påverkas vi av kvicksilver?'
@@ -325,9 +326,9 @@ class VideoService extends ResourceService<Video> {
               'Michelle Nerentorp berättar om hur människan påverkas av kvicksilver.')
         ..type = ResourceType.video
         ..url['sv'] =
-            'https://www.youtube.com/embed/8FHTtQ--Ns0$youtubeParameters'
+            'https://player.vimeo.com/video/299901270?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://www.youtube.com/embed/8FHTtQ--Ns0$youtubeParameters'
+            'https://player.vimeo.com/video/299901270?color=00acd0&byline=0&portrait=0'
     };
 
     return data;

@@ -193,11 +193,6 @@ class QuizService extends ResourceService<Quiz> {
               new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
               new Option('Nukleinkvicksilver', 'Nukleinkvicksilver', score: 0),
             ]),
-        new Question('Vilken råvara har högst andel kvicksilver?', [
-          new Option('Fisk .', 'Fisk ', score: 1),
-          new Option('Fläskkött', 'Fläskkött', score: 0),
-          new Option('Mejeriprodukter', 'Mejeriprodukter', score: 0),
-        ]),
         new Question(
             'Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
@@ -207,6 +202,11 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Det är inte farligt för människor',
               'Det är inte farligt för människor',
               score: 0),
+        ]),
+        new Question('Vilken råvara har högst andel kvicksilver?', [
+          new Option('Fisk .', 'Fisk ', score: 1),
+          new Option('Fläskkött', 'Fläskkött', score: 0),
+          new Option('Mejeriprodukter', 'Mejeriprodukter', score: 0),
         ]),
         new Question('Hur stor del kvicksilver finns det i amalgam? ', [
           new Option('Ca 50% .', 'Ca 50% ', score: 1),

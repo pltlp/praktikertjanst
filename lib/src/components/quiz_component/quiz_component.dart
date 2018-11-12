@@ -53,7 +53,6 @@ class QuizComponent implements OnInit {
   void onContinue(AsyncAction<bool> event, int i) async {
     if (i == model.questions.length - 1) {
       completed = true;
-      print('modelId: ${model.id}');
       logEntry
         ..name = model.id
         ..score = model.currentScore.toDouble() / model.maxScore

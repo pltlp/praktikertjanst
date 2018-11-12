@@ -20,11 +20,7 @@ class DocumentsComponent implements OnInit {
 
   @override
   void ngOnInit() async {
-    documents = [
-      documentService.data['Hur farlig är kvicksilver amalgam?'],
-      documentService.data['Hur farlig är kvicksilver amlgam egentligen?'],
-      documentService.data['Fördelning av kvicksilver avfall'],
-    ];
+    documents = documentService.data.values.toList();
   }
 
   @Input()

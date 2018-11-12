@@ -15,8 +15,8 @@ class CourseRoomService extends ResourceService<CourseRoom> {
       'kursrum-for-nyfikna': new CourseRoom()
         ..backgroud_image = 'pics/courseroom_for_curious.jpg'
         ..document_ids = [
-          'Hur farlig är kvicksilver amalgam?',
-          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Affisch om tappade amalgamplomber',
+          'Checklista varje arbetsdag och vecka',
           'Fördelning av kvicksilver avfall'
         ]
         ..icon = 'pool'
@@ -24,8 +24,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..img_url = 'pics/courseroom_for_curious.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som bara är nyfiken'
-          ..description =
-              'Innehåll för dig som bara är nyfiken.'
+          ..description = 'Innehåll för dig som bara är nyfiken.'
           ..url = 'kursrum-for-nyfikna')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for curious'
@@ -49,8 +48,8 @@ class CourseRoomService extends ResourceService<CourseRoom> {
       'kursrum-for-tandvardsteam': new CourseRoom()
         ..backgroud_image = 'pics/responsibility.jpg'
         ..document_ids = [
-          'Hur farlig är kvicksilver amalgam?',
-          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Affisch om tappade amalgamplomber',
+          'Checklista varje arbetsdag och vecka',
           'Fördelning av kvicksilver avfall'
         ]
         ..icon = 'pool'
@@ -58,8 +57,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..img_url = 'pics/responsibility.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på tandvårdsmottagning'
-          ..description =
-              'Innehåll för dig som jobbar i tandvårdsteam.'
+          ..description = 'Innehåll för dig som jobbar i tandvårdsteam.'
           ..url = 'kursrum-for-tandvardsteam')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for dental teams'
@@ -84,11 +82,10 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Varför är skötseln så viktig?'
         ],
       'kursrum-for-dentaltekniker': new CourseRoom()
-        ..backgroud_image =
-            'pics/dentist_responsibility.jpg'
+        ..backgroud_image = 'pics/dentist_responsibility.jpg'
         ..document_ids = [
-          'Hur farlig är kvicksilver amalgam?',
-          'Hur farlig är kvicksilver amlgam egentligen?',
+          'Affisch om tappade amalgamplomber',
+          'Checklista varje arbetsdag och vecka',
           'Fördelning av kvicksilver avfall'
         ]
         ..icon = 'pool'
@@ -96,13 +93,11 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..img_url = 'pics/dentist_responsibility.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig som dentaltekniker'
-          ..description =
-              'Innehåll för dig som jobbar som dentaltekniker.'
+          ..description = 'Innehåll för dig som jobbar som dentaltekniker.'
           ..url = 'kursrum-for-dentaltekniker')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for dental technicians'
-          ..description =
-              'Innehåll för dig som jobbar som dentaltekniker.'
+          ..description = 'Innehåll för dig som jobbar som dentaltekniker.'
           ..url = 'course-room-for-dental-technicians')
         ..resources_ids = [
           'Kvicksilver i naturen',
@@ -121,20 +116,17 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Hur påverkas vi av kvicksilver?'
         ],
       'kursrum-for-servicetekniker': new CourseRoom()
-        ..backgroud_image =
-            'pics/environmental_service_companies.jpg'
+        ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
-          'Hur farlig är kvicksilver amalgam?',
-          'Hur farlig är kvicksilver amlgam egentligen?',
-          'Fördelning av kvicksilver avfall'
+          'Affisch om tappade amalgamplomber',
+          'Checklista varje arbetsdag och vecka',
         ]
         ..icon = 'pool'
         ..id = 'kursrum-for-servicetekniker'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på miljöserviceföretag'
-          ..description =
-              'Innehåll för dig som jobbar på miljöserviceföretag.'
+          ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
           ..url = 'kursrum-for-servicetekniker')
         ..phrases['en'] = (new Phrases()
           ..name = 'Course room for service technicians'
@@ -152,7 +144,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Byte av amalgamavskiljare',
           'Funktionskontroll',
           'Tömning av vattenlås',
-          'Sanering',
+          'Så upplevde vi saneringen',
           'Slutförvaring',
           'Att lämna amalgam bakom sig',
           'Vad är kvicksilver?',

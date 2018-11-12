@@ -46,7 +46,7 @@ class HomeComponent {
       this.courseRoomService, this.quizService) {
     videos = [
       videoService.data['Så upplevde vi saneringen'],
-      videoService.data['Så arbetar vi på mottagningen'],
+      videoService.data['Så minimerar vi utsläppen'],
       videoService.data['Så går en installation till'],
       videoService.data['Att lämna amalgam bakom sig']
     ];
