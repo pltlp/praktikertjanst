@@ -23,7 +23,15 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
+        new Question(
+            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
+            [
+              new Option('Metylkvicksilver.', 'Metylkvicksilver', score: 1),
+              new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
+              new Option('Nukleinkvicksilver', 'Nukleinkvicksilver', score: 0),
+            ]),
+        new Question(
+            'Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
               score: 1),
           new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
@@ -32,13 +40,6 @@ class QuizService extends ResourceService<Quiz> {
               'Det är inte farligt för människor',
               score: 0),
         ]),
-        new Question(
-            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
-            [
-              new Option('Metylkvicksilver.', 'Metylkvicksilver', score: 1),
-              new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
-              new Option('Nukleinkvicksilver', 'Nukleinkvicksilver', score: 0),
-            ]),
         new Question('Vilken råvara har högst andel kvicksilver?', [
           new Option('Fisk .', 'Fisk ', score: 1),
           new Option('Fläskkött', 'Fläskkött', score: 0),
@@ -50,7 +51,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Ca 5%', 'Ca 5%', score: 0),
         ]),
         new Question('När trädde EU:s skärpta regler kring amalgam i kraft? ', [
-          new Option('2017 .', '2017 ', score: 1),
+          new Option('2018 .', '2018 ', score: 1),
           new Option('2013', '2013', score: 0),
           new Option('2019', '2019', score: 0),
         ]),
@@ -84,7 +85,15 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
+        new Question(
+            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
+            [
+              new Option('Metylkvicksilver.', 'Metylkvicksilver', score: 1),
+              new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
+              new Option('Nukleinkvicksilver', 'Nukleinkvicksilver', score: 0),
+            ]),
+        new Question(
+            'Hur påverkar framför allt metylkvicksilver, oss människor?', [
           new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
               score: 1),
           new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
@@ -93,13 +102,6 @@ class QuizService extends ResourceService<Quiz> {
               'Det är inte farligt för människor',
               score: 0),
         ]),
-        new Question(
-            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
-            [
-              new Option('Metylkvicksilver.', 'Metylkvicksilver', score: 1),
-              new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
-              new Option('Nukleinkvicksilver', 'Nukleinkvicksilver', score: 0),
-            ]),
         new Question('Vilken råvara har högst andel kvicksilver?', [
           new Option('Fisk .', 'Fisk ', score: 1),
           new Option('Fläskkött', 'Fläskkött', score: 0),
@@ -111,7 +113,7 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Ca 5%', 'Ca 5%', score: 0),
         ]),
         new Question('När trädde EU:s skärpta regler kring amalgam i kraft? ', [
-          new Option('2017 .', '2017 ', score: 1),
+          new Option('2018 .', '2018 ', score: 1),
           new Option('2013', '2013', score: 0),
           new Option('2019', '2019', score: 0),
         ]),
@@ -184,15 +186,6 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Spola ned i toaletten', 'Spola ned i toaletten',
               score: 0),
         ]),
-        new Question('Hur påverkar framför allt metylkvicksilver, oss människor?', [
-          new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
-              score: 1),
-          new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
-              score: 0),
-          new Option('Det är inte farligt för människor',
-              'Det är inte farligt för människor',
-              score: 0),
-        ]),
         new Question(
             'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
             [
@@ -205,13 +198,23 @@ class QuizService extends ResourceService<Quiz> {
           new Option('Fläskkött', 'Fläskkött', score: 0),
           new Option('Mejeriprodukter', 'Mejeriprodukter', score: 0),
         ]),
+        new Question(
+            'Hur påverkar framför allt metylkvicksilver, oss människor?', [
+          new Option('Det kan skada nervsystemet', 'Det kan skada nervsystemet',
+              score: 1),
+          new Option('Det har en kvävande effekt', 'Det har en kvävande effekt',
+              score: 0),
+          new Option('Det är inte farligt för människor',
+              'Det är inte farligt för människor',
+              score: 0),
+        ]),
         new Question('Hur stor del kvicksilver finns det i amalgam? ', [
           new Option('Ca 50% .', 'Ca 50% ', score: 1),
           new Option('Ca 20%', 'Ca 20%', score: 0),
           new Option('Ca 5%', 'Ca 5%', score: 0),
         ]),
         new Question('När trädde EU:s skärpta regler kring amalgam i kraft? ', [
-          new Option('2017 .', '2017 ', score: 1),
+          new Option('2018 .', '2018 ', score: 1),
           new Option('2013', '2013', score: 0),
           new Option('2019', '2019', score: 0),
         ]),
