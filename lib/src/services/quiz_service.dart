@@ -159,9 +159,9 @@ class QuizService extends ResourceService<Quiz> {
                   'Dental- och servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.',
                   score: 0),
             ])
-      ], 0.8)
-        ..icon = 'quiz'
+      ], 0.9)
         ..id = 'Quiz för dig i tandvårdsteam'
+        ..icon = 'quiz'
         ..img_url = 'pics/responsibility.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
@@ -253,9 +253,9 @@ class QuizService extends ResourceService<Quiz> {
               new Option('Lungkapaciteten', 'Lungkapaciteten', score: 0),
               new Option('Hjärtat', 'Hjärtat', score: 0),
             ])
-      ], 0.8)
-        ..icon = 'quiz'
+      ], 0.9)
         ..id = 'Quiz för dig som är dentaltekniker'
+        ..icon = 'quiz'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()

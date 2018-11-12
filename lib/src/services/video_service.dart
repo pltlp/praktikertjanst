@@ -38,7 +38,7 @@ class VideoService extends ResourceService<Video> {
         ..id = 'Så arbetar vi på mottagningen'
         ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Så minimerar vi ustsläppen'
+          ..name = 'Så minimerar vi utsläppen'
           ..url = 'mottagningen'
           ..description =
               'Claes Karlsson berättar om skötselarbetet på mottagningen.')

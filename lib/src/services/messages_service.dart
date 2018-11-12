@@ -149,8 +149,13 @@ class MessagesService {
       Intl.message('Läs på mer och försök igen.', name: 'quiz_fail_text_2');
 
   String get quiz_fail_text_3 =>
-      Intl.message('Du behöver svara rätt på 80% av frågorna.',
+      Intl.message('Du behöver svara rätt på ',
           name: 'quiz_fail_text_3');
+
+
+   String get of_given_questions =>
+      Intl.message('av frågorna.',
+          name: 'of_given_questions');
 
   String get quiz_fail_title =>
       Intl.message('Tyvärr!', name: 'quiz_fail_title');
@@ -177,7 +182,7 @@ class MessagesService {
           name: 'quiz_success_title');
 
   String get pass_limt =>
-      Intl.message('Gräns för godkänt: 80%', name: 'pass_limt');
+      Intl.message('Gräns för godkänt: ', name: 'pass_limt');
 
   String get read_more_about_this_project_at =>
       Intl.message('Läs mer om projektet på',
