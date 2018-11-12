@@ -139,7 +139,7 @@ class WordService {
             's wastewater system, often to a floor well. The air is sucked from the liquid separator to the suction engine, which serves several units. The suction engine can be located on the wind, the same level as the unit or on the basement level.'
         ..name = 'Dry suction system'),
     'Vattenlås': new Word()
-      ..img_urls = ['pics/siphon.jpg']
+      ..img_urls = ['pics/siphon.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'En sektion av ett vattenrör som är böjt så att en mängd vatten stannar kvar i böjen, tack vare gravitationen, och skiljer luftmassorna på låsets båda sidor. Vattnet i vattenlåset förhindrar på så sätt att dålig lukt, sjukdomar och ohyra från avloppssystemet passerar. På en tandvårdsmottagning finns vattenlås på tvättställ i t ex behandlingsrum, steril och på patienttoalett.'
@@ -150,6 +150,7 @@ class WordService {
             's toilet.'
         ..name = 'Siphon'),
     'Vattenprov': new Word()
+    ..img_urls = ['pics/water_sample.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Analys av kvicksilverutsläpp i avloppsvattnet. Provet tas efter amalgamavskiljaren.'
@@ -159,7 +160,7 @@ class WordService {
             'Analysis of mercury emissions in wastewater. The sample is taken after the amalgam separator.'
         ..name = 'Water sample'),
     'Utjämningskärl': new Word()
-      ..img_urls = ['pics/surge_vessel.jpg']
+      ..img_urls = ['pics/surge_vessel_2.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Utjämningskärl på tio liter installeras ofta till diskbänksavskiljare. Det har ingen effekt på amalgamavskiljningen, men medför att man kan spola med ett högre flöde. Genom att använda ett utjämningskärl undviker man att vatten blir stående i vasken.'
@@ -173,11 +174,12 @@ class WordService {
       ..alts = { 'sv':'Exempel på våta sugsystem med sedimenterande amalgamavskiljning.'}
       ..phrases['sv'] = (new Phrases()
         ..description =
-            'Flera behandlingsstolar är kopplade till en sedimenterande amalgamavskiljare. Luft och sekret avleds i ett separat vakuumrörsystem från en eller flera behandlingsstolar till en central vätskeavskiljare (sekretkärl) där luft och vätska separeras. Den centrala enheten är ofta placerad i våningen under klinikplanet. Vätskan avleds till amalgamavskiljare och eventuellt via bufferttank till fastighetens spillvattenavlopp. Luften sugs till ingående sugmotor.'
+            'I ett vått sugsystem är en eller flera behandlingsstolar kopplade till ett vakuumrörsystem där luft och vätska transporteras till den centrala sugutrustningen. I utrustningen separeras luft och vatten. Vattnet avleds vidare via amalgamavskiljare och luften går vidare via sugmotorn. Denna typ av sugutrustning kan installeras på samma plan som kliniken, men rekommendation är att installation görs på våningen under då det är lättare att uppnå bästa möjliga driftförutsättningar.'
         ..name = 'Vått sugsystem')
       ..phrases['en'] = (new Phrases()
         ..description =
             'Several treatment chairs are connected to a sedimentary amalgam separator. Air and secretion are diverted into a separate vacuum tube system from one or more treatment chairs to a central liquid separator (secretion vessel) where air and liquid are separated. The central unit is often placed in the floor below the clinic. The liquid is diverted to amalgam separator and possibly via buffer tank to the property''s wastewater drain. The air is sucked to the inlet suction motor.'
         ..name = 'Wet suction system'),
+
   };
 }
