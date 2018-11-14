@@ -221,7 +221,7 @@ class VideoService extends ResourceService<Video> {
             'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
             'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0',
-      'Sanering ': new Video()
+      'Sanering': new Video()
         ..icon = 'video'
         ..id = 'Sanering'
         ..img_url = 'https://i.ytimg.com/vi/J_hVtkS3hpQ/mqdefault.jpg'

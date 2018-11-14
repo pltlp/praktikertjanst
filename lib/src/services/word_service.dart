@@ -14,7 +14,10 @@ class WordService {
 
   final Map<String, Word> _data = {
     'Amalgamavskiljare': new Word()
-      ..img_urls = ['pics/amalgam_separator.jpg', 'pics/amalgam_separators_dry_system.jpeg']
+      ..img_urls = [
+        'pics/amalgam_separator.jpg',
+        'pics/amalgam_separators_dry_system.jpeg'
+      ]
       ..alts = {
         'sv': 'amalgamavskiljare torrt system',
         'en': 'amalgam separator dry system'
@@ -138,6 +141,16 @@ class WordService {
             'In dry suction systems, the separation of liquid and air occurs in a liquid separator (secretion separator) located in the unit. The amalgam separator is located in or adjacent to the unit. Outgoing liquid after the amalgam separator connects directly to the property'
             's wastewater system, often to a floor well. The air is sucked from the liquid separator to the suction engine, which serves several units. The suction engine can be located on the wind, the same level as the unit or on the basement level.'
         ..name = 'Dry suction system'),
+    'Utjämningskärl': new Word()
+      ..img_urls = ['pics/surge_vessel_2.jpeg']
+      ..phrases['sv'] = (new Phrases()
+        ..description =
+            'Utjämningskärl på tio liter installeras ofta till diskbänksavskiljare. Det har ingen effekt på amalgamavskiljningen, men medför att man kan spola med ett högre flöde. Genom att använda ett utjämningskärl undviker man att vatten blir stående i vasken.'
+        ..name = 'Utjämningskärl')
+      ..phrases['en'] = (new Phrases()
+        ..description =
+            'Ten-liter equalization vessels are often installed in the sink bin. It has no effect on amalgam separation, but allows you to flush with a higher flow. Using a leveling vessel avoids water standing in the sink.'
+        ..name = 'Buffer vessel'),
     'Vattenlås': new Word()
       ..img_urls = ['pics/siphon.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -150,7 +163,7 @@ class WordService {
             's toilet.'
         ..name = 'Siphon'),
     'Vattenprov': new Word()
-    ..img_urls = ['pics/water_sample.jpeg']
+      ..img_urls = ['pics/water_sample.jpeg']
       ..phrases['sv'] = (new Phrases()
         ..description =
             'Analys av kvicksilverutsläpp i avloppsvattnet. Provet tas efter amalgamavskiljaren.'
@@ -159,27 +172,22 @@ class WordService {
         ..description =
             'Analysis of mercury emissions in wastewater. The sample is taken after the amalgam separator.'
         ..name = 'Water sample'),
-    'Utjämningskärl': new Word()
-      ..img_urls = ['pics/surge_vessel_2.jpeg']
-      ..phrases['sv'] = (new Phrases()
-        ..description =
-            'Utjämningskärl på tio liter installeras ofta till diskbänksavskiljare. Det har ingen effekt på amalgamavskiljningen, men medför att man kan spola med ett högre flöde. Genom att använda ett utjämningskärl undviker man att vatten blir stående i vasken.'
-        ..name = 'Utjämningskärl')
-      ..phrases['en'] = (new Phrases()
-        ..description =
-            'Ten-liter equalization vessels are often installed in the sink bin. It has no effect on amalgam separation, but allows you to flush with a higher flow. Using a leveling vessel avoids water standing in the sink.'
-        ..name = 'Buffer vessel'),
     'Vått sugsystem': new Word()
-      ..img_urls = ['pics/wet_suction_system.jpg', 'pics/wet_suction_system_2.jpg']
-      ..alts = { 'sv':'Exempel på våta sugsystem med sedimenterande amalgamavskiljning.'}
+      ..img_urls = [
+        'pics/wet_suction_system.jpg',
+        'pics/wet_suction_system_2.jpg'
+      ]
+      ..alts = {
+        'sv': 'Exempel på våta sugsystem med sedimenterande amalgamavskiljning.'
+      }
       ..phrases['sv'] = (new Phrases()
         ..description =
             'I ett vått sugsystem är en eller flera behandlingsstolar kopplade till ett vakuumrörsystem där luft och vätska transporteras till den centrala sugutrustningen. I utrustningen separeras luft och vatten. Vattnet avleds vidare via amalgamavskiljare och luften går vidare via sugmotorn. Denna typ av sugutrustning kan installeras på samma plan som kliniken, men rekommendation är att installation görs på våningen under då det är lättare att uppnå bästa möjliga driftförutsättningar.'
         ..name = 'Vått sugsystem')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Several treatment chairs are connected to a sedimentary amalgam separator. Air and secretion are diverted into a separate vacuum tube system from one or more treatment chairs to a central liquid separator (secretion vessel) where air and liquid are separated. The central unit is often placed in the floor below the clinic. The liquid is diverted to amalgam separator and possibly via buffer tank to the property''s wastewater drain. The air is sucked to the inlet suction motor.'
+            'Several treatment chairs are connected to a sedimentary amalgam separator. Air and secretion are diverted into a separate vacuum tube system from one or more treatment chairs to a central liquid separator (secretion vessel) where air and liquid are separated. The central unit is often placed in the floor below the clinic. The liquid is diverted to amalgam separator and possibly via buffer tank to the property'
+            's wastewater drain. The air is sucked to the inlet suction motor.'
         ..name = 'Wet suction system'),
-
   };
 }

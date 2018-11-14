@@ -41,8 +41,20 @@ class MessagesService {
       name: 'contact_pragraph_1');
 
   String get contact_pragraph_2 => Intl.message(
-      'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl.a. på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts. Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvudsakliga källorna till användning av kvicksilver inom EU. ',
+      'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl.a. på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts.',
       name: 'contact_pragraph_2');
+
+  
+  String get contact_pragraph_5 => Intl.message(
+      'Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvudsakliga källorna till användning av kvicksilver inom EU.',
+      name: 'contact_pragraph_5');
+
+
+   
+
+
+
+
 
   String get contact_pragraph_3 => Intl.message(
       'En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl.a. att:',
@@ -53,7 +65,7 @@ class MessagesService {
       name: 'contact_pragraph_4');
 
   String get contact_project_goal_1 => Intl.message(
-      'ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU.',
+      'ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU',
       name: 'contact_project_goal_1');
 
   String get contact_project_goal_2 => Intl.message(

@@ -14,7 +14,7 @@ class QuizService extends ResourceService<Quiz> {
     data = {
       'Quiz för allmänheten': new Quiz([
         new Question(
-            'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+            'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
           new Option(
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
@@ -76,7 +76,7 @@ class QuizService extends ResourceService<Quiz> {
         ..type = ResourceType.quiz,
       'Quiz för dig i tandvårdsteam': new Quiz([
         new Question(
-            'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+            'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
           new Option(
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
@@ -177,7 +177,7 @@ class QuizService extends ResourceService<Quiz> {
         ..type = ResourceType.quiz,
       'Quiz för dig som är dentaltekniker': new Quiz([
         new Question(
-            'Vad ska du göra med en tappad tand som är lagd med amalgam?', [
+            'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
           new Option(
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',
               'Säkerställ att den hanteras som farligt avfall, t.ex. genom att lämna den till tandvårdsmottagningen',

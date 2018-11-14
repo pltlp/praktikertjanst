@@ -82,12 +82,15 @@ class AppComponent {
       this.slideService) {
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
+        /*
         MenuItem(_capitalize(msg.swedish),
             action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
         MenuItem(_capitalize(msg.english), action: () => window.location.href = '${Uri.base.origin}/en/home'),
         MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
         MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
         MenuItem(_capitalize(msg.german), action: () => window.location.href = '${Uri.base.origin}/de/start')
+        */
+         MenuItem(_capitalize('coming soon')),
       ])
     ]);
 

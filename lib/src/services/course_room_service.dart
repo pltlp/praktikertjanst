@@ -72,14 +72,14 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Quiz för dig i tandvårdsteam'
         ]
         ..video_ids = [
+          'Rutiner vid patientbehandling',
+          'Skötsel av amalgamavskiljare',
+          'Varför är skötseln så viktig?',
           'Att lämna amalgam bakom sig',
           'Vad är kvicksilver?',
           'Var finns kvicksilver?',
           'Vilken roll har tandvården?',
-          'Hur påverkas vi av kvicksilver?',
-          'Rutiner vid patientbehandling',
-          'Skötsel av amalgamavskiljare',
-          'Varför är skötseln så viktig?'
+          'Hur påverkas vi av kvicksilver?'
         ],
       'kursrum-for-dentaltekniker': new CourseRoom()
         ..backgroud_image = 'pics/dentist_responsibility.jpg'
@@ -144,7 +144,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Byte av amalgamavskiljare',
           'Funktionskontroll',
           'Tömning av vattenlås',
-          'Så upplevde vi saneringen',
+          'Sanering',
           'Slutförvaring',
           'Att lämna amalgam bakom sig',
           'Vad är kvicksilver?',
