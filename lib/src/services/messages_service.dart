@@ -44,17 +44,9 @@ class MessagesService {
       'Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl.a. på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts.',
       name: 'contact_pragraph_2');
 
-  
   String get contact_pragraph_5 => Intl.message(
       'Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvudsakliga källorna till användning av kvicksilver inom EU.',
       name: 'contact_pragraph_5');
-
-
-   
-
-
-
-
 
   String get contact_pragraph_3 => Intl.message(
       'En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl.a. att:',
@@ -84,8 +76,7 @@ class MessagesService {
       Intl.message('kursmoduler', name: 'course_modules');
 
   String get course_room_carousel_header =>
-      Intl.message('filmer',
-          name: 'course_room_carousel_header');
+      Intl.message('filmer', name: 'course_room_carousel_header');
 
   String get course_room_for_curious_url =>
       Intl.message('kursrum-for-nyfikna', name: 'course_room_for_curious_url');
@@ -161,13 +152,10 @@ class MessagesService {
       Intl.message('Läs på mer och försök igen.', name: 'quiz_fail_text_2');
 
   String get quiz_fail_text_3 =>
-      Intl.message('Du behöver svara rätt på ',
-          name: 'quiz_fail_text_3');
+      Intl.message('Du behöver svara rätt på ', name: 'quiz_fail_text_3');
 
-
-   String get of_given_questions =>
-      Intl.message('av frågorna.',
-          name: 'of_given_questions');
+  String get of_given_questions =>
+      Intl.message('av frågorna.', name: 'of_given_questions');
 
   String get quiz_fail_title =>
       Intl.message('Tyvärr!', name: 'quiz_fail_title');
@@ -229,4 +217,10 @@ class MessagesService {
       Intl.message('facit', name: 'check_your_answers');
   String get correct => Intl.message('Sant', name: 'correct');
   String get not_correct => Intl.message('Falskt', name: 'not_correct');
+  String get time => Intl.message('Tid', name: 'time');
+  String get length => Intl.message('Längd', name: 'length');
+  String get course => Intl.message('Kurs', name: 'course');
+  String get reading => Intl.message('läsning', name: 'reading');
+  String get video => Intl.message('Film', name: 'video');
+  String get quiz => Intl.message('Quiz', name: 'quiz');
 }

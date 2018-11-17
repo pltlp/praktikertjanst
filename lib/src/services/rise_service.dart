@@ -30,7 +30,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/kvicksilver-i-naturen/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
+            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+        ..estimated_time_for_completion = '5 min',
       'Lagar och regler': new Rise()
         ..icon = 'article'
         ..id = 'Lagar och regler'
@@ -50,7 +51,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/rules-and-regulations/content/index.html',
+            'https://hg-rid.eu/rise/rules-and-regulations/content/index.html'
+        ..estimated_time_for_completion = '5 min',
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'article'
         ..id = 'Vad är vad på mottagningen? '
@@ -68,7 +70,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
+            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+        ..estimated_time_for_completion = '5 min',
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'article'
         ..id = 'Tandvårdsteamets ansvar '
@@ -89,7 +92,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+        ..estimated_time_for_completion = '5 min',
       'Dentalteknikerns ansvar': new Rise()
         ..icon = 'article'
         ..id = 'Dentalteknikerns ansvar'
@@ -109,7 +113,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/dentalteknikerns-ansvar/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+        ..estimated_time_for_completion = '5 min',
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'article'
         ..id = 'Instruktioner för miljöserviceföretag'
@@ -129,7 +134,8 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html',
+            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+        ..estimated_time_for_completion = '5 min'
     };
 
     return data;

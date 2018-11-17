@@ -73,7 +73,8 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz for the public'
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public')
-        ..type = ResourceType.quiz,
+        ..type = ResourceType.quiz
+        ..estimated_time_for_completion = '2 min',
       'Quiz för dig i tandvårdsteam': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
@@ -174,7 +175,8 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-you-in-a-dental-team'
           ..description =
               'Test your knowledge from the dental teams perspective.')
-        ..type = ResourceType.quiz,
+        ..type = ResourceType.quiz
+        ..estimated_time_for_completion = '3 min',
       'Quiz för dig som är dentaltekniker': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
@@ -269,6 +271,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Test your knowledge based on the dental technicians perspective')
         ..type = ResourceType.quiz
+        ..estimated_time_for_completion = '3 min'
     };
 
     return data;

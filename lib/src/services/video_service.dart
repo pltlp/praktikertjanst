@@ -5,14 +5,11 @@ import '../models/resource_types.dart';
 import '../models/video.dart';
 import 'resource_service.dart';
 
-
-
 @Injectable()
 class VideoService extends ResourceService<Video> {
   @override
   Future<Map<String, Video>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
-
 
     data = {
       'Så upplevde vi saneringen': new Video()
@@ -33,7 +30,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 12 s',
       'Så minimerar vi utsläppen': new Video()
         ..icon = 'video'
         ..id = 'Så minimerar vi utsläppen'
@@ -52,7 +50,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 12 s',
       'Så går en installation till': new Video()
         ..icon = 'video'
         ..id = 'Så går en installation till'
@@ -71,7 +70,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 35 s',
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'video'
         ..id = 'Att lämna amalgam bakom sig'
@@ -90,7 +90,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 1s',
       'Rutiner vid patientbehandling': new Video()
         ..icon = 'video'
         ..id = 'Rutiner vid patientbehandling'
@@ -109,7 +110,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '42 s',
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Skötsel av amalgamavskiljare'
@@ -128,7 +130,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 10 s',
       'Att tänka på vid installation': new Video()
         ..icon = 'video'
         ..id = 'Att tänka på vid installation'
@@ -147,7 +150,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 16 s',
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Byte av amalgamavskiljare'
@@ -166,7 +170,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 19 s',
       'Funktionskontroll': new Video()
         ..icon = 'video'
         ..id = 'Funktionskontroll'
@@ -185,7 +190,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '42 s',
       'Tömning av vattenlås': new Video()
         ..icon = 'video'
         ..id = 'Tömning av vattenlås'
@@ -203,7 +209,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '23 s',
       'Slutförvaring': new Video()
         ..icon = 'video'
         ..id = 'Slutförvaring'
@@ -220,7 +227,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '52 s',
       'Sanering': new Video()
         ..icon = 'video'
         ..id = 'Sanering'
@@ -237,7 +245,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 13 s',
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'video'
         ..id = 'Varför är skötseln så viktig? '
@@ -256,7 +265,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '49 s',
       'Vad är kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Vad är kvicksilver?'
@@ -264,7 +274,8 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vad är kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Michelle Nerentorp berättar vad grundämnet kvicksilver är.')
+          ..description =
+              'Michelle Nerentorp berättar vad grundämnet kvicksilver är.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -274,7 +285,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '29 s',
       'Var finns kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Var finns kvicksilver?'
@@ -282,7 +294,8 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Var finns kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Michelle Nerentorp berättar om var kvicksilver finns i naturen och hur människan har bidragit till att sprida det. ')
+          ..description =
+              'Michelle Nerentorp berättar om var kvicksilver finns i naturen och hur människan har bidragit till att sprida det. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -292,7 +305,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 10 s',
       'Vilken roll har tandvården?': new Video()
         ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
@@ -300,7 +314,8 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vilken roll har tandvården?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Michelle Nerentorp berättar om tandvårdens ansvar för problemet med att kvicksilver kommer ut i naturen.')
+          ..description =
+              'Michelle Nerentorp berättar om tandvårdens ansvar för problemet med att kvicksilver kommer ut i naturen.')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -310,7 +325,8 @@ class VideoService extends ResourceService<Video> {
         ..url['sv'] =
             'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
-            'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0',
+            'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '43 s',
       'Hur påverkas vi av kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Hur påverkas vi av kvicksilver?'
@@ -318,7 +334,8 @@ class VideoService extends ResourceService<Video> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Hur påverkas vi av kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
-          ..description = 'Michelle Nerentorp berättar om hur människan påverkas av kvicksilver. ')
+          ..description =
+              'Michelle Nerentorp berättar om hur människan påverkas av kvicksilver. ')
         ..phrases['en'] = (new Phrases()
           ..name = 'Cleaning-of-the-leveling vessel'
           ..url = 'cleaning-of-the-leveling-vessel'
@@ -329,6 +346,7 @@ class VideoService extends ResourceService<Video> {
             'https://player.vimeo.com/video/299901270?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
             'https://player.vimeo.com/video/299901270?color=00acd0&byline=0&portrait=0'
+        ..estimated_time_for_completion = '1 min 6 s'
     };
 
     return data;
