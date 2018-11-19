@@ -27,11 +27,12 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'how-dangerous-is-mercury-amalgam')
         ..type = ResourceType.document
-        ..size = '125 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf',
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+        ..size = '191.4 kb'
+        ..document_type = 'pdf',
       'Checklista varje arbetsdag och vecka': new Document()
         ..icon = 'pool'
         ..id = 'Checklista varje arbetsdag och vecka'
@@ -47,11 +48,12 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'textdocument-example')
         ..type = ResourceType.document
-        ..size = '509 kb'
+        ..size = '200.9 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf',
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+        ..document_type = 'pdf',
       'Checklista övrig': new Document()
         ..icon = 'pool'
         ..id = 'Checklista övrig'
@@ -67,11 +69,12 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
-        ..size = '509 kb'
+        ..size = '303.3 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf',
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+        ..document_type = 'pdf',
       'EU:s förordning om kvicksilver': new Document()
         ..icon = 'pool'
         ..id = 'EU:s förordning om kvicksilver'
@@ -87,11 +90,11 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
-        ..size = '509 kb'
         ..url['sv'] =
             'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['en'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG',
+            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+        ..document_type = 'link',
       'Miljöbalken': new Document()
         ..icon = 'pool'
         ..id = 'Miljöbalken'
@@ -107,11 +110,11 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
-        ..size = '509 kb'
         ..url['sv'] =
             'https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808'
         ..url['en'] =
-            'https://www.government.se/legal-documents/2000/08/ds-200061/',
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+        ..document_type = 'link',
       'Vägledningsdokument': new Document()
         ..icon = 'pool'
         ..id = 'Vägledningsdokument'
@@ -127,11 +130,12 @@ class DocumentService extends ResourceService<Document> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
           ..url = 'spread-of-mercury-waste')
         ..type = ResourceType.document
-        ..size = '509 kb'
+        ..size = '1,6 MB'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf',
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+        ..document_type = 'pdf',
     };
     return data;
   }

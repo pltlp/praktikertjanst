@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col m7">
             <a href="{{model.url[msg.currentLanguage]}}"
-               target="_blank">
+               target="_blank" *ngIf="model.document_type == 'pdf'">
                 <p class="color-astronautblue">
                     <fo-icon class="color-astronautblue"
                              icon="file-pdf"
@@ -11,6 +11,18 @@
                     {{model.phrases[msg.currentLanguage].name}}<span>&nbsp;&nbsp;&nbsp;{{model.size}}</span>
                 </p>
             </a>
+            <a href="{{model.url[msg.currentLanguage]}}"
+               target="_blank" *ngIf="model.document_type == 'link'">
+                <p class="color-astronautblue">
+                    <fo-icon class="color-astronautblue"
+                             icon="link"
+                             size="2em">
+                    </fo-icon>&nbsp;
+                    {{model.phrases[msg.currentLanguage].name}}<span>&nbsp;&nbsp;&nbsp;{{model.size}}</span>
+                </p>
+            </a>
         </div>
     </div>
 </div>
+
+
