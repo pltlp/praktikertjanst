@@ -15,7 +15,7 @@ class VideoService extends ResourceService<Video> {
       'Så upplevde vi saneringen': new Video()
         ..icon = 'video'
         ..id = 'Så upplevde vi saneringen'
-        ..img_url = 'https://i.ytimg.com/vi/pONi-1Mxlgo/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738185927.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så upplevde vi saneringen'
           ..url = 'sanering'
@@ -35,7 +35,7 @@ class VideoService extends ResourceService<Video> {
       'Så minimerar vi utsläppen': new Video()
         ..icon = 'video'
         ..id = 'Så minimerar vi utsläppen'
-        ..img_url = 'https://i.ytimg.com/vi/6jPzETatkUY/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738458197.webp?mw=1080&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så minimerar vi utsläppen'
           ..url = 'mottagningen'
@@ -55,7 +55,7 @@ class VideoService extends ResourceService<Video> {
       'Så går en installation till': new Video()
         ..icon = 'video'
         ..id = 'Så går en installation till'
-        ..img_url = 'https://i.ytimg.com/vi/5haH6juVKxA/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738188721.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Så går en installation till'
           ..url = 'installation'
@@ -75,7 +75,7 @@ class VideoService extends ResourceService<Video> {
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'video'
         ..id = 'Att lämna amalgam bakom sig'
-        ..img_url = 'https://i.ytimg.com/vi/XFZCVOp56m0/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738185078.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Att lämna amalgam bakom sig'
           ..url = 'lamna-amalgam'
@@ -95,7 +95,7 @@ class VideoService extends ResourceService<Video> {
       'Rutiner vid patientbehandling': new Video()
         ..icon = 'video'
         ..id = 'Rutiner vid patientbehandling'
-        ..img_url = 'https://i.ytimg.com/vi/pL7jpwbGx80/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738187424.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Rutiner vid patientbehandling'
           ..url = 'rutiner'
@@ -115,7 +115,7 @@ class VideoService extends ResourceService<Video> {
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Skötsel av amalgamavskiljare'
-        ..img_url = 'https://i.ytimg.com/vi/lKjilIKxWCY/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738186357.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Skötsel av amalgamavskiljare'
           ..url = 'skotsel-av-amalgamavskiljare'
@@ -135,7 +135,7 @@ class VideoService extends ResourceService<Video> {
       'Att tänka på vid installation': new Video()
         ..icon = 'video'
         ..id = 'Att tänka på vid installation'
-        ..img_url = 'https://i.ytimg.com/vi/ENCvjNXodVI/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738187928.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Att tänka på vid installation'
           ..url = 'tips-for-installation'
@@ -155,7 +155,7 @@ class VideoService extends ResourceService<Video> {
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Byte av amalgamavskiljare'
-        ..img_url = 'https://i.ytimg.com/vi/YNUCB4ue9LA/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738187667.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Byte av amalgamavskiljare'
           ..url = 'byte-av-amalgamavskiljare'
@@ -175,7 +175,7 @@ class VideoService extends ResourceService<Video> {
       'Funktionskontroll': new Video()
         ..icon = 'video'
         ..id = 'Funktionskontroll'
-        ..img_url = 'https://i.ytimg.com/vi/aYeb02GKOuw/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738135448.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Funktionskontroll'
           ..url = 'funktionskontroll'
@@ -214,7 +214,7 @@ class VideoService extends ResourceService<Video> {
       'Slutförvaring': new Video()
         ..icon = 'video'
         ..id = 'Slutförvaring'
-        ..img_url = 'https://i.ytimg.com/vi/__P3QoGFMNc/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738186640.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Slutförvaring '
           ..url = 'slutforvaring'
@@ -232,7 +232,7 @@ class VideoService extends ResourceService<Video> {
       'Sanering': new Video()
         ..icon = 'video'
         ..id = 'Sanering'
-        ..img_url = 'https://i.ytimg.com/vi/J_hVtkS3hpQ/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738187005.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Sanering '
           ..url = 'sanering'
@@ -250,7 +250,7 @@ class VideoService extends ResourceService<Video> {
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'video'
         ..id = 'Varför är skötseln så viktig? '
-        ..img_url = 'https://i.ytimg.com/vi/eVa5uaZNK9g/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738133939.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Varför är skötseln så viktig?'
           ..url = 'varfor-ar-skotseln-sa-viktig'
@@ -270,7 +270,7 @@ class VideoService extends ResourceService<Video> {
       'Vad är kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Vad är kvicksilver?'
-        ..img_url = 'https://i.ytimg.com/vi/UL0A6RsC2v8/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738125023.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vad är kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
@@ -290,7 +290,7 @@ class VideoService extends ResourceService<Video> {
       'Var finns kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Var finns kvicksilver?'
-        ..img_url = 'https://i.ytimg.com/vi/9H2PcBDGffY/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738125647.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Var finns kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
@@ -310,7 +310,7 @@ class VideoService extends ResourceService<Video> {
       'Vilken roll har tandvården?': new Video()
         ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
-        ..img_url = 'https://i.ytimg.com/vi/-FFTHF0khLg/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738125764.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vilken roll har tandvården?'
           ..url = 'rengoring-av-utjamningskarl'
@@ -330,7 +330,7 @@ class VideoService extends ResourceService<Video> {
       'Hur påverkas vi av kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Hur påverkas vi av kvicksilver?'
-        ..img_url = 'https://i.ytimg.com/vi/8FHTtQ--Ns0/mqdefault.jpg'
+        ..img_url = 'https://i.vimeocdn.com/video/738124827.webp?mw=1920&amp;mh=1080&amp;q=70'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Hur påverkas vi av kvicksilver?'
           ..url = 'rengoring-av-utjamningskarl'
