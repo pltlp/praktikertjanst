@@ -310,7 +310,7 @@ class VideoService extends ResourceService<Video> {
       'Vilken roll har tandvården?': new Video()
         ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
-        ..img_url = 'pics/what_is_the_role_of_dental_care_professionals.jpg'
+        ..img_url = 'pics/what_is_the_role_of_dental_care_proffessionals.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vilken roll har tandvården?'
           ..url = 'rengoring-av-utjamningskarl'
