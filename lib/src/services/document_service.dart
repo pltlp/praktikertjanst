@@ -18,14 +18,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Affisch om tappade amalgamplomber'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'hur-farlig-ar-kvicksilver-amalgam')
+          ..description = 'Affisch om tappade amalgamplomber'
+          ..url = 'affisch-om-tappade-amalgamplomber')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Affisch om tappade amalgamplomber'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'how-dangerous-is-mercury-amalgam')
+          ..name = 'Poster about lost amalgam plumber'
+          ..description = 'Poster about lost amalgam plumber'
+          ..url = 'poster-about-lost-amalgam plumber')
         ..type = ResourceType.document
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
@@ -39,14 +37,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Checklista varje arbetsdag och vecka'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'textdokument-exempel')
+          ..description = 'Checklista varje arbetsdag och vecka'
+          ..url = 'checklista-varje-arbetsdag-och-vecka')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Checklista varje arbetsdag och vecka'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'textdocument-example')
+          ..name = 'Checklist for every work day and week'
+          ..description = 'Checklist for every work day and week'
+          ..url = 'checklist-for-every-work-day-and-week')
         ..type = ResourceType.document
         ..size = '200.9 kb'
         ..url['sv'] =
@@ -60,14 +56,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Checklista övrig'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spridning-av-kvicksilver')
+          ..description = 'Checklista övrig'
+          ..url = 'checklista-ovrig')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Distribution of mercury waste'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spread-of-mercury-waste')
+          ..name = 'Checklist (other)'
+          ..description = 'Checklist (other)'
+          ..url = 'checklist-other')
         ..type = ResourceType.document
         ..size = '303.3 kb'
         ..url['sv'] =
@@ -81,14 +75,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'EU:s förordning om kvicksilver'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spridning-av-kvicksilver')
+          ..description = 'EU:s förordning om kvicksilver'
+          ..url = 'eus-forordning-om-kvicksilver')
         ..phrases['en'] = (new Phrases()
-          ..name = 'EU:s förordning om kvicksilver'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spread-of-mercury-waste')
+          ..name = 'EU mercury regulations'
+          ..description = 'EU mercury regulations'
+          ..url = 'eu-mercury-regulations')
         ..type = ResourceType.document
         ..url['sv'] =
             'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
@@ -101,14 +93,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Miljöbalken'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+          ..description = 'Miljöbalken'
           ..url = 'spridning-av-kvicksilver')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Miljöbalken'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spread-of-mercury-waste')
+          ..name = 'Environmental Code'
+          ..description = 'Environmental Code'
+          ..url = 'environmental-code')
         ..type = ResourceType.document
         ..url['sv'] =
             'https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808'
@@ -121,14 +111,12 @@ class DocumentService extends ResourceService<Document> {
         ..img_url = 'pics/quicksilver_management.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Vägledningsdokument'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spridning-av-kvicksilver')
+          ..description = 'Vägledningsdokument'
+          ..url = 'vagledningsdokument')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Vägledningsdokument'
-          ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-          ..url = 'spread-of-mercury-waste')
+          ..name = 'Guidance Document'
+          ..description = 'Guidance Document'
+          ..url = 'guidance-document')
         ..type = ResourceType.document
         ..size = '1,6 MB'
         ..url['sv'] =

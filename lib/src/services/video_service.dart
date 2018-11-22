@@ -351,6 +351,4 @@ class VideoService extends ResourceService<Video> {
 
     return data;
   }
-
-  String youtubeParameters = '?showinfo=0&rel=0&modestbranding=1&color=white';
 }
