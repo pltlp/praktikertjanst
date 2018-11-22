@@ -167,12 +167,12 @@ class QuizService extends ResourceService<Quiz> {
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig i tandvårdsteam'
-          ..url = 'quiz-for-dig-i-tandvardsteam'
+          ..url = 'quiz-for-tandvardsteam'
           ..description =
               'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Quiz for you in a dental team'
-          ..url = 'quiz-for-you-in-a-dental-team'
+          ..name = 'Quiz for dental teams'
+          ..url = 'quiz-for-dental-teams'
           ..description =
               'Test your knowledge from the dental teams perspective.')
         ..type = ResourceType.quiz
@@ -262,14 +262,14 @@ class QuizService extends ResourceService<Quiz> {
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
           ..name = 'Quiz för dig som är dentaltekniker'
-          ..url = 'quiz-for-dig-som-dentaltekniker'
+          ..url = 'quiz-for-dentaltekniker'
           ..description =
               'Test på dina kunskaper utifrån dentalteknikerns perspektiv.')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Quiz for you as a dental technician'
-          ..url = 'quiz-for-you-as-a-dental-technician'
+          ..name = 'Quiz for dental technicians'
+          ..url = 'quiz-for-dental-technicians'
           ..description =
-              'Test your knowledge based on the dental technicians perspective')
+              'Test your knowledge from a dental technicians perspective')
         ..type = ResourceType.quiz
         ..estimated_time_for_completion = '3 min'
     };
