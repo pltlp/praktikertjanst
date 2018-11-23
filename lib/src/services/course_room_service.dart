@@ -27,10 +27,10 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Innehåll för dig som bara är nyfiken.'
           ..url = 'kursrum-for-nyfikna')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Course room for curious'
+          ..name = 'For you who is just curious'
           ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-          ..url = 'courseroom-for-curious')
+              'course-room-for-you-who-is-curious.'
+          ..url = 'course-room-for-curious')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -60,9 +60,9 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Innehåll för dig som jobbar i tandvårdsteam.'
           ..url = 'kursrum-for-tandvardsteam')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Course room for dental teams'
+          ..name = 'Content for dental teams'
           ..description =
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              'Content for you who is part of a dental team'
           ..url = 'course-room-for-dental-teams')
         ..resources_ids = [
           'Kvicksilver i naturen',
@@ -96,8 +96,8 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Innehåll för dig som jobbar som dentaltekniker.'
           ..url = 'kursrum-for-dentaltekniker')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Course room for dental technicians'
-          ..description = 'Innehåll för dig som jobbar som dentaltekniker.'
+          ..name = 'Content for dental technicians'
+          ..description = 'Content for you who works as a dental technician.'
           ..url = 'course-room-for-dental-technicians')
         ..resources_ids = [
           'Kvicksilver i naturen',
@@ -129,10 +129,10 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
           ..url = 'kursrum-for-servicetekniker')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Course room for service technicians'
+          ..name = 'Content for service technicians'
           ..description =
-              'Kurs med innehåll för dig som jobbar på miljöserviceföretag.'
-          ..url = 'courseroom-for-service-technicians')
+              'Content for service technicians.'
+          ..url = 'course-room-for-service-technicians')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',

@@ -46,7 +46,7 @@ class RiseService extends ResourceService<Rise> {
           ..name = 'Laws and regulations'
           ..url = 'laws-and-regulations'
           ..description =
-              'Article on the laws and regulations governing the management of amalgam.')
+              'Article about the laws and regulations governing the management of amalgam.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
@@ -63,9 +63,9 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'vad-ar-vad-pa-mottagningen'
           ..description = 'Översikt av utrustning på mottagningen.')
         ..phrases['en'] = (new Phrases()
-          ..name = 'What is what inside a dentist reception?'
-          ..url = 'what-is-what-inside-a-dentist-reception'
-          ..description = 'Overview of the dentist equipment.')
+          ..name = 'Overview of dentist equipment'
+          ..url = 'everview-of-dentist-equipment'
+          ..description = 'Overview of dentist equipment.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
@@ -83,10 +83,10 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Här får du instruktioner om tandvårdsteamets ansvar.')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Dental care teams responsibility'
-          ..url = 'dental-care-teams-responsibility'
+          ..name = 'Dentalcare teams responsibility'
+          ..url = 'dentalcare-teams-responsibility'
           ..description =
-              'Here you will find instructions on the dental care team'
+              'Here you will find instructions on the dentalcare team'
               's responsibility.')
         ..type = ResourceType.rise
         ..url['sv'] =
@@ -108,7 +108,7 @@ class RiseService extends ResourceService<Rise> {
           ..name = 'Dental technicians responsibility'
           ..url = 'dental-technicians-responsibility'
           ..description =
-              'Here you will find instructions on the dental technicians responsibility.')
+              'Here you will find instructions on the dental technicians responsibilities.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/dentalteknikerns-ansvar/content/index.html'
@@ -129,7 +129,7 @@ class RiseService extends ResourceService<Rise> {
           ..name = 'Instructions for environmental service companies'
           ..url = 'instructions-for-environmental-service-companies'
           ..description =
-              'Here you will find instructions on environmental service companies responsibility.')
+              'Here you will find instructions for environmental service companies and responsibility.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
