@@ -1,0 +1,407 @@
+{
+  "@@last_modified": "2018-11-24T13:47:11.638769",
+  "about": "om",
+  "@about": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_this_project": "Om projektet:",
+  "@about_this_project": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_url": "om",
+  "@about_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive": "arkiv",
+  "@archive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive_url": "arkiv",
+  "@archive_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "avbryt",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "close": "stäng",
+  "@close": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact": "kontakt",
+  "@contact": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_1": "amalgam enbart får användas i fördoserad, inkapslad form.",
+  "@contact_bullet_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_2": "barn under 15 år samt gravida eller ammande inte får behandlas med amalgam om det inte ur ett medicinskt perspektiv bedöms som absolut nödvändigt",
+  "@contact_bullet_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_3": "amalgamavskiljare med viss verkningsgrad måste finnas vid tandvårdsinrättningar där amalgam används eller amalgamfyllningar avlägsnas",
+  "@contact_bullet_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_4": "EU-kommissionen ska senast i mitten av 2020 rapportera om möjligheten att långsiktigt fasa ut amalgam senast till 2030.",
+  "@contact_bullet_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_1": "Praktikertjänst har, i samarbete med Sweden Recycling och IVL Svenska Miljöinstitutet, startat projektet HG-Rid LIFE som fått ekonomiskt stöd av LIFE – EU:s program för miljö och klimat. Genom projektet tar vi vårt ansvar för ett hållbart samhälle. Projektets huvudsyfte är att minimera utsläppen av kvicksilver från tandvårdsmottagningar i Sverige och på sikt i övriga EU.",
+  "@contact_pragraph_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_2": "Kvicksilver är ett av de allvarligaste miljögifterna och trots att amalgam förbjöds 2009 är det fortfarande få tandvårdsmottagningar som har nollutsläpp av kvicksilver från amalgam. Det beräknas fortfarande finnas upp till 15 ton kvicksilver i tänderna hos svenska befolkningen. Urborrning av amalgamfyllningar kommer därför att göras under många år framöver. Amalgamavskiljarna fångar upp det mesta, men effektiviteten beror bl.a. på skötseln. De finaste amalgampartiklarna fångas heller inte upp av avskiljarna. Det finns också risk att kvicksilver från avloppsrör läcker ut i avloppsvattnet. Risken att kvicksilver lagrats i rören är särskilt stor i de mottagningar där tandvård bedrivits innan kravet på avskiljare kom och där äldre avskiljare med en sämre funktion än dagens använts.",
+  "@contact_pragraph_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_5": "Inom EU uppskattas det finnas mer än 1 000 ton kvicksilver i befolkningens munnar. Dentalt amalgam är en av de huvudsakliga källorna till användning av kvicksilver inom EU.",
+  "@contact_pragraph_5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_3": "En EU-förordning om kvicksilver trädde i kraft den 1 januari 2018. Den innebär bl.a. att:",
+  "@contact_pragraph_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_4": "Projektet är ett bidrag till det nationella miljökvalitetsmålet Giftfri miljö samt till FN:s globala utvecklingsmål, Agenda 2030 (Mål 6 Rent vatten och sanitet).",
+  "@contact_pragraph_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_1": "ta fram förslag på vägledning för kvicksilverkontroll inom tandvård som kan implementeras i Sverige och inspirera till riktlinjer inom övriga EU",
+  "@contact_project_goal_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_2": "utveckla nya metoder för sanering som är effektiv, användarvänlig och kostnadseffektiv",
+  "@contact_project_goal_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_3": "öka kunskap och medvetenhet om hur kvicksilver från amalgam påverkar miljön. Denna webbportal är en del av detta arbete.",
+  "@contact_project_goal_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_us": "Kontakta oss",
+  "@contact_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continueMsg": "nästa",
+  "@continueMsg": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_modules": "kursmoduler",
+  "@course_modules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_carousel_header": "filmer",
+  "@course_room_carousel_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_curious_url": "kursrum-for-nyfikna",
+  "@course_room_for_curious_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_dental_teams_url": "kursrum-for-tandvardsteam",
+  "@course_room_for_dental_teams_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_dental_technicians_url": "kursrum-for-dentaltekniker",
+  "@course_room_for_dental_technicians_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_service_technicians_url": "kursrum-for-servicetekniker",
+  "@course_room_for_service_technicians_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document_url": "dokument",
+  "@document_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "documents_component_url": "dokumentlista",
+  "@documents_component_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "english": "engelska",
+  "@english": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "find_right_content_for_you": "Hitta rätt innehåll för dig",
+  "@find_right_content_for_you": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "french": "franska",
+  "@french": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "german": "tyska",
+  "@german": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "good_examples": "goda exempel",
+  "@good_examples": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home_url": "hem",
+  "@home_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "språk",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "learn_more": "lär dig mer!",
+  "@learn_more": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library": "bibliotek",
+  "@library": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_button_tooltip": "Här finns alla våra kursmoment samlade på ett och samma ställe!",
+  "@library_button_tooltip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_header": "Här finns allt material samlat!",
+  "@library_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_url": "bibliotek",
+  "@library_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header": "En liten insats kan göra stor skillnad!",
+  "@main_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "meny",
+  "@menu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "open": "öppna",
+  "@open": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "project_should": "Projektet ska:",
+  "@project_should": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quick_actions_url": "snabba-aktiviteter",
+  "@quick_actions_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_1": "Tyvärr har du inte tillräckligt många rätt för att bli godkänd på testet.",
+  "@quiz_fail_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_2": "Läs på mer och försök igen.",
+  "@quiz_fail_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_3": "Du behöver svara rätt på ",
+  "@quiz_fail_text_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of_given_questions": "av frågorna.",
+  "@of_given_questions": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_title": "Tyvärr!",
+  "@quiz_fail_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_agree_terms": "Jag samtycker till att Praktikertjänst AB sparar min e-postadress i upp till 12 månader. E-postadressen kommer inte användas i marknadsföringssyfte eller lämnas vidare till tredje part.",
+  "@quiz_success_agree_terms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_text": "Vi hör av oss.",
+  "@quiz_success_mail_sent_text": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_title": "Tack!",
+  "@quiz_success_mail_sent_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_1": "Som en del av Hg-rid projektetet vill vi utvärdera värdet av den här portalen.",
+  "@quiz_success_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_2": "Kan du tänka dig att svara på några frågor via din mejl om några månader? I så fall skriver du in din mejladress här.",
+  "@quiz_success_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_title": "Grattis, du har klarat testet!",
+  "@quiz_success_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pass_limt": "Gräns för godkänt: ",
+  "@pass_limt": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "read_more_about_this_project_at": "Läs mer om projektet på",
+  "@read_more_about_this_project_at": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "redo_quiz": "gör om",
+  "@redo_quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "sök",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "send": "skicka",
+  "@send": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spanish": "spanska",
+  "@spanish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "swedish": "svenska",
+  "@swedish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "type_here_to_search": "Skriv in här för att söka...",
+  "@type_here_to_search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "word_list": "ordlista",
+  "@word_list": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document": "{howMany,plural, =1{dokument}other{dokument}}",
+  "@document": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "word": "{howMany,plural, =1{ord}other{ord}}",
+  "@word": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "back": "gå bakåt",
+  "@back": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "go_back_to_wordlist": "gå tillbaka till ordlistan",
+  "@go_back_to_wordlist": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "check_your_answers": "facit",
+  "@check_your_answers": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "correct": "Sant",
+  "@correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "not_correct": "Falskt",
+  "@not_correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "time": "Tid",
+  "@time": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "length": "Längd",
+  "@length": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course": "Kurs",
+  "@course": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reading": "läsning",
+  "@reading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "video": "Film",
+  "@video": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz": "Quiz",
+  "@quiz": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

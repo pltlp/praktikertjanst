@@ -1,11 +1,14 @@
 import 'dart:html';
-
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
+import '../../models/resource.dart';
 import '../../services/course_room_service.dart';
 import '../../services/messages_service.dart';
+import '../../services/quiz_service.dart';
+import '../../services/rise_service.dart';
+import '../../services/video_service.dart';
 
 @Component(
     directives: const [routerDirectives, NgFor, NgIf, MaterialIconComponent],
@@ -15,22 +18,14 @@ import '../../services/messages_service.dart';
     styleUrls: const ['breadcrumbs_component.css'],
     templateUrl: 'breadcrumbs_component.html')
 class BreadcrumbsComponent {
-  final Router _router;
-
-  final MessagesService msg;
-
-  final int nrOfCharacters = 30;
-
-  final int maxScreenWidth = 400;
-
-  List<String> crumbLinks = [];
-
-  RouterState routerState;
-
-  Location location;  
-  CourseRoomService courseRoomService;
   BreadcrumbsComponent(
-      this._router, this.msg, this.location, this.courseRoomService) {
+      this._router,
+      this.msg,
+      this.location,
+      this.courseRoomService,
+      this.riseService,
+      this.quizService,
+      this.videoService) {
     _router.onRouteActivated.listen(_onNavigationStart);
   }
 
@@ -39,31 +34,28 @@ class BreadcrumbsComponent {
       return [];
     } else {
       var segments = routerState.path.split('/');
-      if (segments.length > 2) {        
-        segments = segments.sublist(2);        
+      if (segments.length > 2) {
+        segments = segments.sublist(2);
       }
       return segments;
     }
   }
 
   void back() {
-   _router.navigate('${msg.currentLanguage}/${crumbLinks[crumbLinks.length - 2]}');
-
+    _router.navigate(
+        '${msg.currentLanguage}/${crumbLinks[crumbLinks.length - 2]}');
   }
 
   bool get showCloseButton {
     if (crumbLinks.length == 1) return false;
     final segments = pathSegments.toList();
-    if (segments.isEmpty || segments.last == msg.library_url || segments.last == msg.contact) return false;
+    if (segments.isEmpty ||
+        segments.last == msg.library_url ||
+        segments.last == msg.contact) return false;
 
     final courseRoom = courseRoomService.data[segments.last];
-    return courseRoom == null;        
+    return courseRoom == null;
   }
-
-   
-
-  
-
 
   List<String> evaluateBreadcrumbs(List<String> path) {
     var breadcrumbs = path.toList();
@@ -85,6 +77,52 @@ class BreadcrumbsComponent {
       final s = segments.take(i + 1);
       crumbLinks[i] = s.join('/');
     }
-
   }
+
+  List<String> resourceNameList(List<String> path) {
+    resources
+      ..addAll(quizService.data)
+      ..addAll(courseRoomService.data)
+      ..addAll(riseService.data)
+      ..addAll(videoService.data);
+    List<String> nameList = [];
+
+    for (var p in path) {
+      if (p == msg.library)
+        nameList
+            .add('${msg.library[0].toUpperCase()}${msg.library.substring(1)}');
+
+      if (p == msg.contact)
+        nameList
+            .add('${msg.contact[0].toUpperCase()}${msg.contact.substring(1)}');
+      if (p == msg.home_url)
+        nameList.add(
+            '${msg.home_url[0].toUpperCase()}${msg.home_url.substring(1)}');
+      else {
+        try {
+          nameList.add(resources.values
+              .firstWhere(
+                  (resource) => resource.phrases[msg.currentLanguage].url == p)
+              ?.phrases[msg.currentLanguage]
+              .name);
+        } on StateError {
+          print('no element');
+        }
+      }
+    }
+    return evaluateBreadcrumbs(nameList);
+  }
+
+  final Router _router;
+  final MessagesService msg;
+  final int nrOfCharacters = 33;
+  final int maxScreenWidth = 400;
+  List<String> crumbLinks = [];
+  RouterState routerState;
+  Location location;
+  CourseRoomService courseRoomService;
+  RiseService riseService;
+  VideoService videoService;
+  QuizService quizService;
+  Map<String, Resource> resources = {};
 }

@@ -18,97 +18,97 @@ class Routes {
   void init(MessagesService msg) {
     all = [
           RouteDefinition(
-              path: '${msg.currentLanguage}/${msg.home_url}', component: hc.HomeComponentNgFactory, useAsDefault: true),
+              path: ':lang/${msg.home_url}', component: hc.HomeComponentNgFactory, useAsDefault: true),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}',
+            path: ':lang/${msg.home_url}/${msg.library_url}',
             component: lc.LibraryComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}',
+            path: ':lang/${msg.home_url}/${msg.course_room_for_curious_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/${msg.documents_component_url}',
+                ':lang/${msg.home_url}/${msg.course_room_for_curious_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            path: ':lang/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
+            path: ':lang/${msg.home_url}/${msg.course_room_for_curious_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}',
+            path: ':lang/${msg.home_url}/${msg.course_room_for_dental_teams_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.documents_component_url}',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_teams_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_teams_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
+                ':lang/:lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}',
+                ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}',
             component: crc.CourseRoomComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
+                ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}/${msg.documents_component_url}',
             component: dc.DocumentsComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
             path:
-                '${msg.currentLanguage}/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+                ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.contact}',
+            path: ':lang/${msg.home_url}/${msg.contact}',
             component: ac.AboutComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/:url',
+            path: ':lang/${msg.home_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),
           RouteDefinition(
-            path: '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/:url',
+            path: ':lang/${msg.home_url}/${msg.library_url}/:url',
             component: rwc.ResourceWrapperComponentNgFactory,
           ),          
           

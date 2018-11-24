@@ -1,12 +1,15 @@
 import 'dart:async';
 import 'dart:html';
+
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:d_components/d_components.dart';
 import 'package:angular_components/model/menu/menu.dart';
-import 'package:fo_components/fo_components.dart';
 import 'package:angular_router/angular_router.dart';
+import 'package:d_components/d_components.dart';
+import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
+
+import 'messages_all.dart' as messages;
 import 'src/components/breadcrumbs_component/breadcrumbs_component.dart';
 import 'src/components/footer_component/footer_component.dart';
 import 'src/components/fullscreen_component/fullscreen_component.dart';
@@ -53,7 +56,7 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProvidersHash,
+      routerProviders,
       Routes,
       materialProviders,  
       MessagesService,
@@ -68,7 +71,28 @@ import 'src/services/word_service.dart';
     pipes: [
       NamePipe
     ])
-class AppComponent {
+class AppComponent{
+  MenuModel menuModel;
+
+  MenuModel languageMenuModel;
+
+  final Routes routes;
+
+  final MessagesService msg;
+
+  Router _router;
+  final VideoService videoService;
+  final DocumentService documentService;
+  final RiseService riseService;
+  final CourseRoomService courseRoomService;
+
+  final WordService wordService;
+  final QuizService quizService;
+  final SlideService slideService;
+  bool loaded = false;
+  bool wordListModalVisible = false;
+  bool languageSelectorVisible = false;
+  String iconSize = '1.5em';
   AppComponent(
       this.routes,
       this.msg,
@@ -82,15 +106,15 @@ class AppComponent {
       this.slideService) {
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-        /*
+       
         MenuItem(_capitalize(msg.swedish),
             action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
         MenuItem(_capitalize(msg.english), action: () => window.location.href = '${Uri.base.origin}/en/home'),
+        /*
         MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
         MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
         MenuItem(_capitalize(msg.german), action: () => window.location.href = '${Uri.base.origin}/de/start')
         */
-         MenuItem(_capitalize('coming soon')),
       ])
     ]);
 
@@ -107,14 +131,13 @@ class AppComponent {
             action: () => wordListModalVisible = true)
       ])
     ]);
-
     _loadResources();
 
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
   }
-
+  List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
@@ -125,12 +148,12 @@ class AppComponent {
             (resource) => urlParam == resource.phrases[msg.currentLanguage].url)
         .isEmpty;
   }
-
   String _capitalize(String value) =>
       '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
 
   Future<void> _loadResources() async {
     loaded = false;
+    print(_router.current.parameters);
 
     // Figure out language based on url
     if (Uri.base.pathSegments.isEmpty) {
@@ -164,8 +187,8 @@ class AppComponent {
           Intl.defaultLocale = 'sv_SE';
       }
     }
+    await messages.initializeMessages(Intl.shortLocale(Intl.getCurrentLocale()));
 
-    // TODO load arb language file
 
     await videoService.fetchAll();
     await documentService.fetchAll();
@@ -177,23 +200,4 @@ class AppComponent {
     routes.init(msg);
     loaded = true;
   }
-
-  MenuModel menuModel;
-  MenuModel languageMenuModel;
-  final Routes routes;
-  final MessagesService msg;
-  Router _router;
-
-  final VideoService videoService;
-  final DocumentService documentService;
-  final RiseService riseService;
-  final CourseRoomService courseRoomService;
-  final WordService wordService;
-  final QuizService quizService;
-  final SlideService slideService;
-  bool loaded = false;
-  bool wordListModalVisible = false;
-  bool languageSelectorVisible = false;
-  List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
-  String iconSize = '1.5em';
 }
