@@ -1,61 +1,20 @@
-<div id="self"
-     *ngIf="!model.complete">
-    <div id="top"
-         [style.background-image]="backgroundImage"
-         class="text-center">
-        <div id="gradiant"
-             class="color-white">
-            <div class="row">
-                <div class="col">
-                    <h2 class="margin-top-large">{{model.phrases[msg.currentLanguage].name | name}}</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row background-color-cerulean bottom">
-        <div class="col l2 m3 s3 text-center align-middle">
-            <fo-icon class="color-white"
-                     icon="{{model.icon}}"
-                     size="2.3em">
-            </fo-icon>
-        </div>
-        <div class="col l10 m9 s9 color-white align-middle">
-            <h4 class="margin-top-none margin-bottom-none">{{model.phrases[msg.currentLanguage].description}}</h4><br/>
-            <p class="margin-top-none margin-bottom-none">{{details()}}</p>
-        </div>
-    </div>
+<div id="top"
+     [style.background-image]="backgroundImage">
 </div>
-
-
-<div id="self"
-     *ngIf="model.complete"
-     class="complete_gradiant">
-    <div id="top"
-         [style.background-image]="backgroundImage"
-         class="text-center">
-        <div id="gradiant"
-             class="color-white">
-            <div class="row">
-                <div class="col">
-                    <h2 class="margin-top-large margin-bottom-none">{{model.phrases[msg.currentLanguage].name | name}}</h2>
-                    <material-icon class="action-icon"
-                                   icon="done"></material-icon>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row background-color-cerulean bottom">
-        <div class="col l2 m3 s2 align-middle text-center">
-            <fo-icon class="color-white"
-                     icon="{{model.icon}}"
-                     size="2.3em">
-            </fo-icon>
-        </div>
-        <div class="col l10 m9 s10 color-white align-middle">
-            <h4 class="margin-top-none margin-bottom-none">{{model.phrases[msg.currentLanguage].description}}</h4><br/>
-            <p class="margin-top-none margin-bottom-none">{{details()}}</p>
-        </div>
-    </div>
-
+<div id="bottom"
+     class="background-color-cerulean color-white">
+    <h4 class="margin-top-none margin-bottom-small align-top">{{model.phrases[msg.currentLanguage].description}}</h4>
+    <p class="margin-none">
+        <fo-icon icon="{{model.icon}}"
+                 size="2em">
+        </fo-icon>
+        &nbsp;&nbsp;{{details()}}
+    </p>
+</div>
+<div id="overlay"
+     [class.complete]="model.complete">
+    <h2 class="margin-top-large">{{model.phrases[msg.currentLanguage].name | name}}</h2>
+    <material-icon class="action-icon"
+                   icon="done"
+                   *ngIf="model.complete"></material-icon>
 </div>
