@@ -51,21 +51,21 @@ class RiseService extends ResourceService<Rise> {
         ..url['sv'] =
             'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/rules-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
         ..estimated_time_for_completion = '5 min',
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'article'
-        ..id = 'Vad är vad på mottagningen? '
+        ..id = 'Vad är vad på mottagningen?'
         ..img_url = 'pics/what_is_what_on_the_reception.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Vad är vad på mottagningen?'
+          ..name = 'På mottagningen'
           ..url = 'vad-ar-vad-pa-mottagningen'
           ..description = 'Översikt av utrustning på mottagningen.')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Overview of dentist equipment'
+          ..name = 'At the dental reception'
           ..url = 'everview-of-dentist-equipment'
-          ..description = 'Overview of dentist equipment.')
+          ..description = 'Overview over equipment')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'

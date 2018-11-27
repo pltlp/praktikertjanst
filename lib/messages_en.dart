@@ -71,7 +71,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "length" : MessageLookupByLibrary.simpleMessage("Length"),
     "library" : MessageLookupByLibrary.simpleMessage("library"),
     "library_button_tooltip" : MessageLookupByLibrary.simpleMessage("Here are all our course modules are collected!"),
-    "library_header" : MessageLookupByLibrary.simpleMessage("Here we have all material collected!"),
+    "library_header" : MessageLookupByLibrary.simpleMessage("Here we have collected all our material!"),
     "library_url" : MessageLookupByLibrary.simpleMessage("library"),
     "main_header" : MessageLookupByLibrary.simpleMessage("A small effort can make a big difference!"),
     "menu" : MessageLookupByLibrary.simpleMessage("menu"),

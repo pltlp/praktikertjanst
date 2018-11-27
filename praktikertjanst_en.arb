@@ -199,7 +199,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "library_header": "Here we have all material collected!",
+  "library_header": "Here we have collected all our material!",
   "@library_header": {
     "type": "text",
     "placeholders": {}

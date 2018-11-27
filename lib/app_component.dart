@@ -56,9 +56,9 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProviders,
+      routerProvidersHash,
       Routes,
-      materialProviders,  
+      materialProviders,
       MessagesService,
       VideoService,
       DocumentService,
@@ -71,7 +71,7 @@ import 'src/services/word_service.dart';
     pipes: [
       NamePipe
     ])
-class AppComponent{
+class AppComponent {
   MenuModel menuModel;
 
   MenuModel languageMenuModel;
@@ -104,12 +104,15 @@ class AppComponent{
       this.wordService,
       this.quizService,
       this.slideService) {
+    _loadResources();
+    
+    
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
-       
         MenuItem(_capitalize(msg.swedish),
             action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
-        MenuItem(_capitalize(msg.english), action: () => window.location.href = '${Uri.base.origin}/en/home'),
+        MenuItem(_capitalize(msg.english),
+            action: () => window.location.href = '${Uri.base.origin}/en/home'),
         /*
         MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
         MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
@@ -131,7 +134,6 @@ class AppComponent{
             action: () => wordListModalVisible = true)
       ])
     ]);
-    _loadResources();
 
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
@@ -148,19 +150,20 @@ class AppComponent{
             (resource) => urlParam == resource.phrases[msg.currentLanguage].url)
         .isEmpty;
   }
+
   String _capitalize(String value) =>
       '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
 
   Future<void> _loadResources() async {
     loaded = false;
-    print(_router.current.parameters);
 
     // Figure out language based on url
+    await messages
+        .initializeMessages(Intl.shortLocale(Intl.getCurrentLocale()));
+
     if (Uri.base.pathSegments.isEmpty) {
       Intl.defaultLocale = 'sv_SE';
-
-    }
-    else {
+    } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {
         case 'en':
@@ -187,8 +190,6 @@ class AppComponent{
           Intl.defaultLocale = 'sv_SE';
       }
     }
-    await messages.initializeMessages(Intl.shortLocale(Intl.getCurrentLocale()));
-
 
     await videoService.fetchAll();
     await documentService.fetchAll();

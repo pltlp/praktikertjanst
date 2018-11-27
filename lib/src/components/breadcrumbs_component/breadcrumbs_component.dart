@@ -26,6 +26,11 @@ class BreadcrumbsComponent {
       this.riseService,
       this.quizService,
       this.videoService) {
+    resources
+      ..addAll(quizService.data)
+      ..addAll(courseRoomService.data)
+      ..addAll(riseService.data)
+      ..addAll(videoService.data);
     _router.onRouteActivated.listen(_onNavigationStart);
   }
 
@@ -80,11 +85,6 @@ class BreadcrumbsComponent {
   }
 
   List<String> resourceNameList(List<String> path) {
-    resources
-      ..addAll(quizService.data)
-      ..addAll(courseRoomService.data)
-      ..addAll(riseService.data)
-      ..addAll(videoService.data);
     List<String> nameList = [];
 
     for (var p in path) {
