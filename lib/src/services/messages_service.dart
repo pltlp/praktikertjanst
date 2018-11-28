@@ -219,7 +219,7 @@ class MessagesService {
   String get not_correct => Intl.message('Falskt', name: 'not_correct');
   String get time => Intl.message('Tid', name: 'time');
   String get length => Intl.message('Längd', name: 'length');
-  String get course => Intl.message('Kurs', name: 'course');
+  String get article => Intl.message('Artikel', name: 'article');
   String get reading => Intl.message('läsning', name: 'reading');
   String get video => Intl.message('Film', name: 'video');
   String get quiz => Intl.message('Quiz', name: 'quiz');

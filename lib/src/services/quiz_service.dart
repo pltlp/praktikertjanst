@@ -68,13 +68,14 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz för allmänheten'
           ..description =
               'Test på dina kunskaper utifrån ett allmänt perspektiv.'
-          ..url = 'quiz-for-allmanheten')
+          ..url = 'quiz-for-allmanheten'
+          ..estimated_time_for_completion = 'Ca 2 min')
         ..phrases['en'] = (new Phrases()
           ..name = 'Quiz for the public'
           ..description = 'Test your knowledge from a general perspective.'
-          ..url = 'quiz-for-the-public')
-        ..type = ResourceType.quiz
-        ..estimated_time_for_completion = '2 min',
+          ..url = 'quiz-for-the-public'
+          ..estimated_time_for_completion = 'Ca 2 min')
+        ..type = ResourceType.quiz,
       'Quiz för dig i tandvårdsteam': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
@@ -169,14 +170,15 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz för dig i tandvårdsteam'
           ..url = 'quiz-for-tandvardsteam'
           ..description =
-              'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.')
+              'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.'
+          ..estimated_time_for_completion = '3 min')
         ..phrases['en'] = (new Phrases()
           ..name = 'Quiz for dental teams'
           ..url = 'quiz-for-dental-teams'
           ..description =
-              'Test your knowledge from the dental teams perspective.')
-        ..type = ResourceType.quiz
-        ..estimated_time_for_completion = '3 min',
+              'Test your knowledge from the dental teams perspective.'
+          ..estimated_time_for_completion = '3 min')
+        ..type = ResourceType.quiz,
       'Quiz för dig som är dentaltekniker': new Quiz([
         new Question(
             'Vad ska du göra med en tappad tand som är lagad med amalgam?', [
@@ -264,14 +266,15 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz för dig som är dentaltekniker'
           ..url = 'quiz-for-dentaltekniker'
           ..description =
-              'Test på dina kunskaper utifrån dentalteknikerns perspektiv.')
+              'Test på dina kunskaper utifrån dentalteknikerns perspektiv.'
+          ..estimated_time_for_completion = '3 min')
         ..phrases['en'] = (new Phrases()
           ..name = 'Quiz for dental technicians'
           ..url = 'quiz-for-dental-technicians'
           ..description =
-              'Test your knowledge from a dental technicians perspective')
+              'Test your knowledge from a dental technicians perspective'
+          ..estimated_time_for_completion = '3 min')
         ..type = ResourceType.quiz
-        ..estimated_time_for_completion = '3 min'
     };
 
     return data;

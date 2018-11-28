@@ -4,6 +4,7 @@ class Phrases {
   String name;
   String description;
   String url;
+  String estimated_time_for_completion;
 }
 
 class Resource {
@@ -14,6 +15,4 @@ class Resource {
   String id;
   ResourceType type;
   bool complete = false;
-  String estimated_time_for_completion;
-  
 }

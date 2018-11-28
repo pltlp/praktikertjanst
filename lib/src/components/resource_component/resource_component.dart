@@ -25,18 +25,18 @@ class ResourceComponent implements OnInit {
     switch (model.type) {
       case ResourceType.quiz:
         details =
-            '${msg.quiz} | ${msg.time}: ${model.estimated_time_for_completion}';
+            '${msg.quiz} | ${model.phrases[msg.currentLanguage].estimated_time_for_completion}';
 
         break;
       case ResourceType.rise:
         details =
-            '${msg.course} | ${model.estimated_time_for_completion} ' ' ${msg.reading}';
+            '${msg.article} | ${model.phrases[msg.currentLanguage].estimated_time_for_completion}';
 
         break;
 
       case ResourceType.video:
         details =
-            '${msg.video} | ${msg.length}: ${model.estimated_time_for_completion}';
+            '${msg.video} | ${model.phrases[msg.currentLanguage].estimated_time_for_completion}';
 
         break;
 
