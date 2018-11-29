@@ -9,15 +9,19 @@ import 'package:intl/message_lookup_by_library.dart';
 // ignore: implementation_imports
 import 'package:intl/src/intl_helpers.dart';
 
+import 'messages_en.dart' deferred as messages_en;
 import 'messages_sv.dart' deferred as messages_sv;
 
 typedef Future<dynamic> LibraryLoader();
 Map<String, LibraryLoader> _deferredLibraries = {
+  'en': () => messages_en.loadLibrary(),
   'sv': () => messages_sv.loadLibrary(),
 };
 
 MessageLookupByLibrary _findExact(localeName) {
   switch (localeName) {
+    case 'en':
+      return messages_en.messages;
     case 'sv':
       return messages_sv.messages;
     default:

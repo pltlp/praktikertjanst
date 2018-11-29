@@ -62,7 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "document_url" : MessageLookupByLibrary.simpleMessage("documents"),
     "documents_component_url" : MessageLookupByLibrary.simpleMessage("document list"),
     "english" : MessageLookupByLibrary.simpleMessage("english"),
-    "financial_support" : MessageLookupByLibrary.simpleMessage("Financial support of EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465"),
+    "financial_support" : MessageLookupByLibrary.simpleMessage("Financial support by EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465"),
     "find_right_content_for_you" : MessageLookupByLibrary.simpleMessage("Find the right content for you"),
     "french" : MessageLookupByLibrary.simpleMessage("french"),
     "german" : MessageLookupByLibrary.simpleMessage("german"),
