@@ -4,7 +4,8 @@
     <div class="row">
       <div class="col cerulean-themed">
         <h1 class="color-astronautblue">{{model.phrases[msg.currentLanguage]?.name}}</h1>
-        <material-stepper orientation="vertical"
+        <material-stepper #stepper1
+                          orientation="vertical"
                           legalJumps="all"
                           [noText]="msg.cancel"
                           class="stepper-step-index">
@@ -12,6 +13,7 @@
             <template (continue)="onContinue($event, i)"
                       step
                       [optional]="false"
+                      [hideButtons]="true"
                       [canContinue]="question.selectedValue != null"
                       [name]="question.label">
               <div class="margin-top-medium">
@@ -27,6 +29,23 @@
                   </div>
                 </material-radio-group>
               </div>
+              <br>
+              <div class="row">
+                <div class="col l3 m4 s12 text-center">
+                  <p-button (click)="stepper1.stepForward($event, stepper1.activeStep)"
+                            rightBackgroundColor="#00A0C8"
+                            middle="{{msg.continue_label | name}}">
+                  </p-button>
+                </div>
+                <div class="col l3 m4 s12 text-center">
+                  <p-button (click)="stepper1.stepBackward($event, stepper1.activeStep)"
+                            rightBackgroundColor="#00A0C8"
+                            middle="{{msg.cancel_label | name}}">
+                  </p-button>
+                </div>
+              </div>
+
+
             </template>
           </ng-container>
         </material-stepper>

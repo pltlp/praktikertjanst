@@ -139,7 +139,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "document_url": "document",
+  "document_url": "documents",
   "@document_url": {
     "type": "text",
     "placeholders": {}
@@ -199,7 +199,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "library_header": "Here we have collected all our material!",
+  "library_header": "Here we have all material collected!",
   "@library_header": {
     "type": "text",
     "placeholders": {}
@@ -334,7 +334,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "document": "{howMany, plural, =1 {document} other {documents}}",
+  "document": "{howMany, plural, =1 {documents} other {documents}}",
   "@document": {
     "type": "text",
     "placeholders": {
@@ -383,8 +383,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "course": "Course",
-  "@course": {
+  "article": "Article",
+  "@article": {
     "type": "text",
     "placeholders": {}
   },
@@ -400,6 +400,21 @@
   },
   "quiz": "Quiz",
   "@quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continue_label": "continue",
+  "@continue_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel_label": "cancel",
+  "@cancel_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "financial_support": "Financial support of EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465",
+  "@financial_support": {
     "type": "text",
     "placeholders": {}
   }

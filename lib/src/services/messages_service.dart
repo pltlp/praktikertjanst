@@ -223,6 +223,8 @@ class MessagesService {
   String get reading => Intl.message('läsning', name: 'reading');
   String get video => Intl.message('Film', name: 'video');
   String get quiz => Intl.message('Quiz', name: 'quiz');
+  String get continue_label => Intl.message('fortsätt', name: 'continue_label');
+  String get cancel_label => Intl.message('avbryt', name: 'cancel_label');
   String get financial_support => Intl.message(
       'Finansiellt stöd av EU LIFE Program: HG-RID-LIFE LIFE15 ENV/SE/000465',
       name: 'financial_support');

@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2018-11-24T13:47:11.638769",
+  "@@last_modified": "2018-11-29T12:17:11.753059",
   "about": "om",
   "@about": {
     "type": "text",
@@ -384,8 +384,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "course": "Kurs",
-  "@course": {
+  "article": "Artikel",
+  "@article": {
     "type": "text",
     "placeholders": {}
   },
@@ -401,6 +401,21 @@
   },
   "quiz": "Quiz",
   "@quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continue_label": "fortsätt",
+  "@continue_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel_label": "avbryt",
+  "@cancel_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "financial_support": "Finansiellt stöd av EU LIFE Program: HG-RID-LIFE LIFE15 ENV/SE/000465",
+  "@financial_support": {
     "type": "text",
     "placeholders": {}
   }
