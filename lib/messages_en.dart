@@ -18,7 +18,7 @@ typedef MessageIfAbsent(String message_str, List args);
 class MessageLookup extends MessageLookupByLibrary {
   get localeName => 'en';
 
-  static m0(howMany) => "${Intl.plural(howMany, one: 'document', other: 'documents')}";
+  static m0(howMany) => "${Intl.plural(howMany, one: 'documents', other: 'documents')}";
 
   static m1(howMany) => "${Intl.plural(howMany, one: 'word', other: 'words')}";
 
@@ -29,8 +29,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "about_url" : MessageLookupByLibrary.simpleMessage("about"),
     "archive" : MessageLookupByLibrary.simpleMessage("archive"),
     "archive_url" : MessageLookupByLibrary.simpleMessage("archive"),
+    "article" : MessageLookupByLibrary.simpleMessage("Article"),
     "back" : MessageLookupByLibrary.simpleMessage("go back"),
     "cancel" : MessageLookupByLibrary.simpleMessage("cancel"),
+    "cancel_label" : MessageLookupByLibrary.simpleMessage("cancel"),
     "check_your_answers" : MessageLookupByLibrary.simpleMessage("correct answers"),
     "close" : MessageLookupByLibrary.simpleMessage("close"),
     "contact" : MessageLookupByLibrary.simpleMessage("contact"),
@@ -48,8 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "contact_project_goal_3" : MessageLookupByLibrary.simpleMessage("increase knowledge and awareness of how mercury from amalgam affects the environment. This web portal is part of that work."),
     "contact_us" : MessageLookupByLibrary.simpleMessage("Contact Us"),
     "continueMsg" : MessageLookupByLibrary.simpleMessage("next"),
+    "continue_label" : MessageLookupByLibrary.simpleMessage("continue"),
     "correct" : MessageLookupByLibrary.simpleMessage("Sant"),
-    "course" : MessageLookupByLibrary.simpleMessage("Course"),
     "course_modules" : MessageLookupByLibrary.simpleMessage("course modules"),
     "course_room_carousel_header" : MessageLookupByLibrary.simpleMessage("videos"),
     "course_room_for_curious_url" : MessageLookupByLibrary.simpleMessage("course room-for-curious"),
@@ -57,9 +59,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "course_room_for_dental_technicians_url" : MessageLookupByLibrary.simpleMessage("course-room-for-dental technicians"),
     "course_room_for_service_technicians_url" : MessageLookupByLibrary.simpleMessage("course-room-for-service-technicians"),
     "document" : m0,
-    "document_url" : MessageLookupByLibrary.simpleMessage("document"),
+    "document_url" : MessageLookupByLibrary.simpleMessage("documents"),
     "documents_component_url" : MessageLookupByLibrary.simpleMessage("document list"),
     "english" : MessageLookupByLibrary.simpleMessage("english"),
+    "financial_support" : MessageLookupByLibrary.simpleMessage("Financial support of EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465"),
     "find_right_content_for_you" : MessageLookupByLibrary.simpleMessage("Find the right content for you"),
     "french" : MessageLookupByLibrary.simpleMessage("french"),
     "german" : MessageLookupByLibrary.simpleMessage("german"),
@@ -71,7 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "length" : MessageLookupByLibrary.simpleMessage("Length"),
     "library" : MessageLookupByLibrary.simpleMessage("library"),
     "library_button_tooltip" : MessageLookupByLibrary.simpleMessage("Here are all our course modules are collected!"),
-    "library_header" : MessageLookupByLibrary.simpleMessage("Here we have collected all our material!"),
+    "library_header" : MessageLookupByLibrary.simpleMessage("Here we have all material collected!"),
     "library_url" : MessageLookupByLibrary.simpleMessage("library"),
     "main_header" : MessageLookupByLibrary.simpleMessage("A small effort can make a big difference!"),
     "menu" : MessageLookupByLibrary.simpleMessage("menu"),
