@@ -13,7 +13,7 @@ dependencies:
   grid:
     git: https://github.com/afpatmin/grid
   fo_components:
-    git: https://github.com/afpatmin/fo_components
+    git: https://github.com/dejan-marlovic/fo_components
   intl: ^0.15.7
   http: ^0.11.3+16
 dev_dependencies:

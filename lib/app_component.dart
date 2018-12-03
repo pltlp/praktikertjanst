@@ -93,6 +93,7 @@ class AppComponent {
   bool wordListModalVisible = false;
   bool languageSelectorVisible = false;
   String iconSize = '1.5em';
+  
   AppComponent(
       this.routes,
       this.msg,
@@ -105,7 +106,6 @@ class AppComponent {
       this.quizService,
       this.slideService) {
     _loadResources();
-    
     
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([

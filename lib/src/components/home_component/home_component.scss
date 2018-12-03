@@ -2,6 +2,8 @@
 @import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
+@import 'package:angular_components/material_menu/mixins';
+
 :host {
     display: block;
     material-icon.menu-icon {
@@ -70,3 +72,4 @@
         color: $cerulean;
     }
 }
+

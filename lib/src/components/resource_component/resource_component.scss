@@ -31,19 +31,26 @@
         background-size: cover;
     }
     div#bottom {
-        height: 7rem;
+        height: 7.5rem;
         overflow-y: auto;
         padding: $small;
         transition-duration: 0.2s;
         transition-property: background;
         display: flex;
         flex-direction: column;
+        padding: 1rem;
+        margin-bottom: .2rem;
         .align-top {
             flex-grow: 1;
         }
     }
-}
 
+    @media screen and (min-width: $large-width-threshold - 1) {
+        div#bottom{
+            margin-bottom: .2rem;
+        }
+    }
+}
 :host:hover {
     div#bottom {
         background: $astronautBlue;

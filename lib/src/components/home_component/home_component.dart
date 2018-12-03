@@ -1,6 +1,7 @@
 import 'dart:html' as html;
 import 'package:angular_router/angular_router.dart';
 import 'package:angular/angular.dart';
+import 'package:angular_components/material_button/material_button.dart';
 import 'package:fo_components/fo_components.dart';
 import '../../models/resource.dart';
 import '../../models/video.dart';
@@ -35,7 +36,8 @@ import '../resource_component/resource_component.dart';
       CourseRoomComponent,
       routerDirectives,
       ButtonComponent,
-      CourseRoomButtonsComponent
+      CourseRoomButtonsComponent,
+      MaterialButtonComponent
     ],
     providers: [],
     pipes: [
