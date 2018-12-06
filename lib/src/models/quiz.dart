@@ -48,8 +48,6 @@ class Option {
   Option(this.value, this.label, {this.score = 0});
 
   final String value;
-
   final String label;
-
   int score;
 }

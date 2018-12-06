@@ -106,7 +106,6 @@ class BreadcrumbsComponent {
               ?.phrases[msg.currentLanguage]
               .name);
         } on StateError {
-          print('no element');
         }
       }
     }

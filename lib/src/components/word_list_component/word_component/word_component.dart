@@ -7,8 +7,7 @@ import '../../../services/messages_service.dart';
   selector: 'p-word',
   templateUrl: 'word_component.html',
   styleUrls: const ['word_component.css'],
-  directives: const [FoCarouselComponent, FoCarouselSlideComponent, NgFor, NgIf],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  directives: const [FoCarouselComponent, FoCarouselSlideComponent, NgFor, NgIf]
 )
 class WordComponent {
   WordComponent(this.msg);

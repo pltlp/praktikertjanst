@@ -3,10 +3,15 @@ import 'package:angular/angular.dart';
 import '../models/quiz.dart';
 import '../models/resource.dart';
 import '../models/resource_types.dart';
+import '../services/question_service.dart';
 import '../services/resource_service.dart';
 
 @Injectable()
 class QuizService extends ResourceService<Quiz> {
+  QuizService(this.questionService)
+  {
+    questionService.fetchAll();
+  }
   @override
   Future<Map<String, Quiz>> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
@@ -24,7 +29,7 @@ class QuizService extends ResourceService<Quiz> {
               score: 0),
         ]),
         new Question(
-            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den? ',
+            'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?',
             [
               new Option('Metylkvicksilver.', 'Metylkvicksilver', score: 1),
               new Option('Kvicksilverhydrat', 'Kvicksilverhydrat', score: 0),
@@ -279,4 +284,5 @@ class QuizService extends ResourceService<Quiz> {
 
     return data;
   }
+  QuestionService questionService;
 }

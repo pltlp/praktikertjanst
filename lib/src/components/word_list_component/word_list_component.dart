@@ -23,8 +23,7 @@ import 'word_component/word_component.dart';
       FoCarouselSlideComponent,
       ButtonComponent
     ],
-    pipes: const [NamePipe],
-    changeDetection: ChangeDetectionStrategy.OnPush)
+    pipes: const [NamePipe])
 class WordListComponent implements OnDestroy {
   WordListComponent(this.msg, this.wordService) {
     // TODO: call whenever the language is changed
