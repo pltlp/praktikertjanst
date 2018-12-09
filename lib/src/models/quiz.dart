@@ -1,11 +1,11 @@
 import 'resource.dart';
 
 class Quiz extends Resource {
-  Quiz(this._questions, this.minScore);
+  Quiz();
 
-  final List<Question> _questions;
-  List<Question> get questions => _questions;
-  final double minScore;
+  List<Question> questions;
+
+  double minScore;
 
   int get maxScore {
     var s = 0;
@@ -32,22 +32,19 @@ class Quiz extends Resource {
 }
 
 class Question {
-  Question(this.label, this._options);
+  Question();
 
-  Question.from(Question other)
-      : label = other.label,
-        _options = other.options.toList(growable: false);
 
-  final String label;
-  final List<Option> _options;
-  List<Option> get options => _options;
+  String label;
+  List<Option> options;
   String selectedValue;
+  String value;
 }
 
 class Option {
-  Option(this.value, this.label, {this.score = 0});
+  Option();
 
-  final String value;
-  final String label;
-  int score;
+  String value;
+  String label;
+  int score = 0;
 }
