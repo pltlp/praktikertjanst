@@ -4,6 +4,7 @@ class Quiz extends Resource {
   Quiz();
 
   List<Question> questions;
+  
 
   double minScore;
 

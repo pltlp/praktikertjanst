@@ -38,7 +38,7 @@ import '../word_list_component/word_list_component.dart';
       MaterialPopupComponent,
       DocumentsComponent
     ],
-    providers: const [scrollHostProviders, MessagesService],
+    providers: const [scrollHostProviders],
     selector: 'p-course-room-for-curious',
     styleUrls: const ['course_room_component.css'],
     templateUrl: 'course_room_component.html',

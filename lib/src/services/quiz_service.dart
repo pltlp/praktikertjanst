@@ -17,6 +17,7 @@ class QuizService extends ResourceService<Quiz> {
 
     data = {
       'Quiz för allmänheten': new Quiz()
+        ..questions = []
         ..minScore = 0.8
         ..id = 'Quiz för allmänheten'
         ..icon = 'quiz'
@@ -34,6 +35,7 @@ class QuizService extends ResourceService<Quiz> {
           ..estimated_time_for_completion = 'Ca 2 min')
         ..type = ResourceType.quiz,
       'Quiz för dig i tandvårdsteam': new Quiz()
+        ..questions = []
         ..minScore = 0.9
         ..id = 'Quiz för dig i tandvårdsteam'
         ..icon = 'quiz'
@@ -53,6 +55,7 @@ class QuizService extends ResourceService<Quiz> {
           ..estimated_time_for_completion = 'Ca 3 min')
         ..type = ResourceType.quiz,
       'Quiz för dig som är dentaltekniker': new Quiz()
+        ..questions = []
         ..minScore = 0.9
         ..id = 'Quiz för dig som är dentaltekniker'
         ..icon = 'quiz'

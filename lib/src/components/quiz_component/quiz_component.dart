@@ -9,6 +9,7 @@ import 'package:fo_components/fo_components.dart';
 import '../../models/quiz.dart';
 import '../../models/quiz_log_entry.dart';
 import '../../services/messages_service.dart';
+import '../../services/question_service.dart';
 import '../../services/quiz_log_service.dart';
 import '../../services/quiz_service.dart';
 import '../button_component/button_component.dart';
@@ -37,27 +38,29 @@ import 'quiz_fail_component.dart';
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnInit {
   QuizComponent(this.quizService, this.changeDetectorRef, this.location,
-      this.quizLogService, this.msg);
+      this.quizLogService, this.msg, this.questionService);
 
   @override
   void ngOnInit() {
     try {
-      for (var question in model.questions) {
+      populateQuiz();
+      for (var question in model?.questions) {
         shuffle(question.options);
       }
-    } on StateError {
-    }
+    } on StateError {}
   }
 
   void onContinue(AsyncAction<bool> event, int i) async {
-    if (i == model.questions.length - 1) {
-      completed = true;
-      logEntry
-        ..name = model.id
-        ..score = model.currentScore.toDouble() / model.maxScore
-        ..language = msg.currentLanguage;
+    if (model.questions != null) {
+      if (i == model.questions.length - 1) {
+        completed = true;
+        logEntry
+          ..name = model.id
+          ..score = model.currentScore.toDouble() / model.maxScore
+          ..language = msg.currentLanguage;
 
-      logId = await quizLogService.create(logEntry);
+        logId = await quizLogService.create(logEntry);
+      }
     }
   }
 
@@ -76,18 +79,90 @@ class QuizComponent implements OnInit {
   }
 
   void init() {
-    try {      
-      for (final question in model.questions) {
+    try {
+      for (final question in model?.questions) {
         question.selectedValue = null;
       }
 
       completed = false;
 
-      for (var question in model.questions) {
+      for (var question in model?.questions) {
         shuffle(question.options);
       }
     } on StateError {
       print('resource not found');
+    }
+  }
+
+  void populateQuiz() {
+    print('populating quiz');
+    switch (model.id) {
+      case 'Quiz för allmänheten':
+        model?.questions = [
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska du göra med en tappad tand som är lagad med amalgam?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur påverkar framför allt metylkvicksilver, oss människor?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vilken råvara har högst andel kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur stor del kvicksilver finns det i amalgam?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska man göra av uppsamlat kvicksilver?']
+        ];
+        break;
+
+      case 'Quiz för dig i tandvårdsteam':
+        model?.questions = [
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska du göra med en tappad tand som är lagad med amalgam?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur påverkar framför allt metylkvicksilver, oss människor?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vilken råvara har högst andel kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur stor del kvicksilver finns det i amalgam?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur ofta ska avlopp med diskbänksavskiljare desinficeras?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad stämmer om ansvarsfördelningen när det gäller dokumentation?']
+        ];
+        break;
+
+      case 'Quiz för dig som är dentaltekniker':
+        model?.questions = [
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska du göra med en tappad tand som är lagad med amalgam?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur påverkar framför allt metylkvicksilver, oss människor?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vilken råvara har högst andel kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Hur stor del kvicksilver finns det i amalgam?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Vad stämmer om installationen av sugslangar?'],
+          questionService.data.qustions[msg.currentLanguage]
+              ['Var ska sugmotorn vara installerad?'],
+        ];
+        break;
     }
   }
 
@@ -107,4 +182,5 @@ class QuizComponent implements OnInit {
   int logId;
   bool showAnswersModal = false;
   bool completed = false;
+  final QuestionService questionService;
 }

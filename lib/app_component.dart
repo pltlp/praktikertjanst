@@ -57,7 +57,7 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProvidersHash,
+      routerProviders, 
       Routes,
       materialProviders,
       MessagesService,
