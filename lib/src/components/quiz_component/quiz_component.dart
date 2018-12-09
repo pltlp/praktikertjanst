@@ -46,7 +46,6 @@ class QuizComponent implements OnInit {
         shuffle(question.options);
       }
     } on StateError {
-      print('resource not found');
     }
   }
 
@@ -62,18 +61,18 @@ class QuizComponent implements OnInit {
     }
   }
 
-  List shuffle(List items) {
+  List shuffle(List options) {
     final random = new Random();
 
-    for (var i = items.length - 1; i > 0; i--) {
+    for (var i = options.length - 1; i > 0; i--) {
       final n = random.nextInt(i + 1);
 
-      final temp = items[i];
-      items[i] = items[n];
-      items[n] = temp;
+      final temp = options[i];
+      options[i] = options[n];
+      options[n] = temp;
     }
 
-    return items;
+    return options;
   }
 
   void init() {

@@ -6,7 +6,6 @@ import 'package:fo_components/fo_components.dart';
 import '../../models/course_room.dart';
 import '../../models/document.dart';
 import '../../models/resource.dart';
-import '../../models/resource_types.dart';
 import '../../models/video.dart';
 import '../../services/course_room_service.dart';
 import '../../services/document_service.dart';
@@ -39,7 +38,7 @@ import '../word_list_component/word_list_component.dart';
       MaterialPopupComponent,
       DocumentsComponent
     ],
-    providers: const [scrollHostProviders],
+    providers: const [scrollHostProviders, MessagesService],
     selector: 'p-course-room-for-curious',
     styleUrls: const ['course_room_component.css'],
     templateUrl: 'course_room_component.html',
@@ -72,8 +71,9 @@ class CourseRoomComponent implements OnActivate {
     }
   }
 
-  String getLink(Resource resource) => '${msg.currentLanguage}/${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';    
-  
+  String getLink(Resource resource) =>
+      '${msg.currentLanguage}/${msg.home_url}/$url/${resource.phrases[msg.currentLanguage].url}';
+
   final MessagesService msg;
   final VideoService videoService;
   final QuizService quizService;

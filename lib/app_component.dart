@@ -20,6 +20,7 @@ import 'src/routes/routes.dart';
 import 'src/services/course_room_service.dart';
 import 'src/services/document_service.dart';
 import 'src/services/messages_service.dart';
+import 'src/services/question_service.dart';
 import 'src/services/quiz_service.dart';
 import 'src/services/rise_service.dart';
 import 'src/services/slide_service.dart';
@@ -66,7 +67,8 @@ import 'src/services/word_service.dart';
       CourseRoomService,
       WordService,
       QuizService,
-      SlideService
+      SlideService,
+      QuestionService
     ],
     pipes: [
       NamePipe
@@ -89,11 +91,12 @@ class AppComponent {
   final WordService wordService;
   final QuizService quizService;
   final SlideService slideService;
+  final QuestionService questionService;
   bool loaded = false;
   bool wordListModalVisible = false;
   bool languageSelectorVisible = false;
   String iconSize = '1.5em';
-  
+
   AppComponent(
       this.routes,
       this.msg,
@@ -104,9 +107,10 @@ class AppComponent {
       this.courseRoomService,
       this.wordService,
       this.quizService,
-      this.slideService) {
+      this.slideService,
+      this.questionService) {
     _loadResources();
-    
+
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(_capitalize(msg.swedish),
@@ -198,6 +202,7 @@ class AppComponent {
     await wordService.fetchAll();
     await quizService.fetchAll();
     await slideService.fetchAll();
+    await questionService.fetchAll();
     routes.init(msg);
     loaded = true;
   }

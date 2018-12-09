@@ -7,7 +7,7 @@ import '../models/quiz.dart';
 class QuestionService {
   Future<QuestionData> fetchAll() async {
     await new Future.delayed(const Duration(milliseconds: 1));
-    return new QuestionData()
+    return data = new QuestionData()
       ..qustions = {
         'sv': {
           'Vad ska du göra med en tappad tand som är lagad med amalgam?':
@@ -74,6 +74,7 @@ class QuestionService {
                 ],
           'Vilken råvara har högst andel kvicksilver?': new Question()
             ..label = 'Vilken råvara har högst andel kvicksilver?'
+            ..value = 'Vilken råvara har högst andel kvicksilver?'
             ..options = [
               new Option()
                 ..label = 'Fisk'
@@ -140,6 +141,25 @@ class QuestionService {
               new Option()
                 ..label = 'Dumpa det i havet'
                 ..value = 'Dumpa det i havet'
+                ..score = 0
+            ],
+          'Var ska sugmotorn vara installerad?': new Question()
+            ..label = 'Var ska sugmotorn vara installerad?'
+            ..value = 'Var ska sugmotorn vara installerad?'
+            ..options = [
+              new Option()
+                ..label = 'I ett separat sugrum avskilt från människor. '
+                ..value = 'I ett separat sugrum avskilt från människor. '
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Centralt på mottagningen, så långt det går mellan de behandlingsstolar som ingår i systemet. '
+                ..value =
+                    'Centralt på mottagningen, så långt det går mellan de behandlingsstolar som ingår i systemet. '
+                ..score = 0,
+              new Option()
+                ..label = 'Det spelar ingen större roll, där det får plats. '
+                ..value = 'Det spelar ingen större roll, där det får plats. '
                 ..score = 0
             ],
           'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
@@ -447,13 +467,32 @@ class QuestionService {
                     'The suction hose from the unit to the floor should be glued carefully'
                 ..score = 0,
               new Option()
-                ..label = 'Sugslangarna bör vara gjorda av kolfiber.'
-                ..value = 'Sugslangarna bör vara gjorda av kolfiber.'
+                ..label = 'The suction hoses should be made of carbon fiber.'
+                ..value = 'The suction hoses should be made of carbon fiber.'
+                ..score = 0
+            ],
+          'Var ska sugmotorn vara installerad?': new Question()
+            ..label = 'Where should the suction engine be installed?'
+            ..value = 'Where should the suction engine be installed?'
+            ..options = [
+              new Option()
+                ..label = 'In a separate suction room separate from people.'
+                ..value = 'In a separate suction room separate from people.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Central at the reception as far as possible between the treatment chairs and the system.'
+                ..value =
+                    'Central at the reception as far as possible between the treatment chairs and the system.'
+                ..score = 0,
+              new Option()
+                ..label = 'It does not matter where evere there is room'
+                ..value = 'It does not matter where evere there is room.'
                 ..score = 0
             ],
         }
       };
   }
 
-  Map<String, Question> data = {};
+  QuestionData data;
 }
