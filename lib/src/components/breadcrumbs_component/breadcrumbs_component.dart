@@ -85,7 +85,7 @@ class BreadcrumbsComponent {
   }
 
   List<String> resourceNameList(List<String> path) {
-    List<String> nameList = [];
+    final nameList = <String>[];
 
     for (var p in path) {
       if (p == msg.library)

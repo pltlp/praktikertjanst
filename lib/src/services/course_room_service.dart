@@ -29,7 +29,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['en'] = (new Phrases()
           ..name = 'For you who is just curious'
           ..description =
-              'course-room-for-you-who-is-curious.'
+              'Content for you who is curious'
           ..url = 'course-room-for-curious')
         ..resources_ids = [
           'Kvicksilver i naturen',
@@ -63,7 +63,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..name = 'Content for dental teams'
           ..description =
               'Content for you who is part of a dental team'
-          ..url = 'course-room-for-dental-teams')
+          ..url = 'course-room-for-dental-health-care-teams')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',

@@ -51,7 +51,8 @@ class CourseRoomComponent implements OnActivate {
   void onActivate(RouterState previous, RouterState current) async {
     url = current.path.split('/').last;
 
-    model = courseRoomService.data[url];
+    model = courseRoomService.data.values.firstWhere(
+        (resource) => resource.phrases[msg.currentLanguage].url == url);
 
     if (model != null) {
       videos = model.video_ids

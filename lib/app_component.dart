@@ -57,7 +57,7 @@ import 'src/services/word_service.dart';
       DropdownMenuComponent
     ],
     providers: [
-      routerProviders, 
+      routerProviders,
       Routes,
       materialProviders,
       MessagesService,
@@ -75,28 +75,23 @@ import 'src/services/word_service.dart';
     ])
 class AppComponent {
   MenuModel menuModel;
-
   MenuModel languageMenuModel;
-
   final Routes routes;
-
   final MessagesService msg;
-
   Router _router;
   final VideoService videoService;
   final DocumentService documentService;
   final RiseService riseService;
   final CourseRoomService courseRoomService;
-
   final WordService wordService;
   final QuizService quizService;
   final SlideService slideService;
   final QuestionService questionService;
   bool loaded = false;
+
   bool wordListModalVisible = false;
   bool languageSelectorVisible = false;
   String iconSize = '1.5em';
-
   AppComponent(
       this.routes,
       this.msg,
@@ -110,34 +105,6 @@ class AppComponent {
       this.slideService,
       this.questionService) {
     _loadResources();
-
-    languageMenuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize(msg.swedish),
-            action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
-        MenuItem(_capitalize(msg.english),
-            action: () => window.location.href = '${Uri.base.origin}/en/home'),
-        /*
-        MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
-        MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
-        MenuItem(_capitalize(msg.german), action: () => window.location.href = '${Uri.base.origin}/de/start')
-        */
-      ])
-    ]);
-
-    menuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize(msg.contact),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.contact}')),
-        MenuItem(_capitalize(msg.language), subMenu: languageMenuModel),
-        MenuItem(_capitalize(msg.library),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
-        MenuItem(_capitalize(msg.word_list),
-            action: () => wordListModalVisible = true)
-      ])
-    ]);
 
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
@@ -157,7 +124,6 @@ class AppComponent {
 
   String _capitalize(String value) =>
       '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
-
   Future<void> _loadResources() async {
     loaded = false;
 
@@ -204,6 +170,34 @@ class AppComponent {
     await slideService.fetchAll();
     await questionService.fetchAll();
     routes.init(msg);
+
+    languageMenuModel = MenuModel<MenuItem>([
+      MenuItemGroup<MenuItem>([
+        MenuItem(_capitalize(msg.swedish),
+            action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
+        MenuItem(_capitalize(msg.english),
+            action: () => window.location.href = '${Uri.base.origin}/en/home'),
+        /*
+        MenuItem(_capitalize(msg.french), action: () => window.location.href = '${Uri.base.origin}/fr/start'),
+        MenuItem(_capitalize(msg.spanish), action: () => window.location.href = '${Uri.base.origin}/es/start'),
+        MenuItem(_capitalize(msg.german), action: () => window.location.href = '${Uri.base.origin}/de/start')
+        */
+      ])
+    ]);
+
+    menuModel = MenuModel<MenuItem>([
+      MenuItemGroup<MenuItem>([
+        MenuItem(_capitalize(msg.contact),
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.contact}')),
+        MenuItem(_capitalize(msg.language), subMenu: languageMenuModel),
+        MenuItem(_capitalize(msg.library),
+            action: () => _router.navigateByUrl(
+                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
+        MenuItem(_capitalize(msg.word_list),
+            action: () => wordListModalVisible = true)
+      ])
+    ]);
     loaded = true;
   }
 }
