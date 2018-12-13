@@ -1,5 +1,7 @@
 import 'dart:async';
+
 import 'package:angular/angular.dart';
+
 import '../models/course_room.dart';
 import '../models/resource.dart';
 import '../models/resource_types.dart';
@@ -63,7 +65,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..name = 'Content for dental teams'
           ..description =
               'Content for you who is part of a dental team'
-          ..url = 'course-room-for-dental-health-care-teams')
+          ..url = 'course-room-for-dental-teams')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
