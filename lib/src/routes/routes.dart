@@ -42,22 +42,22 @@ class Routes {
       ),
       RouteDefinition(
         path:
-            ':lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}',
-        component: crc.CourseRoomComponentNgFactory,
-      ),
-      RouteDefinition(
-        path:
-            ':lang/${msg.home_url}/${msg.course_room_for_dental_technicians_url}/:url',
-        component: rwc.ResourceWrapperComponentNgFactory,
-      ),
-      RouteDefinition(
-        path:
             ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}',
         component: crc.CourseRoomComponentNgFactory,
       ),
       RouteDefinition(
         path:
             ':lang/${msg.home_url}/${msg.course_room_for_service_technicians_url}/:url',
+        component: rwc.ResourceWrapperComponentNgFactory,
+      ),
+      RouteDefinition(
+        path:
+            ':lang/${msg.home_url}/${msg.course_room_for_environmental_service_companies_url}',
+        component: crc.CourseRoomComponentNgFactory,
+      ),
+      RouteDefinition(
+        path:
+            ':lang/${msg.home_url}/${msg.course_room_for_environmental_service_companies_url}/:url',
         component: rwc.ResourceWrapperComponentNgFactory,
       ),
 

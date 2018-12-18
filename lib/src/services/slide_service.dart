@@ -30,7 +30,7 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Ställ krav på installatörens kunskap om minimering av amalgamutsläpp.'
-            ..link = '/sv/hem/kursrum-for-dentaltekniker'
+            ..link = '/sv/hem/kursrum-for-servicetekniker'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
@@ -60,7 +60,7 @@ class SlideService {
           'sv': new SlidePhrases()
             ..paragraph =
                 'Rör som kan innehålla amalgamrester ska omhändertas som farligt avfall. Var uppmärksam vid rivning, stambyte och ombyggnad.'
-            ..link = '/sv/hem/kursrum-for-servicetekniker'
+            ..link = '/sv/hem/kursrum-for-mijoserviceforetag'
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =

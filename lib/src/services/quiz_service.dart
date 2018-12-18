@@ -54,18 +54,18 @@ class QuizService extends ResourceService<Quiz> {
               'Test your knowledge from the dental teams perspective.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..type = ResourceType.quiz,
-      'Quiz för dig som är dentaltekniker': new Quiz()
+      'Quiz för dig som är servicetekniker': new Quiz()
         ..questions = []
         ..minScore = 0.9
-        ..id = 'Quiz för dig som är dentaltekniker'
+        ..id = 'Quiz för dig som är servicetekniker'
         ..icon = 'quiz'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..type = ResourceType.quiz
         ..phrases['sv'] = (new Phrases()
-          ..name = 'Quiz för dig som är dentaltekniker'
-          ..url = 'quiz-for-dentaltekniker'
+          ..name = 'Quiz för dig som är servicetekniker'
+          ..url = 'quiz-for-servicetekniker'
           ..description =
-              'Test på dina kunskaper utifrån dentalteknikerns perspektiv.'
+              'Test på dina kunskaper utifrån serviceteknikerns perspektiv.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..phrases['en'] = (new Phrases()
           ..name = 'Quiz for dental technicians'

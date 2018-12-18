@@ -129,8 +129,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_dental_technicians_url": "course-room-for-dental-technicians",
-  "@course_room_for_dental_technicians_url": {
+  "course_room_for_service_technicians_url": "course-room-for-dental-technicians",
+  "@course_room_for_service_technicians_url": {
     "type": "text",
     "placeholders": {}
   },

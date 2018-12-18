@@ -227,9 +227,9 @@ class QuestionService {
                     ..score = 0,
                   new Option()
                     ..label =
-                        'Dental- och servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.'
+                        'Servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.'
                     ..value =
-                        'Dental- och servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.'
+                        'Servicetekniker ansvarar för all dokumentation rörande amalgamavskiljare och sugsystem.'
                     ..score = 0
                 ],
           'Vad stämmer om installationen av sugslangar?': new Question()

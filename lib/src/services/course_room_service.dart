@@ -83,7 +83,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-dentaltekniker': new CourseRoom()
+      'kursrum-for-servicetekniker': new CourseRoom()
         ..backgroud_image = 'pics/dentist_responsibility.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
@@ -91,12 +91,12 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Fördelning av kvicksilver avfall'
         ]
         ..icon = 'pool'
-        ..id = 'kursrum-for-dentaltekniker'
+        ..id = 'kursrum-for-servicetekniker'
         ..img_url = 'pics/dentist_responsibility.jpg'
         ..phrases['sv'] = (new Phrases()
-          ..name = 'För dig som dentaltekniker'
-          ..description = 'Innehåll för dig som jobbar som dentaltekniker.'
-          ..url = 'kursrum-for-dentaltekniker')
+          ..name = 'För dig som servicetekniker'
+          ..description = 'Innehåll för dig som jobbar som servicetekniker.'
+          ..url = 'kursrum-for-servicetekniker')
         ..phrases['en'] = (new Phrases()
           ..name = 'Content for dental technicians'
           ..description = 'Content for you who works as a dental technician.'
@@ -105,8 +105,8 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Kvicksilver i naturen',
           'Lagar och regler',
           'Vad är vad på mottagningen?',
-          'Dentalteknikerns ansvar',
-          'Quiz för dig som är dentaltekniker'
+          'serviceteknikerns ansvar',
+          'Quiz för dig som är servicetekniker'
         ]
         ..type = ResourceType.courseRoom
         ..video_ids = [
@@ -117,19 +117,19 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-servicetekniker': new CourseRoom()
+      'kursrum-for-miljoserviceforetag': new CourseRoom()
         ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
           'Checklista varje arbetsdag och vecka',
         ]
         ..icon = 'pool'
-        ..id = 'kursrum-for-servicetekniker'
+        ..id = 'kursrum-for-miljoserviceforetag'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
-          ..url = 'kursrum-for-servicetekniker')
+          ..url = 'kursrum-for-miljoserviceforetag')
         ..phrases['en'] = (new Phrases()
           ..name = 'Content for service technicians'
           ..description =

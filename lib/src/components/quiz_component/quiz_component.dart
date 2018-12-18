@@ -141,7 +141,7 @@ class QuizComponent implements OnInit {
         ];
         break;
 
-      case 'Quiz för dig som är dentaltekniker':
+      case 'Quiz för dig som är servicetekniker':
         model?.questions = [
           questionService.data.qustions[msg.currentLanguage]
               ['Vad ska du göra med en tappad tand som är lagad med amalgam?'],

@@ -56,7 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "course_room_carousel_header" : MessageLookupByLibrary.simpleMessage("videos"),
     "course_room_for_curious_url" : MessageLookupByLibrary.simpleMessage("course-room-for-curious"),
     "course_room_for_dental_teams_url" : MessageLookupByLibrary.simpleMessage("course-room-for-dental-teams"),
-    "course_room_for_dental_technicians_url" : MessageLookupByLibrary.simpleMessage("course-room-for-dental-technicians"),
+    "course_room_for_service_technicians_url" : MessageLookupByLibrary.simpleMessage("course-room-for-dental-technicians"),
     "course_room_for_service_technicians_url" : MessageLookupByLibrary.simpleMessage("course-room-for-service-technicians"),
     "document" : m0,
     "document_url" : MessageLookupByLibrary.simpleMessage("documents"),
