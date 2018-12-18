@@ -228,4 +228,31 @@ class MessagesService {
   String get financial_support => Intl.message(
       'Finansiellt stöd av EU LIFE Program: HG-RID-LIFE LIFE15 ENV/SE/000465',
       name: 'financial_support');
+
+  String get hg_rid_life => Intl.message('HG-Rid LIFE', name: 'hg_rid_life');
+
+  String get mercury => Intl.message('kvicksilver', name: 'mercury');
+
+  String get amalgam => Intl.message('amalgam', name: 'amalgam');
+
+  String get dental_care => Intl.message('tandvården', name: 'amalgam');
+
+  String get praktikertjanst =>
+      Intl.message('Praktikertjänst', name: 'praktikertjanst');
+
+  String get sweden => Intl.message('sweden', name: 'sweden');
+
+  String get recycling => Intl.message('Recycling', name: 'recycling');
+
+  String get ivl => Intl.message('IVL', name: 'ivl');
+
+  String get amalgam_separator =>
+      Intl.message('Amalgamavskiljare', name: 'amalgam_separator');
+
+  String get environment => Intl.message('miljö', name: 'environment');
+
+  String get green_dental_care =>
+      Intl.message('Grön tandvård', name: 'green_dental_care');
+
+  String get separator => Intl.message('Avskiljare', name: 'separator');
 }
