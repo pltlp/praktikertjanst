@@ -129,13 +129,13 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "course-room-for-dental-technicians",
+  "course_room_for_service_technicians_url": "course-room-for-service-technicians",
   "@course_room_for_service_technicians_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "course-room-for-service-technicians",
-  "@course_room_for_service_technicians_url": {
+  "course_room_for_environmental_service_companies_url": "course room-for-mijoserviceforetag",
+  "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
   },
@@ -415,6 +415,66 @@
   },
   "financial_support": "Financial support by EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465",
   "@financial_support": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hg_rid_life": "HG-Rid LIFE",
+  "@hg_rid_life": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mercury": "Quicksilver",
+  "@mercury": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam": "amalgam",
+  "@amalgam": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dental_care": "dentistry",
+  "@dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "praktikertjanst": "Praktikertjänst",
+  "@praktikertjanst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sweden": "Sweden",
+  "@sweden": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recycling": "Recycling",
+  "@recycling": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ivl": "IVL",
+  "@ivl": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam_separator": "amalgam separator",
+  "@amalgam_separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "environment": "environment",
+  "@environment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green_dental_care": "Green dental care",
+  "@green_dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "separator": "separators",
+  "@separator": {
     "type": "text",
     "placeholders": {}
   }

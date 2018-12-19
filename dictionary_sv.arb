@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2018-12-13T19:18:39.632319",
+  "@@last_modified": "2018-12-18T10:13:14.159193",
   "about": "om",
   "@about": {
     "type": "text",
@@ -135,8 +135,8 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "kursrum-for-mijoserviceforetag",
-  "@course_room_for_service_technicians_url": {
+  "course_room_for_environmental_service_companies_url": "kursrum-for-mijoserviceforetag",
+  "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
   },
@@ -416,6 +416,66 @@
   },
   "financial_support": "Finansiellt stöd av EU LIFE Program: HG-RID-LIFE LIFE15 ENV/SE/000465",
   "@financial_support": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hg_rid_life": "HG-Rid LIFE",
+  "@hg_rid_life": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mercury": "kvicksilver",
+  "@mercury": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam": "amalgam",
+  "@amalgam": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dental_care": "tandvården",
+  "@dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "praktikertjanst": "Praktikertjänst",
+  "@praktikertjanst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sweden": "sweden",
+  "@sweden": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recycling": "Recycling",
+  "@recycling": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ivl": "IVL",
+  "@ivl": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam_separator": "Amalgamavskiljare",
+  "@amalgam_separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "environment": "miljö",
+  "@environment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green_dental_care": "Grön tandvård",
+  "@green_dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "separator": "Avskiljare",
+  "@separator": {
     "type": "text",
     "placeholders": {}
   }

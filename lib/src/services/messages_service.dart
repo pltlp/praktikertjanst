@@ -235,7 +235,7 @@ class MessagesService {
 
   String get amalgam => Intl.message('amalgam', name: 'amalgam');
 
-  String get dental_care => Intl.message('tandvården', name: 'amalgam');
+  String get dental_care => Intl.message('tandvården', name: 'dental_care');
 
   String get praktikertjanst =>
       Intl.message('Praktikertjänst', name: 'praktikertjanst');

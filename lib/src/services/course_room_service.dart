@@ -98,9 +98,9 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Innehåll för dig som jobbar som servicetekniker.'
           ..url = 'kursrum-for-servicetekniker')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Content for dental technicians'
-          ..description = 'Content for you who works as a dental technician.'
-          ..url = 'course-room-for-dental-technicians')
+          ..name = 'Content for service technicians'
+          ..description = 'Content for you who works as a service technician.'
+          ..url = 'course-room-for-service-technicians')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -117,24 +117,24 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-miljoserviceforetag': new CourseRoom()
+      'kursrum-for-mijoserviceforetag': new CourseRoom()
         ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
           'Checklista varje arbetsdag och vecka',
         ]
         ..icon = 'pool'
-        ..id = 'kursrum-for-miljoserviceforetag'
+        ..id = 'kursrum-for-mijoserviceforetag'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
-          ..url = 'kursrum-for-miljoserviceforetag')
+          ..url = 'kursrum-for-mijoserviceforetag')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Content for service technicians'
+          ..name = 'Content for environmental service companies'
           ..description =
-              'Content for service technicians.'
-          ..url = 'course-room-for-service-technicians')
+              'Content for environmental service companies.'
+          ..url = 'course_room_for_environmental_service_companies')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
