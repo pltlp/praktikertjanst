@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2018-12-18T10:13:14.159193",
+  "@@last_modified": "2018-12-19T14:57:51.128725",
   "about": "om",
   "@about": {
     "type": "text",
@@ -469,13 +469,38 @@
     "type": "text",
     "placeholders": {}
   },
-  "green_dental_care": "Grön tandvård",
+  "green_dental_care": "grön tandvård",
   "@green_dental_care": {
     "type": "text",
     "placeholders": {}
   },
   "separator": "Avskiljare",
   "@separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "Hg-rid LIFE | Minimera kvicksilverutsläpp i miljön från tandvården",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_1": "Hur påverkar kvicksilver naturen?",
+  "@description_sentence_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_2": "Vilka regler gäller för tandvården?",
+  "@description_sentence_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_3": "Hur kan tandvården minimera kvicksilverutsläpp i miljön?",
+  "@description_sentence_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header_description": "Det här är ett öppet och kostnadsfritt utbildningsmaterial om hur tandvården kan minimera utsläppen från dentalt amalgam. Här finns korta filmer, interaktiva artiklar och dokument.",
+  "@main_header_description": {
     "type": "text",
     "placeholders": {}
   }

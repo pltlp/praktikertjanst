@@ -134,7 +134,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_environmental_service_companies_url": "course room-for-mijoserviceforetag",
+  "course_room_for_environmental_service_companies_url": "course_room_for_environmental_service_companies",
   "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
@@ -468,13 +468,38 @@
     "type": "text",
     "placeholders": {}
   },
-  "green_dental_care": "Green dental care",
+  "green_dental_care": "green dental care",
   "@green_dental_care": {
     "type": "text",
     "placeholders": {}
   },
   "separator": "separators",
   "@separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "Hg-ride LIFE | Minimize mercury emissions in the environment from dental care",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_1": "How does mercury affect nature?",
+  "@description_sentence_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_2": "What rules apply to dental care?",
+  "@description_sentence_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_3": "How can dental care minimize mercury emissions in the environment?",
+  "@description_sentence_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header_description": "This web portal contains open and free educational material on how dental care professionals can work to minimize dental amalgam emissions. Educational material  on this page is comprised of short films, interactive articles and documents.",
+  "@main_header_description": {
     "type": "text",
     "placeholders": {}
   }

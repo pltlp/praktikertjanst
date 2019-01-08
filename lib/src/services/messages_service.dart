@@ -252,7 +252,23 @@ class MessagesService {
   String get environment => Intl.message('miljö', name: 'environment');
 
   String get green_dental_care =>
-      Intl.message('Grön tandvård', name: 'green_dental_care');
-
+      Intl.message('grön tandvård', name: 'green_dental_care');
+  
   String get separator => Intl.message('Avskiljare', name: 'separator');
+  
+  String get title => Intl.message(
+      'Hg-rid LIFE | Minimera kvicksilverutsläpp i miljön från tandvården',
+      name: 'title');
+  String get description_sentence_1 =>
+      Intl.message('Hur påverkar kvicksilver naturen?',
+          name: 'description_sentence_1');
+  String get description_sentence_2 =>
+      Intl.message('Vilka regler gäller för tandvården?',
+          name: 'description_sentence_2');
+  String get description_sentence_3 =>
+      Intl.message('Hur kan tandvården minimera kvicksilverutsläpp i miljön?',
+          name: 'description_sentence_3');
+  String get main_header_description => Intl.message(
+      'Det här är ett öppet och kostnadsfritt utbildningsmaterial om hur tandvården kan minimera utsläppen från dentalt amalgam. Här finns korta filmer, interaktiva artiklar och dokument.',
+      name: 'main_header_description');
 }
