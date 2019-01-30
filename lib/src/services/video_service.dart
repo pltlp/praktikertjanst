@@ -307,7 +307,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Varför är skötseln så viktig?'
           ..url = 'varfor-ar-skotseln-sa-viktig'
           ..description =
-              'servicetekniker understryker vikten av god skötsel av amalgamavskiljare och sugsystem.'
+              'Servicetekniker understryker vikten av god skötsel av amalgamavskiljare och sugsystem.'
           ..estimated_time_for_completion = '49 sek')
         ..phrases['en'] = (new Phrases()
           ..name = 'Why is maintenance so important?'
