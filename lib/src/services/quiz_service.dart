@@ -34,6 +34,9 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-the-public'
           ..estimated_time_for_completion = 'Ca 2 min')
         ..type = ResourceType.quiz,
+
+
+
       'Quiz för dig i tandvårdsteam': new Quiz()
         ..questions = []
         ..minScore = 0.9
@@ -48,12 +51,14 @@ class QuizService extends ResourceService<Quiz> {
               'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Quiz for dental teams'
-          ..url = 'quiz-for-dental-teams'
+          ..name = 'Quiz for dental care team personnel'
+          ..url = 'quiz-for-dental-care-team-personnel'
           ..description =
-              'Test your knowledge from the dental teams perspective.'
+              'Test your knowledge from the dental care team’s perspective.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..type = ResourceType.quiz,
+
+
       'Quiz för dig som är servicetekniker': new Quiz()
         ..questions = []
         ..minScore = 0.9
@@ -68,10 +73,10 @@ class QuizService extends ResourceService<Quiz> {
               'Test på dina kunskaper utifrån serviceteknikerns perspektiv.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Quiz for dental technicians'
-          ..url = 'quiz-for-dental-technicians'
+          ..name = 'Quiz for service technicians'
+          ..url =  'quiz-for-service-technicians'
           ..description =
-              'Test your knowledge from a dental technicians perspective'
+              'Test your knowledge from the service technician’s perspective.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..type = ResourceType.quiz
     };

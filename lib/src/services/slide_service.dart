@@ -34,8 +34,8 @@ class SlideService {
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
-                'Make sure that installers have knowledge about minimizing amalgam emissions.'
-            ..link = '/en/home/course-room-for-dental-technicians'
+                'Set standards for the installer’s awareness of minimising amalgam emissions.'
+            ..link = '/en/home/training-room-for-service-technicians'
             ..button_label = 'Read more',
         },
       new Slide()
@@ -49,8 +49,8 @@ class SlideService {
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
-                'Rinse out amalgam residues from instruments where there are amalgam separators before disinfection.'
-            ..link = '/en/home/course-room-for-dental-teams'
+                'Rinse of amalgam residue from instruments when there is an amalgam separator, disinfect sink.'
+            ..link = '/en/home/training-room-for-the-dental-care-teams'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -64,8 +64,8 @@ class SlideService {
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
-                'Tubes that may contain amalgam residues should be disposed of as hazardous waste. Pay attention during demolition, change of trunk and remodeling.'
-            ..link = '/en/home/course-room-for-service-technicians'
+                'Pipes that can contain amalgam residue must be handled as hazardous waste. Take extra care when dismantling, replacing and renewing'
+            ..link = '/en/home/training-room-for-environmental-maintenance-service-personnel'
             ..button_label = 'Read more'
         },
       new Slide()
@@ -79,8 +79,8 @@ class SlideService {
             ..button_label = 'Läs mer',
           'en': new SlidePhrases()
             ..paragraph =
-                'Clean the drain pipes to avoid drift disturbances and reduce the risk of mercury emissions'
-            ..link = '/en/home/course-room-for-dental-technicians'
+                'Decontaminate the drain pipe to avoid disruptions and minimise the risk of mercury emissions'
+            ..link = '/en/home/training-room-for-the-dental-care-teams'
             ..button_label = 'Read more'
         }
     ];

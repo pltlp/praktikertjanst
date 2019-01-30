@@ -28,8 +28,10 @@ class WordService {
         ..name = 'Amalgamavskiljare')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'A device that captures amalgam particles in the water used for dental treatments before it enters the sewer. By filtration, sedimentation, centrifugation or a combination of these, the amalgam is separated and remains in the container. The amalgam is then disposed of as hazardous waste. Amalgam separators can be built into a unit or placed to connect it to several units.'
+            'A device which collects amalgam particles in the water used in dental treatment before it reaches the drain. By means of filtration, sedimentation, centrifuging or a combination of these methods the amalgam is separated and retained in the container. The amalgam is subsequently handled as environmentally hazardous waste. Amalgam separators can be built into a unit or located where they can be connected to multiple units.'
         ..name = 'Amalgam Separator'),
+    
+    
     'Backventil': new Word()
       ..img_urls = ['pics/check_valve.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -38,8 +40,10 @@ class WordService {
         ..name = 'Backventil')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'In wet systems, there must be a non-return valve after amalgam separator to prevent back suction.'
+            'Wet systems must incorporate a check valve ahead of the amalgam separator in order to prevent backflow.'
         ..name = 'Non-return valve'),
+    
+    
     'Dentalt amalgam': new Word()
       ..img_urls = ['pics/dental_amalgam.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -48,8 +52,10 @@ class WordService {
         ..name = 'Dentalt amalgam')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Amalgam, which until 2009 was permitted as dental fillings in Sweden. Consists of mercury (40-50%), silver (20-35%), tin (12-15%) copper (5-15%), zinc (2%).'
+            'Amalgam which, up until 2009, was permitted for use as dental filling material in Sweden. Consists of mercury (40-50%), silver (20-35%), tin (12-15%), copper (5-15%) and zinc (2%)'
         ..name = 'Dental amalgam'),
+    
+    
     'Diskbänksavskiljare': new Word()
       ..img_urls = ['pics/sink_separator.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -58,8 +64,11 @@ class WordService {
         ..name = 'Diskbänksavskiljare')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Amalgam separators that capture amalgam particles in the water used for washing instruments and other equipment that have been in contact with amalgam before washing / sterilization in the disinfector and autoclave.'
+            'A dental amalgam separator which captures amalgam particles in the water which is used in the cleaning of dental instruments and other equipment which has been in contact with amalgam prior to being washed/sterilised in a disinfector and autoclave.'
         ..name = 'Sink trap'),
+    
+    
+    
     'Föravskiljare': new Word()
       ..img_urls = ['pics/amalgam_pre_separators.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -68,8 +77,11 @@ class WordService {
         ..name = 'Föravskiljare')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Installed before amalgam separator to capture larger particles that could block subsequent amalgam separators.'
+            'Pre-separator Installed ahead of the dental amalgam separator in order to collect large particles which have the potential to block the dental amalgam separator which it feeds.'
         ..name = 'Pre-separator'),
+    
+    
+    
     'Godkänd avfallsbehållare': new Word()
       ..img_urls = ['pics/approved_waste_container.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -78,8 +90,11 @@ class WordService {
         ..name = 'Godkänd avfallsbehållare')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
-        ..name = 'Approved waste bin'),
+            'Containers for hazardous waste such as mercury must be UN-certified and fulfil requirements for transportation of hazardous waste. The UN number is an identification number for hazardous materials.'
+        ..name = 'Approved waste container'),
+    
+    
+    
     'Grovsil / Salivsugfilter / Partikelfälla': new Word()
       ..img_urls = ['pics/particle_filter.png']
       ..phrases['sv'] = (new Phrases()
@@ -88,8 +103,10 @@ class WordService {
         ..name = 'Grovsil / Salivsugfilter / Partikelfälla')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Containers for hazardous waste such as mercury must be UN approved and comply with the requirements for the transport of hazardous waste. UN number is an identification number for dangerous goods.'
-        ..name = 'Coarse silk / Saliva filter / Particle trap'),
+            'In order to improve the functioning of the amalgam separator and remove large solid particles, the unit’s suction unit is equipped with a coarse strainer/saliva suction filter or a particulate trap.  The latter is of the disposable variety.'
+        ..name = 'Coarse strainer/saliva suction filter/particle trap'),
+   
+   
     'Kompressor': new Word()
       ..img_urls = ['pics/compressor.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -98,8 +115,11 @@ class WordService {
         ..name = 'Kompressor')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Compressor is a unit that extracts air from the environment, compresses it with the aid of an engine and stores the compressed air in a tank (pressure vessel / container). The compressed air can then be used if necessary by dragging through air ducts / hoses to the place where, for example, The dental equipment is located. Compressed air is used, for example. a. to drive turbines / hand / angle piece and to blow clean during treatments.'
+            'A compressor is a unit which takes air from its surroundings, compresses it using a motor and stores it in a tank (pressurised). The compressed air can then be used when needed via an air hose leading to where e.g. dental equipment is located. Compressed air is used to power turbines and implements and to clear saliva and debris during treatment.'
         ..name = 'Compressor'),
+    
+    
+    
     'Pumpbox': new Word()
       ..img_urls = ['pics/pumpbox.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -108,8 +128,10 @@ class WordService {
         ..name = 'Pumpbox')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Installed to move water, from secretion vessel / buffer tank or where flow drops are not enough.'
-        ..name = 'Pumpbox'),
+            'Installed in order to transfer water from a secretion tank/buffer tank or where the flow of water is insufficient.'
+        ..name = 'Pump box'),
+    
+    
     'Sanering': new Word()
       ..img_urls = ['pics/decontamination.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -118,8 +140,10 @@ class WordService {
         ..name = 'Sanering')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'During a cleanup, mercury contaminated drainage pipes and water locks and floor wells are emptied and cleaned. Amalgam sludge and rinse water are disposed of as hazardous waste by companies authorized to transport this. The pipes are never completely clear from mercury and must therefore be labeled to be disposed of as hazardous waste upon dismantling. Operations must be done on a regular basis. When a reception is laid down, a so-called shutdown sanitation is made, which means that the suction lines and plugs are again discharged so that no mercury will drain into the drain.'
+            'Decontamination involves pressure-washing drainpipes and emptying/cleaning water locks and floor drains contaminated with mercury,  Amalgam slurry and water from the pressure washer are treated as hazardous waste by companies authorised to transport them. The pipe is never quite free of mercury and therefore has to be labelled for handling as hazardous waste when dismantled. Decontamination must be performed regularly. When a dental practice closes down, a final decontamination is performed, which involves dismantling suction pipes and plugging rinsing points to prevent mercury getting into the drains.'
         ..name = 'Decontamination'),
+    
+    
     'Saneringsprotokoll': new Word()
       ..img_urls = ['pics/remidiation_protocol.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -128,8 +152,10 @@ class WordService {
         ..name = 'Saneringsprotokoll')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Documentation from the company that carried out the remediation, including method used and amount of mercury collected appears. The documentation also shows how the hazardous waste has been disposed of, that is to say. that the carrier has a permit and that it has been submitted to a hazardous waste facility.'
-        ..name = 'Remediation protocols'),
+            'Documentation recorded by the practice concerning decontamination carried out, including the method used and the quantity of mercury collected. The documentation also covers how hazardous waste is dealt with, i.e. that the transporter is authorised and that it is taken to a facility licensed to receive hazardous waste.'
+        ..name = 'Decomtamination protocol'),
+    
+    
     'Torrt sugsystem': new Word()
       ..img_urls = ['pics/amalgam_separators_dry_system.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -138,9 +164,10 @@ class WordService {
         ..name = 'Torrt sugsystem')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'In dry suction systems, the separation of liquid and air occurs in a liquid separator (secretion separator) located in the unit. The amalgam separator is located in or adjacent to the unit. Outgoing liquid after the amalgam separator connects directly to the property'
-            's wastewater system, often to a floor well. The air is sucked from the liquid separator to the suction engine, which serves several units. The suction engine can be located on the wind, the same level as the unit or on the basement level.'
+            'In the case of a dry suction system the separation of liquid and air takes place in a liquid separator (secretion separator) located in the unit. The amalgam separator is located at, or is connected to, the unit. Outgoing liquid after the amalgam separator is directly connected to the facility’s waste water drain, typically a floor drain. The air is extracted from the liquid separator by a suction motor which serves multiple units. The suction motor may be situated in the loft, on the same floor as the unit or in the basement.'
         ..name = 'Dry suction system'),
+    
+    
     'Utjämningskärl': new Word()
       ..img_urls = ['pics/surge_vessel_2.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -149,8 +176,10 @@ class WordService {
         ..name = 'Utjämningskärl')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Ten-liter equalization vessels are often installed in the sink bin. It has no effect on amalgam separation, but allows you to flush with a higher flow. Using a leveling vessel avoids water standing in the sink.'
-        ..name = 'Buffer vessel'),
+            'A 10-litre surge tank is typically installed in connection with a sink trap. This has no effect on the amalgam separation process, but allows for sluicing at a higher flow rate. The use of a surge tank makes it possible to avoid water remaining in the sink.'
+        ..name = 'Surge tank'),
+    
+    
     'Vattenlås': new Word()
       ..img_urls = ['pics/siphon.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -159,9 +188,10 @@ class WordService {
         ..name = 'Vattenlås')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'A section of a water pipe that is bent so that a quantity of water stays in the bow, due to gravity, and separates the air masses on both sides of the lock. The water in the water trap thus prevents bad odors, diseases and waste from the drainage system. At a dental clinic there is a water trap on the washbasin in, for example, treatment rooms, sterile and on the patient'
-            's toilet.'
-        ..name = 'Siphon'),
+            'A section of a water pipe which is curved such that a quantity of water comes to a standstill in the bend by means of gravity and separates the pockets of air on either side of the trap. In this way the water in the water trap prevents unpleasant odours, disease and vermin from passing through the drainage system. Water traps in dental practices are fitted in washbasins e.g. in the treatment room, sterilisation areas and in the patient toilet.'
+        ..name = 'Water trap'),
+    
+    
     'Vattenprov': new Word()
       ..img_urls = ['pics/water_sample.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -170,8 +200,10 @@ class WordService {
         ..name = 'Vattenprov')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Analysis of mercury emissions in wastewater. The sample is taken after the amalgam separator.'
-        ..name = 'Water sample'),
+            'Analysis of mercury emissions in waste water. Samples are taken after the water has passed through the amalgam separator.'
+        ..name = 'Water sampling'),
+    
+    
     'Vått sugsystem': new Word()
       ..img_urls = [
         'pics/wet_suction_system.jpg',
@@ -186,8 +218,7 @@ class WordService {
         ..name = 'Vått sugsystem')
       ..phrases['en'] = (new Phrases()
         ..description =
-            'Several treatment chairs are connected to a sedimentary amalgam separator. Air and secretion are diverted into a separate vacuum tube system from one or more treatment chairs to a central liquid separator (secretion vessel) where air and liquid are separated. The central unit is often placed in the floor below the clinic. The liquid is diverted to amalgam separator and possibly via buffer tank to the property'
-            's wastewater drain. The air is sucked to the inlet suction motor.'
-        ..name = 'Wet suction system'),
+            'In a wet suction system, one or more treatment chairs are linked to a vacuum pipe system in which air and liquids are carried to the central suction system. Air and water are separated in the equipment. Water is passed onwards via the amalgam separator and the air via the suction motor. This type of suction equipment can be installed on the same floor as the clinic, but installation is recommended on the floor below to ensure the best possible operating conditions.'
+        ..name = 'Wet section system'),
   };
 }

@@ -1,5 +1,5 @@
 {
-  "about": "about",
+  "about": "om",
   "@about": {
     "type": "text",
     "placeholders": {}
@@ -9,22 +9,22 @@
     "type": "text",
     "placeholders": {}
   },
-  "about_url": "about",
+  "about_url": "om",
   "@about_url": {
     "type": "text",
     "placeholders": {}
   },
-  "archive": "archive",
+  "archive": "Archive",
   "@archive": {
     "type": "text",
     "placeholders": {}
   },
-  "archive_url": "archive",
+  "archive_url": "Archive",
   "@archive_url": {
     "type": "text",
     "placeholders": {}
   },
-  "cancel": "cancel",
+  "cancel": "quit",
   "@cancel": {
     "type": "text",
     "placeholders": {}
@@ -39,67 +39,67 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_1": "Amalgam may only be used in predosed, encapsulated form.",
+  "contact_bullet_1": "amalgam should only be used in pre-dosed, encapsulated form.",
   "@contact_bullet_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_2": "children under the age of 15 and pregnant or breastfeeding should not be treated with amalgam unless it is considered necessary for medical purposes.",
+  "contact_bullet_2": "children under the age of 15 and pregnant or breastfeeding women may not be treated with dental amalgam unless this is considered to be absolutely necessary on medical grounds",
   "@contact_bullet_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_3": "amalgam separators with certain efficacy must be available at dental establishments where amalgam is used or amalgam fillings are removed",
+  "contact_bullet_3": "amalgam separators with a specified level of efficiency must be installed where dental equipment in which amalgam or amalgam fillings are used",
   "@contact_bullet_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_4": "The EU Commission will report by mid-2020 on the possibility of long-term phasing out of amalgam by 2030.",
+  "contact_bullet_4": "the EU Commission report on the possibility of long-term phasing-out of amalgam by 2030 no later than mid-2020.",
   "@contact_bullet_4": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_1": "Praktikertjänst has, in cooperation with Sweden Recycling and IVL Swedish Environment Institute, initiated the HG-Rid LIFE project, which has received financial support from the LIFE - EU Environment and Climate Program. Through this project, we take our responsibility for a sustainable society. The main objective of the project is to minimize the release of mercury from dental care in Sweden and in the long term in the rest of the EU.",
+  "contact_pragraph_1": "Internship service has started a project called HG-Rid LIFE along with Sweden Recycling and the IVL Swedish Environmental Research Institute, with funding from LIFE, the EU action program for the environment and climate. We are taking responsibility for a sustainable society through the project. The main purpose of the project is to minimize the emission of mercury from dental clinics in Sweden, and in the longer term throughout the European Union.",
   "@contact_pragraph_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_2": "Mercury is one of the most serious environmental hazards, and despite the fact that amalgam was banned in 2009, there are still only few dental surgeries that have zero emissions of mercury from amalgam. It is still estimated that up to 15 tonnes of mercury is present in the teeth of the Swedish population. The removal of amalgam fillings will therefore be done for many years to come. The amalgam separators catch up most, but the effectiveness depends, among other things, on how well equipment is taken care of. The finest amalgam particles are also not caught by the separators. There is also a risk that mercury from the drainage pipes leaks into the sewage, which needs to be monitored. The risk of mercury being stored in the pipes is particularly high in those dental care receptions that were established before amalgam separators were required or when older separators were still in use.",
+  "contact_pragraph_2": "Mercury is one of the most dangerous environmental toxins, and despite being banned in 2009, only a few dental practices have achieved zero emission or mercury from amalgam. Up to 15 tonnes of mercury are estimated to be found in the teeth of the Swedish population. The drilling-out of amalgam fillings will therefore be common to many years yet. Amalgam separators catch most of the mercury, but efficiency depends on such factors as maintenance. Neither are the finest amalgam particles caught in the separators. There is also a risk that mercury from drainpipes leaks into waste water. The risk of mercury accumulating in the pipes is especially high in practices where dental care was provided before the requirement for separators was introduced, and where older separators with poor function are still in use.",
   "@contact_pragraph_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_5": "Within the EU, there is more than 1 000 ton of mercury in the mouths of the population. Dental amalgam is one of the main sources of mercury waste within EU.",
+  "contact_pragraph_5": "Over 1,000 tonnes of mercury are estimated to be in the mouths of EU citizens. Dental amalgam is one of the main uses of mercury in the EU.",
   "@contact_pragraph_5": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_3": "EU mercury regulations took effect on January 1, 2018. It includes:",
+  "contact_pragraph_3": "An EU program on mercury came into effect on 1 January 2018. Its aims include:",
   "@contact_pragraph_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_4": "This project is a contribution to the National Environmental Quality Objective, Non-toxic Environment, and to the UN Global Development Goal Agenda 2030 (Objective 6 Clean Water and Sanitation).",
+  "contact_pragraph_4": "The project is a contribution to the national environmental quality target 'Non-toxic Environment' and to the UN's global development goal, Agenda 2030 (Goal 6, Clean Water and Sanitation).",
   "@contact_pragraph_4": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_1": "to make a suggestions for guidance concerning dental care that can be implemented in Sweden and inspire guidance in rest of EU",
+  "contact_project_goal_1": "make suggestions for guidelines for control within dental care that can be implemented in Sweden, and inspire guidelines within the rest of the EU",
   "@contact_project_goal_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_2": "develop new methods of remediation that are efficient, user-friendly and cost-effective",
+  "contact_project_goal_2": "develop new methods for efficient, user-friendly and cost-effective decontamination",
   "@contact_project_goal_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_3": "increase knowledge and awareness of how mercury from amalgam affects the environment. This web portal is part of that work.",
+  "contact_project_goal_3": "increase awareness of how mercury from amalgam affects the environment. This web portal is part of those efforts.",
   "@contact_project_goal_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_us": "Contact Us",
+  "contact_us": "Contact us",
   "@contact_us": {
     "type": "text",
     "placeholders": {}
@@ -119,27 +119,27 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_curious_url": "course-room-for-curious",
+  "course_room_for_curious_url": "training-room-for-the-curious",
   "@course_room_for_curious_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_dental_teams_url": "course-room-for-dental-teams",
+  "course_room_for_dental_teams_url": "training-room-for-the-dental-care-teams",
   "@course_room_for_dental_teams_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "course-room-for-service-technicians",
+  "course_room_for_service_technicians_url": "training-room-for-service-technicians",
   "@course_room_for_service_technicians_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_environmental_service_companies_url": "course_room_for_environmental_service_companies",
+  "course_room_for_environmental_service_companies_url": "training-room-for-environmental-maintenance-service-personnel",
   "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
   },
-  "document_url": "documents",
+  "document_url": "Document",
   "@document_url": {
     "type": "text",
     "placeholders": {}
@@ -159,17 +159,17 @@
     "type": "text",
     "placeholders": {}
   },
-  "french": "french",
+  "french": "French",
   "@french": {
     "type": "text",
     "placeholders": {}
   },
-  "german": "german",
+  "german": "German",
   "@german": {
     "type": "text",
     "placeholders": {}
   },
-  "good_examples": "good examples",
+  "good_examples": "good example",
   "@good_examples": {
     "type": "text",
     "placeholders": {}
@@ -179,7 +179,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "language": "language",
+  "language": "English",
   "@language": {
     "type": "text",
     "placeholders": {}
@@ -189,32 +189,32 @@
     "type": "text",
     "placeholders": {}
   },
-  "library": "library",
+  "library": "Library",
   "@library": {
     "type": "text",
     "placeholders": {}
   },
-  "library_button_tooltip": "Here are all our course modules are collected!",
+  "library_button_tooltip": "All the course materials can be found here in one place!",
   "@library_button_tooltip": {
     "type": "text",
     "placeholders": {}
   },
-  "library_header": "Here we have all material collected!",
+  "library_header": "All the material can be found in once place here!",
   "@library_header": {
     "type": "text",
     "placeholders": {}
   },
-  "library_url": "library",
+  "library_url": "Library",
   "@library_url": {
     "type": "text",
     "placeholders": {}
   },
-  "main_header": "A small effort can make a big difference!",
+  "main_header": "A little effort can make a big difference!",
   "@main_header": {
     "type": "text",
     "placeholders": {}
   },
-  "menu": "menu",
+  "menu": "MENU",
   "@menu": {
     "type": "text",
     "placeholders": {}
@@ -224,32 +224,32 @@
     "type": "text",
     "placeholders": {}
   },
-  "project_should": "This project will:",
+  "project_should": "The project will:",
   "@project_should": {
     "type": "text",
     "placeholders": {}
   },
-  "quick_actions_url": "rapid-activities",
+  "quick_actions_url": "fast activities",
   "@quick_actions_url": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_fail_text_1": "Unfortunately, you do not have enough correct answers to get a passing grade.",
+  "quiz_fail_text_1": "Sorry! You do not have enough correct answers to pass the test!",
   "@quiz_fail_text_1": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_fail_text_2": "Read some more of our material and try again.",
+  "quiz_fail_text_2": "Read through and try again.",
   "@quiz_fail_text_2": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_fail_text_3": "You need to answer correctly ",
+  "quiz_fail_text_3": "You must answer correctly for ",
   "@quiz_fail_text_3": {
     "type": "text",
     "placeholders": {}
   },
-  "of_given_questions": "of the questions.",
+  "of_given_questions": "of the questions",
   "@of_given_questions": {
     "type": "text",
     "placeholders": {}
@@ -259,12 +259,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_agree_terms": "I agree that Praktikertjänst AB may save my email address for up to 12 months. The e-mail address will not be used for marketing purposes or passed on to third parties.",
+  "quiz_success_agree_terms": "I hereby consent to Praktikertjänst AB saving my email address for up to 12 months. Your email address will not be used for promotional purposes or disclosed to any third party.",
   "@quiz_success_agree_terms": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_mail_sent_text": "We will keep in touch.",
+  "quiz_success_mail_sent_text": "We will check.",
   "@quiz_success_mail_sent_text": {
     "type": "text",
     "placeholders": {}
@@ -274,32 +274,32 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_1": "As part of the Hg-rid project, we want to evaluate the value of this portal.",
+  "quiz_success_text_1": "As part of the Hg-rid project, we want to evaluate the value of the portal.",
   "@quiz_success_text_1": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_2": "Would you like to answer few questions via your email in a few months? If so, enter your email address here.",
+  "quiz_success_text_2": "Would you answer a few questions via your email in a few months time? If yes, please enter your mail address here.",
   "@quiz_success_text_2": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_title": "Congratulations, you have passed the test!",
+  "quiz_success_title": "Well done, you passed the test!",
   "@quiz_success_title": {
     "type": "text",
     "placeholders": {}
   },
-  "pass_limt": "Limit for for passing grade: ",
+  "pass_limt": "Minimum to pass: ",
   "@pass_limt": {
     "type": "text",
     "placeholders": {}
   },
-  "read_more_about_this_project_at": "Read more about this project at",
+  "read_more_about_this_project_at": "Read more about the project at",
   "@read_more_about_this_project_at": {
     "type": "text",
     "placeholders": {}
   },
-  "redo_quiz": "redo",
+  "redo_quiz": "Change",
   "@redo_quiz": {
     "type": "text",
     "placeholders": {}
@@ -319,17 +319,17 @@
     "type": "text",
     "placeholders": {}
   },
-  "swedish": "swedish",
+  "swedish": "Swedish",
   "@swedish": {
     "type": "text",
     "placeholders": {}
   },
-  "type_here_to_search": "enter your search here...",
+  "type_here_to_search": "Enter here to search ...",
   "@type_here_to_search": {
     "type": "text",
     "placeholders": {}
   },
-  "word_list": "dictionary",
+  "word_list": "Glossary",
   "@word_list": {
     "type": "text",
     "placeholders": {}
@@ -341,7 +341,7 @@
       "howMany": {}
     }
   },
-  "word": "{howMany, plural, =1 {word} other {words}}",
+  "word": "{howMany, plural, =1 {word} other {word}}",
   "@word": {
     "type": "text",
     "placeholders": {
@@ -353,22 +353,22 @@
     "type": "text",
     "placeholders": {}
   },
-  "go_back_to_wordlist": "go back to the glossary",
+  "go_back_to_wordlist": "go back to glossary",
   "@go_back_to_wordlist": {
     "type": "text",
     "placeholders": {}
   },
-  "check_your_answers": "correct answers",
+  "check_your_answers": "resulted",
   "@check_your_answers": {
     "type": "text",
     "placeholders": {}
   },
-  "correct": "Sant",
+  "correct": "true",
   "@correct": {
     "type": "text",
     "placeholders": {}
   },
-  "not_correct": "False",
+  "not_correct": "false",
   "@not_correct": {
     "type": "text",
     "placeholders": {}
@@ -388,12 +388,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "reading": "reading",
+  "reading": "Reading",
   "@reading": {
     "type": "text",
     "placeholders": {}
   },
-  "video": "Film",
+  "video": "Video",
   "@video": {
     "type": "text",
     "placeholders": {}
@@ -403,17 +403,17 @@
     "type": "text",
     "placeholders": {}
   },
-  "continue_label": "continue",
+  "continue_label": "Continue",
   "@continue_label": {
     "type": "text",
     "placeholders": {}
   },
-  "cancel_label": "cancel",
+  "cancel_label": "quit",
   "@cancel_label": {
     "type": "text",
     "placeholders": {}
   },
-  "financial_support": "Financial support by EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465",
+  "financial_support": "Funded by the EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465",
   "@financial_support": {
     "type": "text",
     "placeholders": {}
@@ -423,7 +423,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "mercury": "Quicksilver",
+  "mercury": "Mercury",
   "@mercury": {
     "type": "text",
     "placeholders": {}
@@ -433,7 +433,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "dental_care": "dentistry",
+  "dental_care": "dental care",
   "@dental_care": {
     "type": "text",
     "placeholders": {}
@@ -458,12 +458,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "amalgam_separator": "amalgam separator",
+  "amalgam_separator": "Amalgam separator",
   "@amalgam_separator": {
     "type": "text",
     "placeholders": {}
   },
-  "environment": "environment",
+  "environment": "Environment",
   "@environment": {
     "type": "text",
     "placeholders": {}
@@ -473,12 +473,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "separator": "separators",
+  "separator": "Separator",
   "@separator": {
     "type": "text",
     "placeholders": {}
   },
-  "title": "Hg-ride LIFE | Minimize mercury emissions in the environment from dental care",
+  "title": "Hg-rid LIFE | Minimize mercury emissions to the environment from dental care",
   "@title": {
     "type": "text",
     "placeholders": {}
@@ -488,17 +488,17 @@
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_2": "What rules apply to dental care?",
+  "description_sentence_2": "What rules apply to the dental industry?",
   "@description_sentence_2": {
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_3": "How can dental care minimize mercury emissions in the environment?",
+  "description_sentence_3": "How can the dental industry minimize mercury emissions to the environment?",
   "@description_sentence_3": {
     "type": "text",
     "placeholders": {}
   },
-  "main_header_description": "This web portal contains open and free educational material on how dental care professionals can work to minimize dental amalgam emissions. Educational material  on this page is comprised of short films, interactive articles and documents.",
+  "main_header_description": "This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. There are short video clips, interactive articles and documents.",
   "@main_header_description": {
     "type": "text",
     "placeholders": {}

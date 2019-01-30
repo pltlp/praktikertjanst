@@ -25,7 +25,7 @@ class RiseService extends ResourceService<Rise> {
         ..phrases['en'] = (new Phrases()
           ..name = 'Mercury in nature'
           ..description =
-              'Article about what mercury is and how it affects nature.'
+              'Article on what mercury is and how it affects nature.'
           ..url = 'mercury-in-nature'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
@@ -33,6 +33,10 @@ class RiseService extends ResourceService<Rise> {
             'https://hg-rid.eu/rise/kvicksilver-i-naturen/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
+
+
+
+
       'Lagar och regler': new Rise()
         ..icon = 'article'
         ..id = 'Lagar och regler'
@@ -45,16 +49,19 @@ class RiseService extends ResourceService<Rise> {
               'Artikel om de lagar och regler som styr hanteringen av amalgam.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Laws and regulations'
-          ..url = 'laws-and-regulations'
+          ..name = 'Laws and rules'
+          ..url = 'laws-and-rules'
           ..description =
-              'Article about the laws and regulations governing the management of amalgam.'
+              'Article on the laws and rules that govern the handling of amalgam.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/laws-and-regulations/content/index.html',
+
+
+
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'article'
         ..id = 'Vad är vad på mottagningen?'
@@ -66,15 +73,18 @@ class RiseService extends ResourceService<Rise> {
           ..description = 'Översikt av utrustning på mottagningen.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'At the dental reception'
-          ..url = 'everview-of-dentist-equipment'
-          ..description = 'Overview over equipment'
+          ..name = 'At the practice'
+          ..url = 'whats-what-in-the-practices'
+          ..description = 'Overview of equipment at practices.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
+
+
+
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'article'
         ..id = 'Tandvårdsteamets ansvar '
@@ -86,38 +96,43 @@ class RiseService extends ResourceService<Rise> {
           ..description = 'Här får du instruktioner om tandvårdsteamets ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Dentalcare teams responsibility'
-          ..url = 'dentalcare-teams-responsibility'
+          ..name = 'The dental care team’s responsibilities'
+          ..url = 'the-dental-care-teams-responsibilities'
           ..description =
-              'Here you will find instructions on the dentalcare team'
-              's responsibility.'
+              'Instructions on the dental care team’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
+
+
+
       'serviceteknikerns ansvar': new Rise()
         ..icon = 'article'
         ..id = 'serviceteknikerns ansvar'
         ..img_url = 'pics/dentist_responsibility.jpg'
         ..type = ResourceType.rise
         ..phrases['sv'] = (new Phrases()
-          ..name = 'serviceteknikerns ansvar'
+          ..name = 'Serviceteknikerns ansvar'
           ..url = 'serviceteknikerns-ansvar'
           ..description = 'Här får du instruktioner om serviceteknikerns ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Dental technicians responsibility'
-          ..url = 'dental-technicians-responsibility'
+          ..name = 'The service engineer’s responsibilities'
+          ..url = 'the-service-engineers-responsibilities'
           ..description =
-              'Here you will find instructions on the dental technicians responsibilities.'
+              'Instructions on the service technician’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/serviceteknikerns-ansvar/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
+
+
+
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'article'
         ..id = 'Instruktioner för miljöserviceföretag'
@@ -130,10 +145,10 @@ class RiseService extends ResourceService<Rise> {
               'Här får du instruktioner om miljöserviceföretagens ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Instructions for environmental service companies'
-          ..url = 'instructions-for-environmental-service-companies'
+          ..name = 'What an environmental maintenance service does'
+          ..url = 'instructions-for-environmental-maintenance-services'
           ..description =
-              'Here you will find instructions for environmental service companies and responsibility.'
+              'Instructions on an environmental maintenance service’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..type = ResourceType.rise
         ..url['sv'] =
