@@ -124,6 +124,24 @@ class AppComponent {
 
   String _capitalize(String value) =>
       '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
+  void _generateMetaDescription() {
+    final description = new MetaElement()
+      ..content =
+          '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}';
+
+    document.head.append(description);
+  }
+
+   void _generateTitle() {
+    final title = new TitleElement()
+      ..innerHtml =
+          '${msg.title}';
+
+    document.head.append(title);
+  }
+
+
+
   Future<void> _loadResources() async {
     loaded = false;
 
@@ -171,15 +189,24 @@ class AppComponent {
     await questionService.fetchAll();
     routes.init(msg);
 
+    _generateMetaDescription();
+    _generateTitle();
+
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
         MenuItem(_capitalize('svenska'),
             action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
         MenuItem(_capitalize('english'),
             action: () => window.location.href = '${Uri.base.origin}/en/home'),
-        MenuItem(_capitalize('français'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false),
-        MenuItem(_capitalize('español'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false),
-        MenuItem(_capitalize('deutsch'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false)
+        MenuItem(_capitalize('français'),
+            action: () => window.location.href = '${Uri.base.origin}/en/start',
+            enabled: false),
+        MenuItem(_capitalize('español'),
+            action: () => window.location.href = '${Uri.base.origin}/en/start',
+            enabled: false),
+        MenuItem(_capitalize('deutsch'),
+            action: () => window.location.href = '${Uri.base.origin}/en/start',
+            enabled: false)
       ])
     ]);
 

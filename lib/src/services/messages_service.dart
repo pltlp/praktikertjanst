@@ -272,3 +272,4 @@ class MessagesService {
       'Det här är ett öppet och kostnadsfritt utbildningsmaterial om hur tandvården kan minimera utsläppen från dentalt amalgam. Här finns korta filmer, interaktiva artiklar och dokument.',
       name: 'main_header_description');
 }
+
