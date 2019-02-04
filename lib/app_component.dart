@@ -127,20 +127,16 @@ class AppComponent {
   void _generateMetaDescription() {
     final description = new MetaElement()
       ..content =
-          '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}';
-
+          '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}'
+      ..name = 'description';
     document.head.append(description);
   }
 
-   void _generateTitle() {
-    final title = new TitleElement()
-      ..innerHtml =
-          '${msg.title}';
+  void _generateTitle() {
+    final title = new TitleElement()..innerHtml = '${msg.title}';
 
     document.head.append(title);
   }
-
-
 
   Future<void> _loadResources() async {
     loaded = false;
