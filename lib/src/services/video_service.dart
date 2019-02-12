@@ -25,15 +25,38 @@ class VideoService extends ResourceService<Video> {
         ..phrases['en'] = (new Phrases()
           ..name = 'Our experience of decontamination'
           ..url = 'decontamination'
-          ..description = 'Susann Balzar reflects on decontamination of her practice.'
+          ..description =
+              'Susann Balzar reflects on decontamination of her practice.'
           ..estimated_time_for_completion = '1 min 12 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Notre expérience en décontamination'
+          ..url = 'decontamination'
+          ..description =
+              'Susann Balzar parle de la décontamination de son cabinet.'
+          ..estimated_time_for_completion = '1 min 12 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Nuestra experiencia en el proceso de descontaminación'
+          ..url = 'descontaminación'
+          ..description =
+              'Susann Balzar aporta su punto de vista sobre el procedimiento de descontaminación de su clínica.'
+          ..estimated_time_for_completion = '1 min 12 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Unsere Erfahrungen mit Dekontamination'
+          ..url = 'dekontamination'
+          ..description =
+              'Susann Balzar berichtet über die Dekontamination in ihrer Praxis.'
+          ..estimated_time_for_completion = '1 Min. 12 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299921184?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0',
-
-
       'Så minimerar vi utsläppen': new Video()
         ..icon = 'video'
         ..id = 'Så minimerar vi utsläppen'
@@ -50,15 +73,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Claes Karlsson tells us about maintenance in the practice.'
           ..estimated_time_for_completion = '1 min 12 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Comment réduire les émissions'
+          ..url = 'comment-reduire-les-emissions'
+          ..description =
+              'Claes Karlsson nous parle de la maintenance dans les cabinets.'
+          ..estimated_time_for_completion = '1 min 12 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Cómo minimizar las emisiones'
+          ..url = 'como-minimizar-emisiones'
+          ..description =
+              'Claes Karlsson nos habla sobre el mantenimiento de la clínica.'
+          ..estimated_time_for_completion = '1 min 12 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'So werden Emissionen minimiert'
+          ..url = 'so-werden-emissionen-minimiert'
+          ..description =
+              'Claes Karlsson berichtet von der Wartung in der Praxis.'
+          ..estimated_time_for_completion = '1 Min. 12 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299920998?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0',
-
-
-
-
       'Så går en installation till': new Video()
         ..icon = 'video'
         ..id = 'Så går en installation till'
@@ -75,15 +118,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Anders and Patrik explain installation of amalgam separators and suction system.'
           ..estimated_time_for_completion = '1 min 35 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Installation'
+          ..url = 'installation'
+          ..description =
+              'Anders et Patrick expliquent l’installation des séparateurs d’amalgames et les systèmes d’aspiration.'
+          ..estimated_time_for_completion = '1 min 35 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Instalación'
+          ..url = 'instalacion'
+          ..description =
+              'Anders y Patric explican cómo es el procedimiento de la instalación de sistemas de separación de amalgama y de succión.'
+          ..estimated_time_for_completion = '1 min 35 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Installation'
+          ..url = 'installation'
+          ..description =
+              'Anders und Patrik erklären Installation von Amalgamabscheidern und Absauganlagen.'
+          ..estimated_time_for_completion = '1 Min. 35 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299920834?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0',
-
-
-
-
       'Att lämna amalgam bakom sig': new Video()
         ..icon = 'video'
         ..id = 'Att lämna amalgam bakom sig'
@@ -100,14 +163,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Claes Karlsson gives his views on how the industry tackled the amalgam ban that came into effect in Sweden in 2009.'
           ..estimated_time_for_completion = '1 min 1 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Arrêter l’utilisation d’amalgames'
+          ..url = 'arreter-amalgames'
+          ..description =
+              'Claes Karlsson donne son avis sur la manière dont le secteur a abordé l’interdiction des amalgames entrée en vigueur en Suède en 2009.'
+          ..estimated_time_for_completion = '1 min 1 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Dejar de usar la amalgama'
+          ..url = 'dejar-de-usar-la-amalgama'
+          ..description =
+              'Claes Karlsson aporta su punto de vista sobre cómo la industria está abordando la prohibición de la amalgama que entró en vigor en Suecia en el año 2009.'
+          ..estimated_time_for_completion = '1 min 1 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Verwendung von Amalgam einstellen'
+          ..url = 'schluss-mit-amalgam'
+          ..description =
+              'Claes Karlsson schildert seine Ansichten über den Umgang der Industrie mit dem Amalgamverbot in Schweden im Jahr 2009.'
+          ..estimated_time_for_completion = '1 Min. 1 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299908976?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0',
-
-
-
       'Rutiner vid patientbehandling': new Video()
         ..icon = 'video'
         ..id = 'Rutiner vid patientbehandling'
@@ -124,14 +208,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'A look at the routines for amalgam handling during a patient’s appointment.'
           ..estimated_time_for_completion = '42 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Routines de traitement des patients'
+          ..url = 'routines-traitement-patients'
+          ..description =
+              'Présentation des routines pour la gestion des amalgames lors des rendez-vous des patients.'
+          ..estimated_time_for_completion = '42 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Rutinas de tratamiento para los pacientes'
+          ..url = 'rutinas-de-tratamiento-para-los-pacientes'
+          ..description =
+              'Un vistazo a las rutinas de gestión de la amalgama durante las citas de los pacientes.'
+          ..estimated_time_for_completion = '42 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Routinen bei der Behandlung von Patienten'
+          ..url = 'routinen-bei-der-behandlung-von-patienten'
+          ..description =
+              'Ein Blick auf die Routinen im Umgang mit Amalgam bei einem Patiententermin.'
+          ..estimated_time_for_completion = '42 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299910154?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0',
-
-
-
       'Skötsel av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Skötsel av amalgamavskiljare'
@@ -148,14 +253,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'A look at the routines for maintenance of amalgam separators and suction systems.'
           ..estimated_time_for_completion = '1 min 10 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Maintenance du séparateur d’amalgames'
+          ..url = 'maintenance-separateur-amalgames'
+          ..description =
+              'Présentation des routines de maintenance des séparateurs d’amalgames et des systèmes d’aspiration.'
+          ..estimated_time_for_completion = '1 min 10 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Mantenimiento de los separadores de amalgama'
+          ..url = 'mantenimiento-de-los-separadores-de-amalgama'
+          ..description =
+              'Un análisis de las rutinas de mantenimiento de los separadores de amalgama y los sistemas de succión.'
+          ..estimated_time_for_completion = '1 min 10 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Wartung von Amalgamabscheidern'
+          ..url = 'wartung-von-amalgamabscheidern'
+          ..description =
+              'Ein Blick auf die Routinen für die Wartung von Amalgamabscheidern und Absauganlagen.'
+          ..estimated_time_for_completion = '1 Min. 10 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299910768?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0',
-
-
-
       'Att tänka på vid installation': new Video()
         ..icon = 'video'
         ..id = 'Att tänka på vid installation'
@@ -167,20 +293,40 @@ class VideoService extends ResourceService<Video> {
               'Att tänka på kring installation av amalgamavskiljare och sugsystem.'
           ..estimated_time_for_completion = '1 min 16 sek')
         ..phrases['en'] = (new Phrases()
-          ..name =
-              'What to bear in mind for installation'
+          ..name = 'What to bear in mind for installation'
           ..url = 'what-to-bear-in-mind-for-installation'
           ..description =
               'Things to bear in mind for installation of amalgam separators and suction systems.'
           ..estimated_time_for_completion = '1 min 16 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'À ne pas oublier pendant l’installation'
+          ..url = 'ne-pas-oublier-pendant-installation'
+          ..description =
+              'À ne pas oublier pour l’installation des séparateurs d’amalgames et les systèmes d’aspiration.'
+          ..estimated_time_for_completion = '1 min 16 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Qué es necesario tener en cuenta para la instalación'
+          ..url = 'qué-es-necesario-tener-en-cuenta-para-la-instalación'
+          ..description =
+              'Consejos para la instalación de sistemas de separación de amalgama y de succión.'
+          ..estimated_time_for_completion = '1 min 16 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Was bei der Installation zu beachten ist'
+          ..url = 'was-bei-der-installation-zu-beachten-ist'
+          ..description =
+              'Was alles bei der Installation von Amalgamabscheidern und Absauganlagen zu beachten ist.'
+          ..estimated_time_for_completion = '1 Min. 16 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299909211?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0',
-
-
-
       'Byte av amalgamavskiljare': new Video()
         ..icon = 'video'
         ..id = 'Byte av amalgamavskiljare'
@@ -197,14 +343,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'How to replace amalgam separators in wet and dry suction systems.'
           ..estimated_time_for_completion = '1 min 19 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'À ne pas oublier pendant l’installation'
+          ..url = 'ne-pas-oublier-pendant-installation'
+          ..description =
+              'À ne pas oublier pour l’installation des séparateurs d’amalgames et les systèmes d’aspiration.'
+          ..estimated_time_for_completion = '1 min 16 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Reemplazo de separadores de amalgama'
+          ..url = 'reemplazo-de-separadores-de-amalgama'
+          ..description =
+              'Cómo reemplazar los separadores de amalgama en sistemas de aspiración húmedos y secos'
+          ..estimated_time_for_completion = '1 min 1 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Austausch von Amalgamabscheidern'
+          ..url = 'austausch-von-amalgamabscheidern'
+          ..description =
+              'So werden Amalgamabscheider in Nass- und Trockenabsauganlagen ausgetauscht.'
+          ..estimated_time_for_completion = '1 Min. 19 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299909564?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0',
-      
-      
-      
       'Funktionskontroll': new Video()
         ..icon = 'video'
         ..id = 'Funktionskontroll'
@@ -217,17 +384,39 @@ class VideoService extends ResourceService<Video> {
           ..estimated_time_for_completion = '42 sek')
         ..phrases['en'] = (new Phrases()
           ..name = 'Function check'
-          ..url = 'function check'
+          ..url = 'function-check'
           ..description =
               'How an environmental maintenance service performs function checks of amalgam separators.'
           ..estimated_time_for_completion = '42 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Vérification des fonctions'
+          ..url = 'verification-fonctions'
+          ..description =
+              'Comment un service de maintenance environnementale réalise les vérifications des fonctions des séparateurs d’amalgames.'
+          ..estimated_time_for_completion = '42 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Verificación de funciones'
+          ..url = 'verificacion-de-funciones'
+          ..description =
+              'Cómo un equipo de mantenimiento ambiental lleva a cabo la verificación de funciones con respecto a los separadores de amalgama.'
+          ..estimated_time_for_completion = '42 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Funktionsprüfung'
+          ..url = 'funktionsprufung'
+          ..description =
+              'So führt ein Umweltwartungsdienst eine Funktionsprüfung von Amalgamabscheidern durch.'
+          ..estimated_time_for_completion = '42 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299909870?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0',
-      
-      
       'Tömning av vattenlås': new Video()
         ..icon = 'video'
         ..id = 'Tömning av vattenlås'
@@ -244,15 +433,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'How an environmental maintenance service empties and cleans a water lock.'
           ..estimated_time_for_completion = '23 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Vidange du clapet anti-retour'
+          ..url = 'vidange-clapet-anti-retour'
+          ..description =
+              'Comment un service de maintenance environnementale vidange et nettoie un clapet anti-retour.'
+          ..estimated_time_for_completion = '23 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Vaciado de la esclusa de agua'
+          ..url = 'vaciado-de-la-esclusa-de-agua'
+          ..description =
+              'Cómo un equipo de mantenimiento ambiental puede vaciar y limpiar una esclusa de agua.'
+          ..estimated_time_for_completion = '23 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Leeren des Wasserabscheiders'
+          ..url = 'leeren-des-wasserabscheiders'
+          ..description =
+              'Wie ein Umweltwartungsdienst einen Wasserabscheider leert und reinigt.'
+          ..estimated_time_for_completion = '23 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299921354?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0',
-     
-     
-     
-     
       'Slutförvaring': new Video()
         ..icon = 'video'
         ..id = 'Slutförvaring'
@@ -267,36 +476,72 @@ class VideoService extends ResourceService<Video> {
           ..url = 'terminal-storage'
           ..description = 'Dealing with amalgam waste.'
           ..estimated_time_for_completion = '52 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Stockage final'
+          ..url = 'stockage-final'
+          ..description = 'Gestion des déchets d’amalgames.'
+          ..estimated_time_for_completion = '52 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Terminal de almacenamiento '
+          ..url = 'terminal de almacenamiento'
+          ..description = 'Gestionar los residuos de amalgama.'
+          ..estimated_time_for_completion = '52 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Endlagerung'
+          ..url = 'endlagerung'
+          ..description = 'Umgang mit Amalgamabfall.'
+          ..estimated_time_for_completion = '52 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299911163?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0',
-
-
-
       'Sanering': new Video()
         ..icon = 'video'
         ..id = 'Sanering'
-        ..img_url = 'pics/remidiation.jpg'
+        ..img_url = 'pics/decontamination.jpg'
         ..phrases['sv'] = (new Phrases()
           ..name = 'Sanering '
           ..url = 'sanering'
           ..description = 'Så genomförs en sanering.'
           ..estimated_time_for_completion = '1 min 13 sek')
         ..phrases['en'] = (new Phrases()
-          ..name = 'Remediation'
-          ..url = 'remediation'
-          ..description = 'This is how remediation is carried out.'
+          ..name = 'Decontamination'
+          ..url = 'decontamination'
+          ..description = 'This is how decontamination is carried out.'
           ..estimated_time_for_completion = '1 min 13 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Décontamination'
+          ..url = 'decontamination'
+          ..description = 'Réalisation de la décontamination.'
+          ..estimated_time_for_completion = '1 min 13 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Descontaminación'
+          ..url = 'descontaminacion'
+          ..description = 'Puesta en práctica de la descontaminación.'
+          ..estimated_time_for_completion = '1 min 13 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Dekontamination'
+          ..url = 'dekontamination'
+          ..description = 'Dekontamination durchführen.'
+          ..estimated_time_for_completion = '1 Min. 13 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299910425?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0',
-
-
-
       'Varför är skötseln så viktig?': new Video()
         ..icon = 'video'
         ..id = 'Varför är skötseln så viktig? '
@@ -313,15 +558,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'A service engineer explains the importance of good maintenance for amalgam separators and suction systems.'
           ..estimated_time_for_completion = '49 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Pourquoi la maintenance est-elle si importante ?'
+          ..url = 'pourquoi-maintenance-si-importante'
+          ..description =
+              'Un ingénieur de service explique l’importance de la bonne maintenance des séparateurs d’amalgames et des systèmes d’aspiration.'
+          ..estimated_time_for_completion = '49 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = '¿Por qué es tan importante el mantenimiento?'
+          ..url = 'por-que-es-tan-importante-el-mantenimiento'
+          ..description =
+              'Un ingeniero de servicio explica la importancia de llevar a cabo un mantenimiento correcto para los separadores de amalgama y los sistemas de succión.'
+          ..estimated_time_for_completion = '49 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Warum ist Wartung so wichtig?'
+          ..url = 'warum-ist-wartung-so-wichtig'
+          ..description =
+              'Ein Servicetechniker erklärt die Bedeutung guter Wartung für Amalgamabscheider und Absauganlagen.'
+          ..estimated_time_for_completion = '49 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
+        ..url['en'] =
+            'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
+        ..url['en'] =
+            'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
+        ..url['en'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0',
-
-
-
-
       'Vad är kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Vad är kvicksilver?'
@@ -337,15 +602,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Michelle Nerentorp tells us what the element of mercury is.'
           ..estimated_time_for_completion = '29 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Qu’est-ce que le mercure ?'
+          ..url = 'qu-est-ce-que-mercure'
+          ..description =
+              'Michelle Nerentorp nous explique ce qu’est l’élément du mercure.'
+          ..estimated_time_for_completion = '29 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = '¿Qué es el mercurio?'
+          ..url = 'que-es-el-mercurio'
+          ..description =
+              'Michelle Nerentorp nos explica qué tipo de elemento es el mercurio.'
+          ..estimated_time_for_completion = '29 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Was ist Quecksilber?'
+          ..url = 'was-ist-quecksilber'
+          ..description =
+              'Michelle Nerentorp erklärt uns das Element Quecksilber.'
+          ..estimated_time_for_completion = '29 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299901545?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0',
-
-
-
-
       'Var finns kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Var finns kvicksilver?'
@@ -362,18 +647,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Michelle Nerentorp talks about where mercury is found in nature, and how man has helped to spread it.'
           ..estimated_time_for_completion = '1 min 10 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Où se trouve le mercure ?'
+          ..url = 'ou-se-trouve-mercure'
+          ..description =
+              'Michelle Nerentorp explique où se trouve le mercure dans la nature, et comment les hommes ont favorisé sa propagation.'
+          ..estimated_time_for_completion = '1 min 10 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'donde-se-encuentra-el-mercurio'
+          ..url = '¿Dónde-se-encuentra-el-mercurio?'
+          ..description =
+              'Michelle Nerentorp habla sobre los lugares en los que se puede encontrar mercurio en la naturaleza y de qué forma el humano ha contribuido a su propagación.'
+          ..estimated_time_for_completion = '1 min 10 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Wo ist Quecksilber zu finden?'
+          ..url = 'wo-ist-quecksilber-zu-finden'
+          ..description =
+              'Michelle Nerentorp spricht darüber, wo Quecksilber in der Natur zu finden ist und wie der Mensch zu seiner Verbreitung beigetragen hat.'
+          ..estimated_time_for_completion = '1 Min. 10 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299901700?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0',
-
-
-
-
-
-
-
       'Vilken roll har tandvården?': new Video()
         ..icon = 'video'
         ..id = 'Vilken roll har tandvården?'
@@ -390,16 +692,35 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Michelle Nerentorp talks about the responsibility of the dental industry for the problem of mercury being released into nature.'
           ..estimated_time_for_completion = '43 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Quel est le rôle du secteur dentaire ?'
+          ..url = 'quel-est-le-role-du-secteur-dentaire'
+          ..description =
+              'Michelle Nerentorp explique la responsabilité du secteur dentaire dans le problème de libération du mercure dans la nature.'
+          ..estimated_time_for_completion = '43 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = '¿Qué papel ejerce la industria dental?'
+          ..url = 'que-papel-ejerce-la-industria-dental'
+          ..description =
+              'Michelle Nerentorp habla sobre la responsabilidad que posee la industria dental con respecto al problema que supone liberar mercurio en la naturaleza.'
+          ..estimated_time_for_completion = '43 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Welche Rolle spielt die Dentalindustrie'
+          ..url = 'welche-rolle-spielt-die-dentalindustrie'
+          ..description =
+              'Michelle Nerentorp spricht über die Verantwortung der Dentalindustrie bei der Freisetzung von Quecksilber in der Natur.'
+          ..estimated_time_for_completion = '43 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299902118?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0',
-
-
-
-
-            
       'Hur påverkas vi av kvicksilver?': new Video()
         ..icon = 'video'
         ..id = 'Hur påverkas vi av kvicksilver?'
@@ -416,10 +737,34 @@ class VideoService extends ResourceService<Video> {
           ..description =
               'Michelle Nerentorp explains how humans are affected by mercury.'
           ..estimated_time_for_completion = '1 min 6 sec')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'En quoi le mercure a-t-il un impact sur nous ?'
+          ..url = 'en-quoi-mercure-impact-sur-nous'
+          ..description =
+              'Michelle Nerentorp explique en quoi les humains sont affectés par le mercure.'
+          ..estimated_time_for_completion = '1 min 6 sec')
+        ..phrases['es'] = (new Phrases()
+          ..name = '¿Cómo nos afecta el mercurio?'
+          ..url = 'como-nos-afecta-el-mercurio'
+          ..description =
+              'Michelle Nerentorp explica cómo el mercurio afecta a los seres humanos.'
+          ..estimated_time_for_completion = '1 min 6 seg')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Inwieweit betrifft uns Quecksilber?'
+          ..url = 'inwieweit-betrifft-uns-quecksilber'
+          ..description =
+              'Michelle Nerentorp erklärt die Wirkung von Quecksilber auf den Menschen.'
+          ..estimated_time_for_completion = '1 Min. 6 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
             'https://player.vimeo.com/video/299901270?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
+            'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
+        ..url['fr'] =
+            'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
+        ..url['es'] =
+            'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
+        ..url['de'] =
             'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
     };
 

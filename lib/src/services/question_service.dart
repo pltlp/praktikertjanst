@@ -273,8 +273,6 @@ class QuestionService {
                     ..label = 'Throw it in the rubbish bin'
                     ..score = 0
                 ],
-
-
           'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?':
               new Question()
                 ..value =
@@ -295,8 +293,6 @@ class QuestionService {
                     ..label = 'Nucleic mercury'
                     ..score = 0
                 ],
-
-
           'Hur påverkar framför allt metylkvicksilver, oss människor?':
               new Question()
                 ..label = 'How does methylmercury primarily affect humans?'
@@ -315,9 +311,6 @@ class QuestionService {
                     ..value = 'It is not hazardous to humans'
                     ..score = 0,
                 ],
-
-
-
           'Vilken råvara har högst andel kvicksilver?': new Question()
             ..label = 'What commodity has the highest proportion of mercury?'
             ..value = 'What commodity has the highest proportion of mercury?'
@@ -352,13 +345,12 @@ class QuestionService {
                 ..value = 'Approx. 5%'
                 ..score = 0
             ],
-
-
-
           'När trädde EU:s skärpta regler kring amalgam i kraft?':
               new Question()
-                ..label = 'When did the EU’s tougher rules on amalgam come into effect?'
-                ..value = 'When did the EU’s tougher rules on amalgam come into effect?'
+                ..label =
+                    'When did the EU’s tougher rules on amalgam come into effect?'
+                ..value =
+                    'When did the EU’s tougher rules on amalgam come into effect?'
                 ..options = [
                   new Option()
                     ..label = '2018'
@@ -373,9 +365,6 @@ class QuestionService {
                     ..value = '2019'
                     ..score = 0,
                 ],
-
-
-
           'Vad ska man göra av uppsamlat kvicksilver?': new Question()
             ..label = 'What should you do with accumulated mercury?'
             ..value = 'What should you do with accumulated mercury?'
@@ -427,10 +416,8 @@ class QuestionService {
                         'Emptying and rinsing the coarse strainer/saliva suction tube, or particle trap.'
                     ..score = 1,
                   new Option()
-                    ..label =
-                        'Check level of amalgam separator container.'
-                    ..value =
-                        'Check level of amalgam separator container.'
+                    ..label = 'Check level of amalgam separator container.'
+                    ..value = 'Check level of amalgam separator container.'
                     ..score = 0,
                   new Option()
                     ..label = 'Emptying and cleaning buffer tank'
@@ -463,12 +450,11 @@ class QuestionService {
                         'Service technicians are responsible for all documentation concerning amalgam separators and suction systems'
                     ..score = 0
                 ],
-
-
-
           'Vad stämmer om installationen av sugslangar?': new Question()
-            ..label = 'Which is correct concerning the installation of suction hoses?'
-            ..value = 'Which is correct concerning the installation of suction hoses?'
+            ..label =
+                'Which is correct concerning the installation of suction hoses?'
+            ..value =
+                'Which is correct concerning the installation of suction hoses?'
             ..options = [
               new Option()
                 ..label = 'Hose angles should not exceed 45 degrees.'
@@ -485,16 +471,15 @@ class QuestionService {
                 ..value = 'Suction hoses should be made of carbon fibre'
                 ..score = 0
             ],
-
-
-
           'Var ska sugmotorn vara installerad?': new Question()
             ..label = 'Where should a suction motor be installed?'
             ..value = 'Where should a suction motor be installed?'
             ..options = [
               new Option()
-                ..label = 'In a separate ‘suction room’, separated from personnel.'
-                ..value = 'In a separate ‘suction room’, separated from personnel.'
+                ..label =
+                    'In a separate ‘suction room’, separated from personnel.'
+                ..value =
+                    'In a separate ‘suction room’, separated from personnel.'
                 ..score = 1,
               new Option()
                 ..label =
@@ -505,6 +490,763 @@ class QuestionService {
               new Option()
                 ..label = 'It doesn’t matter, as long as there is room.'
                 ..value = 'It doesn’t matter, as long as there is room.'
+                ..score = 0
+            ],
+        },
+        'fr': {
+          'Vad ska du göra med en tappad tand som är lagad med amalgam?':
+              new Question()
+                ..value =
+                    'Que devez-vous faire avec une dent réparée avec un amalgame ?'
+                ..label =
+                    'Que devez-vous faire avec une dent réparée avec un amalgame ?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'S’assurer qu’il est traité comme déchet dangereux, par ex. en le laissant à la clinique dentaire'
+                    ..label =
+                        'S’assurer qu’il est traité comme déchet dangereux, par ex. en le laissant à la clinique dentaire'
+                    ..score = 1,
+                  new Option()
+                    ..value = 'Le jeter dans les toilettes'
+                    ..label = 'Le jeter dans les toilettes'
+                    ..score = 0,
+                  new Option()
+                    ..value = 'Le jeter à la poubelle'
+                    ..label = 'Le jeter à la poubelle'
+                    ..score = 0
+                ],
+          'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?':
+              new Question()
+                ..value =
+                    'Les micro-organismes peuvent transformer le mercure en un composé pouvant être absorbé par les animaux. Comment s’appelle ce composé ?'
+                ..label =
+                    'Les micro-organismes peuvent transformer le mercure en un composé pouvant être absorbé par les animaux. Comment s’appelle ce composé ?'
+                ..options = [
+                  new Option()
+                    ..label = 'Méthylmercure'
+                    ..value = 'Méthylmercure'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Hydrate de mercure'
+                    ..value = 'Hydrate de mercure'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Mercure nucléique'
+                    ..value = 'Mercure nucléique'
+                    ..score = 0
+                ],
+          'Hur påverkar framför allt metylkvicksilver, oss människor?':
+              new Question()
+                ..label =
+                    'Quel est le premier effet du méthylmercure sur les humains ?'
+                ..value =
+                    'Quel est le premier effet du méthylmercure sur les humains ?'
+                ..options = [
+                  new Option()
+                    ..label = 'Il peut endommager le système nerveux'
+                    ..value = 'Il peut endommager le système nerveux'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Il peut avoir un effet suffocant'
+                    ..value = 'Il peut avoir un effet suffocant'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Il n’est pas dangereux pour les humains'
+                    ..value = 'Il n’est pas dangereux pour les humains'
+                    ..score = 0,
+                ],
+          'Vilken råvara har högst andel kvicksilver?': new Question()
+            ..label =
+                'Quel produit de base dispose de la plus grande proportion de mercure ?'
+            ..value =
+                'Quel produit de base dispose de la plus grande proportion de mercure ?'
+            ..options = [
+              new Option()
+                ..label = 'Le poisson'
+                ..value = 'Le poisson'
+                ..score = 1,
+              new Option()
+                ..label = 'La viande'
+                ..value = 'La viande'
+                ..score = 0,
+              new Option()
+                ..label = 'Les produits laitiers'
+                ..value = 'Les produits laitiers'
+                ..score = 0,
+            ],
+          'Hur stor del kvicksilver finns det i amalgam?': new Question()
+            ..label =
+                'Quelle quantité de mercure se trouve dans les amalgames ?'
+            ..value =
+                'Quelle quantité de mercure se trouve dans les amalgames ?'
+            ..options = [
+              new Option()
+                ..label = 'Env. 50 %'
+                ..value = 'Env. 50 %'
+                ..score = 1,
+              new Option()
+                ..label = 'Env. 20 %'
+                ..value = 'Env. 20 %'
+                ..score = 0,
+              new Option()
+                ..label = 'Env. 5 %'
+                ..value = 'Env. 5 %'
+                ..score = 0
+            ],
+          'När trädde EU:s skärpta regler kring amalgam i kraft?':
+              new Question()
+                ..label =
+                    'En quelle année les règles les plus strictes de l’UE relatives aux amalgames sont-elles entrées en vigueur ?'
+                ..value =
+                    'En quelle année les règles les plus strictes de l’UE relatives aux amalgames sont-elles entrées en vigueur ?'
+                ..options = [
+                  new Option()
+                    ..label = '2018'
+                    ..value = '2018'
+                    ..score = 1,
+                  new Option()
+                    ..label = '2013'
+                    ..value = '2013'
+                    ..score = 0,
+                  new Option()
+                    ..label = '2019'
+                    ..value = '2019'
+                    ..score = 0,
+                ],
+          'Vad ska man göra av uppsamlat kvicksilver?': new Question()
+            ..label = 'Que devez-vous faire avec le mercure cumulé ?'
+            ..value = 'Que devez-vous faire avec le mercure cumulé ?'
+            ..options = [
+              new Option()
+                ..label = 'L’envoyer au stockage final'
+                ..value = 'L’envoyer au stockage final'
+                ..score = 1,
+              new Option()
+                ..label = 'Le détruire'
+                ..value = 'Le détruire'
+                ..score = 0,
+              new Option()
+                ..label = 'Le jeter à la mer'
+                ..value = 'Le jeter à la mer'
+                ..score = 0
+            ],
+          'Var ska sugmotorn vara installerad?': new Question()
+            ..label = 'Où le moteur d’aspiration doit-il être installé ?'
+            ..value = 'Où le moteur d’aspiration doit-il être installé ?'
+            ..options = [
+              new Option()
+                ..label =
+                    'Dans une ’salle d’aspiration’ distincte, séparée du personnel.'
+                ..value =
+                    'Dans une ’salle d’aspiration’ distincte, séparée du personnel.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Centralt på mottagningen, så långt det går mellan de behandlingsstolar som ingår i systemet. '
+                ..value =
+                    'De manière centrale dans le cabinet, tant qu’il peut être placé entre les chaises de traitement du système.'
+                ..score = 0,
+              new Option()
+                ..label =
+                    'Cela n’a pas d’importance, tant qu’il est dans la pièce.'
+                ..value =
+                    'Cela n’a pas d’importance, tant qu’il est dans la pièce.'
+                ..score = 0
+            ],
+          'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
+              new Question()
+                ..label =
+                    'À quelle fréquence les siphons sous les valves du lavabo doivent-ils être désinfectés ?'
+                ..value =
+                    'À quelle fréquence les siphons sous les valves du lavabo doivent-ils être désinfectés ?'
+                ..options = [
+                  new Option()
+                    ..label = 'Chaque jour de travail'
+                    ..value = 'Chaque jour de travail'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Une fois par mois'
+                    ..value = 'Une fois par mois'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Une fois par trimestre'
+                    ..value = 'Une fois par trimestre'
+                    ..score = 0
+                ],
+          'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?':
+              new Question()
+                ..label =
+                    'Le cabinet dentaire est responsable des vérifications quotidiennes et de la maintenance des séparateurs d’amalgames et systèmes d’aspiration. Qu’implique la maintenance quotidienne ?'
+                ..value =
+                    'Le cabinet dentaire est responsable des vérifications quotidiennes et de la maintenance des séparateurs d’amalgames et systèmes d’aspiration. Qu’implique la maintenance quotidienne ?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'Vider et rincer les gros filtres/tubes d’aspiration de salive, ou les pièges à particules.'
+                    ..label =
+                        'Vider et rincer les gros filtres/tubes d’aspiration de salive, ou les pièges à particules.'
+                    ..score = 1,
+                  new Option()
+                    ..label =
+                        'Vérifier le niveau du récipient du séparateur d’amalgames.'
+                    ..value =
+                        'Vérifier le niveau du récipient du séparateur d’amalgames.'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Vider et nettoyer le réservoir tampon'
+                    ..value = 'Vider et nettoyer le réservoir tampon'
+                    ..score = 0
+                ],
+          'Vad stämmer om ansvarsfördelningen när det gäller dokumentation?':
+              new Question()
+                ..label =
+                    'Quelle affirmation est vraie concernant la délégation de responsabilité selon la documentation ?'
+                ..value =
+                    'Quelle affirmation est vraie concernant la délégation de responsabilité selon la documentation ?'
+                ..options = [
+                  new Option()
+                    ..label =
+                        'Le cabinet dentaire est responsable de la consignation des vérifications des fonctions et des non-conformités du séparateur d’amalgame et du système d’aspiration'
+                    ..value =
+                        'Le cabinet dentaire est responsable de la consignation des vérifications des fonctions et des non-conformités du séparateur d’amalgame et du système d’aspiration'
+                    ..score = 1,
+                  new Option()
+                    ..label =
+                        'Le propriétaire du bien est responsable de toute la documentation concernant les séparateurs d’amalgames et les systèmes d’aspiration.'
+                    ..value =
+                        'Le propriétaire du bien est responsable de toute la documentation concernant les séparateurs d’amalgames et les systèmes d’aspiration.'
+                    ..score = 0,
+                  new Option()
+                    ..label =
+                        'Les techniciens de service sont responsables de toute la documentation concernant les séparateurs d’amalgames et les systèmes d’aspiration.'
+                    ..value =
+                        'Les techniciens de service sont responsables de toute la documentation concernant les séparateurs d’amalgames et les systèmes d’aspiration.'
+                    ..score = 0
+                ],
+          'Vad stämmer om installationen av sugslangar?': new Question()
+            ..label =
+                'Quelle affirmation est vraie concernant l’installation des flexibles d’aspiration ?'
+            ..value =
+                'Quelle affirmation est vraie concernant l’installation des flexibles d’aspiration ?'
+            ..options = [
+              new Option()
+                ..label =
+                    'Les angles des flexibles ne doivent pas dépasser 45 degrés.'
+                ..value =
+                    'Les angles des flexibles ne doivent pas dépasser 45 degrés.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Les flexibles d’aspiration entre l’unité et le sol doivent être collés'
+                ..value =
+                    'Les flexibles d’aspiration entre l’unité et le sol doivent être collés'
+                ..score = 0,
+              new Option()
+                ..label =
+                    'Les flexibles d’aspiration doivent être fabriqués à partir de fibres de carbone'
+                ..value =
+                    'Les flexibles d’aspiration doivent être fabriqués à partir de fibres de carbone'
+                ..score = 0
+            ],
+        },
+        'es': {
+          'Vad ska du göra med en tappad tand som är lagad med amalgam?':
+              new Question()
+                ..value =
+                    '¿Qué debería hacer con un diente empastado con amalgama?'
+                ..label =
+                    '¿Qué debería hacer con un diente empastado con amalgama?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'Cerciorarse de que se gestiona como residuo peligroso. Por ejemplo, llevarlo a una clínica dental'
+                    ..label =
+                        'Cerciorarse de que se gestiona como residuo peligroso. Por ejemplo, llevarlo a una clínica dental'
+                    ..score = 1,
+                  new Option()
+                    ..value = 'Tirarlo por el inodoro'
+                    ..label = 'Tirarlo por el inodoro'
+                    ..score = 0,
+                  new Option()
+                    ..value = 'Tirarlo a la papelera'
+                    ..label = 'Tirarlo a la papelera'
+                    ..score = 0
+                ],
+          'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?':
+              new Question()
+                ..value =
+                    'Los microorganismos pueden transformar el mercurio en un compuesto que podría llegar a ser absorbido por los animales. ¿Cómo se llama?'
+                ..label =
+                    'Los microorganismos pueden transformar el mercurio en un compuesto que podría llegar a ser absorbido por los animales. ¿Cómo se llama?'
+                ..options = [
+                  new Option()
+                    ..label = 'Metilmercurio'
+                    ..value = 'Metilmercurio'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Hidrato de mercurio'
+                    ..value = 'Hidrato de mercurio'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Mercurio nucleico'
+                    ..value = 'Mercurio nucleico'
+                    ..score = 0
+                ],
+          'Hur påverkar framför allt metylkvicksilver, oss människor?':
+              new Question()
+                ..label = '¿Cómo afecta el metilmercurio a los seres humanos?'
+                ..value = '¿Cómo afecta el metilmercurio a los seres humanos?'
+                ..options = [
+                  new Option()
+                    ..label = 'Puede dañar el sistema nervioso'
+                    ..value = 'Puede dañar el sistema nervioso'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Puede tener efectos asfixiantes'
+                    ..value = 'Puede tener efectos asfixiantes'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'No es peligroso para los seres humanos'
+                    ..value = 'No es peligroso para los seres humanos'
+                    ..score = 0,
+                ],
+          'Vilken råvara har högst andel kvicksilver?': new Question()
+            ..label = '¿Qué producto tiene la mayor proporción de mercurio?'
+            ..value = '¿Qué producto tiene la mayor proporción de mercurio?'
+            ..options = [
+              new Option()
+                ..label = 'El pescado'
+                ..value = 'El pescado'
+                ..score = 1,
+              new Option()
+                ..label = 'La carne'
+                ..value = 'La carne'
+                ..score = 0,
+              new Option()
+                ..label = 'Los productos lácteos'
+                ..value = 'Los productos lácteos'
+                ..score = 0,
+            ],
+          'Hur stor del kvicksilver finns det i amalgam?': new Question()
+            ..label = '¿Qué cantidad de mercurio contiene la amalgama?'
+            ..value = '¿Qué cantidad de mercurio contiene la amalgama?'
+            ..options = [
+              new Option()
+                ..label = 'Un 50% aproximadamente'
+                ..value = 'Un 50% aproximadamente'
+                ..score = 1,
+              new Option()
+                ..label = 'Un 20% aproximadamente'
+                ..value = 'Un 20% aproximadamente'
+                ..score = 0,
+              new Option()
+                ..label = 'Un 5% aproximadamente'
+                ..value = 'Un 5% aproximadamente'
+                ..score = 0
+            ],
+          'När trädde EU:s skärpta regler kring amalgam i kraft?':
+              new Question()
+                ..label =
+                    '¿Cuándo entraron en vigor las normas más estrictas relacionadas la amalgama en la Unión Europea?'
+                ..value =
+                    '¿Cuándo entraron en vigor las normas más estrictas relacionadas la amalgama en la Unión Europea?'
+                ..options = [
+                  new Option()
+                    ..label = '2018'
+                    ..value = '2018'
+                    ..score = 1,
+                  new Option()
+                    ..label = '2013'
+                    ..value = '2013'
+                    ..score = 0,
+                  new Option()
+                    ..label = '2019'
+                    ..value = '2019'
+                    ..score = 0,
+                ],
+          'Vad ska man göra av uppsamlat kvicksilver?': new Question()
+            ..label = '¿Qué se ha de hacer con el mercurio acumulado?'
+            ..value = '¿Qué se ha de hacer con el mercurio acumulado?'
+            ..options = [
+              new Option()
+                ..label = 'Enviarlo para su almacenamiento definitivo'
+                ..value = 'Enviarlo para su almacenamiento definitivo'
+                ..score = 1,
+              new Option()
+                ..label = 'Destruirlo'
+                ..value = 'Destruirlo'
+                ..score = 0,
+              new Option()
+                ..label = 'Tirarlo en el mar'
+                ..value = 'Tirarlo en el mar'
+                ..score = 0
+            ],
+          'Var ska sugmotorn vara installerad?': new Question()
+            ..label =
+                '¿En cuál de los siguientes lugares se debe instalar un motor de succión?'
+            ..value =
+                '¿En cuál de los siguientes lugares se debe instalar un motor de succión?'
+            ..options = [
+              new Option()
+                ..label = 'En una "sala de succión" separada del personal. '
+                ..value = 'En una "sala de succión" separada del personal. '
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Centralt på mottagningen, så långt det går mellan de behandlingsstolar som ingår i systemet. '
+                ..value =
+                    'En todas las salas, siempre que quepa bien entre las sillas de tratamiento del sistema.'
+                ..score = 0,
+              new Option()
+                ..label = 'No importa, siempre que haya espacio.'
+                ..value = 'No importa, siempre que haya espacio.'
+                ..score = 0
+            ],
+          'Hur ofta ska avlopp diskbänksavskiljare med desinficeras?':
+              new Question()
+                ..label =
+                    '¿Con qué frecuencia se debe desinfectar el desagüe situado debajo del sifón?'
+                ..value =
+                    '¿Con qué frecuencia se debe desinfectar el desagüe situado debajo del sifón?'
+                ..options = [
+                  new Option()
+                    ..label = 'Cada día laboral'
+                    ..value = 'Cada día laboral'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Una vez al mes'
+                    ..value = 'Una vez al mes'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Una vez cada tres meses'
+                    ..value = 'Una vez cada tres meses'
+                    ..score = 0
+                ],
+          'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?':
+              new Question()
+                ..label =
+                    'La clínica dental es responsable de llevar a cabo rutinas de mantenimiento de los separadores de amalgama y de los sistemas de succión. ¿En qué consiste dicho mantenimiento diario?'
+                ..value =
+                    'La clínica dental es responsable de llevar a cabo rutinas de mantenimiento de los separadores de amalgama y de los sistemas de succión. ¿En qué consiste dicho mantenimiento diario?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'En vaciar el contenido del filtro del filtro grueso/filtro de succión de saliva/retenedor de partículas.'
+                    ..label =
+                        'En vaciar el contenido del filtro del filtro grueso/filtro de succión de saliva/retenedor de partículas.'
+                    ..score = 1,
+                  new Option()
+                    ..label =
+                        'En comprobar el nivel del recipiente separador de amalgama'
+                    ..value =
+                        'En comprobar el nivel del recipiente separador de amalgama'
+                    ..score = 0,
+                  new Option()
+                    ..label =
+                        'En vaciar y limpiar el tanque intermedio de limpieza'
+                    ..value =
+                        'En vaciar y limpiar el tanque intermedio de limpieza'
+                    ..score = 0
+                ],
+          'Vad stämmer om ansvarsfördelningen när det gäller dokumentation?':
+              new Question()
+                ..label =
+                    '¿Qué afirmación es correcta en cuanto a la delegación de responsabilidades relacionadas con la documentación?'
+                ..value =
+                    '¿Qué afirmación es correcta en cuanto a la delegación de responsabilidades relacionadas con la documentación?'
+                ..options = [
+                  new Option()
+                    ..label =
+                        'La clínica dental es responsable de realizar verificaciones de funciones y de revisar posibles irregularidades relacionadas con el separador de amalgama y los sistemas de succión'
+                    ..value =
+                        'La clínica dental es responsable de realizar verificaciones de funciones y de revisar posibles irregularidades relacionadas con el separador de amalgama y los sistemas de succión'
+                    ..score = 1,
+                  new Option()
+                    ..label =
+                        'El propietario será responsable de toda la documentación relacionada con los separadores de amalgama y los sistemas de succión.'
+                    ..value =
+                        'El propietario será responsable de toda la documentación relacionada con los separadores de amalgama y los sistemas de succión.'
+                    ..score = 0,
+                  new Option()
+                    ..label =
+                        'Los técnicos de servicio son responsables de toda la documentación relacionada con los separadores de amalgama y los sistemas de succión.'
+                    ..value =
+                        'Los técnicos de servicio son responsables de toda la documentación relacionada con los separadores de amalgama y los sistemas de succión.'
+                    ..score = 0
+                ],
+          'Vad stämmer om installationen av sugslangar?': new Question()
+            ..label =
+                '¿Qué afirmación es correcta en relación con la instalación de mangueras de succión?'
+            ..value =
+                '¿Qué afirmación es correcta en relación con la instalación de mangueras de succión?'
+            ..options = [
+              new Option()
+                ..label =
+                    'Los ángulos de la manguera no deben exceder los 45 grados.'
+                ..value =
+                    'Los ángulos de la manguera no deben exceder los 45 grados.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Las mangueras de succión que conectan la unidad con el suelo deben estar plegadas'
+                ..value =
+                    'Las mangueras de succión que conectan la unidad con el suelo deben estar plegadas'
+                ..score = 0,
+              new Option()
+                ..label =
+                    'Las mangueras de succión deben estar hechas de fibra de carbono'
+                ..value =
+                    'Las mangueras de succión deben estar hechas de fibra de carbono'
+                ..score = 0
+            ],
+        },
+        'de': {
+          'Vad ska du göra med en tappad tand som är lagad med amalgam?':
+              new Question()
+                ..value =
+                    'Was ist mit einem Zahn zu tun, der mit Amalgam gefüllt wurde?'
+                ..label =
+                    'Was ist mit einem Zahn zu tun, der mit Amalgam gefüllt wurde?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'Dafür sorgen, dass er als Sondermüll behandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
+                    ..label =
+                        'Dafür sorgen, dass er als Sondermüll behandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
+                    ..score = 1,
+                  new Option()
+                    ..value = 'In der Toilette hinunterspülen'
+                    ..label = 'In der Toilette hinunterspülen'
+                    ..score = 0,
+                  new Option()
+                    ..value = 'In den Mülleimer werfen'
+                    ..label = 'In den Mülleimer werfen'
+                    ..score = 0
+                ],
+          'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?':
+              new Question()
+                ..value =
+                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Tieren aufgenommen werden kann. Wie heißt diese?'
+                ..label =
+                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Tieren aufgenommen werden kann. Wie heißt diese?'
+                ..options = [
+                  new Option()
+                    ..label = 'Methylquecksilber'
+                    ..value = 'Methylquecksilber'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Quecksilberhydrat'
+                    ..value = 'Quecksilberhydrat'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Nukleinquecksilber'
+                    ..value = 'Nukleinquecksilber'
+                    ..score = 0
+                ],
+          'Hur påverkar framför allt metylkvicksilver, oss människor?':
+              new Question()
+                ..label =
+                    'Wie wirkt Methylquecksilber hauptsächlich auf Menschen?'
+                ..value =
+                    'Wie wirkt Methylquecksilber hauptsächlich auf Menschen?'
+                ..options = [
+                  new Option()
+                    ..label = 'Es kann das Nervensystem schädigen'
+                    ..value = 'Es kann das Nervensystem schädigen'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Es kann eine erstickende Wirkung haben'
+                    ..value = 'Es kann eine erstickende Wirkung haben'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Es ist nicht gefährlich für Menschen'
+                    ..value = 'Es ist nicht gefährlich für Menschen'
+                    ..score = 0,
+                ],
+          'Vilken råvara har högst andel kvicksilver?': new Question()
+            ..label =
+                'Welches Nahrungsmittel hat den höchsten Quecksilberanteil?'
+            ..value =
+                'Welches Nahrungsmittel hat den höchsten Quecksilberanteil?'
+            ..options = [
+              new Option()
+                ..label = 'Fisch'
+                ..value = 'Fisch'
+                ..score = 1,
+              new Option()
+                ..label = 'Fleisch'
+                ..value = 'Fleisch'
+                ..score = 0,
+              new Option()
+                ..label = 'Milchprodukte'
+                ..value = 'Milchprodukte'
+                ..score = 0,
+            ],
+          'Hur stor del kvicksilver finns det i amalgam?': new Question()
+            ..label = 'Wie viel Quecksilber ist in Amalgam enthalten?'
+            ..value = 'Wie viel Quecksilber ist in Amalgam enthalten?'
+            ..options = [
+              new Option()
+                ..label = 'Ca. 50%'
+                ..value = 'Ca. 50%'
+                ..score = 1,
+              new Option()
+                ..label = 'Ca. 20%'
+                ..value = 'Ca. 20%'
+                ..score = 0,
+              new Option()
+                ..label = 'Ca. 5%'
+                ..value = 'Ca. 5%'
+                ..score = 0
+            ],
+          'När trädde EU:s skärpta regler kring amalgam i kraft?':
+              new Question()
+                ..label =
+                    'Wann sind die strengeren Vorschriften der EU für Amalgam in Kraft getreten?'
+                ..value =
+                    'Wann sind die strengeren Vorschriften der EU für Amalgam in Kraft getreten?'
+                ..options = [
+                  new Option()
+                    ..label = '2018'
+                    ..value = '2018'
+                    ..score = 1,
+                  new Option()
+                    ..label = '2013'
+                    ..value = '2013'
+                    ..score = 0,
+                  new Option()
+                    ..label = '2019'
+                    ..value = '2019'
+                    ..score = 0,
+                ],
+          'Vad ska man göra av uppsamlat kvicksilver?': new Question()
+            ..label = 'Was ist mit angesammeltem Quecksilber zu tun?'
+            ..value = 'Was ist mit angesammeltem Quecksilber zu tun?'
+            ..options = [
+              new Option()
+                ..label = 'Zu einem Endlager transportieren'
+                ..value = 'Zu einem Endlager transportieren'
+                ..score = 1,
+              new Option()
+                ..label = 'Zerstören'
+                ..value = 'Zerstören'
+                ..score = 0,
+              new Option()
+                ..label = 'Im Meer ablagern'
+                ..value = 'Im Meer ablagern'
+                ..score = 0
+            ],
+          'Var ska sugmotorn vara installerad?': new Question()
+            ..label = 'Wo ist ein Saugmotor zu installieren?'
+            ..value = 'Wo ist ein Saugmotor zu installieren?'
+            ..options = [
+              new Option()
+                ..label =
+                    'In einem eigenen ‘Absaugraum’, getrennt vom Personal.'
+                ..value =
+                    'In einem eigenen ‘Absaugraum’, getrennt vom Personal.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Zentral in der Praxis, solange er zwischen die Behandlungsstühle und das System passt.'
+                ..value =
+                    'Zentral in der Praxis, solange er zwischen die Behandlungsstühle und das System passt.'
+                ..score = 0,
+              new Option()
+                ..label = 'Es spielt keine Rolle, solange Platz vorhanden ist.'
+                ..value = 'Es spielt keine Rolle, solange Platz vorhanden ist.'
+                ..score = 0
+            ],
+          'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
+              new Question()
+                ..label =
+                    'Wie oft ist der Abfluss unter Siphons zu desinfizieren?'
+                ..value =
+                    'Wie oft ist der Abfluss unter Siphons zu desinfizieren?'
+                ..options = [
+                  new Option()
+                    ..label = 'Jeden Arbeitstag'
+                    ..value = 'Jeden Arbeitstag'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Einmal monatlich'
+                    ..value = 'Einmal monatlich'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Einmal vierteljährlich'
+                    ..value = 'Einmal vierteljährlich'
+                    ..score = 0
+                ],
+          'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?':
+              new Question()
+                ..label =
+                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Absauganlagen. Was gehört zur täglichen Wartung?'
+                ..value =
+                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Absauganlagen. Was gehört zur täglichen Wartung?'
+                ..options = [
+                  new Option()
+                    ..value =
+                        'Entleeren und Spülen von Grobsieb/Speichelsaugschlauch oder Partikelfilter.'
+                    ..label =
+                        'Entleeren und Spülen von Grobsieb/Speichelsaugschlauch oder Partikelfilter.'
+                    ..score = 1,
+                  new Option()
+                    ..label = 'Behälterfüllstand des Amalgamabscheiders prüfen.'
+                    ..value = 'Behälterfüllstand des Amalgamabscheiders prüfen.'
+                    ..score = 0,
+                  new Option()
+                    ..label = 'Entleeren und Reinigen des Puffertanks'
+                    ..value = 'Entleeren und Reinigen des Puffertanks'
+                    ..score = 0
+                ],
+          'Vad stämmer om ansvarsfördelningen när det gäller dokumentation?':
+              new Question()
+                ..label =
+                    'Was ist bei der Übertragung von Verantwortung im Hinblick auf die Dokumentation richtig?'
+                ..value =
+                    'Was ist bei der Übertragung von Verantwortung im Hinblick auf die Dokumentation richtig?'
+                ..options = [
+                  new Option()
+                    ..label =
+                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Absauganlage'
+                    ..value =
+                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Absauganlage'
+                    ..score = 1,
+                  new Option()
+                    ..label =
+                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                    ..value =
+                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                    ..score = 0,
+                  new Option()
+                    ..label =
+                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                    ..value =
+                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                    ..score = 0
+                ],
+          'Vad stämmer om installationen av sugslangar?': new Question()
+            ..label =
+                'Was ist in Bezug auf die Installation von Saugschläuchen richtig?'
+            ..value =
+                'Was ist in Bezug auf die Installation von Saugschläuchen richtig?'
+            ..options = [
+              new Option()
+                ..label =
+                    'Schlauchwinkel sollte nicht mehr als 45 Grad betragen.'
+                ..value =
+                    'Schlauchwinkel sollte nicht mehr als 45 Grad betragen.'
+                ..score = 1,
+              new Option()
+                ..label =
+                    'Saugschläuche von der Einheit zum Boden sind zu kleben'
+                ..value =
+                    'Saugschläuche von der Einheit zum Boden sind zu kleben'
+                ..score = 0,
+              new Option()
+                ..label = 'Saugschläuche müssen aus Kohlefaser sein'
+                ..value = 'Saugschläuche müssen aus Kohlefaser sein'
                 ..score = 0
             ],
         }

@@ -30,9 +30,20 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..url = 'kursrum-for-nyfikna')
         ..phrases['en'] = (new Phrases()
           ..name = 'If you’re just curious'
-          ..description =
-              'Content for you who is curious'
+          ..description = 'Content for you who is curious'
           ..url = 'training-room-for-the-curious')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Si vous êtes juste curieux'
+          ..description = 'Contenu si vous êtes juste curieux.'
+          ..url = 'salle-formation-pour-les-curieux')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Para curiosos'
+          ..description = 'Contenido para curiosos.'
+          ..url = 'sala-de-formacion-para-los-mas-curiosos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Wenn Sie einfach nur Interesse haben'
+          ..description = 'Inhalte für Interessierte.'
+          ..url = 'schulungsraum-fur-interessierte')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -47,11 +58,6 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-
-
-
-
-
       'kursrum-for-tandvardsteam': new CourseRoom()
         ..backgroud_image = 'pics/responsibility.jpg'
         ..document_ids = [
@@ -68,9 +74,21 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..url = 'kursrum-for-tandvardsteam')
         ..phrases['en'] = (new Phrases()
           ..name = 'For dental practices'
-          ..description =
-              'Content for dental care team personnel'
+          ..description = 'Content for dental care team personnel'
           ..url = 'training-room-for-the-dental-care-teams')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Pour les cabinets dentaires'
+          ..description = 'Contenu pour le personnel de soins dentaires.'
+          ..url = 'salle-formation-pour-equipe-soins-dentaires')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Para clínicas dentales'
+          ..description =
+              'Contenido para el personal del equipo de cuidado dental.'
+          ..url = 'sala-de-formacion-para-el-equipo-de-cuidado-dental')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Für Zahnarztpraxen'
+          ..description = 'Inhalte für Personal in der Zahnpflege.'
+          ..url = 'schulungsraum-fur-zahnpflegepersonal')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -88,10 +106,6 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-
-
-
-
       'kursrum-for-servicetekniker': new CourseRoom()
         ..backgroud_image = 'pics/dentist_responsibility.jpg'
         ..document_ids = [
@@ -110,6 +124,18 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..name = 'For service technicians'
           ..description = 'Content for service technicians.'
           ..url = 'training-room-for-service-technicians')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Pour les techniciens de service'
+          ..description = 'Contenu pour les techniciens de service.'
+          ..url = 'salle-formation-pour-techniciens-service')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Para técnicos de servicio'
+          ..description = 'Contenido para técnicos de servicio.'
+          ..url = 'sala-de-formacion-para-tecnicos-de-servicio')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Für Servicetechniker'
+          ..description = 'Inhalte für Servicetechniker.'
+          ..url = 'schulungsraum-fur-servicetechniker')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -126,11 +152,6 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-
-
-
-
-
       'kursrum-for-mijoserviceforetag': new CourseRoom()
         ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
@@ -148,7 +169,25 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..name = 'For environmental maintenance service personnel'
           ..description =
               'Content for environmental maintenance service personnel'
-          ..url = 'training-room-for-environmental-maintenance-service-personnel')
+          ..url =
+              'training-room-for-environmental-maintenance-service-personnel')
+        ..phrases['fr'] = (new Phrases()
+          ..name =
+              'Pour le personnel de service de maintenance environnementale'
+          ..description =
+              'Contenu pour le personnel de service de maintenance environnementale.'
+          ..url =
+              'salle-formation-pour-personnel-service-maintenance-environnementale')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Para el personal de los equipos de mantenimiento ambiental'
+          ..description =
+              'Contenido para el personal de los equipos de mantenimiento ambiental.'
+          ..url =
+              'sala-de-formacion-para-los-equipos-de-mantenimiento-ambiental')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Für Servicemitarbeiter in der Umweltwartung'
+          ..description = 'Für Servicemitarbeiter in der Umweltwartung.'
+          ..url = 'schulungsraum-fur-servicemitarbeiter-in-der-umweltwartung')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',

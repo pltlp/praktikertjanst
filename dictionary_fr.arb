@@ -1,0 +1,506 @@
+{
+  "about": "à propos",
+  "@about": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_this_project": "A propos du projet",
+  "@about_this_project": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_url": "à propos",
+  "@about_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive": "archive",
+  "@archive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive_url": "archive",
+  "@archive_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "annuler",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "close": "fermer",
+  "@close": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact": "contact",
+  "@contact": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_1": "l'amalgame ne doit être utilisé que sous forme pré-dosée et encapsulée.",
+  "@contact_bullet_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_2": "les enfants de moins de 15 ans et les femmes enceintes ou qui allaitent ne peuvent pas être traités avec un amalgame dentaire, sauf si cela est considéré comme absolument nécessaire pour des raisons médicales",
+  "@contact_bullet_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_3": "des séparateurs d'amalgames d'un niveau d'efficacité spécifié doivent être installés dans les équipements dentaires dans lesquels des amalgames ou des amalgames dentaires sont utilisés",
+  "@contact_bullet_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_4": "la Commission européenne effectuera un rapport sur la possibilité d'une élimination progressive des amalgames d'ici 2030 au plus tard à la mi-2020.",
+  "@contact_bullet_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_1": "Praktikertjänst met en place un projet appelé HG-Rid LIFE en partenariat avec Sweden Recycling et l’IVL Swedish Environmental Research Institute, avec l’aide du fonds LIFE, programme d’action pour l’environnement et du climat de l’UE. Nous prenons la responsabilité d'une société durable à travers le projet. L'objectif principal du projet est de minimiser les émissions de mercure des cliniques dentaires en Suède et, à plus long terme, dans l'ensemble de l'Union européenne.",
+  "@contact_pragraph_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_2": "Le mercure est l’une des toxines les plus dangereuses pour l’environnement et, malgré l’interdiction des amalgames en 2009, seuls quelques cabinets dentaires n’ont émis aucune émission de mercure à partir d’amalgames. On estime qu'il reste encore jusqu'à 15 tonnes de mercure dans les dentitions de la population suédoise. Le fraisage des amalgames sera donc courant pendant encore de nombreuses années. Les séparateurs d'amalgames récupèrent la majeure partie du mercure, mais l'efficacité dépend de facteurs tels que l’entretien. Les particules d'amalgame les plus fines ne sont pas non plus piégées dans les séparateurs. Le mercure provenant des tuyaux de drainage risque également de fuir dans les eaux usées. Le risque d'accumulation de mercure dans les conduites est particulièrement élevé dans les cabinets où les soins dentaires étaient fournis avant l'introduction de l'exigence des séparateurs et où les anciens séparateurs moins performants sont encore utilisés.",
+  "@contact_pragraph_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_5": "On estime que plus de 1 000 tonnes de mercure sont dans la bouche des citoyens de l'UE. L'amalgame dentaire est l'une des principales utilisations du mercure dans l'UE.",
+  "@contact_pragraph_5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_3": "Un programme de l'UE sur le mercure est entré en vigueur le 1er janvier 2018. Ses objectifs contiennent :",
+  "@contact_pragraph_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_4": "Le projet constitue une contribution à l’objectif national de qualité de l’environnement «Giftfri Miljö» et à l’objectif de développement global de l’ONU, Agenda 2030 (objectif 6, eau propre et assainissement).",
+  "@contact_pragraph_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_1": "la proposition de suggestions des lignes directrices pour le contrôle du mercure dans les soins dentaires pouvant être mises en œuvre en Suède et inspirer des lignes directrices dans le reste de l'UE",
+  "@contact_project_goal_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_2": "le développement de nouvelles méthodes de décontamination efficaces, conviviales et économiques",
+  "@contact_project_goal_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_3": "le renforcement de la sensibilisation à l'impact du mercure provenant des amalgames sur l'environnement. Ce portail numérique fait partie de ces efforts.",
+  "@contact_project_goal_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_us": "Contactez-nous",
+  "@contact_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continueMsg": "suivant",
+  "@continueMsg": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_modules": "modules de formation",
+  "@course_modules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_carousel_header": "vidéos",
+  "@course_room_carousel_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_curious_url": "salle-de-formation-pour-les-curieux",
+  "@course_room_for_curious_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_dental_teams_url": "salle-de-formation-pour-equipe-soins-dentaires",
+  "@course_room_for_dental_teams_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_service_technicians_url": "salle-de-formation-pour-techniciens-de-service",
+  "@course_room_for_service_technicians_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_environmental_service_companies_url": "salle-de-formation-pour-personnel-du-service-de-maintenance-environnementale",
+  "@course_room_for_environmental_service_companies_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document_url": "document",
+  "@document_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "documents_component_url": "liste documents",
+  "@documents_component_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "english": "Anglais",
+  "@english": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "find_right_content_for_you": "Trouvez le contenu qui vous convient",
+  "@find_right_content_for_you": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "french": "Français",
+  "@french": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "german": "Allemand",
+  "@german": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "good_examples": "bon exemple",
+  "@good_examples": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home_url": "accueil",
+  "@home_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "langue",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "learn_more": "en savoir plus !",
+  "@learn_more": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library": "bibliothèque",
+  "@library": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_button_tooltip": "Tout le matériel de formation peut être trouvé ici, en un même lieu !",
+  "@library_button_tooltip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_header": "Tout le matériel peut être trouvé ici, en un même lieu !",
+  "@library_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_url": "bibliothèque",
+  "@library_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header": "Un petit effort peut faire une grande différence !",
+  "@main_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "menu",
+  "@menu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "open": "ouvrir",
+  "@open": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "project_should": "Le projet permettra de :",
+  "@project_should": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quick_actions_url": "activités rapides",
+  "@quick_actions_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_1": "Désolé ! Vous n'avez pas assez de réponses correctes pour réussir le test !",
+  "@quiz_fail_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_2": "Lisez et essayez à nouveau.",
+  "@quiz_fail_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_3": "Vous devez répondre correctement pour ",
+  "@quiz_fail_text_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of_given_questions": "des questions",
+  "@of_given_questions": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_title": "Désolé !",
+  "@quiz_fail_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_agree_terms": "Je consens par la présente à ce que Praktikertjänst AB enregistre mon adresse e-mail pendant une période maximale de 12 mois. Votre adresse électronique ne sera pas utilisée à des fins commerciales ni divulguée à des tiers.",
+  "@quiz_success_agree_terms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_text": "Nous vérifierons.",
+  "@quiz_success_mail_sent_text": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_title": "Merci !",
+  "@quiz_success_mail_sent_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_1": "Dans le cadre du projet Hg-rid, nous souhaitons évaluer l’intérêt du portail.",
+  "@quiz_success_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_2": "Souhaitez-vous répondre à quelques questions via votre email, d’ici quelques mois ? Si oui, veuillez indiquer votre adresse email ici.",
+  "@quiz_success_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_title": "Félicitations, vous avez réussi le test !",
+  "@quiz_success_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pass_limt": "Score minimum pour réussir :  ",
+  "@pass_limt": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "read_more_about_this_project_at": "Vous pourrez en lire plus à propos du projet sur",
+  "@read_more_about_this_project_at": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "redo_quiz": "changer",
+  "@redo_quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "rechercher",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "send": "envoyer",
+  "@send": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spanish": "Espagnol",
+  "@spanish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "swedish": "Suédois",
+  "@swedish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "type_here_to_search": "Taper votre recherche ici...",
+  "@type_here_to_search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "word_list": "glossaire",
+  "@word_list": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document": "{howMany, plural, =1 {dokument} other {dokument}}",
+  "@document": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "word": "{howMany, plural, =1 {ord} other {ord}}",
+  "@word": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "back": "revenir",
+  "@back": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "go_back_to_wordlist": "revenir au glossaire",
+  "@go_back_to_wordlist": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "check_your_answers": "résultat",
+  "@check_your_answers": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "correct": "Vrai",
+  "@correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "not_correct": "Faux",
+  "@not_correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "time": "Temps",
+  "@time": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "length": "Durée",
+  "@length": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "article": "Article",
+  "@article": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reading": "lire",
+  "@reading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "video": "Vidéo",
+  "@video": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz": "Quizz",
+  "@quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continue_label": "continuer",
+  "@continue_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel_label": "annuler",
+  "@cancel_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "financial_support": "Financé par le programme LIFE de l’UE : ",
+  "@financial_support": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hg_rid_life": "HG-Rid LIFE",
+  "@hg_rid_life": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mercury": "mercure",
+  "@mercury": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam": "amalgame",
+  "@amalgam": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dental_care": "soin dentaire",
+  "@dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "praktikertjanst": "Praktikertjänst",
+  "@praktikertjanst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sweden": "Suède",
+  "@sweden": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recycling": "Recyclage",
+  "@recycling": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ivl": "IVL",
+  "@ivl": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam_separator": "Séparateur d’amalgame",
+  "@amalgam_separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "environment": "environnement",
+  "@environment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green_dental_care": "soin dentaire écologique",
+  "@green_dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "separator": "Séparateur",
+  "@separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "Hg-rid LIFE | Minimiser les émissions de mercure dans l'environnement provenant des soins dentaires",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_1": "En quoi le mercure a-t-il un impact sur la nature ?",
+  "@description_sentence_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_2": "Quelles règles s’appliquent au secteur dentaire ?",
+  "@description_sentence_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_3": "Comment le secteur dentaire peut-il minimiser les émissions de mercure dans l'environnement ?",
+  "@description_sentence_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header_description": "Il s’agit d’une formation ouverte et gratuite sur la manière dont le secteur dentaire peut réduire les émissions des amalgames dentaires. La formation comporte de courts clips vidéo, mais aussi des documents et articles interactifs.",
+  "@main_header_description": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

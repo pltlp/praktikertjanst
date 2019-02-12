@@ -28,15 +28,35 @@ class RiseService extends ResourceService<Rise> {
               'Article on what mercury is and how it affects nature.'
           ..url = 'mercury-in-nature'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Le mercure dans la nature'
+          ..description =
+              'Article présentant le mercure et expliquant en quoi il affecte la nature.'
+          ..url = 'mercure-dans-nature'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'El mercurio en la naturaleza'
+          ..description =
+              'Artículo sobre qué es el mercurio y cómo afecta a la naturaleza.'
+          ..url = 'el-mercurio-en-la-naturaleza'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Quecksilber in der Natur'
+          ..description =
+              'Artikel über die Eigenschaften von Quecksilber und wie es sich auf die Natur auswirkt.'
+          ..url = 'quecksilber-in-der-natur'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/kvicksilver-i-naturen/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+        ..url['fr'] =
+            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+        ..url['es'] =
+            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+        ..url['de'] =
             'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
-
-
-
-
       'Lagar och regler': new Rise()
         ..icon = 'article'
         ..id = 'Lagar och regler'
@@ -54,14 +74,35 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Article on the laws and rules that govern the handling of amalgam.'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Lois et règlementations'
+          ..url = 'lois-et-reglementations'
+          ..description =
+              'Article sur les lois et règlementations qui régissent le traitement des amalgames.'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Leyes y reglamentos'
+          ..url = 'leyes-y-reglamentos'
+          ..description =
+              'Artículo sobre las leyes y normas que rigen la manipulación de la amalgama.'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Gesetze und Vorschriften'
+          ..url = 'gesetze-und-vorschriften'
+          ..description =
+              'Artikel über die Gesetze und Vorschriften zum Umgang mit Amalgam.'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+        ..url['fr'] =
+            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+        ..url['es'] =
+            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+        ..url['de'] =
             'https://hg-rid.eu/rise/laws-and-regulations/content/index.html',
-
-
-
       'Vad är vad på mottagningen?': new Rise()
         ..icon = 'article'
         ..id = 'Vad är vad på mottagningen?'
@@ -77,14 +118,32 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'whats-what-in-the-practices'
           ..description = 'Overview of equipment at practices.'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Au cabinet'
+          ..url = 'presentation-equipement-cabinets'
+          ..description = 'Présentation de l’équipement dans les cabinets.'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'En la clínica'
+          ..url = 'que-es-que-en-la-clinica'
+          ..description = 'Resumen de los equipos de la clínica.'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'In der Praxis'
+          ..url = 'was-ist-was-in-der-praxis'
+          ..description = 'Übersicht über die Geräte in Praxen.'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+        ..url['fr'] =
+            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+        ..url['es'] =
+            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+        ..url['de'] =
             'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
-
-
-
       'Tandvårdsteamets ansvar': new Rise()
         ..icon = 'article'
         ..id = 'Tandvårdsteamets ansvar '
@@ -101,14 +160,35 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Instructions on the dental care team’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Les responsabilités de l’équipe de soins dentaires'
+          ..url = 'les-responsabilites-equipe-soins-dentaires'
+          ..description =
+              'Des instructions sur les responsabilités de l’équipe de soins dentaires sont disponibles ici.'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Las responsabilidades del equipo de cuidado dental'
+          ..url = 'las-responsabilidades-del-equipo-de-cuidado-dental'
+          ..description =
+              'Aquí encontrará instrucciones relacionadas con las responsabilidades del equipo de cuidado dental.'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Aufgaben des Zahnpflegeteams'
+          ..url = 'aufgaben-des-zahnpflegeteams'
+          ..description =
+              'Anleitungen für die Aufgaben des Zahnpflegeteams sind hier zu finden.'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+        ..url['en'] =
+            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+        ..url['en'] =
+            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+        ..url['en'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
-
-
-
       'serviceteknikerns ansvar': new Rise()
         ..icon = 'article'
         ..id = 'serviceteknikerns ansvar'
@@ -117,7 +197,8 @@ class RiseService extends ResourceService<Rise> {
         ..phrases['sv'] = (new Phrases()
           ..name = 'Serviceteknikerns ansvar'
           ..url = 'serviceteknikerns-ansvar'
-          ..description = 'Här får du instruktioner om serviceteknikerns ansvar.'
+          ..description =
+              'Här får du instruktioner om serviceteknikerns ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (new Phrases()
           ..name = 'The service engineer’s responsibilities'
@@ -125,14 +206,35 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Instructions on the service technician’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Les responsabilités de l’ingénieur de service'
+          ..url = 'les-responsabilites-ingenieur-service'
+          ..description =
+              'Des instructions sur les responsabilités de l’ingénieur de service sont disponibles ici.'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Las responsabilidades del ingeniero de servicio'
+          ..url = 'las-responsabilidades-del-ingeniero-de-servicio'
+          ..description =
+              'Aquí podrá encontrar instrucciones relacionadas con las responsabilidades de los técnicos de servicio.'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Aufgaben des Servicetechnikers'
+          ..url = 'aufgaben-des-servicetechnikers'
+          ..description =
+              'Anleitungen für die Aufgaben des Servicetechnikers sind hier zu finden.'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/serviceteknikerns-ansvar/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+        ..url['fr'] =
+            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+        ..url['es'] =
+            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+        ..url['de'] =
             'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
-
-
-
       'Instruktioner för miljöserviceföretag': new Rise()
         ..icon = 'article'
         ..id = 'Instruktioner för miljöserviceföretag'
@@ -150,10 +252,35 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Instructions on an environmental maintenance service’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Ca 5 min')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Que fait un service de maintenance environnementale'
+          ..url = 'instructions-pour-services-maintenance-environnementale'
+          ..description =
+              'Des instructions sur les responsabilités d’un service de maintenance environnementale sont disponibles ici.'
+          ..estimated_time_for_completion = 'Env. 5 min')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Qué hace un equipo de mantenimiento ambiental'
+          ..url =
+              'instrucciones-para-los-servicios-del-equipo-de-mantenimiento-ambiental'
+          ..description =
+              'Aquí podrá encontrar instrucciones relacionadas con las responsabilidades del equipo de mantenimiento ambiental.'
+          ..estimated_time_for_completion = 'Aprox. 5 minutos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Was ein Umweltwartungsdienst macht'
+          ..url = 'anleitungen-fur-umweltwartungsdienste'
+          ..description =
+              'Anleitungen für die Aufgaben des Umweltwartungsdienstes.'
+          ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
         ..url['en'] =
+            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+        ..url['fr'] =
+            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+        ..url['es'] =
+            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+        ..url['de'] =
             'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
     };
 

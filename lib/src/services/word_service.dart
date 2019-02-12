@@ -29,9 +29,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'A device which collects amalgam particles in the water used in dental treatment before it reaches the drain. By means of filtration, sedimentation, centrifuging or a combination of these methods the amalgam is separated and retained in the container. The amalgam is subsequently handled as environmentally hazardous waste. Amalgam separators can be built into a unit or located where they can be connected to multiple units.'
-        ..name = 'Amalgam Separator'),
-    
-    
+        ..name = 'Amalgam Separator')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Un dispositif qui capture les particules d’amalgames dans l’eau utilisée pour les traitements dentaires avant qu’elle n’atteigne les siphons. Par filtration, sédimentation, centrifugation ou association de tous, l’amalgame est séparé et reste dans le récipient. L’amalgame est ensuite géré comme déchet dangereux pour l’environnement. Les séparateurs d’amalgames peuvent être intégrés dans une unité ou placés là où ils peuvent être branchés à plusieurs unités.'
+        ..name = 'Séparateur d’amalgames')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Se trata de un dispositivo capaz de recolectar las partículas de amalgama en el agua utilizada en los tratamientos dentales antes de que esta llegue al desagüe. La amalgama se separa y permanece en el recipiente gracias a procedimientos de filtración, sedimentación, centrifugación o una combinación de los anteriores. Posteriormente, se procede a gestionar la amalgama como residuo peligroso para el medio ambiente. Los separadores de amalgama se pueden instalar en una unidad en concreto o ubicarse en lugares en los que puedan quedar conectados a varias unidades.'
+        ..name = 'Separador de amalgama')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Ein Gerät, das Amalgampartikel aus der zahnärztlichen Behandlung im Wasser aufnimmt, bevor sie in die Kanalisation gelangen. Durch Filtration, Sedimentation, Zentrifugation oder eine Kombination daraus wird das Amalgam abgeschieden und verbleibt im Behälter. Das Amalgam wird dann als Sondermüll behandelt. Amalgamabscheider können in eine Einheit eingebaut oder separat zur Verbindung mit mehreren Einheiten aufgestellt werden.'
+        ..name = 'Amalgamabscheider'),
     'Backventil': new Word()
       ..img_urls = ['pics/check_valve.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -41,9 +51,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Wet systems must incorporate a check valve ahead of the amalgam separator in order to prevent backflow.'
-        ..name = 'Non-return valve'),
-    
-    
+        ..name = 'Non-return valve')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Les systèmes humides doivent comprendre un clapet de retenue avant le séparateur d’amalgames afin d’éviter les reflux.'
+        ..name = 'Clapet de retenue')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Los sistemas húmedos deben incorporar una válvula antirretorno delante del separador de amalgama para evitar el reflujo de líquido.'
+        ..name = 'Válvula antirretorno')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'La amalgama es un tipo de material cuya utilización como relleno para empastes dentales estuvo permitida en Suecia hasta el año 2009. Está compuesta de mercurio (40-50%), plata (20-35%), estaño (12-15%), cobre (5-15%) y zinc (2%). '
+        ..name = 'Amalgama dental'),
     'Dentalt amalgam': new Word()
       ..img_urls = ['pics/dental_amalgam.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -53,9 +73,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Amalgam which, up until 2009, was permitted for use as dental filling material in Sweden. Consists of mercury (40-50%), silver (20-35%), tin (12-15%), copper (5-15%) and zinc (2%)'
-        ..name = 'Dental amalgam'),
-    
-    
+        ..name = 'Dental amalgam')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Amalgames qui, jusqu’en 2009, pouvaient être utilisés comme matière de remplissage dentaire en Suède.’ Il comprend du mercure (40 à 50 %), de l’argent (20 à 35 %), de l’étain (12 à 15 %), du cuivre (5 à 15 %) et du zinc (2 %).'
+        ..name = 'Amalgame dentaire')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'La amalgama es un tipo de material cuya utilización como relleno para empastes dentales estuvo permitida en Suecia hasta el año 2009. Está compuesta de mercurio (40-50%), plata (20-35%), estaño (12-15%), cobre (5-15%) y zinc (2%). '
+        ..name = 'Amalgama dental')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Nasssysteme müssen über ein Rückschlagventil vor dem Amalgamabscheider verfügen, um einen Rückfluss zu verhindern.'
+        ..name = 'Rückschlagventil'),
     'Diskbänksavskiljare': new Word()
       ..img_urls = ['pics/sink_separator.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -65,10 +95,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'A dental amalgam separator which captures amalgam particles in the water which is used in the cleaning of dental instruments and other equipment which has been in contact with amalgam prior to being washed/sterilised in a disinfector and autoclave.'
-        ..name = 'Sink trap'),
-    
-    
-    
+        ..name = 'Sink trap')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Un séparateur d’amalgames dentaires qui capture les particules d’amalgames dans l’eau utilisée lors du nettoyage des instruments dentaires et autres équipements en contact avec les amalgames avant d’être nettoyés/stérilisés dans un désinfecteur et un autoclave.'
+        ..name = 'Valves du lavabo')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Un tipo de separador de amalgama dental que es capaz de capturar las partículas de amalgama existentes en el agua utilizada para la limpieza de herramientas dentales y otros equipos que hayan podido estar en contacto con la amalgama antes de proceder a su lavado/esterilización en un esterilizador y en un autoclave.'
+        ..name = 'Sifón')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Ein Dentalamalgamabscheider, der Amalgampartikel im Wasser aufnimmt, das für die Reinigung von zahnärztlichen Instrumenten und anderen Geräten verwendet wird, die vor dem Waschen/Sterilisieren in einem Desinfektionsgerät bzw. Autoklav mit Amalgam in Berührung kamen.'
+        ..name = 'Siphon'),
     'Föravskiljare': new Word()
       ..img_urls = ['pics/amalgam_pre_separators.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -78,10 +117,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Pre-separator Installed ahead of the dental amalgam separator in order to collect large particles which have the potential to block the dental amalgam separator which it feeds.'
-        ..name = 'Pre-separator'),
-    
-    
-    
+        ..name = 'Pre-separator')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Pré-séparateur installé en amont du séparateur d’amalgames dentaires afin de collecter les particules larges qui peuvent potentiellement bloquer le séparateur d’amalgames dentaires qu’il alimente.'
+        ..name = 'Pré-séparateur')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Separador previo instalado delante del separador de amalgama dental para capturar las partículas más grandes que podrían llegar a bloquear el separador de amalgama en sí.'
+        ..name = 'Separador previo')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Vorabscheider, der vor dem Dentalamalgamabscheider installiert wird, um große Partikel zu sammeln, die das Potenzial haben, den Dentalamalgamabscheider zu blockieren, den er speist.'
+        ..name = 'Vorabscheider'),
     'Godkänd avfallsbehållare': new Word()
       ..img_urls = ['pics/approved_waste_container.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -91,10 +139,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Containers for hazardous waste such as mercury must be UN-certified and fulfil requirements for transportation of hazardous waste. The UN number is an identification number for hazardous materials.'
-        ..name = 'Approved waste container'),
-    
-    
-    
+        ..name = 'Approved waste container')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Les conteneurs pour les déchets dangereux tels que le mercure doivent être agréés UN et répondre aux exigences de transport des déchets dangereux. Le nombre UN est un numéro d’identification pour les matières dangereuses.'
+        ..name = 'Conteneur à déchets agréé')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Los contenedores destinados al deshecho de residuos peligrosos como el mercurio deben estar certificados por la ONU y cumplir con los requisitos dispuestos para el transporte de residuos peligrosos. El número de la ONU es un código que permite identificar los materiales peligrosos.'
+        ..name = 'Contenedor certificado para el deshecho de residuos')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Behälter für Sondermüll wie Quecksilber müssen UN-zertifiziert sein und die Anforderungen für den Transport von Sondermüll erfüllen. Die UN-Nummer ist eine Identifikationsnummer für Gefahrgut.'
+        ..name = 'Zugelassener Abfallbehälter'),
     'Grovsil / Salivsugfilter / Partikelfälla': new Word()
       ..img_urls = ['pics/particle_filter.png']
       ..phrases['sv'] = (new Phrases()
@@ -104,9 +161,21 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'In order to improve the functioning of the amalgam separator and remove large solid particles, the unit’s suction unit is equipped with a coarse strainer/saliva suction filter or a particulate trap.  The latter is of the disposable variety.'
-        ..name = 'Coarse strainer/saliva suction filter/particle trap'),
-   
-   
+        ..name = 'Coarse strainer/saliva suction filter/particle trap')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Afin d’améliorer le fonctionnement du séparateur d’amalgames et de retirer les larges particules solides, l’élément d’aspiration de l’unité est doté d’un gros filtre/un filtre d’aspiration de la salive, ou d’un piège à particules.  Le dernier est jetable.'
+        ..name =
+            'Gros filtre/filtre d’aspiration de la salive/piège à particules')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Para optimizar el funcionamiento del separador de amalgama y poder, de esta forma, eliminar las partículas sólidas más grandes, el dispositivo de succión de la unidad está equipado con un filtro grueso/filtro de succión de saliva o con un retenedor de partículas  Este último tipo de filtro de partículas mencionado es desechable.'
+        ..name =
+            'Filtro grueso/filtro de succión de saliva/retenedor de partículas')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Um die Funktion des Amalgamabscheiders zu verbessern und große feste Partikel zu entfernen, ist die Absaugeinheit der Einheit mit einem Grobsieb/Speichelsaugfilter oder Partikelfilter ausgestattet.  Letzterer ist ein Einwegprodukt.'
+        ..name = 'Grobsieb/Speichelsaugfilter/Partikelfilter'),
     'Kompressor': new Word()
       ..img_urls = ['pics/compressor.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -116,10 +185,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'A compressor is a unit which takes air from its surroundings, compresses it using a motor and stores it in a tank (pressurised). The compressed air can then be used when needed via an air hose leading to where e.g. dental equipment is located. Compressed air is used to power turbines and implements and to clear saliva and debris during treatment.'
-        ..name = 'Compressor'),
-    
-    
-    
+        ..name = 'Compressor')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Un compresseur est une unité qui absorbe l’air de son environnement, le comprime à l’aide d’un moteur et le stocke dans un réservoir (sous pression). L’air comprimé peut ensuite être utilisé lorsque requis avec un tuyau d’air allant où se trouve l’équipement dentaire par ex. L’air comprimé est utilisé pour alimenter les turbines et les outils, ainsi que pour aspirer la salive et les débris lors du traitement.'
+        ..name = 'Compresseur')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Un compresor es una unidad que toma aire de sus alrededores, lo comprime y, a continuación, se sirve de un motor para almacenarlo en un tanque (presurizado). Gracias a ello, cuando sea necesario, se puede conducir el aire comprimido, a través de mangueras de aire, hasta distintos puntos, como por ejemplo, el lugar en el que los equipos de la clínica están instalados. El aire comprimido permite impulsar las turbinas y herramientas, así como para limpiar la saliva y los residuos durante el tratamiento.'
+        ..name = 'Compresor')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Ein Kompressor ist eine Einheit, die Luft aus der Umgebung mithilfe eines Motors verdichtet und sie in einem (Druck-)Tank speichert. Die Druckluft kann dann bei Bedarf über einen Luftschlauch, der zu den zahnärztlichen Geräten führt, verwendet werden. Druckluft wird verwendet, um Turbinen und Geräte anzutreiben und Speichel und Ablagerungen während der Behandlung zu entfernen.'
+        ..name = 'Kompressor'),
     'Pumpbox': new Word()
       ..img_urls = ['pics/pumpbox.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -129,9 +207,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Installed in order to transfer water from a secretion tank/buffer tank or where the flow of water is insufficient.'
-        ..name = 'Pump box'),
-    
-    
+        ..name = 'Pump box')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Installé pour transférer l’eau d’un réservoir de sécrétion/tampon ou où le flux d’eau est insuffisant.'
+        ..name = 'Boîtier de pompe')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Se instala para permitir el paso del agua desde un tanque de secreción/tanque intermedio o en cualquier lugar en el que el flujo de agua sea insuficiente.'
+        ..name = 'Bomba de agua')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Installiert, um Wasser von einem Sekrettank/Puffertank zu befördern, oder wenn der Wasserfluss nicht ausreichend ist.'
+        ..name = 'Pumpe'),
     'Sanering': new Word()
       ..img_urls = ['pics/decontamination.jpg']
       ..phrases['sv'] = (new Phrases()
@@ -141,9 +229,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Decontamination involves pressure-washing drainpipes and emptying/cleaning water locks and floor drains contaminated with mercury,  Amalgam slurry and water from the pressure washer are treated as hazardous waste by companies authorised to transport them. The pipe is never quite free of mercury and therefore has to be labelled for handling as hazardous waste when dismantled. Decontamination must be performed regularly. When a dental practice closes down, a final decontamination is performed, which involves dismantling suction pipes and plugging rinsing points to prevent mercury getting into the drains.'
-        ..name = 'Decontamination'),
-    
-    
+        ..name = 'Decontamination')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'La décontamination implique le nettoyage à haute pression des tuyaux de vidange et la vidange/le nettoyage des clapets anti-retour et siphons de sol contaminés par le mercure. L’eau et boues des amalgames provenant du nettoyeur à haute pression sont traitées comme des déchets dangereux par les entreprises agréées pour les transporter. Le tuyau a toujours une faible quantité de mercure et, par conséquent, cela doit être indiqué pour assurer un traitement comme déchet dangereux lors de sa destruction. La décontamination doit être régulièrement réalisée. Lorsqu’un cabinet dentaire ferme, une décontamination finale est réalisée, qui implique la destruction des tuyaux d’aspiration et l’obturation des points de rinçage pour empêcher au mercure d’aller dans les siphons.'
+        ..name = 'Décontamination')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'La descontaminación implica el lavado a presión de tuberías de desagüe, el vaciado/limpiado de esclusas de agua y desagües de suelo contaminados con mercurio. El lodo lodo y el agua con amalgama del limpiador a presión han de ser gestionados como residuos peligrosos por empresas autorizadas para su transporte. Los tubos nunca están completamente libres de mercurio y, por tanto, deben ser etiquetados para su manejo como desechos peligrosos una vez desmontados. Se debe proceder a la descontaminación de forma regular. Cuando se cierra una clínica dental, se lleva a cabo una descontaminación final, un proceso a lo largo del cual se procede a desmantelar las tuberías de succión y los puntos de enjuague para evitar que el mercurio penetre en los desagües.'
+        ..name = 'Descontaminación')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Dekontamination umfasst die Hochdruckreinigung von Abflussleitungen und das Entleeren/Reinigen von mit Quecksilber kontaminierten Wasserabscheidern und Bodenabläufen. Amalgamschlick und das Wasser aus dem Hochdruckreiniger sind als Sondermüll zu behandeln und von befugten Unternehmen zu entsorgen. Die Leitung ist nie frei von Quecksilber und muss daher bei der Demontage als Sondermüll gekennzeichnet werden. Die Dekontamination muss regelmäßig erfolgen. Wenn eine Zahnarztpraxis geschlossen wird, wird eine abschließende Dekontamination durchgeführt, welche die Demontage der Saugleitungen und das Verschließen von Spülstellen umfasst, um zu verhindern, dass Quecksilber in die Kanalisation gelangt.'
+        ..name = 'Dekontamination'),
     'Saneringsprotokoll': new Word()
       ..img_urls = ['pics/remidiation_protocol.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -153,9 +251,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Documentation recorded by the practice concerning decontamination carried out, including the method used and the quantity of mercury collected. The documentation also covers how hazardous waste is dealt with, i.e. that the transporter is authorised and that it is taken to a facility licensed to receive hazardous waste.'
-        ..name = 'Decomtamination protocol'),
-    
-    
+        ..name = 'Decomtamination protocol')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'La documentation enregistrée par le cabinet à propos de la décontamination réalisée, notamment la méthode utilisée et la quantité de mercure collectée. La documentation couvre également la méthode de traitement des déchets dangereux, c.-à-d. que le transporteur est autorisé et que les déchets sont transportés vers une installation autorisée à recevoir des déchets dangereux.'
+        ..name = 'Protocole de décontamination')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Documentación registrada en la clínica en relación a los procedimientos de descontaminación llevados a cabo. En dicha documentación también se especifican los métodos utilizados y las cantidades de mercurio recolectadas. La documentación también incluye información sobre la forma en la que se gestionan los residuos peligrosos. Es decir, que el transportista está autorizado y que se llevan a instalaciones específicas para su recepción.'
+        ..name = 'Protocolo de descontaminación')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Von der Praxis erstellte Dokumentation über die durchgeführte Dekontamination, welche u.a. die verwendete Methode und die Menge des gesammelten Quecksilbers enthält. Die Dokumentation umfasst auch die Behandlung des Sondermülls, d. h. dass der Transporteur befugt ist und der Sondermüll zu einer Anlage befördert wird, die zu dessen Annahme befugt ist.'
+        ..name = 'Dekontaminationsprotokoll'),
     'Torrt sugsystem': new Word()
       ..img_urls = ['pics/amalgam_separators_dry_system.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -165,9 +273,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'In the case of a dry suction system the separation of liquid and air takes place in a liquid separator (secretion separator) located in the unit. The amalgam separator is located at, or is connected to, the unit. Outgoing liquid after the amalgam separator is directly connected to the facility’s waste water drain, typically a floor drain. The air is extracted from the liquid separator by a suction motor which serves multiple units. The suction motor may be situated in the loft, on the same floor as the unit or in the basement.'
-        ..name = 'Dry suction system'),
-    
-    
+        ..name = 'Dry suction system')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Si un système d’aspiration sec, la séparation des liquides et de l’air a lieu dans un séparateur de liquides (séparateur de sécrétions) situé dans l’unité. Le séparateur d’amalgames se trouve dans, ou est branché à, l’unité. Le liquide sortant après le séparateur d’amalgames est directement relié à la purge des eaux usées de l’installation, généralement un siphon de sol. L’air est extrait du séparateur de liquides grâce à un moteur d’aspiration qui désert plusieurs unités. Le moteur d’aspiration peut se trouver dans le grenier, au même étage sur l’unité ou au sous-sol.'
+        ..name = 'Système d’aspiration à sec')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'En los casos en los que se esté utilizando un sistema de succión en seco, la separación de líquido y aire se produce en un separador de líquido ubicado en la unidad. El separador de amalgama está ubicado en la unidad o conectado a ella. El líquido saliente del separador de amalgama queda conectado directamente al sistema de drenaje de aguas residuales de la instalación, que normalmente suele ser un desagüe de suelo. > El aire se extrae del separador de líquidos mediante un motor de succión que funciona para varias unidades al mismo tiempo.> El motor de succión puede estar situado en una buhardilla, en el mismo piso que la unidad o en un sótano.'
+        ..name = 'Sistema de succión seca')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Im Fall einer Trockenabsauganlage erfolgt die Trennung von Flüssigkeit und Luft in einem Flüssigkeitsabscheider (Sekretabscheider), der sich in der Einheit befindet. Der Amalgamabscheider befindet sich in der Einheit oder ist an diese angeschlossen. Nach dem Amalgamabscheider ablaufende Flüssigkeit geht direkt zum Abwassersystem des Objekts, in der Regel ein Bodenablauf. Die Luft wird vom Flüssigkeitsabscheider mithilfe eines Saugmotors getrennt, der an mehrere Einheiten angeschlossen ist. Der Saugmotor kann sich auf dem Dachboden, auf der gleichen Etage wie die Einheit oder im Keller befinden.'
+        ..name = 'Trockenabsauganlage'),
     'Utjämningskärl': new Word()
       ..img_urls = ['pics/surge_vessel_2.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -177,9 +295,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'A 10-litre surge tank is typically installed in connection with a sink trap. This has no effect on the amalgam separation process, but allows for sluicing at a higher flow rate. The use of a surge tank makes it possible to avoid water remaining in the sink.'
-        ..name = 'Surge tank'),
-    
-    
+        ..name = 'Surge tank')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Un réservoir tampon de 10 litres est généralement installé avec une valve de lavabo. Cela n’a aucun effet sur le processus de séparation des amalgames, mais cela permet de drainer à des débits plus élevés. L’utilisation d’un réservoir tampon permet d’empêcher l’eau de rester dans le lavabo.'
+        ..name = 'Réservoir tampon')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Normalmente, se suele instalar una cámara de compensación de 10 litros de capacidad que funciona en conexión con un sifón. Ello no tiene ningún tipo de efecto en el procedimiento de separación de amalgama, pero sí permite escurrir un flujo de agua mayor. El uso de una cámara de compensación permite evitar que quede agua en el lavabo.'
+        ..name = 'Cámara de compensación')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Ein 10-Liter-Ausgleichsbehälter ist in der Regel in Verbindung mit einem Siphon installiert. Das hat keine Auswirkungen auf den Vorgang der Amalgamabscheidung, ermöglicht aber eine höhere Durchflussrate. Durch die Verwendung eines Ausgleichsbehälters wird verhindert, dass Wasser in der Spüle bleibt.'
+        ..name = 'Ausgleichsbehälter'),
     'Vattenlås': new Word()
       ..img_urls = ['pics/siphon.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -189,9 +317,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'A section of a water pipe which is curved such that a quantity of water comes to a standstill in the bend by means of gravity and separates the pockets of air on either side of the trap. In this way the water in the water trap prevents unpleasant odours, disease and vermin from passing through the drainage system. Water traps in dental practices are fitted in washbasins e.g. in the treatment room, sterilisation areas and in the patient toilet.'
-        ..name = 'Water trap'),
-    
-    
+        ..name = 'Water trap')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Une partie du tuyau d’eau qui est courbée de sorte qu’une quantité d’eau soit à l’arrêt dans le coude à cause de la gravité et sépare les poches d’air des deux côtés du séparateur. De cette manière, le séparateur d’eau évite les odeurs déplaisantes, les maladies et les vermines de passer par le système de drainage. Les séparateurs d’eau dans les cabinets dentaires sont dotés de bassins de lavage, par ex. dans la salle de traitement, les zones de stérilisation et dans les toilettes des patients.'
+        ..name = 'Séparateur d’eau')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Se trata de una sección de tubería de agua que presenta una forma curvada para que el agua se estanque en ella por efecto de la gravedad y, gracias a ello, separar las bolsas de agua a cada lado del colector de agua. De esta forma, el agua que queda en el colector evita que los olores desagradables, enfermedades y plagas avancen a través del sistema de drenaje. Los colectores de agua de las clínicas dentales están instalados en lavabos. Por ejemplo, en aquellos situados en las salas de tratamiento, las áreas de esterilización y los baños de los pacientes.'
+        ..name = 'Colector de agua')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Ein gekrümmter Abschnitt einer Wasserleitung, in dem eine Menge Wasser durch die Wirkung der Schwerkraft zum Stillstand kommt und die Lufttaschen auf beiden Seiten des Siphons trennt. Dadurch verhindert das Wasser im Siphon, dass unangenehme Gerüche, Krankheitskeime und Ungeziefer aus der Kanalisation eindringen können. Siphons in Zahnarztpraxis sind an Waschbecken angebracht, z. B. im Behandlungsraum, in Sterilisatonsbereichen und in der Patiententoilette. '
+        ..name = 'Siphon'),
     'Vattenprov': new Word()
       ..img_urls = ['pics/water_sample.jpeg']
       ..phrases['sv'] = (new Phrases()
@@ -201,9 +339,19 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'Analysis of mercury emissions in waste water. Samples are taken after the water has passed through the amalgam separator.'
-        ..name = 'Water sampling'),
-    
-    
+        ..name = 'Water sampling')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Analyse des émissions de mercure dans les eaux usées. Des échantillons sont prélevés une fois l’eau passée par le séparateur d’amalgames.'
+        ..name = 'Échantillon d’eau')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'Análisis realizados para determinar el nivel de emisiones de mercurio en aguas residuales. Las muestras se toman después de que el agua haya pasado por el separador de amalgama.'
+        ..name = 'Muestras de agua')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'Analyse von Quecksilberemissionen im Abwasser. Proben werden genommen, nachdem das Wasser durch den Amalgamabscheider geflossen ist.'
+        ..name = 'Wasserprobenahme'),
     'Vått sugsystem': new Word()
       ..img_urls = [
         'pics/wet_suction_system.jpg',
@@ -219,6 +367,18 @@ class WordService {
       ..phrases['en'] = (new Phrases()
         ..description =
             'In a wet suction system, one or more treatment chairs are linked to a vacuum pipe system in which air and liquids are carried to the central suction system. Air and water are separated in the equipment. Water is passed onwards via the amalgam separator and the air via the suction motor. This type of suction equipment can be installed on the same floor as the clinic, but installation is recommended on the floor below to ensure the best possible operating conditions.'
-        ..name = 'Wet section system'),
+        ..name = 'Wet section system')
+      ..phrases['fr'] = (new Phrases()
+        ..description =
+            'Dans un système d’aspiration humide, une ou plusieurs chaises de traitements sont associées à un système de tuyaux d’aspiration où les airs et liquides sont transportés vers le système d’aspiration central. L’air et l’eau sont séparés dans l’équipement. L’eau passe en avant depuis le séparateur d’amalgames, et l’air passe par le moteur d’aspiration. Ce type d’équipement d’aspiration peut être installé sur le même sol que la clinique, mais une installation au niveau inférieur est recommandée pour assurer les meilleures conditions de fonctionnement possibles.'
+        ..name = 'Système d’aspiration humide')
+      ..phrases['es'] = (new Phrases()
+        ..description =
+            'En los sistemas de succión húmedos, se conecta una o más sillas de tratamiento a un sistema de tubos de vacío en el que el aire y los líquidos son transportados al sistema de succión central. El aire y el agua quedan, de esta forma, separados en el equipo. El agua avanza hacia adelante a través del separador de amalgama y el aire hace lo mismo a través del motor de succión. Es posible instalar este tipo de equipos de succión en la misma planta que en la que se encuentra la clínica, pero se recomienda hacerlo en un piso inferior para garantizar unas condiciones de funcionamiento óptimas.'
+        ..name = 'Sistemas de succión húmeda')
+      ..phrases['de'] = (new Phrases()
+        ..description =
+            'In einer Nassabsauganlage sind ein oder mehrere Behandlungsstühle mit einem Vakuumrohrsystem verbunden, in dem Luft und Flüssigkeiten zu einer zentralen Absauganlage befördert werden. Luft und Wasser werden in der Anlage getrennt. Wasser wir über den Amalgamabscheider weiterbefördert und die Luft über den Saugmotor. Diese Art von Absauganlage kann auf der gleichen Etage wie die Klinik installiert werden, aber die Installation in der darunterliegenden Etage wird empfohlen, um die bestmöglichen Betriebsbedingungen zu gewährleisten.'
+        ..name = 'Nassabsauganlage'),
   };
 }

@@ -1,0 +1,506 @@
+{
+  "about": "Sobre",
+  "@about": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_this_project": "Sobre el proyecto",
+  "@about_this_project": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_url": "Sobre",
+  "@about_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive": "Archivo",
+  "@archive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "archive_url": "Archivo",
+  "@archive_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Quitar",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "close": "Cerrar",
+  "@close": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact": "Contacto",
+  "@contact": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_1": "La amalgama tan solo debería tener una forma encapsulada y predosificada.",
+  "@contact_bullet_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_2": "Los niños menores de 15 años y las mujeres embarazadas y lactantes no tienen que recibir tratamientos en el mismo sentido que el uso de amalgama dental.",
+  "@contact_bullet_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_3": "En las instalaciones dentales en las que se utilizan amalgama o empastes de amalgama instalaremos separadores de amalgama con un nivel de eficiencia según el especificado",
+  "@contact_bullet_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_bullet_4": "A más tardar a mediados de la década de 2020, la Comisión Europea podría anunciar la decisión sobre el uso de la amalgama para el año 2030.",
+  "@contact_bullet_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_1": "En colaboración con Suecia Reciclaje y el Instituto de Investigación Ambiental Sueco IV y gracias a la financiación del Programa de Acción en materia de Medio Ambiente de la UE, Praktikertjänst ha puesto en marcha un proyecto denominado HG-Rid LIFE. Este proyecto nos permite asumir la responsabilidad que recae en nosotros en cuanto a la creación de una sociedad sostenible. El objetivo principal del proyecto es reducir la emisión de mercurio en las clínicas dentales de Suecia y, a largo plazo, en todas las clínicas de la Unión Europea.",
+  "@contact_pragraph_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_2": "El mercurio es una de las toxinas ambientales más peligrosas y, a pesar de que la amalgama se prohibió en el 2009, son algunas de las clínicas dentales que han logrado el objetivo de reducir las emisiones de mercurio originario de la amalgama. Se estima que en los dientes de la población. Por lo tanto, hay que tener en cuenta que, en los próximos años, la perforación de empastes de amalgama como una práctica muy común en la industria dental. Los separadores de amalgama son, sin embargo, verdaderos factores como el mantenimiento. Así pues, los separadores no pueden detener las partículas de amalgama más finas. También existe el riesgo de que el mercurio existente en las tuberías se filtre hacia las aguas residuales. El riesgo de que se acumule mercurio en las vías es especialmente alto en las clínicas en que se ha brindado atención dental a los clientes antes de que la instalación de separadores de amalgama fuera un requisito indispensable y también en tales como se utilizan separadores antiguos , con una eficiencia menor.",
+  "@contact_pragraph_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_5": "Se estima que en las bocas de todos. La amalgama dental es uno de los principales usos que se da al mercurio en la Unión Europea.",
+  "@contact_pragraph_5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_3": "El 1 de enero de 2018 continúa en vigor un programa de restricción del mercurio en la Unión Europea. Sus principales objetivos son:",
+  "@contact_pragraph_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_pragraph_4": "Este es un proyecto que tiene que ver con el objetivo de desarrollo de la calidad ambiental 'Giftfri Miljö' y el objetivo de desarrollo global de la ONU, en concreto, Agenda 2030 (Objetivo 6, agua limpia y saneamiento).",
+  "@contact_pragraph_4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_1": "proponer sugerencias de directrices a tener en cuenta a la hora de controlar el mercurio y que se puedan implantar en las clínicas dentales de Suecia para, además, inspirar otras directrices del resto de la UE",
+  "@contact_project_goal_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_2": "desarrollar nuevos métodos para la descontaminación que sean eficientes, fáciles de usar y económicos",
+  "@contact_project_goal_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_project_goal_3": "aumentar la conciencia sobre cómo el mercurio proviene de la amalgama en el medio ambiente. Esta web nace precisamente como parte de dichos esfuerzos.",
+  "@contact_project_goal_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "contact_us": "Contacta con nosotros",
+  "@contact_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continueMsg": "siguiente",
+  "@continueMsg": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_modules": "módulos de cursos",
+  "@course_modules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_carousel_header": "vídeos",
+  "@course_room_carousel_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_curious_url": "sala-de-formación-para-los-más-curiosos",
+  "@course_room_for_curious_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_dental_teams_url": "sala-de-formación-para-equipos-de-cuidado-dental",
+  "@course_room_for_dental_teams_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_service_technicians_url": "sala-de-formación-para-técnicos-de-servicio",
+  "@course_room_for_service_technicians_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "course_room_for_environmental_service_companies_url": "sala-de-formación-para-personal-de-mantenimiento-ambiental",
+  "@course_room_for_environmental_service_companies_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document_url": "documentos",
+  "@document_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "documents_component_url": "lista de documentos",
+  "@documents_component_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "english": "Inglés",
+  "@english": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "find_right_content_for_you": "Encontrar el contenido más adecuado para usted",
+  "@find_right_content_for_you": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "french": "Francés",
+  "@french": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "german": "Alemán",
+  "@german": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "good_examples": "buenos ejemplos",
+  "@good_examples": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home_url": "inicio ",
+  "@home_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "idioma",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "learn_more": "¡Aumente sus conocimientos!",
+  "@learn_more": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library": "Biblioteca",
+  "@library": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_button_tooltip": "¡Aquí podrás encontrar todos los materiales del curso!",
+  "@library_button_tooltip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_header": "¡Aquí podrás encontrar todo el material!",
+  "@library_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "library_url": "Biblioteca",
+  "@library_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header": "¡Un pequeño esfuerzo puede suponer una enorme diferencia!",
+  "@main_header": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "Menú",
+  "@menu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "open": "Abrir",
+  "@open": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "project_should": "El proyecto tendrá:",
+  "@project_should": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quick_actions_url": "Actividades rápidas",
+  "@quick_actions_url": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_1": "¡Lo sentimos! ¡No tiene las respuestas correctas como pasar el examen!",
+  "@quiz_fail_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_2": "Vuelva a echar un vistazo e inténtelo de nuevo.",
+  "@quiz_fail_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_text_3": "Debe proporcionar una respuesta correcta ",
+  "@quiz_fail_text_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of_given_questions": "para las preguntas",
+  "@of_given_questions": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_fail_title": "¡Lo sentimos!",
+  "@quiz_fail_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_agree_terms": "Doy mi consentimiento para que Praktikertjänst AB almacene mi dirección de correo electrónico durante hasta 12 meses. Su dirección de correo electrónico no se utiliza con fines promocionales ni se divulga a terceros.",
+  "@quiz_success_agree_terms": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_text": "Lo revisaremos.",
+  "@quiz_success_mail_sent_text": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_mail_sent_title": "¡Gracias!",
+  "@quiz_success_mail_sent_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_1": "Como parte del Proyecto Hg-rid, nos encantaría poder evaluar la eficacia del portal.",
+  "@quiz_success_text_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_text_2": "¿Le importaría responder a una serie de preguntas por correo electrónico dentro de unos meses? Si está de acuerdo con ello, introduzca su dirección de correo electrónico aquí.",
+  "@quiz_success_text_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz_success_title": "¡Enhorabuena! ¡Ha aprobado el test!",
+  "@quiz_success_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pass_limt": "Requisitos mínimos para aprobar: ",
+  "@pass_limt": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "read_more_about_this_project_at": "Obtenga más información sobre el Proyecto en",
+  "@read_more_about_this_project_at": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "redo_quiz": "Cambiar",
+  "@redo_quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Buscar",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "send": "Enviar",
+  "@send": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "spanish": "Español",
+  "@spanish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "swedish": "Sueco",
+  "@swedish": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "type_here_to_search": "Insertar texto aquí para buscar…",
+  "@type_here_to_search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "word_list": "Glosario",
+  "@word_list": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "document": "{howMany, plural, =1 {documento} other {dokument}}",
+  "@document": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "word": "{howMany, plural, =1 {ord} other {ord}}",
+  "@word": {
+    "type": "text",
+    "placeholders": {
+      "howMany": {}
+    }
+  },
+  "back": "Atrás",
+  "@back": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "go_back_to_wordlist": "Volver al glosario",
+  "@go_back_to_wordlist": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "check_your_answers": "Resultado",
+  "@check_your_answers": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "correct": "Verdadero",
+  "@correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "not_correct": "Falso",
+  "@not_correct": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "time": "Tiempo",
+  "@time": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "length": "Longitud",
+  "@length": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "article": "Artículo",
+  "@article": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reading": "Lectura",
+  "@reading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "video": "Vídeo",
+  "@video": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quiz": "Prueba",
+  "@quiz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continue_label": "continuar",
+  "@continue_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel_label": "Quitar",
+  "@cancel_label": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "financial_support": "Financiado por el programa VIDA de la UE HG-RID-LIFE LIFE15 ENV / SE / 000465",
+  "@financial_support": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hg_rid_life": "HG-Rid LIFE",
+  "@hg_rid_life": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mercury": "Mercurio",
+  "@mercury": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam": "Amalgama",
+  "@amalgam": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dental_care": "Cuidado dental",
+  "@dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "praktikertjanst": "Praktikertjänst",
+  "@praktikertjanst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sweden": "Suecia",
+  "@sweden": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recycling": "Reciclaje",
+  "@recycling": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ivl": "IVL",
+  "@ivl": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "amalgam_separator": "Separador de amalgama",
+  "@amalgam_separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "environment": "Medio ambiente",
+  "@environment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green_dental_care": "Cuidado dental cuidadoso con el medio ambiente",
+  "@green_dental_care": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "separator": "Separador",
+  "@separator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "Hg-rid LIFE | Minimizar las emisiones de mercurio en el medio ambiente.",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_1": "¿Cómo afecta el mercurio a la naturaleza?",
+  "@description_sentence_1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_2": "¿Qué reglas se aplican en la industria dental?",
+  "@description_sentence_2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "description_sentence_3": "¿Cómo puede ser la industria dental las emisiones de mercurio en el medio ambiente?",
+  "@description_sentence_3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "main_header_description": "Este es un curso abierto y gratuito sobre cómo la industria dental puede minimizar las emisiones de la amalgama dental. Incluye vídeos cortos, artículos interactivos y documentos.",
+  "@main_header_description": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

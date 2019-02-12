@@ -24,10 +24,28 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Poster about lost amalgam plumber'
           ..description = 'Poster about lost amalgam plumber'
           ..url = 'poster-about-lost-amalgam plumber')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Affiche sur les remplissages d’amalgames perdus'
+          ..description = 'Affiche sur les remplissages d’amalgames perdus'
+          ..url = 'affiche-sur-remplissages-amalgames-perdus')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Cartel de empastes de amalgama perdidos'
+          ..description = 'Cartel de empastes de amalgama perdidos'
+          ..url = 'cartel-de-empastes-de-amalgama-perdidos')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Poster über verlorene Amalgamfüllungen'
+          ..description = 'Poster über verlorene Amalgamfüllungen'
+          ..url = 'poster-uber-verlorene-amalgamfullungen')
         ..type = ResourceType.document
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
         ..url['en'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+        ..url['fr'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+        ..url['es'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+        ..url['de'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
         ..size = '191.4 kb'
         ..document_type = 'pdf',
@@ -43,11 +61,34 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Checklist for every work day and week'
           ..description = 'Checklist for every work day and week'
           ..url = 'checklist-for-every-work-day-and-week')
+        ..phrases['fr'] = (new Phrases()
+          ..name =
+              'Liste de vérifications pour chaque jour ouvré et chaque semaine'
+          ..description =
+              'Liste de vérifications pour chaque jour ouvré et chaque semaine'
+          ..url = 'liste-verifications-chaque-jour-ouvre-et-semaine')
+        ..phrases['es'] = (new Phrases()
+          ..name =
+              'Verificar la lista de verificación de cada día y de cada semana laboral'
+          ..description =
+              'Verificar la lista de verificación de cada día y de cada semana laboral'
+          ..url =
+              'verificar-la-lista-de-verificación-de-cada-día-y-de-cada-semana-laboral')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Checkliste jeder Arbeitstag und jede Woche'
+          ..description = 'Checkliste jeder Arbeitstag und jede Woche'
+          ..url = 'checkliste-jeder-arbeitstag-und-jede-woche')
         ..type = ResourceType.document
         ..size = '200.9 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
         ..url['en'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+        ..url['fr'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+        ..url['es'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+        ..url['de'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
         ..document_type = 'pdf',
       'Checklista övrig': new Document()
@@ -62,11 +103,29 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Checklist (other)'
           ..description = 'Checklist (other)'
           ..url = 'checklist-other')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Liste de vérifications, autre'
+          ..description = 'Liste de vérifications, autre'
+          ..url = 'liste-verifications-autre')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Lista de verificación, otros'
+          ..description = 'Lista de verificación, otros'
+          ..url = 'lista-de-verificacion-otros')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Checkliste, sonstige'
+          ..description = 'Checkliste, sonstige'
+          ..url = 'checkliste-sonstige')
         ..type = ResourceType.document
         ..size = '303.3 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
         ..url['en'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+        ..url['fr'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+        ..url['es'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+        ..url['de'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
         ..document_type = 'pdf',
       'EU:s förordning om kvicksilver': new Document()
@@ -81,10 +140,28 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'EU mercury regulations'
           ..description = 'EU mercury regulations'
           ..url = 'eu-mercury-regulations')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Réglementation de l’UE concernant le mercure'
+          ..description = 'Réglementation de l’UE concernant le mercure'
+          ..url = 'reglementation-ue-mercure')
+        ..phrases['sv'] = (new Phrases()
+          ..name = 'Reglamentos de la UE sobre el mercurio'
+          ..description = 'Reglamentos de la UE sobre el mercurio'
+          ..url = 'reglamentos-de-la-UE-sobre-el-mercurio')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'EU-Verordnung über Quecksilber'
+          ..description = 'EU-Verordnung über Quecksilber'
+          ..url = 'eu-verordnung-uber-quecksilber')
         ..type = ResourceType.document
         ..url['sv'] =
             'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['en'] =
+            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+        ..url['fr'] =
+            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+        ..url['es'] =
+            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+        ..url['de'] =
             'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..document_type = 'link',
       'Miljöbalken': new Document()
@@ -99,10 +176,28 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Environmental Code'
           ..description = 'Environmental Code'
           ..url = 'environmental-code')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Règlement environnemental suédois'
+          ..description = 'Règlement environnemental suédois'
+          ..url = 'propagation-du-mercure')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'El Código Ambiental Sueco'
+          ..description = 'El Código Ambiental Sueco'
+          ..url = 'la-propagacion-del-mercurio')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Schwedische Umweltgesetzgebung'
+          ..description = 'Schwedische Umweltgesetzgebung'
+          ..url = 'verbreitung-von-quecksilber')
         ..type = ResourceType.document
         ..url['sv'] =
             'https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808'
         ..url['en'] =
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+        ..url['fr'] =
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+        ..url['es'] =
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+        ..url['de'] =
             'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..document_type = 'link',
       'Vägledningsdokument': new Document()
@@ -117,11 +212,29 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Guidance Document'
           ..description = 'Guidance Document'
           ..url = 'guidance-document')
+        ..phrases['fr'] = (new Phrases()
+          ..name = 'Directives'
+          ..description = 'Directives'
+          ..url = 'directives')
+        ..phrases['es'] = (new Phrases()
+          ..name = 'Documento de directrices'
+          ..description = 'Documento de directrices'
+          ..url = 'documento-de-directrices')
+        ..phrases['de'] = (new Phrases()
+          ..name = 'Richtliniendokument'
+          ..description = 'Richtliniendokument'
+          ..url = 'richtliniendokument')
         ..type = ResourceType.document
         ..size = '1,6 MB'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
         ..url['en'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+        ..url['fr'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+        ..url['es'] =
+            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+        ..url['de'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
         ..document_type = 'pdf',
     };
