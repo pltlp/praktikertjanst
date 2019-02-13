@@ -4,15 +4,13 @@ import '../../models/word.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-  selector: 'p-word-preview',
-  templateUrl: 'word_preview_component.html',
-  styleUrls: const ['word_preview_component.css'],
-  directives: const [FoCarouselComponent, FoCarouselSlideComponent, NgFor, NgIf],
-  changeDetection: ChangeDetectionStrategy.OnPush
-)
+    selector: 'p-word-preview',
+    templateUrl: 'word_preview_component.html',
+    styleUrls: ['word_preview_component.css'],
+    directives: [FoCarouselComponent, FoCarouselSlideComponent, NgFor, NgIf],
+    changeDetection: ChangeDetectionStrategy.OnPush)
 class WordPreviewComponent {
   WordPreviewComponent(this.msg);
-
 
   @Input()
   Word model;

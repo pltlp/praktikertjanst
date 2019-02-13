@@ -8,10 +8,15 @@ import '../document_component/document_component.dart';
 import '../fullscreen_component/fullscreen_component.dart';
 
 @Component(
-    directives: const [NgFor, DocumentComponent, FullscreenComponent, MaterialIconComponent],
-    providers: const [],
+    directives: [
+      NgFor,
+      DocumentComponent,
+      FullscreenComponent,
+      MaterialIconComponent
+    ],
+    providers: [],
     selector: 'p-documents',
-    styleUrls: const ['documents_component.css'],
+    styleUrls: ['documents_component.css'],
     templateUrl: 'documents_component.html',
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)

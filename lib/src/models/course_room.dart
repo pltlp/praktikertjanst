@@ -1,6 +1,6 @@
 import '../models/resource.dart';
 
-class CourseRoom extends Resource{
+class CourseRoom extends Resource {
   CourseRoom();
 
   String backgroud_image;
@@ -9,4 +9,3 @@ class CourseRoom extends Resource{
   List<String> document_ids = [];
   List<String> word_ids = [];
 }
-

@@ -13,20 +13,20 @@ import '../../services/quiz_log_service.dart';
 @Component(
     selector: 'p-quiz-complete',
     templateUrl: 'quiz_complete_component.html',
-    styleUrls: const [
+    styleUrls: [
       'quiz_complete_component.css'
     ],
-    directives: const [
+    directives: [
       ButtonComponent,
       formDirectives,
       MaterialCheckboxComponent,
       MaterialIconComponent,
       NgIf
     ],
-    providers: const [
+    providers: [
       MailService,
     ],
-    pipes: const [
+    pipes: [
       NamePipe
     ])
 class QuizCompleteComponent {
@@ -35,11 +35,10 @@ class QuizCompleteComponent {
   final MessagesService msg;
 
   Future<void> onSignupNewsLetter() async {
-   
     if (form.valid && termsAccepted) {
       await quizLogService.update(logEntry, logId);
 
-      await mailService.send(new Mail()
+      await mailService.send(Mail()
         ..subject = 'New quiz completed'
         ..message = 'Email: ${logEntry.email}'
         ..sender = 'info@hg-rid.eu'
@@ -63,8 +62,8 @@ class QuizCompleteComponent {
   @Input()
   int logId;
 
-  final ControlGroup form = new ControlGroup({
-    'email': new Control(
+  final ControlGroup form = ControlGroup({
+    'email': Control(
         '', Validators.compose([Validators.required, FoValidators.email]))
   });
 }

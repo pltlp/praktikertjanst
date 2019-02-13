@@ -60,7 +60,6 @@ class Routes {
             ':lang/${msg.home_url}/${msg.course_room_for_environmental_service_companies_url}/:url',
         component: rwc.ResourceWrapperComponentNgFactory,
       ),
-
       RouteDefinition(
         path: ':lang/${msg.home_url}/${msg.contact}',
         component: ac.AboutComponentNgFactory,

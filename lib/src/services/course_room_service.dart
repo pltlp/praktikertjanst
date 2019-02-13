@@ -11,10 +11,10 @@ import '../services/resource_service.dart';
 class CourseRoomService extends ResourceService<CourseRoom> {
   @override
   Future<Map<String, CourseRoom>> fetchAll() async {
-    await new Future.delayed(const Duration(milliseconds: 1));
+    await Future.delayed(const Duration(milliseconds: 1));
 
     data = {
-      'kursrum-for-nyfikna': new CourseRoom()
+      'kursrum-for-nyfikna': CourseRoom()
         ..backgroud_image = 'pics/courseroom_for_curious.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
@@ -24,23 +24,23 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..icon = 'pool'
         ..id = 'kursrum-for-nyfikna'
         ..img_url = 'pics/courseroom_for_curious.jpg'
-        ..phrases['sv'] = (new Phrases()
+        ..phrases['sv'] = (Phrases()
           ..name = 'För dig som bara är nyfiken'
           ..description = 'Innehåll för dig som bara är nyfiken.'
           ..url = 'kursrum-for-nyfikna')
-        ..phrases['en'] = (new Phrases()
+        ..phrases['en'] = (Phrases()
           ..name = 'If you’re just curious'
           ..description = 'Content for you who is curious'
           ..url = 'training-room-for-the-curious')
-        ..phrases['fr'] = (new Phrases()
+        ..phrases['fr'] = (Phrases()
           ..name = 'Si vous êtes juste curieux'
           ..description = 'Contenu si vous êtes juste curieux.'
           ..url = 'salle-formation-pour-les-curieux')
-        ..phrases['es'] = (new Phrases()
+        ..phrases['es'] = (Phrases()
           ..name = 'Para curiosos'
           ..description = 'Contenido para curiosos.'
           ..url = 'sala-de-formacion-para-los-mas-curiosos')
-        ..phrases['de'] = (new Phrases()
+        ..phrases['de'] = (Phrases()
           ..name = 'Wenn Sie einfach nur Interesse haben'
           ..description = 'Inhalte für Interessierte.'
           ..url = 'schulungsraum-fur-interessierte')
@@ -58,7 +58,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-tandvardsteam': new CourseRoom()
+      'kursrum-for-tandvardsteam': CourseRoom()
         ..backgroud_image = 'pics/responsibility.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
@@ -68,24 +68,24 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..icon = 'pool'
         ..id = 'kursrum-for-tandvardsteam'
         ..img_url = 'pics/responsibility.jpg'
-        ..phrases['sv'] = (new Phrases()
+        ..phrases['sv'] = (Phrases()
           ..name = 'För dig på tandvårdsmottagning'
           ..description = 'Innehåll för dig som jobbar i tandvårdsteam.'
           ..url = 'kursrum-for-tandvardsteam')
-        ..phrases['en'] = (new Phrases()
+        ..phrases['en'] = (Phrases()
           ..name = 'For dental practices'
           ..description = 'Content for dental care team personnel'
           ..url = 'training-room-for-the-dental-care-teams')
-        ..phrases['fr'] = (new Phrases()
+        ..phrases['fr'] = (Phrases()
           ..name = 'Pour les cabinets dentaires'
           ..description = 'Contenu pour le personnel de soins dentaires.'
           ..url = 'salle-formation-pour-equipe-soins-dentaires')
-        ..phrases['es'] = (new Phrases()
+        ..phrases['es'] = (Phrases()
           ..name = 'Para clínicas dentales'
           ..description =
               'Contenido para el personal del equipo de cuidado dental.'
           ..url = 'sala-de-formacion-para-el-equipo-de-cuidado-dental')
-        ..phrases['de'] = (new Phrases()
+        ..phrases['de'] = (Phrases()
           ..name = 'Für Zahnarztpraxen'
           ..description = 'Inhalte für Personal in der Zahnpflege.'
           ..url = 'schulungsraum-fur-zahnpflegepersonal')
@@ -106,7 +106,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-servicetekniker': new CourseRoom()
+      'kursrum-for-servicetekniker': CourseRoom()
         ..backgroud_image = 'pics/dentist_responsibility.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
@@ -116,23 +116,23 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..icon = 'pool'
         ..id = 'kursrum-for-servicetekniker'
         ..img_url = 'pics/dentist_responsibility.jpg'
-        ..phrases['sv'] = (new Phrases()
+        ..phrases['sv'] = (Phrases()
           ..name = 'För dig som servicetekniker'
           ..description = 'Innehåll för dig som jobbar som servicetekniker.'
           ..url = 'kursrum-for-servicetekniker')
-        ..phrases['en'] = (new Phrases()
+        ..phrases['en'] = (Phrases()
           ..name = 'For service technicians'
           ..description = 'Content for service technicians.'
           ..url = 'training-room-for-service-technicians')
-        ..phrases['fr'] = (new Phrases()
+        ..phrases['fr'] = (Phrases()
           ..name = 'Pour les techniciens de service'
           ..description = 'Contenu pour les techniciens de service.'
           ..url = 'salle-formation-pour-techniciens-service')
-        ..phrases['es'] = (new Phrases()
+        ..phrases['es'] = (Phrases()
           ..name = 'Para técnicos de servicio'
           ..description = 'Contenido para técnicos de servicio.'
           ..url = 'sala-de-formacion-para-tecnicos-de-servicio')
-        ..phrases['de'] = (new Phrases()
+        ..phrases['de'] = (Phrases()
           ..name = 'Für Servicetechniker'
           ..description = 'Inhalte für Servicetechniker.'
           ..url = 'schulungsraum-fur-servicetechniker')
@@ -152,7 +152,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-mijoserviceforetag': new CourseRoom()
+      'kursrum-for-mijoserviceforetag': CourseRoom()
         ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
@@ -161,30 +161,30 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..icon = 'pool'
         ..id = 'kursrum-for-mijoserviceforetag'
         ..img_url = 'pics/environmental_service_companies.jpg'
-        ..phrases['sv'] = (new Phrases()
+        ..phrases['sv'] = (Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
           ..url = 'kursrum-for-mijoserviceforetag')
-        ..phrases['en'] = (new Phrases()
+        ..phrases['en'] = (Phrases()
           ..name = 'For environmental maintenance service personnel'
           ..description =
               'Content for environmental maintenance service personnel'
           ..url =
               'training-room-for-environmental-maintenance-service-personnel')
-        ..phrases['fr'] = (new Phrases()
+        ..phrases['fr'] = (Phrases()
           ..name =
               'Pour le personnel de service de maintenance environnementale'
           ..description =
               'Contenu pour le personnel de service de maintenance environnementale.'
           ..url =
               'salle-formation-pour-personnel-service-maintenance-environnementale')
-        ..phrases['es'] = (new Phrases()
+        ..phrases['es'] = (Phrases()
           ..name = 'Para el personal de los equipos de mantenimiento ambiental'
           ..description =
               'Contenido para el personal de los equipos de mantenimiento ambiental.'
           ..url =
               'sala-de-formacion-para-los-equipos-de-mantenimiento-ambiental')
-        ..phrases['de'] = (new Phrases()
+        ..phrases['de'] = (Phrases()
           ..name = 'Für Servicemitarbeiter in der Umweltwartung'
           ..description = 'Für Servicemitarbeiter in der Umweltwartung.'
           ..url = 'schulungsraum-fur-servicemitarbeiter-in-der-umweltwartung')

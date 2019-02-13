@@ -19,30 +19,24 @@ import '../main_header_component/main_header_component.dart';
 import '../make_difference_component/make_difference_component.dart';
 import '../resource_component/resource_component.dart';
 
-@Component(
-    selector: 'p-home',
-    templateUrl: 'home_component.html',
-    styleUrls: const [
-      'home_component.css'
-    ],
-    directives: [
-      FullscreenComponent,
-      CarouselComponent,
-      MainHeaderComponent,
-      MakeDifferenceComponent,
-      NgFor,
-      NgIf,
-      ResourceComponent,
-      CourseRoomComponent,
-      routerDirectives,
-      ButtonComponent,
-      CourseRoomButtonsComponent,
-      MaterialButtonComponent
-    ],
-    providers: [],
-    pipes: [
-      NamePipe
-    ])
+@Component(selector: 'p-home', templateUrl: 'home_component.html', styleUrls: [
+  'home_component.css'
+], directives: [
+  FullscreenComponent,
+  CarouselComponent,
+  MainHeaderComponent,
+  MakeDifferenceComponent,
+  NgFor,
+  NgIf,
+  ResourceComponent,
+  CourseRoomComponent,
+  routerDirectives,
+  ButtonComponent,
+  CourseRoomButtonsComponent,
+  MaterialButtonComponent
+], providers: [], pipes: [
+  NamePipe
+])
 class HomeComponent {
   HomeComponent(this.router, this.msg, this.videoService, this.riseService,
       this.courseRoomService, this.quizService) {

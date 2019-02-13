@@ -19,8 +19,8 @@ import 'quiz_fail_component.dart';
 @Component(
     selector: 'p-quiz',
     templateUrl: 'quiz_component.html',
-    styleUrls: const ['quiz_component.css'],
-    directives: const [
+    styleUrls: ['quiz_component.css'],
+    directives: [
       ButtonComponent,
       NgIf,
       MaterialStepperComponent,
@@ -34,7 +34,7 @@ import 'quiz_fail_component.dart';
       FoModalComponent
     ],
     providers: [scrollHostProviders, Location, QuizLogService],
-    pipes: const [NamePipe],
+    pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnInit {
   QuizComponent(this.quizService, this.changeDetectorRef, this.location,
@@ -65,7 +65,7 @@ class QuizComponent implements OnInit {
   }
 
   List shuffle(List options) {
-    final random = new Random();
+    final random = Random();
 
     for (var i = options.length - 1; i > 0; i--) {
       final n = random.nextInt(i + 1);
@@ -178,7 +178,7 @@ class QuizComponent implements OnInit {
   final Location location;
   final MessagesService msg;
   final QuizLogService quizLogService;
-  QuizLogEntry logEntry = new QuizLogEntry();
+  QuizLogEntry logEntry = QuizLogEntry();
   int logId;
   bool showAnswersModal = false;
   bool completed = false;

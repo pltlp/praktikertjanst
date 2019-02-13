@@ -8,8 +8,8 @@ import '../../services/messages_service.dart';
 @Component(
     selector: 'p-resource',
     templateUrl: 'resource_component.html',
-    styleUrls: const ['resource_component.css'],
-    directives: const [MaterialIconComponent, FoIconComponent, NgIf],
+    styleUrls: ['resource_component.css'],
+    directives: [MaterialIconComponent, FoIconComponent, NgIf],
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class ResourceComponent implements OnInit {

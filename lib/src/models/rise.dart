@@ -1,6 +1,6 @@
 import 'resource.dart';
 
-class Rise extends Resource{
+class Rise extends Resource {
   Rise();
-  Map<String,String> url = {};
+  Map<String, String> url = {};
 }

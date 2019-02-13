@@ -8,9 +8,9 @@ import '../../services/messages_service.dart';
 @Component(
     selector: 'p-video',
     templateUrl: 'video_component.html',
-    styleUrls: const ['video_component.css'],
-    directives: const [],
-    providers: const [MessagesService],
+    styleUrls: ['video_component.css'],
+    directives: [],
+    providers: [MessagesService],
     pipes: [NamePipe])
 class VideoComponent implements OnInit, OnActivate {
   VideoComponent(this.sanitizer, this.msg);
@@ -26,7 +26,6 @@ class VideoComponent implements OnInit, OnActivate {
   void ngOnInit() {
     url = sanitizer
         .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
-
   }
 
   @Input('model')

@@ -4,7 +4,7 @@ import 'package:angular/angular.dart';
 @Component(
   selector: 'd-fullscreen',
   templateUrl: 'fullscreen_component.html',
-  styleUrls: const ['fullscreen_component.css'],
+  styleUrls: ['fullscreen_component.css'],
 )
 class FullscreenComponent {
   FullscreenComponent(this.host);

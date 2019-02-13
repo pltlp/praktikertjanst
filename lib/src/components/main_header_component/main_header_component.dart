@@ -6,24 +6,24 @@ import '../../services/messages_service.dart';
 import '../button_component/button_component.dart';
 
 @Component(
-    directives: const [MaterialIconComponent, ButtonComponent],
-    providers: const [],
+    directives: [MaterialIconComponent, ButtonComponent],
+    providers: [],
     selector: 'p-main-header',
-    styleUrls: const ['main_header_component.css'],
+    styleUrls: ['main_header_component.css'],
     templateUrl: 'main_header_component.html',
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class MainHeaderComponent implements OnDestroy {
-MainHeaderComponent(this.msg);
+  MainHeaderComponent(this.msg);
 
-@override
-void ngOnDestroy() {
-  buttonClickController.close();
-}
+  @override
+  void ngOnDestroy() {
+    buttonClickController.close();
+  }
 
-@Output('buttonClick')
-Stream<String> get buttonClick => buttonClickController.stream;
+  @Output('buttonClick')
+  Stream<String> get buttonClick => buttonClickController.stream;
 
-MessagesService msg;
-final StreamController<String> buttonClickController = new StreamController();
+  MessagesService msg;
+  final StreamController<String> buttonClickController = StreamController();
 }

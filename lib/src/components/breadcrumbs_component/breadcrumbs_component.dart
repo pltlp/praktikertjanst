@@ -11,11 +11,11 @@ import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
 
 @Component(
-    directives: const [routerDirectives, NgFor, NgIf, MaterialIconComponent],
-    providers: const [],
+    directives: [routerDirectives, NgFor, NgIf, MaterialIconComponent],
+    providers: [],
     pipes: [NamePipe],
     selector: 'p-breadcrumbs',
-    styleUrls: const ['breadcrumbs_component.css'],
+    styleUrls: ['breadcrumbs_component.css'],
     templateUrl: 'breadcrumbs_component.html')
 class BreadcrumbsComponent {
   BreadcrumbsComponent(
@@ -76,7 +76,7 @@ class BreadcrumbsComponent {
     routerState = state;
     final segments = pathSegments.toList();
 
-    crumbLinks = new List(segments.length);
+    crumbLinks = List(segments.length);
 
     for (var i = 0; i < segments.length; i++) {
       final s = segments.take(i + 1);
@@ -105,8 +105,7 @@ class BreadcrumbsComponent {
                   (resource) => resource.phrases[msg.currentLanguage].url == p)
               ?.phrases[msg.currentLanguage]
               .name);
-        } on StateError {
-        }
+        } on StateError {}
       }
     }
     return evaluateBreadcrumbs(nameList);

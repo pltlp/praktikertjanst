@@ -11,14 +11,13 @@ import '../../services/quiz_service.dart';
 import '../../services/rise_service.dart';
 
 @Component(
-    directives: const [RiseComponent, QuizComponent, NgIf],
-    providers: const [],
+    directives: [RiseComponent, QuizComponent, NgIf],
+    providers: [],
     selector: 'p-resource-wrapper',
-    styleUrls: const ['resource_wraper_component.css'],
+    styleUrls: ['resource_wraper_component.css'],
     templateUrl: 'resource_wraper_component.html')
 class ResourceWrapperComponent implements OnActivate {
-  ResourceWrapperComponent(
-      this.riseService, this.quizService, this.msg);
+  ResourceWrapperComponent(this.riseService, this.quizService, this.msg);
   @override
   void onActivate(RouterState previous, RouterState current) async {
     final resourceUrl = current.parameters['url'];

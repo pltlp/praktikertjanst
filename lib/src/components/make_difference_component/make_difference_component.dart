@@ -8,7 +8,7 @@ import '../../services/slide_service.dart';
 import '../button_component/button_component.dart';
 
 @Component(
-    directives: const [
+    directives: [
       NgStyle,
       NgIf,
       NgFor,
@@ -28,9 +28,9 @@ import '../button_component/button_component.dart';
       MaterialYesNoButtonsComponent,
       FoCarouselSlideComponent
     ],
-    providers: const [],
+    providers: [],
     selector: 'p-make-difference',
-    styleUrls: const ['make_difference_component.css'],
+    styleUrls: ['make_difference_component.css'],
     templateUrl: 'make_difference_component.html',
     pipes: [NamePipe])
 class MakeDifferenceComponent {

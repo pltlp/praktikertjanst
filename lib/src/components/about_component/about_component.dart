@@ -3,16 +3,14 @@ import 'package:fo_components/fo_components.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-  selector: 'p-about',
-  templateUrl: 'about_component.html',
-  styleUrls: const ['about_component.css'],
-  directives: const [],
-  pipes: const [NamePipe],
-  changeDetection: ChangeDetectionStrategy.OnPush
-)
+    selector: 'p-about',
+    templateUrl: 'about_component.html',
+    styleUrls: ['about_component.css'],
+    directives: [],
+    pipes: [NamePipe],
+    changeDetection: ChangeDetectionStrategy.OnPush)
 class AboutComponent {
   AboutComponent(this.msg);
 
   final MessagesService msg;
-
 }

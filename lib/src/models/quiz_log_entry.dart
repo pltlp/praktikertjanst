@@ -8,8 +8,8 @@ class QuizLogEntry {
   Map<String, dynamic> toJson() => {
         'date': date?.toIso8601String(),
         'email': email,
-        'name' : name,
-        'score' : score,
-        'language' : language
+        'name': name,
+        'score': score,
+        'language': language
       };
 }

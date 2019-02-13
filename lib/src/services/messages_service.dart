@@ -253,9 +253,9 @@ class MessagesService {
 
   String get green_dental_care =>
       Intl.message('grön tandvård', name: 'green_dental_care');
-  
+
   String get separator => Intl.message('Avskiljare', name: 'separator');
-  
+
   String get title => Intl.message(
       'Hg-rid LIFE | Minimera kvicksilverutsläpp i miljön från tandvården',
       name: 'title');
@@ -272,4 +272,3 @@ class MessagesService {
       'Det här är ett öppet och kostnadsfritt utbildningsmaterial om hur tandvården kan minimera utsläppen från dentalt amalgam. Här finns korta filmer, interaktiva artiklar och dokument.',
       name: 'main_header_description');
 }
-

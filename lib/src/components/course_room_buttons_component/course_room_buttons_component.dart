@@ -6,7 +6,7 @@ import '../../services/course_room_service.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-    directives: const [
+    directives: [
       NgFor,
       MaterialTooltipDirective,
       MaterialPaperTooltipComponent,
@@ -18,16 +18,16 @@ import '../../services/messages_service.dart';
       ButtonComponent,
       RouterLink
     ],
-    providers: const [],
+    providers: [],
     selector: 'p-course_room_buttons',
-    styleUrls: const ['course_room_buttons_component.css'],
+    styleUrls: ['course_room_buttons_component.css'],
     templateUrl: 'course_room_buttons_component.html')
 class CourseRoomButtonsComponent {
   CourseRoomButtonsComponent(this.courseRoomService, this.msg);
 
   CourseRoomService courseRoomService;
   MessagesService msg;
-    List<RelativePosition> preferredTooltipPositions = const [
+  List<RelativePosition> preferredTooltipPositions = const [
     RelativePosition.AdjacentBottom
   ];
 }

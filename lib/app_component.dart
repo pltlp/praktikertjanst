@@ -27,52 +27,46 @@ import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
 
-@Component(
-    selector: 'p-app',
-    templateUrl: 'app_component.html',
-    styleUrls: const [
-      'app_component.css'
-    ],
-    directives: [
-      BreadcrumbsComponent,
-      HomeComponent,
-      NavbarComponent,
-      FoModalComponent,
-      FooterComponent,
-      routerDirectives,
-      NgFor,
-      NgIf,
-      MaterialIconComponent,
-      FullscreenComponent,
-      MaterialMenuComponent,
-      MaterialDropdownSelectComponent,
-      MaterialSelectItemComponent,
-      WordListComponent,
-      FoIconComponent,
-      MaterialPopupComponent,
-      PopupSourceDirective,
-      MaterialListComponent,
-      MaterialListItemComponent,
-      WordPreviewComponent,
-      DropdownMenuComponent
-    ],
-    providers: [
-      routerProviders,
-      Routes,
-      materialProviders,
-      MessagesService,
-      VideoService,
-      DocumentService,
-      RiseService,
-      CourseRoomService,
-      WordService,
-      QuizService,
-      SlideService,
-      QuestionService
-    ],
-    pipes: [
-      NamePipe
-    ])
+@Component(selector: 'p-app', templateUrl: 'app_component.html', styleUrls: [
+  'app_component.css'
+], directives: [
+  BreadcrumbsComponent,
+  HomeComponent,
+  NavbarComponent,
+  FoModalComponent,
+  FooterComponent,
+  routerDirectives,
+  NgFor,
+  NgIf,
+  MaterialIconComponent,
+  FullscreenComponent,
+  MaterialMenuComponent,
+  MaterialDropdownSelectComponent,
+  MaterialSelectItemComponent,
+  WordListComponent,
+  FoIconComponent,
+  MaterialPopupComponent,
+  PopupSourceDirective,
+  MaterialListComponent,
+  MaterialListItemComponent,
+  WordPreviewComponent,
+  DropdownMenuComponent
+], providers: [
+  routerProviders,
+  Routes,
+  materialProviders,
+  MessagesService,
+  VideoService,
+  DocumentService,
+  RiseService,
+  CourseRoomService,
+  WordService,
+  QuizService,
+  SlideService,
+  QuestionService
+], pipes: [
+  NamePipe
+])
 class AppComponent {
   MenuModel menuModel;
   MenuModel languageMenuModel;
@@ -125,17 +119,20 @@ class AppComponent {
   String _capitalize(String value) =>
       '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
   void _generateMetaDescription() {
-    final description = new MetaElement()
+    final description = MetaElement()
       ..content =
           '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}'
       ..name = 'description';
     document.head.append(description);
+    print(msg.home_url);
+    print(msg.learn_more);
   }
 
   void _generateTitle() {
-    final title = new TitleElement()..innerHtml = '${msg.title}';
+    final title = TitleElement()..innerHtml = '${msg.title}';
 
     document.head.append(title);
+    print(Intl.shortLocale(Intl.getCurrentLocale()));
   }
 
   Future<void> _loadResources() async {
@@ -195,14 +192,15 @@ class AppComponent {
         MenuItem(_capitalize('english'),
             action: () => window.location.href = '${Uri.base.origin}/en/home'),
         MenuItem(_capitalize('français'),
-            action: () => window.location.href = '${Uri.base.origin}/en/start',
-            enabled: false),
+            action: () =>
+                window.location.href = '${Uri.base.origin}/fr/accueil',
+            enabled: true),
         MenuItem(_capitalize('español'),
-            action: () => window.location.href = '${Uri.base.origin}/en/start',
-            enabled: false),
+            action: () => window.location.href = '${Uri.base.origin}/es/inicio',
+            enabled: true),
         MenuItem(_capitalize('deutsch'),
-            action: () => window.location.href = '${Uri.base.origin}/en/start',
-            enabled: false)
+            action: () => window.location.href = '${Uri.base.origin}/de/Start',
+            enabled: true)
       ])
     ]);
 

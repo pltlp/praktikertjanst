@@ -39,7 +39,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_1": "l'amalgame ne doit être utilisé que sous forme pré-dosée et encapsulée.",
+  "contact_bullet_1": "l'amalgame ne doit être utilisé que sous forme pré-dosée et encapsulée",
   "@contact_bullet_1": {
     "type": "text",
     "placeholders": {}
@@ -59,7 +59,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_1": "Praktikertjänst met en place un projet appelé HG-Rid LIFE en partenariat avec Sweden Recycling et l’IVL Swedish Environmental Research Institute, avec l’aide du fonds LIFE, programme d’action pour l’environnement et du climat de l’UE. Nous prenons la responsabilité d'une société durable à travers le projet. L'objectif principal du projet est de minimiser les émissions de mercure des cliniques dentaires en Suède et, à plus long terme, dans l'ensemble de l'Union européenne.",
+  "contact_pragraph_1": "Praktikertjänst met en place un projet appelé HG-Rid LIFE en partenariat avec Sweden Recycling et l’IVL Swedish Environmental Research Institute, avec l’aide du fonds LIFE, programme d’action pour l’environnement et du climat de l’UE. Nous prenons la responsabilité d'une société durable à travers le projet. L'objectif principal du projet est de minimiser les émissions de mercure des cliniques dentaires en Suède et, à plus long terme, dans l\\'ensemble de l'Union européenne.",
   "@contact_pragraph_1": {
     "type": "text",
     "placeholders": {}
@@ -179,7 +179,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "language": "langue",
+  "language": "Anglais",
   "@language": {
     "type": "text",
     "placeholders": {}
@@ -224,7 +224,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "project_should": "Le projet permettra de :",
+  "project_should": "Le projet permettra de",
   "@project_should": {
     "type": "text",
     "placeholders": {}
@@ -289,7 +289,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "pass_limt": "Score minimum pour réussir :  ",
+  "pass_limt": "Score minimum pour réussir :   ",
   "@pass_limt": {
     "type": "text",
     "placeholders": {}
@@ -299,7 +299,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "redo_quiz": "changer",
+  "redo_quiz": "efaire le quiz",
   "@redo_quiz": {
     "type": "text",
     "placeholders": {}
@@ -334,14 +334,14 @@
     "type": "text",
     "placeholders": {}
   },
-  "document": "{howMany, plural, =1 {dokument} other {dokument}}",
+  "document": "{howMany, plural, =1 {documents} other {documents}}",
   "@document": {
     "type": "text",
     "placeholders": {
       "howMany": {}
     }
   },
-  "word": "{howMany, plural, =1 {ord} other {ord}}",
+  "word": "{howMany, plural, =1 {mot} other {mot}}",
   "@word": {
     "type": "text",
     "placeholders": {
@@ -358,17 +358,17 @@
     "type": "text",
     "placeholders": {}
   },
-  "check_your_answers": "résultat",
+  "check_your_answers": "résultats",
   "@check_your_answers": {
     "type": "text",
     "placeholders": {}
   },
-  "correct": "Vrai",
+  "correct": "vrai",
   "@correct": {
     "type": "text",
     "placeholders": {}
   },
-  "not_correct": "Faux",
+  "not_correct": "faux",
   "@not_correct": {
     "type": "text",
     "placeholders": {}
@@ -398,7 +398,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz": "Quizz",
+  "quiz": "Quiz",
   "@quiz": {
     "type": "text",
     "placeholders": {}

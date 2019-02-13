@@ -14,7 +14,7 @@ import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
 
 @Component(
-    directives: const [
+    directives: [
       MaterialAutoSuggestInputComponent,
       DocumentsComponent,
       NgFor,
@@ -24,7 +24,7 @@ import '../../services/video_service.dart';
       FoModalComponent
     ],
     selector: 'p-library',
-    styleUrls: const ['library_component.css'],
+    styleUrls: ['library_component.css'],
     templateUrl: 'library_component.html',
     pipes: [NamePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
@@ -50,9 +50,9 @@ class LibraryComponent implements OnDestroy {
 
   void _initSearchOptions() {
     final optionGroups = <OptionGroup<SearchOption>>[
-      new OptionGroup.withLabel(
+      OptionGroup.withLabel(
           resouces
-              .map((action) => new SearchOption()
+              .map((action) => SearchOption()
                 ..url = action.phrases[msg.currentLanguage].url
                 ..label = action.phrases[msg.currentLanguage].name)
               .toList(growable: false),
@@ -60,7 +60,7 @@ class LibraryComponent implements OnDestroy {
     ];
 
     searchOptions =
-        new StringSelectionOptions<SearchOption>.withOptionGroups(optionGroups);
+        StringSelectionOptions<SearchOption>.withOptionGroups(optionGroups);
   }
 
   void _onSearchChange(List<SelectionChangeRecord> changes) {
@@ -71,14 +71,13 @@ class LibraryComponent implements OnDestroy {
         try {
           selectedModel = videoService.data.values.firstWhere((resource) =>
               resource.phrases[msg.currentLanguage].url == model.url);
-        } on StateError {
-        
-        }
+        } on StateError {}
         if (selectedModel != null) {
           selectedModel.complete = true;
           showModal = true;
         } else {
-          router.navigate('${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/${model.url}');
+          router.navigate(
+              '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}/${model.url}');
         }
       }
     }
@@ -87,7 +86,7 @@ class LibraryComponent implements OnDestroy {
   @Input()
   String backgroundImage;
 
-  final SelectionModel searchModel = new SelectionModel<SearchOption>.single();
+  final SelectionModel searchModel = SelectionModel<SearchOption>.single();
   StringSelectionOptions<SearchOption> searchOptions;
 
   bool showModal = false;
