@@ -4,10 +4,7 @@
 @import 'package:angular_components/material_menu/mixins';
 @import 'package:grid/constants';
 @import 'colors.scss';
-
-
 @include fo-colors($cerulean, $astronautBlue, carnation);
-
 :host {
     display: block;
     div#page {
@@ -24,11 +21,16 @@
         header {
             d-navbar {
                 div#upper-row {
-                    height: 90px;
-                    img {
-                        max-height: 90px;
-                        width: auto;
-                        max-width: 100%;
+                    .col:first-child {
+                        height: 90px;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            max-height: 100%;
+                            width: auto;
+                            max-width: 100%;
+                            margin-left: $x-small;
+                        }
                     }
                 }
                 display: block;
@@ -53,5 +55,3 @@
         }
     }
 }
-
-  
