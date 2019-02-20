@@ -897,7 +897,7 @@ class QuestionService {
                 ..value = 'No importa, siempre que haya espacio.'
                 ..score = 0
             ],
-          'Hur ofta ska avlopp diskbänksavskiljare med desinficeras?':
+          'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
               Question()
                 ..label =
                     '¿Con qué frecuencia se debe desinfectar el desagüe situado debajo del sifón?'

@@ -1,5 +1,5 @@
 {
-  "about": "à propos",
+  "about": "à propos de",
   "@about": {
     "type": "text",
     "placeholders": {}
@@ -9,7 +9,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "about_url": "à propos",
+  "about_url": "à propos de",
   "@about_url": {
     "type": "text",
     "placeholders": {}
@@ -24,7 +24,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "cancel": "annuler",
+  "cancel": "Cancel",
   "@cancel": {
     "type": "text",
     "placeholders": {}
@@ -44,52 +44,52 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_2": "les enfants de moins de 15 ans et les femmes enceintes ou qui allaitent ne peuvent pas être traités avec un amalgame dentaire, sauf si cela est considéré comme absolument nécessaire pour des raisons médicales",
+  "contact_bullet_2": "les enfants de moins de 15 ans et femmes enceintes ou allaitant ne peuvent pas être traités avec un amalgame dentaire, sauf si cela est considéré comme absolument nécessaire pour des raisons médicales",
   "@contact_bullet_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_3": "des séparateurs d'amalgames d'un niveau d'efficacité spécifié doivent être installés dans les équipements dentaires dans lesquels des amalgames ou des amalgames dentaires sont utilisés",
+  "contact_bullet_3": "les séparateurs d'amalgames of a amalgames ou amalgames dentals",
   "@contact_bullet_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_4": "la Commission européenne effectuera un rapport sur la possibilité d'une élimination progressive des amalgames d'ici 2030 au plus tard à la mi-2020.",
+  "contact_bullet_4": "la Commission européenne a réalisé un rapport sur la possibilité d'une élimination progressive des amalgames d'ici 2030 au plus tard à la mi-2020.",
   "@contact_bullet_4": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_1": "Praktikertjänst met en place un projet appelé HG-Rid LIFE en partenariat avec Sweden Recycling et l’IVL Swedish Environmental Research Institute, avec l’aide du fonds LIFE, programme d’action pour l’environnement et du climat de l’UE. Nous prenons la responsabilité d'une société durable à travers le projet. L'objectif principal du projet est de minimiser les émissions de mercure des cliniques dentaires en Suède et, à plus long terme, dans l\\'ensemble de l'Union européenne.",
+  "contact_pragraph_1": "Praktikertjänst a lancé un projet appelé HG-Rid LIFE en partenariat avec Sweden Recycling et l'IVL Institut suédois de recherche sur l'environnement, avec l'aide du fonds LIFE, programme d'action pour l'environnement et le climat de l'UE. Nous prenons la responsabilité d'une société durable à travers le projet. L'objectif principal du projet est de réduire les émissions de mercure des cliniques dentaires en Suède et, à plus long terme, dans l'ensemble de l'Union européenne.",
   "@contact_pragraph_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_2": "Le mercure est l’une des toxines les plus dangereuses pour l’environnement et, malgré l’interdiction des amalgames en 2009, seuls quelques cabinets dentaires n’ont émis aucune émission de mercure à partir d’amalgames. On estime qu'il reste encore jusqu'à 15 tonnes de mercure dans les dentitions de la population suédoise. Le fraisage des amalgames sera donc courant pendant encore de nombreuses années. Les séparateurs d'amalgames récupèrent la majeure partie du mercure, mais l'efficacité dépend de facteurs tels que l’entretien. Les particules d'amalgame les plus fines ne sont pas non plus piégées dans les séparateurs. Le mercure provenant des tuyaux de drainage risque également de fuir dans les eaux usées. Le risque d'accumulation de mercure dans les conduites est particulièrement élevé dans les cabinets où les soins dentaires étaient fournis avant l'introduction de l'exigence des séparateurs et où les anciens séparateurs moins performants sont encore utilisés.",
+  "contact_pragraph_2": "The mercure is of the Toxines of the Dangerous Environmentals, malgré l'interdiction des amalgames en 2009, ont quelques armoires dentaires n'ont pas réussi à émettre de mercure à partir d'amalgames. On estime qu'il reste encore jusqu'à 15 tonnes de mercure dans les dentitions de la population suédoise. Le fraisage des amalgames sera donc courant pendant encore de nombreuses années. Les séparateurs d'amalgames ont récupéré la majeure partie du mercure, mais ils n'ont pas diminué. Les particules d'amalgame les plus fines ne sont pas non plus piégées dans les séparateurs. Le mercure provenant des tuyaux de drainage risque également dans les eaux usées. Le risque d'accumulation de mercure dans les conduites est particulièrement élevé dans les cabinets où les soins ont été fournis.",
   "@contact_pragraph_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_5": "On estime que plus de 1 000 tonnes de mercure sont dans la bouche des citoyens de l'UE. L'amalgame dentaire est l'une des principales utilisations du mercure dans l'UE.",
+  "contact_pragraph_5": "On estime que plus de 1 000 tonnes de mercure sont dans la bouche des citoyens d’Europe. L'amalgame dentaire is one of the general utilisations of mercure in EU.",
   "@contact_pragraph_5": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_3": "Un programme de l'UE sur le mercure est entré en vigueur le 1er janvier 2018. Ses objectifs contiennent :",
+  "contact_pragraph_3": "The EU Programme on Mercure est entré en vigueur le 1er janvier 2018. Ses objectifs comprennent:",
   "@contact_pragraph_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_4": "Le projet constitue une contribution à l’objectif national de qualité de l’environnement «Giftfri Miljö» et à l’objectif de développement global de l’ONU, Agenda 2030 (objectif 6, eau propre et assainissement).",
+  "contact_pragraph_4": "Le projet est une contribution à l'objectif national de la qualité de l'environnement «Giftfri Miljö» et à l'objectif de développement global de l'ONU, Agenda 2030 (objectif 6, eau propre et assainissement).",
   "@contact_pragraph_4": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_1": "la proposition de suggestions des lignes directrices pour le contrôle du mercure dans les soins dentaires pouvant être mises en œuvre en Suède et inspirer des lignes directrices dans le reste de l'UE",
+  "contact_project_goal_1": "la proposition de suggestions des lignes directrices pour le contrôle de la mercure dans les soins dentaires pouvant être mises en œuvre en Suède et l'inspirer des lignes directrices dans le reste de l'UE",
   "@contact_project_goal_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_2": "le développement de nouvelles méthodes de décontamination efficaces, conviviales et économiques",
+  "contact_project_goal_2": "le développement de nouvelles méthodes de décontamination efficace, conviviales et économiques",
   "@contact_project_goal_2": {
     "type": "text",
     "placeholders": {}
@@ -144,7 +144,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "documents_component_url": "liste documents",
+  "documents_component_url": "liste de documents",
   "@documents_component_url": {
     "type": "text",
     "placeholders": {}
@@ -159,7 +159,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "french": "Français",
+  "french": "English",
   "@french": {
     "type": "text",
     "placeholders": {}
@@ -184,7 +184,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "learn_more": "en savoir plus !",
+  "learn_more": "en savoir plus!",
   "@learn_more": {
     "type": "text",
     "placeholders": {}
@@ -194,22 +194,22 @@
     "type": "text",
     "placeholders": {}
   },
-  "library_button_tooltip": "Tout le matériel de formation peut être trouvé ici, en un même lieu !",
+  "library_button_tooltip": "Tout le matériel de formation peut être trouvé ici, en un même lieu!",
   "@library_button_tooltip": {
     "type": "text",
     "placeholders": {}
   },
-  "library_header": "Tout le matériel peut être trouvé ici, en un même lieu !",
+  "library_header": "Tout le matériel peut être trouvé ici, en un même lieu!",
   "@library_header": {
     "type": "text",
     "placeholders": {}
   },
-  "library_url": "bibliothèque",
+  "library_url": "bibliotheque",
   "@library_url": {
     "type": "text",
     "placeholders": {}
   },
-  "main_header": "Un petit effort peut faire une grande différence !",
+  "main_header": "Un petit effort peut faire une grande différence!",
   "@main_header": {
     "type": "text",
     "placeholders": {}
@@ -234,7 +234,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_fail_text_1": "Désolé ! Vous n'avez pas assez de réponses correctes pour réussir le test !",
+  "quiz_fail_text_1": "Désolé! Vous n'avez pas assez de réponses correctes pour réussir le test!",
   "@quiz_fail_text_1": {
     "type": "text",
     "placeholders": {}
@@ -254,12 +254,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_fail_title": "Désolé !",
+  "quiz_fail_title": "Désolé!",
   "@quiz_fail_title": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_agree_terms": "Je consens par la présente à ce que Praktikertjänst AB enregistre mon adresse e-mail pendant une période maximale de 12 mois. Votre adresse électronique ne sera pas utilisée à des fins commerciales ni divulguée à des tiers.",
+  "quiz_success_agree_terms": "Praktikertjänst AB is not be present present on adresse e-mail pendant une période maximale de 12 mois. Votre adresse électronique ne sera pas utilisée à des fins commerciales ni divulguée à des tiers.",
   "@quiz_success_agree_terms": {
     "type": "text",
     "placeholders": {}
@@ -269,27 +269,27 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_mail_sent_title": "Merci !",
+  "quiz_success_mail_sent_title": "Merci!",
   "@quiz_success_mail_sent_title": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_1": "Dans le cadre du projet Hg-rid, nous souhaitons évaluer l’intérêt du portail.",
+  "quiz_success_text_1": "Dans le cadre du projet, nous souhaitons évaluer l'intérêt du portail.",
   "@quiz_success_text_1": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_2": "Souhaitez-vous répondre à quelques questions via votre email, d’ici quelques mois ? Si oui, veuillez indiquer votre adresse email ici.",
+  "quiz_success_text_2": "Souhaitez-vous répondre à quelques questions via votre email, d'ici quelques mois? Si oui, veuillez aller votre adresse email ici.",
   "@quiz_success_text_2": {
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_title": "Félicitations, vous avez réussi le test !",
+  "quiz_success_title": "Félicitations, vous avez réussi le test!",
   "@quiz_success_title": {
     "type": "text",
     "placeholders": {}
   },
-  "pass_limt": "Score minimum pour réussir :   ",
+  "pass_limt": "Score minimum pour réussir:   ",
   "@pass_limt": {
     "type": "text",
     "placeholders": {}
@@ -324,7 +324,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "type_here_to_search": "Taper votre recherche ici...",
+  "type_here_to_search": "Taper votre recherche ici ...",
   "@type_here_to_search": {
     "type": "text",
     "placeholders": {}
@@ -408,12 +408,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "cancel_label": "annuler",
+  "cancel_label": "Cancel",
   "@cancel_label": {
     "type": "text",
     "placeholders": {}
   },
-  "financial_support": "Financé par le programme LIFE de l’UE : ",
+  "financial_support": "Financé par le programme LIFE de l'UE: ",
   "@financial_support": {
     "type": "text",
     "placeholders": {}
@@ -448,7 +448,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "recycling": "Recyclage",
+  "recycling": "Le recyclage",
   "@recycling": {
     "type": "text",
     "placeholders": {}
@@ -458,7 +458,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "amalgam_separator": "Séparateur d’amalgame",
+  "amalgam_separator": "Séparateur d'amalgame",
   "@amalgam_separator": {
     "type": "text",
     "placeholders": {}
@@ -478,27 +478,27 @@
     "type": "text",
     "placeholders": {}
   },
-  "title": "Hg-rid LIFE | Minimiser les émissions de mercure dans l'environnement provenant des soins dentaires",
+  "title": "Hg-débarrassé DE LA VIE | Minimiser les émissions de mercure dans l'environnement des soins dentaires",
   "@title": {
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_1": "En quoi le mercure a-t-il un impact sur la nature ?",
+  "description_sentence_1": "En quoi le mercure at-il un impact sur la nature?",
   "@description_sentence_1": {
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_2": "Quelles règles s’appliquent au secteur dentaire ?",
+  "description_sentence_2": "Quelles sont les règles appliquées au secteur dentaire?",
   "@description_sentence_2": {
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_3": "Comment le secteur dentaire peut-il minimiser les émissions de mercure dans l'environnement ?",
+  "description_sentence_3": "Comment le secteur dentaire peut-il minimiser les émissions de mercure dans l'environnement?",
   "@description_sentence_3": {
     "type": "text",
     "placeholders": {}
   },
-  "main_header_description": "Il s’agit d’une formation ouverte et gratuite sur la manière dont le secteur dentaire peut réduire les émissions des amalgames dentaires. La formation comporte de courts clips vidéo, mais aussi des documents et articles interactifs.",
+  "main_header_description": "Il s'agit d'une formation ouverte et gratuite sur le produit dentaire. La formation comporte des clips vidéo, mais aussi des documents et des articles interactifs.",
   "@main_header_description": {
     "type": "text",
     "placeholders": {}

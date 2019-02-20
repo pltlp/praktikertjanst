@@ -144,7 +144,7 @@ class DocumentService extends ResourceService<Document> {
           ..name = 'Réglementation de l’UE concernant le mercure'
           ..description = 'Réglementation de l’UE concernant le mercure'
           ..url = 'reglementation-ue-mercure')
-        ..phrases['sv'] = (Phrases()
+        ..phrases['es'] = (Phrases()
           ..name = 'Reglamentos de la UE sobre el mercurio'
           ..description = 'Reglamentos de la UE sobre el mercurio'
           ..url = 'reglamentos-de-la-UE-sobre-el-mercurio')

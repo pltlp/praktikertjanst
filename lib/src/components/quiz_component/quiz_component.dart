@@ -95,7 +95,6 @@ class QuizComponent implements OnInit {
   }
 
   void populateQuiz() {
-    print('populating quiz');
     switch (model.id) {
       case 'Quiz för allmänheten':
         model?.questions = [

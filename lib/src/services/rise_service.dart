@@ -183,11 +183,11 @@ class RiseService extends ResourceService<Rise> {
             'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
-        ..url['en'] =
+        ..url['fr'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
-        ..url['en'] =
+        ..url['es'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
-        ..url['en'] =
+        ..url['de'] =
             'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
       'serviceteknikerns ansvar': Rise()
         ..icon = 'article'

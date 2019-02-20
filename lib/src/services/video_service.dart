@@ -505,7 +505,7 @@ class VideoService extends ResourceService<Video> {
       'Sanering': Video()
         ..icon = 'video'
         ..id = 'Sanering'
-        ..img_url = 'pics/decontamination.jpg'
+        ..img_url = 'pics/remidiation.jpg'
         ..phrases['sv'] = (Phrases()
           ..name = 'Sanering '
           ..url = 'sanering'
@@ -581,11 +581,11 @@ class VideoService extends ResourceService<Video> {
             'https://player.vimeo.com/video/299908734?color=00acd0&byline=0&portrait=0'
         ..url['en'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
-        ..url['en'] =
+        ..url['fr'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
-        ..url['en'] =
+        ..url['es'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
-        ..url['en'] =
+        ..url['de'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0',
       'Vad är kvicksilver?': Video()
         ..icon = 'video'
@@ -655,7 +655,7 @@ class VideoService extends ResourceService<Video> {
           ..estimated_time_for_completion = '1 min 10 sec')
         ..phrases['es'] = (Phrases()
           ..name = 'donde-se-encuentra-el-mercurio'
-          ..url = '¿Dónde-se-encuentra-el-mercurio?'
+          ..url = '¿Dónde se encuentra el mercurio?'
           ..description =
               'Michelle Nerentorp habla sobre los lugares en los que se puede encontrar mercurio en la naturaleza y de qué forma el humano ha contribuido a su propagación.'
           ..estimated_time_for_completion = '1 min 10 seg')

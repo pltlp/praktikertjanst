@@ -204,7 +204,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "library_url": "Library",
+  "library_url": "library",
   "@library_url": {
     "type": "text",
     "placeholders": {}
@@ -299,7 +299,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "redo_quiz": "Change",
+  "redo_quiz": "Try again",
   "@redo_quiz": {
     "type": "text",
     "placeholders": {}
@@ -358,7 +358,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "check_your_answers": "resulted",
+  "check_your_answers": "answers",
   "@check_your_answers": {
     "type": "text",
     "placeholders": {}
@@ -498,7 +498,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "main_header_description": "This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. There are short video clips, interactive articles and documents.",
+  "main_header_description": "This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. There are short video clips, interactive articles and documents with examples from Sweden. In Sweden the use of amalgam in dental clinics has been banned since 2009, due to the environmental impact. The tool can be a support to be prepared for the new EU-regulations.",
   "@main_header_description": {
     "type": "text",
     "placeholders": {}

@@ -35,7 +35,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['fr'] = (Phrases()
           ..name = 'Si vous êtes juste curieux'
           ..description = 'Contenu si vous êtes juste curieux.'
-          ..url = 'salle-formation-pour-les-curieux')
+          ..url = 'salle-de-formation-pour-les-curieux')
         ..phrases['es'] = (Phrases()
           ..name = 'Para curiosos'
           ..description = 'Contenido para curiosos.'
@@ -79,12 +79,12 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['fr'] = (Phrases()
           ..name = 'Pour les cabinets dentaires'
           ..description = 'Contenu pour le personnel de soins dentaires.'
-          ..url = 'salle-formation-pour-equipe-soins-dentaires')
+          ..url = 'salle-de-formation-pour-equipe-soins-dentaires')
         ..phrases['es'] = (Phrases()
           ..name = 'Para clínicas dentales'
           ..description =
               'Contenido para el personal del equipo de cuidado dental.'
-          ..url = 'sala-de-formacion-para-el-equipo-de-cuidado-dental')
+          ..url = 'sala-de-formacion-para-equipos-de-cuidado-dental')
         ..phrases['de'] = (Phrases()
           ..name = 'Für Zahnarztpraxen'
           ..description = 'Inhalte für Personal in der Zahnpflege.'
@@ -127,7 +127,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['fr'] = (Phrases()
           ..name = 'Pour les techniciens de service'
           ..description = 'Contenu pour les techniciens de service.'
-          ..url = 'salle-formation-pour-techniciens-service')
+          ..url = 'salle-de-formation-pour-techniciens-de-service')
         ..phrases['es'] = (Phrases()
           ..name = 'Para técnicos de servicio'
           ..description = 'Contenido para técnicos de servicio.'
@@ -177,13 +177,13 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description =
               'Contenu pour le personnel de service de maintenance environnementale.'
           ..url =
-              'salle-formation-pour-personnel-service-maintenance-environnementale')
+              'salle-de-formation-pour-personnel-du-service-de-maintenance-environnementale')
         ..phrases['es'] = (Phrases()
           ..name = 'Para el personal de los equipos de mantenimiento ambiental'
           ..description =
               'Contenido para el personal de los equipos de mantenimiento ambiental.'
           ..url =
-              'sala-de-formacion-para-los-equipos-de-mantenimiento-ambiental')
+              'sala-de-formacion-para-personal-de-mantenimiento-ambiental')
         ..phrases['de'] = (Phrases()
           ..name = 'Für Servicemitarbeiter in der Umweltwartung'
           ..description = 'Für Servicemitarbeiter in der Umweltwartung.'

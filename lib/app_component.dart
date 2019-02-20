@@ -9,6 +9,7 @@ import 'package:d_components/d_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 
+
 import 'messages_all.dart' as messages;
 import 'src/components/breadcrumbs_component/breadcrumbs_component.dart';
 import 'src/components/footer_component/footer_component.dart';
@@ -104,7 +105,10 @@ class AppComponent {
       window.scrollTo(0, 0);
     });
   }
+
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
+
+
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
@@ -124,26 +128,23 @@ class AppComponent {
           '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}'
       ..name = 'description';
     document.head.append(description);
-    print(msg.home_url);
-    print(msg.learn_more);
+  
   }
+
+
 
   void _generateTitle() {
     final title = TitleElement()..innerHtml = '${msg.title}';
 
     document.head.append(title);
-    print(Intl.shortLocale(Intl.getCurrentLocale()));
   }
 
   Future<void> _loadResources() async {
     loaded = false;
 
-    // Figure out language based on url
-    await messages
-        .initializeMessages(Intl.shortLocale(Intl.getCurrentLocale()));
-
     if (Uri.base.pathSegments.isEmpty) {
       Intl.defaultLocale = 'sv_SE';
+      await messages.initializeMessages('se');
     } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {
@@ -170,6 +171,8 @@ class AppComponent {
         default:
           Intl.defaultLocale = 'sv_SE';
       }
+
+      await messages.initializeMessages(lang);
     }
 
     await videoService.fetchAll();
@@ -184,6 +187,7 @@ class AppComponent {
 
     _generateMetaDescription();
     _generateTitle();
+    
 
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([
@@ -200,7 +204,7 @@ class AppComponent {
             enabled: true),
         MenuItem(_capitalize('deutsch'),
             action: () => window.location.href = '${Uri.base.origin}/de/Start',
-            enabled: true)
+            enabled: false)
       ])
     ]);
 

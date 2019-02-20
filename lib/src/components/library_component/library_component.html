@@ -19,13 +19,13 @@
     <div class="col l4 m6 s12"
          *ngFor="let rise of riseService.data.values">
         <p-resource [model]="rise"
-                    routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library}}/{{rise.phrases[msg.currentLanguage].url}}">
+                    routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}/{{rise.phrases[msg.currentLanguage].url}}">
         </p-resource>
     </div>
     <div class="col l4 m6 s12"
          *ngFor="let quiz of quizService.data.values">
         <p-resource [model]="quiz"
-                    routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library}}/{{quiz.phrases[msg.currentLanguage].url}}">
+                    routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}/{{quiz.phrases[msg.currentLanguage].url}}">
 
         </p-resource>
     </div>

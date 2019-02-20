@@ -59,12 +59,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_1": "En colaboración con Suecia Reciclaje y el Instituto de Investigación Ambiental Sueco IV y gracias a la financiación del Programa de Acción en materia de Medio Ambiente de la UE, Praktikertjänst ha puesto en marcha un proyecto denominado HG-Rid LIFE. Este proyecto nos permite asumir la responsabilidad que recae en nosotros en cuanto a la creación de una sociedad sostenible. El objetivo principal del proyecto es reducir la emisión de mercurio en las clínicas dentales de Suecia y, a largo plazo, en todas las clínicas de la Unión Europea.",
+  "contact_pragraph_1": "En colaboración con Suecia Reciclaje y el Instituto de Investigación Ambiental Sueco IV y gracias a la financiación del Programa de Acción en Materia de Medio Ambiente de la UE, Praktikertjänst ha puesto en marcha un proyecto denominado HG-Rid LIFE. Este proyecto nos permite asumir la responsabilidad que recae en nosotros en cuanto a la creación de una sociedad sostenible. El objetivo principal del proyecto es reducir la emisión de mercurio en las clínicas dentales de Suecia y, a largo plazo, en todas las clínicas de la Unión Europea.",
   "@contact_pragraph_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_2": "El mercurio es una de las toxinas ambientales más peligrosas y, a pesar de que la amalgama se prohibió en el 2009, son algunas de las clínicas dentales que han logrado el objetivo de reducir las emisiones de mercurio originario de la amalgama. Se estima que en los dientes de la población. Por lo tanto, hay que tener en cuenta que, en los próximos años, la perforación de empastes de amalgama como una práctica muy común en la industria dental. Los separadores de amalgama son, sin embargo, verdaderos factores como el mantenimiento. Así pues, los separadores no pueden detener las partículas de amalgama más finas. También existe el riesgo de que el mercurio existente en las tuberías se filtre hacia las aguas residuales. El riesgo de que se acumule mercurio en las vías es especialmente alto en las clínicas en que se ha brindado atención dental a los clientes antes de que la instalación de separadores de amalgama fuera un requisito indispensable y también en tales como se utilizan separadores antiguos , con una eficiencia menor.",
+  "contact_pragraph_2": "El mercurio es una de las toxinas ambientales más peligrosas y, a pesar de que la amalgama se prohibió en el 2009, son algunas de las clínicas dentales que han logrado el objetivo de reducir las emisiones de mercurio originario de la amalgama. Se estima que en los dientes de la población. Por lo tanto, hay que tener en cuenta que, en los próximos años, la perforación de empastes de amalgama como una práctica muy común en la industria dental. Los separadores de amalgama son, sin embargo, verdaderos factores como el mantenimiento. Así pues, los separadores no pueden detener las partículas de amalgama más finas. También existe el riesgo de que el mercurio existente en las tuberías se filtre hacia las aguas residuales. El riesgo de que se acumule mercurio en las vías es especialmente alto en las clínicas en que se ha brindado atención dental a los clientes antes de la instalación de separadores de amalgama fuera un requisito indispensable y también en cuentos como se usan separadores antiguos, con una eficiencia menor",
   "@contact_pragraph_2": {
     "type": "text",
     "placeholders": {}
@@ -119,22 +119,22 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_curious_url": "sala-de-formación-para-los-más-curiosos",
+  "course_room_for_curious_url": "sala-de-formacion-para-los-mas-curiosos",
   "@course_room_for_curious_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_dental_teams_url": "sala-de-formación-para-equipos-de-cuidado-dental",
+  "course_room_for_dental_teams_url": "sala-de-formacion-para-equipos-de-cuidado-dental",
   "@course_room_for_dental_teams_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "sala-de-formación-para-técnicos-de-servicio",
+  "course_room_for_service_technicians_url": "sala-de-formacion-para-tecnicos-de-servicio",
   "@course_room_for_service_technicians_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_environmental_service_companies_url": "sala-de-formación-para-personal-de-mantenimiento-ambiental",
+  "course_room_for_environmental_service_companies_url": "sala-de-formacion-para-personal-de-mantenimiento-ambiental",
   "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
@@ -204,7 +204,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "library_url": "Biblioteca",
+  "library_url": "biblioteca",
   "@library_url": {
     "type": "text",
     "placeholders": {}
@@ -334,7 +334,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "document": "{howMany, plural, =1 {documento} other {dokument}}",
+  "document": "{howMany, plural, =1 {documento} other {documento}}",
   "@document": {
     "type": "text",
     "placeholders": {

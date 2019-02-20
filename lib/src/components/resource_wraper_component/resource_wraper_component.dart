@@ -21,8 +21,6 @@ class ResourceWrapperComponent implements OnActivate {
   @override
   void onActivate(RouterState previous, RouterState current) async {
     final resourceUrl = current.parameters['url'];
-    print(resourceUrl);
-    print(msg.currentLanguage);
     try {
       riseModel = riseService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl);

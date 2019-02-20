@@ -19,7 +19,22 @@ class SlideService {
           'en': SlidePhrases()
             ..paragraph = 'Label pipes and tubes that may contain amalgam.'
             ..link = 'mailto:lifehg@ptj.se?Subject=Etiketter'
-            ..button_label = 'Order labels'
+            ..button_label = 'Order labels',
+          'fr': SlidePhrases()
+            ..paragraph =
+                'Étiquetez les fils et les tubes pouvant contenir de l\'amalgame.'
+            ..link = 'mailto:lifehg@ptj.se?Subject=Étiquettes'
+            ..button_label = 'Étiquettes de commande',
+          'es': SlidePhrases()
+            ..paragraph =
+                'Etiquete los cables y tubos que pueden contener amalgama.'
+            ..link = 'mailto:lifehg@ptj.se?Subject=Etiquetas'
+            ..button_label = 'Etiquetas de orden',
+          'de': SlidePhrases()
+            ..paragraph =
+                'Beschriften Sie Rohre und Tuben, die Amalgam enthalten können.'
+            ..link = 'mailto:lifehg@ptj.se?Subject=Etiketten'
+            ..button_label = 'Etiketten bestellen'
         },
       Slide()
         ..background_image = 'pics/environmental_service_companies.jpg'
@@ -34,6 +49,21 @@ class SlideService {
                 'Set standards for the installer’s awareness of minimising amalgam emissions.'
             ..link = '/en/home/training-room-for-service-technicians'
             ..button_label = 'Read more',
+          'fr': new SlidePhrases()
+            ..paragraph =
+                'Établir des normes pour informer l’installateur de la réduction des émissions d’amalgames.'
+            ..link = '/fr/accueil/salle-de-formation-pour-techniciens-de-service'
+            ..button_label = 'En savoir plus',
+          'es': new SlidePhrases()
+            ..paragraph =
+                'Establezca estándares para que el instalador sea consciente de la necesidad de minimizar las emisiones de amalgama.'
+            ..link = '/es/inicio/sala-de-formacion-para-tecnicos-de-servicio'
+            ..button_label = 'Leer más',
+          'de': new SlidePhrases()
+            ..paragraph =
+                'Standards setzen, um das Bewusstsein des Installateurs für die Minimierung von Amalgamemissionen zu schärfen.'
+            ..link = '/de/home/kursraum-fur-servicetechniker'
+            ..button_label = 'Mehr erfahren',
         },
       Slide()
         ..background_image = 'pics/gloves.jpg'
@@ -51,12 +81,12 @@ class SlideService {
           'fr': SlidePhrases()
             ..paragraph =
                 'Établir des normes pour informer l’installateur de la réduction des émissions d’amalgames.'
-            ..link = '/fr/accueil/salle-formation-pour-techniciens-dentaires'
+            ..link = '/fr/accueil/salle-de-formation-pour-equipe-soins-dentaires'
             ..button_label = 'En savoir plus',
           'es': SlidePhrases()
             ..paragraph =
                 'Establezca estándares para que el instalador sea consciente de la necesidad de minimizar las emisiones de amalgama.'
-            ..link = '/en/inicio/aula-para-tecnicos-de-servicio'
+            ..link = '/es/inicio/sala-de-formacion-para-equipos-de-cuidado-dental'
             ..button_label = 'Leer más',
           'de': SlidePhrases()
             ..paragraph =
@@ -81,13 +111,13 @@ class SlideService {
           'fr': SlidePhrases()
             ..paragraph =
                 'Rincer les résidus d’amalgames des instruments en présence d’un séparateur d’amalgames, désinfecter le lavabo.'
-            ..link = '/en/inicio/aula-para-tecnicos-de-servicio'
+            ..link = '/en/accueil/salle-de-formation-pour-personnel-du-service-de-maintenance-environnementale'
             ..button_label = 'En savoir plus',
           'es': SlidePhrases()
             ..paragraph =
                 'Enjuagar los residuos de amalgama de los instrumentos cuando hay un separador de amalgama y desinfectar el lavabo.'
             ..button_label = 'Leer más'
-            ..link = '/en/inicio/aula-para-tecnicos-de-servicio',
+            ..link = '/es/inicio/sala-de-formacion-para-personal-de-mantenimiento-ambiental',
           'de': SlidePhrases()
             ..paragraph =
                 'Spülen Sie bei Vorhandensein eines Amalgamabscheiders Amalgamreste aus Instrumenten, desinfizieren Sie die Spüle.'
@@ -115,7 +145,7 @@ class SlideService {
           'es': SlidePhrases()
             ..paragraph =
                 'Descontaminar el tubo de drenaje para evitar interrupciones y minimizar el riesgo de fugas de mercurio'
-            ..link = '/en/inicio/training-room-for-dental-care-team'
+            ..link = '/es/inicio/sala-de-formacion-para-equipos-de-cuidado-dental'
             ..button_label = 'Leer más',
           'de': SlidePhrases()
             ..paragraph =

@@ -69,6 +69,7 @@ class BreadcrumbsComponent {
       breadcrumbs[(breadcrumbs.indexWhere((part) => part != '..'))] = '..';
       breadcrumbs = evaluateBreadcrumbs(breadcrumbs);
     }
+    print(path);
     return breadcrumbs.map((c) => c.replaceAll('-', ' ')).toList();
   }
 
@@ -88,9 +89,11 @@ class BreadcrumbsComponent {
     final nameList = <String>[];
 
     for (var p in path) {
-      if (p == msg.library)
+      if (p == msg.library_url){
         nameList
-            .add('${msg.library[0].toUpperCase()}${msg.library.substring(1)}');
+            .add('${msg.library_url[0].toUpperCase()}${msg.library_url.substring(1)}');
+      print(msg.library_url);
+      }
 
       if (p == msg.contact)
         nameList
