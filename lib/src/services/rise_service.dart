@@ -173,10 +173,10 @@ class RiseService extends ResourceService<Rise> {
               'Aquí encontrará instrucciones relacionadas con las responsabilidades del equipo de cuidado dental.'
           ..estimated_time_for_completion = 'Aprox. 5 minutos')
         ..phrases['de'] = (Phrases()
-          ..name = 'Aufgaben des Zahnpflegeteams'
-          ..url = 'aufgaben-des-zahnpflegeteams'
+          ..name = 'Aufgaben des Praxisteams'
+          ..url = 'aufgaben-des-praxisteams'
           ..description =
-              'Anleitungen für die Aufgaben des Zahnpflegeteams sind hier zu finden.'
+              'Anleitungen für die Aufgaben des Praxisteamssind hier zu finden.'
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
@@ -266,10 +266,10 @@ class RiseService extends ResourceService<Rise> {
               'Aquí podrá encontrar instrucciones relacionadas con las responsabilidades del equipo de mantenimiento ambiental.'
           ..estimated_time_for_completion = 'Aprox. 5 minutos')
         ..phrases['de'] = (Phrases()
-          ..name = 'Was ein Umweltwartungsdienst macht'
-          ..url = 'anleitungen-fur-umweltwartungsdienste'
+          ..name = 'Was ein qualifiziertes Entsorgungsunternehmenmacht'
+          ..url = 'anleitungen-fur-entsorgungsunternehmen'
           ..description =
-              'Anleitungen für die Aufgaben des Umweltwartungsdienstes.'
+              'Anleitungen für die Aufgaben des qualifiziertes Entsorgungsunternehmen.'
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =

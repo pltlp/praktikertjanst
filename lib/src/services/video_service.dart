@@ -41,10 +41,10 @@ class VideoService extends ResourceService<Video> {
               'Susann Balzar aporta su punto de vista sobre el procedimiento de descontaminación de su clínica.'
           ..estimated_time_for_completion = '1 min 12 seg')
         ..phrases['de'] = (Phrases()
-          ..name = 'Unsere Erfahrungen mit Dekontamination'
+          ..name = 'Unsere Erfahrungen mit Dekontaminationen'
           ..url = 'dekontamination'
           ..description =
-              'Susann Balzar berichtet über die Dekontamination in ihrer Praxis.'
+              'Susann Balzar berichtet über die Dekontaminationenin ihrer Praxis.'
           ..estimated_time_for_completion = '1 Min. 12 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -134,7 +134,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Installation'
           ..url = 'installation'
           ..description =
-              'Anders und Patrik erklären Installation von Amalgamabscheidern und Absauganlagen.'
+              'Anders und Patrik erklären die Installation von Amalgamabscheidern und Sauganlagen.'
           ..estimated_time_for_completion = '1 Min. 35 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -179,7 +179,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Verwendung von Amalgam einstellen'
           ..url = 'schluss-mit-amalgam'
           ..description =
-              'Claes Karlsson schildert seine Ansichten über den Umgang der Industrie mit dem Amalgamverbot in Schweden im Jahr 2009.'
+              'Claes Karlsson schildert seine Ansichten über den Umgang der Dental Industrie mit dem Amalgamverbot in Schweden im Jahr 2009.'
           ..estimated_time_for_completion = '1 Min. 1 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -269,7 +269,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Wartung von Amalgamabscheidern'
           ..url = 'wartung-von-amalgamabscheidern'
           ..description =
-              'Ein Blick auf die Routinen für die Wartung von Amalgamabscheidern und Absauganlagen.'
+              'Ein Blick auf die Routinen für die Wartung vonAmalgamabscheidern und Sauganlagen.'
           ..estimated_time_for_completion = '1 Min. 10 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -359,7 +359,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Austausch von Amalgamabscheidern'
           ..url = 'austausch-von-amalgamabscheidern'
           ..description =
-              'So werden Amalgamabscheider in Nass- und Trockenabsauganlagen ausgetauscht.'
+              'So führt ein Servicepartnereine Funktionsprüfung von Amalgamabscheidern durch'
           ..estimated_time_for_completion = '1 Min. 19 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -446,10 +446,10 @@ class VideoService extends ResourceService<Video> {
               'Cómo un equipo de mantenimiento ambiental puede vaciar y limpiar una esclusa de agua.'
           ..estimated_time_for_completion = '23 seg')
         ..phrases['de'] = (Phrases()
-          ..name = 'Leeren des Wasserabscheiders'
-          ..url = 'leeren-des-wasserabscheiders'
+          ..name = 'Leeren des Siphons'
+          ..url = 'leeren-des-siphons'
           ..description =
-              'Wie ein Umweltwartungsdienst einen Wasserabscheider leert und reinigt.'
+              'Wie ein Servicepartnereinen Siphonleert und reinigt.'
           ..estimated_time_for_completion = '23 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =
@@ -487,8 +487,8 @@ class VideoService extends ResourceService<Video> {
           ..description = 'Gestionar los residuos de amalgama.'
           ..estimated_time_for_completion = '52 seg')
         ..phrases['de'] = (Phrases()
-          ..name = 'Endlagerung'
-          ..url = 'endlagerung'
+          ..name = 'Entsorgung'
+          ..url = 'entsorgung'
           ..description = 'Umgang mit Amalgamabfall.'
           ..estimated_time_for_completion = '52 Sek.')
         ..type = ResourceType.video
@@ -574,7 +574,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Warum ist Wartung so wichtig?'
           ..url = 'warum-ist-wartung-so-wichtig'
           ..description =
-              'Ein Servicetechniker erklärt die Bedeutung guter Wartung für Amalgamabscheider und Absauganlagen.'
+              'Ein Servicetechniker erklärt die Bedeutung guter Wartung für Amalgamabscheider und Sauganlagen'
           ..estimated_time_for_completion = '49 Sek.')
         ..type = ResourceType.video
         ..url['sv'] =

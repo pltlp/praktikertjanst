@@ -41,7 +41,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..description = 'Contenido para curiosos.'
           ..url = 'sala-de-formacion-para-los-mas-curiosos')
         ..phrases['de'] = (Phrases()
-          ..name = 'Wenn Sie einfach nur Interesse haben'
+          ..name = 'Wenn Sie Interesse haben'
           ..description = 'Inhalte für Interessierte.'
           ..url = 'schulungsraum-fur-interessierte')
         ..resources_ids = [
@@ -87,8 +87,8 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..url = 'sala-de-formacion-para-equipos-de-cuidado-dental')
         ..phrases['de'] = (Phrases()
           ..name = 'Für Zahnarztpraxen'
-          ..description = 'Inhalte für Personal in der Zahnpflege.'
-          ..url = 'schulungsraum-fur-zahnpflegepersonal')
+          ..description = 'Inhalte für Personal in der Zahnarztpraxis.'
+          ..url = 'schulungsraum-fur-das-praxisteam')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -185,9 +185,9 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..url =
               'sala-de-formacion-para-personal-de-mantenimiento-ambiental')
         ..phrases['de'] = (Phrases()
-          ..name = 'Für Servicemitarbeiter in der Umweltwartung'
-          ..description = 'Für Servicemitarbeiter in der Umweltwartung.'
-          ..url = 'schulungsraum-fur-servicemitarbeiter-in-der-umweltwartung')
+          ..name = 'Für Servicemitarbeiter in des Entsorgungsunternehmens'
+          ..description = 'Für Servicemitarbeiter in des Entsorgungsunternehmens.'
+          ..url = 'schulungsraum-fur-servicemitarbeiter-in-des-entsorgungsunternehmens')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',

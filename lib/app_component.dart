@@ -143,8 +143,8 @@ class AppComponent {
     loaded = false;
 
     if (Uri.base.pathSegments.isEmpty) {
-      Intl.defaultLocale = 'sv_SE';
-      await messages.initializeMessages('se');
+      Intl.defaultLocale = 'en_GB';
+      await messages.initializeMessages('en');
     } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {
@@ -203,8 +203,8 @@ class AppComponent {
             action: () => window.location.href = '${Uri.base.origin}/es/inicio',
             enabled: true),
         MenuItem(_capitalize('deutsch'),
-            action: () => window.location.href = '${Uri.base.origin}/de/Start',
-            enabled: false)
+            action: () => window.location.href = '${Uri.base.origin}/de/start',
+            enabled: true)
       ])
     ]);
 

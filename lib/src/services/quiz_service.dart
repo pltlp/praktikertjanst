@@ -47,7 +47,7 @@ class QuizService extends ResourceService<Quiz> {
         ..phrases['de'] = (Phrases()
           ..name = 'Quiz für die Öffentlichkeit'
           ..description =
-              'Testen Sie Ihr Wissen aus einer allgemeinen Perspektive.'
+              'Testen Sie Ihr Allgemeinwissen.'
           ..url = 'quiz-fur-die-offentlichkeit'
           ..estimated_time_for_completion = 'Ca. 2 Min.')
         ..type = ResourceType.quiz,
@@ -83,10 +83,10 @@ class QuizService extends ResourceService<Quiz> {
               'Ponga a prueba sus conocimientos desde la perspectiva del equipo de cuidado dental'
           ..estimated_time_for_completion = 'Aprox. 3 minutos')
         ..phrases['de'] = (Phrases()
-          ..name = 'Quiz für das Zahnpflegepersonal'
-          ..url = 'quiz-fur-das-zahnpflegepersonal'
+          ..name = 'Quiz für das Praxisteam'
+          ..url = 'quiz-fur-das-praxisteam'
           ..description =
-              'Testen Sie Ihr Wissen aus der Perspektive des Zahnpflegeteams.'
+              'Testen Sie Ihr Wissen aus der Perspektive des Praxisteams'
           ..estimated_time_for_completion = 'Ca. 3 Min.')
         ..type = ResourceType.quiz,
       'Quiz för dig som är servicetekniker': Quiz()

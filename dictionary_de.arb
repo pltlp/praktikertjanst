@@ -44,32 +44,32 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_2": "Kinder unter 15 Jahren und schwangere oder stillende Frauen dürfen nicht mit Zahnamalgam behandelt werden, sofern dies aus medizinischen Gründen nicht als unbedingt nötig erachtet wird",
+  "contact_bullet_2": "Kinder unter 15 Jahren und schwangere oder stillende Frauen müssen nicht mit Zahnamalgam behandelt werden, sofern dies nicht notwendig ist",
   "@contact_bullet_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_3": "Amalgamabscheider mit einem bestimmten Effizienzgrad müssen in zahnärztlichen Geräten installiert werden, in denen Amalgam oder Amalgamfüllungen verwendet werden",
+  "contact_bullet_3": "Amalgamabscheider mit einem bestimmten Effizienzgrad müssen installiert werden, in denen Amalgam oder Amalgamfüllungen verwendet werden",
   "@contact_bullet_3": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_bullet_4": "Die EU-Kommission berichtet nicht später als Mitte 2020 über die Möglichkeit der langfristigen Ausmusterung von Amalgam bis 2030",
+  "contact_bullet_4": "Die EU-Kommission meldet nicht später als Mitte 2020 über die Möglichkeit der günstigen Ausmusterung von Amalgam bis 2030",
   "@contact_bullet_4": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_1": "Praktikertjänst hat ein Projekt namens „HG-Rid LIFE“ zusammen mit Sweden Recycling und dem schwedisches Institut für Umweltforschung IVL mit Mitteln aus LIFE, dem EU-Aktionsprogramm für Umwelt und Klima, gestartet. Wir übernahmen durch das Projekt Verantwortung für eine nachhaltige Gesellschaft. Der Hauptzweck des Projekts ist die Minimierung der Freisetzung von Quecksilber aus Zahnkliniken in Schweden und auf längere Sicht in der gesamten Europäischen Union.",
+  "contact_pragraph_1": "Praktikertjänst hat ein Projekt namens „HG-Rid LIFE“ zusammen mit Schweden Recycling und dem schwedischen Institut für Umweltforschung IVL mit Mitteln aus LIFE, dem EU-Aktionsprogramm für Umwelt und Klima, gestartet. Wir übernahmen durch das Projekt Verantwortung für eine nachhaltige Gesellschaft. Der Hauptzweck des Projekts ist die Minimierung der Freisetzung von Quecksilber in Schweden und auf längere Sicht in der gesamten Europäischen Union.",
   "@contact_pragraph_1": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_2": "Quecksilber ist eines der gefährlichsten Umweltgifte und trotz des Verbots von Amalgam im Jahr 2009 haben nur wenige Zahnarztpraxen Nullemissionen von Quecksilber aus Amalgam erreicht. Bis zu 15 Tonnen Quecksilber befinden sich schätzungsweise noch in den Zähnen der schwedischen Bevölkerung. Das Ausbohren von Amalgamfüllungen wird daher noch viele Jahre üblich sein. Amalgamabscheider erfassen das meiste Quecksilber, aber deren Effizienz hängt von Faktoren wie der Wartung ab. Auch werden die feinsten Amalgampartikel in den Abscheidern nicht erfasst. Es besteht zudem das Risiko, dass Quecksilber aus Abflussrohren in das Abwasser gelangt. Das Risiko der Quecksilberanreicherung in den Rohren ist besonders hoch in Praxen, in denen die Zahnbehandlung vor der verpflichtenden Einführung von Abscheidern durchgeführt wurde, und dort, wo ältere Abscheider mit geringerer Effizienz noch im Einsatz sind.",
+  "contact_pragraph_2": "Quecksilber ist eines der gefährlichsten Umweltgifte und trotz des Verbots von Amalgam im Jahr 2009 haben nur wenige Zahnarztpraxen Nullemissionen von Quecksilber aus Amalgam erreicht. Bis zu 15 Tonnen Quecksilber befinden sich in den Zähnen der schwedischen Bevölkerung. Das Ausbohren von Amalgamfüllungen wird daher noch viele Jahre üblich sein. Amalgamabscheider erfassen das meiste Quecksilber, aber dessen Effizienz hängt von Faktoren ab, wie der Wartung ab. Auch werden die feinsten Amalgampartikel in den Abscheidern nicht erfasst. Es gibt ein Risiko, dass Quecksilber aus Abflussrohren in das Abwasser kommt. Das Risiko der Quecksilberanreicherung in den Rohren ist besonders hoch in Praxen, in denen die Zahnbehandlung vor der verpflichtenden Einführung von Abscheidern durchgeführt wird.",
   "@contact_pragraph_2": {
     "type": "text",
     "placeholders": {}
   },
-  "contact_pragraph_5": "Mehr als 1000 Tonnen Quecksilber befinden sich schätzungsweise in den Zähnen der EU-Bürger. Zahnamalgam ist einer der Hauptverwendungszwecke von Quecksilber in der EU.",
+  "contact_pragraph_5": "Mehr als 1000 Tonnen Quecksilber befinden sich in den Zähnen der EU-Bürger. Zahnamalgam ist einer der Hauptverwendungszwecke von Quecksilber in der EU.",
   "@contact_pragraph_5": {
     "type": "text",
     "placeholders": {}
@@ -84,7 +84,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_1": "Vorschläge für Richtlinien zur Quecksilberkontrolle in der Zahnbehandlung machen, die in Schweden umgesetzt werden können, und Richtlinien im Rest der EU anregen",
+  "contact_project_goal_1": "Quecksilberkontrolle in der Zahnbehandlung machen, die in Schweden umgesetzt werden",
   "@contact_project_goal_1": {
     "type": "text",
     "placeholders": {}
@@ -94,7 +94,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "contact_project_goal_3": "Erhöhung des Bewusstseins, wie sich Quecksilber aus Amalgam auf die Umwelt auswirkt. Dieses Webportal ist Teil dieser Bemühungen.",
+  "contact_project_goal_3": "Quecksilber aus Amalgam auf die Umwelt auswirken. Dieses Webportal ist Teil dieser Sicherheit.",
   "@contact_project_goal_3": {
     "type": "text",
     "placeholders": {}
@@ -119,22 +119,22 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_curious_url": "schulungsraum-für-interessierte",
+  "course_room_for_curious_url": "schulungsraum-fur-interessierte",
   "@course_room_for_curious_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_dental_teams_url": "schulungsraum-für-zahnpflegepersonal",
+  "course_room_for_dental_teams_url": "schulungsraum-fur-das-praxisteam",
   "@course_room_for_dental_teams_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_service_technicians_url": "schulungsraum-für-servicetechniker",
+  "course_room_for_service_technicians_url": "schulungsraum-fur-servicetechniker",
   "@course_room_for_service_technicians_url": {
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_environmental_service_companies_url": "schulungsraum-für-servicemitarbeiter-in-der-umweltwartung",
+  "course_room_for_environmental_service_companies_url": "schulungsraum-fur-servicemitarbeiter-in-des-entsorgungsunternehmens",
   "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
@@ -174,7 +174,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "home_url": "Start",
+  "home_url": "start",
   "@home_url": {
     "type": "text",
     "placeholders": {}
@@ -214,7 +214,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "menu": "Menü",
+  "menu": "Speisekarte",
   "@menu": {
     "type": "text",
     "placeholders": {}
@@ -224,7 +224,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "project_should": "Das Projekt wird Folgendes bewirken:",
+  "project_should": "Das Projekt wird Folgendes beachten:",
   "@project_should": {
     "type": "text",
     "placeholders": {}
@@ -259,7 +259,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_agree_terms": "Ich stimme hiermit zu, dass Praktikertjänst AB meine E-Mail-Adresse bis zu 12 Monate speichert. Ihre E-Mail-Adresse wird nicht zu Werbezwecken verwendet oder an Dritte weitergegeben.",
+  "quiz_success_agree_terms": "Ich stimme hiermit zu, dass Praktikertjänst AB meine E-Mail-Adresse bis zu 12 Monate verschieben. Ihre E-Mail-Adresse wird nicht an Werbezwecken verwendet oder an Dritte weitergegeben.",
   "@quiz_success_agree_terms": {
     "type": "text",
     "placeholders": {}
@@ -324,7 +324,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "type_here_to_search": "Suchbegriff eingebn...",
+  "type_here_to_search": "Suchbegriff eingebn ...",
   "@type_here_to_search": {
     "type": "text",
     "placeholders": {}
@@ -403,7 +403,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "continue_label": "weiter",
+  "continue_label": "Weiter",
   "@continue_label": {
     "type": "text",
     "placeholders": {}
@@ -413,12 +413,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "financial_support": "Gefördert durch das EU-Programm LIFE: HG-RID-LIFE LIFE15 ENV/SE/000465",
+  "financial_support": "Gefördert durch das EU-Programm LIFE: HG-RID-LIFE LIFE15 ENV / SE / 000465",
   "@financial_support": {
     "type": "text",
     "placeholders": {}
   },
-  "hg_rid_life": "HG-Rid LIFE",
+  "hg_rid_life": "HG-Rid LEBEN",
   "@hg_rid_life": {
     "type": "text",
     "placeholders": {}
@@ -443,7 +443,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "sweden": "Sweden",
+  "sweden": "Schweden",
   "@sweden": {
     "type": "text",
     "placeholders": {}
@@ -478,7 +478,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "title": "Hg-rid LIFE | Minimierung von Quecksilberemissionen aus der Zahnmedizin in die Umwelt",
+  "title": "Hg-los LEBEN | Minimierung von Quecksilberemissionen aus der Zahnmedizin in die Umwelt",
   "@title": {
     "type": "text",
     "placeholders": {}
@@ -493,12 +493,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "description_sentence_3": "Wie kann die Dentalindustrie Quecksilberemissionen in die Umwelt minimieren?",
+  "description_sentence_3": "Wie kann die Dentalindustrie Quecksilberemissionen in der Umwelt minimieren?",
   "@description_sentence_3": {
     "type": "text",
     "placeholders": {}
   },
-  "main_header_description": "Diese offene, kostenlose Schulung befasst sich damit, wie die Dentalindustrie Emissionen durch Amalgamfüllungen minimieren kann. Sie umfasst kurze Videoclips, interaktive Artikel und verschiedene Dokumente.",
+  "main_header_description": "Diese offene, kostenlose Schulung trägt dazu bei, wie die Dentalindustrie Emissionen durch Amalgamfüllungen minimieren kann. Sie umfasst kurze Videoclips, interaktive Artikel und verschiedene Dokumente.",
   "@main_header_description": {
     "type": "text",
     "placeholders": {}

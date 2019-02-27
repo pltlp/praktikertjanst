@@ -33,20 +33,20 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Cartel de empastes de amalgama perdidos'
           ..url = 'cartel-de-empastes-de-amalgama-perdidos')
         ..phrases['de'] = (Phrases()
-          ..name = 'Poster über verlorene Amalgamfüllungen'
-          ..description = 'Poster über verlorene Amalgamfüllungen'
-          ..url = 'poster-uber-verlorene-amalgamfullungen')
+          ..name = 'Poster, extrahierte Zähne mit Amalgamfüllung'
+          ..description = 'Poster, extrahierte Zähne mit Amalgamfüllung'
+          ..url = 'poster-extrahierte-zaehne-mit-amalgamfuellung')
         ..type = ResourceType.document
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
         ..url['fr'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
         ..url['es'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
         ..url['de'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
         ..size = '191.4 kb'
         ..document_type = 'pdf',
       'Checklista varje arbetsdag och vecka': Document()
@@ -83,13 +83,13 @@ class DocumentService extends ResourceService<Document> {
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
         ..url['fr'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
         ..url['es'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
         ..url['de'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
         ..document_type = 'pdf',
       'Checklista övrig': Document()
         ..icon = 'pool'
@@ -112,21 +112,21 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Lista de verificación, otros'
           ..url = 'lista-de-verificacion-otros')
         ..phrases['de'] = (Phrases()
-          ..name = 'Checkliste, sonstige'
-          ..description = 'Checkliste, sonstige'
-          ..url = 'checkliste-sonstige')
+          ..name = 'Checkliste, sonstiges'
+          ..description = 'Checkliste, sonstiges'
+          ..url = 'checkliste-sonstiges')
         ..type = ResourceType.document
         ..size = '303.3 kb'
         ..url['sv'] =
             'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
         ..url['fr'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
         ..url['es'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
         ..url['de'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
         ..document_type = 'pdf',
       'EU:s förordning om kvicksilver': Document()
         ..icon = 'pool'
@@ -192,13 +192,13 @@ class DocumentService extends ResourceService<Document> {
         ..url['sv'] =
             'https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808'
         ..url['en'] =
-            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+            'https://hg-rid.eu/documents/en/MB.pdf'
         ..url['fr'] =
-            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+            'https://hg-rid.eu/documents/en/MB.pdf'
         ..url['es'] =
-            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+            'https://hg-rid.eu/documents/en/MB.pdf'
         ..url['de'] =
-            'https://www.government.se/legal-documents/2000/08/ds-200061/'
+            'https://hg-rid.eu/documents/en/MB.pdf'
         ..document_type = 'link',
       'Vägledningsdokument': Document()
         ..icon = 'pool'
@@ -221,9 +221,9 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Documento de directrices'
           ..url = 'documento-de-directrices')
         ..phrases['de'] = (Phrases()
-          ..name = 'Richtliniendokument'
-          ..description = 'Richtliniendokument'
-          ..url = 'richtliniendokument')
+          ..name = 'Richtlinien'
+          ..description = 'Richtlinien'
+          ..url = 'richtlinien')
         ..type = ResourceType.document
         ..size = '1,6 MB'
         ..url['sv'] =

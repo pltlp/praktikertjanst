@@ -999,15 +999,15 @@ class QuestionService {
           'Vad ska du göra med en tappad tand som är lagad med amalgam?':
               Question()
                 ..value =
-                    'Was ist mit einem Zahn zu tun, der mit Amalgam gefüllt wurde?'
+                    'Was ist mit einemausgefallenenZahn zu tun, der mit Amalgam gefüllt ist?'
                 ..label =
-                    'Was ist mit einem Zahn zu tun, der mit Amalgam gefüllt wurde?'
+                    'Was ist mit einemausgefallenenZahn zu tun, der mit Amalgam gefüllt ist?'
                 ..options = [
                   Option()
                     ..value =
-                        'Dafür sorgen, dass er als Sondermüll behandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
+                        'Dafür sorgen, dass er als gefährlicher Abfallbehandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
                     ..label =
-                        'Dafür sorgen, dass er als Sondermüll behandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
+                        'Dafür sorgen, dass er als gefährlicher Abfallbehandelt wird, z. B. durch die Abgabe in einer Zahnarztpraxis'
                     ..score = 1,
                   Option()
                     ..value = 'In der Toilette hinunterspülen'
@@ -1021,9 +1021,9 @@ class QuestionService {
           'Mikroorganismer kan omvandla kvicksilver till en förening som kan tas upp av djur, vad heter den?':
               Question()
                 ..value =
-                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Tieren aufgenommen werden kann. Wie heißt diese?'
+                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Lebewesenaufgenommen werden kann. Wie heißt diese?'
                 ..label =
-                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Tieren aufgenommen werden kann. Wie heißt diese?'
+                    'Mikroorganismen können Quecksilber in eine Verbindung umwandeln, die von Lebewesenaufgenommen werden kann. Wie heißt diese?'
                 ..options = [
                   Option()
                     ..label = 'Methylquecksilber'
@@ -1034,8 +1034,8 @@ class QuestionService {
                     ..value = 'Quecksilberhydrat'
                     ..score = 0,
                   Option()
-                    ..label = 'Nukleinquecksilber'
-                    ..value = 'Nukleinquecksilber'
+                    ..label = 'NukleinQuecksilber'
+                    ..value = 'NukleinQuecksilber'
                     ..score = 0
                 ],
           'Hur påverkar framför allt metylkvicksilver, oss människor?':
@@ -1118,16 +1118,16 @@ class QuestionService {
             ..value = 'Was ist mit angesammeltem Quecksilber zu tun?'
             ..options = [
               Option()
-                ..label = 'Zu einem Endlager transportieren'
-                ..value = 'Zu einem Endlager transportieren'
+                ..label = 'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
+                ..value = 'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
                 ..score = 1,
               Option()
                 ..label = 'Zerstören'
                 ..value = 'Zerstören'
                 ..score = 0,
               Option()
-                ..label = 'Im Meer ablagern'
-                ..value = 'Im Meer ablagern'
+                ..label = 'Über das Abwasser entsorgen'
+                ..value = 'Über das Abwasser entsorgen'
                 ..score = 0
             ],
           'Var ska sugmotorn vara installerad?': Question()
@@ -1136,9 +1136,9 @@ class QuestionService {
             ..options = [
               Option()
                 ..label =
-                    'In einem eigenen ‘Absaugraum’, getrennt vom Personal.'
+                    'In einem eigenen ‘Technikraum, getrennt vom Personal.'
                 ..value =
-                    'In einem eigenen ‘Absaugraum’, getrennt vom Personal.'
+                    'In einem eigenen ‘Technikraum, getrennt vom Personal.'
                 ..score = 1,
               Option()
                 ..label =
@@ -1154,9 +1154,9 @@ class QuestionService {
           'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
               Question()
                 ..label =
-                    'Wie oft ist der Abfluss unter Siphons zu desinfizieren?'
+                    'Wie oft ist das Waschbecken mit Amalgamabscheiderzu desinfizieren?'
                 ..value =
-                    'Wie oft ist der Abfluss unter Siphons zu desinfizieren?'
+                    'Wie oft ist das Waschbecken mit Amalgamabscheiderzu desinfizieren?'
                 ..options = [
                   Option()
                     ..label = 'Jeden Arbeitstag'
@@ -1174,15 +1174,15 @@ class QuestionService {
           'Tandvårdsmottagningen har ansvar för rutiner och skötsel av amalgamavskiljare och sugsystem. Vad ingår i det dagliga underhållet?':
               Question()
                 ..label =
-                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Absauganlagen. Was gehört zur täglichen Wartung?'
+                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Sauganlagen. Was gehört zur täglichen Wartung?'
                 ..value =
-                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Absauganlagen. Was gehört zur täglichen Wartung?'
+                    'Die Zahnarztpraxis ist verantwortlich für Routinen und Wartung von Amalgamabscheidern und Sauganlagen. Was gehört zur täglichen Wartung?'
                 ..options = [
                   Option()
                     ..value =
-                        'Entleeren und Spülen von Grobsieb/Speichelsaugschlauch oder Partikelfilter.'
+                        'Entleeren und Spülen der Grobsiebe/Speichelsaugersiebeoder Partikelfilter imWaschbecken mit Amalgamabscheidern.'
                     ..label =
-                        'Entleeren und Spülen von Grobsieb/Speichelsaugschlauch oder Partikelfilter.'
+                        'Entleeren und Spülen der Grobsiebe/Speichelsaugersiebeoder Partikelfilter imWaschbecken mit Amalgamabscheidern.'
                     ..score = 1,
                   Option()
                     ..label = 'Behälterfüllstand des Amalgamabscheiders prüfen.'
@@ -1202,44 +1202,44 @@ class QuestionService {
                 ..options = [
                   Option()
                     ..label =
-                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Absauganlage'
+                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Sauganlage'
                     ..value =
-                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Absauganlage'
+                        'Die Zahnarztpraxis ist verantwortlich für die Aufzeichnung von Funktionsprüfungen und Abweichungen des Amalgamabscheiders und der Sauganlage'
                     ..score = 1,
                   Option()
                     ..label =
-                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Sauganlagen.'
                     ..value =
-                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                        'Der Hausbesitzer ist verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Sauganlagen.'
                     ..score = 0,
                   Option()
                     ..label =
-                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Sauganlagen.'
                     ..value =
-                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Absauganlagen.'
+                        'Servicetechniker sind verantwortlich für die gesamte Dokumentation von Amalgamabscheidern und Sauganlagen.'
                     ..score = 0
                 ],
           'Vad stämmer om installationen av sugslangar?': Question()
             ..label =
-                'Was ist in Bezug auf die Installation von Saugschläuchen richtig?'
+                'Was ist in Bezug auf die Installation von Saugleitungenrichtig?'
             ..value =
-                'Was ist in Bezug auf die Installation von Saugschläuchen richtig?'
+                'Was ist in Bezug auf die Installation von Saugleitungenrichtig?'
             ..options = [
               Option()
                 ..label =
-                    'Schlauchwinkel sollte nicht mehr als 45 Grad betragen.'
+                    'Winkel solltenmindestens45 Grad betragen'
                 ..value =
-                    'Schlauchwinkel sollte nicht mehr als 45 Grad betragen.'
+                    'Winkel solltenmindestens45 Grad betragen'
                 ..score = 1,
               Option()
                 ..label =
-                    'Saugschläuche von der Einheit zum Boden sind zu kleben'
+                    'Saugleitungen von der Einheit zum Boden sind zu verkleben'
                 ..value =
-                    'Saugschläuche von der Einheit zum Boden sind zu kleben'
+                    'Saugleitungen von der Einheit zum Boden sind zu verkleben'
                 ..score = 0,
               Option()
-                ..label = 'Saugschläuche müssen aus Kohlefaser sein'
-                ..value = 'Saugschläuche müssen aus Kohlefaser sein'
+                ..label = 'Saugleitungen müssen aus Kohlefaser sein'
+                ..value = 'Saugleitungen müssen aus Kohlefaser sein'
                 ..score = 0
             ],
         }

@@ -40,7 +40,7 @@ class WordService {
         ..name = 'Separador de amalgama')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Ein Gerät, das Amalgampartikel aus der zahnärztlichen Behandlung im Wasser aufnimmt, bevor sie in die Kanalisation gelangen. Durch Filtration, Sedimentation, Zentrifugation oder eine Kombination daraus wird das Amalgam abgeschieden und verbleibt im Behälter. Das Amalgam wird dann als Sondermüll behandelt. Amalgamabscheider können in eine Einheit eingebaut oder separat zur Verbindung mit mehreren Einheiten aufgestellt werden.'
+            'Ein Gerät, das Amalgampartikel aus der zahnärztlichen Behandlung im Abwasser abscheidet. Durch Filtration, Sedimentation, Zentrifugation oder eine Kombination daraus wird das Amalgam abgeschieden und verbleibt im Sammelbehälter. Das Amalgam als gefährlicher Abfall behandelt. Amalgamabscheider können in eine Einheit eingebaut oder zentral in der Klinik verbaut sein.'
         ..name = 'Amalgamabscheider'),
     'Backventil': Word()
       ..img_urls = ['pics/check_valve.jpg']
@@ -62,7 +62,7 @@ class WordService {
         ..name = 'Válvula antirretorno')
       ..phrases['de'] = (Phrases()
         ..description =
-            'La amalgama es un tipo de material cuya utilización como relleno para empastes dentales estuvo permitida en Suecia hasta el año 2009. Está compuesta de mercurio (40-50%), plata (20-35%), estaño (12-15%), cobre (5-15%) y zinc (2%). '
+            'Nasssaugsysteme müssen über ein Rückschlagventil hinterdem Amalgamabscheider verfügen, um einen Rückflusszu verhindern.'
         ..name = 'Amalgama dental'),
     'Dentalt amalgam': Word()
       ..img_urls = ['pics/dental_amalgam.jpg']
@@ -107,7 +107,7 @@ class WordService {
       ..phrases['de'] = (Phrases()
         ..description =
             'Ein Dentalamalgamabscheider, der Amalgampartikel im Wasser aufnimmt, das für die Reinigung von zahnärztlichen Instrumenten und anderen Geräten verwendet wird, die vor dem Waschen/Sterilisieren in einem Desinfektionsgerät bzw. Autoklav mit Amalgam in Berührung kamen.'
-        ..name = 'Siphon'),
+        ..name = 'Amalgamabscheider unter dem Waschbecken'),
     'Föravskiljare': Word()
       ..img_urls = ['pics/amalgam_pre_separators.jpeg']
       ..phrases['sv'] = (Phrases()
@@ -128,7 +128,7 @@ class WordService {
         ..name = 'Separador previo')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Vorabscheider, der vor dem Dentalamalgamabscheider installiert wird, um große Partikel zu sammeln, die das Potenzial haben, den Dentalamalgamabscheider zu blockieren, den er speist.'
+            'Der Vorabscheider wird vor dem Amalgamabscheider montiert, um zum Beispiel größere Mengen Strahlmittel abzupuffern. Er kann auch verwendet werden, falls keine Filtersiebe vorgeschaltet sind.'
         ..name = 'Vorabscheider'),
     'Godkänd avfallsbehållare': Word()
       ..img_urls = ['pics/approved_waste_container.jpg']
@@ -150,7 +150,7 @@ class WordService {
         ..name = 'Contenedor certificado para el deshecho de residuos')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Behälter für Sondermüll wie Quecksilber müssen UN-zertifiziert sein und die Anforderungen für den Transport von Sondermüll erfüllen. Die UN-Nummer ist eine Identifikationsnummer für Gefahrgut.'
+            'Die Behälter für gefährliche Abfälle (Quecksilber) müssen UN-zertifiziert sein und sollten über eine Quecksilberdampf unterdrückende Chemikalie verfügen. Die UN Zertifizierung ist für den Transport notwendig.'
         ..name = 'Zugelassener Abfallbehälter'),
     'Grovsil / Salivsugfilter / Partikelfälla': Word()
       ..img_urls = ['pics/particle_filter.png']
@@ -174,7 +174,7 @@ class WordService {
             'Filtro grueso/filtro de succión de saliva/retenedor de partículas')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Um die Funktion des Amalgamabscheiders zu verbessern und große feste Partikel zu entfernen, ist die Absaugeinheit der Einheit mit einem Grobsieb/Speichelsaugfilter oder Partikelfilter ausgestattet.  Letzterer ist ein Einwegprodukt.'
+            'Um die Funktion des Amalgamabscheiders zu verbessern und größerePartikel zu entfernen, ist die Behandlungseinheitmit einem Grobsieb/Speichelsaugfilter oder Partikelfilter auszustatten'
         ..name = 'Grobsieb/Speichelsaugfilter/Partikelfilter'),
     'Kompressor': Word()
       ..img_urls = ['pics/compressor.jpg']
@@ -196,7 +196,7 @@ class WordService {
         ..name = 'Compresor')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Ein Kompressor ist eine Einheit, die Luft aus der Umgebung mithilfe eines Motors verdichtet und sie in einem (Druck-)Tank speichert. Die Druckluft kann dann bei Bedarf über einen Luftschlauch, der zu den zahnärztlichen Geräten führt, verwendet werden. Druckluft wird verwendet, um Turbinen und Geräte anzutreiben und Speichel und Ablagerungen während der Behandlung zu entfernen.'
+            'Ein Kompressor ist einGerät, dasLuft aus der Umgebung mithilfe eines Motors verdichtet und sie in einem (Druck-)Tank speichert. Die Druckluft kann dann bei Bedarf über einen Luftschlauch, der zu den zahnärztlichen Geräten führt, verwendet werden. Druckluft wird verwendet, um Turbinen und Geräte anzutreiben'
         ..name = 'Kompressor'),
     'Pumpbox': Word()
       ..img_urls = ['pics/pumpbox.jpeg']
@@ -240,7 +240,7 @@ class WordService {
         ..name = 'Descontaminación')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Dekontamination umfasst die Hochdruckreinigung von Abflussleitungen und das Entleeren/Reinigen von mit Quecksilber kontaminierten Wasserabscheidern und Bodenabläufen. Amalgamschlick und das Wasser aus dem Hochdruckreiniger sind als Sondermüll zu behandeln und von befugten Unternehmen zu entsorgen. Die Leitung ist nie frei von Quecksilber und muss daher bei der Demontage als Sondermüll gekennzeichnet werden. Die Dekontamination muss regelmäßig erfolgen. Wenn eine Zahnarztpraxis geschlossen wird, wird eine abschließende Dekontamination durchgeführt, welche die Demontage der Saugleitungen und das Verschließen von Spülstellen umfasst, um zu verhindern, dass Quecksilber in die Kanalisation gelangt.'
+            'Dekontamination umfasst die Reinigung von Abwasserleitungenund das Reinigen von mit Quecksilber kontaminierten Siphonsund Bodenabläufen. Anfallender Amalgamschlammund Abwasser aus dem Reinigungsind als gefährlicher Abfallzu behandeln und dürfen nur von qualifizierten Entsorgungsunternehmen entsorgt werden. Die Abwasserleitungensindnie frei von Quecksilber und müssen daher bei der Demontage als gefährlicher Abfall gekennzeichnet werden. Die Dekontamination muss regelmäßig erfolgen. Wenn eine Zahnarztpraxis geschlossen wird, muss eine abschließende Dekontamination durchgeführtwerden.Wenn möglich müssen die Abwasser-und Saugleitungen demontiert werden und die Bodenabläufe festverschlossen werden.'
         ..name = 'Dekontamination'),
     'Saneringsprotokoll': Word()
       ..img_urls = ['pics/remidiation_protocol.jpeg']
@@ -262,7 +262,7 @@ class WordService {
         ..name = 'Protocolo de descontaminación')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Von der Praxis erstellte Dokumentation über die durchgeführte Dekontamination, welche u.a. die verwendete Methode und die Menge des gesammelten Quecksilbers enthält. Die Dokumentation umfasst auch die Behandlung des Sondermülls, d. h. dass der Transporteur befugt ist und der Sondermüll zu einer Anlage befördert wird, die zu dessen Annahme befugt ist.'
+            'Von der Praxis erstellte Dokumentation über die durchgeführte Dekontamination, welche u.a. die verwendete Methode und die Menge des gesammelten Quecksilbers enthält. Die Dokumentation umfasst auch den fachgerechten Transport, sowie die fachgerechte Entsorgung des gefährlichen Abfalls.'
         ..name = 'Dekontaminationsprotokoll'),
     'Torrt sugsystem': Word()
       ..img_urls = ['pics/amalgam_separators_dry_system.jpeg']
@@ -284,8 +284,8 @@ class WordService {
         ..name = 'Sistema de succión seca')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Im Fall einer Trockenabsauganlage erfolgt die Trennung von Flüssigkeit und Luft in einem Flüssigkeitsabscheider (Sekretabscheider), der sich in der Einheit befindet. Der Amalgamabscheider befindet sich in der Einheit oder ist an diese angeschlossen. Nach dem Amalgamabscheider ablaufende Flüssigkeit geht direkt zum Abwassersystem des Objekts, in der Regel ein Bodenablauf. Die Luft wird vom Flüssigkeitsabscheider mithilfe eines Saugmotors getrennt, der an mehrere Einheiten angeschlossen ist. Der Saugmotor kann sich auf dem Dachboden, auf der gleichen Etage wie die Einheit oder im Keller befinden.'
-        ..name = 'Trockenabsauganlage'),
+            'Bei einem Trockensaugsystem wird in der Behandlungseinheit Wasser/Amalgam von derLuft separiert. Dezentrale Der Amalgamabscheider befindet sich in der Einheit oder ist an dieserangeschlossen. Hinterdem Amalgamabscheidergelangt das gereinigte Wasser direkt in die Hausentwässerung des Objektes, in der Regel ein Bodenablauf. Die Saugmaschine ist zentral aufgestellt und bedient mehrere Behandlungseinheiten. Die Saugmaschine kann sich oberhalb/unterhalb der Zahnarztpraxis befinden, oder kann auf der gleichen Etage installiert sein'
+        ..name = 'Trockensauganlage'),
     'Utjämningskärl': Word()
       ..img_urls = ['pics/surge_vessel_2.jpeg']
       ..phrases['sv'] = (Phrases()
@@ -306,7 +306,7 @@ class WordService {
         ..name = 'Cámara de compensación')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Ein 10-Liter-Ausgleichsbehälter ist in der Regel in Verbindung mit einem Siphon installiert. Das hat keine Auswirkungen auf den Vorgang der Amalgamabscheidung, ermöglicht aber eine höhere Durchflussrate. Durch die Verwendung eines Ausgleichsbehälters wird verhindert, dass Wasser in der Spüle bleibt.'
+            'Ein 10-Liter-Ausgleichsbehälter ist in der Regel in Verbindung mit einem Amalgamabscheider unter dem Waschbeckeninstalliert. Das hat keine Auswirkungen auf den Vorgang der Amalgamabscheidung, ermöglicht aber eine höhere Durchflussrate. Durch die Verwendung eines Ausgleichsbehälters wird verhindert, dass Wasser in der Spüle steht.'
         ..name = 'Ausgleichsbehälter'),
     'Vattenlås': Word()
       ..img_urls = ['pics/siphon.jpeg']
@@ -328,7 +328,7 @@ class WordService {
         ..name = 'Colector de agua')
       ..phrases['de'] = (Phrases()
         ..description =
-            'Ein gekrümmter Abschnitt einer Wasserleitung, in dem eine Menge Wasser durch die Wirkung der Schwerkraft zum Stillstand kommt und die Lufttaschen auf beiden Seiten des Siphons trennt. Dadurch verhindert das Wasser im Siphon, dass unangenehme Gerüche, Krankheitskeime und Ungeziefer aus der Kanalisation eindringen können. Siphons in Zahnarztpraxis sind an Waschbecken angebracht, z. B. im Behandlungsraum, in Sterilisatonsbereichen und in der Patiententoilette. '
+            'Der Siphon ist ein Geruchsverschluss der in einer Abwasserleitung installiert wird. Dadurch wird verhindert das, unangenehme Gerüche, Krankheitskeime und Ungeziefer aus der Kanalisation austreten können. Siphons in Zahnarztpraxis sind an Waschbecken angebracht, z. B. im Behandlungsraum, in Sterilisatonsbereichen und in der Patiententoilette'
         ..name = 'Siphon'),
     'Vattenprov': Word()
       ..img_urls = ['pics/water_sample.jpeg']
@@ -351,7 +351,7 @@ class WordService {
       ..phrases['de'] = (Phrases()
         ..description =
             'Analyse von Quecksilberemissionen im Abwasser. Proben werden genommen, nachdem das Wasser durch den Amalgamabscheider geflossen ist.'
-        ..name = 'Wasserprobenahme'),
+        ..name = 'Abwasserprobenahme'),
     'Vått sugsystem': Word()
       ..img_urls = [
         'pics/wet_suction_system.jpg',
@@ -378,7 +378,7 @@ class WordService {
         ..name = 'Sistemas de succión húmeda')
       ..phrases['de'] = (Phrases()
         ..description =
-            'In einer Nassabsauganlage sind ein oder mehrere Behandlungsstühle mit einem Vakuumrohrsystem verbunden, in dem Luft und Flüssigkeiten zu einer zentralen Absauganlage befördert werden. Luft und Wasser werden in der Anlage getrennt. Wasser wir über den Amalgamabscheider weiterbefördert und die Luft über den Saugmotor. Diese Art von Absauganlage kann auf der gleichen Etage wie die Klinik installiert werden, aber die Installation in der darunterliegenden Etage wird empfohlen, um die bestmöglichen Betriebsbedingungen zu gewährleisten.'
-        ..name = 'Nassabsauganlage'),
+            'In einem Nasssaugsystemsind ein oder mehrere Behandlungsstühle mit einem Vakuumrohrsystem verbunden, in dem Luft und Flüssigkeiten zu einer zentralen Sauganlage befördert werden. Luft und Wasser werden in der Anlage getrennt. Wasser wirdüber den Amalgamabscheider geleitet und die Luft über die Saugmaschine abgeführt. Diese Art von Saugsystem kann auf der gleichen Etage in der Zahnarztpraxis installiert werden, aber die Installation in der darunterliegenden Etage wird empfohlen, um die bestmöglichen Betriebsbedingungen zu gewährleisten.'
+        ..name = 'Nasssaugsystem'),
   };
 }
