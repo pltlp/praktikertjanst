@@ -62,7 +62,7 @@ class SlideService {
           'de': new SlidePhrases()
             ..paragraph =
                 'Standards setzen, um das Bewusstsein des Installateurs für die Minimierung von Amalgamemissionen zu schärfen.'
-            ..link = '/de/start/schulungsraum-fur-servicetechniker'
+            ..link = '/de/home/schulungsraum-fur-servicetechniker'
             ..button_label = 'Mehr erfahren',
         },
       Slide()
@@ -91,7 +91,7 @@ class SlideService {
           'de': SlidePhrases()
             ..paragraph =
                 'Standards setzen, um das Bewusstsein des Installateurs für die Minimierung von Amalgamemissionen zu schärfen.'
-            ..link = '/de/start/schulungsraum-fur-das-praxisteam'
+            ..link = '/de/home/schulungsraum-fur-das-praxisteam'
             ..button_label = 'Mehr erfahren',
         },
       Slide()
@@ -121,7 +121,7 @@ class SlideService {
           'de': SlidePhrases()
             ..paragraph =
                 'Spülen Sie bei Vorhandensein eines Amalgamabscheiders Amalgamreste aus Instrumenten, desinfizieren Sie die Spüle.'
-            ..link = '/de/start/schulungsraum-fur-servicemitarbeiter-in-des-entsorgungsunternehmens'
+            ..link = '/de/home/schulungsraum-fur-entsorgungsfachberater'
             ..button_label = 'Mehr erfahren',
         },
       Slide()
@@ -150,7 +150,7 @@ class SlideService {
           'de': SlidePhrases()
             ..paragraph =
                 'Dekontaminieren Sie das Abflussrohr, um Störungen zu vermeiden und das Risiko von Quecksilberemissionen zu minimieren'
-            ..link = '/de/start/schulungsraum-fur-das-praxisteam'
+            ..link = '/de/home/schulungsraum-fur-das-praxisteam'
             ..button_label = 'Mehr erfahren',
         }
     ];

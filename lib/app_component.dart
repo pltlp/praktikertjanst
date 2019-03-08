@@ -143,8 +143,8 @@ class AppComponent {
     loaded = false;
 
     if (Uri.base.pathSegments.isEmpty) {
-      Intl.defaultLocale = 'en_GB';
-      await messages.initializeMessages('en');
+      Intl.defaultLocale = 'sv_SE';
+      await messages.initializeMessages('sv');
     } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {

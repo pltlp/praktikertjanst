@@ -43,7 +43,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['de'] = (Phrases()
           ..name = 'Wenn Sie Interesse haben'
           ..description = 'Inhalte für Interessierte.'
-          ..url = 'schulungsraum-fur-interessierte')
+          ..url = 'schulungsraum-fur-interessenten')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',
@@ -187,7 +187,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
         ..phrases['de'] = (Phrases()
           ..name = 'Für Servicemitarbeiter in des Entsorgungsunternehmens'
           ..description = 'Für Servicemitarbeiter in des Entsorgungsunternehmens.'
-          ..url = 'schulungsraum-fur-servicemitarbeiter-in-des-entsorgungsunternehmens')
+          ..url = 'schulungsraum-fur-entsorgungsfachberater')
         ..resources_ids = [
           'Kvicksilver i naturen',
           'Lagar och regler',

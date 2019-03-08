@@ -174,7 +174,7 @@ class MessagesService {
       name: 'quiz_success_text_1');
 
   String get quiz_success_text_2 => Intl.message(
-      'Kan du tänka dig att svara på några frågor via din mejl om några månader? I så fall skriver du in din mejladress här.',
+      'Kan du tänka dig att svara på några frågor via mejl om webbutbildningen? I så fall skriver du in din mejladress här.',
       name: 'quiz_success_text_2');
 
   String get quiz_success_title =>

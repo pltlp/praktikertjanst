@@ -1,6 +1,5 @@
 {
-  "@@last_modified": "2018-12-19T14:57:51.128725",
-  "about": "om",
+  "about": "om\n",
   "@about": {
     "type": "text",
     "placeholders": {}
@@ -25,7 +24,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "cancel": "avbryt",
+  "cancel": "avbryt\n",
   "@cancel": {
     "type": "text",
     "placeholders": {}
@@ -135,7 +134,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "course_room_for_environmental_service_companies_url": "kursrum-for-mijoserviceforetag",
+  "course_room_for_environmental_service_companies_url": "kursrum-for-mijoserviceforetag\n",
   "@course_room_for_environmental_service_companies_url": {
     "type": "text",
     "placeholders": {}
@@ -265,7 +264,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_mail_sent_text": "Vi hör av oss.",
+  "quiz_success_mail_sent_text": "Vi hör av oss.\n",
   "@quiz_success_mail_sent_text": {
     "type": "text",
     "placeholders": {}
@@ -280,7 +279,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_2": "Kan du tänka dig att svara på några frågor via din mejl om några månader? I så fall skriver du in din mejladress här.",
+  "quiz_success_text_2": "Kan du tänka dig att svara på några frågor via mejl om webbutbildningen? I så fall skriver du in din mejladress här.",
   "@quiz_success_text_2": {
     "type": "text",
     "placeholders": {}
@@ -295,7 +294,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "read_more_about_this_project_at": "Läs mer om projektet på",
+  "read_more_about_this_project_at": "Läs mer om projektet på\n",
   "@read_more_about_this_project_at": {
     "type": "text",
     "placeholders": {}
@@ -320,12 +319,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "swedish": "svenska",
+  "swedish": "svenska\n",
   "@swedish": {
     "type": "text",
     "placeholders": {}
   },
-  "type_here_to_search": "Skriv in här för att söka...",
+  "type_here_to_search": "Skriv in här för att söka ...",
   "@type_here_to_search": {
     "type": "text",
     "placeholders": {}
@@ -335,14 +334,14 @@
     "type": "text",
     "placeholders": {}
   },
-  "document": "{howMany,plural, =1{dokument}other{dokument}}",
+  "document": "{howMany, plural, =1 {dokument} other {dokument}}",
   "@document": {
     "type": "text",
     "placeholders": {
       "howMany": {}
     }
   },
-  "word": "{howMany,plural, =1{ord}other{ord}}",
+  "word": "{howMany, plural, =1 {ord} other {ord}}",
   "@word": {
     "type": "text",
     "placeholders": {
@@ -444,12 +443,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "sweden": "sweden",
+  "sweden": "Sverige",
   "@sweden": {
     "type": "text",
     "placeholders": {}
   },
-  "recycling": "Recycling",
+  "recycling": "Återvinning",
   "@recycling": {
     "type": "text",
     "placeholders": {}

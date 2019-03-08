@@ -38,15 +38,15 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'poster-extrahierte-zaehne-mit-amalgamfuellung')
         ..type = ResourceType.document
         ..url['sv'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Har%20du%20tappat%20en%20fyllning%20med%20amalgam.pdf'
+            'https://hg-rid.eu/documents/sv/har-du-tappat-en-fyllning-med-amalgam.pdf'
         ..url['en'] =
-            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
+            'https://hg-rid.eu/documents/en/lost-an-amalgam-filling.pdf'
         ..url['fr'] =
-            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
+            'https://hg-rid.eu/documents/fr/vous-avez-perdu-un-plombage-gris.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
+            'https://hg-rid.eu/documents/es/se-te-ha-caido-un-empaste-con-amalgama.pdf'
         ..url['de'] =
-            'https://hg-rid.eu/documents/en/poster-amalgam-fillings.pdf'
+            'https://hg-rid.eu/documents/de/ist-ihnen-eine-amalgamfullung-rausgefallen.pdf'
         ..size = '191.4 kb'
         ..document_type = 'pdf',
       'Checklista varje arbetsdag och vecka': Document()
@@ -81,15 +81,15 @@ class DocumentService extends ResourceService<Document> {
         ..type = ResourceType.document
         ..size = '200.9 kb'
         ..url['sv'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_1.pdf'
+            'https://hg-rid.eu/documents/sv/checklista-skotsel-av-amalgamavskiljare-1.pdf'
         ..url['en'] =
             'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
         ..url['fr'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
+            'https://hg-rid.eu/documents/fr/checklist-pour-entretien-de-separateur-damalgame-1.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
+            'https://hg-rid.eu/documents/es/mantenimiento-de-la-lista-de-verificacion-1.pdf'
         ..url['de'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-1.pdf'
+            'https://hg-rid.eu/documents/de/pruflist-des-amalgamabscheiders-1.pdf'
         ..document_type = 'pdf',
       'Checklista övrig': Document()
         ..icon = 'pool'
@@ -118,15 +118,15 @@ class DocumentService extends ResourceService<Document> {
         ..type = ResourceType.document
         ..size = '303.3 kb'
         ..url['sv'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/Checklista%20sko%CC%88tsel%20av%20amalgamavskiljare_2.pdf'
+            'https://hg-rid.eu/documents/sv/checklista-skotsel-av-amalgamavskiljare-2.pdf'
         ..url['en'] =
             'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
         ..url['fr'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
+            'https://hg-rid.eu/documents/fr/checklist-pour-entretien-de-separateur-damalgame-2.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
+            'https://hg-rid.eu/documents/es/mantenimiento-de-la-lista-de-verificacion-2.pdf'
         ..url['de'] =
-            'https://hg-rid.eu/documents/en/checklist-upkeep-of-amalgam-separator-2.pdf'
+            'https://hg-rid.eu/documents/de/pruflist-des-amalgamabscheiders-2.pdf'
         ..document_type = 'pdf',
       'EU:s förordning om kvicksilver': Document()
         ..icon = 'pool'
@@ -154,15 +154,15 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'eu-verordnung-uber-quecksilber')
         ..type = ResourceType.document
         ..url['sv'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+            ' https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['en'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+            ' https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['fr'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+            ' https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['es'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+            ' https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..url['de'] =
-            'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
+            ' https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.137.01.0001.01.ENG'
         ..document_type = 'link',
       'Miljöbalken': Document()
         ..icon = 'pool'
@@ -190,15 +190,15 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'verbreitung-von-quecksilber')
         ..type = ResourceType.document
         ..url['sv'] =
-            'https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808'
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..url['en'] =
-            'https://hg-rid.eu/documents/en/MB.pdf'
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..url['fr'] =
-            'https://hg-rid.eu/documents/en/MB.pdf'
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..url['es'] =
-            'https://hg-rid.eu/documents/en/MB.pdf'
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..url['de'] =
-            'https://hg-rid.eu/documents/en/MB.pdf'
+            'https://www.government.se/legal-documents/2000/08/ds-200061/'
         ..document_type = 'link',
       'Vägledningsdokument': Document()
         ..icon = 'pool'
@@ -226,16 +226,16 @@ class DocumentService extends ResourceService<Document> {
           ..url = 'richtlinien')
         ..type = ResourceType.document
         ..size = '1,6 MB'
-        ..url['sv'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+              ..url['sv'] =
+            'https://hg-rid.eu/documents/sv/vagledning-kvicksilver-tandvarden.pdf'
         ..url['en'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+            'https://hg-rid.eu/documents/en/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..url['fr'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+            'https://hg-rid.eu/documents/fr/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..url['es'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+            'https://hg-rid.eu/documents/es/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..url['de'] =
-            'http://www.praktikertjanst.se/Global/Dokument/Om%20Praktikertjanst/Det%20har%20ar%20Praktikertjanst/Kvalitet/V%C3%A4gledning_minimerat_utsl%C3%A4pp_kvicksilver_tandv%C3%A5rd181101.pdf'
+            'https://hg-rid.eu/documents/de/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..document_type = 'pdf',
     };
     return data;
