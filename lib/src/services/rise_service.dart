@@ -48,15 +48,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/kvicksilver-i-naturen/content/index.html'
+            'https://hg-rid.eu/rise/sv/kvicksilver-i-naturen/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+            'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+            'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html'
+            'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/mercury-in-nature/content/index.html',
+            'https://hg-rid.eu/rise/de/quecksilber-in-der-natur/content/index.html',
       'Lagar och regler': Rise()
         ..icon = 'article'
         ..id = 'Lagar och regler'
@@ -94,15 +94,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/lagar-och-regler/content/index.html'
+            'https://hg-rid.eu/rise/sv/lagar-och-regler/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/laws-and-regulations/content/index.html',
+            'https://hg-rid.eu/rise/de/gesetze-und-vorschriften/content/index.html',
       'Vad är vad på mottagningen?': Rise()
         ..icon = 'article'
         ..id = 'Vad är vad på mottagningen?'
@@ -135,15 +135,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/vad-ar-vad-pa-mottagningen/content/index.html'
+            'https://hg-rid.eu/rise/sv/vad-ar-vad-pa-mottagningen/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+            'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+            'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html'
+            'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/overview-over-equipment/content/index.html',
+            'https://hg-rid.eu/rise/de/was-ist-was-in-der-praxis/content/index.html',
       'Tandvårdsteamets ansvar': Rise()
         ..icon = 'article'
         ..id = 'Tandvårdsteamets ansvar '
@@ -180,15 +180,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/tandvardsteamets-ansvar/content/index.html'
+            'https://hg-rid.eu/rise/sv/tandvardsteamets-ansvar/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/dental-care-teams-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/de/aufgaben-des-zahnpflegeteams/content/index.html',
       'serviceteknikerns ansvar': Rise()
         ..icon = 'article'
         ..id = 'serviceteknikerns ansvar'
@@ -226,15 +226,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/serviceteknikerns-ansvar/content/index.html'
+            'https://hg-rid.eu/rise/sv/serviceteknikerns-ansvar/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/dental-technicians-responsibility/content/index.html',
+            'https://hg-rid.eu/rise/de/die-verantwortlichkeiten-des-servicetechnikers/content/index.html',
       'Instruktioner för miljöserviceföretag': Rise()
         ..icon = 'article'
         ..id = 'Instruktioner för miljöserviceföretag'
@@ -273,15 +273,15 @@ class RiseService extends ResourceService<Rise> {
           ..estimated_time_for_completion = 'Ca. 5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
-            'https://hg-rid.eu/rise/instruktioner-for-miljoserviceforetag/content/index.html'
+            'https://hg-rid.eu/rise/sv/instruktioner-for-miljoserviceforetag/content/index.html'
         ..url['en'] =
-            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
         ..url['de'] =
-            'https://hg-rid.eu/rise/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/de/was-ein-umweltwartungsdienst-macht/content/index.html'
     };
 
     return data;
