@@ -27,7 +27,7 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Article on what mercury is and how it affects nature.'
           ..url = 'mercury-in-nature'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = '5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Le mercure dans la nature'
           ..description =
@@ -45,7 +45,7 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Artikel über die Eigenschaften von Quecksilber und wie es sich auf die Natur auswirkt.'
           ..url = 'quecksilber-in-der-natur'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/kvicksilver-i-naturen/content/index.html'
@@ -73,7 +73,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'laws-and-rules'
           ..description =
               'Article on the laws and rules that govern the handling of amalgam.'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = '5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Lois et règlementations'
           ..url = 'lois-et-reglementations'
@@ -91,7 +91,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'gesetze-und-vorschriften'
           ..description =
               'Artikel über die Gesetze und Vorschriften zum Umgang mit Amalgam.'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/lagar-och-regler/content/index.html'
@@ -132,7 +132,7 @@ class RiseService extends ResourceService<Rise> {
           ..name = 'In der Praxis'
           ..url = 'was-ist-was-in-der-praxis'
           ..description = 'Übersicht über die Geräte in Praxen.'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/vad-ar-vad-pa-mottagningen/content/index.html'
@@ -159,7 +159,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'the-dental-care-teams-responsibilities'
           ..description =
               'Instructions on the dental care team’s responsibilities are available here.'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = '5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Les responsabilités de l’équipe de soins dentaires'
           ..url = 'les-responsabilites-equipe-soins-dentaires'
@@ -177,7 +177,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'aufgaben-des-praxisteams'
           ..description =
               'Anleitungen für die Aufgaben des Praxisteamssind hier zu finden.'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/tandvardsteamets-ansvar/content/index.html'
@@ -205,7 +205,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'the-service-engineers-responsibilities'
           ..description =
               'Instructions on the service technician’s responsibilities are available here.'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = '5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Les responsabilités de l’ingénieur de service'
           ..url = 'les-responsabilites-ingenieur-service'
@@ -223,7 +223,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'aufgaben-des-servicetechnikers'
           ..description =
               'Anleitungen für die Aufgaben des Servicetechnikers sind hier zu finden.'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/serviceteknikerns-ansvar/content/index.html'
@@ -251,7 +251,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'instructions-for-environmental-maintenance-services'
           ..description =
               'Instructions on an environmental maintenance service’s responsibilities are available here.'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = '5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Que fait un service de maintenance environnementale'
           ..url = 'instructions-pour-services-maintenance-environnementale'
@@ -270,7 +270,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'anleitungen-fur-entsorgungsunternehmen'
           ..description =
               'Anleitungen für die Aufgaben des qualifiziertes Entsorgungsunternehmen.'
-          ..estimated_time_for_completion = 'Ca. 5 Min.')
+          ..estimated_time_for_completion = '5 Min.')
         ..type = ResourceType.rise
         ..url['sv'] =
             'https://hg-rid.eu/rise/sv/instruktioner-for-miljoserviceforetag/content/index.html'

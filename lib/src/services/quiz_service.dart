@@ -49,7 +49,7 @@ class QuizService extends ResourceService<Quiz> {
           ..description =
               'Testen Sie Ihr Allgemeinwissen.'
           ..url = 'quiz-fur-die-offentlichkeit'
-          ..estimated_time_for_completion = 'Ca. 2 Min.')
+          ..estimated_time_for_completion = '2 Min.')
         ..type = ResourceType.quiz,
       'Quiz för dig i tandvårdsteam': Quiz()
         ..questions = []
@@ -69,7 +69,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-dental-care-team-personnel'
           ..description =
               'Test your knowledge from the dental care team’s perspective.'
-          ..estimated_time_for_completion = 'Ca 3 min')
+          ..estimated_time_for_completion = '3 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quiz pour le personnel de soins dentaires'
           ..url = 'quiz-pour-personnel-soins-dentaires'
@@ -87,7 +87,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-fur-das-praxisteam'
           ..description =
               'Testen Sie Ihr Wissen aus der Perspektive des Praxisteams'
-          ..estimated_time_for_completion = 'Ca. 3 Min.')
+          ..estimated_time_for_completion = '3 Min.')
         ..type = ResourceType.quiz,
       'Quiz för dig som är servicetekniker': Quiz()
         ..questions = []
@@ -107,7 +107,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-service-technicians'
           ..description =
               'Test your knowledge from the service technician’s perspective.'
-          ..estimated_time_for_completion = 'Ca 3 min')
+          ..estimated_time_for_completion = '3 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quiz pour les techniciens de service'
           ..url = 'quiz-pour-techniciens-service'
@@ -125,7 +125,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-fur-servicetechniker'
           ..description =
               'Testen Sie Ihr Wissen aus der Perspektive des Servicetechnikers.'
-          ..estimated_time_for_completion = 'Ca. 3 Min.')
+          ..estimated_time_for_completion = '3 Min.')
         ..type = ResourceType.quiz
     };
 
