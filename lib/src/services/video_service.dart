@@ -474,7 +474,7 @@ class VideoService extends ResourceService<Video> {
         ..phrases['en'] = (Phrases()
           ..name = 'Terminal storage'
           ..url = 'terminal-storage'
-          ..description = 'Dealing with amalgam waste.'
+          ..description = 'Final disposal of mercury waste.'
           ..estimated_time_for_completion = '52 sec')
         ..phrases['fr'] = (Phrases()
           ..name = 'Stockage final'

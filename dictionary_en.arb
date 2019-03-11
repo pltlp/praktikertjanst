@@ -1,5 +1,5 @@
 {
-  "about": "om",
+  "about": "about",
   "@about": {
     "type": "text",
     "placeholders": {}
@@ -9,7 +9,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "about_url": "om",
+  "about_url": "about",
   "@about_url": {
     "type": "text",
     "placeholders": {}
@@ -279,7 +279,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "quiz_success_text_2": "Would you answer a few questions via your email in a few months time? If yes, please enter your mail address here.",
+  "quiz_success_text_2": "May we contact you by e-mail about the content on this portal? If yes, please enter your mail address here.",
   "@quiz_success_text_2": {
     "type": "text",
     "placeholders": {}

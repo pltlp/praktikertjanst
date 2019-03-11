@@ -27,7 +27,7 @@ class RiseService extends ResourceService<Rise> {
           ..description =
               'Article on what mercury is and how it affects nature.'
           ..url = 'mercury-in-nature'
-          ..estimated_time_for_completion = '5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Le mercure dans la nature'
           ..description =
@@ -73,7 +73,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'laws-and-rules'
           ..description =
               'Article on the laws and rules that govern the handling of amalgam.'
-          ..estimated_time_for_completion = '5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Lois et règlementations'
           ..url = 'lois-et-reglementations'
@@ -117,7 +117,7 @@ class RiseService extends ResourceService<Rise> {
           ..name = 'At the practice'
           ..url = 'whats-what-in-the-practices'
           ..description = 'Overview of equipment at practices.'
-          ..estimated_time_for_completion = 'Ca 5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Au cabinet'
           ..url = 'presentation-equipement-cabinets'
@@ -159,7 +159,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'the-dental-care-teams-responsibilities'
           ..description =
               'Instructions on the dental care team’s responsibilities are available here.'
-          ..estimated_time_for_completion = '5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Les responsabilités de l’équipe de soins dentaires'
           ..url = 'les-responsabilites-equipe-soins-dentaires'
@@ -205,7 +205,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'the-service-engineers-responsibilities'
           ..description =
               'Instructions on the service technician’s responsibilities are available here.'
-          ..estimated_time_for_completion = '5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Les responsabilités de l’ingénieur de service'
           ..url = 'les-responsabilites-ingenieur-service'
@@ -251,7 +251,7 @@ class RiseService extends ResourceService<Rise> {
           ..url = 'instructions-for-environmental-maintenance-services'
           ..description =
               'Instructions on an environmental maintenance service’s responsibilities are available here.'
-          ..estimated_time_for_completion = '5 min')
+          ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Que fait un service de maintenance environnementale'
           ..url = 'instructions-pour-services-maintenance-environnementale'

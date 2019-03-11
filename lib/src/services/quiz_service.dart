@@ -32,7 +32,7 @@ class QuizService extends ResourceService<Quiz> {
           ..name = 'Quiz for the public'
           ..description = 'Test your knowledge from a general perspective.'
           ..url = 'quiz-for-the-public'
-          ..estimated_time_for_completion = 'Ca 2 min')
+          ..estimated_time_for_completion = 'Approx. 2 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quiz pour le public'
           ..description = 'Testez vos connaissances d’un point de vue général.'
@@ -69,7 +69,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-dental-care-team-personnel'
           ..description =
               'Test your knowledge from the dental care team’s perspective.'
-          ..estimated_time_for_completion = '3 min')
+          ..estimated_time_for_completion = 'Approx. 3 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quiz pour le personnel de soins dentaires'
           ..url = 'quiz-pour-personnel-soins-dentaires'
@@ -107,7 +107,7 @@ class QuizService extends ResourceService<Quiz> {
           ..url = 'quiz-for-service-technicians'
           ..description =
               'Test your knowledge from the service technician’s perspective.'
-          ..estimated_time_for_completion = '3 min')
+          ..estimated_time_for_completion = 'Approx. 3 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quiz pour les techniciens de service'
           ..url = 'quiz-pour-techniciens-service'

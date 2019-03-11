@@ -24,9 +24,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("om"),
+    "about" : MessageLookupByLibrary.simpleMessage("about"),
     "about_this_project" : MessageLookupByLibrary.simpleMessage("About the project:"),
-    "about_url" : MessageLookupByLibrary.simpleMessage("om"),
+    "about_url" : MessageLookupByLibrary.simpleMessage("about"),
     "amalgam" : MessageLookupByLibrary.simpleMessage("amalgam"),
     "amalgam_separator" : MessageLookupByLibrary.simpleMessage("Amalgam separator"),
     "archive" : MessageLookupByLibrary.simpleMessage("Archive"),
@@ -106,7 +106,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "quiz_success_mail_sent_text" : MessageLookupByLibrary.simpleMessage("We will check."),
     "quiz_success_mail_sent_title" : MessageLookupByLibrary.simpleMessage("Thanks!"),
     "quiz_success_text_1" : MessageLookupByLibrary.simpleMessage("As part of the Hg-rid project, we want to evaluate the value of the portal."),
-    "quiz_success_text_2" : MessageLookupByLibrary.simpleMessage("Would you answer a few questions via your email in a few months time? If yes, please enter your mail address here."),
+    "quiz_success_text_2" : MessageLookupByLibrary.simpleMessage("May we contact you by e-mail about the content on this portal? If yes, please enter your mail address here."),
     "quiz_success_title" : MessageLookupByLibrary.simpleMessage("Well done, you passed the test!"),
     "read_more_about_this_project_at" : MessageLookupByLibrary.simpleMessage("Read more about the project at"),
     "reading" : MessageLookupByLibrary.simpleMessage("Reading"),
