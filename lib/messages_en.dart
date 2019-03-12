@@ -84,7 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "length" : MessageLookupByLibrary.simpleMessage("Length"),
     "library" : MessageLookupByLibrary.simpleMessage("Library"),
     "library_button_tooltip" : MessageLookupByLibrary.simpleMessage("All the course materials can be found here in one place!"),
-    "library_header" : MessageLookupByLibrary.simpleMessage("All the material can be found in once place here!"),
+    "library_header" : MessageLookupByLibrary.simpleMessage("All the material can be found in one place here!"),
     "library_url" : MessageLookupByLibrary.simpleMessage("library"),
     "main_header" : MessageLookupByLibrary.simpleMessage("A little effort can make a big difference!"),
     "main_header_description" : MessageLookupByLibrary.simpleMessage("This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. There are short video clips, interactive articles and documents with examples from Sweden. In Sweden the use of amalgam in dental clinics has been banned since 2009, due to the environmental impact. The tool can be a support to be prepared for the new EU-regulations."),

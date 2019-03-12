@@ -173,7 +173,7 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Miljöbalken'
           ..url = 'spridning-av-kvicksilver')
         ..phrases['en'] = (Phrases()
-          ..name = 'Environmental Code'
+          ..name = 'Environmental Code Sweden'
           ..description = 'Environmental Code'
           ..url = 'environmental-code')
         ..phrases['fr'] = (Phrases()
