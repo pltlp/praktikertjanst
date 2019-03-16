@@ -75,7 +75,7 @@ class SlideService {
             ..button_label = 'Läs mer',
           'en': SlidePhrases()
             ..paragraph =
-                'Rinse of amalgam residue from instruments when there is an amalgam separator, disinfect sink.'
+                'Rinse instruments which come into contact with amalgam in a sink fitted with an amalgam separator, disinfect the sink.'
             ..link = '/en/home/training-room-for-the-dental-care-teams'
             ..button_label = 'Read more',
           'fr': SlidePhrases()

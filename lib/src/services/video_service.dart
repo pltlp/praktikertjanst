@@ -158,10 +158,10 @@ class VideoService extends ResourceService<Video> {
               'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbundet som trädde i kraft 2009 i Sverige.'
           ..estimated_time_for_completion = '1 min 1 sek')
         ..phrases['en'] = (Phrases()
-          ..name = 'Ceasing the use of amalgam'
-          ..url = 'ceasing-amalgam'
+          ..name = 'Phasing out the use of dental amalgam'
+          ..url = 'phasing-out-the-use-of-dental-amalgam'
           ..description =
-              'Claes Karlsson gives his views on how the industry tackled the amalgam ban that came into effect in Sweden in 2009.'
+              'Claes Karlsson about how the dental care handled the ban of amalgam that came into force in Sweden in 2009.'
           ..estimated_time_for_completion = '1 min 1 sec')
         ..phrases['fr'] = (Phrases()
           ..name = 'Arrêter l’utilisation d’amalgames'
@@ -203,7 +203,7 @@ class VideoService extends ResourceService<Video> {
               'Så ser rutinerna kring amalgamhantering vid patientbesök ut.'
           ..estimated_time_for_completion = '42 sek')
         ..phrases['en'] = (Phrases()
-          ..name = 'Patient treatment routines'
+          ..name = 'Routines for handling of amalgam waste during and after patient treatment'
           ..url = 'patient-treatment-routines'
           ..description =
               'A look at the routines for amalgam handling during a patient’s appointment.'
@@ -512,9 +512,9 @@ class VideoService extends ResourceService<Video> {
           ..description = 'Så genomförs en sanering.'
           ..estimated_time_for_completion = '1 min 13 sek')
         ..phrases['en'] = (Phrases()
-          ..name = 'Decontamination'
+          ..name = 'Decontamination of pipe system'
           ..url = 'decontamination'
-          ..description = 'This is how decontamination is carried out.'
+          ..description = 'Decontamination of amalgam and mercury in the pipe system of dental clinics.'
           ..estimated_time_for_completion = '1 min 13 sec')
         ..phrases['fr'] = (Phrases()
           ..name = 'Décontamination'
@@ -597,7 +597,7 @@ class VideoService extends ResourceService<Video> {
           ..description = 'Michelle Nerentorp berättar om vad kvicksilver är.'
           ..estimated_time_for_completion = '29 sek')
         ..phrases['en'] = (Phrases()
-          ..name = 'What is mercury'
+          ..name = 'What is mercury?'
           ..url = 'what-is-mercury'
           ..description =
               'Michelle Nerentorp tells us what the element of mercury is.'
@@ -645,7 +645,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Where is mercury found?'
           ..url = 'where-is-mercury-found'
           ..description =
-              'Michelle Nerentorp talks about where mercury is found in nature, and how man has helped to spread it.'
+              'Michelle Nerentorp talks about where mercury is found in nature and how human activities have increased emissions.'
           ..estimated_time_for_completion = '1 min 10 sec')
         ..phrases['fr'] = (Phrases()
           ..name = 'Où se trouve le mercure ?'
@@ -690,7 +690,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'What is the role of the dental industry?'
           ..url = 'what-is-the-role-of-the-dental-industry'
           ..description =
-              'Michelle Nerentorp talks about the responsibility of the dental industry for the problem of mercury being released into nature.'
+              'Michelle Nerentorp about the dental clinics´ responsibility minimising emissions of mercury.'
           ..estimated_time_for_completion = '43 sec')
         ..phrases['fr'] = (Phrases()
           ..name = 'Quel est le rôle du secteur dentaire ?'

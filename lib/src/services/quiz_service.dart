@@ -65,8 +65,8 @@ class QuizService extends ResourceService<Quiz> {
               'Test på dina kunskaper utifrån tandvårdsteamets perspektiv.'
           ..estimated_time_for_completion = 'Ca 3 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'Quiz for dental care team personnel'
-          ..url = 'quiz-for-dental-care-team-personnel'
+          ..name = 'Quiz for the dental team'
+          ..url = 'quiz-for-the-dental-team'
           ..description =
               'Test your knowledge from the dental care team’s perspective.'
           ..estimated_time_for_completion = 'Approx. 3 min')

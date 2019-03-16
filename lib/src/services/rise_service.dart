@@ -69,10 +69,10 @@ class RiseService extends ResourceService<Rise> {
               'Artikel om de lagar och regler som styr hanteringen av amalgam.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'Laws and rules'
-          ..url = 'laws-and-rules'
+          ..name = 'Regualations'
+          ..url = 'regulations'
           ..description =
-              'Article on the laws and rules that govern the handling of amalgam.'
+              'Swedish regulations on mercury and The EU Mercury Regulation (EU) 2017/852)'
           ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Lois et règlementations'
@@ -114,9 +114,9 @@ class RiseService extends ResourceService<Rise> {
           ..description = 'Översikt av utrustning på mottagningen.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'At the practice'
+          ..name = 'At the dental clinic'
           ..url = 'whats-what-in-the-practices'
-          ..description = 'Overview of equipment at practices.'
+          ..description = 'Overview of equipment at dental clinics.'
           ..estimated_time_for_completion = 'Approx. 5 min')
         ..phrases['fr'] = (Phrases()
           ..name = 'Au cabinet'
@@ -201,8 +201,8 @@ class RiseService extends ResourceService<Rise> {
               'Här får du instruktioner om serviceteknikerns ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'The service engineer’s responsibilities'
-          ..url = 'the-service-engineers-responsibilities'
+          ..name = 'Instructions for service engineers.'
+          ..url = 'instructions-for-service-engineers.'
           ..description =
               'Instructions on the service technician’s responsibilities are available here.'
           ..estimated_time_for_completion = 'Approx. 5 min')
@@ -247,7 +247,7 @@ class RiseService extends ResourceService<Rise> {
               'Här får du instruktioner om miljöserviceföretagens ansvar.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'What an environmental maintenance service does'
+          ..name = 'Instructions for an environmental maintenance service.'
           ..url = 'instructions-for-environmental-maintenance-services'
           ..description =
               'Instructions on an environmental maintenance service’s responsibilities are available here.'

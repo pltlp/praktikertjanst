@@ -413,7 +413,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "financial_support": "Funded by the EU LIFE Program: HG-RID-LIFE LIFE15 ENV / SE / 000465",
+  "financial_support": "LIFE15 ENV/SE/000465 Financially supported by EU LIFE Programme",
   "@financial_support": {
     "type": "text",
     "placeholders": {}
@@ -498,7 +498,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "main_header_description": "This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. There are short video clips, interactive articles and documents with examples from Sweden. In Sweden the use of amalgam in dental clinics has been banned since 2009, due to the environmental impact. The tool can be a support to be prepared for the new EU-regulations.",
+  "main_header_description": "This is an open, free training course on how the dental industry can minimize emissions from dental amalgam. Here you can find short video clips, interactive articles and documents with examples from Sweden. In Sweden the use of amalgam in dental clinics has been banned since 2009, due to the environmental impact. This tool can give you some inspiration and be a support to be prepared for the new EU-regulations.\n",
   "@main_header_description": {
     "type": "text",
     "placeholders": {}

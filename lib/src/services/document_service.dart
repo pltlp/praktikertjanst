@@ -137,8 +137,8 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'EU:s förordning om kvicksilver'
           ..url = 'eus-forordning-om-kvicksilver')
         ..phrases['en'] = (Phrases()
-          ..name = 'EU mercury regulations'
-          ..description = 'EU mercury regulations'
+          ..name = 'The EU Mercury Regulation (EU) 2017/852)'
+          ..description = 'The EU Mercury Regulation (EU) 2017/852)'
           ..url = 'eu-mercury-regulations')
         ..phrases['fr'] = (Phrases()
           ..name = 'Réglementation de l’UE concernant le mercure'
@@ -173,7 +173,7 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Miljöbalken'
           ..url = 'spridning-av-kvicksilver')
         ..phrases['en'] = (Phrases()
-          ..name = 'Environmental Code Sweden'
+          ..name = 'The Swedish Environmental Code'
           ..description = 'Environmental Code'
           ..url = 'environmental-code')
         ..phrases['fr'] = (Phrases()
@@ -209,8 +209,8 @@ class DocumentService extends ResourceService<Document> {
           ..description = 'Vägledningsdokument'
           ..url = 'vagledningsdokument')
         ..phrases['en'] = (Phrases()
-          ..name = 'Guidance Document'
-          ..description = 'Guidance Document'
+          ..name = 'Guidelines for dental care in Sweden'
+          ..description = 'Guidelines for dental care in Sweden'
           ..url = 'guidance-document')
         ..phrases['fr'] = (Phrases()
           ..name = 'Directives'
