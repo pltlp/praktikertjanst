@@ -52,7 +52,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
+            'https://hg-rid.eu/rise/fr/le-mercure-dans-la-nature/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
         ..url['de'] =
@@ -98,7 +98,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/fr/loi-et-regles/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
         ..url['de'] =
@@ -139,7 +139,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
+            'https://hg-rid.eu/rise/fr/quest-ce-quil-y-a-dans-une-pratique/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
         ..url['de'] =
@@ -184,7 +184,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/fr/responsabilites-du-technicien-dentretien/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
         ..url['de'] =
@@ -230,7 +230,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/fr/les-responsabilites-de-lequipe-de-soins-dentaires/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
         ..url['de'] =
@@ -277,7 +277,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['en'] =
             'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
         ..url['fr'] =
-            'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/fr/ce-que-fait-un-service-dentretien-de-lenvironnement/content/index.html'
         ..url['es'] =
             'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
         ..url['de'] =
