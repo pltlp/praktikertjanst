@@ -52,7 +52,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933680?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -97,7 +97,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321934098?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -142,7 +142,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933585?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -187,7 +187,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video//321934044?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -232,7 +232,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933929?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -277,7 +277,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933639?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -322,7 +322,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933839?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -367,7 +367,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933904?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -412,7 +412,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933986?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -457,7 +457,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321934017?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -497,7 +497,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933955?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -537,7 +537,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321934135?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -582,7 +582,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933777?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -626,7 +626,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933808?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -671,7 +671,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933728?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -716,7 +716,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933874?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
@@ -761,7 +761,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321933545?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
