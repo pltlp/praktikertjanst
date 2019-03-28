@@ -54,7 +54,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933680?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735248?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586755?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477291?color=00acd0&byline=0&portrait=0',
       'Så minimerar vi utsläppen': Video()
@@ -99,7 +99,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321934098?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735143?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587277?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477913?color=00acd0&byline=0&portrait=0',
       'Så går en installation till': Video()
@@ -144,7 +144,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933585?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735184?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586600?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477805?color=00acd0&byline=0&portrait=0',
       'Att lämna amalgam bakom sig': Video()
@@ -189,7 +189,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321934044?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586552?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477589?color=00acd0&byline=0&portrait=0',
       'Rutiner vid patientbehandling': Video()
@@ -234,7 +234,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933929?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735277?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587063?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477261?color=00acd0&byline=0&portrait=0',
       'Skötsel av amalgamavskiljare': Video()
@@ -279,7 +279,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933639?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735220?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586706?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477330?color=00acd0&byline=0&portrait=0',
       'Att tänka på vid installation': Video()
@@ -324,7 +324,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933839?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735608?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586898?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477396?color=00acd0&byline=0&portrait=0',
       'Byte av amalgamavskiljare': Video()
@@ -369,7 +369,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933904?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735317?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587002?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477214?color=00acd0&byline=0&portrait=0',
       'Funktionskontroll': Video()
@@ -414,7 +414,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933986?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735797?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587219?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477772?color=00acd0&byline=0&portrait=0',
       'Tömning av vattenlås': Video()
@@ -459,7 +459,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321934017?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735770?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587168?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477885?color=00acd0&byline=0&portrait=0',
       'Slutförvaring': Video()
@@ -499,7 +499,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933955?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735347?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587107?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477736?color=00acd0&byline=0&portrait=0',
       'Sanering': Video()
@@ -539,7 +539,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321934135?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735739?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586443?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477666?color=00acd0&byline=0&portrait=0',
       'Varför är skötseln så viktig?': Video()
@@ -584,7 +584,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933777?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735678?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586809?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477358?color=00acd0&byline=0&portrait=0',
       'Vad är kvicksilver?': Video()
@@ -628,7 +628,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933808?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735382?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586851?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477452?color=00acd0&byline=0&portrait=0',
       'Var finns kvicksilver?': Video()
@@ -673,7 +673,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933728?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735641?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586501?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477632?color=00acd0&byline=0&portrait=0',
       'Vilken roll har tandvården?': Video()
@@ -718,7 +718,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933874?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735594?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326586953?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477540?color=00acd0&byline=0&portrait=0',
       'Hur påverkas vi av kvicksilver?': Video()
@@ -763,7 +763,7 @@ class VideoService extends ResourceService<Video> {
         ..url['fr'] =
             'https://player.vimeo.com/video/321933545?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
-            'https://player.vimeo.com/video/314735088?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/326587344?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
             'https://player.vimeo.com/video/321477486?color=00acd0&byline=0&portrait=0'
     };
