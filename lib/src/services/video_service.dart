@@ -187,7 +187,7 @@ class VideoService extends ResourceService<Video> {
         ..url['en'] =
             'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
         ..url['fr'] =
-            'https://player.vimeo.com/video//321934044?color=00acd0&byline=0&portrait=0'
+            'https://player.vimeo.com/video/321934044?color=00acd0&byline=0&portrait=0'
         ..url['es'] =
             'https://player.vimeo.com/video/314735704?color=00acd0&byline=0&portrait=0'
         ..url['de'] =
