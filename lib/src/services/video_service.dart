@@ -344,7 +344,7 @@ class VideoService extends ResourceService<Video> {
               'How to replace amalgam separators in wet and dry suction systems.'
           ..estimated_time_for_completion = '1 min 19 sec')
         ..phrases['fr'] = (Phrases()
-          ..name = 'À ne pas oublier pendant l’installation'
+          ..name = 'Remplacement des séparateurs d’amalgames'
           ..url = 'ne-pas-oublier-pendant-installation'
           ..description =
               'À ne pas oublier pour l’installation des séparateurs d’amalgames et les systèmes d’aspiration.'
