@@ -44,7 +44,7 @@ class DocumentService extends ResourceService<Document> {
         ..url['fr'] =
             'https://hg-rid.eu/documents/fr/Vous_avez_perdu_un_plombage_gris.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/es/se-te-ha-caido-un-empaste-con-amalgama.pdf'
+            'https://hg-rid.eu/documents/es/Se_te_ha_caido_un_empaste_con_amalgama.pdf'
         ..url['de'] =
             'https://hg-rid.eu/documents/de/ist-ihnen-eine-amalgamfullung-rausgefallen.pdf'
         ..size = '191.4 kb'
@@ -87,7 +87,7 @@ class DocumentService extends ResourceService<Document> {
         ..url['fr'] =
             'https://hg-rid.eu/documents/fr/Checklist_pour_entretien_de_separateur_damalgame_1.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/es/mantenimiento-de-la-lista-de-verificacion-1.pdf'
+            'https://hg-rid.eu/documents/es/Mantenimiento_de_la_lista_de_verificacion_1.pdf'
         ..url['de'] =
             'https://hg-rid.eu/documents/de/pruflist-des-amalgamabscheiders-1.pdf'
         ..document_type = 'pdf',
@@ -124,7 +124,7 @@ class DocumentService extends ResourceService<Document> {
         ..url['fr'] =
             'https://hg-rid.eu/documents/fr/Checklist_pour_entretien_de_separateur_damalgame_2.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/es/mantenimiento-de-la-lista-de-verificacion-2.pdf'
+            'https://hg-rid.eu/documents/es/Mantenimiento_de_la_lista_de_verificacion_2.pdf'
         ..url['de'] =
             'https://hg-rid.eu/documents/de/pruflist-des-amalgamabscheiders-2.pdf'
         ..document_type = 'pdf',
@@ -233,7 +233,7 @@ class DocumentService extends ResourceService<Document> {
         ..url['fr'] =
             'https://hg-rid.eu/documents/fr/Guidelines_mercury_for_dental_care_in_Sweden.pdf'
         ..url['es'] =
-            'https://hg-rid.eu/documents/es/guidelines-mercury-for-dental-care-in-sweden.pdf'
+            'https://hg-rid.eu/documents/es/Guidelines_mercury_for_dental_care_in_Sweden.pdf'
         ..url['de'] =
             'https://hg-rid.eu/documents/de/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..document_type = 'pdf',
