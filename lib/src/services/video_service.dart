@@ -654,8 +654,8 @@ class VideoService extends ResourceService<Video> {
               'Michelle Nerentorp explique où se trouve le mercure dans la nature, et comment les hommes ont favorisé sa propagation.'
           ..estimated_time_for_completion = '1 min 10 sec')
         ..phrases['es'] = (Phrases()
-          ..name = 'donde-se-encuentra-el-mercurio'
-          ..url = '¿Dónde se encuentra el mercurio?'
+          ..name = '¿Dónde se encuentra el mercurio?'
+          ..url = 'donde-se-encuentra-el-mercurio'
           ..description =
               'Michelle Nerentorp habla sobre los lugares en los que se puede encontrar mercurio en la naturaleza y de qué forma el humano ha contribuido a su propagación.'
           ..estimated_time_for_completion = '1 min 10 seg')
