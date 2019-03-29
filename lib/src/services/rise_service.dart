@@ -54,7 +54,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/le-mercure-dans-la-nature/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/mercury-in-nature/content/index.html'
+            'https://hg-rid.eu/rise/es/el-mercurio-en-la-naturaleza/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/quecksilber-in-der-natur/content/index.html',
       'Lagar och regler': Rise()
@@ -100,7 +100,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/loi-et-regles/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/laws-and-regulations/content/index.html'
+            'https://hg-rid.eu/rise/es/leyes-y-reglamentos/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/gesetze-und-vorschriften/content/index.html',
       'Vad är vad på mottagningen?': Rise()
@@ -141,7 +141,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/quest-ce-quil-y-a-dans-une-pratique/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/overview-over-equipment/content/index.html'
+            'https://hg-rid.eu/rise/es/que-es-que-en-las-clinicas-dentales/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/was-ist-was-in-der-praxis/content/index.html',
       'Tandvårdsteamets ansvar': Rise()
@@ -186,7 +186,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/responsabilites-du-technicien-dentretien/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/dental-care-teams-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/es/las-responsabilidades-del-equipo-de-cuidado-dental/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/aufgaben-des-zahnpflegeteams/content/index.html',
       'serviceteknikerns ansvar': Rise()
@@ -232,7 +232,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/les-responsabilites-de-lequipe-de-soins-dentaires/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/dental-technicians-responsibility/content/index.html'
+            'https://hg-rid.eu/rise/es/las-responsabilidades-del-ingeniero-de-servicio/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/die-verantwortlichkeiten-des-servicetechnikers/content/index.html',
       'Instruktioner för miljöserviceföretag': Rise()
@@ -279,7 +279,7 @@ class RiseService extends ResourceService<Rise> {
         ..url['fr'] =
             'https://hg-rid.eu/rise/fr/ce-que-fait-un-service-dentretien-de-lenvironnement/content/index.html'
         ..url['es'] =
-            'https://hg-rid.eu/rise/en/instructions-for-environmental-services-companies/content/index.html'
+            'https://hg-rid.eu/rise/es/que-hace-un-servicio-de-mantenimiento-ambiental/content/index.html'
         ..url['de'] =
             'https://hg-rid.eu/rise/de/was-ein-umweltwartungsdienst-macht/content/index.html'
     };
