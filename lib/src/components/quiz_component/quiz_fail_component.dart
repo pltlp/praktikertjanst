@@ -8,7 +8,7 @@ import '../../services/messages_service.dart';
     selector: 'p-quiz-fail',
     templateUrl: 'quiz_fail_component.html',
     styleUrls: ['quiz_fail_component.css'],
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     directives: [MaterialIconComponent])
 class QuizFailComponent {
   QuizFailComponent(this.msg);

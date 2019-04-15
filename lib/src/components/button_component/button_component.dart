@@ -9,7 +9,7 @@ import 'package:angular_components/angular_components.dart';
       NgIf,
       NgClass,
     ],
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     selector: 'p-button',
     styleUrls: ['button_component.css'],
     templateUrl: 'button_component.html',

@@ -26,7 +26,7 @@ import '../../services/video_service.dart';
     selector: 'p-library',
     styleUrls: ['library_component.css'],
     templateUrl: 'library_component.html',
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class LibraryComponent implements OnDestroy {
   LibraryComponent(this.router, this.msg, this.riseService, this.quizService,
@@ -71,7 +71,7 @@ class LibraryComponent implements OnDestroy {
         try {
           selectedModel = videoService.data.values.firstWhere((resource) =>
               resource.phrases[msg.currentLanguage].url == model.url);
-        } on StateError {}
+        } on StateError catch(e) {print(e);}
         if (selectedModel != null) {
           selectedModel.complete = true;
           showModal = true;

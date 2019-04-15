@@ -11,7 +11,7 @@ import '../button_component/button_component.dart';
     selector: 'p-main-header',
     styleUrls: ['main_header_component.css'],
     templateUrl: 'main_header_component.html',
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class MainHeaderComponent implements OnDestroy {
   MainHeaderComponent(this.msg);

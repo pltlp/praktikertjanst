@@ -11,7 +11,7 @@ class RiseService extends ResourceService<Rise> {
   Future<Map<String, Rise>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-    data = {
+    return data = {
       'Kvicksilver i naturen': Rise()
         ..icon = 'article'
         ..id = 'Kvicksilver i naturen'
@@ -283,7 +283,5 @@ class RiseService extends ResourceService<Rise> {
         ..url['de'] =
             'https://hg-rid.eu/rise/de/was-ein-umweltwartungsdienst-macht/content/index.html'
     };
-
-    return data;
   }
 }

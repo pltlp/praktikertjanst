@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_slide_component.dart';
 import '../../components/button_component/button_component.dart';
 import '../../models/word.dart';
 import '../../services/messages_service.dart';
@@ -26,7 +27,7 @@ import 'word_component/word_component.dart';
       ButtonComponent
     ],
     pipes: [
-      NamePipe
+      CapitalizePipe
     ])
 class WordListComponent implements OnDestroy {
   WordListComponent(this.msg, this.wordService) {

@@ -36,7 +36,7 @@ import '../resource_component/resource_component.dart';
   CourseRoomButtonsComponent,
   MaterialButtonComponent
 ], providers: [], pipes: [
-  NamePipe
+  CapitalizePipe
 ])
 class HomeComponent {
   HomeComponent(this.router, this.msg, this.videoService, this.riseService,

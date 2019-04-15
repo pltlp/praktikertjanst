@@ -2,10 +2,18 @@
 @import 'package:angular_components/material_icon/mixins';
 @import 'package:fo_components/mixins';
 @import 'package:angular_components/material_menu/mixins';
-@import 'package:grid/constants';
+@import 'package:grid_css/constants';
 @import 'colors.scss';
-@include fo-colors($cerulean, $astronautBlue, carnation);
+@include fo-colors($cerulean, $astronautBlue, $carnation);
 :host {
+    ::ng-deep fo-modal{
+        div#modalHeaderTitle
+        {
+            h2{
+                color:$cerulean;
+            }
+        }
+    }
     display: block;
     div#page {
         display: flex;

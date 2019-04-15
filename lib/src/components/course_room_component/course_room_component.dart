@@ -42,7 +42,7 @@ import '../word_list_component/word_list_component.dart';
     selector: 'p-course-room-for-curious',
     styleUrls: ['course_room_component.css'],
     templateUrl: 'course_room_component.html',
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class CourseRoomComponent implements OnActivate {
   CourseRoomComponent(this.msg, this.videoService, this.courseRoomService,
       this.documentService, this.quizService, this.riseService);

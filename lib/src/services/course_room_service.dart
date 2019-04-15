@@ -13,7 +13,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
   Future<Map<String, CourseRoom>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-    data = {
+   return data = {
       'kursrum-for-nyfikna': CourseRoom()
         ..backgroud_image = 'pics/courseroom_for_curious.jpg'
         ..document_ids = [
@@ -208,6 +208,5 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Hur påverkas vi av kvicksilver?'
         ]
     };
-    return data;
   }
 }

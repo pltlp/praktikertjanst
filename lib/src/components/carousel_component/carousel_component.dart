@@ -2,8 +2,10 @@ import 'dart:core';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
-import 'package:fo_components/fo_components.dart';
-import 'package:intl/intl.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_component.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_slide_component.dart';
+import 'package:fo_components/components/fo_modal/fo_modal_component.dart';
+import 'package:fo_components/pipes/capitalize_pipe.dart';
 import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/video_service.dart';
@@ -28,7 +30,7 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
       MaterialButtonComponent,
     ],
     pipes: [
-      NamePipe
+      CapitalizePipe
     ])
 class CarouselComponent implements OnInit {
   CarouselComponent(this.sanitizer, this.videoService, this.msg);

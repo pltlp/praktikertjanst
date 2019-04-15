@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'package:fo_components/fo_components.dart' show FoValidators, NamePipe;
+import 'package:fo_components/fo_components.dart' show FoValidators, CapitalizePipe;
 import '../../components/button_component/button_component.dart';
 import '../../models/mail.dart';
 import '../../models/quiz.dart';
@@ -27,7 +27,7 @@ import '../../services/quiz_log_service.dart';
       MailService,
     ],
     pipes: [
-      NamePipe
+      CapitalizePipe
     ])
 class QuizCompleteComponent {
   QuizCompleteComponent(this.mailService, this.quizLogService, this.msg);

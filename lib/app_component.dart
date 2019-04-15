@@ -66,7 +66,7 @@ import 'src/services/word_service.dart';
   SlideService,
   QuestionService
 ], pipes: [
-  NamePipe
+  CapitalizePipe
 ])
 class AppComponent {
   MenuModel menuModel;

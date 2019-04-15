@@ -16,7 +16,7 @@ import '../../services/messages_service.dart';
     selector: 'p-document',
     styleUrls: ['document_component.css'],
     templateUrl: 'document_component.html',
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class DocumentComponent {
   DocumentComponent(this.msg);
 

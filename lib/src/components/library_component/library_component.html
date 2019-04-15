@@ -6,7 +6,6 @@
                                      [showClearIcon]="false"
                                      class="color-astronautblue"
                                      [label]="msg.type_here_to_search"
-                                     [shouldClearOnSelection]="false"
                                      [popupMatchInputWidth]="true"
                                      [highlightOptions]="true"
                                      [selection]="searchModel"
@@ -43,11 +42,11 @@
 
 
 <fo-modal *ngIf="selectedModel != null"
-          [title]="selectedModel.phrases[msg.currentLanguage].name"
+          [header]="selectedModel.phrases[msg.currentLanguage].name"
           [visible]="true"
           (visibleChange)="selectedModel = null"
           [showCloseButton]="true"
-          [fixedWidth]="true">
+          dense>
     <div class="row">
         <div class="col">
             <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(selectedModel.url[msg.currentLanguage])"

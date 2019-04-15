@@ -11,7 +11,7 @@ class DocumentService extends ResourceService<Document> {
   Future<Map<String, Document>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-    data = {
+    return data = {
       'Affisch om tappade amalgamplomber': Document()
         ..icon = 'pool'
         ..id = 'Affisch om tappade amalgamplomber'
@@ -238,6 +238,5 @@ class DocumentService extends ResourceService<Document> {
             'https://hg-rid.eu/documents/de/guidelines-mercury-for-dental-care-in-sweden.pdf'
         ..document_type = 'pdf',
     };
-    return data;
   }
 }

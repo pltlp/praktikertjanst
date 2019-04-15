@@ -18,7 +18,7 @@ import '../fullscreen_component/fullscreen_component.dart';
     selector: 'p-documents',
     styleUrls: ['documents_component.css'],
     templateUrl: 'documents_component.html',
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class DocumentsComponent implements OnInit {
   DocumentsComponent(this.documentService, this.msg);

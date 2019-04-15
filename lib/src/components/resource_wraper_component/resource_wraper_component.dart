@@ -24,12 +24,12 @@ class ResourceWrapperComponent implements OnActivate {
     try {
       riseModel = riseService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl);
-    } on StateError {}
+    } on StateError catch(e){print(e);}
 
     try {
       quizModel = quizService.data.values.firstWhere((resource) =>
           resource.phrases[msg.currentLanguage].url == resourceUrl);
-    } on StateError {}
+    } on StateError catch(e){print(e);}
   }
 
   Resource model;

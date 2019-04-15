@@ -11,7 +11,7 @@ import '../../services/messages_service.dart';
     selector: 'p-carousel-slide-section',
     styleUrls: ['carousel_slide_section_component.css'],
     templateUrl: 'carousel_slide_section_component.html',
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class CarouselSlideSectionComponent {
   CarouselSlideSectionComponent(this.sanitizer, this.msg);
 

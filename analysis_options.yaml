@@ -1,8 +1,12 @@
 analyzer:
   exclude:
     - build/**
+    - lib/messages_*.dart
+    - .dart_tool
+    - .packages
   errors:
     uri_has_not_been_generated: ignore
+    todo: ignore
   plugins:
     - angular
 
@@ -63,7 +67,6 @@ linter:
     - parameter_assignments
     - prefer_adjacent_string_concatenation
     - prefer_asserts_in_initializer_lists
-    - prefer_bool_in_asserts
     - prefer_collection_literals
     - prefer_conditional_assignment
     - prefer_const_constructors
@@ -84,7 +87,6 @@ linter:
     - recursive_getters
     - slash_for_doc_comments
     - sort_unnamed_constructors_first
-    - super_goes_last
     - test_types_in_equals
     - throw_in_finally
     - type_annotate_public_apis

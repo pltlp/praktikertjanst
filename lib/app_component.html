@@ -15,21 +15,21 @@
         </div>
         <div class="col s8 hide-for-large hide-for-medium text-right align-bottom">
           <dropdown-menu [menu]="menuModel"
-                         [buttonText]="msg.menu | name"
+                         [buttonText]="msg.menu | capitalize"
                          class="nounderline"
                          [preferredPositions]="position">
           </dropdown-menu>
         </div>
         <div class="m10 col text-right align-bottom hide-for-small">
           <dropdown-menu [menu]="languageMenuModel"
-                         [buttonText]="msg.language | name"
+                         [buttonText]="msg.language | capitalize"
                          class="nounderline"
                          [preferredPositions]="position">
           </dropdown-menu>
-          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.contact}}">{{msg.contact | name}}</a>
-          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}">{{msg.library | name}}</a>
+          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.contact}}">{{msg.contact | capitalize}}</a>
+          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}">{{msg.library | capitalize}}</a>
           <a class="clickable"
-             (click)="wordListModalVisible = true">{{msg.word_list | name}}</a>
+             (click)="wordListModalVisible = true">{{msg.word_list | capitalize}}</a>
         </div>
       </div>
       <div class="row collapse expand background-color-astronautblue">
@@ -49,9 +49,9 @@
 
 
 <fo-modal [(visible)]="wordListModalVisible"
-          [title]="msg.word_list | name"
-          [fixedWidth]="true"
-          [fixedHeight]="true">
+          [header]="msg.word_list | capitalize"
+          fullWidth
+          fullHeight>
   <div id="modal">
     <p-word-list></p-word-list>
   </div>

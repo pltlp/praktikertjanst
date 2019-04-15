@@ -11,7 +11,7 @@ import '../../services/messages_service.dart';
     styleUrls: ['video_component.css'],
     directives: [],
     providers: [MessagesService],
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class VideoComponent implements OnInit, OnActivate {
   VideoComponent(this.sanitizer, this.msg);
 

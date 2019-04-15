@@ -15,7 +15,7 @@ class QuizService extends ResourceService<Quiz> {
   Future<Map<String, Quiz>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-    data = {
+    return data = {
       'Quiz för allmänheten': Quiz()
         ..questions = []
         ..minScore = 0.8
@@ -128,8 +128,6 @@ class QuizService extends ResourceService<Quiz> {
           ..estimated_time_for_completion = '3 Min.')
         ..type = ResourceType.quiz
     };
-
-    return data;
   }
 
   QuestionService questionService;

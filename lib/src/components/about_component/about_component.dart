@@ -7,7 +7,7 @@ import '../../services/messages_service.dart';
     templateUrl: 'about_component.html',
     styleUrls: ['about_component.css'],
     directives: [],
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class AboutComponent {
   AboutComponent(this.msg);

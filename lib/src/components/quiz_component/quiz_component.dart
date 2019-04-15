@@ -34,7 +34,7 @@ import 'quiz_fail_component.dart';
       FoModalComponent
     ],
     providers: [scrollHostProviders, Location, QuizLogService],
-    pipes: [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnInit {
   QuizComponent(this.quizService, this.changeDetectorRef, this.location,
@@ -47,7 +47,7 @@ class QuizComponent implements OnInit {
       for (var question in model?.questions) {
         shuffle(question.options);
       }
-    } on StateError {}
+    } on StateError catch(e) {print(e);}
   }
 
   void onContinue(AsyncAction<bool> event, int i) async {

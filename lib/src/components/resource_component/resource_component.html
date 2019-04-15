@@ -13,7 +13,7 @@
 </div>
 <div id="overlay"
      [class.complete]="model.complete">
-    <h2 class="margin-top-large">{{model.phrases[msg.currentLanguage].name | name}}</h2>
+    <h2 class="margin-top-large">{{model.phrases[msg.currentLanguage].name | capitalize}}</h2>
     <material-icon class="action-icon"
                    icon="done"
                    *ngIf="model.complete"></material-icon>

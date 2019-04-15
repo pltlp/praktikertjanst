@@ -11,7 +11,7 @@ class VideoService extends ResourceService<Video> {
   Future<Map<String, Video>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-    data = {
+   return  data = {
       'Så upplevde vi saneringen': Video()
         ..icon = 'video'
         ..id = 'Så upplevde vi saneringen'
@@ -767,7 +767,5 @@ class VideoService extends ResourceService<Video> {
         ..url['de'] =
             'https://player.vimeo.com/video/321477486?color=00acd0&byline=0&portrait=0'
     };
-
-    return data;
   }
 }
