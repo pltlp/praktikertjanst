@@ -53,7 +53,7 @@ import 'src/services/word_service.dart';
   WordPreviewComponent,
   DropdownMenuComponent
 ], providers: [
-  routerProvidersHash,
+  routerProviders,
   Routes,
   materialProviders,
   MessagesService,
@@ -143,8 +143,8 @@ class AppComponent {
     loaded = false;
 
     if (Uri.base.pathSegments.isEmpty) {
-      Intl.defaultLocale = 'de_DE';
-      await messages.initializeMessages('de');
+      Intl.defaultLocale = 'sv_SE';
+      await messages.initializeMessages('se');
     } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {
