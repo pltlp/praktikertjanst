@@ -53,7 +53,7 @@ import 'src/services/word_service.dart';
   WordPreviewComponent,
   DropdownMenuComponent
 ], providers: [
-  routerProviders,
+  routerProvidersHash,
   Routes,
   materialProviders,
   MessagesService,
