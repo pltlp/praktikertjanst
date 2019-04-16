@@ -49,9 +49,7 @@
 
 
 <fo-modal [(visible)]="wordListModalVisible"
-          [header]="msg.word_list | capitalize"
-          fullWidth
-          fullHeight>
+          [header]="msg.word_list | capitalize" dense>
   <div id="modal">
     <p-word-list></p-word-list>
   </div>

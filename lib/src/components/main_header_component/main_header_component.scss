@@ -1,12 +1,16 @@
 @import '../../../colors.scss';
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_icon/mixins';
+@import 'package:grid_css/constants';
 :host {
     background-color: white;
     display: block;
     h1 {
         color: #424242;
         font-weight: bolder;
+        @media screen and (max-width: $medium-width-threshold - 1) {
+            font-size: 1.5em;
+        }
     }
     material-icon {
         @include material-icon-size($mat-grid * 15);
