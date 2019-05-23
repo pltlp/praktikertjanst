@@ -69,7 +69,7 @@ class RiseService extends ResourceService<Rise> {
               'Artikel om de lagar och regler som styr hanteringen av amalgam.'
           ..estimated_time_for_completion = 'Ca 5 min')
         ..phrases['en'] = (Phrases()
-          ..name = 'Regualations'
+          ..name = 'Regulations'
           ..url = 'regulations'
           ..description =
               'Swedish regulations on mercury and The EU Mercury Regulation (EU) 2017/852)'
