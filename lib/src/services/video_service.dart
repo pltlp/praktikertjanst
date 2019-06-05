@@ -155,7 +155,7 @@ class VideoService extends ResourceService<Video> {
           ..name = 'Att lämna amalgam bakom sig'
           ..url = 'lamna-amalgam'
           ..description =
-              'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbundet som trädde i kraft 2009 i Sverige.'
+              'Claes Karlsson ger sitt perspektiv på hur branschen hanterade amalgamförbudet som trädde i kraft 2009 i Sverige.'
           ..estimated_time_for_completion = '1 min 1 sek')
         ..phrases['en'] = (Phrases()
           ..name = 'Phasing out the use of dental amalgam'
