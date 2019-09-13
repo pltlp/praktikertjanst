@@ -78,7 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("kursrum-for-tandvardsteam"),
         "course_room_for_environmental_service_companies_url":
             MessageLookupByLibrary.simpleMessage(
-                "kursrum-for-miljoserviceforetag\n"),
+                "kursrum-for-miljoserviceforetag"),
         "course_room_for_service_technicians_url":
             MessageLookupByLibrary.simpleMessage("kursrum-for-servicetekniker"),
         "dental_care": MessageLookupByLibrary.simpleMessage("tandvården"),

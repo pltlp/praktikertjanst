@@ -49,6 +49,7 @@ class QuizComponent implements OnInit {
       }
     } on StateError catch (e) {
       print(e);
+      print('hej quiz');
     }
   }
 

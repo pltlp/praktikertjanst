@@ -73,6 +73,7 @@ class LibraryComponent implements OnDestroy {
               resource.phrases[msg.currentLanguage].url == model.url);
         } on StateError catch (e) {
           print(e);
+          print('hej library');
         }
         if (selectedModel != null) {
           selectedModel.complete = true;
