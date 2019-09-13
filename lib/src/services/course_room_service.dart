@@ -13,7 +13,7 @@ class CourseRoomService extends ResourceService<CourseRoom> {
   Future<Map<String, CourseRoom>> fetchAll() async {
     await Future.delayed(const Duration(milliseconds: 1));
 
-   return data = {
+    return data = {
       'kursrum-for-nyfikna': CourseRoom()
         ..backgroud_image = 'pics/courseroom_for_curious.jpg'
         ..document_ids = [
@@ -152,19 +152,19 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           'Vilken roll har tandvården?',
           'Hur påverkas vi av kvicksilver?'
         ],
-      'kursrum-for-mijoserviceforetag': CourseRoom()
+      'kursrum-for-miljoserviceforetag': CourseRoom()
         ..backgroud_image = 'pics/environmental_service_companies.jpg'
         ..document_ids = [
           'Affisch om tappade amalgamplomber',
           'Checklista varje arbetsdag och vecka',
         ]
         ..icon = 'pool'
-        ..id = 'kursrum-for-mijoserviceforetag'
+        ..id = 'kursrum-for-miljoserviceforetag'
         ..img_url = 'pics/environmental_service_companies.jpg'
         ..phrases['sv'] = (Phrases()
           ..name = 'För dig på miljöserviceföretag'
           ..description = 'Innehåll för dig som jobbar på miljöserviceföretag.'
-          ..url = 'kursrum-for-mijoserviceforetag')
+          ..url = 'kursrum-for-miljoserviceforetag')
         ..phrases['en'] = (Phrases()
           ..name = 'For environmental maintenance service personnel'
           ..description =
@@ -182,11 +182,11 @@ class CourseRoomService extends ResourceService<CourseRoom> {
           ..name = 'Para el personal de los equipos de mantenimiento ambiental'
           ..description =
               'Contenido para el personal de los equipos de mantenimiento ambiental.'
-          ..url =
-              'sala-de-formacion-para-personal-de-mantenimiento-ambiental')
+          ..url = 'sala-de-formacion-para-personal-de-mantenimiento-ambiental')
         ..phrases['de'] = (Phrases()
           ..name = 'Für Servicemitarbeiter in des Entsorgungsunternehmens'
-          ..description = 'Für Servicemitarbeiter in des Entsorgungsunternehmens.'
+          ..description =
+              'Für Servicemitarbeiter in des Entsorgungsunternehmens.'
           ..url = 'schulungsraum-fur-entsorgungsfachberater')
         ..resources_ids = [
           'Kvicksilver i naturen',

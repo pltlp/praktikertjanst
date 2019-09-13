@@ -90,7 +90,7 @@ class MessagesService {
           name: 'course_room_for_service_technicians_url');
 
   String get course_room_for_environmental_service_companies_url =>
-      Intl.message('kursrum-for-mijoserviceforetag',
+      Intl.message('kursrum-for-miljoserviceforetag',
           name: 'course_room_for_environmental_service_companies_url');
 
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());

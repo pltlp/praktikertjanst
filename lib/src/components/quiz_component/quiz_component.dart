@@ -47,7 +47,9 @@ class QuizComponent implements OnInit {
       for (var question in model?.questions) {
         shuffle(question.options);
       }
-    } on StateError catch(e) {print(e);}
+    } on StateError catch (e) {
+      print(e);
+    }
   }
 
   void onContinue(AsyncAction<bool> event, int i) async {

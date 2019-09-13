@@ -9,7 +9,6 @@ import 'package:d_components/d_components.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 
-
 import 'messages_all.dart' as messages;
 import 'src/components/breadcrumbs_component/breadcrumbs_component.dart';
 import 'src/components/footer_component/footer_component.dart';
@@ -53,7 +52,7 @@ import 'src/services/word_service.dart';
   WordPreviewComponent,
   DropdownMenuComponent
 ], providers: [
-  routerProviders,
+  routerProvidersHash,
   Routes,
   materialProviders,
   MessagesService,
@@ -73,7 +72,7 @@ class AppComponent {
   MenuModel languageMenuModel;
   final Routes routes;
   final MessagesService msg;
-  Router _router;
+  final Router _router;
   final VideoService videoService;
   final DocumentService documentService;
   final RiseService riseService;
@@ -108,7 +107,6 @@ class AppComponent {
 
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
 
-
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
@@ -128,10 +126,7 @@ class AppComponent {
           '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}'
       ..name = 'description';
     document.head.append(description);
-  
   }
-
-
 
   void _generateTitle() {
     final title = TitleElement()..innerHtml = '${msg.title}';
@@ -187,7 +182,6 @@ class AppComponent {
 
     _generateMetaDescription();
     _generateTitle();
-    
 
     languageMenuModel = MenuModel<MenuItem>([
       MenuItemGroup<MenuItem>([

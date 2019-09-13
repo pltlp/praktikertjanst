@@ -71,7 +71,9 @@ class LibraryComponent implements OnDestroy {
         try {
           selectedModel = videoService.data.values.firstWhere((resource) =>
               resource.phrases[msg.currentLanguage].url == model.url);
-        } on StateError catch(e) {print(e);}
+        } on StateError catch (e) {
+          print(e);
+        }
         if (selectedModel != null) {
           selectedModel.complete = true;
           showModal = true;
