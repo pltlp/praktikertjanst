@@ -6,6 +6,9 @@ import 'package:angular_components/angular_components.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:d_components/d_components.dart';
+import 'package:fo_components/components/fo_dropdown/fo_dropdown_component.dart';
+import 'package:fo_components/components/fo_dropdown_list/fo_dropdown_list_component.dart';
+import 'package:fo_components/components/fo_dropdown_list/fo_dropdown_option.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 
@@ -26,6 +29,9 @@ import 'src/services/rise_service.dart';
 import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
+
+String _capitalize(String value) =>
+    '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
 
 @Component(selector: 'p-app', templateUrl: 'app_component.html', styleUrls: [
   'app_component.css'
@@ -50,9 +56,11 @@ import 'src/services/word_service.dart';
   MaterialListComponent,
   MaterialListItemComponent,
   WordPreviewComponent,
-  DropdownMenuComponent
+  DropdownMenuComponent,
+  FoDropdownComponent,
+  FoDropdownListComponent
 ], providers: [
-  routerProviders,
+  routerProvidersHash,
   Routes,
   materialProviders,
   MessagesService,
@@ -86,6 +94,27 @@ class AppComponent {
   bool wordListModalVisible = false;
   bool languageSelectorVisible = false;
   String iconSize = '1.5em';
+  Map<String, List<FoDropdownOption>> menuOptions;
+  final Map<String, List<FoDropdownOption>> languageOptions = {
+    '': [
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/sv/hem'
+        ..label = 'Svenska',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/en/home'
+        ..label = 'English',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/fr/accueil'
+        ..label = 'Français',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/es/inicio'
+        ..label = 'Español',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/de/start'
+        ..label = 'Deutsch'
+    ]
+  };
+
   AppComponent(
       this.routes,
       this.msg,
@@ -103,6 +132,20 @@ class AppComponent {
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
+
+    menuOptions = {
+      '': [
+        FoDropdownOption()
+          ..id = '${msg.currentLanguage}/${msg.home_url}/${msg.contact}'
+          ..label = _capitalize(msg.contact),
+        FoDropdownOption()
+          ..id = '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}'
+          ..label = _capitalize(msg.library),
+        FoDropdownOption()
+          ..id = 'wordlist'
+          ..label = _capitalize(msg.word_list)
+      ]
+    };
   }
 
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
@@ -118,8 +161,6 @@ class AppComponent {
         .isEmpty;
   }
 
-  String _capitalize(String value) =>
-      '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
   void _generateMetaDescription() {
     final description = MetaElement()
       ..content =
@@ -183,38 +224,21 @@ class AppComponent {
     _generateMetaDescription();
     _generateTitle();
 
-    languageMenuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize('svenska'),
-            action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
-        MenuItem(_capitalize('english'),
-            action: () => window.location.href = '${Uri.base.origin}/en/home'),
-        MenuItem(_capitalize('français'),
-            action: () =>
-                window.location.href = '${Uri.base.origin}/fr/accueil',
-            enabled: true),
-        MenuItem(_capitalize('español'),
-            action: () => window.location.href = '${Uri.base.origin}/es/inicio',
-            enabled: true),
-        MenuItem(_capitalize('deutsch'),
-            action: () => window.location.href = '${Uri.base.origin}/de/start',
-            enabled: true)
-      ])
-    ]);
-
-    menuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize(msg.contact),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.contact}')),
-        MenuItem(_capitalize(msg.language), subMenu: languageMenuModel),
-        MenuItem(_capitalize(msg.library),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
-        MenuItem(_capitalize(msg.word_list),
-            action: () => wordListModalVisible = true)
-      ])
-    ]);
     loaded = true;
+  }
+
+  bool languageSelectVisible = false;
+  bool menuSelectVisible = false;
+
+  void onLanguageSelect(FoDropdownOption event) {
+    window.location.href = event.id;
+  }
+
+  void onMenuSelect(FoDropdownOption event) {
+    print(event.id);
+    if (event.id != 'wordlist') {
+      _router.navigate(event.id);
+    } else
+      wordListModalVisible = true;
   }
 }

@@ -113,8 +113,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?']
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?']
         ];
         break;
 
@@ -132,8 +132,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'],
           questionService.data.qustions[msg.currentLanguage]
               ['Hur ofta ska avlopp med diskbänksavskiljare desinficeras?'],
           questionService.data.qustions[msg.currentLanguage][
@@ -157,8 +157,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'],
           questionService.data.qustions[msg.currentLanguage]
               ['Vad stämmer om installationen av sugslangar?'],
           questionService.data.qustions[msg.currentLanguage]

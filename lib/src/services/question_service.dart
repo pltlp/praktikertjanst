@@ -123,23 +123,26 @@ class QuestionService {
                 ..value = '2019'
                 ..score = 0,
             ],
-          'Vad ska man göra av uppsamlat kvicksilver?': Question()
-            ..label = 'Vad ska man göra av uppsamlat kvicksilver?'
-            ..value = 'Vad ska man göra av uppsamlat kvicksilver?'
-            ..options = [
-              Option()
-                ..label = 'Slutförvara det'
-                ..value = 'Slutförvara det'
-                ..score = 1,
-              Option()
-                ..label = 'Förstöra det'
-                ..value = 'Förstöra det'
-                ..score = 0,
-              Option()
-                ..label = 'Dumpa det i havet'
-                ..value = 'Dumpa det i havet'
-                ..score = 0
-            ],
+          'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?':
+              Question()
+                ..label =
+                    'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'
+                ..value =
+                    'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'
+                ..options = [
+                  Option()
+                    ..label = 'Slutförvara det'
+                    ..value = 'Slutförvara det'
+                    ..score = 1,
+                  Option()
+                    ..label = 'Förstöra det'
+                    ..value = 'Förstöra det'
+                    ..score = 0,
+                  Option()
+                    ..label = 'Dumpa det i havet'
+                    ..value = 'Dumpa det i havet'
+                    ..score = 0
+                ],
           'Var ska sugmotorn vara installerad?': Question()
             ..label = 'Var ska sugmotorn vara installerad?'
             ..value = 'Var ska sugmotorn vara installerad?'
@@ -361,23 +364,26 @@ class QuestionService {
                 ..value = '2019'
                 ..score = 0,
             ],
-          'Vad ska man göra av uppsamlat kvicksilver?': Question()
-            ..label = 'What should you do with accumulated mercury?'
-            ..value = 'What should you do with accumulated mercury?'
-            ..options = [
-              Option()
-                ..label = 'Send it for terminal storage'
-                ..value = 'Send it for terminal storage'
-                ..score = 1,
-              Option()
-                ..label = 'Destroy it'
-                ..value = 'Destroy it'
-                ..score = 0,
-              Option()
-                ..label = 'Dump it in the sea'
-                ..value = 'Dump it in the sea'
-                ..score = 0
-            ],
+          'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?':
+              Question()
+                ..label =
+                    'What should you do with accumulated mercury from dentistry in Sweden?'
+                ..value =
+                    'What should you do with accumulated mercury from dentistry in Sweden?'
+                ..options = [
+                  Option()
+                    ..label = 'Send it for terminal storage'
+                    ..value = 'Send it for terminal storage'
+                    ..score = 1,
+                  Option()
+                    ..label = 'Destroy it'
+                    ..value = 'Destroy it'
+                    ..score = 0,
+                  Option()
+                    ..label = 'Dump it in the sea'
+                    ..value = 'Dump it in the sea'
+                    ..score = 0
+                ],
           'Hur ofta ska avlopp med diskbänksavskiljare desinficeras?':
               Question()
                 ..label =
@@ -609,23 +615,24 @@ class QuestionService {
                 ..value = '2019'
                 ..score = 0,
             ],
-          'Vad ska man göra av uppsamlat kvicksilver?': Question()
-            ..label = 'Que devez-vous faire avec le mercure cumulé ?'
-            ..value = 'Que devez-vous faire avec le mercure cumulé ?'
-            ..options = [
-              Option()
-                ..label = 'L’envoyer au stockage final'
-                ..value = 'L’envoyer au stockage final'
-                ..score = 1,
-              Option()
-                ..label = 'Le détruire'
-                ..value = 'Le détruire'
-                ..score = 0,
-              Option()
-                ..label = 'Le jeter à la mer'
-                ..value = 'Le jeter à la mer'
-                ..score = 0
-            ],
+          'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?':
+              Question()
+                ..label = 'Que devez-vous faire avec le mercure cumulé ?'
+                ..value = 'Que devez-vous faire avec le mercure cumulé ?'
+                ..options = [
+                  Option()
+                    ..label = 'L’envoyer au stockage final'
+                    ..value = 'L’envoyer au stockage final'
+                    ..score = 1,
+                  Option()
+                    ..label = 'Le détruire'
+                    ..value = 'Le détruire'
+                    ..score = 0,
+                  Option()
+                    ..label = 'Le jeter à la mer'
+                    ..value = 'Le jeter à la mer'
+                    ..score = 0
+                ],
           'Var ska sugmotorn vara installerad?': Question()
             ..label = 'Où le moteur d’aspiration doit-il être installé ?'
             ..value = 'Où le moteur d’aspiration doit-il être installé ?'
@@ -859,23 +866,24 @@ class QuestionService {
                 ..value = '2019'
                 ..score = 0,
             ],
-          'Vad ska man göra av uppsamlat kvicksilver?': Question()
-            ..label = '¿Qué se ha de hacer con el mercurio acumulado?'
-            ..value = '¿Qué se ha de hacer con el mercurio acumulado?'
-            ..options = [
-              Option()
-                ..label = 'Enviarlo para su almacenamiento definitivo'
-                ..value = 'Enviarlo para su almacenamiento definitivo'
-                ..score = 1,
-              Option()
-                ..label = 'Destruirlo'
-                ..value = 'Destruirlo'
-                ..score = 0,
-              Option()
-                ..label = 'Tirarlo en el mar'
-                ..value = 'Tirarlo en el mar'
-                ..score = 0
-            ],
+          'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?':
+              Question()
+                ..label = '¿Qué se ha de hacer con el mercurio acumulado?'
+                ..value = '¿Qué se ha de hacer con el mercurio acumulado?'
+                ..options = [
+                  Option()
+                    ..label = 'Enviarlo para su almacenamiento definitivo'
+                    ..value = 'Enviarlo para su almacenamiento definitivo'
+                    ..score = 1,
+                  Option()
+                    ..label = 'Destruirlo'
+                    ..value = 'Destruirlo'
+                    ..score = 0,
+                  Option()
+                    ..label = 'Tirarlo en el mar'
+                    ..value = 'Tirarlo en el mar'
+                    ..score = 0
+                ],
           'Var ska sugmotorn vara installerad?': Question()
             ..label =
                 '¿En cuál de los siguientes lugares se debe instalar un motor de succión?'
@@ -1113,23 +1121,26 @@ class QuestionService {
                 ..value = '2019'
                 ..score = 0,
             ],
-          'Vad ska man göra av uppsamlat kvicksilver?': Question()
-            ..label = 'Was ist mit angesammeltem Quecksilber zu tun?'
-            ..value = 'Was ist mit angesammeltem Quecksilber zu tun?'
-            ..options = [
-              Option()
-                ..label = 'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
-                ..value = 'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
-                ..score = 1,
-              Option()
-                ..label = 'Zerstören'
-                ..value = 'Zerstören'
-                ..score = 0,
-              Option()
-                ..label = 'Über das Abwasser entsorgen'
-                ..value = 'Über das Abwasser entsorgen'
-                ..score = 0
-            ],
+          'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?':
+              Question()
+                ..label = 'Was ist mit angesammeltem Quecksilber zu tun?'
+                ..value = 'Was ist mit angesammeltem Quecksilber zu tun?'
+                ..options = [
+                  Option()
+                    ..label =
+                        'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
+                    ..value =
+                        'Abgabe bei einem qualifizierten Entsorgungsfachbetrieb'
+                    ..score = 1,
+                  Option()
+                    ..label = 'Zerstören'
+                    ..value = 'Zerstören'
+                    ..score = 0,
+                  Option()
+                    ..label = 'Über das Abwasser entsorgen'
+                    ..value = 'Über das Abwasser entsorgen'
+                    ..score = 0
+                ],
           'Var ska sugmotorn vara installerad?': Question()
             ..label = 'Wo ist ein Saugmotor zu installieren?'
             ..value = 'Wo ist ein Saugmotor zu installieren?'
@@ -1226,10 +1237,8 @@ class QuestionService {
                 'Was ist in Bezug auf die Installation von Saugleitungenrichtig?'
             ..options = [
               Option()
-                ..label =
-                    'Winkel solltenmindestens45 Grad betragen'
-                ..value =
-                    'Winkel solltenmindestens45 Grad betragen'
+                ..label = 'Winkel solltenmindestens45 Grad betragen'
+                ..value = 'Winkel solltenmindestens45 Grad betragen'
                 ..score = 1,
               Option()
                 ..label =

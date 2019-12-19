@@ -11,7 +11,7 @@ dependencies:
   grid_css: ^1.0.0
   intl: ^0.15.8
   http: ^0.12.0+2
-  fo_components: ^1.6.3
+  fo_components: ^1.7.5+4
   angular_components: ^0.14.0-alpha
   angular: ^6.0.0-alpha
   angular_compiler: ^0.4.5
