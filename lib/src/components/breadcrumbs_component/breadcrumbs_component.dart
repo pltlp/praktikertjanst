@@ -107,7 +107,6 @@ class BreadcrumbsComponent {
               .name);
         } on StateError catch (e) {
           print(e);
-          print('hej bredcrumbs');
         }
       }
     }

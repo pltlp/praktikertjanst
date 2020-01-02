@@ -26,7 +26,6 @@ class ResourceWrapperComponent implements OnActivate {
           resource.phrases[msg.currentLanguage].url == resourceUrl);
     } on StateError catch (e) {
       print(e);
-      print('hej resource wraper rise');
       riseService.data.forEach(
           (index, value) => print(value.phrases[msg.currentLanguage].url));
       print(resourceUrl);
@@ -37,7 +36,6 @@ class ResourceWrapperComponent implements OnActivate {
           resource.phrases[msg.currentLanguage].url == resourceUrl);
     } on StateError catch (e) {
       print(e);
-      print('hej resource wraper quiz');
       quizService.data.forEach(
           (index, value) => print(value.phrases[msg.currentLanguage].url));
       print(resourceUrl);
