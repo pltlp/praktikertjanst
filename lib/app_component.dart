@@ -60,7 +60,7 @@ String _capitalize(String value) =>
   FoDropdownComponent,
   FoDropdownListComponent
 ], providers: [
-  routerProvidersHash,
+  routerProviders,
   Routes,
   materialProviders,
   MessagesService,
