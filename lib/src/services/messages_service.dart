@@ -90,7 +90,7 @@ class MessagesService {
           name: 'course_room_for_service_technicians_url');
 
   String get course_room_for_environmental_service_companies_url =>
-      Intl.message('kursrum-for-mijoserviceforetag',
+      Intl.message('kursrum-for-miljoserviceforetag',
           name: 'course_room_for_environmental_service_companies_url');
 
   String get currentLanguage => Intl.shortLocale(Intl.getCurrentLocale());
@@ -174,7 +174,7 @@ class MessagesService {
       name: 'quiz_success_text_1');
 
   String get quiz_success_text_2 => Intl.message(
-      'Kan du tänka dig att svara på några frågor via din mejl om några månader? I så fall skriver du in din mejladress här.',
+      'Kan du tänka dig att svara på några frågor via mejl om webbutbildningen? I så fall skriver du in din mejladress här.',
       name: 'quiz_success_text_2');
 
   String get quiz_success_title =>
@@ -235,7 +235,7 @@ class MessagesService {
 
   String get amalgam => Intl.message('amalgam', name: 'amalgam');
 
-  String get dental_care => Intl.message('tandvården', name: 'amalgam');
+  String get dental_care => Intl.message('tandvården', name: 'dental_care');
 
   String get praktikertjanst =>
       Intl.message('Praktikertjänst', name: 'praktikertjanst');
@@ -252,7 +252,23 @@ class MessagesService {
   String get environment => Intl.message('miljö', name: 'environment');
 
   String get green_dental_care =>
-      Intl.message('Grön tandvård', name: 'green_dental_care');
+      Intl.message('grön tandvård', name: 'green_dental_care');
 
   String get separator => Intl.message('Avskiljare', name: 'separator');
+
+  String get title => Intl.message(
+      'Hg-rid LIFE | Minimera kvicksilverutsläpp i miljön från tandvården',
+      name: 'title');
+  String get description_sentence_1 =>
+      Intl.message('Hur påverkar kvicksilver naturen?',
+          name: 'description_sentence_1');
+  String get description_sentence_2 =>
+      Intl.message('Vilka regler gäller för tandvården?',
+          name: 'description_sentence_2');
+  String get description_sentence_3 =>
+      Intl.message('Hur kan tandvården minimera kvicksilverutsläpp i miljön?',
+          name: 'description_sentence_3');
+  String get main_header_description => Intl.message(
+      'Det här är ett öppet och kostnadsfritt utbildningsmaterial om hur tandvården kan minimera utsläppen från dentalt amalgam. Här finns korta filmer, interaktiva artiklar och dokument.',
+      name: 'main_header_description');
 }

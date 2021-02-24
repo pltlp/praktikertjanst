@@ -19,8 +19,8 @@ import 'quiz_fail_component.dart';
 @Component(
     selector: 'p-quiz',
     templateUrl: 'quiz_component.html',
-    styleUrls: const ['quiz_component.css'],
-    directives: const [
+    styleUrls: ['quiz_component.css'],
+    directives: [
       ButtonComponent,
       NgIf,
       MaterialStepperComponent,
@@ -34,7 +34,7 @@ import 'quiz_fail_component.dart';
       FoModalComponent
     ],
     providers: [scrollHostProviders, Location, QuizLogService],
-    pipes: const [NamePipe],
+    pipes: [CapitalizePipe],
     changeDetection: ChangeDetectionStrategy.Default)
 class QuizComponent implements OnInit {
   QuizComponent(this.quizService, this.changeDetectorRef, this.location,
@@ -47,7 +47,10 @@ class QuizComponent implements OnInit {
       for (var question in model?.questions) {
         shuffle(question.options);
       }
-    } on StateError {}
+    } on StateError catch (e) {
+      print(e);
+      print('hej quiz');
+    }
   }
 
   void onContinue(AsyncAction<bool> event, int i) async {
@@ -65,7 +68,7 @@ class QuizComponent implements OnInit {
   }
 
   List shuffle(List options) {
-    final random = new Random();
+    final random = Random();
 
     for (var i = options.length - 1; i > 0; i--) {
       final n = random.nextInt(i + 1);
@@ -95,7 +98,6 @@ class QuizComponent implements OnInit {
   }
 
   void populateQuiz() {
-    print('populating quiz');
     switch (model.id) {
       case 'Quiz för allmänheten':
         model?.questions = [
@@ -111,8 +113,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?']
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?']
         ];
         break;
 
@@ -130,8 +132,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'],
           questionService.data.qustions[msg.currentLanguage]
               ['Hur ofta ska avlopp med diskbänksavskiljare desinficeras?'],
           questionService.data.qustions[msg.currentLanguage][
@@ -155,8 +157,8 @@ class QuizComponent implements OnInit {
               ['Hur stor del kvicksilver finns det i amalgam?'],
           questionService.data.qustions[msg.currentLanguage]
               ['När trädde EU:s skärpta regler kring amalgam i kraft?'],
-          questionService.data.qustions[msg.currentLanguage]
-              ['Vad ska man göra av uppsamlat kvicksilver?'],
+          questionService.data.qustions[msg.currentLanguage][
+              'Vad ska man göra av uppsamlat kvicksilver från svensk tandvård?'],
           questionService.data.qustions[msg.currentLanguage]
               ['Vad stämmer om installationen av sugslangar?'],
           questionService.data.qustions[msg.currentLanguage]
@@ -178,7 +180,7 @@ class QuizComponent implements OnInit {
   final Location location;
   final MessagesService msg;
   final QuizLogService quizLogService;
-  QuizLogEntry logEntry = new QuizLogEntry();
+  QuizLogEntry logEntry = QuizLogEntry();
   int logId;
   bool showAnswersModal = false;
   bool completed = false;

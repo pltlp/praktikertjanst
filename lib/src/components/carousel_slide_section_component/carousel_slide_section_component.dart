@@ -6,12 +6,12 @@ import '../../models/video.dart';
 import '../../services/messages_service.dart';
 
 @Component(
-    directives: const [NgIf],
-    providers: const [materialProviders],
+    directives: [NgIf],
+    providers: [materialProviders],
     selector: 'p-carousel-slide-section',
-    styleUrls: const ['carousel_slide_section_component.css'],
+    styleUrls: ['carousel_slide_section_component.css'],
     templateUrl: 'carousel_slide_section_component.html',
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class CarouselSlideSectionComponent {
   CarouselSlideSectionComponent(this.sanitizer, this.msg);
 
@@ -22,7 +22,7 @@ class CarouselSlideSectionComponent {
 
   @Input()
   Video model;
-  
+
   Video selectedModel;
   SafeResourceUrl safeUrl;
   final DomSanitizationService sanitizer;

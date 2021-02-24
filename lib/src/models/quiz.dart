@@ -4,7 +4,6 @@ class Quiz extends Resource {
   Quiz();
 
   List<Question> questions;
-  
 
   double minScore;
 
@@ -17,7 +16,7 @@ class Quiz extends Resource {
     }
     return s;
   }
- 
+
   int get currentScore {
     var s = 0;
 
@@ -34,7 +33,6 @@ class Quiz extends Resource {
 
 class Question {
   Question();
-
 
   String label;
   List<Option> options;

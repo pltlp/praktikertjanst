@@ -34,13 +34,13 @@
                 <div class="col l3 m4 s12 text-center">
                   <p-button (click)="stepper1.stepForward($event, stepper1.activeStep)"
                             rightBackgroundColor="#00A0C8"
-                            middle="{{msg.continue_label | name}}">
+                            middle="{{msg.continue_label | capitalize}}">
                   </p-button>
                 </div>
                 <div class="col l3 m4 s12 text-center">
                   <p-button (click)="stepper1.stepBackward($event, stepper1.activeStep)"
                             rightBackgroundColor="#00A0C8"
-                            middle="{{msg.cancel_label | name}}">
+                            middle="{{msg.cancel_label | capitalize}}">
                   </p-button>
                 </div>
               </div>
@@ -66,7 +66,7 @@
         <div id="resultFooter">
           <div class="row padding-top-medium padding-bottom-medium margin-bottom-medium">
             <div class="l4 m12 s12 col">
-              <p-button [middle]="msg.redo_quiz | name"
+              <p-button [middle]="msg.redo_quiz | capitalize"
                         textColor="#00a0c8"
                         leftBackgroundColor="#fff"
                         middleBackgroundColor="#fff"
@@ -75,7 +75,7 @@
                         (click)="init()"></p-button>
             </div>
             <div class="l4 m12 s12 col">
-              <p-button [middle]="msg.close | name"
+              <p-button [middle]="msg.close | capitalize"
                         textColor="#00a0c8"
                         leftBackgroundColor="#fff"
                         middleBackgroundColor="#fff"
@@ -84,7 +84,7 @@
                         (click)="location.back()"></p-button>
             </div>
             <div class="l4 m12 s12 col">
-              <p-button [middle]="msg.check_your_answers | name"
+              <p-button [middle]="msg.check_your_answers | capitalize"
                         textColor="#00a0c8"
                         leftBackgroundColor="#fff"
                         middleBackgroundColor="#fff"
@@ -100,7 +100,7 @@
 </div>
 
 <fo-modal *ngIf="showAnswersModal"
-          [title]="model.phrases[msg.currentLanguage].name + ' ' + msg.check_your_answers"
+          [header]="model.phrases[msg.currentLanguage].name + ' ' + msg.check_your_answers"
           [visible]="true"
           (visibleChange)="showAnswersModal = false"
           [showCloseButton]="true">

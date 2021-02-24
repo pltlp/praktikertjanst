@@ -1,11 +1,30 @@
 @import '../../../colors.scss';
+@import "package:grid_css/constants";
+$small-width:250px;
+$medium-width:600px;
+$large-width:800px;
+$ratio: 0.5625;
+
 :host {
     display: block;
     background-color: $alto;
 }
 
-iframe {
-    border: 0;
-    width: 100%;
-    height: 70vh;
+fo-modal{
+    iframe {
+        border: 0;
+        width: $large-width;
+        height: $ratio * $large-width;
+    
+        @media screen and (max-width: $medium-width-threshold - 1px) {
+            width: $small-width;
+            height: $ratio * $small-width;
+        }
+    
+        @media screen and (min-width: $medium-width-threshold) and (max-width: $large-width-threshold - 1px) {
+            width: $medium-width;
+            height: $ratio * $medium-width;
+        }
+    }
 }
+

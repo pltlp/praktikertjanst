@@ -1,12 +1,19 @@
-<div class="row expand">
+<div class="row expand margin-bottom-none">
     <div class="col text-center">
-        <h1 class="large">{{msg.main_header | name}}</h1>
+        <h1 class="large margin-bottom-none">{{msg.main_header | capitalize}}</h1>
     </div>
+</div>
+<div class="row margin-top-none">
+    <div class="col m2"></div>
+    <div class="col m8 text-center">
+        <h3 class="color-dark-gray">{{msg.main_header_description}}</h3>
+    </div>
+    <div class="col m2"></div>
 </div>
 <div class="row margin-top-medium">
     <div class="col m4"></div>
     <div class="col m4">
-        <p-button middle="{{msg.learn_more | name}}"
+        <p-button middle="{{msg.learn_more | capitalize}}"
                   (click)="buttonClickController.add('carousel')"
                   rightBackgroundColor="#00A0C8"></p-button>
     </div>

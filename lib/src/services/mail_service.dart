@@ -7,7 +7,7 @@ import '../models/mail.dart';
 @Injectable()
 class MailService {
   Future<void> send(Mail mail) async {
-    final client = new BrowserClient();
+    final client = BrowserClient();
 
     await client.put('https://api.hg-rid.eu/mail',
         body: json.encode(mail.toJson()),

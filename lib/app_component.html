@@ -13,23 +13,58 @@
                class="clickable"
                routerLink="{{msg.currentLanguage}}/{{msg.home_url}}">
         </div>
-        <div class="col s8 hide-for-large hide-for-medium text-right align-bottom">
-          <dropdown-menu [menu]="menuModel"
-                         [buttonText]="msg.menu | name"
-                         class="nounderline"
-                         [preferredPositions]="position">
-          </dropdown-menu>
+        <div class="col s8 hide-for-large hide-for-medium text-right align-bottom overflow">
+          <div class="flex">
+            <div class="select"
+                 (click)="menuSelectVisible = !menuSelectVisible">{{msg.menu | capitalize}}
+              <fo-icon icon="arrow_drop_down"
+                       [material]="true"></fo-icon>
+              <fo-dropdown-list [(visible)]="menuSelectVisible"
+                                [options]="menuOptions"
+                                [offsetHorizontal]="-35"
+                                [width]="90"
+                                [offsetTop]="5"
+                                (select)="onMenuSelect($event)"
+                                [materialIcons]="true"></fo-dropdown-list>
+
+            </div>
+            <div class="select"
+                 (click)="languageSelectVisible = !languageSelectVisible">{{msg.language | capitalize}}
+              <fo-icon icon="arrow_drop_down"
+                       [material]="true"></fo-icon>
+              <fo-dropdown-list [(visible)]="languageSelectVisible"
+                                [options]="languageOptions"
+                                [offsetHorizontal]="-35"
+                                [width]="90"
+                                [offsetTop]="5"
+                                (select)="onLanguageSelect($event)"></fo-dropdown-list>
+
+            </div>
+          </div>
         </div>
-        <div class="m10 col text-right align-bottom hide-for-small">
-          <dropdown-menu [menu]="languageMenuModel"
-                         [buttonText]="msg.language | name"
-                         class="nounderline"
-                         [preferredPositions]="position">
-          </dropdown-menu>
-          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.contact}}">{{msg.contact | name}}</a>
-          <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}">{{msg.library | name}}</a>
-          <a class="clickable"
-             (click)="wordListModalVisible = true">{{msg.word_list | name}}</a>
+        <div class="m10 col align-bottom hide-for-small overflow flex">
+          <div class="select"
+               (click)="languageSelectVisible = !languageSelectVisible">{{msg.language | capitalize}}
+            <fo-icon icon="arrow_drop_down"
+                     [material]="true"></fo-icon>
+            <fo-dropdown-list [(visible)]="languageSelectVisible"
+                              [options]="languageOptions"
+                              [width]="90"
+                              [offsetHorizontal]="-35"
+                              [offsetTop]="5"
+                              (select)="onLanguageSelect($event)"></fo-dropdown-list>
+          </div>
+          <div>
+            <a routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.contact}}">{{msg.contact | capitalize}}</a>
+          </div>
+          <div>
+            <a
+               routerLink="{{msg.currentLanguage}}/{{msg.home_url}}/{{msg.library_url}}">{{msg.library | capitalize}}</a>
+          </div>
+          <div>
+            <a class="clickable"
+               (click)="wordListModalVisible = true">{{msg.word_list | capitalize}}</a>
+          </div>
         </div>
       </div>
       <div class="row collapse expand background-color-astronautblue">
@@ -49,9 +84,8 @@
 
 
 <fo-modal [(visible)]="wordListModalVisible"
-          [title]="msg.word_list | name"
-          [fixedWidth]="true"
-          [fixedHeight]="true">
+          [header]="msg.word_list | capitalize"
+          dense>
   <div id="modal">
     <p-word-list></p-word-list>
   </div>

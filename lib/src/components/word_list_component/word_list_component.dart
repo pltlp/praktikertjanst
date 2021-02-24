@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:fo_components/fo_components.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_slide_component.dart';
 import '../../components/button_component/button_component.dart';
 import '../../models/word.dart';
 import '../../services/messages_service.dart';
@@ -11,8 +12,10 @@ import 'word_component/word_component.dart';
 @Component(
     selector: 'p-word-list',
     templateUrl: 'word_list_component.html',
-    styleUrls: const ['word_list_component.css'],
-    directives: const [
+    styleUrls: [
+      'word_list_component.css'
+    ],
+    directives: [
       MaterialAutoSuggestInputComponent,
       WordComponent,
       NgIf,
@@ -23,7 +26,9 @@ import 'word_component/word_component.dart';
       FoCarouselSlideComponent,
       ButtonComponent
     ],
-    pipes: const [NamePipe])
+    pipes: [
+      CapitalizePipe
+    ])
 class WordListComponent implements OnDestroy {
   WordListComponent(this.msg, this.wordService) {
     // TODO: call whenever the language is changed
@@ -48,15 +53,15 @@ class WordListComponent implements OnDestroy {
 
   void _initSearchOptions() {
     final optionGroups = <OptionGroup<SearchOption>>[
-      new OptionGroup(wordService.data.keys
-          .map((key) => new SearchOption()
+      OptionGroup(wordService.data.keys
+          .map((key) => SearchOption()
             ..id = key
             ..label = wordService.data[key].phrases[msg.currentLanguage].name)
           .toList(growable: false))
     ];
 
     searchOptions =
-        new StringSelectionOptions<SearchOption>.withOptionGroups(optionGroups);
+        StringSelectionOptions<SearchOption>.withOptionGroups(optionGroups);
   }
 
   @Input()
@@ -65,7 +70,7 @@ class WordListComponent implements OnDestroy {
   final WordService wordService;
   Word selectedWord;
 
-  final SelectionModel searchModel = new SelectionModel<SearchOption>.single();
+  final SelectionModel searchModel = SelectionModel<SearchOption>.single();
   StringSelectionOptions<SearchOption> searchOptions;
   StreamSubscription<List<SelectionChangeRecord>> _onSearchSubscription;
 }

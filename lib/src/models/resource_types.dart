@@ -1,9 +1,1 @@
-enum ResourceType
-{
-  rise,
-  document,
-  courseRoom,
-  video,
-  quiz
-
-}
+enum ResourceType { rise, document, courseRoom, video, quiz }

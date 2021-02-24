@@ -19,7 +19,7 @@ import '../documents_component/documents_component.dart';
 import '../word_list_component/word_list_component.dart';
 
 @Component(
-    directives: const [
+    directives: [
       ButtonComponent,
       CarouselComponent,
       MaterialStepperComponent,
@@ -38,11 +38,11 @@ import '../word_list_component/word_list_component.dart';
       MaterialPopupComponent,
       DocumentsComponent
     ],
-    providers: const [scrollHostProviders],
+    providers: [scrollHostProviders],
     selector: 'p-course-room-for-curious',
-    styleUrls: const ['course_room_component.css'],
+    styleUrls: ['course_room_component.css'],
     templateUrl: 'course_room_component.html',
-    pipes: [NamePipe])
+    pipes: [CapitalizePipe])
 class CourseRoomComponent implements OnActivate {
   CourseRoomComponent(this.msg, this.videoService, this.courseRoomService,
       this.documentService, this.quizService, this.riseService);

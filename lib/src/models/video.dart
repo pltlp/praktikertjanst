@@ -1,6 +1,6 @@
 import 'resource.dart';
 
-class Video extends Resource{
+class Video extends Resource {
   Video();
-  Map<String,String> url = {};
+  Map<String, String> url = {};
 }

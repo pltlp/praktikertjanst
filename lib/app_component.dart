@@ -6,6 +6,9 @@ import 'package:angular_components/angular_components.dart';
 import 'package:angular_components/model/menu/menu.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:d_components/d_components.dart';
+import 'package:fo_components/components/fo_dropdown/fo_dropdown_component.dart';
+import 'package:fo_components/components/fo_dropdown_list/fo_dropdown_list_component.dart';
+import 'package:fo_components/components/fo_dropdown_list/fo_dropdown_option.dart';
 import 'package:fo_components/fo_components.dart';
 import 'package:intl/intl.dart';
 
@@ -27,58 +30,57 @@ import 'src/services/slide_service.dart';
 import 'src/services/video_service.dart';
 import 'src/services/word_service.dart';
 
-@Component(
-    selector: 'p-app',
-    templateUrl: 'app_component.html',
-    styleUrls: const [
-      'app_component.css'
-    ],
-    directives: [
-      BreadcrumbsComponent,
-      HomeComponent,
-      NavbarComponent,
-      FoModalComponent,
-      FooterComponent,
-      routerDirectives,
-      NgFor,
-      NgIf,
-      MaterialIconComponent,
-      FullscreenComponent,
-      MaterialMenuComponent,
-      MaterialDropdownSelectComponent,
-      MaterialSelectItemComponent,
-      WordListComponent,
-      FoIconComponent,
-      MaterialPopupComponent,
-      PopupSourceDirective,
-      MaterialListComponent,
-      MaterialListItemComponent,
-      WordPreviewComponent,
-      DropdownMenuComponent
-    ],
-    providers: [
-      routerProviders,
-      Routes,
-      materialProviders,
-      MessagesService,
-      VideoService,
-      DocumentService,
-      RiseService,
-      CourseRoomService,
-      WordService,
-      QuizService,
-      SlideService,
-      QuestionService
-    ],
-    pipes: [
-      NamePipe
-    ])
+String _capitalize(String value) =>
+    '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
+
+@Component(selector: 'p-app', templateUrl: 'app_component.html', styleUrls: [
+  'app_component.css'
+], directives: [
+  BreadcrumbsComponent,
+  HomeComponent,
+  NavbarComponent,
+  FoModalComponent,
+  FooterComponent,
+  routerDirectives,
+  NgFor,
+  NgIf,
+  MaterialIconComponent,
+  FullscreenComponent,
+  MaterialMenuComponent,
+  MaterialDropdownSelectComponent,
+  MaterialSelectItemComponent,
+  WordListComponent,
+  FoIconComponent,
+  MaterialPopupComponent,
+  PopupSourceDirective,
+  MaterialListComponent,
+  MaterialListItemComponent,
+  WordPreviewComponent,
+  DropdownMenuComponent,
+  FoDropdownComponent,
+  FoDropdownListComponent
+], providers: [
+  routerProviders,
+  Routes,
+  materialProviders,
+  MessagesService,
+  VideoService,
+  DocumentService,
+  RiseService,
+  CourseRoomService,
+  WordService,
+  QuizService,
+  SlideService,
+  QuestionService
+], pipes: [
+  CapitalizePipe
+])
 class AppComponent {
   MenuModel menuModel;
   MenuModel languageMenuModel;
   final Routes routes;
   final MessagesService msg;
-  Router _router;
+  final Router _router;
   final VideoService videoService;
   final DocumentService documentService;
   final RiseService riseService;
@@ -92,6 +94,27 @@ class AppComponent {
   bool wordListModalVisible = false;
   bool languageSelectorVisible = false;
   String iconSize = '1.5em';
+  Map<String, List<FoDropdownOption>> menuOptions;
+  final Map<String, List<FoDropdownOption>> languageOptions = {
+    '': [
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/sv/hem'
+        ..label = 'Svenska',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/en/home'
+        ..label = 'English',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/fr/accueil'
+        ..label = 'Français',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/es/inicio'
+        ..label = 'Español',
+      FoDropdownOption()
+        ..id = '${Uri.base.origin}/de/start'
+        ..label = 'Deutsch'
+    ]
+  };
+
   AppComponent(
       this.routes,
       this.msg,
@@ -109,8 +132,24 @@ class AppComponent {
     _router.onRouteActivated.listen((state) {
       window.scrollTo(0, 0);
     });
+
+    menuOptions = {
+      '': [
+        FoDropdownOption()
+          ..id = '${msg.currentLanguage}/${msg.home_url}/${msg.contact}'
+          ..label = _capitalize(msg.contact),
+        FoDropdownOption()
+          ..id = '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}'
+          ..label = _capitalize(msg.library),
+        FoDropdownOption()
+          ..id = 'wordlist'
+          ..label = _capitalize(msg.word_list)
+      ]
+    };
   }
+
   List<RelativePosition> get position => RelativePosition.AdjacentBottomEdge;
+
   bool get showFooter {
     if (_router.current == null) return true;
     final urlParam = _router.current.parameters['url'];
@@ -122,17 +161,26 @@ class AppComponent {
         .isEmpty;
   }
 
-  String _capitalize(String value) =>
-      '${value.substring(0, 1).toUpperCase()}${value.substring(1)}';
+  void _generateMetaDescription() {
+    final description = MetaElement()
+      ..content =
+          '${msg.description_sentence_1}, ${msg.description_sentence_2}, ${msg.description_sentence_3}, ${msg.hg_rid_life}, ${msg.mercury}, ${msg.dental_care}, ${msg.praktikertjanst}, ${msg.sweden}, ${msg.recycling}, ${msg.ivl}, ${msg.amalgam_separator}, ${msg.environment}, ${msg.green_dental_care}, ${msg.separator}'
+      ..name = 'description';
+    document.head.append(description);
+  }
+
+  void _generateTitle() {
+    final title = TitleElement()..innerHtml = '${msg.title}';
+
+    document.head.append(title);
+  }
+
   Future<void> _loadResources() async {
     loaded = false;
 
-    // Figure out language based on url
-    await messages
-        .initializeMessages(Intl.shortLocale(Intl.getCurrentLocale()));
-
     if (Uri.base.pathSegments.isEmpty) {
       Intl.defaultLocale = 'sv_SE';
+      await messages.initializeMessages('se');
     } else {
       final lang = Uri.base.pathSegments.first;
       switch (lang) {
@@ -159,6 +207,8 @@ class AppComponent {
         default:
           Intl.defaultLocale = 'sv_SE';
       }
+
+      await messages.initializeMessages(lang);
     }
 
     await videoService.fetchAll();
@@ -171,31 +221,24 @@ class AppComponent {
     await questionService.fetchAll();
     routes.init(msg);
 
-    languageMenuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize('svenska'),
-            action: () => window.location.href = '${Uri.base.origin}/sv/hem'),
-        MenuItem(_capitalize('english'),
-            action: () => window.location.href = '${Uri.base.origin}/en/home'),
-        MenuItem(_capitalize('français'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false),
-        MenuItem(_capitalize('español'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false),
-        MenuItem(_capitalize('deutsch'), action: () => window.location.href = '${Uri.base.origin}/en/start', enabled: false)
-      ])
-    ]);
+    _generateMetaDescription();
+    _generateTitle();
 
-    menuModel = MenuModel<MenuItem>([
-      MenuItemGroup<MenuItem>([
-        MenuItem(_capitalize(msg.contact),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.contact}')),
-        MenuItem(_capitalize(msg.language), subMenu: languageMenuModel),
-        MenuItem(_capitalize(msg.library),
-            action: () => _router.navigateByUrl(
-                '${msg.currentLanguage}/${msg.home_url}/${msg.library_url}')),
-        MenuItem(_capitalize(msg.word_list),
-            action: () => wordListModalVisible = true)
-      ])
-    ]);
     loaded = true;
+  }
+
+  bool languageSelectVisible = false;
+  bool menuSelectVisible = false;
+
+  void onLanguageSelect(FoDropdownOption event) {
+    window.location.href = event.id;
+  }
+
+  void onMenuSelect(FoDropdownOption event) {
+    print(event.id);
+    if (event.id != 'wordlist') {
+      _router.navigate(event.id);
+    } else
+      wordListModalVisible = true;
   }
 }

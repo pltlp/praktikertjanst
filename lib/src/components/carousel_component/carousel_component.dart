@@ -2,8 +2,10 @@ import 'dart:core';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular/angular.dart';
 import 'package:angular/security.dart';
-import 'package:fo_components/fo_components.dart';
-import 'package:intl/intl.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_component.dart';
+import 'package:fo_components/components/fo_carousel/fo_carousel_slide_component.dart';
+import 'package:fo_components/components/fo_modal/fo_modal_component.dart';
+import 'package:fo_components/pipes/capitalize_pipe.dart';
 import '../../models/video.dart';
 import '../../services/messages_service.dart';
 import '../../services/video_service.dart';
@@ -12,23 +14,23 @@ import '../carousel_slide_section_component/carousel_slide_section_component.dar
 @Component(
     selector: 'p-carousel',
     templateUrl: 'carousel_component.html',
-    styleUrls: const [
+    styleUrls: [
       'carousel_component.css'
     ],
-    providers: const [
+    providers: [
       VideoService,
     ],
-    directives: const [
+    directives: [
       CarouselSlideSectionComponent,
       FoCarouselComponent,
       FoCarouselSlideComponent,
       FoModalComponent,
       NgFor,
       NgIf,
-      MaterialButtonComponent,       
+      MaterialButtonComponent,
     ],
-    pipes: const [
-      NamePipe
+    pipes: [
+      CapitalizePipe
     ])
 class CarouselComponent implements OnInit {
   CarouselComponent(this.sanitizer, this.videoService, this.msg);
@@ -36,19 +38,19 @@ class CarouselComponent implements OnInit {
   @override
   void ngOnInit() {
     oneModelPerElementList.addAll(models);
-    while (models.isNotEmpty) {      
+    while (models.isNotEmpty) {
       modelTable.add(models.take(3).toList(growable: false));
       modelTable.last.forEach(models.remove);
-    }    
+    }
   }
 
   void onModelClick(Video model) {
-    selectedModel = model;    
-    if (selectedModel != null){
+    selectedModel = model;
+    if (selectedModel != null) {
       selectedModelUrl = sanitizer.bypassSecurityTrustResourceUrl(
-          selectedModel.url[msg.currentLanguage]);      
-    }
-    else selectedModelUrl = null;
+          selectedModel.url[msg.currentLanguage]);
+    } else
+      selectedModelUrl = null;
   }
 
   @Input('header')
@@ -64,5 +66,5 @@ class CarouselComponent implements OnInit {
   final List<List<Video>> modelTable = [];
   final VideoService videoService;
   final MessagesService msg;
-  final DomSanitizationService sanitizer;  
+  final DomSanitizationService sanitizer;
 }

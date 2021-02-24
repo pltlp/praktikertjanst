@@ -7,19 +7,18 @@ import '../../services/rise_service.dart';
 @Component(
     selector: 'p-rise',
     templateUrl: 'rise_component.html',
-    styleUrls: const ['rise_component.css'],
-    directives: const [NgIf],
+    styleUrls: ['rise_component.css'],
+    directives: [NgIf],
     providers: [])
-class RiseComponent implements OnInit{
+class RiseComponent implements OnInit {
   RiseComponent(this.sanitizer, this.riseService, this.msg);
 
-  
   @override
   void ngOnInit() {
     if (model != null) {
       url = sanitizer
           .bypassSecurityTrustResourceUrl(model.url[msg.currentLanguage]);
-          model.complete = true;
+      model.complete = true;
     }
   }
 

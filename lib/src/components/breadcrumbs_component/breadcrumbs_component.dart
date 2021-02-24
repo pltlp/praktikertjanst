@@ -1,8 +1,10 @@
 import 'dart:html';
+
 import 'package:angular/angular.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:fo_components/fo_components.dart';
+
 import '../../models/resource.dart';
 import '../../services/course_room_service.dart';
 import '../../services/messages_service.dart';
@@ -11,21 +13,30 @@ import '../../services/rise_service.dart';
 import '../../services/video_service.dart';
 
 @Component(
-    directives: const [routerDirectives, NgFor, NgIf, MaterialIconComponent],
-    providers: const [],
-    pipes: [NamePipe],
+    directives: [routerDirectives, NgFor, NgIf, MaterialIconComponent],
+    providers: [],
+    pipes: [CapitalizePipe],
     selector: 'p-breadcrumbs',
-    styleUrls: const ['breadcrumbs_component.css'],
+    styleUrls: ['breadcrumbs_component.css'],
     templateUrl: 'breadcrumbs_component.html')
 class BreadcrumbsComponent {
-  BreadcrumbsComponent(
-      this._router,
-      this.msg,
-      this.location,
-      this.courseRoomService,
-      this.riseService,
-      this.quizService,
-      this.videoService) {
+  final Router _router;
+  final MessagesService msg;
+  final int nrOfCharacters = 33;
+  final int maxScreenWidth = 400;
+  List<String> crumbLinks = [];
+  RouterState routerState;
+
+  CourseRoomService courseRoomService;
+  RiseService riseService;
+  VideoService videoService;
+  QuizService quizService;
+  Map<String, Resource> resources = {};
+  List<String> breadcrumbList = [];
+  List<String> resourceNameList = [];
+
+  BreadcrumbsComponent(this._router, this.msg, this.courseRoomService,
+      this.riseService, this.quizService, this.videoService) {
     resources
       ..addAll(quizService.data)
       ..addAll(courseRoomService.data)
@@ -46,11 +57,6 @@ class BreadcrumbsComponent {
     }
   }
 
-  void back() {
-    _router.navigate(
-        '${msg.currentLanguage}/${crumbLinks[crumbLinks.length - 2]}');
-  }
-
   bool get showCloseButton {
     if (crumbLinks.length == 1) return false;
     final segments = pathSegments.toList();
@@ -60,6 +66,11 @@ class BreadcrumbsComponent {
 
     final courseRoom = courseRoomService.data[segments.last];
     return courseRoom == null;
+  }
+
+  void back() {
+    _router.navigate(
+        '${msg.currentLanguage}/${crumbLinks[crumbLinks.length - 2]}');
   }
 
   List<String> evaluateBreadcrumbs(List<String> path) {
@@ -72,25 +83,14 @@ class BreadcrumbsComponent {
     return breadcrumbs.map((c) => c.replaceAll('-', ' ')).toList();
   }
 
-  void _onNavigationStart(RouterState state) {
-    routerState = state;
-    final segments = pathSegments.toList();
-
-    crumbLinks = new List(segments.length);
-
-    for (var i = 0; i < segments.length; i++) {
-      final s = segments.take(i + 1);
-      crumbLinks[i] = s.join('/');
-    }
-  }
-
-  List<String> resourceNameList(List<String> path) {
+  List<String> evaluateResourceNameList(List<String> path) {
     final nameList = <String>[];
 
     for (var p in path) {
-      if (p == msg.library)
-        nameList
-            .add('${msg.library[0].toUpperCase()}${msg.library.substring(1)}');
+      if (p == msg.library_url) {
+        nameList.add(
+            '${msg.library_url[0].toUpperCase()}${msg.library_url.substring(1)}');
+      }
 
       if (p == msg.contact)
         nameList
@@ -105,23 +105,25 @@ class BreadcrumbsComponent {
                   (resource) => resource.phrases[msg.currentLanguage].url == p)
               ?.phrases[msg.currentLanguage]
               .name);
-        } on StateError {
+        } on StateError catch (e) {
+          print(e);
         }
       }
     }
     return evaluateBreadcrumbs(nameList);
   }
 
-  final Router _router;
-  final MessagesService msg;
-  final int nrOfCharacters = 33;
-  final int maxScreenWidth = 400;
-  List<String> crumbLinks = [];
-  RouterState routerState;
-  Location location;
-  CourseRoomService courseRoomService;
-  RiseService riseService;
-  VideoService videoService;
-  QuizService quizService;
-  Map<String, Resource> resources = {};
+  void _onNavigationStart(RouterState state) {
+    routerState = state;
+    final segments = pathSegments.toList();
+
+    crumbLinks = List(segments.length);
+
+    for (var i = 0; i < segments.length; i++) {
+      final s = segments.take(i + 1);
+      crumbLinks[i] = s.join('/');
+    }
+    resourceNameList = evaluateResourceNameList(pathSegments);
+    breadcrumbList = evaluateBreadcrumbs(pathSegments);
+  }
 }
